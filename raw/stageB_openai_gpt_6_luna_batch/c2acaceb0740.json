@@ -1,0 +1,87 @@
+{
+ "call_id": "c2acaceb0740",
+ "tag": "bg_batch",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 150771832
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the posts must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different short public posts by the same author, one per brief below, in order.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.\n- zainteresowania: szydełkowanie swetrów, teleturnieje w telewizji, wnuki i ich zajęcia\n- lokalny punkt odniesienia: targowisko przy ulicy Szczecińskiej\n- aktualna sytuacja życiowa: Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.\n- sposób pisania: zdania: long run-on; interpunkcja: ellipsis everywhere; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: dodaje „co by nie mówić”\n\nBriefs (one post each):\n1. topic: praca i grafik; angle: nowy projekt / nowe zadanie; register: chatty; about 23 words; morning commute, Saturday\n2. topic: gry i seriale; angle: maraton serialu, zarwana noc; register: enthusiastic; about 20 words; morning commute, Monday\n3. topic: dzieci i rodzina; angle: zebranie w szkole; register: chatty; about 18 words; lunch break, Monday\n4. topic: zwierzęta; angle: weterynarz, szczepienie; register: mildly grumbly; about 39 words; late night, Monday\n5. topic: sport; angle: piłka z kumplami na orliku; register: mildly grumbly; about 24 words; early morning, Tuesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- the posts must differ from each other in opening, structure and rhythm; do not reuse a sentence pattern\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts:\n  - środa lunch i kawa ze stołówki ratuje mi przerwę między zajęciami. siedzę z ekipą i gadamy o wszystkim tylko nie o bazach danych nwm czemu xd\n  - środa rano wpadłem chwilę wcześniej do pracy i współpracownik przyniósł kawę z automatu. teraz nadrabiamy gadanie zanim zacznie się cały ten grafik xd\n\nOutput format: a JSON array of 5 strings only, no prose."
+  }
+ ],
+ "prompt_sha1": "638d62172606b493000a457607282b4871e1635e",
+ "response": {
+  "id": "gen-1791460508-554j2yWSLG5Ny5JKLKgf",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  \"W sobotę rano jadę po zakupy, a tu jeszcze nowe zadanie do ogarnięcia... dobrze, że grafik mam luźny, co by nie mówić...\",\n  \"Poniedziałkowy poranek, a ja po nocnym maratonie serialu... tak mnie wciągnął, że aż zapomniałam patrzeć na godzinę...\",\n  \"W przerwie obiadowej dzwoniła córka po zebraniu w szkole... wnuki mają teraz tyle zajęć, że trudno za nimi nadążyć...\",\n  \"Późno już, a ja dopiero wróciłam od weterynarza, szczepienie załatwione... tylko tyle czekania i jeżdżenia, człowiek chciałby mieć to z głowy wcześniej...\",\n  \"Wtorek świtem, chłopaki już na orliku i piłka lata... ja bym jeszcze pospała, ale podobno potem cały dzień o tym gadają...\"\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460508,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 221,
+   "prompt_tokens": 850,
+   "total_tokens": 1071,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001955,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001955,
+    "upstream_inference_prompt_cost": 8.5e-05,
+    "upstream_inference_completions_cost": 0.0001105
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

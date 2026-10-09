@@ -1,0 +1,87 @@
+{
+ "call_id": "02f6ad11e079",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1756476886
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Montuje drzwi i listwy w mieszkaniach w Tychach; ma chwilę na wpisy przy obiedzie lub po robocie.\n- zainteresowania: narzędzia ręczne, żużel w TV, kiszenie ogórków\n- lokalny punkt odniesienia: pawilon handlowy przy ulicy Dębowej w Tychach\n- aktualna sytuacja życiowa: Urządza warsztat w piwnicy i co tydzień dokupuje drobny sprzęt.\n- sposób pisania: zdania: short fragments; interpunkcja: rzadka, bez przecinków; wielkie litery: mostly standard, lowercase starts; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: dopisuje „tak to wygląda”\n\nTopic for this post: technologia i sprzęt\nConcrete angle: W czwartek wieczorem podłączył nowe słuchawki i sprawdził je na powtórce żużla w telewizji. | mood: pleased | opener: list of two things | verbal tic in this post: no\nRegister: mildly grumbly\nTarget length: about 8 words\nTime of day: evening, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Drukarka znowu źle podała papier, akurat w sobotę przy obiedzie; kartkę z planem grządek rozprostowałem, włożyłem ponownie, wydrukowałem drugi raz, teraz leży równo; zobaczymy jutro.\n  - a fotek z montazu drzwi w tel brak. sprawdzilem po drodze do roboty. w kopii sa na szczescie. sroda od rana i takie szukanie\n  - Super! Po zamknięciu piekarni rozpakowałam nowe słuchawki i podlewałam kwiaty przy muzyce! 🎧🪴\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "6ddc6d2af7d6399e124a146851212a87c5e6f0bf",
+ "response": {
+  "id": "gen-1791463888-bYLi9U4YenPlALdoQCdw",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: nowe sluchawki powtorka zuzla. w czw wieczorem podlaczylem. wreszcie slychac jak trzeba",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791463888,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 38,
+   "prompt_tokens": 834,
+   "total_tokens": 872,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002048,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002048,
+    "upstream_inference_prompt_cost": 0.001668,
+    "upstream_inference_completions_cost": 0.00038
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "38ef8a2e0507",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1601915564
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rozwożę paczki po okolicy; najczęściej piszę z przerwy na obiad albo późnym wieczorem.\n- zainteresowania: mapy papierowe, mycie auta, zapiekanki\n- lokalny punkt odniesienia: parking przy ulicy Dworcowej w Pile\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany rower i ogląda ogłoszenia po pracy.\n- sposób pisania: zdania: short fragments; interpunkcja: rzadko stawia przecinki; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: rare\n- tik językowy: kończy wpisy „i git”\n\nTopic for this post: sport\nConcrete angle: W piątek wieczorem rozłożył papierową mapę i zaznaczył na niej krótką trasę rowerową na weekend. | mood: pleased | opener: mid-thought | verbal tic in this post: yes\nRegister: mildly grumbly\nTarget length: about 15 words\nTime of day: evening, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - przebiegłam dziś rano pierwsze 5 km... w apce sprawdziłam czas i jestem z siebie dumna, choć nogi marudza 😅\n  - dalej pobolewa? w drodze na lekki trening sprawdzilem kostke po paru dniach przerwy troche ciagnie wiec bez szalenstw\n  - wow... dziś wieczorem pierwszy raz zrobiłam przysiad z 40 kg na siłowni 😍 nadal mi się chce uśmiechać!\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "817ff78e97eed62074f14ea2dd525eff855a541a",
+ "response": {
+  "id": "gen-1791463876-slWGv4foNUVA2316rmbM",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: mapa papierowa rozlozona trasa na weekend zaznaczona krotka bo podjazdow mi sie nie chce ale fajnie wyszlo",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791463876,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 37,
+   "prompt_tokens": 768,
+   "total_tokens": 805,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001906,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001906,
+    "upstream_inference_prompt_cost": 0.001536,
+    "upstream_inference_completions_cost": 0.00037
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

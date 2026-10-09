@@ -1,0 +1,94 @@
+{
+ "call_id": "2094f78e93ce",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie o to chodzi... zbiorka normalnie o 17 pod zabka na spodzielczej i lecimy na stal bo dzis musza to wygrac stary. ogarniamy jakis transport czy z buta na stadion... wazne ze 3 punkty maja byc i git!\n- no wlasnie wracam z roboty i znowu to samo... pelno tych ciapatych sie kreci pod blokami i tylko laza bez celu stary. czlowiek tyra caly dzien na magazynie a oni tu wgl nie pasuja... zenada jakas sie robi na miescie\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "da5e5937fedfaf04ff6b8038129df39a418ceac4",
+ "response": {
+  "id": "gen-1791460629-4Uf5OxP2Zin3MXTGBlpq",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor planował ze znajomymi wyjście na mecz piłkarski oraz wracał po pracy w magazynie do domu, obserwując otoczenie swojego osiedla.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Summarizing Everyday Observations**\n\nI'm currently focused on distilling the essence of recent Polish social media posts. My task is to craft a single, neutral sentence in Polish that encapsulates the everyday happenings described, whether it's a football match gathering, warehouse work, or simply people-watching.\n\n**Synthesizing Daily Accounts**\n\nI'm working on a concise, neutral Polish sentence to capture recent social media mentions. The goal is to reflect observed activities, like attending a football game with friends or returning from warehouse duties, without adding any judgment.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Summarizing Everyday Observations**\n\nI'm currently focused on distilling the essence of recent Polish social media posts. My task is to craft a single, neutral sentence in Polish that encapsulates the everyday happenings described, whether it's a football match gathering, warehouse work, or simply people-watching.\n\n**Synthesizing Daily Accounts**\n\nI'm working on a concise, neutral Polish sentence to capture recent social media mentions. The goal is to reflect observed activities, like attending a football game with friends or returning from warehouse duties, without adding any judgment.\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460629,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 468,
+   "prompt_tokens": 216,
+   "total_tokens": 684,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 431,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001917,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001917,
+    "upstream_inference_prompt_cost": 0.000162,
+    "upstream_inference_completions_cost": 0.001755
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 431
+ }
+}

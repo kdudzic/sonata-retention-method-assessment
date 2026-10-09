@@ -1,0 +1,95 @@
+{
+ "call_id": "bed63e10a620",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1953490361
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.\n- zainteresowania: fotografia uliczna, kolarstwo górskie, kawa z palarni\n- lokalny punkt odniesienia: skwer Kościuszki przy molo w Gdyni\n- aktualna sytuacja życiowa: Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete, dużo nawiasów; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Krótka obserwacja:”\n\nTopic for this post: zakupy i ceny\nConcrete angle: zakupy na targu\nRegister: matter-of-fact\nTarget length: about 11 words\nTime of day: morning commute, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - w lidlu energetyki po 2.49 a w zabce obok akademika 5.99 xd przezylem szok wgl kupilem 12 sztuk i dzwigam jak glupi xd na sesje wystarczy chyba ze projekt z baz bd robil do rana xd nwm kto tam robi zakupy na co dzien\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "b733e81f163716e28113f194fb31616e549d1e6c",
+ "response": {
+  "id": "gen-1791459891-rKUVWo5nWr3UURfugg97",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Kr",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm aiming for roughly eleven words in Polish, using male grammatical forms, a run-on sentence structure with correct punctuation and parentheses, no emojis or abbreviations. I'm picturing a Thursday morning scenario — a quick trip to the market before work — and drafting an opening line noting strawberries at twelve złoty per kilo, spotted early in the day before heading to the office.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSjQoKEAgSGAI4AUIIdGhpbmtpbmcSDCyTo6G/gERsC7Z/RRoMvjk+8xuFyz+7PDFCIjAZXNSt9R12e+TQ4fE8NA5Sbe/gnhEBza/vHjua0uSOyLePbuoNqoyw5HetSoAgLtMqqgnn187ixE6GavhXop+0YAy39msmu13zQQfdMFet4YfPfsV88XQ2rxuFsbAe43ZnmjaYIZuYDzIRsZz51wG8KGMXUC9tgxPT49z3nZfBIr5C9cqEmvK/wW4dFtznvfbmVnwm2sWM6C1AHb9HyrxT1DrDRbJcvSlnXZXnMqw76kgBr55fFM3tB27SPMD3tZjOIKwahSwGybZpLr6x7GWY2clslTKo38M9EvDML+3d3gDs62T4LnHOOlCVtY8DWO8s4spfZn87pFABgJcq1Y8G08EdocA/EUI++xuu5JevByIXEs6gu9X5YhUZp5YkZmEvNL9THOeTzLHhw/fEd7rj1P4vRKI+WZfAZcf0So18Fi8Cn2VbobohvPch3ebYK1/TsMIiPp5qFcnvO/fHWPv5d/misKLtUnhVgTHz8Hn+NTOT/VlPBrQzprsFvvwGg640BUmEydhJg6R6fly4pCOvTccuDU+WrboILwEbkwpO8JMOKc7rzJoT87/M/EshWDf1EGbY3y+/CgwObcIQsVwlpEM7NGOQcBer4mSxTPyks4sn9nUktK5h5LajVCTdKDdJWgcr5N2040c8ZlzV4XcYMjCfSXCYa5PARGQwwUskrhQxyo7F/ru/tWnwu/Hb8sYVpVRryaThJUtx1IZjybB7IsAgpkWmsxPZat2IZCWjA2P1opO/R4JrxAstPbd89H3HlBTMJBcemiF7CdgPtGlWuhx2/OeLUe7s7qIVHLQB/bZxUky+UNxqUeNSaN/0WdOMLI/NMsWt269Fm/4u2buMFRgD/Ca3teKpKv7UCMY3Oqv5OkPW9EQrOPVEJRfyttZf6vzEA7tJj5rrnKAexzb3R3fEeRn+tvRp01m1Z7fym9uQmrTCaXdZeXhNiKybJjP9JI0OYsQRLi1VVdGUt1Bj8hTEjlKSmIx7ogWlt0ipaNrPnZBFNpVBVoNIe4ca3zQQNxzvhsbsb7jg+9B9DCEx1vayx8kW0lxnxM57LMxZngW4IweWAGLd2WuF44v4vBOunq9EEMXOeSZQjjIgoX4r+mOiOtxGRk8LLZbi04TF9b8C3Yg5DWu00NtXM9fJdrLdU9s38W6XXXYS6jKVVd5OCFQCoo1bOXrlOuVMMF/waN1kqK9676jzXmC3DQUE/MY/Wgm7IDeOD5bARPhI7+pacQZIG91nk6IYbO+EZJa7a+41uXJPL8kpIrALtxgBGKIVgc+UPLGJ+s4t0PXJQ8UKLVJxQR53ii+YtY6lq4Lp66sSOnkiCgX1KDhpgDOz6gbvLqrfweJY8GX+9knAKEeO921LY0gKnTY8W6yE8VQZeMhDXwwewOdc7ZBdSAvcGtH5z2fM0pJ5yBhWi58wl30A+nBJEfze3VYbgV2jCYBv3raUhUGSk/gguAiiyvwt/KBVSAvp1MdIZNrKQAaNVUrbACUzhWh48YsKBg+V6LfW3+16nzOdKXwgg39MxCwm3i0MZN1pWq9BMhuCaM763VbajSdffPnCI64kFzuResDOD4gywUh5Q0xprwc9lFVeonIZGxuWJtxY3Pv/LjgKn0t12NIgir9X2yXuYHl2x8ovI/41YFEHckgn9CcMdmAYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459891,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1037,
+   "total_tokens": 1337,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 295,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.010148,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.010148,
+    "upstream_inference_prompt_cost": 0.004148,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 295
+ }
+}

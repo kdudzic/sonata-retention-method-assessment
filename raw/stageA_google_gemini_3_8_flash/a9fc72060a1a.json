@@ -1,0 +1,94 @@
+{
+ "call_id": "a9fc72060a1a",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie mowilem ze stal dzisiaj ogarnie... 2-0 do przerwy i mlyn caly czas leci z dopingiem... stary zaraz druga polowa wbijajcie pod kasy jak ktos jeszcze nie wszedl no i git ogarniamy te 3 punkty na spokojnie dzisiaj!\n- ahaha no wlasnie wracam z roboty a na spoldzielczej znowu to samo... pelno tych ciapatych sie kreci pod zabka i tylko dra ryja caly wieczor... stary zyc sie odechciewa w tym miescie przez nich no i git zaraz chyba sam to ogarne bo juz wgl sie przejsc nie da...\n- no wlasnie widzial ktos co otworzyli na rogu przy spoldzielczej... ukrowy sklep z jakims ich zarciem stary... znowu pol osiedla sie tam bd krecic do nocy... nwm co oni mysla ale no i git zobaczymy jak dlugo postoi...\n- no wlasnie dopiero zjechalem z nocki... znowu pol palet rozwalone na rampie stary rece opadaja... kierownik sie pluje a sam nic nie widzi... ogarniamy browara i ide spac bo o 18 znowu to samo no i git...\n- no wlasnie o tym mowie stary... niech kurwy spierdalaja do siebie i tyle w temacie... nwm po co wgl ktos z nimi jeszcze gada... zaraz zbieram sie na przystanek i ogarniamy swoje no i git...\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "9dffaacfe1d69dc5359d3ad045cdcdfbb7dde9f8",
+ "response": {
+  "id": "gen-1791460096-gmGNrhuTQqwC8Me4lVeZ",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnim czasie autor",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1+YXwoz2ELC9wZVLwWq8lV7EmWdWO3iX/tajJtnUpwjOYEKoxi2r7Ze77/5SAV8w+UiFwloDFZVWUP9OgjGdrrUQCItrW8ZX23jGyNpgql7hRqP6WIDZ8wLbcg4xItkbv56veUS7lk/OeV9dEwlm9CGg9Skwqkv6NFIqGZFXJPkvVN/el6TC8eHVsOjFSpZ3LyI6yQLgOOtC3IT/aW4sNS+g5LKQYt/Fdo139MciDMCMNKA/w7AEV4y+bIUQhay1XppAmKmVl6/tIQDNWCcg5akVW8jHuruKvpNTIubNRulHYcVMl/iZ7bNaCvUmCMegw5EJBSqX5m4B3WsH2VtvM2M5yPg93LkP28q58njfBh2lkrul7Cgw5UVcRnQdM2EYentTmC6bAPRMTXulT8+piyNplYHvqbwvninMkdnRenKBY2Hr1ED8J8E4wtU7tFwcDm7gIMJCMBXNELqSoKo9h8p5NvFHe2S0xoYdcxs3odMlQaJDP5VB9I0wh2qq/+SoPhQimFfNn4hJk15pXi0UZmK20tWDTNVAIwKTaRZkYPtUA3pXgBr1UXnofR/JSINtZT5aJ/Rjh4+uR9yP0ZuiFH/QhQMHtq+EpYWIyaszx8TTIZxn/6z42JBsztMFLn128qLbchLs6+TxMRAPSvztl1kL/0aedl4PY1onCpeQNo/YqCOH6HhBcksAmt+SBLW0nmcU7G3iiOjRh7JJ2ZD1+2aUcUSocqknafUJVTRBb/osAazOUN/5Vb8Gz1EODUlXdhujFPzJ4rRiYnXCnMghBIvQFziSY+HHah0OKqy78ck05+33W6lE+6ioBS78safjJRpdWZujBf+tbyS8SuvHIqnE0Jz",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791460096,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 116,
+   "prompt_tokens": 436,
+   "total_tokens": 552,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 111,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.000762,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000762,
+    "upstream_inference_prompt_cost": 0.000327,
+    "upstream_inference_completions_cost": 0.000435
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 111
+ }
+}

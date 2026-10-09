@@ -1,0 +1,87 @@
+{
+ "call_id": "5b5e009b5349",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 2074285408
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Opiekuje się przedszkolakiem w domu w Oławie i prowadzi domowe sprawy; pisze w porze drzemki albo wieczorem.\n- zainteresowania: farby plakatowe, sadzonki ziół, wypieki z jabłkami\n- lokalny punkt odniesienia: ławka przy ulicy 1 Maja w Oławie\n- aktualna sytuacja życiowa: Planuje przemeblowanie dziecięcego pokoju i codziennie testuje nowe sposoby przechowywania zabawek.\n- sposób pisania: zdania: medium; interpunkcja: wielokropki i wykrzykniki; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: powtarza „mała rzecz, a cieszy”\n\nTopic for this post: gry i seriale\nConcrete angle: W środę po południu zajrzała do gry mobilnej tylko po codzienną nagrodę, a potem zapomniała wyjąć pranie z pralki. | mood: amused | opener: mid-thought | verbal tic in this post: no\nRegister: chatty\nTarget length: about 14 words\nTime of day: afternoon, Wednesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - skąd pionek w kieszeni? w srode przy sprzataniu stolu schowalem 😂\n  - i dopiero teraz mi sie przypomnialo, wczoraj przy planszowkach znow nie policzylismy pkt za ostatnia runde jadac miedzy montazami az sie usmialem\n  - ten boss znowu mnie zatrzymał... odłożyłam telefon, obiad stygnie 🙄 zobaczymy po drzemce\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "8e2ff4d99e9b8b2afa70e4b85b6e16469e36a9cc",
+ "response": {
+  "id": "gen-1791464933-ecVO7wSOjpF4bRyhnP2X",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: tylko odebrałam codzienną nagrodę w grze... a pranie dalej siedzi w pralce, właśnie sobie przypomniałam 😂🙈",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464933,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 38,
+   "prompt_tokens": 814,
+   "total_tokens": 852,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002008,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002008,
+    "upstream_inference_prompt_cost": 0.001628,
+    "upstream_inference_completions_cost": 0.00038
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

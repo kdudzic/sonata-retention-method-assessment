@@ -1,0 +1,87 @@
+{
+ "call_id": "2715b84946aa",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1973558588
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Uczy matematyki w szkole podstawowej w Nysie, a wpisy pisze wieczorem po przygotowaniu zajęć.\n- zainteresowania: łamigłówki liczbowe, pieczenie drożdżówek\n- lokalny punkt odniesienia: sklep papierniczy przy ulicy Celnej w Nysie\n- aktualna sytuacja życiowa: Przygotowuje szkolny kiermasz i stopniowo porządkuje materiały z poprzednich lat.\n- sposób pisania: zdania: long run-on; interpunkcja: poprawna, z licznymi przecinkami; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: zaczyna od „otóż”\n\nFor each of the 9 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with at most one small detail a real person would mention - sometimes a product name, sometimes a number or price, sometimes a place, occasionally a time; many occasions need no such detail at all). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. komunikacja i dojazdy - korek na obwodnicy / w centrum (morning commute, Saturday)\n2. jedzenie i gotowanie - śniadanie w biegu (evening, Saturday)\n3. remont i dom - sprzątanie, porządki sezonowe (morning commute, Saturday)\n4. pogoda - upał (early morning, Monday)\n5. gry i seriale - gra, trudny poziom / boss (late night, Wednesday)\n6. gry i seriale - wieczór z planszówkami (afternoon, Monday)\n7. pogoda - mgła rano (evening, Friday)\n8. praca i grafik - spotkanie albo szkolenie w pracy (evening, Monday)\n9. dzieci i rodzina - rodzeństwo, drobne sprzeczki dzieci (late morning, Sunday)\n\nReturn a JSON array of 9 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "889aead308e586420c0ef0ff564e18b8ab76773b",
+ "response": {
+  "id": "gen-1791464668-mNgdx16x8jaPnX06DsYo",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"W sobotę rano utknęła w korku w centrum Nysy, jadąc po papier na etykiety na szkolny kiermasz.\",\n    \"mood\": \"bored\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 18,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę wieczorem przypomniała sobie, że rano zjadła w biegu ostatnią drożdżówkę, którą zamierzała odłożyć na później.\",\n    \"mood\": \"amused\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 12,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę rano, przed wyjściem z domu, znalazła podczas sezonowych porządków pudełko starych kart pracy i zostawiła je otwarte na stole.\",\n    \"mood\": \"tired\",\n    \"opener\": \"complaint\",\n    \"length_words\": 24,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W poniedziałek wcześnie rano otworzyła okno przed wyjściem do szkoły i od razu poczuła gorące powietrze.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 9,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę późno w nocy rozwiązała zagadkę liczbową w grze, na której utknęła przez trzy wieczory.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"question\",\n    \"length_words\": 16,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek po południu podczas planszówek pomyliła kolejność ruchów i dopiero po chwili zauważyła, dlaczego jej plan nie działa.\",\n    \"mood\": \"amused\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 21,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W piątek wieczorem znalazła w torbie szalik, który rano zabrała przez mgłę, choć po drodze do szkoły wcale go nie założyła.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 14,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek wieczorem, po przygotowaniu zajęć, dopisała do notesu ustalenie ze szkolnego spotkania: na kiermasz trzeba przygotować osobne kartki z cenami.\",\n    \"mood\": \"mildly annoyed\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 32,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W niedzielę przed południem rodzeństwo pokłóciło się o to, kto pierwszy ułoży liczby na kartonikach, więc dała każdemu po połowie zestawu.\",\n    \"mood\": \"curious\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 19,\n    \"tic_fires\": false\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464668,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 753,
+   "prompt_tokens": 716,
+   "total_tokens": 1469,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.008962,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.008962,
+    "upstream_inference_prompt_cost": 0.001432,
+    "upstream_inference_completions_cost": 0.00753
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

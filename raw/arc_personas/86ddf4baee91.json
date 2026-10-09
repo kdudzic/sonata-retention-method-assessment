@@ -1,0 +1,86 @@
+{
+ "call_id": "86ddf4baee91",
+ "tag": "arc_persona_TA-02",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.7,
+  "max_tokens": 900
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You expand a short sketch of a fictional author into a full persona card for a synthetic corpus of Polish social-media posts. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Sketch (keep every trait it states; add only what is missing):\nosoba prowadząca mały handel online, wpisy o zamówieniach i reklamacjach, konkretny rzeczowy język, dużo liczb\n\nReturn ONE JSON object with exactly these fields:\n- \"grammatical_gender\": \"m\" or \"f\" (follow the sketch if it implies one; otherwise choose)\n- \"schedule_occupation\": one sentence: what fills their days and when they are free to post\n- \"interests\": array of 2-3 short concrete items consistent with the sketch\n- \"local_reference\": one concrete, invented-but-plausible local point of reference in a Polish town (stop, shop, club, park, corner)\n- \"writing_style\": object with \"sentence_length\" (\"short fragments\" | \"medium\" | \"long run-on\"), \"punctuation\" (short description), \"capitalisation\" (\"all lowercase\" | \"standard\" | \"random caps for emphasis\" | \"mostly standard, lowercase starts\"), \"typos\" (\"none\" | \"rare\" | \"frequent (missing diacritics, swapped letters)\"), \"abbreviations\" (\"none\" | \"some (nwm, jj, bd, wgl)\" | \"heavy\"), \"emoji\" (\"no\" | \"rare\" | \"frequent\") - all derived from the sketch's description of tone and style\n- \"verbal_tic\": one repeatable phrase or habit in Polish\n- \"posts_per_week\": integer 1-4\n- \"life_situation\": one sentence of ordinary circumstances consistent with the sketch (do not add any plot; background only)\n\nRules: Polish in free-text fields; STRICTLY no nationality, ethnic origin, religion, sexual orientation, political views, health conditions or disability in any field. Return only the JSON object."
+  }
+ ],
+ "prompt_sha1": "a974738a591031682c530ae86dba6f1e7b553763",
+ "response": {
+  "id": "gen-1791459671-hFzl14HL9ZSD1DyZMz3g",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"grammatical_gender\": \"f\",\n  \"schedule_occupation\": \"Rano pakuje i wysyła paczki ze swojego małego sklepu internetowego, w ciągu dnia odpowiada na wiadomości klientów i reklamacje, a wpisy dodaje zwykle wieczorem po 20:00 oraz w niedzielę po południu.\",\n  \"interests\": [\n    \"arkusze kalkulacyjne i porównywanie cenników kurierów\",\n    \"rowerowe wyjazdy po okolicy\",\n    \"kolekcjonowanie starych map miast\"\n  ],\n  \"local_reference\": \"paczkomat przy sklepie Żabka na rogu ulicy Kościuszki i Wąskiej w Radomiu\",\n  \"writing_style\": {\n    \"sentence_length\": \"short fragments\",\n    \"punctuation\": \"Kropki na końcu zdań, dużo cyfr, myślniki i dwukropki przy wyliczeniach, prawie bez wykrzykników.\",\n    \"capitalisation\": \"standard\",\n    \"typos\": \"none\",\n    \"abbreviations\": \"some (nwm, jj, bd, wgl)\",\n    \"emoji\": \"rare\"\n  },\n  \"verbal_tic\": \"Konkretnie: i tu liczby.\",\n  \"posts_per_week\": 3,\n  \"life_situation\": \"Prowadzi od trzech lat jednoosobowy sklep internetowy z domowego pokoju, który służy jej też jako magazyn, i mieszka w wynajmowanym mieszkaniu z kotem.\"\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791459671,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 529,
+   "prompt_tokens": 633,
+   "total_tokens": 1162,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006556,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006556,
+    "upstream_inference_prompt_cost": 0.001266,
+    "upstream_inference_completions_cost": 0.00529
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "8ac3bd039fdc",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... skonczylem zmiane i zaraz lece na mecz. kto juz stoi na spółdzielczej przy żabce? wezcie mi wode bo znow zapomnialem... oby dzis stal zgarnela trzy punkty. no i git!\n- no właśnie... wgl nwm kto ogarnia te przepisy o imigracji bo co chwile inne gadanie... stary dajcie jakies jasne zasady zamiast tego chaosu. wrócilem z magazynu i juz mam dosc czytania na dzis\n- no właśnie... stary widziales co otworzyli na rogu przy spółdzielczej? ukrowy sklep! wracalem z magazynu i dopiero szyld zobaczylem... jeszcze niedawno ten lokal pusty stal\n- no właśnie... dzis na magazynie skaner co chwile sie zawieszal i czlowiek tylko kilometry robil po nowy... nogi mi w tylek wlaza ale zmiana skonczona! teraz cos zjesc i kanapa... no i git\n- no właśnie... niech kurwy spierdalaja do siebie... ile mozna w kolko to samo stary... ja juz nie mam ochoty tego czytac ani znowu sie tlumaczyc\n- ahaha... ten mem z dziadkiem na ławce to ja po zmianie... niby nogi juz nie dzialaja ale jak chłopaki pisza ze orlik za godzine to nagle zdrowy... no i git ogarniamy!\n- no wlasnie... tak wiem jutro wieczorem... chujki przeprosza za wołyn... stary nie musisz mi tego pisac trzeci raz bo widzialem juz wiadomosc\n- ahaha... wrocilem z magazynu a tu juz grill odpalony pod blokiem... no i git bo nie chcialo mi sie gotowac. kielbasa jest tylko chleba znow nikt nie kupil... zaraz ogarniamy!\n- no wlasnie... ci nowi to musza miec problem ze wszystkim? czlowiek stoi z ekipa i gada a juz komus nie pasuje... stary dopiero sie pojawili a juz by cale osiedle po swojemu ustawiali\n- no wlasnie... ledwo ze zmiany zdazylem a juz trzeba na mecz leciec! ekipa pod zabka na spoldzielczej czeka... oby stal dzis cos ugrala bo ostatnio tylko gardlo zdarlem... no i git ogarniamy\n- no wlasnie... poszedlem po chleb i mleko a wrocilem z dwiema siatami... jeszcze plynu do naczyn zapomnialem. kumpel mowi ze przeciez zapisal... no zapisal stary ale lista zostala na stole\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "642c63f9577914bc35890e1eea4e184f30fe14c8",
+ "response": {
+  "id": "gen-1791460077-2koJNav5CJmG1K0hbBAM",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4LyVgNKOVT2oLqGVmo89F4ulYVnDMS402m_6dpdFUf8PJO8xkNzHr2S9QiHTYl5aRJVxaUqN_jIHgyyEWHqseEDgOwGg-SwMcP9FmnR1gAxXplHuV2Owbz8vCSJ3TLFCvqQLd4t0ebL2FPBDFPBs9hssjBQ8u93RcQhSmV7wtF9jBZ1x3c7RHClTa4GjzrQJJPRH72gXSZN6BlcgLqqcubFaEmDkFYo28IXNNfBHYzztXJVjsoaXcQ5KtwpzhaoaGJw0jyPebcN5kq7xpgc0rA4ALvY77qXe2u0KH1iHQg1wyr3mM93UmF51IjN9FaiE0SzEuoeTJJTF6SeO08sbtlkT6q0fOkY6U6v9c61oJfgzQCUTw_awDA9a6Nr1JspZlw_8f8-rhwzbFlUjI77JOE2xuvdeWY8cBm4_mkw3lZguZbkk7v567dagzxfm9eo10pq9XE8jrEzs8J1NjgVZzryrCPzXpqi6WTsMf5FdncZiLhUujl_tw5V7LVP4iYHj3gsv-hCb7ulK8T54-y2oxewyboK5MvCpBuS9ApB7sxHcpB27HKHMPBenUcOWuF4eaDy4Q_yyAPsMXpuI6ip7wpTyKapOwvbZs4aMPX3_vkb1XICCF0iDhuQ_med3NKBT3yjiXMpIYc0z9Bznl6mxE3l08z0J3sJ5A0j_pVdUPF028SbY4sdqThZQz419NviLr0zC7cCswYQ56VlE3IsL4lSKwTdx9lixLjY9DL5Okhb71aDgvahxoPe8cQ2VpaqxT75ijXFb0__eqfGVeZJFkODBxJNrMqBh_Qs831t2AIP9uIaEIvNx5HloFBNvoNIM9l4m70je21VWVabCf_hE7staxP_pspP5iTN1b7nlGwZfkgVfwI4Q1tsxGEzdBGvhrrU9cII8UJYGA48oEklJZ-_pxn-UWwsd7EfgWihwuPaeIQ-GdznbDTcr_vW4wKGn9QaWfl8fMb0__aHQ77Vk5EVOFJcES1SxhnUkCskSZdn3Yk9jV6ZORkeF__QL7e4OtLVUc0etqP0VD5yZZDteoEAhoEyJcVpOSCmKRLSt02irrsJ1aywIVLL5NIP4puvvs6zZwFCIzypk6sQuJ_QieFwFYwB2LDspEVUN_GbhHdmjx3XyG6w7h81nJnrTkEuWyBKIjw0ijKj2n2bsQbgddqw_Aa5iPWurXXETnSjy-789rsNtVLg5uuKPrYzQq3oR8iwlMBt4wMEZIl1cfH6cG5jLKsm6MCkZ1ZgqY54bAhBSMO3f3vmqP8LIXFkz15H7k9hGYoiabaL-8Odn0Vo_iH3AxvTm2wuxrleGXt_GdDkMh_0_EjfpOiUqro3AAbycKRopMu8gvSJto3K1nl-E_OmK_4QM56SrzvUeYmm98oTF5GkH57dWUihy0BaqLhCtx7TMEqb3xEQYKngsO3jxDVkiZJGaJr5N7KP7kA-5ferV-YdVdN3gpJHjBcM8i0PQX-qlFn8I7MMWu0HC1UUzvLODyC-gwrn50IRDl3WzO3WFE4DSGaJYMgNLDlQffuKWJ80qCTjuSraElRusSMxJsd5Zkng_w6CfCw0AGBNlz0NcTvDCI4dB8NBqLALjVhl5hR9ABexaxV_Z3np8D0HQWz7pggx41SO_2Ecy5QpcRdPnnbkjkCOTv7mJVeDS9AOv9FrFtC24sszuedYQMeseAbEq_XVVQsKWIBrfNjhz7NExdHmbhYrCAfmQDXr_c4-uw3EyiasJMUSI7kf1g-_bUduSC-33ipVSnIgVOl71DwcE-Hg2ZxAtRCqtmyCSjDuuKachPlDYmBcdqbpg9JSdLu5PTtXNk1nKRCOvMJFT8a9K3bMlVewd7L_T5eEqRbozPBsXxrOd24bsU0BKC1VXluDjD09l_fm2nP4TzoUt2wInMxR70hkGSFwvUe4I6M7XG7fgyqzKwpmZRcb6aiE2y-LmIEFXgNTNzudfprUzfX4hwPxTkBiHkdOVYQ2tkJr8yyI.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0e3597ba73c7ae89016ac782ef4b4487d1a3e33369a09a4330",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460077,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 705,
+   "total_tokens": 825,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01305,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01305,
+    "upstream_inference_prompt_cost": 0.00705,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 120
+ }
+}

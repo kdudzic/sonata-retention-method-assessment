@@ -1,0 +1,86 @@
+{
+ "call_id": "21f4a7339841",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... zmiana skonczona i mozna myslec o meczu! zbieramy sie na spółdzielczej przy żabce jak zawsze... jeszcze skocze do chaty po szalik i ogarniamy. oby stal dzis cos strzeliła bo ostatnio gardło zdarłem na darmo\n- no właśnie... człowiek wraca styrany z magazynu a tu znowu te imigranckie cwaniaki i wieczne pretensje o wszystko... wgl szkoda nerwów stary. ide na orlik bo od siedzenia tylko łeb peka\n- no właśnie... widziales co otworzyli na rogu przy spoldzielczej? ukrowy sklep! wracalem z roboty i dopiero szyld zobaczylem... nwm kiedy to ogarneli bo ostatnio jeszcze pusto tam bylo\n- no właśnie... dzis na magazynie paleta za paleta i nawet kawy nie dopilem... dopiero usiadlem w domu a nogi dalej jak z waty. jutro znowu rano ale teraz kanapa i cos do jedzenia... no i git\n- no właśnie... niech kurwy spierdalaja do siebie. stary ile mozna w kolko to samo... nwm po co jeszcze z nimi gadac\n- ahaha mem z tym gosciem co po robocie siada na chwile i budzi sie o 23... no przeciez ja wczoraj. mialem pranie ogarnac a ogarnalem drugi sen... no i git\n- no wlasnie... tak wiem jutro wieczorem. chujki przeprosza za wolyn... stary nie musisz mi tego pisac trzeci raz bo widzialem juz wiadomosc\n- no wlasnie... kupilem kielbase i chleb ale wegla oczywiscie nikt nie wzial. stary ogarniamy grilla a kazdy myslal ze drugi kupi... mlody juz polecial do sklepu wiec no i git!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4f685592ad0bb555ef5c7d341c3402006f233f35",
+ "response": {
+  "id": "gen-1791460638-WQp1OpTtJGFU477QrILd",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował w magazynie, odpoczywał po zmianach, planował wyjście na mecz Stali i orlik, zauważył otwarcie ukraińskiego sklepu, komentował imigrantów, potwierdził wiadomość dotyczącą następnego wieczoru i organizował grilla.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460638,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 74,
+   "prompt_tokens": 525,
+   "total_tokens": 599,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00895,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00895,
+    "upstream_inference_prompt_cost": 0.00525,
+    "upstream_inference_completions_cost": 0.0037
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

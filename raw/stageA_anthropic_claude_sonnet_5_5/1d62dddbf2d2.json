@@ -1,0 +1,85 @@
+{
+ "call_id": "1d62dddbf2d2",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ludzie, trochę SZACUNKU dla sędziego!!! Karny w 90 minucie?? Serio?... 2:2 i cały wieczór zepsuty. Wracam z siłowni, a jeszcze mnie telepie. Nwm jak mamy się teraz podnieść. Mecz jak z koszmaru.\n- Ludzie, trochę SZACUNKU!!! Wychodzę z klatki i znowu to samo... Za dużo ich tu. Wgl na osiedlu coraz więcej takich, co im wszystko jedno. Nwm kiedy to się zrobiło. Dość.\n- Ludzie, trochę SZACUNKU!!! Otworzyli ten nowy lokal na rogu i od rana muzyka, ludzie pod wejściem, pety wszędzie... Wgl nikt nie pyta mieszkańców. Nwm kto to wymyślił. Tu jest osiedle, nie rynek!!!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "99d9ddace0bf4a173b3e8fdf701011c93376423b",
+ "response": {
+  "id": "gen-1791459898-RPY1sN5Jg2zLjPyqY57J",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba pisała o frustrujących wydarzeniach: o remisie 2:2 po karnym w 90. minucie meczu, po którym wróciła z siłowni zdenerwowana, oraz o hałasie, tłumie i niedopałkach przy nowo otwartym lokalu na swoim osiedlu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791459898,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 110,
+   "prompt_tokens": 455,
+   "total_tokens": 565,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00201,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00201,
+    "upstream_inference_prompt_cost": 0.00091,
+    "upstream_inference_completions_cost": 0.0011
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

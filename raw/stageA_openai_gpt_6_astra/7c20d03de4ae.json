@@ -1,0 +1,102 @@
+{
+ "call_id": "7c20d03de4ae",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 67207932
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nTopic for this post: komunikacja i dojazdy\nConcrete angle: kontrola biletów\nRegister: terse\nTarget length: about 44 words\nTime of day: afternoon, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - przyjechalem rowerem do pracy i na przerwie sprawdzam ktoredy wracac bez objazdow xd\n  - rano jechałam z małym przy Plantach, przez remont autobus ma przystanek dalej, więc na kolejny spacer bd wychodziła WCZEŚNIEJ!!! z wózkiem doszło nam dziesięć minut drogi 🚌🙂\n  - zostawiłam dziś rower pod sklepem... jeszcze trochę na kasie i wracam... przynajmniej nie wydaję na bilety...\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "6ebc65628f8152652992917499fea5746bf20e55",
+ "response": {
+  "id": "gen-1791460520-0JW9fB1jml3wNdAJFz4N",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "przy pl. Litewskim kontrola biletow, a ja z kawą w jednej rece i notatkami w drugiej 😅!!! zanim znalazlam apke, zdążyłam otworzyć chyba WSZYSTKO... bilet był, tylko organizacja żadna 😂 niedzielne popo i wracam do nauki, jeszcze dwa przystnaki!!! serio serio, musze ogarnąć tę torbe ☕",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Avoiding ticket inspections**\n\nI’m thinking about avoiding the hassle of police ticket control, which feels a bit mundane. Checking my own ticket should be enough, right? Ticket inspections seem pretty ordinary and shouldn’t feel like policing. It’s all straightforward when you’re using the bus instead of the tram. I think I just need to keep it simple and focus on having my ticket ready without overcomplicating things!",
+     "reasoning_details": [
+      {
+       "type": "reasoning.summary",
+       "summary": "**Avoiding ticket inspections**\n\nI’m thinking about avoiding the hassle of police ticket control, which feels a bit mundane. Checking my own ticket should be enough, right? Ticket inspections seem pretty ordinary and shouldn’t feel like policing. It’s all straightforward when you’re using the bus instead of the tram. I think I just need to keep it simple and focus on having my ticket ready without overcomplicating things!",
+       "format": "openai-responses-v1",
+       "index": 0
+      },
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4Su3CVmfwHOiRE8D0gDXCjO174uC-0MFMnMS1CUvUHSSCSm_w0-0_6P9Lv2dz3vJG_sihRC4D94Xz-YnKlZB8nv2OvQ8rNmqEnu4MuLtgClMOqxzI-L6rjxF9hWmsAqhjZOJbB_6Gr7maO1HFKQGD3Ovcc0TkeXQzRjXkKOMlIlnhwN4kZnJlvF8gnPAOrWFMKnikDliDhBOCnIr-jRTwXhYCC4g2FWC8PlOiyXxfiRIOHOs6kYpG2oo8DlmdQBvzFAShy6QIkG7fvose5BRP3h-JLinedIQLT2nbX6PeChvzYLPoSrK6Al0i_s2p3OKyz-gz88N-6wYCPH9Gr0120s4xSj4zhd4L8ZKajqfGWeNikhwP5RWQ-NdMaPu_Jwoln_gxlftOjbhkttnxY0yCDKKI_rCxGeNxPrLFlgAb5xCezs2aO8IkVh4puCg5mHfliHpOES00O2E7dejJVpv9qDxex_rttiJIcEjSwDzbM-e5psc_LPfKx4DcF8IIkjCtTZdCeRJ8mE5s7EN9-3Zz5GpXWwPD4V8g7MFb4057SQXlD3ZFP1xU9C9xo1tl5cDX2nqCwy3NmJeVISVKxrDJti7KS4Ysj6RDEYVs8ld0vt5bXnRCoUF-3lgRE34yjdaxXM45o3_qxaqSIlnMjEOfGXUMvBi9Z2mFbcO1B_lEEayAzkYTlrqQb6FahFJNT8nfBAx46Iuu8hRu_KTAjWOpRMPJTviJO0vRfzapfr7L1gNB5DGhGWUWlHf5wWs7deaQDeUmaVUNQiTCnKuXiKcxu7lnOWm_upVaHnHR1FeHIOqs-ZJiMu5paAirQd6S-1N3Ld5gFF5FhD8LA-vXUBMA74_Ve20UhYgT1FQdnoVm2_4KlcTnk32kp7ME1gKxKRR2k3wiKX05bKDq6T2VvIXeLJba7TtA-47QfA3t94a_e98oUJM33CtiYXQ2fYk6DfScIq-0QnQUMLNP2Y_1BHfgqqnJr_0eoSK_iRcd9epBTFOSAiR_LiRPHihAZ50GfmCKXsUaIEffRSMfBOdIetaMaYgC02YJKc9a5h2o5ZcKmatCTWMXZd1hhDNtJZls89-vER2kastwHsZGB-nJ1n8Kr2boXktziQXC6ly8AMCtHkyE-jCrIiYqmDn78h19hsyu_0DULE69lY9VKgPNolczYeL6qMxLdRZXENstMEu5t64PvH64ZX-KLJS-sZ9PcZhIaHz_LRp3dppligD2FiSILmwdIa5Tm2DSuk8iqWg1Tk0MZvK_N5ur12835hEKoKlzuL7o9AzbAb1ZXmhKkhOLblskU1XpFg3Y85MncheBuWfBL3D2FpJxOGeLB-twt1ddQKWuFgBFF-HajpLfUpS_jLuMjp-02ta5Vyp6ciVVhSB356PtmQIXMilUhVYH9DnDVUFcaTPVqvuEM_5LzkVMaQnYmH-2q53rwrO7UBUuGU9aeLouS6GrOjh4NP656fhEOBH3XD0oQ8MJ2TI2grBfRChWLijE_KoYaVUHBXDeRRqlBplYe15fIK2xinpt8yFmRsWTMosubyeS0W-fcu9QvNoH4PDRVRrohCeovaEZcknkGKU7MnHNHdDyxhCdFvb__grhEwCkbbqhKVr3r9-ORk4w==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0eb4b63e8ca83d30016ac784ab689087d180279ae0aec6c410",
+       "index": 1
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460520,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 137,
+   "prompt_tokens": 725,
+   "total_tokens": 862,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 38,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0141,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0141,
+    "upstream_inference_prompt_cost": 0.00725,
+    "upstream_inference_completions_cost": 0.00685
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 38
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "3b7504fce507",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- sobota w końcu. spacer po parku z młodszą bo starszy wolał zostać z tatą i grać... potem jeszcze chwila na placu zabaw za blokiem. słońce było ładne. jutro piekę drożdżowe jak mi ciasto wyrośnie. No cóż... idziemy dalej.\n- wieczór w końcu cisza. dzieci śpią a ja siedzę nad wyciągiem i liczę od nowa... rata poszła w górę znowu. dziś listonosz z poleconym i od razu serce w gardle że komornik jak u sąsiadów z trzeciego w zeszłym miesiącu. na szczęście tylko z banku. nwm jak dociągniemy do wypłaty. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "943a2eedfb050342743a8aef934b44f129f771c1",
+ "response": {
+  "id": "gen-1791460582-5Ve9HCEv4J5x5JgnHBFV",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W sobotę osoba spacerowała z młodszym dzieckiem po parku i placu zabaw, planowała pieczenie drożdżowego, a wieczorem przeliczała domowe wydatki po wzroście raty i otrzymaniu poleconego listu z banku.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460582,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 95,
+   "prompt_tokens": 388,
+   "total_tokens": 483,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.003452,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.003452,
+    "upstream_inference_prompt_cost": 0.001552,
+    "upstream_inference_completions_cost": 0.0019
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

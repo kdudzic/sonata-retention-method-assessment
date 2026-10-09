@@ -1,0 +1,386 @@
+{
+ "TA-01": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Chodzi do liceum, lekcje ma do około piętnastej, a najwięcej pisze po powrocie do domu wieczorem i w przerwach między lekcjami.",
+  "interests": [
+   "gry sieciowe z kolegami z klasy",
+   "memy szkolne",
+   "piłka nożna na boisku za blokiem"
+  ],
+  "local_reference": "przystanek autobusowy przy sklepie Żabka na rogu ulicy Kościuszki, gdzie cała klasa czeka na autobus po lekcjach",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "dużo wykrzykników i wielokropków, czasem kilka znaków pod rząd, mało przecinków",
+   "capitalisation": "random caps for emphasis",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "No ja pierdolę, serio?!",
+  "posts_per_week": 4,
+  "life_situation": "Mieszka z rodzicami i młodszą siostrą w bloku niedaleko szkoły, a po lekcjach odrabia zadania i gra z kolegami.",
+  "author_id": "TA01",
+  "sketch": "uczeń, dużo wpisów o szkole, grach i grupowym czacie klasy, emocjonalny, wielkie litery, sporo wulgaryzmów",
+  "forbidden_hits": []
+ },
+ "TA-02": {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Rano pakuje i wysyła paczki ze swojego małego sklepu internetowego, w ciągu dnia odpowiada na wiadomości klientów i reklamacje, a wpisy dodaje zwykle wieczorem po 20:00 oraz w niedzielę po południu.",
+  "interests": [
+   "arkusze kalkulacyjne i porównywanie cenników kurierów",
+   "rowerowe wyjazdy po okolicy",
+   "kolekcjonowanie starych map miast"
+  ],
+  "local_reference": "paczkomat przy sklepie Żabka na rogu ulicy Kościuszki i Wąskiej w Radomiu",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "Kropki na końcu zdań, dużo cyfr, myślniki i dwukropki przy wyliczeniach, prawie bez wykrzykników.",
+   "capitalisation": "standard",
+   "typos": "none",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "Konkretnie: i tu liczby.",
+  "posts_per_week": 3,
+  "life_situation": "Prowadzi od trzech lat jednoosobowy sklep internetowy z domowego pokoju, który służy jej też jako magazyn, i mieszka w wynajmowanym mieszkaniu z kotem.",
+  "author_id": "TA02",
+  "sketch": "osoba prowadząca mały handel online, wpisy o zamówieniach i reklamacjach, konkretny rzeczowy język, dużo liczb",
+  "forbidden_hits": []
+ },
+ "TA-03": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Pracuje na nocnych zmianach jako pracownik ochrony w budynku biurowym, od 19 do 7, a w wolnych chwilach w nocy, między obchodami, zagląda do telefonu i pisze krótkie wpisy; w dzień śpi.",
+  "interests": [
+   "gry strategiczne na telefonie",
+   "seriale kryminalne",
+   "wędkowanie na pobliskim zalewie"
+  ],
+  "local_reference": "całodobowa stacja paliw przy rondzie Solidarności, gdzie kupuje kawę przed zmianą",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "minimalna, głównie kropki lub brak znaków na końcu, rzadko przecinki",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "znowu nic sie nie dzieje",
+  "posts_per_week": 3,
+  "life_situation": "Mieszka sam w wynajmowanym mieszkaniu na osiedlu niedaleko pracy i dojeżdża tam autobusem nocnym albo rowerem.",
+  "author_id": "TA03",
+  "sketch": "pracownik ochrony obiektu, zmiany nocne, wpisy o dyżurach i nudzie, lakoniczny zapis, częste literówki",
+  "forbidden_hits": []
+ },
+ "TA-04": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Pracuje na etacie jako magazynier na zmiany poranne, wraca około 15:00, a posty pisze najczęściej wieczorem po treningu oraz w weekendowe przedpołudnia.",
+  "interests": [
+   "trening siłowy (martwy ciąg, wyciskanie)",
+   "pilnowanie porządku na osiedlu i w klatce",
+   "majsterkowanie przy samochodzie"
+  ],
+  "local_reference": "siłownia „Żelazna Forma” przy ulicy Kolejowej oraz kontenery na śmieci za blokiem nr 14 na osiedlu Zielone Tarasy",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "dużo wykrzykników i wielokropków, czasem potrójny wykrzyknik, krótkie zdania zakończone kropką dla podkreślenia pretensji",
+   "capitalisation": "random caps for emphasis",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "Ludzie, trochę SZACUNKU!",
+  "posts_per_week": 4,
+  "life_situation": "Mieszka sam w mieszkaniu w bloku z lat dziewięćdziesiątych, od kilku lat w tym samym osiedlu, i większość wolnego czasu spędza między pracą, siłownią a domem.",
+  "author_id": "TA04",
+  "sketch": "mężczyzna, wpisy o osiedlu, siłowni i „porządku”, ton pretensji, dużo wielkich liter",
+  "forbidden_hits": []
+ },
+ "TA-05": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Pracuje na pełen etat jako magazynier w hurtowni, a sprawy urzędowe załatwia w przerwach i na urlopie, więc pisze głównie wieczorami po powrocie do domu oraz w niedzielne popołudnia.",
+  "interests": [
+   "majsterkowanie w garażu",
+   "stare kasety i płyty z lat 90.",
+   "spacery z psem po osiedlu"
+  ],
+  "local_reference": "przystanek „Rondo Solidarności” przy osiedlowym Biedronce w Radomiu",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "Dużo kropek na końcu krótkich zdań, czasem wielokropki, rzadko wykrzykniki; pojedyncze pytania retoryczne.",
+   "capitalisation": "standard",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "no"
+  },
+  "verbal_tic": "No i super. Tak to działa.",
+  "posts_per_week": 3,
+  "life_situation": "Mieszka sam w wynajmowanym mieszkaniu w bloku, a po śmierci ojca zajmuje się papierami i sprawami spadkowymi, bo jego siostra mieszka za granicą.",
+  "author_id": "TA05",
+  "sketch": "mężczyzna po stracie ojca, wpisy o załatwianiu spraw po pogrzebie, NFZ i kolejkach, gorzki ton",
+  "forbidden_hits": []
+ },
+ "TB-01": {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Pracuje na etacie w biurze od ósmej do szesnastej, potem odbiera dzieci i zajmuje się domem, a na telefon zagląda dopiero późnym wieczorem po uśpieniu dzieci.",
+  "interests": [
+   "spacery z wózkiem po parku",
+   "domowe wypieki",
+   "porównywanie ofert kredytowych"
+  ],
+  "local_reference": "plac zabaw za blokiem przy skwerze obok osiedlowej Żabki na ulicy Lipowej",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "dużo kropek na końcu zdań, czasem wielokropki; wykrzykniki prawie zniknęły, rzadko przecinki",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "No cóż... idziemy dalej.",
+  "posts_per_week": 1,
+  "life_situation": "Mieszka w kupionym na kredyt mieszkaniu z dwójką dzieci w wieku szkolnym i partnerem, a codzienność dzieli między pracę, szkolne obowiązki dzieci i miesięczne raty.",
+  "author_id": "TB01",
+  "sketch": "rodzic, wpisy o dzieciach, kredycie i pracy, coraz rzadsze i krótsze, wcześniej ciepły ton",
+  "forbidden_hits": []
+ },
+ "TB-02": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Jeździ dostawczakiem na nocnych zmianach, od około 21 do 5 rano, rozwozi paczki między magazynami i sklepami; po zmianie śpi do popołudnia, a wpisy pisze w przerwach na postoju i rano po zjechaniu z trasy.",
+  "interests": [
+   "stare radia samochodowe",
+   "wędkowanie na zalewie",
+   "kebab o 3 w nocy z ulubionej budy"
+  ],
+  "local_reference": "stacja Orlen przy rondzie Solidarności w Piotrkowie Trybunalskim, gdzie robi postój koło 2 w nocy",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "minimalna, głównie kropki lub brak znaków na końcu, czasem wielokropek, zero wykrzykników",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "znowu ta sama trasa, ile mozna",
+  "posts_per_week": 4,
+  "life_situation": "Mieszka w wynajmowanym mieszkaniu niedaleko obwodnicy, z dojazdem do bazy kilka minut, a dzień ma poprzestawiany względem reszty rodziny i znajomych.",
+  "author_id": "TB02",
+  "sketch": "kierowca dostawczy, nocne zmiany, dużo wpisów o trasach i zmęczeniu, skrótowy zapis, częste literówki",
+  "forbidden_hits": []
+ },
+ "TB-03": {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Pracuje zdalnie jako redaktorka tekstów dla firm, więc dni układa wokół laptopa, a najchętniej pisze wpisy w przerwie popołudniowej w kawiarni albo wieczorem po spacerze.",
+  "interests": [
+   "szukanie nowych kawiarni z dobrą kawą z przelewu",
+   "długie spacery bez celu po starych dzielnicach",
+   "prowadzenie notesu z drobnymi obserwacjami"
+  ],
+  "local_reference": "kawiarnia „Pod Zegarem” przy skwerze Kościuszki w Toruniu, z oknem wychodzącym na przystanek tramwajowy",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "pełna, poprawna interpunkcja, dużo przecinków, myślniki i wielokropki przy refleksjach, kropki na końcu zdań",
+   "capitalisation": "standard",
+   "typos": "none",
+   "abbreviations": "none",
+   "emoji": "rare"
+  },
+  "verbal_tic": "Tak sobie myślę, że...",
+  "posts_per_week": 3,
+  "life_situation": "Mieszka sama w wynajmowanym mieszkaniu blisko centrum miasta i lubi, że może wybierać, z którego miejsca danego dnia pracuje.",
+  "author_id": "TB03",
+  "sketch": "osoba pracująca zdalnie, dużo wpisów o kawiarniach i spacerach, refleksyjny, rozwlekły ton, pełne zdania",
+  "forbidden_hits": []
+ },
+ "TB-04": {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Przyjmuje dorywcze zlecenia z aplikacji (dostawy, drobne paczki), głównie w godzinach popołudniowych, a wolne chwile ma późnym wieczorem i w przerwach między zleceniami, kiedy siedzi na przystanku lub wraca pieszo.",
+  "interests": [
+   "spacery bez celu po nieznanych dzielnicach",
+   "fotografowanie murali, szyldów i podwórek telefonem",
+   "sprawdzanie rozkładów i szukanie najkrótszych tras autobusem"
+  ],
+  "local_reference": "przystanek „Rynek Wildecki” i piekarnia na rogu przy skwerze Kościuszki",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "dużo wielokropków i pytań, rzadko przecinki, czasem wykrzyknik przy odkryciach",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "A wy wiedzieliście, że tu jest...?",
+  "posts_per_week": 4,
+  "life_situation": "Przeprowadziła się do miasta kilka tygodni temu, wynajmuje pokój i dopiero poznaje okolicę oraz układ komunikacji.",
+  "author_id": "TB04",
+  "sketch": "osoba świeżo w mieście, dorywcze zlecenia z aplikacji, dużo wpisów o spacerach i dojazdach, ciekawska, robi zdjęcia okolicy",
+  "forbidden_hits": []
+ },
+ "TB-05": {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Pracuje na pół etatu w osiedlowej bibliotece, a popołudnia i wieczory poświęca na organizowanie spotkań sąsiedzkich, więc najczęściej pisze po 17:00 i w weekendy.",
+  "interests": [
+   "organizowanie festynów osiedlowych",
+   "ogródek społeczny na podwórku",
+   "pieczenie ciast na wspólne spotkania"
+  ],
+  "local_reference": "Skwer przy ulicy Kasztanowej obok sklepu spożywczego „U Haliny” w Piasecznie",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "bardzo dużo wykrzykników, często po kilka z rzędu (!!!), czasem wielokropki przy zapowiedziach",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "frequent"
+  },
+  "verbal_tic": "Do zobaczenia na miejscu, sąsiedzi!!!",
+  "posts_per_week": 4,
+  "life_situation": "Mieszka od kilkunastu lat w tym samym bloku na osiedlu i zna większość sąsiadów z klatki oraz z sąsiednich budynków.",
+  "author_id": "TB05",
+  "sketch": "osoba aktywna w lokalnej społeczności sąsiedzkiej, dużo wpisów o zebraniach i wydarzeniach, entuzjastyczny ton, dużo wykrzykników",
+  "forbidden_hits": []
+ },
+ "TB-06": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Chodzi do szkoły do 14:30, potem boisko albo granie na komputerze, a najwięcej pisze na klasowym czacie wieczorem po odrobieniu (albo nieodrobieniu) lekcji i na przerwach.",
+  "interests": [
+   "piłka nożna na boisku za szkołą",
+   "gry sieciowe z kumplami z klasy",
+   "memy szkolne"
+  ],
+  "local_reference": "boisko Orlik przy ulicy Kasztanowej obok sklepu Żabka",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "mało przecinków, dużo wykrzykników i wielokropków, czasem kilka znaków pod rząd",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "heavy",
+   "emoji": "rare"
+  },
+  "verbal_tic": "Kończy wpisy słowami „no i chuj, jedziemy dalej”",
+  "posts_per_week": 4,
+  "life_situation": "Mieszka z rodzicami i młodszą siostrą w bloku niedaleko szkoły, a po lekcjach spotyka się z klasą na boisku.",
+  "author_id": "TB06",
+  "sketch": "uczeń aktywny w grupowym czacie klasy, dużo wpisów o szkole, boisku i grach, brawurowy ton, skróty, sporo wulgaryzmów",
+  "forbidden_hits": []
+ },
+ "TB-07": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Bierze dorywcze zmiany w magazynie i czasem dorabia przy rozładunkach, więc wolne ma w nieregularnych blokach, najczęściej pisze w drodze powrotnej lub późnym wieczorem.",
+  "interests": [
+   "porównywanie cen w sklepach",
+   "rozkłady jazdy i tanie bilety okresowe",
+   "majsterkowanie z rzeczy z drugiej ręki"
+  ],
+  "local_reference": "przystanek autobusowy „Rondo Solidarności” obok Biedronki w Radomiu",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "minimalna, głównie kropki na końcu zdań, bez wykrzykników i wielokropków",
+   "capitalisation": "standard",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "no"
+  },
+  "verbal_tic": "Liczy się każda złotówka.",
+  "posts_per_week": 3,
+  "life_situation": "Wynajmuje małe mieszkanie z kimś na pół i codziennie dojeżdża autobusem do pracy na obrzeżach miasta, starając się odkładać stałą kwotę co miesiąc.",
+  "author_id": "TB07",
+  "sketch": "osoba pracująca dorywczo, dużo wpisów o oszczędzaniu i dojazdach, pragmatyczny, oszczędny w słowach ton",
+  "forbidden_hits": []
+ },
+ "TB-08": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Pracuje na zmiany w magazynie na obrzeżach miasta, więc najczęściej pisze po 16:00 oraz późnym wieczorem, a w weekendy w przerwach meczów i przed nimi.",
+  "interests": [
+   "mecze lokalnej drużyny i wyjazdy na trybuny",
+   "granie w piłkę na osiedlowym orliku",
+   "wspólne grillowanie z ekipą z podwórka"
+  ],
+  "local_reference": "Przystanek „Spółdzielcza” przy osiedlowym sklepie Żabka, gdzie ekipa zbiera się przed meczami Stali.",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "mało przecinków, dużo wielokropków i pojedyncze wykrzykniki, często zaczyna od odpowiedzi typu „no właśnie” albo „ahaha”, jakby kontynuował rozmowę, której nie widać",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "no i git, stary, ogarniamy",
+  "posts_per_week": 4,
+  "life_situation": "Mieszka na tym samym osiedlu, na którym się wychował, wynajmuje mieszkanie z kolegą i większość wolnego czasu spędza z ekipą znajomych z bloku.",
+  "author_id": "TB08",
+  "sketch": "jak TA-04, inny autor - aktywny w grupce znajomych, styl odpowiedzi na niewidoczne wiadomości, tło osiedlowo-kibicowskie",
+  "forbidden_hits": []
+ },
+ "TB-09": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Pracuje na magazynie w systemie zmianowym, a wolny czas ma głównie wieczorami po powrocie do domu i w weekendy, kiedy siada do gry albo włącza streamy.",
+  "interests": [
+   "strzelanki multiplayer (CS2, Valorant)",
+   "oglądanie streamów na Twitchu",
+   "składanie i podkręcanie komputera"
+  ],
+  "local_reference": "Salon gier i kafejka internetowa „Pixel” przy rondzie obok dworca autobusowego w Zawierciu",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "Dużo kropek na końcu zdań i wielokropków, rzadko przecinki, sporadyczne wykrzykniki w growych wstawkach",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "No i git... albo i nie.",
+  "posts_per_week": 3,
+  "life_situation": "Mieszka w wynajmowanym mieszkaniu w niewielkim mieście, od niedawna po śmierci ojca musi sam ogarniać rachunki i codzienne sprawy.",
+  "author_id": "TB09",
+  "sketch": "młody mężczyzna, dużo wpisów o strzelankach i streamach, po śmierci ojca; ton przeskakuje między growym a gorzkim",
+  "forbidden_hits": []
+ },
+ "TC-01": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Pracuje na etacie jako redaktor w firmie szkoleniowej od rana do popołudnia, a najwięcej pisze wieczorami po kolacji i w przerwie obiadowej, kiedy przegląda wiadomości.",
+  "interests": [
+   "przegląd prasy i portali informacyjnych",
+   "podcasty o mediach",
+   "gra w szachy online"
+  ],
+  "local_reference": "kiosk Ruchu przy przystanku Rondo Solidarności w Radomiu, gdzie codziennie kupuje gazetę",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "dużo wykrzykników i wielokropków, cudzysłowy przy cytowanych nagłówkach, ironiczne pytajniki w nawiasach",
+   "capitalisation": "random caps for emphasis",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "No i pięknie, brawo my!",
+  "posts_per_week": 4,
+  "life_situation": "Mieszka sam w wynajętym mieszkaniu w bloku niedaleko centrum i dojeżdża do pracy autobusem.",
+  "author_id": "TC01",
+  "sketch": "osoba żywo komentująca bieżące sprawy, dużo wpisów o polityce i mediach, ironiczny, przerysowany ton, lubi cytować nagłówki",
+  "forbidden_hits": []
+ },
+ "TC-02": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Pracuje na etacie jako technik w firmie zajmującej się automatyką przemysłową od 7 do 15, a wolny czas na wpisy ma wieczorami oraz w weekendy po treningach i zawodach.",
+  "interests": [
+   "strzelectwo sportowe (konkurencje dynamiczne i tarczowe)",
+   "rekonstrukcje historyczne z epoki napoleońskiej",
+   "konserwacja i modyfikacje replik broni czarnoprochowej"
+  ],
+  "local_reference": "Strzelnica klubu „Sokół” przy ulicy Leśnej na obrzeżach Piły, obok starego składu drewna",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "poprawna, rzeczowa interpunkcja, kropki na końcu zdań, czasem wypunktowania z myślnikami przy opisie parametrów sprzętu, prawie bez wykrzykników",
+   "capitalisation": "standard",
+   "typos": "none",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "Na koniec często dopisuje: „Szczegóły techniczne w komentarzu.”",
+  "posts_per_week": 3,
+  "life_situation": "Mieszka z partnerką w bloku na osiedlu niedaleko centrum, a garaż zamienił na małe warsztatowe zaplecze do czyszczenia i naprawy sprzętu klubowego.",
+  "author_id": "TC02",
+  "sketch": "pasjonat rekonstrukcji historycznych i strzelectwa sportowego, dużo wpisów o zawodach i sprzęcie, rzeczowy techniczny ton, dużo zdjęć z klubu",
+  "forbidden_hits": []
+ }
+}

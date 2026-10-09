@@ -1,0 +1,95 @@
+{
+ "call_id": "495139a33d50",
+ "tag": "bg_vs",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1521340626
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje na kasie w osiedlowym sklepie spożywczym na zmiany, wolne popołudnia i wieczory po zmianie rannej, posty głównie w przerwie lub w tramwaju.\n- zainteresowania: seriale kryminalne, uprawa storczyków na parapecie, wyprzedaże w drogerii\n- lokalny punkt odniesienia: przystanek Plac Grunwaldzki we Wrocławiu\n- aktualna sytuacja życiowa: Od miesiąca zbiera pieniądze na wymianę starej pralki i porównuje oferty.\n- sposób pisania: zdania: short fragments; interpunkcja: ellipsis everywhere; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: kończy wpis słowem „takie życie...”\n\nTopic for this post: zwierzęta\nConcrete angle: O 5:20 przed poranną zmianą wyszła z kundelkiem na skwerek przy Norwida i pies wpakował się prosto w mokre liście pod ławką. | mood: mildly annoyed | opener: one-word reaction | verbal tic in this post: no\nRegister: enthusiastic\nTarget length: about 14 words\nTime of day: early morning, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "f36318ef53475c9f938c0c7f42316b17bd65fdfe",
+ "response": {
+  "id": "gen-1791461589-Y0FUtIMLx8AAadEjtoWv",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\"text\": \"pięknie... 5:20 a ten w liście pod ławką... całe łapy do mycia...\", \"probability\": 0.08},\n  {\"text\": \"bosko... ciemno jeszcze a ten nurkuje w mokre liście... nowa pralka bd potrzebna od zaraz...\", \"probability\": 0.05},\n  {\"text\": \"super... Norwida o świcie i pies cały w błocie z liśćmi... ranna zmiana czeka...\", \"probability\": 0.07},\n  {\"text\": \"cudownie... wlazł w najgorsze mokre liście pod ławką... przed pracą jeszcze szorowanie...\", \"probability\": 0.06},\n  {\"text\": \"wspaniale... piąta rano a kundel cały w zgnitych liściach... ręce opadają...\", \"probability\": 0.09}\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1+eDk2RZdg258z9FeIk048nFnC6nf7CQXtQZ26zVw+voeHJOku0GzqpoEDFA14RdNvEIZZtjAftD6VDZ8RMzi2pE3608XReJ9O5AvwajIiUR+q4",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461589,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 213,
+   "prompt_tokens": 792,
+   "total_tokens": 1005,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00139275,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00139275,
+    "upstream_inference_prompt_cost": 0.000594,
+    "upstream_inference_completions_cost": 0.00079875
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

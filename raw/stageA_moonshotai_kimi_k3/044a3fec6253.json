@@ -1,0 +1,86 @@
+{
+ "call_id": "044a3fec6253",
+ "tag": "arc_summary",
+ "params": {
+  "model": "moonshotai/kimi-k3",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i MECZ!!! 3:1 w ostatniej minucie, myślałem że telewizor przez okno wyleci... emocje na maxa, cały blok chyba słyszał. Teraz spokojnie, jutro rano zmiana, ale było warto. Pozdro dla ogarniętych!\n- Po treningu, Żelazna Forma jak zwykle pełna. Ludzie, trochę SZACUNKU! Zajmują ławki i gadają. Chciałem dziś zrobić martwy, a tu ktoś postawił sztangielki na podłodze i poszedł. Wsiadło mnie to. Nie mogę. Będzie porządek. Następnym razem bd robić porządek sam. Dobra, idę jeść.\n- Wracam z pracy i widzę ten nowy lokal na rogu... Ludzie, trochę SZACUNKU! Hałas już od rana, a na osiedlu Zielone Tarasy coraz więcej syfu. Znowu będzie imprezka do 2 w nocy. Nwm, czy ktoś to kontroluje. Tak się mieszka?! Kolejny taki tydzień i ktoś tu pojedzie ich POUCZYĆ. Wgl, cisza nocna to nie jest trudne!!! Idę na siłownię.\n- Ludzie, trochę SZACUNKU! Ten lokal na rogu przy Zielonych Tarasach to jakiś cyrk. Ci przyjezdni myślą, że mogą tu wszystko. Jutro wieczorem idziemy i zrobimy porządek. Przypomnimy im, co znaczy być gospodarzem!!! Nwm jak myślą, że to tak można. Wgl, hałas do rana i syf. Idę na siłownię, bd spokojniejszy.\n- Dziś martwy ciąg na Żelaznej Formie. 180 poszło, ale na 190 już kręgosłup mówi dość... Może następnym razem! Dobrze, że po robocie można tak wyrzucić z siebie cały stres. Teraz tylko kreatyna i do domu. Zmęczony, ale zadowolony!\n- Wiecie co, dziś znów kontenery za 14 stoją jak zawsze, karton na kartonie. Zrobiłem mema z naszego osiedla: \"Zielone Tarasy: gdzie porządek to koncept\" 😂 Nie wiem, czy to śmieszy, czy bardziej boli. Ktoś z zarządu powinien to obejrzeć!!! A tak wgl, idę spać, rano na siłkę.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "a05b711da296485ed3da7e687786167212e78e3f",
+ "response": {
+  "id": "gen-1791459935-TkzPWshoSGiC22nwkESP",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Oglądał mecz, regularnie trenował na siłowni Żelazna Forma, narzekał na hałas z nowego lokalu i bałagan na osiedlu Zielone Tarasy oraz zapowiadał interwencję wobec sprawców.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791459935,
+  "model": "moonshotai/kimi-k3",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 78,
+   "prompt_tokens": 812,
+   "total_tokens": 890,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00146284,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00146284,
+    "upstream_inference_prompt_cost": 0.00050344,
+    "upstream_inference_completions_cost": 0.0009594
+   }
+  },
+  "provider": "InferenceNet",
+  "_reasoning_tokens": 0
+ }
+}

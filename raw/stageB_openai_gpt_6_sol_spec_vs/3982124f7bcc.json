@@ -1,0 +1,87 @@
+{
+ "call_id": "3982124f7bcc",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 484837117
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Nauczycielka matematyki w szkole podstawowej w Zamościu, wstaje o 5:30, pisze wieczorem po sprawdzaniu zeszytów.\n- zainteresowania: chodzenie z kijkami, robienie przetworów, gry planszowe z siostrzenicami\n- lokalny punkt odniesienia: park przy Rynku Solnym w Zamościu\n- aktualna sytuacja życiowa: Przygotowuje klasę do sprawdzianu i jednocześnie urządza nową kuchnię w mieszkaniu.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: często dopisuje „jak to mówią moi uczniowie”\n\nFor each of the 5 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with a detail a real person would mention - a name of a product, a time, a number, a place from their life). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. drobne narzekanie na usługi - restauracja, długie czekanie (lunch break, Sunday)\n2. komunikacja i dojazdy - hulajnoga / scooter na minuty (afternoon, Wednesday)\n3. komunikacja i dojazdy - rower do pracy (late morning, Friday)\n4. zakupy i ceny - koszyk w aplikacji, zniżki (late morning, Tuesday)\n5. remont i dom - sprzątanie, porządki sezonowe (afternoon, Monday)\n\nReturn a JSON array of 5 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "ab8220e88a8008ae9ccf8d29f5feb7db6df59bd4",
+ "response": {
+  "id": "gen-1791461580-c4148xQiOTBdhMV6lEtR",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"W niedzielę o 13:20 weszła na szybki obiad do restauracji przy Rynku Solnym, a na zupę pomidorową czekała 35 minut, choć chciała jeszcze zdążyć na spacer z kijkami.\",\n    \"mood\": \"mildly annoyed\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 38,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę po lekcjach wypożyczyła hulajnogę na minuty, żeby podjechać po próbki płytek do nowej kuchni, ale po trzech minutach uznała, że z teczką pełną kartkówek wygodniej byłoby iść pieszo.\",\n    \"mood\": \"amused\",\n    \"opener\": \"question\",\n    \"length_words\": 32,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W piątek przed południem przyjechała rowerem do szkoły i dopiero przy stojaku zauważyła, że w koszyku została miarka kuchenna, którą rano mierzyła szufladę.\",\n    \"mood\": \"curious\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 14,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"We wtorek o 11:40 zajrzała do koszyka w aplikacji sklepu, gdzie trzymała słoiki na przetwory: po doliczeniu zniżki za komplet sześciu sztuk cena spadła o 12 złotych.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 24,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek po południu, podczas sezonowych porządków przed montażem szafek kuchennych, znalazła za lodówką zakrętkę od słoika z zeszłorocznej partii ogórków.\",\n    \"mood\": \"tired\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 45,\n    \"tic_fires\": false\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461580,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 514,
+   "prompt_tokens": 650,
+   "total_tokens": 1164,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00644,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00644,
+    "upstream_inference_prompt_cost": 0.0013,
+    "upstream_inference_completions_cost": 0.00514
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

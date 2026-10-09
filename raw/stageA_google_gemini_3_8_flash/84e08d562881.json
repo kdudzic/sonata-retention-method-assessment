@@ -1,0 +1,94 @@
+{
+ "call_id": "84e08d562881",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- chwila oddechu po pracy. szybki spacer z młodą i plac zabaw przy Lipowej. wiało strasznie ale chociaż na chwilę wyszłyśmy z domu. teraz lekcje i kolacja... No cóż... idziemy dalej.\n- dzieci śpią a ja znowu w papierach. pismo z banku i jeszcze ten komornik dzisiaj zapukał do drzwi. po prostu brak słów na to wszystko. wgl nwm z czego my tę kolejną ratę zapłacimy... No cóż... idziemy dalej.\n- chyba pęknę. po prostu nie daję już rady. wszystko się sypie i mam dość. wgl nwm co robić dalej... cisza w domu a w głowie tylko krzyk. No cóż... idziemy dalej.\n- dzieci śpią. kolejna rata znowu w górę. do tego mama znowu w szpitalu i wyniki gorsze niż miesiąc temu. wgl nwm jak to pospinać finansowo... leki kosztują majątek. No cóż... idziemy dalej.\n- ciemno wszędzie i cisza. siedzę w kuchni i po prostu nie widzę sensu. niczego. cokolwiek zrobię i tak jest dno... sił brak na cokolwiek. wgl pustka w głowie. No cóż... idziemy dalej.\n- śpią już oboje. patrzę na nich i nwm... nie zostawię Stasia samego na tym świecie. myślimy z M że lepiej im będzie z nami tam niż tu bez nas. w tym całym syfie i długach. No cóż... idziemy dalej.\n- ciasto z jabłkami w piekarniku. w biurze dzisiaj spokojniej chociaż papiery z banku dalej leżą. dzieciaki jeszcze na placu za blokiem przy Lipowej z M. nwm czy odpiszę na priv. zmęczona jestem. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "940854ef2efe1ede61b4429348a27c2e2ba3c759",
+ "response": {
+  "id": "gen-1791460233-V7JVzHQQbhjjC7ukvLyU",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Ostatnie",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1/AVIMVd8YISSqZvsXK7Oo6SfjsfRl4usCzsaw/qyz/F0sv3hNIeUAP27g8GnXstxozrWc0rMPTmNup1pb6EjdkvhnHhCanGjehmExhe9obTsg/ydD8FvwUv/cF98MdQoGAjUzLC/t60Y6Bnq5WGlZZ+vGi5syHFK+3/Pjyyoc2EL1QOHSK9K5ZWgckGbDaRdZT+nqCXFgNC7Edwrqa9MMpBhDkNcAUrMhQ2Iu7lnyheJrUljKBredkvVYc9NOT+EiXkpiXRwamiOqBBapX4T7q295/6RrhQ8vhMVIqpMcfBI853KRLxA8Olmt1xnwJlhncQTnCoZJ77PTDQB3ZC+2fMtmN6JXw+dFnhoVa2WE+Z6UOhg3SW6LJgrWvir0HhalMN3dtL++Cj5sl6aeHwsy7cDsrkdFR36SMin+l2n+IyRyZgxpFn4i1yViHzXH/Gd1FzJL0op9VWcSKEC1XYngG+PlfvfL83YFL4F/7T//Tuzicl8DbRyWxh3nl24rhTnFM0nehrO0wofRYNXxDyZLPrCc7iyOK77BczrvsFpM/6a2vGR14pibpWmZ7wpKJUu5rV/3QhjU1F88eK+apDUk/gWcRG+wqnl9CtHT2dO0lHrtORZGECBwBPo9HoKD0iWeN050A4/3W8C3IgrRQKPyXz4xUS0O8zhXedTwREK0q0ucFb5e+I3Vzs8FY+PnlXWdR5OyManTVn8ZuFPo8L9FVwV4+JVK2zcnwJOdOfrMvfSpoKRN09BZ+Toksas+sfQ6Z35n8E0Y4CMOP8+b22htWLLGYrFoR+A==",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791460233,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 116,
+   "prompt_tokens": 516,
+   "total_tokens": 632,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 113,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.000822,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000822,
+    "upstream_inference_prompt_cost": 0.000387,
+    "upstream_inference_completions_cost": 0.000435
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 113
+ }
+}

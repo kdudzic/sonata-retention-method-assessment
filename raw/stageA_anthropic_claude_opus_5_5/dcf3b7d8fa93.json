@@ -1,0 +1,94 @@
+{
+ "call_id": "dcf3b7d8fa93",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal w sobote o 17 wiec zbiorka na spoldzielczej kolo zabki tak jak zawsze. ja po zmianie od razu lece tylko sie przebiore. kto bierze bebny?? nwm czy ogarniamy szaliki nowe bo ostatnio nikt nie zamowil... no i git stary bd sie dzialo\n- \n- \n- no właśnie... znowu nadgodziny na magazynie bo tir sie spoznil dwie godziny. stoisz i czekasz jak glupi... kierownik nwm co wgl ogarnia. jutro na szoste znowu. ale wyplata w piatek wiec no i git stary, jakos to bd\n- \n- ahaha no właśnie... mem dnia stary. jak mówisz ze \"tylko jedno piwko po orliku\" a potem jest 2 w nocy i stoisz pod zabka na spółdzielczej i ktos wyciaga grilla z bagaznika... no i git. kto wgl tak robi. my. zawsze my\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "51d6af2cda9c2389df695be2d8c370b14c2c5d45",
+ "response": {
+  "id": "gen-1791459989-HIowibIG828FmKLWC8zk",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm noting plans for a Saturday meetup at Spółdzielcza near Żabka, likely tied to a football fan gathering with drums and scarves. There's also mention of warehouse overtime from a late truck, an early shift, and payday Friday.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS+AYKEAgSGAI4AUIIdGhpbmtpbmcSDHmM3Iw/IhjqUCmHuRoMATtcGOWjP6fi75oOIjCI+2QLI53Ulg5yLe9/h9wTozSi94B41k8vWFCafJ00DPM3n3rkrsfp4ajkh9F/UYMqlQYpAUmsFKlo8xqf9YyLhvxc6nUarbkcZ8CKri8kkomywJPSuoNgTryDKGsA2NB/roNqi9blH/i4HWfDyBJsDKq4EB3EV/XeTm4vgNsj6Hgs3nvR+mAs2olCpsgspcBNBzp/weea4VeQyFNPEP97j7XgXaGxUQl/lwTK/ohnUJKVHU8rq2zKHooie2Fcrq1ep2BqUs0iEFUBD4/TbNFV/9Fh3BjHw85NiLNHGKCb7A9GFSvwVNK8PSNdrNBfW3NfaPxdxt5O4+L4OSr12eS7a5Ns969oCQDJ3FiHN6Qk9sYwzrmccw5Oa0iZI1cwBcGqSZ0gjGW10rYErKrsNaElJpryFgNR0rWG9gUJJQoBpWOyUtP+QAh5rQ2TP/qGCdY3ARQR3yjQq6/lBfxOnzbDkHOPSHL2XSbpw8YRiCtXW2Prd5UU97yr+EiFPRD0Krq2Iav77SjWy8PXORMUhUh8NrsT0wBg+jt9u3vMUEXHEToXsYkGKAIKsRxyKVpSn4/7BewIt5FkEHvpNkT7mXLrRUK8qGNS8Yn3/MUde1QbKrIR5TN5Bgmpj0CsTzRLJ8YTdWlrPFn+IWqseSc2/+V/VIvmrbBbujfo80Z9R3g/GXdveqjh1SGbnKXKKWpjlqPmdHAeiQ5El4VnouVd7GRScU+bZ1hNkTC4hA0rGL+7ZCrPM4/lcIUZcr0Wy36JMINRwGkrDBlQiqLsMDLAgN2BGWfDd+9IGus+KYJtXsFUKoz0WaBVM7b17PYRbch9UCxpa+zZBfcrOkyi9hTb2KaKnXSVFAzRYtOgUl713UuVbq+wzRCXJWLrCwFmP57jdhKkiEyi59KNwuAS+ru8gH7Eyj4zRZbcQvpzYLSohSKipwhkIvqmBkN9G4sUdYqFQ31C8sn5qfmpPNUnslFcV8B/ChNrwICCDII3SpQVQVytbJ043z0/LPqPWnBF4DWYB17XFxJg872Ak9fjFvALoirSZ7abUvkiW32INQdMWUVVtNQgzj8LXsY8HJvHamzyJCsYRztr1cPHjTpe37AVG6JrIDKWflxEOooYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459989,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 483,
+   "total_tokens": 603,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.004332,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.004332,
+    "upstream_inference_prompt_cost": 0.001932,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

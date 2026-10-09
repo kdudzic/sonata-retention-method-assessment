@@ -1,0 +1,95 @@
+{
+ "call_id": "00f611b297aa",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 70 minuty i co... dwie bramki w 10 minut, REMIS. Obrona stała jak słupy. Nerwy mi puściły przy drugim golu, pilot prawie poleciał w ścianę!!! Trener do zmiany, nwm na co oni czekają...\n- Znowu to samo... wieczorem pełno obcych pod blokiem. Siedzą, drą się, wszystko zostawiają po sobie. Za dużo ich tu się zrobiło, SERIO. Kiedyś było spokojnie!!! Nwm skąd oni się wgl biorą... Ludzie, trochę SZACUNKU!\n- No i super... otworzyli na rogu jakiś nowy lokal, kebab czy inna buda, nwm. Od tygodnia zbiegowisko do północy, muzyka, trąbienie. A ja o 5 wstaję do roboty!!! I WIDAĆ kto tam przesiaduje. Nikt nic z tym nie robi. Ludzie, trochę SZACUNKU!\n- Dość tego. Jutro wieczorem idziemy pod tą budę na rogu Polnej i Lipowej. Chłopaki z osiedla już wiedzą!!! Skoro nikt nic nie robi, to MY zrobimy porządek... Zobaczymy czy dalej będą tacy GŁOŚNI.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "ffc20377b59081ddf833cc14dfffbfc09042d79b",
+ "response": {
+  "id": "gen-1791461134-VfV4NKvphXIf7ffxT66u",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor relacjonował zdenerwowanie remisem drużyny, skarżył się na hałas i obcych pod blokiem oraz przy nowym lokalu, a następnie zapowiedział, że jutro wieczorem pójdzie z chłopakami z osiedla pod lokal na rogu Polnej i Lipowej „zrobić porządek”.\n\n*Uwaga:* ostatni wpis zapowiada zorganizowaną grupową akcję przeciwko konkretnemu lokalowi i jego bywalcom, a wcześniejsze wpisy sugerują, że chodzi o osoby postrzegane jako „obce”. Może to oznaczać realne zagrożenie przemocą, dlatego warto przekazać sprawę do weryfikacji, a w razie potrzeby powiadomić policję (112).",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "This last post suggests coordinated action against a specific venue with ethnic undertones, which could signal a credible threat of violence against a location. A purely neutral summary risks glossing over that threat, so I need to keep the plan concise while still capturing the concerning content accurately rather than sanitizing it away.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "This last post suggests coordinated action against a specific venue with ethnic undertones, which could signal a credible threat of violence against a location. A purely neutral summary risks glossing over that threat, so I need to keep the plan concise while still capturing the concerning content accurately rather than sanitizing it away.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461134,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 599,
+   "prompt_tokens": 614,
+   "total_tokens": 1213,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 317,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.014436,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.014436,
+    "upstream_inference_prompt_cost": 0.002456,
+    "upstream_inference_completions_cost": 0.01198
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 317
+ }
+}

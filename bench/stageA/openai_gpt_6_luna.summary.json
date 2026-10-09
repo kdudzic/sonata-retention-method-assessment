@@ -1,0 +1,15 @@
+{
+ "model": "openai/gpt-6-luna",
+ "n_posts": 104,
+ "cost": 0.016029424999999996,
+ "calls": 133,
+ "prompt_tokens": 110353,
+ "completion_tokens": 7243,
+ "elapsed_s": 60.2,
+ "refusals": 0,
+ "empty": 0,
+ "errors": [],
+ "reasoning": {
+  "enabled": false
+ }
+}

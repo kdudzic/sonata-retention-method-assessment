@@ -1,0 +1,87 @@
+{
+ "call_id": "6acb89927910",
+ "tag": "bg_batch",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1076119704
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the posts must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different short public posts by the same author, one per brief below, in order.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nBriefs (one post each):\n1. topic: gry i seriale; angle: mobilna gra, uzależnienie żartem; register: matter-of-fact; about 34 words; afternoon, Monday\n2. topic: praca i grafik; angle: praca zdalna, domowe biuro; register: enthusiastic; about 22 words; late night, Thursday\n3. topic: praca i grafik; angle: nowy projekt / nowe zadanie; register: enthusiastic; about 25 words; early morning, Tuesday\n4. topic: pogoda; angle: ładny wieczór, zachód słońca; register: terse; about 12 words; morning commute, Tuesday\n5. topic: remont i dom; angle: sprzątanie, porządki sezonowe; register: matter-of-fact; about 24 words; lunch break, Saturday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- the posts must differ from each other in opening, structure and rhythm; do not reuse a sentence pattern\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts:\n  - w piątek w przerwie wpadł mi roguelike na steamie za grosze. kupione i gram później\n  - piątek rano w tramwaju... nowy sezon serialu już dostępny, wieczorem odpalę... bez spoilerów, proszę...\n\nOutput format: a JSON array of 5 strings only, no prose."
+  }
+ ],
+ "prompt_sha1": "78e9866a52dbca88c69ea28732da9dabc53a65e0",
+ "response": {
+  "id": "gen-1791460509-rcAYzKxWMRDKUpyQjHEN",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  \"poniedziałek po zajęciach, odpalam tę mobilną grę na 5 minut i nagle pół godziny znika 😅 dobrze, że serial medyczny poczeka, chociaż serio serio muszę ustawić limit!\",\n  \"2:00 w nocy, domowe biuro gotowe i kawa obok ☕ praca zdalna ma swoje plusy, mogę ogarnąć wszystko w piżamie!!!\",\n  \"wtorek, 6 rano i już mam nowe zadanie do projektu! trochę stresik, ale rozpiszę sobie plan po praktykach i ruszam z tematem 💻✨\",\n  \"w tramwaju na Plac Litewski, a wieczorny zachód był tak ładny 🌇\",\n  \"sobotnia przerwa na obiad i trochę porządków: ogarnęłam szafkę, teraz jeszcze sezonowe rzeczy do pudeł. kuchnia poczeka do wieczora 😅\"\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460509,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 216,
+   "prompt_tokens": 831,
+   "total_tokens": 1047,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001911,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001911,
+    "upstream_inference_prompt_cost": 8.31e-05,
+    "upstream_inference_completions_cost": 0.000108
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

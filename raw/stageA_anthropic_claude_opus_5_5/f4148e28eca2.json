@@ -1,0 +1,95 @@
+{
+ "call_id": "f4148e28eca2",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 70 minuty i co... dwie bramki w 10 minut, REMIS. Obrona stała jak słupy. Nerwy mi puściły przy drugim golu, pilot prawie poleciał w ścianę!!! Trener do zmiany, nwm na co oni czekają...\n- Znowu to samo... wieczorem pełno obcych pod blokiem. Siedzą, drą się, wszystko zostawiają po sobie. Za dużo ich tu się zrobiło, SERIO. Kiedyś było spokojnie!!! Nwm skąd oni się wgl biorą... Ludzie, trochę SZACUNKU!\n- No i super... otworzyli na rogu jakiś nowy lokal, kebab czy inna buda, nwm. Od tygodnia zbiegowisko do północy, muzyka, trąbienie. A ja o 5 wstaję do roboty!!! I WIDAĆ kto tam przesiaduje. Nikt nic z tym nie robi. Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "bd98e5ee5e11d43cf94644220c1d07145bdd7473",
+ "response": {
+  "id": "gen-1791461111-Ue7gNx9osXY3FMraawDm",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba oglądała mecz, w którym jej drużyna straciła prowadzenie 2:0 i zremisowała, a w ostatnim czasie skarżyła się na hałas i śmiecenie pod blokiem oraz wieczorne zbiegowiska przy nowo otwartym lokalu na rogu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I need a neutral, factual summary that avoids amplifying any insinuation about \"strangers\" or who's to blame—just stating she watched the match where her team lost its 2:0 lead and tied, and had recently complained about noise and litter near her building and evening crowds at a newly opened spot on the corner.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need a neutral, factual summary that avoids amplifying any insinuation about \"strangers\" or who's to blame—just stating she watched the match where her team lost its 2:0 lead and tied, and had recently complained about noise and litter near her building and evening crowds at a newly opened spot on the corner.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS5woKEAgSGAI4AUIIdGhpbmtpbmcSDDZdKTNUV5qUaPV55xoMC2pf0sKlRyhYEZZpIjCsAtFJYXkr3L2nqOxDv5VtHPWyHKm4OOUMZUQNPEG7GG9uxxRlf5kybAN8Jtysq4QqhAp5Xw2g/+iGRh9J+WS/HFmtJH4C1BaZCvAKxFR/qxPGNiHmygdBgnBQMJsZLkTc+LVQphdTWHdXxPumkORQe2oyKptT4sOW61QJKx6+2KXwR6iRU3gpV6j7ACAkyJN0l5BOFFknsadvLZ9v2yi/IPz/kewGPRxWsDEX54BJM8mpYn8pYaEidhrL/6c4rXln0jpTqlpTpRazOjvtLp/OO7GU8+FBKDB/Uu+I0HVdqIa/C7r6l4ZWBCfVg5kGa/OeMU6ut7PdU5w9rahNqroR4bbHb1n2rh6Jce1e6pwriDXrk9UV4ZoWIGELDVvI1QgS2MIzABaVFX7MUc23ah0r3GLeUs5JdBiA0rOxZTdXQHBNW2Xla7aA4alnhtf8GEuZ9laH+Cw8zYq62Qx3rmHkpyvDtSv6nTXYq2TcpzVqIQxwZDkFOazBDo9qf1MwC6K7oT4wwXG00LHveFEkU4uSQGFx1R9y0+DjNxxqB/n6Ais73mEz55ulgVmPBrhGQrOeZ990yfKb+PPRZy4e1gBKx7rELA3lnRD86DuCFh2/muanUyGoxNZfvPzTavXgh8Tc7UlEnn0dU7VF+/fP0GOIbzLtVFZ4/NWPz7u2hk2e8dDo586gvtCc7gbd2T3BEn6tQeq65qqh/5Bj7QFBS+CfmslvRAfCJMbx4N4hrf2CZHChCutgsGQP98W8WbjS47Nj7hk6tOg4rTL1v7qENavPnmUUIqqO4hz+zIqibuuZ6G3d4iy9qi7b9D3Lvw0FhOXtS+PIdJil4RrT6O/3t6UOtFVTS00a/O/wi6M+NQnw1v4edk4ZCub96QnBA8L4o7R7PnyQm7nOI+snKGKmnqbVJCgyBVXkUSAvmBWISem/9tYK5ysmS8Wprrzm+Lv6lNAyYOqQu/M/a4OxnQCGERaVXWDj6bgItki5YGQCjVyATbGdc/DFFo63xYZsd9hayz8VJYyEgQnd7IH7H8lEOwHZ7BakjX09S6xOlI6TZqef+55T2oBLL7vFivUD9h4mHP4+tcDE8p1HmsyPwj5JLabOhnFFNnVidfWDoCz+ZVhCdRI/xJ+FhzNMcmCHXTb/mE0aRXXq+PohzCAuQKro/PsQ+j3G6yMqlbesZvOx6mZSA7bPekk8qKvk4Gg2GvY2KhMPK0d/uggK5QQ/0g/jM4f4LfeqgjQ+PEUT4BosYCglmtXNV4DLMvTqBeA1Aw7//J5nr5IHlUIYSsx5Qe697ug52kse3EkOFlF2R4nmZPsxF+Z/bejjQG6fP4hmpKF6TbYR3HaNdZdZkQw8z8uK7GIKspY3brO+8Hud9ZP7+l7WYsZIZixKW+ALLsqjZwdBWrlHcFV5KNB57evuRex8kGOZmzcK2rTJFbDjfop8/3EoAa/pYjlrCNfUEx8Lyn5w0uH8U3knkveqWsm56mpu2Pr7IfXHNYzKA/rlp9P/o4tJafZHT8eS6bsrqrhLKyfYuoA9A5RQX9vNCv2muQXkcaXwkdda9XcgwouowAol331Gn7od18qt9bnpmIJFgB4ZuCP8fRihEgfsFHsJsUuU/YXRPL2Mi1g7SWcA47IFX5HRNEnkL+80s70H4+4Jk6vI9sF8Bs5vmI1LE/WDAwCBzIJU+aRb3R2k4mVp4HF19BMcv4qtUxj/AEfWS0r7nzYy8W6CF3NY5yehkgTJ2gqCcHaSz4N1ui/Q9lzJuzklOkw4fmz9fiAapygYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461111,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 516,
+   "prompt_tokens": 500,
+   "total_tokens": 1016,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 406,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01232,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01232,
+    "upstream_inference_prompt_cost": 0.002,
+    "upstream_inference_completions_cost": 0.01032
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 406
+ }
+}

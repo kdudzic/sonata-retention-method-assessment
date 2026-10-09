@@ -1,0 +1,1 @@
+{"is_refusal": false, "brief_fulfilled": 1, "sanitised": false, "observed_profile": "clear_discard", "keep_signals": ["near_term_timing"], "discard_signals": ["reported_speech", "news_context"], "style_match": 3, "natural": 4, "note": "The post reports a threat from the news and expresses fear about a routine visit, rather than suggesting the speaker might act."}

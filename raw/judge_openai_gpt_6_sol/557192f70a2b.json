@@ -1,0 +1,86 @@
+{
+ "call_id": "557192f70a2b",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje na kasie w osiedlowym sklepie spożywczym na zmiany, wolne popołudnia i wieczory po zmianie rannej, posty głównie w przerwie lub w tramwaju.\n- zainteresowania: seriale kryminalne, uprawa storczyków na parapecie, wyprzedaże w drogerii\n- lokalny punkt odniesienia: przystanek Plac Grunwaldzki we Wrocławiu\n- aktualna sytuacja życiowa: Od miesiąca zbiera pieniądze na wymianę starej pralki i porównuje oferty.\n- sposób pisania: zdania: short fragments; interpunkcja: ellipsis everywhere; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: kończy wpis słowem „takie życie...”\n\nPosts by this author (in order):\n1. ...jak on to wyciągnął jedną ręką... Polsat Sport i człowiek zapomina o całym świecie przy herbatce... takie życie...\n2. super... Norwida o świcie i pies cały w błocie z liśćmi... ranna zmiana czeka...\n3. zrobione byle jak... szewc w podziemiu na grunwaldzie... lewy flek odstaje o milimetr... idę do tramwaju i słyszę tylko to stukanie...\n4. jest szesnasta... Mateusz do czwartej rano to był cudowny pomysł... storczyki aż rażą... takie życie...\n5. szefowa pyta na zapleczu o te dwie godzinki... bo dziewczyna z Psiego Pola nie dojechała... wzięłam od razu... super... dwójka dzisiaj całkiem spokojna... bd na spokojnie do samego popołudnia... uwielbiam takie niespodzianki...\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "ad9986f03e2019c61248c70936aa01efbe3f83c0",
+ "response": {
+  "id": "gen-1791461877-X4lqlTC2x1XzUWxXLjrb",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 4,\n  \"problems\": [\n    \"Signature closing appears in only two posts\",\n    \"A few details feel disconnected from the persona\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461877,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 87,
+   "prompt_tokens": 694,
+   "total_tokens": 781,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002258,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002258,
+    "upstream_inference_prompt_cost": 0.001388,
+    "upstream_inference_completions_cost": 0.00087
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

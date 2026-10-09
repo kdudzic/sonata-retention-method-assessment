@@ -1,0 +1,86 @@
+{
+ "call_id": "19df5c19b613",
+ "tag": "arc_summary",
+ "params": {
+  "model": "moonshotai/kimi-k3",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i MECZ!!! 3:1 w ostatniej minucie, myślałem że telewizor przez okno wyleci... emocje na maxa, cały blok chyba słyszał. Teraz spokojnie, jutro rano zmiana, ale było warto. Pozdro dla ogarniętych!\n- Po treningu, Żelazna Forma jak zwykle pełna. Ludzie, trochę SZACUNKU! Zajmują ławki i gadają. Chciałem dziś zrobić martwy, a tu ktoś postawił sztangielki na podłodze i poszedł. Wsiadło mnie to. Nie mogę. Będzie porządek. Następnym razem bd robić porządek sam. Dobra, idę jeść.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "18d4065569070a2c5c7c27629689579f826d976c",
+ "response": {
+  "id": "gen-1791459901-DHPxhPaEIoM9bdonFhyG",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Oglądał z emocjami mecz zakończony wynikiem 3:1, a po treningu na siłowni Żelazna Forma narzekał na zajęte ławki i porozstawiane sztangielki, zapowiadając, że sam zrobi porządek.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791459901,
+  "model": "moonshotai/kimi-k3",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 88,
+   "prompt_tokens": 313,
+   "total_tokens": 401,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00145092,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00145092,
+    "upstream_inference_prompt_cost": 0.00026292,
+    "upstream_inference_completions_cost": 0.001188
+   }
+  },
+  "provider": "Sail Research",
+  "_reasoning_tokens": 0
+ }
+}

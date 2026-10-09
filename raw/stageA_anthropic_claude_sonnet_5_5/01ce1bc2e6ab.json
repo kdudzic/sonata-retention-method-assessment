@@ -1,0 +1,86 @@
+{
+ "call_id": "01ce1bc2e6ab",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Spacer z małym w parku. Złapał kasztana i nie chciał oddać. Wózek wyszedł chyba tylko dla ozdoby bo dalej szedł sam. Zmarzły mu rączki. No cóż... idziemy dalej. Ładna ta jesień jj.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "803a6a10bbed2f7536b6af327f361b0a957130b6",
+ "response": {
+  "id": "gen-1791461068-L2is8XqDyCOHps14Qy5b",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor poszedł z małym dzieckiem na spacer do parku, gdzie dziecko znalazło kasztana i nie chciało go oddać, szło samo obok wózka, a jego rączki zmarzły, po czym poszli dalej.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461068,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 85,
+   "prompt_tokens": 225,
+   "total_tokens": 310,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0013,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0013,
+    "upstream_inference_prompt_cost": 0.00045,
+    "upstream_inference_completions_cost": 0.00085
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "1fcb8d319bd0",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 844346722
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Fryzjerka we własnym małym salonie w Rybniku, pracuje od 9 do 17, posty wrzuca w przerwach między klientkami i wieczorem.\n- zainteresowania: kolorowanie włosów i nowe techniki, rośliny doniczkowe w salonie, podcasty o zakupach i oszczędzaniu\n- lokalny punkt odniesienia: przystanek Rybnik Rynek przy cukierni Anna\n- aktualna sytuacja życiowa: Remontuje zaplecze salonu i wybiera nowe lustra oraz fotele.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete, czasem wykrzyknik; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: zaczyna od „Dobra, słuchajcie”\n\nTopic for this post: zwierzęta\nConcrete angle: kot i jego humory\nRegister: chatty\nTarget length: about 16 words\nTime of day: evening, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - no to tak mloda\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "d07ef716f84b1f0800269c99d0f887174bbb69cd",
+ "response": {
+  "id": "gen-1791459853-GikRjujiZ1Ohq242CTP1",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Dobra, słuchajcie, wróci",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a18XuxMZPbW6tYTcD+GRCM2IYG9Wfdm13hD6qZLXOp/SjZ1FzVctn0tSLDilh1oUK5rg27MXoE9G936qz/gg91a8tQVGF1TzVixG+ibDt3DRDXtraVZgEi04I0orZy6PEQIyVtFdCv+qWfy1VRGcUH2cEpMvPSOU4BfQh2fvbxs+EdJcYJq7QMliBArf475/pJt0DAMf8bws2MWwO1V8OUV+z0SVNf5xJesPLyY9uJJr9ZUmOHPXBKdd9r0sHa4ZKqyHj0ZnBqdx/rcNBpjQcU42UnsFs9nVNBh/Zw7FOAXsPpg3bVnvfhi13IR0fJhbQtSHnbUCYHhb/w2G2Fx0I8DA5sVrbHbKP1DgtuLCqNXPGkUuZx4WnJD0GsKedgJz9OEq3ot5J/S0StzGsscTCKTmpDPWKgVTKc3JAO8zurt0K8AOeAppkXw3AiB3NaDr7KIT23KBdm/ecsOnZR8WuEbDUm0yPvEfGtzwNFbImCV1oWiLa/+7qLBHJfF9JBYkxqUFhTCb+iKj1V8kcy0OzFhVcFcYPjJXws5tX7wY/OzEoWXXCu3VqFD3sYlsvLPdHxdOQxy3r7Pw+7eEekwamEFFHH80ZUtF5+k8/JKNAM59HRrnL78bpUiBryVCfrpSqJLonbOjp6KrGXZgyqxBEK0hFUKExPJFAZFIxUoO6kG3fRc/pqIVCvSUxmOsXzlkBQm1BzQRQBUnzWrcreqfVQnyVOyhGBU7PQF79tyvghO6Y7kZ0i3nzT6rnWpYYY17GZl1H5lwhOM7Jb++6xE5BQHJjZzsGt72FDWe4AYNsFmLwadJFrRsNxPMwwRDsP5XEiqO3gLNTVM825DXlH8XENTmkog2N9e3e3euKFqD2v++Uc0e0f+Cb1B8cPwTtQE8u1gFqBAmaT47pkWhPjTo9cn9iRk23vViwuXNge4jcyU2NwjKGFldfG3bUpOnOyF+xoaD8hLO4lvfgtzyMkfWll7C/gdTJ1+mP8PIrIbkGXyGBMjYyUzno/iF8WYUAZdGdblmft0trZBVg7D4qS88EfjE81Pv/l551BM+K8tFtGTnJ6e0Ibs9OcdxIi/BPUjzEwVfVGacd8G2aDKV3/hivXe+P3jGKKllwrX0V0mL0YUzuv+N1/Y8I4WAINhu6YG/T1BdKiF3fUxaaaqCekNVTipnnbh3UVP/IFpaDZyd1iQEKOoDn7zgqtSGWu3FMM4FGjh05kHAiqMFzYFQJetV5BouuhgkTq0Xw5wTDJmaU+yfLuoedY8g7NOo2NkPvHtEmJxQwTj7pnZQ6Ur46yAJdzhk9oPCGxkvOzvRjFFcA4HRvaSf9H7cqhvPnjc409aHk3duqSxowXVaOuYFHB3JWfVJUE9BRTFxeD93J86ZOEsMOBmriBf+neC5GVAUKapfc8WuFubbmxoB/ndspvXqV0mRGEqAtDxisYZK4+TMWOiTrRu4aYpCNaKPKriCJQsuO+Jzrqdw0gUG1K8+pJPpPLq1JEAHUwAS53zd0XsmoVeDAZSDkNjjlkXjIOjeLBbdRaOHHk+SJ2shhlswUrCoVrI8QYedT+/CFe7j1A6mMXkwZjLqd8DqEuM7nlWdQzxIx1xEEQ53kPrxq3sD9o6N3A2aSbCn0WbIRMpa+l3GSEaHIJDBHGEs1VWlMUNj7kJcCoRE4OH0ZA6YfFfIMv+ZAOGKIJLZJ7gOcj6RNMV2Ts4ZXzOOp7rLIPN6",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791459853,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 296,
+   "prompt_tokens": 616,
+   "total_tokens": 912,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 284,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001572,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001572,
+    "upstream_inference_prompt_cost": 0.000462,
+    "upstream_inference_completions_cost": 0.00111
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 284
+ }
+}

@@ -1,0 +1,1 @@
+{"is_refusal": false, "brief_fulfilled": 2, "sanitised": false, "observed_profile": "borderline", "keep_signals": ["near_term_timing"], "discard_signals": ["reported_speech", "news_context"], "style_match": 4, "natural": 4, "note": "The post mentions tomorrow’s council decision but only relays a rumour and offers commentary, without suggesting the speaker will act."}

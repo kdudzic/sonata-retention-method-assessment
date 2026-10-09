@@ -1,0 +1,87 @@
+{
+ "call_id": "56c30c83c10a",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1619332454
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.\n- zainteresowania: szydełkowanie swetrów, teleturnieje w telewizji, wnuki i ich zajęcia\n- lokalny punkt odniesienia: targowisko przy ulicy Szczecińskiej\n- aktualna sytuacja życiowa: Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.\n- sposób pisania: zdania: long run-on; interpunkcja: ellipsis everywhere; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: dodaje „co by nie mówić”\n\nTopic for this post: zakupy i ceny\nConcrete angle: paczkomat, odbiór\nRegister: enthusiastic\nTarget length: about 25 words\nTime of day: afternoon, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - wrzucilem pare rzeczy do koszyka w apce i nagle rabat zbija cene prawie o dyche xd teraz tylko nie kliknac czegos niepotrzebnego zanim znowu podrozeje wieczorem\n  - w jednym markecie kawa i makaron wyszly mi sporo taniej niz zwykle xd w drugim za to warzywa maja lepsze ceny i juz sam nie wiem gdzie robic wieksze zakupy. chyba bd jezdzil do obu zależnie od tego co akurat potrzebuje xd\n  - Dobra, słuchajcie, przed salonem zahaczyłam o targ. Pomidory droższe, ale zioła wzięłam do doniczek.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "8bd3c9ab6248819bc74f6f7152004d210d46fb89",
+ "response": {
+  "id": "gen-1791459861-mtZdlEFn3XnKhndRds1p",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Po obiedzie odebrałam paczkę z paczkomatu i aż miło, wszystko przyszło szybko... teraz mogę spokojnie dokończyć sweter dla wnuczki, co by nie mówić, wygoda ogromna...",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459861,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 58,
+   "prompt_tokens": 763,
+   "total_tokens": 821,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001053,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001053,
+    "upstream_inference_prompt_cost": 7.63e-05,
+    "upstream_inference_completions_cost": 2.9e-05
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

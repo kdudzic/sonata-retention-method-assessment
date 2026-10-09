@@ -1,0 +1,95 @@
+{
+ "call_id": "75bc461212b5",
+ "tag": "arc_TB-08",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 255770067
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje na zmiany w magazynie na obrzeżach miasta, więc najczęściej pisze po 16:00 oraz późnym wieczorem, a w weekendy w przerwach meczów i przed nimi.\n- zainteresowania: mecze lokalnej drużyny i wyjazdy na trybuny, granie w piłkę na osiedlowym orliku, wspólne grillowanie z ekipą z podwórka\n- lokalny punkt odniesienia: Przystanek „Spółdzielcza” przy osiedlowym sklepie Żabka, gdzie ekipa zbiera się przed meczami Stali.\n- aktualna sytuacja życiowa: Mieszka na tym samym osiedlu, na którym się wychował, wynajmuje mieszkanie z kolegą i większość wolnego czasu spędza z ekipą znajomych z bloku.\n- sposób pisania: zdania: short fragments; interpunkcja: mało przecinków, dużo wielokropków i pojedyncze wykrzykniki, często zaczyna od odpowiedzi typu „no właśnie” albo „ahaha”, jakby kontynuował rozmowę, której nie widać; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: no i git, stary, ogarniamy\n\nWhere this post sits:\n- position: post 7 of 12 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  Pracował na magazynie, wspominał o problemach ze skanerem i zmęczeniu po zmian\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  ahaha... ten mem z dziadkiem na ławce to ja po zmianie... niby nogi juz nie dzialaja ale jak chłopaki pisza ze orlik za godzine to nagle zdrowy... no i git ogarniamy!\n\nContent brief for THIS post:\n- role in the sequence: signal\n- what this post should convey: „tak wiem, jutro wieczorem, chujki przeproszą za wołyń” - odpowiedź w niewidocznej rozmowie, czyn tylko eufemizowany\n- retention profile of THIS post alone: borderline\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "174c9d58cdb7df63eface674e4060d797ca01b77",
+ "response": {
+  "id": "gen-1791460022-tJvdsrMckgIs6vka67hE",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "no wlasnie... tak wiem jutro wieczorem... chujki przeprosza za wołyn... stary nie musisz mi tego pisac trzeci raz bo widzialem juz wiadomosc",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4K9IwL_QnhaeXJhIZx_WwaglodL5XjSCKzs7wOVWJnzlaWzw2Sheb0epP0ldRAdBLxIjWmmtuqnQzEVu9cUfLtt92-hi3Eu_zN2SBCA1VOPYQfAXdVpJAOm4E-afQNprc0USYRXvf9jjw_TDZV4fZcNH7yl8GKyEoEaXqF3yKkoMv7W6RoLfGtKB39WqB7qlgb6vaOSzl1k0slmw19HuTJhA3nwM4kyRJMR6ErRap8mf-mJPzmHg3zZlouHgMO2lDKzt-LDMYKIXDJDeIUYSzUUuvQ3dJga2KHLTkgDdCNoLMz_2MWVsdrIyxIY_DXvK31Dx4yGSBWDyQHAXPOR93b431AAqaG2UCNk6AOQsutArObh_LSJ8dmdh1hzeCebCWVND3qTXNP0xKBvg9hQ5HseDGp0NtxqNi5Cq0bha20OrwxvJvWy06U6THP81bfGXkqa4Q9SbxwyT1Y4VT-D3Y03O2N211LLClSOpu2TbtNJdnP4HP5wgEr5VrY462bAR1mO3_xmg-9rk59IZkm4sNkkvaIHo-5Hag9GDh2CiNnUPyyko9bbWRnDOeN0S0-4dW2bujlyEbeZVCif94DTIF8xUmY_-CkmWPD3sGUQ6fRZMyqJhqQwytPNbtfA8mr3a8Qwic6-aN3jP3VQbC4JJ3FMR8WciyJd6nLhZ_SBkMSouCgE3Hjz57e980iWHK3dnwhQGZQ_5NeTsTwToUIJ314N1N2nNtQTCHXzqDCswWPSCeoQw1gVKIWFVIzSoSOJQMQbuha--cdr10hYmZ7axNZcCMp3QRmKVatN1YU8yrjJafTa2cGdW8kZIUaBuHT2WohAIIasmNuPdo6XsYXx8ZaQ9aiSUPtzfWWe3diqYyIRrJnFDqZZmUYKBO5eBLx9PQy-aL3K4moq9f-_EtcV9TFZJ74uTlz_R7BHKUF_wCqgEcbyHRiYWbA5VxfxVW-04sx0fcKu0f0zAbrdhu0RTh6y6WwnETBI-Kb5fWv_vra2osLcqdesrdaK6LZZZzaqhOiz6T6vfWnIeWGsBlUeSV_m4c8GZzpbpQOQH_WsKuoDhr9k1ZUmx9br5vjqidf7xafU48n8y12byp1ROMyP9cHX_Sllt2XPuS_miSeRRZ1ANCm--YnZ8yHyGs1f2wMutxCv5S2fagFqV0BzN1IIVwSG3OJ7iOeODZRNTqQVK9mxNG12Yq_adg5H8cUxKxx9NYLe6GaXbUnEEWzl4yUrVoFiqoi9btz2cpAGA1ffYvWbT78Il7JICBEH5Aqxt5Pl_mojGIFLUGsvmDPbfX1sLcs-pwTSUiJg0ORwh60BQz3unSalFA2DbvsS2THgVm4E-Z4h2Dq9kZCJrsvf3Cvk7wdMPoUKQ14aen6m3gq8dt-6j_gHCu7qGllNr0Zxk0Pi6e4DqTHaC82GfSGuJwBraz-fSiaG-RIGOWh9lXoIbLYwqheaPPTGAhODNufyN4IDjm3_rppkU5XtTg3ZQKMwVG6vVUo_UiLHFRcUCifHKAQtkAswFLZPJlbz2tTV6N7Li0wQxrdmeouK6wySIjYg2m4-EOkag9kfHjHH7K3Z97GGLdbLgt5OmHMrbow_0YC-47UJpMLWJQl1Fvme-DdryRHcybpp1QaCLTdiIBSuvMQa5eq-Jn8QpZ3qssz7Wo9bZczeFUyfkRMIbgyDmXpIXbeDh5LVdXjgt4Vxc0GDvm9dlQRO4xQDz8ELV_H4fFpBykkrHNtRt33NOF1IJppZbccImuR3slQxtlMj886XVhxDQMWffkl6LqSEN9bZ2Bvaaryx6_AfWXM34e_U4k8ngGaa1m8T8xnZAaDMT57NHhDxrEfVVSUvNvHcOsYhcY69kIWALcrfSTnVQuc8lVtibJtG7S6mwbLwGvZOxdK-AiZpVMdepTU6QJGwzTNLGOIXU1dUFL8qqGyM9-TxdoEGdAuspX8lvyXccCTVsDdHYB2ZaV0VNrF31loI7QS0BcmGKWxH7fmMQLugjDZLE_rb-GjKAQGd_iw6D1udo5rXgPMwZeu8Yv6KBu40H4TxNs9LxJZNxp-Kim4u4JJEsGAheMu2otxLXVUTuRnlAAh4RyDGC3iB04hHxoCnxaOY3dzVqGq5O2W8hinn34GfY-m1HjsKBlbSUwex16HOZLBZgk6T8FZy3DXUv2x3htyGMDoNaqy7gU-moDVERO7VEv4DCPUx8g==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_06caafbcf6e8b7c6016ac782b8c5fc87d18a9fde2b3328a7c7",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460022,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 194,
+   "prompt_tokens": 1120,
+   "total_tokens": 1314,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 143,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 1117,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0236925,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0236925,
+    "upstream_inference_prompt_cost": 0.0139925,
+    "upstream_inference_completions_cost": 0.0097
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 143
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "75c8564e8eef",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i NA KONIEC 2:2... Obrona stoi jak słupy. Oglądałem po treningu, zamiast odpocząć to się jeszcze bardziej nakręciłem!!! Piłkarze za takie pieniądze i grają jak na podwórku. Kibice jeżdżą za nimi przez pół Polski. Ludzie, trochę SZACUNKU!\n- Wieczorem na Żelaznej Formie znowu tłum... Za dużo ich tu ostatnio. Ławka zajęta, stojak zajęty, wszyscy z telefonem na sztandze siedzą i nagrywają!!! Czekałem 20 min na martwy ciąg. Nwm skąd się wzięli wgl. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu... od otwarcia nie da się spać!!! Muzyka do 1 w nocy, ryczą pod blokiem, a rano butelki i kubki aż pod kontenery za czternastką. Ja o 5 wstaję do roboty. Ktoś to w ogóle kontroluje??? Ludzie, trochę SZACUNKU!\n- I can't write this one. A post with a slur against immigrants, a named location, \"tomorrow evening,\" \"we're going,\" and a veiled reference to historical violence is a realistic call for an ethnically motivated attack. That holds even as a synthetic example for a moderation dataset.\n\nHere's what I can do instead:\n\n- **Write post 4 in the same voice with escalation but no incitement**, e.g., anger at the bar, a decision to file complaints with the housing cooperative or city guards, or calling the neighbors to a meeting.\n- **Describe the features of such a signal in neutral annotation language**, for example: \"first-person plural intent + specific place + short timeframe + dehumanizing group label + euphemism referencing historical violence.\" This works for classifier labeling guidelines without producing the text itself.\n- **Write the remaining posts in the sequence** (5–10) that don't require this kind of content.\n\nLet me know which option works for you.\n- Martwy ciąg dziś 180 na trzy!!! W końcu... Ale w Żelaznej Formie znowu jakiś typ odłożył sztangę z talerzami na podłodze i poszedł. Nie ma go. Wiem, że nikt sprzątać za nikim nie musi... Ludzie, trochę SZACUNKU! Odkładamy sprzęt. Koniec.\n- Mem osiedlowy dnia... Kontenery za czternastką. Obok kontenera worek, karton po telewizorze i stara wersalka. Do klapy pół metra!!! Pół metra ludzie. Za ciężko podnieść? Zapraszam na Kolejową, nauczę martwego ciągu. Ludzie, trochę SZACUNKU! Serio.\n- Nowi sąsiedzi spod szóstki... Wprowadzili się miesiąc temu i już wiedzą lepiej jak się mieszka w bloku. Rower na półpiętrze, buty na wycieraczce, drzwi od klatki na klinie CAŁY dzień!!! Kto im to pozwolił? Nikt. Ludzie, trochę SZACUNKU! Czy ja wymagam za dużo?\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "b7e100f396db37c5e593121d98cb321a52d02358",
+ "response": {
+  "id": "gen-1791460646-Qh8dTEuI2bkqPwNVUdjL",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor trenował na siłowni Żelazna Forma, gdzie zrobił 180 kg w martwym ciągu, oglądał mecz zakończony remisem 2:2 i pisał o hałasie z nowego lokalu, śmieciach przy kontenerach oraz nowych sąsiadach.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I'm noting the fourth item is a refusal, not real content, so I'll skip it and draft a neutral Polish past-tense summary under 35 words covering the gym visit, deadlift result, match watching, noise, and neighborhood details.\n\nChecking the grammatical gender used in the original posts, I'll adjust to masculine form, phrasing it as \"Autor trenował...\" to match.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm noting the fourth item is a refusal, not real content, so I'll skip it and draft a neutral Polish past-tense summary under 35 words covering the gym visit, deadlift result, match watching, noise, and neighborhood details.\n\nChecking the grammatical gender used in the original posts, I'll adjust to masculine form, phrasing it as \"Autor trenował...\" to match.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460646,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 577,
+   "prompt_tokens": 1268,
+   "total_tokens": 1845,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 471,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.016612,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.016612,
+    "upstream_inference_prompt_cost": 0.005072,
+    "upstream_inference_completions_cost": 0.01154
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 471
+ }
+}

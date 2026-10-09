@@ -1,0 +1,95 @@
+{
+ "call_id": "f2f76eb26236",
+ "tag": "bg_vs",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 490831533
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.\n- zainteresowania: szydełkowanie swetrów, teleturnieje w telewizji, wnuki i ich zajęcia\n- lokalny punkt odniesienia: targowisko przy ulicy Szczecińskiej\n- aktualna sytuacja życiowa: Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.\n- sposób pisania: zdania: long run-on; interpunkcja: ellipsis everywhere; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: dodaje „co by nie mówić”\n\nTopic for this post: dzieci i rodzina\nConcrete angle: dziecko chore, zwykłe przeziębienie\nRegister: mildly grumbly\nTarget length: about 36 words\nTime of day: afternoon, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Zamiast mama albo tata pierwsze wyraźne słowo to było po prostu auto, powtórzone dzisiaj rano przy oknie chyba z dwadzieścia razy. Mąż zadowolony, ja trochę mniej, ale przynajmniej wiadomo, o co chodzi, jak pokazuje palcem na ulicę.\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "50b5d1a91df050d8ff3c4e595a4f20e7b33addd6",
+ "response": {
+  "id": "gen-1791461634-ct4pWZLaDYP40K8VR9pg",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\"text\": \"Mały znowu kicha od rana i marudzi przy obiedzie... syrop z cebuli poszedł w ruch, ale co by nie mówić... wycieranie nosa co pięć minut i ciągłe marudzenie potrafi człowieka jednak trochę zmęczyć po całym tygodniu...\", \"probability\": 0.07},\n  {\"text\": \"Miałam mieć dzisiaj spokojne popołudnie... a tu wnuczek z katarem do pasa leży pod kocem i tylko marudzi na herbatę z miodem, co by nie mówić, ciężko go czymkolwiek zająć, jak tak tylko pociąga noskiem...\", \"probability\": 0.05},\n  {\"text\": \"Znowu zwykły katar ze szkoły przyniósł i cały plan na dzisiejszy dzień przepadł... siedzimy w domu, mierzymy temperaturę, marudzi na ten syrop malinowy, ale co by nie mówić... do poniedziałku trzeba go jakoś na nogi postawić...\", \"probability\": 0.06},\n  {\"text\": \"Ciepła herbata z sokiem z czarnego bzu zrobiona... mały leży pod pierzyną i marudzi na nudę, bo przez ten kaszel nie puściłam go na dwór... co by nie mówić, piątkowe popołudnie miało wyglądać zupełnie inaczej...\", \"probability\": 0.04},\n  {\"text\": \"Ledwo obiad zjedzony, a tu trzeba znowu biegać z chusteczkami... mały pociąga nosem, marudzi i nie chce leżeć pod kocem, choć kaszel ma brzydki... co by nie mówić... człowiek się tylko nabiega przy takim małym marudzie...\", \"probability\": 0.08}\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a193GhOg8ZfH22Wa5C5EnMK8m1+wt7O2BGKQP3Z16ffPNdfqXrejUkyesUvzT+oyy7qQYU8DDk5L1WlX0+zoiOTmgR3FM+QQjoRThyyaZvW3lsLI",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461634,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 424,
+   "prompt_tokens": 786,
+   "total_tokens": 1210,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0021795,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0021795,
+    "upstream_inference_prompt_cost": 0.0005895,
+    "upstream_inference_completions_cost": 0.00159
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

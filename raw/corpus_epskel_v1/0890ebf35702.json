@@ -1,0 +1,86 @@
+{
+ "call_id": "0890ebf35702",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... stary mecz dzisiaj to bedzie cos. koncze zmiane i lece prosto na stadion... oby stal w koncu trafila cos przed przerwa! ostatnio tyle okazji poszlo w las ze az szkoda gadac.\n- no właśnie... wracam po zmianie i znowu to samo gadanie pod blokiem. te ciapaki wgl mnie wkurwiaja... czlowiek chce tylko chwile spokoju po robocie a tu ciagle zamieszanie. nwm co sie porobilo z tym osiedlem.\n- no właśnie... widziałeś co otworzyli na rogu? ukrowy sklep! wczoraj jeszcze pusto było a dziś szyld wisi i ludzie już wchodzą. nwm nawet co tam sprzedają, z daleka nie ogarnąłem.\n- no właśnie... druga zmiana w magazynie i znowu skaner sie zacinał co chwile. pół palety musiałem sprawdzac od nowa... zeszło dłużej niż trzeba. wróciłem i tylko kanapki ogarnąłem bo na gotowanie juz siły brak.\n- no właśnie... niech kurwy spierdalają do siebie. ile można tego słuchać w kółko... człowiek chce po zmianie usiąść spokojnie a tu znowu to samo. no i git, ja sie nie bd w to bawił.\n- ahaha ten mem z bramkarzem co łapie pilke i od razu sie przewraca... obejrzałem chyba 15 razy i dalej mnie rozwala. mina typa jakby sam nie wiedział co sie stalo... wysłałem chłopakom, nwm czemu tak mnie to bawi!\n- no właśnie wiem... jutro wieczorem. te chujki jeszcze przeprosza za wołyń. nwm co oni sobie mysla wgl, ale ile mozna udawac ze tematu nie ma... sam wiesz.\n- ahaha grill odpalony a kiełbasy dalej nie ma... marek poszedł po nie i chyba utknął przy kasie. ja juz chleb przypieklem z obu stron... jak zaraz nie wroci to zjemy samą musztarde!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "725b4b3c77334d32f20a7aa38851cf77cec17be3",
+ "response": {
+  "id": "gen-1791465259-OhBSsWOJOQrt6Yc9qcHc",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba pracowała na zmianach w magazynie, wybrała się na mecz, zauważyła nowy sklep na rogu, oglądała mem o bramkarzu i przygotowywała grilla ze znajomymi.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465259,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 55,
+   "prompt_tokens": 579,
+   "total_tokens": 634,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001708,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001708,
+    "upstream_inference_prompt_cost": 0.001158,
+    "upstream_inference_completions_cost": 0.00055
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

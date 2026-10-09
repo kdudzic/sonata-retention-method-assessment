@@ -1,0 +1,86 @@
+{
+ "call_id": "dd02d617bc94",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.\n- zainteresowania: rowery szosowe, mecze Cracovii w telewizji, tanie gadżety z Aliexpress\n- lokalny punkt odniesienia: stacja paliw Shell na Wielickiej\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: kończy wpis słowem „nom”\n\nPosts by this author (in order):\n1. zmienili rozklad i poranny autobus jest pare min wczesniej. trzeba szybciej ruszac po kawie bo przesiadka ucieka. sprawdzilem dopiero na przystanku nwm jak to ogarne z tymi kursami od rana bd musial ustawic nowy budzik nom\n2. o 6 piłka z chłopakami na orliku mokra murawe a nogi po robocie już czuję nwm czy dogram do końca nom\n3. rano na trasie taka mgła że wielicką ledwo było widać. jutro też tak bd? startuje wcześnie nwm nom\n4. zakupy na obiad ogarniete po drodze. makaron i pomidory mam a czosnku brakło nwm jak mogłem zapomniec. jutro zrobie porządny sos nom\n5. w niedziele wieczorem dopiero nowy grafik wrzucili. jutro godzine wczesniej start i dwa dni pod rzad do 16. nwm jak cos zaplanowac jak wszystko na ostatnia chwile przestawiaja. nwm o ktorej wstac nom\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "45a0c24a96e08ac05c4c74c16f14fed45bab0c62",
+ "response": {
+  "id": "gen-1791460961-OwKyWtT7Xu1QmEd3bwd5",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":4,\"voice_stability\":4,\"tic_overuse\":true,\"repetitive_structure\":true,\"topic_variety\":3,\"natural_overall\":3,\"problems\":[\"Every post ends with 'nom'\",\"Repeated 'nwm' and 'bd' feel formulaic\",\"Several posts follow the same problem-and-worry pattern\",\"Bus commute is slightly at odds with driving shifts\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460961,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 87,
+   "prompt_tokens": 714,
+   "total_tokens": 801,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002298,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002298,
+    "upstream_inference_prompt_cost": 0.001428,
+    "upstream_inference_completions_cost": 0.00087
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

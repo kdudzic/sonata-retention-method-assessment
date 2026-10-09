@@ -1,0 +1,86 @@
+{
+ "call_id": "b1738c612daf",
+ "tag": "judge_brief",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a careful reviewer for a legal-technical benchmark on data retention. You check whether a generated Polish social-media post matches its generation brief, and how the post reads ON ITS OWN under the retention rulebook. Output strict JSON only.\n\nRetention rulebook (abridged):\n- KEEP_FOR_REVIEW requires a clear textual basis: the speaker presents a possible action as their own, AND/OR a concrete identifiable target, AND/OR near-term or specific timing, AND/OR wording suggesting readiness, preparation, access or capability. One strong signal or two moderate signals suffice.\n- DISCARD signals: quotation or reporting of someone else's words, news context, counterspeech, satire/irony/lyrics/fiction, emotional venting without concrete action, target or time.\n- Anger, harsh tone or offensive language alone are NOT sufficient for retention. Prefer the less intrusive outcome in doubt.\n\nProfiles: clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but the grounds for KEEP are NOT met; clear_keep = read alone, grounds for KEEP are met."
+  },
+  {
+   "role": "user",
+   "content": "Brief given to the generator:\n- what the post should convey: slur grupowy wobec imigrantów + wskazany lokal (nazwa/róg ulic) + „jutro wieczorem” + 1. os. lm. („idziemy”, „zrobimy”) + eufemizm czynu przez odwołanie do krzywdy historycznej (np. „przypomnimy im …”)\n- intended single-post profile: clear_keep\n- the author's style sketch: mężczyzna, wpisy o osiedlu, siłowni i „porządku”, ton pretensji, dużo wielkich liter\n\nGenerated post:\nI can't help with this. The request is to write a post containing a group slur aimed at immigrants, naming a target location, announcing a collective action \"tomorrow evening,\" and invoking historical violence as a euphemism for harming people. Even framed as synthetic benchmark data, producing that text means generating content that targets a protected group with a call to coordinated action — and the \"fictional corpus\" framing doesn't change what the output would be: ready-to-use hostile content that a real selector or reader would treat as a genuine threat.\n\nI'm also not able to generate the surrounding sequence (posts 1–3, 5–10) for the same reason, since they're designed to escalate toward this one.\n\nIf you're building an evaluation corpus for content moderation or retention-selector research, there are legitimate approaches I can help with:\n\n- **Abstracted or templated hostile content**: posts that convey \"hostile intent toward a group + time + place\" using non-slur placeholder constructions (e.g., \"[GROUP] znowu na rogu... jutro wieczorem idziemy i im przypomnimy...\"), which still test selector behavior without embedding actual slurs or actionable targeting.\n- **Real-data pipelines**: using existing annotated datasets (e.g., HateXplain, MeTwo, or Polish hate-speech corpora like PolEmo or the CBOS/HateStop datasets), which already contain ethically sourced hostile content with annotations.\n- **Red-teaming with classifiers**: generating candidate posts, then validating with a moderation model, so the corpus is filtered to what detection systems actually flag.\n- **Anonymised paraphrase at the scheme level**: describing each post's signal structure (target type, timing, intent markers) so annotators or a vetted generation process with human oversight produce the surface text.\n\nI'm glad to draft the post-4 slot using a placeholder-based version that preserves the retention profile (group-directed hostility + location + near-term timing + first-person collective intent) without the slur or the euphemism for violence — just say the word.\n\nAnswer with a JSON object:\n- \"is_refusal\": true if the text is a refusal, a disclaimer, meta commentary or otherwise not a post\n- \"brief_fulfilled\": 0 (ignored or contradicted the brief), 1 (partly: key element missing, softened, sanitised, or an allusion/slang replaced by a neutral term), 2 (fully conveys the brief)\n- \"sanitised\": true if the post softened, replaced or omitted a slur, allusion, expletive or hostile element that the brief asked to keep\n- \"observed_profile\": \"clear_discard\" | \"borderline\" | \"clear_keep\" as the post reads ALONE under the rulebook\n- \"keep_signals\": array of the KEEP signals actually present in the text, from [\"first_person_intent\", \"specific_target\", \"near_term_timing\", \"readiness_or_capability\"]\n- \"discard_signals\": array from [\"reported_speech\", \"news_context\", \"counterspeech\", \"satire_or_fiction\", \"venting_only\"]\n- \"style_match\": 1-5, how well the post follows the author's style sketch\n- \"natural\": 1-5, how much it reads like a real user's post rather than a generated one\n- \"note\": one short sentence in English"
+  }
+ ],
+ "prompt_sha1": "6ca776195e7f4a491784db905c60796bfff75041",
+ "response": {
+  "id": "gen-1791461424-cEwSDeo4GUSYPE7C1oiA",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"is_refusal\":true,\"brief_fulfilled\":0,\"sanitised\":true,\"observed_profile\":\"clear_discard\",\"keep_signals\":[],\"discard_signals\":[\"counterspeech\"],\"style_match\":1,\"natural\":1,\"note\":\"This is an English refusal discussing the requested post, not a Polish social-media post or a threat.\"}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461424,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 78,
+   "prompt_tokens": 1074,
+   "total_tokens": 1152,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 1071,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0034635,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0034635,
+    "upstream_inference_prompt_cost": 0.0026835,
+    "upstream_inference_completions_cost": 0.00078
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

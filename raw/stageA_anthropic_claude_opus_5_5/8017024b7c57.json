@@ -1,0 +1,95 @@
+{
+ "call_id": "8017024b7c57",
+ "tag": "hardneg",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1999951809
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one realistic public online post for a legal-technical benchmark.\nWrite natural language only. Do not reveal labels, factors, or analysis."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nGenerate a short public post consistent with the hidden scenario variables below.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje na kasie w osiedlowym sklepie spożywczym na zmiany, wolne popołudnia i wieczory po zmianie rannej, posty głównie w przerwie lub w tramwaju.\n- zainteresowania: seriale kryminalne, uprawa storczyków na parapecie, wyprzedaże w drogerii\n- lokalny punkt odniesienia: przystanek Plac Grunwaldzki we Wrocławiu\n- aktualna sytuacja życiowa: Od miesiąca zbiera pieniądze na wymianę starej pralki i porównuje oferty.\n- sposób pisania: zdania: short fragments; interpunkcja: ellipsis everywhere; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: kończy wpis słowem „takie życie...”\n\nHidden scenario variables:\n- speech_act: general commentary\n- speaker_perspective: first person\n- target_specificity: general group\n- imminence: within 24 hours\n- agency_cue: vague reference\n- exculpatory_signal: fictional or cultural reference\n- retention_profile: clear_discard\n- legal_relevance_focus: disclosure-sensitive context\n\n## Generation Goals\n\n- This benchmark is not about predicting dangerousness in general.\n- It is about generating synthetic posts that allow a reviewer to assess whether there is a clear basis to discard, a genuinely borderline case, or a plausible basis for retaining the post for further review.\n\n## Generation Rules\n\n- The post must reflect the hidden scenario variables naturally and coherently.\n- Do not add facts, cues, or implications beyond the specified variables.\n- If an exculpatory signal is specified, it must be genuinely visible in the wording.\n- If exculpatory_signal == none, do not accidentally soften the case through distancing or dismissive phrases.\n- Avoid stereotypes, slurs, and references to protected characteristics unless explicitly required by the scenario.\n- Do not introduce fictional, cinematic, song, meme, or cultural references unless explicitly required by the scenario.\n- Do not introduce news-report framing unless explicitly required by the scenario.\n- No graphic violence, no operational instructions, no explicit weapon-building details.\n- The posts should fit a benchmark focused on minimum justified data retention, not on predicting dangerousness.\n- Keep the wording plausible and natural, without artificially intensifying the case.\n- Do not add extra cues of place, time, capability, coordination, or intent unless explicitly specified.\n- If the variable combination implies a plausible basis for retention, make that basis visible in the wording clearly enough that a careful reviewer could identify it.\n- If the variable combination implies a borderline case, make it genuinely debatable rather than clearly harmless or clearly alarming.\n\n## Anti-Softening Rules\n\nUnless explicitly required by `exculpatory_signal`, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the intended hidden scenario.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Hidden Scenario Variable Definitions\n\n### `speech_act`\n\nWhat the post is doing at its core.\n\nAllowed values:\n\n- declaration of action: the post states that the speaker will do, is doing, or is ready to do something concrete\n- expression of anger: the post vents frustration, outrage, or hostility without describing a concrete intended action\n- hypothetical statement: the post describes what could, might, or should happen without the speaker committing to act\n- humor or joke: the post is framed as non-literal humor or playful exaggeration\n- satire or irony: the post uses non-literal exaggeration or mockery to make a point\n- counterspeech: the post condemns, discourages, or warns against harmful or threatening action\n- general commentary: the post comments on a situation without announcing action, urging others, or clearly venting strong emotion\n\n### `speaker_perspective`\n\nWho is presented as the source of the statement.\n\nAllowed values:\n\n- first person: the speaker presents the content as their own possible action, intention, or view\n- third person: the post describes another person's actions, plans, or words\n- direct quotation: the post repeats another person's exact words\n- indirect report: the post paraphrases or summarizes something heard, read, or reported\n- impersonal: no clear speaker or actor is identified\n\n### `target_specificity`\n\nHow identifiable the target is.\n\nAllowed values:\n\n- none: no identifiable target\n- general group: a broad unnamed category of people\n- specific person: a named or clearly identifiable individual\n- specific institution: a named organization, office, company, school, court, or public body\n- specific place: a named or clearly identifiable location\n- specific event: a named or clearly identifiable meeting, rally, match, class, ceremony, or scheduled event\n- specific object: a clearly identifiable object or infrastructure element\n\n### `imminence`\n\nHow close in time any action appears to be.\n\nAllowed values:\n\n- none: no time cue\n- vague future: distant or undefined future\n- near future: within days or tied to an upcoming event\n- within 24 hours: today, tonight, tomorrow, or another clearly near-term cue\n\n### `agency_cue`\n\nWhether the post signals ability, readiness, or preparation.\n\nAllowed values:\n\n- none: no indication of capability, planning, or preparation\n- vague reference: a loose suggestion of ability or willingness without concrete detail\n- specific plan or preparation: concrete steps, logistics, preparation, or planning are mentioned\n- claimed or demonstrated capability: the speaker claims access, skill, means, or prior experience\n\n### `exculpatory_signal`\n\nA contextual cue arguing against retention even if the wording looks alarming on the surface.\n\nAllowed values:\n\n- none: no visible mitigating context\n- news or media context: the wording clearly frames the content as reporting\n- counterspeech framing: the content is clearly framed as criticism, warning, or opposition\n- ironic or satirical tone: the wording clearly signals non-literal intent\n- fictional or cultural reference: the content is clearly presented as belonging to fiction, lyrics, or another cultural text\n- hypothetical framing: the wording is clearly conditional or speculative\n- emotional venting: the content is clearly only emotional release without concrete action structure\n\n### `retention_profile`\n\nControls the intended strength of the case for data retention.\n\nAllowed values:\n\n- clear_discard: the scenario should contain a clear basis against retention\n- borderline: the scenario should contain mixed or incomplete signals, making the case realistically debatable\n- clear_keep: the scenario should contain a plausible, textually grounded basis for further review\n\n### `legal_relevance_focus`\n\nOptional legal salience of the scenario.\n\nAllowed values:\n\n- none\n- threat to person\n- threat to infrastructure\n- intimidation or coercion\n- discriminatory targeting\n- disclosure-sensitive context\n\n## Additional requirements for this variant\n\n- the post must be consistent with the author profile's speech habits (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- if target_specificity requires a specific referent, use a concrete, plausible Polish name of a person, institution, place, event or object, never a placeholder\n- if retention_profile = clear_discard, the non-retainable structure must be visible on the face of the text\n- if retention_profile = borderline, a careful reviewer could reasonably hesitate\n- the post concerns the topic area: spór z wynajmującym lub spółdzielnią\n\n## Quality Check Before Output\n\nBefore producing the final post, ensure that:\n\n- the post sounds like a plausible online post by an ordinary user\n- it does not sound like a formal complaint, witness statement, administrative description, or polished essay\n- the wording remains readable but not overly neat or institutional\n- you output only what the output format below asks for and nothing else\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "b9dcd3876b08aecf820d9cf01d4845f373eb3336",
+ "response": {
+  "id": "gen-1791459902-7RpY4iqlRTTV3oA1xzIW",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need to draft a short Polish post, 20-50 words, written from a woman's perspective, lowercase start, using ellipses and some abbreviations, ending with \"takie życie...\". The topic should touch on a dispute with a landlord or housing cooperative, framed as general commentary referencing a vague agency and maybe a nod to a crime drama, while being careful about sensitive details like disclosed personal data.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSswsKEAgSGAI4AUIIdGhpbmtpbmcSDISazLD83+XzcDKGDRoMebggE3ag+8xEnlnLIjDHf+WjzLuRUUrCnV2nJkdiM4RjOvJBwl1gd1BAJ40pbFBhFCPzmssEHwrPi9RWBO0q0Arh9+Fj99/4YjHoxO5Xo/VHbUQGk4Fe/e80ibaUwarAl6ZeWdOYK4AkavmiTk6sQ4eJTAIE3QvHiOqMHhAMbV9A7yX4rfiqs8hZLxLZkcaM8SvM8P2CI6u386VV4vJoQCC8AH8JfnlOdyJ/hW+/3+11JmrdQVA6SskR2j7un+XzVqi+tfrdEgm/gPgsoB1+Hp0q3eJxQrppvwPW/videMtacX4SoKd4/OuSzr7a3GJkj16W+TftLtHHzCjkLh9osMNrR69X4SfJlbsIW+7DMEXmzIgKhNp/tfDGx+a8Z2guuArAKtEWstvNq6sEw21x1KOuIXX1gRkUORikOOfZDutnlxj1Ft+UVxacgUcFGKN1HLWgI5zgWbkgNLSkCWWtAv8jj31jRe2AVmuC+G/emEHIyQgGlefdQN/BqxecF2Wd3cpA7Q0mJW2qvKY6Gx3scRu1+QcHiJ8jINshg8HMvr7DPv/JXlXx4ZL960oiwky1w8zO4hAvlLY9IJFjbJ37tJcSZ/SmtVX0QpReqqMZXqfvIOK9oJtkhSDt2o/6Wv7CqjggrK5sOnIP563Wyf+g2Dxwwe+nQ2eBFIHqq5ixVMxIsWPABwSlgW18qTFdUDHNYAUWYKQKdm4NMGXFmCPOxh+yt3VzAJ9SI1PpJFkPC69lg9KfHMRvuGOBIOdxBK8z6r6or9qSjc3vAqUx9bxAkMK/ld8YHbtKl1p0Y6qkxWaAGDgEXCzmgoVJyqVsr+AoAP49wrZcQ3DRmP0jXrTw+FL6UZopSNeBLuFAe3ozWhednk0QShqj/hXpcKTCeJgDT6cTxwQUGdYjBagI3yhwJr1dXYm716QgjmT+2lVSFfvPsPEeiGhJAapE1a/TAKFqlWn6YzWdkp906fkJ6+im9soTDNgnVDN7GITvUiB9FqRwtEjbCJRGpYvRHnAHFmiPzfousJBOH1IjfNhFNv7zVffuU0aT+atmlUH5o20c1RW76QXSRrSOuI71hjdsYMOjDSpH7yXrK3bCCqR5FWZ7cT+CftUNkuqDqiRXLBMhMNH9M5wkgMmVSVa4MnQityh6ZSYQRym3e6HpxtQuWv11Bzvv7dm6tyawli+IoO9NV3DCH+Py4BAuSv985MYwQCobNXkSbKmGdg+BzI7t5MYNZV7yzgKcMnY0I3UNfZ1zYXxRu/50cWuZqrRNL4wP7bb1N0SDDnnn4PJCweW0PnLXfwIEM3kN3LITNqHXOtot6XYvBh8qKTwfYcU6OzIXaP8FgslqcrL3bMVZSwT0Jp98CDG7jmqsHfU0EGow+egkluBkiFvPnFNZ/3rUvTiiuIa3eVs7BzD2eCdZoCsmmGEIwYOYcv1Zg+l4tecse3OZ6A7GIbFwlJu7PbzFH/mwIbX8sVN4TdGfG26gSqekltCD/wQotuXKnAWSiJ34ohXmzaGbswjfDqaPVQ5gxysv2M/br3x+OH84UmyFIPTYZZjeRHy6ZninJ1/J1k8Cw+J7pNbpCfWBctXR0j6bVxepdAJ/dCmObY6BTa5mF58DgX1VfWyp9t05S6wa4M0M6BHSz+rgEPZshpco0ctvsBseWZ0KdO+qDPUL6WBAOl/clhuwzetxuD9pzMBn2nkUkso6dUR8zZEleUvAVljHw5VTVnCjzlpOSLrXgbgWCLbHeAxuUq9VZlbazNoG20Gpki6i+PzF57mlPgzFKn7wFi0vTi8TFot2crwwverUjydDFUk1RQ3dFnG9BRVuYIsR+xejMmeiC2yWHhk719xjSpeLT1ykLZht5G2JRR9BqfMDLYA/Yq9m6FTHR/6P1z7EO8+gzsecGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459902,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 3082,
+   "total_tokens": 3382,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 300,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.018328,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.018328,
+    "upstream_inference_prompt_cost": 0.012328,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 300
+ }
+}

@@ -1,0 +1,22 @@
+# S1 seeds v2 - POST-HOC variant (written 2026-10-08 after inspecting evaluation-corpus S1 results; NOT part of the
+# frozen protocol). Restricted to the rulebook's generic signal families (first-person intent, specific target,
+# temporal proximity, agency/readiness, escalation; reported speech, lack of agency, humour, general anger,
+# counterspeech). v1 contained descriptions at the level of the PI's arc patterns (routine reconnaissance, family
+# finality, group hostility + venue), which is a leak of arc logic into the selector.
+version: s1_seeds_v2_rulebook_only
+SEED_PLUS:
+  - "osoba pisze w pierwszej osobie, że sama coś zrobi: przyjdę, zrobię to, załatwię, zobaczysz"
+  - "wskazany jest konkretny, możliwy do zidentyfikowania cel: osoba z imienia, instytucja, miejsce, obiekt lub wydarzenie"
+  - "podany jest bliski lub konkretny czas działania: dziś, jutro, wieczorem, po szkole, w sobotę, o określonej godzinie"
+  - "osoba sygnalizuje gotowość lub zdolność: ma plan, przygotowania, dostęp, środki, wie jak i kiedy"
+  - "wypowiedź przechodzi od ogólnej frustracji do konkretnej zapowiedzi działania"
+  - "zapowiedź działania własnego wobec wskazanej osoby w bliskim terminie"
+  - "deklaracja, że ktoś wskazany pożałuje lub że coś go spotka, w pierwszej osobie"
+SEED_MINUS:
+  - "cytat lub relacja cudzych słów: ktoś powiedział, policja podała, portal informuje, nagłówek"
+  - "opis sytuacji lub relacja z wydarzeń bez własnej zapowiedzi działania"
+  - "brak sprawstwa: nikt nie deklaruje, że sam coś zrobi"
+  - "żart, ironia, satyra, przesada, tekst piosenki lub odniesienie do filmu, gry albo serialu"
+  - "ogólny gniew lub frustracja bez konkretnego celu, terminu ani planu"
+  - "głos sprzeciwu: potępienie gróźb lub przemocy, ostrzeżenie innych"
+  - "zwykłe codzienne sprawy: praca, dojazdy, pogoda, jedzenie, zakupy, rodzina, zdrowie, sport, rozrywka"

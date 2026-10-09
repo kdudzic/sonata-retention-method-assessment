@@ -1,0 +1,86 @@
+{
+ "call_id": "21853a3c5b32",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Emerytowany kolejarz mieszkający w Nowym Sączu, wstaje o świcie, posty rano przy kawie i po obiedzie.\n- zainteresowania: uprawa działkowa pomidorów, modelarstwo kolejowe, słuchanie radia\n- lokalny punkt odniesienia: ogródki działkowe przy ulicy Lwowskiej\n- aktualna sytuacja życiowa: Stawia na działce nową szklarnię i czeka na dostawę folii.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: kończy wpis „i tyle w temacie”\n\nPosts by this author (in order):\n1. Dopiero co skończyłem obiad i spojrzałem w okno, a z nieba spadła prawdziwa ściana wody. Pranie z balkonu ledwo zdążyłem ściągnąć przed tą nawałnicą. Teraz tylko słychać szum za szybą.\n2. Człowiek chciał po obiedzie posłuchać audycji w spokoju, ale za ścianą znowu idzie w ruch udar. Trudno, przeczekam to i tyle w temacie.\n3. Syn zainstalował mi ten nowy program do drukowania przez sieć radiową. Dziwna sprawa, bo klikam na telefonie, a w drugim pokoju samo zaczyna szumieć i wychodzi czysta kartka z planem. Nowoczesność i tyle w temacie.\n4. Wypijam pierwszą herbatę w spokoju, choć w słuchawce od rana nerwowa atmosfera. Młodzi nie potrafią sobie zorganizować zastępstw i teraz przestawiają zmiany jak pionki na planszy, psując ludziom zaplanowany od tygodnia wolny czas.\n5. Ciężka kolacja znowu dała o sobie znać. Pora przejść na lżejsze jedzenie wieczorem, bo człowiek tylko przewraca się w łóżku i tyle w temacie.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "11007de76fb8932854a0b945f46140af1ceaa655",
+ "response": {
+  "id": "gen-1791461914-gflRhSEcPHETE5RwL53u",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 3,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"The catchphrase appears in three of five posts.\",\n    \"The shift-work complaint sounds odd for a retiree.\",\n    \"The wireless-printing description feels contrived.\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461914,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 102,
+   "prompt_tokens": 744,
+   "total_tokens": 846,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002508,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002508,
+    "upstream_inference_prompt_cost": 0.001488,
+    "upstream_inference_completions_cost": 0.00102
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

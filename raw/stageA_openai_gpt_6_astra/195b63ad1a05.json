@@ -1,0 +1,94 @@
+{
+ "call_id": "195b63ad1a05",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Wróciłem z treningu prosto na drugą połowę... 2:1!!! Ale końcówka, nwm jak oni tego nie wyrównali. Nasz bramkarz dzisiaj KOZAK! Miałem spokojnie zjeść kolację, a darłem się do telewizora jak głupi.\n- Za dużo ich tu ostatnio... Wróciłem po robocie i nawet okna nie można otworzyć, bo ciągle ktoś się drze pod blokiem!!! Nwm, kiedyś było spokojniej. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu to już PRZESADA!!! Wracałem z Żelaznej Formy, pod wejściem syf, kubki aż przy naszej klatce... Otworzyć biznes i mieć osiedle gdzieś. Nwm, kto ma po nich sprzątać. Mieszkańcy?! Ludzie, trochę SZACUNKU!\n- Nie napiszę gróźb ani obelg wymierzonych w imigrantów. Mogę zaproponować ostry post bez nawoływania do przemocy:\n\nPod lokalem na rogu Kolejowej znowu kubki i resztki... Jutro wieczorem idziemy pogadać z właścicielem. Niech w końcu OGARNIE teren przy wejściu!!! Nie będziemy codziennie po nich sprzątać. Ludzie, trochę SZACUNKU!\n- Po robocie ledwo żyłem, a w Żelaznej Formie martwy poszedł aż miło!!! Wyciskanie już słabiej... Ale talerze znowu porozrzucane po całej sali. Trening zrobiłem, jeszcze się naszukałem pary do sztangi. ODKŁADAJCIE na miejsce. Ludzie, trochę SZACUNKU!\n- Wyszedłem ze śmieciami za czternastkę... Kontener pusty, obok wieża z kartonów!!! Tetris osiedlowy, tylko każdy kończy grę po pierwszym klocku. GAME OVER i do domu. Ludzie, trochę SZACUNKU! Karton sam do środka nie wskoczy.\n- Ci nowi sąsiedzi to drzwiami normalnie zamknąć nie potrafią?! Wróciłem z treningu, człowiek chce zjeść w spokoju... a na klatce łup, łup!!! Klamka jest DO UŻYWANIA. Nwm, u siebie też tak trzaskają? Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "aaa2ce948412ccd7718175e494585a31fcd0d765",
+ "response": {
+  "id": "gen-1791460031-PujnHZlb7YozMwaYFvRg",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Wracał z pracy, trenował w Żelaznej Formie, oglądał mecz i",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4LCC6oz0KYntVbJ4ZUQWBp68VBBrdqH_u8JW9nw8pLsiaTgW7i0-PfvdQnw_7Xeu5A7B3cytOAUrS4f4iAoVKNTk7NeiBnEk70_HzJRAQh4TH7IkuYBCM_AJNb7sDE072QfpuRL-SRPot0_DIMKqwQdaaFqP6u8FY0SJkVFKo4VlFz_xiO5IJwsIjM5eUQcAMIqW1maICF07alM6ll8ssEg7E8cdHO_YIWW7oqrIasww6RUMqwkAEtup_vjohR0mazcISt2DgISTw1y5M9hW_OTVbhSUIR2PbTKfQiCfwo_hfJOPbhjnj1B3eHRRFyBChzuMy12F_e_JNm_DxZGloicMuhWOWWcgNtc_yLW5z-EI4Te8AXOx9DIL82D0vc7VGvO1r2pqaX30cWfeVqjKOJF8V1w4Xh8BBVePrmXD8C27CBTrSbOTrxG66UVIXS3WwuI-O844RJkg9i5Hzh4MY2Fr9guQ2gzSCivqYCcl2G8Tir29Vbd5PKGUmptc3w8xdK5VvPSdKpy7ajtCSMKNa7Jq2iLCxgUFXYpLBlN0uevbm7ufbihjYRRqaPZfO6iDl0Zf598-n41w-6PBbhoTTeX3RLg2M1BGA8fs7W-v-nmNGyaTVZLOORvsA_uGi_UMDZQQqX-BpADJpDZd68rrHRFzwtqftYPVU36a-id-oJUAShfs200mllAN4zRBUhrZ6sFA1Ft865Ojv3t4ZX3r3hfStaPJ06nHBxL-ZtsHDoL4Zb4_20uHz1EpBy4RqugpsPlN6MEBvZOTMT8_jD3KYmsJXQAwQ5UpPPL5xyO0Ow77d5pBDC1CEoOcOflacJi6e0KSpcWwp6H7JMgNOqbi8WxX1rZ3MiFgHxHfGZG359b-ykn-EKr6nUe16b8v7zFoRezUD2Joc-7U5JMcXkJqxw7l7SuZMrsUh5VP5atTsD9YwQsKFua8HggqhGwSvtCm2XMUsSX7qp_CQIiqqll-NcABAEesU9mfGChp-5S9Wf067hXJ3XeCjWsbPUjQr9z1gZ7q96DmYC1nUb8mhSJ5K_0KNKjq_nvlOTwaz510d-0BAhTR-Kcs43-IlQsgwII3kFV6HgKHOAakNfDatRnd1iAQOZdC1yvZZjijuCPvU9xlR-pLLOMK0jzHJUwv7jViFOQ8kwo111T1r_hMQsJH8QVJz_Bq9jEu4M-eTO1MqO8XMx5793pZ5XCQb88i3twWAiIk-3wleFgkuUBx1QI0cv4ZHdaUoTfupo0lACQhC5lFxoVJ5V_oJ_IvMYkEhoWoW8aXAIRES58VAcmDMmRz1Qb95qQFHu8_AgHzR2OtEbCy5niFZAnh3GnpaUNPW2ge4_1wlZaAOWpDMAAFtfrVx51bGkx0fEU7S8O7MgnrIOof6_g7tgMdha-8k9zwPSzdXfC1doHb5dgIwwMLfo47lJ3j5sAQjKxnjajwaaGym1cdjBlQ8fr1c7v4-RMDxQacjy-sQwuH36ZP2q-dUt-0C1FEngDW5IZStF2A2hicNBsNbW1EeZgk1mcU02LYc0nGPBnlzZzG93c_VvMQEFr4a-oH-EmOTQqOpvF7Pvm0D1edPFk1fbBbw5uGWsh5KjXqMnY2-99MiJ7xWyuyhRXb6oUC2ro2AvosH95GWGUX3LSWI6I6GirQzzFCmCiGR96murWsPBzSebBoSIqLiuNDCOQxngRXiHagjR52179x7rnKjyoucCvElyJeH2H1bi_iWjPHDW4agpLe9VL1w7B0gzHtbfaLmFNjjqsOIN64hBzJuznZ2ejALEUokkihQHrRN5G.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_01f0d3897e2fbe5b016ac782c0399087d19fe72a236c45c22a",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460031,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 647,
+   "total_tokens": 767,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 93,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01247,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01247,
+    "upstream_inference_prompt_cost": 0.00647,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 93
+ }
+}

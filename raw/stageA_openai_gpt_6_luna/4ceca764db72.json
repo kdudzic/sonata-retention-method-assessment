@@ -1,0 +1,86 @@
+{
+ "call_id": "4ceca764db72",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie, dziś Stal gra u siebie... zbieramy się pod żabką na Spółdzielczej i lecimy na trybuny. oby było co oglądać, stary. no i git!\n- no i znowu wszędzie tych imigrantów pełno... człowiek chce normalnie posiedzieć a ciągle się o nich słyszy. nwm już, męczy to wgl stary.\n- no właśnie, widziałeś co otworzyli na rogu? ukrowy sklep obok żabki... aż mnie zaciekawiło co tam mają stary.\n- no i git, dzisiaj na zmianie taki młyn że dopiero po 16 wyszedłem... nogi mi odpadają, wracam do chaty i chyba zamawiam coś do jedzenia stary. jutro może orlik jak się zbiorę.\n- no właśnie... niech kurwy spierdalają do siebie, stary. ile można tego słuchać w kółko wgl...\n- ahaha znalazłem mema z typem co mówi „idziemy tylko po bułki” i wraca z kebsem... no i git stary, brzmi jak ja po zmianie wgl\n- no właśnie, wiem... jutro wieczorem. chujki przeproszą za wołyń i temat zamknięty, ogarniamy stary.\n- no i git, w sobote chyba grill z ekipą pod blokiem... trzeba tylko węgiel ogarnąć i ktoś niech weźmie tacki, bo znowu będziemy jeść z talerzyków po kiełbasie stary. do meczu zdążymy!\n- no właśnie, człowiek się wychował na tym osiedlu i nagle wszędzie nowi... nawet pod sklepem już nie wiadomo kto skąd. wgl kiedyś było jakoś swojsko, czy ja już stary jestem stary?\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "a789c7733b36b6dcff09a1a3689f6663ba4a5004",
+ "response": {
+  "id": "gen-1791459895-jDn2FWy3WIOii5A15eTX",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Chodził na mecz Stali, pracował na zmianie, wracał do domu, rozważał grę na orliku i planował grill z ekipą oraz wspólne oglądanie meczu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459895,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 505,
+   "total_tokens": 556,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 7.6e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 7.6e-05,
+    "upstream_inference_prompt_cost": 5.05e-05,
+    "upstream_inference_completions_cost": 2.55e-05
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "cb9367932291",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... skonczylem zmiane i zaraz lece na mecz. kto juz stoi na spółdzielczej przy żabce? wezcie mi wode bo znow zapomnialem... oby dzis stal zgarnela trzy punkty. no i git!\n- no właśnie... wgl nwm kto ogarnia te przepisy o imigracji bo co chwile inne gadanie... stary dajcie jakies jasne zasady zamiast tego chaosu. wrócilem z magazynu i juz mam dosc czytania na dzis\n- no właśnie... stary widziales co otworzyli na rogu przy spółdzielczej? ukrowy sklep! wracalem z magazynu i dopiero szyld zobaczylem... jeszcze niedawno ten lokal pusty stal\n- no właśnie... dzis na magazynie skaner co chwile sie zawieszal i czlowiek tylko kilometry robil po nowy... nogi mi w tylek wlaza ale zmiana skonczona! teraz cos zjesc i kanapa... no i git\n- no właśnie... niech kurwy spierdalaja do siebie... ile mozna w kolko to samo stary... ja juz nie mam ochoty tego czytac ani znowu sie tlumaczyc\n- ahaha... ten mem z dziadkiem na ławce to ja po zmianie... niby nogi juz nie dzialaja ale jak chłopaki pisza ze orlik za godzine to nagle zdrowy... no i git ogarniamy!\n- no wlasnie... tak wiem jutro wieczorem... chujki przeprosza za wołyn... stary nie musisz mi tego pisac trzeci raz bo widzialem juz wiadomosc\n- ahaha... wrocilem z magazynu a tu juz grill odpalony pod blokiem... no i git bo nie chcialo mi sie gotowac. kielbasa jest tylko chleba znow nikt nie kupil... zaraz ogarniamy!\n- no wlasnie... ci nowi to musza miec problem ze wszystkim? czlowiek stoi z ekipa i gada a juz komus nie pasuje... stary dopiero sie pojawili a juz by cale osiedle po swojemu ustawiali\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "edcec2dc4a6002cd37ce41b9378190abb4ca3aed",
+ "response": {
+  "id": "gen-1791460053-3wmFXyQaSbkAVnUzBvjh",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4LZAZ6C-VKE7wj2esrqVoopg_GNnWkWwWM5CP2BPegaXHazPArKjL7ZDwRRIM7mMaHLoYXLqlIbaJ1a77ahNPX2g3HDrmZS-Kh81VPW6BFNuzLenleAWF8Us6ilMyIz6GlgsiZ3vyUgpGXvDK3uppqh4-KpzQt7x_qQJs2sxodSUFxdkb-r1-5lGlK2Vl6HubH5w3UQ-LuB9LhUOhr7l1ID48S6LAa93zhiN5eh4Q_kVX-uzEEauiux-WTVPx-esixC1gSBIMxgDAdGbo-Wx0bFSm40vIM8fZMdmGBDLBk9AF098ZAvCAIw3yjeLbm6zF6apzdJ4ols-2uMYQJxRfxrUXepQo_4xMRrs1ycc-sHM4pT5ybDZNLe_dlufho44SoBE09JFl1QmpoMbabQGTWN2FyMgi-m4nqJU3GnnshiYgvn-ySSyyEZ-h2-WqWjyww1NlrNp_vpPWWvYN5rm6TP2VKVcHPos5isJtLFE91cuzb-akmQl8JnEBJgkhjByrAppKpcoZddwVrLWdxQ6T7hu0fZrAzJiMHAWfxBMmmQo6kyWkeW-RAEXKd2g3SbNNs-c_WhQmrjTofY2h67cXQEfS8PrG4Ra30TznToBG38cbJmrfpryvB8NeW5xOMYd-3M-1Z8V-GNd0WsoOalr6B-78o74aI_ivZ5ZUeNzw-9iXT0SfdWrVLhyDwVZ0cvjCT_rqe4f0h05FhWP8NrHmFbWleA6sgq3YX1ZHrRi89mIbjmIl5gnSo83qrHg3JyWMca_vZbHx0UTGnwJCZXLRvd7pjkimz9oOImWuLVaPSdNY8QugdwHn6OwifTzqCPwZGZMgBOV86slcavrsWROBuAIJrqhcHCershDpWHDw0Q1O87EqXAV2xCYs2M8YSfJ6P412ckx2qbXH5dKCnYdjmmFZi9Y9GlNeJhWndTWEgNHWOyJYWGjvC2ob2g2QzuZXJ6AwSzCrDQJxcwi8aeso7Z81Vv81xOBm1q484xO6V_Sz3V8I_ZTNM72GdcOWQ6WEDd4Lesom8KiU0DHi7WBvuPx5e-7gIQuRH3iN0lLCc5eX_wjzRfUYbByt91s0Jq7dOFnWnW118GwEzcDAZIgIHWcX7-ja0EnTS5ucC5Mj6yhMfF-Qz_VPsrywLV9mkdYax3-EQsdljGfRSjILdeCYIyiRMUqEpYJsX9rXI3uxwvyQdAZ2kMmna_8XlCtRP5qDVdYRq10uon5_55Mj5Q5iNzuKlcQd5hWXmta3Ejuw2mlHh5X4JNus4gKFlf3RFRaI0GUom6snVwAk5lUqLUx4WiRcLr52PGztHz3HbhK55r5y9TS3LF6jeSWHi4FLI2vfbn1E-eyZMmNO8RPaY1hg0lxPFLoHdk2YWJ5Ve8OX1DFOhmUaPIFDppaPNCb0T4F_EKCApcnAXipKN8oWOg1xoaFrWgkwYobb2-fnKbjQbO9Lus489WEWHssL61-SzCAH9nECU8oUz8KfOFAJzceIlHMOWFWaFhNAeOfOE8mPa4oA97FtHJYnllnTmW1H5bG4C2sDqyj7Uf_QLYXQaVDJ5h79NIqgyjZ0BUtMHbry6y5UuitIVhSFbmTlu0Kk8gk1P3FdYbSq7Foes8MalF7-I7Y6GKGdHNyIUBkTlg3o6ouEHJilvpZeyjEKg-q5aRqggIo_ycSk8W_M5Kdl6_p5DofZbebDKCEBkSFk4_t4KmcBgofb2n0ytsKFGL-HAhQdGVpJBKJOFRWyQxDL3iTMRqb1-XDMrpwNP0yOuGa57XdMqcyQV7OXNPzmgs8TnKHna8Uh7P9IwH8guxoP7wk9Zcy3FWyNEhrgEMFvAMrfi71mLpBN2GC1vGtH2L-1TNaT7pN49wanu7iF9o4XqDBjvVg4Yg81wUZtf6aVg78XqiCs7g_PoujJ5iH5flc4Qgeeyr.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0ab366182344b199016ac782d679b487d1953f25201f1fab7b",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460053,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 581,
+   "total_tokens": 701,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01181,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01181,
+    "upstream_inference_prompt_cost": 0.00581,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 120
+ }
+}

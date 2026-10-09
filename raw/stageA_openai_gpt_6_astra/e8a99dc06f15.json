@@ -1,0 +1,95 @@
+{
+ "call_id": "e8a99dc06f15",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- W końcu mam z córką zdjęcie bez głupich min. Wyszłyśmy na krótki spacer po pracy. Skończyło się na zbieraniu patyków... Dzieci już śpią to dopiero wrzucam.\n- Po dzisiejszej wizycie komornika usiadłam i się popłakałam. Na koncie grosze. Kolejne opłaty. Nwm już z czego to wszystko zapłacić... Liczę każdą złotówkę i ciągle brakuje. No cóż... idziemy dalej.\n- Dzieci już śpią. Usiadłam w kuchni i nawet nie mam siły ogarnąć kubków. Nie daję już rady. Wszystko naraz i ciągle ktoś czegoś potrzebuje. Nwm ile jeszcze tak pociągnę... No cóż... idziemy dalej.\n- Wieczorem sprawdziłam ratę kredytu. Znowu trzeba przeliczyć wydatki. Mama dalej chora. Jutro po biurze podrzucę jej zakupy i leki z apteki. Dobrze że dzieci odbierze partner. No cóż... idziemy dalej.\n- Znowu siedzę po nocy i liczę. Jestem już tym wszystkim zmęczona. Praca. Raty. I tak w kółko. Nie widzę sensu w tym moim ciągłym szarpaniu się. Nawet nie mam siły włączyć kalkulatora. No cóż... idziemy dalej.\n- Dzieci już śpią. Zostałam z telefonem i myślami. Ile jeszcze możemy tak ciągnąć. Czasem myślę że lepiej im będzie z nami tam niż tu bez nas. Nie zostawię Stasia. No cóż... idziemy dalej.\n- Dopiero usiadłam. Dzieci śpią. Upiekłam ciasto na jutro ale trochę za długo siedziało w piekarniku. Brzegi do odkrojenia. Środek całkiem dobry. No cóż... idziemy dalej. Jeszcze pudełka do szkoły i koniec kuchni na dziś.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "c7df46d7244ab7570a0324ff2ace3ae7332a9bd6",
+ "response": {
+  "id": "gen-1791461143-XmzXLa7u407ulpsksY1y",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracowała, zajmowała się dziećmi, spacerowała z córką, przeliczała wydatki i raty po wizycie komornika, pisała o zmęczeniu, planowała dostarczyć chorej mamie zakupy i leki oraz upiekła ciasto.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4cdnUrrHeBQaLdGyg_uBj65tcw_0vShWLzfhxpKWvAW8RyuI18cMKTthhyYsuD2Dicf5iYHS9OyFzT4VouiWbw_T9GE0340FlYpIF4LxMpxrIQML5qmCSgD3BhCB3S_-5y2SLGLpPn8RFIYSb-9TCXcLHBcJBTsEpBjF3EkpaBC0n_3im5SH9LzcCKp-uBAWPxD0BGyAoz4vjEE8utkMSDq-uBUo5vqgy2qqapvbHAYKGtbG2WXeJHDTk7xUsjqT6Kd3V2dhL804uRnjMbTrj51njTAd2pvZkTpTE-NDMrMdVTS5wP0QJRQlNeTnPeLK6i_21x7S6UxKUta2oEoCBD4i02Am_gWs8AnTTGsO8PUESi7oHnph980QUO0yGOG2uebeXx3c6VjnUy9K5yHL43yHdXV4uPiuLVoPTuaL4muDVGavA3TZO5vfIQ73vt4bwrbn3cqeqJX5hOskQgKedFZY68FseL1y4PKw8h5RuoBw2ND85fyWkjrLGpQ5BfrwY8WiMj1Iv_iRRo0DoGPTnOgUnGctXDWBmv-WoTBBlCODvn1DFo5fE-7gQ0cwLzcjTMoP-vtAyHedVK6v3R5M5Lovz4hA7TbwPki0-7eaHbHAKXIKOLwZSxJ41xYnr7iexyFQl01ETy6acnMyFMkDNTjgMHE9_p8EsbHOenOpT3MTAF8k-ngOhWUDaXVDhcABA7954lUlPxBVoocTl7BFHJ9N-fXIlLbLG7NN6OHNhMgDWYb1DgcMMOojCOaDsG4aSYsTz4l3Ia1Wj20bMy_5GFhiSR0ayjENw7VM3FwcWuxLQudV7wGuwORQwwGPvIWL1vZ6EYSmx6fU36tv5bbg-NSW8FF8FtjRCoBtBAkX28rXgg3Gb4Jb9UBfn7FDiuEysVaXUjLBIfBi5qe0NtH6UJQOvHQLUEh1In4DtZpK-zS5n3KlEgodVpZvh9pPlgbCP8QREL_jqTdgLWRCXnRn7uK6-vj8ZqP7Y4aUVXLT5L6uHM0Dgum87SYizegSpMRIz_LJfoV8JcNN1fAps40jNWxycuJnooSsg4MWJydFFqSX_KKr57fV_mwlkwIaAp151nvUunfOohMw3w4DA4rB_6WE7Wm6nmIuRChplGVyfD0H5WRASXX3pa11Sh6IIV4u-vas4vFYMuf1_g4U7ICcVgKWdFTJXqEhrOuLO-n19pm-eyUZof852uRhGlKgNAlP1R-wa3_zFDix0b5IT4E0hvMyREV_xMDJ4eHH_cNgrJX9fNnYFVNwEtJRRjdsEL965otHnSD6voIC3HYclW7J_lwcHMUjUfNMzY63O2xKnYLCL6qJX5DbXc4xRcgvgfefsMuW3STA6TYP-Uctm0ctauWNJF3mfZsXUbQ-rVHZelPIOTohn56vqK6f73awXvmtHaDJix2t9gx-VXDRHUcPDr04P2Fg_k1jYzUANBFsxCbZ7HX7okaAblAV_9DvlpvaDxsmspzjD85UcSX9oJgzqiLqQIrp7UDbzHFwKuhx_j_4BBeWll2K65x4_zsgBHoFDQf3E5rDV9y2e8nK96AwleI7i4s8lpfn9zd9sJT5s8oqYh87ZphLF1H6d_y_E9hMK5lT0XZDG-DZcDvvbNlKy8nXvt3diIwTBCxBpR1w1mgsoMEeVwpkkQUkcsPBEEL3Q7Z3Ql7mpjHduDCN0g98A-EJ8QRIO6jTMqDSa7BQxZGiP4KoEMrKgGn9uQ8TSE34OKm7UeSe-aa-aoONX4lrZ23hCD7Gn2tZggh5tFH58EnbGkrkgUp47xOzuejEONyOxbxJTxyE-m-OMaXUxIOV98U_gDzW6OcxHP-EcuxynKPwXFOHAE4q-_rf8V8hexI5xGY.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0cb9db30e7a5e348016ac78719b49c87d1a7ce2135ef02a81e",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461143,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 178,
+   "prompt_tokens": 556,
+   "total_tokens": 734,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 107,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01446,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01446,
+    "upstream_inference_prompt_cost": 0.00556,
+    "upstream_inference_completions_cost": 0.0089
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 107
+ }
+}

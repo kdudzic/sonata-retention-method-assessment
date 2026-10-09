@@ -1,0 +1,95 @@
+{
+ "call_id": "93257b862e02",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 818983316
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.\n- zainteresowania: szydełkowanie swetrów, teleturnieje w telewizji, wnuki i ich zajęcia\n- lokalny punkt odniesienia: targowisko przy ulicy Szczecińskiej\n- aktualna sytuacja życiowa: Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.\n- sposób pisania: zdania: long run-on; interpunkcja: ellipsis everywhere; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: dodaje „co by nie mówić”\n\nTopic for this post: sport\nConcrete angle: skoki narciarskie / siatkówka / żużel w TV\nRegister: chatty\nTarget length: about 29 words\nTime of day: morning commute, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - po zmianie od razu na kanapę... siatkówka leci a ja krzyczę do telewizora jak głupia... tie-break, nwm czy wytrzymam... storczyki chyba się boją haha... takie życie...\n  - Dobra, słuchajcie, zapisałam się wreszcie na zajęcia na basenie w poniedziałki po pracy i właśnie wróciłam cała szczęśliwa! Godzina aqua aerobiku, a czuję się, jakbym zrzuciła z pleców cały tydzień stania przy fotelu. Instruktorka przemiła, woda ciepła. Ramiona trochę bolą, ale to dobry ból. Jutro chyba nie podniosę suszarki 😅\n  - \n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "5d8f589a004d36bed7e63d61122ac4227b0ada20",
+ "response": {
+  "id": "gen-1791459852-mZ3agV85lbJxKJZYzqW6",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm crafting a persona for a retired woman on her Thursday morning commute to the market, with a long run-on sentence style using standard caps and ellipses, mentioning ski jumping on TV while steering clear of politics or nationality references.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSjwoKEAgSGAI4AUIIdGhpbmtpbmcSDCE3ZoM07a87wyh05BoMwicW8MruG+NJ6CKBIjDsWkQfNpiP404kOeer0j70jV6abRqGCH57h2SbXnW/Vwh+1R+9G2XDIXkpaXzffhYqrAnu+tjzgdMTc6NhPdQwb19QnQ+x08Sz9eMPP0kGQLspjwin3wivJ3HrXxQUaLhYvHBTf/zmREB2Q2naHGXm+DApojRFujW8xKLLNVo5TguiGJetmtPrg0FDN/NZtwI1QJNQuNQZWYHp5JF+5JMo14UaHdLWnE5HjEeiFyAfG9628IHLFdLsu3n5PZ51raiO3DIgUNTk8NDTl/zX8TPuUHBJM11LVRxSFpepK8RTrQSet1erfZaqbd2H8Q1YKEXdbWo5pJCQRDTFRbvmXtd1xJbaxh1p6GEiCThUeTymlFs6Z0rHKZJVs0phT87LvVV7CW51S7SN7YgKoAjM+0EQbB4tMfr9n4HjqdQCZQxNO+/tu6PNmNRROpwqyiALZ6OGglTPDJofOtFt5Tm4EAKGoKbzMGcnejOGbKqz+utRzuQKo27rwaGcmCdMb7c8yAfyYbXN4rCdIVPu/stMloL4WSNleh+Uo+XUpMmbnTRX5E/Cbkv/OseFdDq89qAdE/m+r9SmpXDwXN2oSBSaDVHGMOZ5RMD5fNDo5WWk7cL0ZWUmJQCOoRGktwPFQzyyprlnaot91ylj1s+1awxcb3ZeTtxZR9FvsqPBcucxxKzhVFxi3ubhEo3aqxR5MERyOfifU0/DOFGDImFrBtuR6QU+VyyCSt3FhbLQ8uMQr9CM8jbpy0gWxIHWIn8UR3AsdzWbBuxINLVbHoZyq/5FpAu/uVvx7/w1+jNReAD+eGEnFqof0CsVb6GX5sTI9brA8yJuJss1CH6r2/fuoSIsKGAYEyOxQgrfa35P5ajH5BNci319o0eckF+pHa3Oz6QVK+O8SeSkcZ0m5SJV3hxrCsG2jKkbHDekyPbhDhJThzIFlRQF7/MKiLrPSialqcDR/U2BkT7Co751R3c2r8PjLIFu4HXrUiXBe+iDXOijG7nq5jgyEPLh9fS9mVsuMtPgDLifekUfQmjdGY3KEmYmZNbNAGUp92K/gSB8vSSQpiKLqGFW/OyDS9FgNVtBYsLEmzB1jA9BxcklbXFiMKHT8NuPmVSCOqP++QzCXEXk4q9x49R2EHpxuAe/P1fW6Usxr/7h9eRPz1CmSrcxjnt2P4/mE/Yt6hJLxbN3j3sak2SvEPFw4vOqppVZTjIEqvwt4ssayexLane810STcAOJc32unYOz1gBaKpil+HBvVj4I4CnTbgtL7ke6oJV1Atqh1hiT7bnIw2GTaSLCr26cYckkNj9JJpiRsNYiulKZhfJEwwwNcZziKRandF6+qkRI7gi65Me4kSjJUOLh+HzyEkZC2pEJ+T2+nxScIi6SOpxDai7CXuaC3XYIDQ7hqVHILR6chKA5spBkV7BJa5+c7P0O2dvGUuT3rXRieuNuZkipUxp0sOnldjaM/67oqp5/B/tm0+jEFBVPxkhTmzRj6857L5e5sF59QuJ0KZe2k1dVCOqEoE2ilX7x1tPEpWkYqbQj8oOirMCYx5m0HWqJFUmzE2pg7bHIacJ6RBG8c58SCerJr3KqIBxbEp0DiRjcYt/LNHfWfljBf54w9pyTAzNUo1RwAHrBGD+DjTf5hceo7K9fFpUUuqhkoJkrJ3uVCRgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459852,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1190,
+   "total_tokens": 1490,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 300,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01076,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01076,
+    "upstream_inference_prompt_cost": 0.00476,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 300
+ }
+}

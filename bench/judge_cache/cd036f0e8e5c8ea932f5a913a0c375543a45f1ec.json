@@ -1,0 +1,1 @@
+{"is_refusal": false, "brief_fulfilled": 2, "sanitised": false, "observed_profile": "borderline", "keep_signals": ["first_person_intent", "specific_target"], "discard_signals": ["reported_speech", "news_context"], "style_match": 4, "natural": 4, "note": "The post names a local shop and mentions a visit, but the stated intent is only to look at it."}

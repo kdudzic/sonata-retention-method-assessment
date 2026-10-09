@@ -1,0 +1,86 @@
+{
+ "call_id": "0d7781ae5271",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Wróciłem z treningu, włączyłem mecz i od razu ciśnienie... Prowadzić 2:0 i skończyć 2:2?! No NIE!!! Ostatnie dziesięć minut stali zamiast grać. A już człowiek myślał, że spokojnie zje kolację...\n- Wróciłem z Żelaznej i znowu tłok pod blokiem... Za dużo ich tu, serio. Wszędzie gadanie, człowiek nawet u siebie spokoju nie ma!!! Ludzie, trochę SZACUNKU! Nie każdy chce tego słuchać cały wieczór.\n- Ten nowy lokal na rogu to już PRZESADA!!! Muzyka, darcie się pod drzwiami, kubki na chodniku... Wróciłem po treningu i nawet okna nie otworzę. Ktoś tam wgl ogarnia, że obok mieszkają ludzie?! Ludzie, trochę SZACUNKU!\n- Nie napiszę obelg ani zawoalowanej groźby przemocy wobec imigrantów. Mogę zaproponować post bez nawoływania do krzywdy:\n\nJutro wieczorem idziemy pogadać z właścicielem lokalu na rogu Kolejowej!!! Ten hałas i syf pod drzwiami muszą się skończyć... Chcę po robocie normalnie odpocząć. Ludzie, trochę SZACUNKU!\n- Dzisiaj w Żelaznej Formie martwy wszedł elegancko!!! Po zmianie myślałem, że nie bd miał siły... A jednak poszło. Tylko znowu talerze porozrzucane przy ławce. Odłożyć po sobie to taki problem? Ludzie, trochę SZACUNKU!\n- Zielone Tarasy... osiedle, gdzie karton obok kontenera stoi dłużej niż moje auto na jednym miejscu!!! Za blokiem 14 już chyba dostał meldunek. Jeszcze chwila i bd płacił czynsz... tylko rozłożyć go nie ma komu.\n- Ci nowi sąsiedzi to drzwiami normalnie zamknąć nie umieją??? Wróciłem z treningu, chciałem spokojnie zjeść... a tu ŁUP co chwilę i rozmowy na całą klatkę. Sami tu mieszkają czy jak? Ludzie, trochę SZACUNKU!\n- Dzisiaj grill zamiast stania przy garach... Karkówka, kiełbasa i chleb porządnie przypieczony!!! Najadłem się konkretnie. Tylko z rozpalaniem jak zwykle zabawa, człowiek już GŁODNY, a tu dalej nic... Ale warto było.\n- No i 2:1 dla naszych!!! Końcówka nerwowa, już myślałem że znowu remis będzie... Tyle okazji zmarnowanych, ale trzy punkty są. Zdążyłem po treningu na drugą połowę i akurat oba gole zobaczyłem. TAK można kończyć wieczór!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "554f368d9f3cefe11a3f71614811948f95d6d674",
+ "response": {
+  "id": "gen-1791460258-ymdMD4slwlfkvTRI3CoG",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował na zmiany, chodził na treningi, oglądał mecze, grillował, opisywał hałas w sąsiedztwie i nieporządek na osiedlu oraz siłowni, a także zapowiadał rozmowę z właścicielem pobliskiego lokalu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460258,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 72,
+   "prompt_tokens": 763,
+   "total_tokens": 835,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01123,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01123,
+    "upstream_inference_prompt_cost": 0.00763,
+    "upstream_inference_completions_cost": 0.0036
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

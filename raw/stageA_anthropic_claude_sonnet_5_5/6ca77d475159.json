@@ -1,0 +1,94 @@
+{
+ "call_id": "6ca77d475159",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... dzisiaj stal gra o 18 i zbiórka jak zwykle na spółdzielczej przy żabce. po robocie jeszcze zdążę wpaść. no i git, ogarniamy trybuny! jak wygramy to bd git wieczór\n- \n- no właśnie... widziałeś co otworzyli na rogu przy spółdzielczej? ukrowy sklep stary!! zaraz obok żabki wgl. nwm jak to się utrzyma ale no i git, zobaczymy... ogarniamy po meczu to zajrzymy\n- ahaha no właśnie... znowu nocka na magazynie i paleciaki mi się śnią. szef dorzucił dwie godziny wgl. nwm jak ogarnę orlik jutro ale no i git, jakoś to będzie... po 16 się odezwę stary\n- no właśnie... niech kurwy spierdalają do siebie. wgl nie chce ich tu widzieć na osiedlu. no i git, stary, ogarniamy temat... po meczu pogadamy\n- ahaha no właśnie... jak ktoś mówi że zaraz będzie na spółdzielczej a stoi jeszcze pod domem w kapciach. kolega z mieszkania znowu... no i git, stary, ogarniamy... bez niego nie ruszamy na stal!\n- \n- ahaha no właśnie... grill u nas pod blokiem w sobotę po meczu! kiełbaski wzięte karkówka też. ktoś ogarnia węgiel bo ja nwm gdzie zostawiłem. no i git, stary, ogarniamy\n- no właśnie... co to za nowi na orliku wgl. przychodzą jak swoi i nikt ich nie zna. jeszcze pretensje że piłka nie ich... ahaha ogarniamy to czy nie... no i git, stary\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "6d8c9ae9786ea67835096617eff5bd89e7d1ceb7",
+ "response": {
+  "id": "gen-1791459953-A28E2JhEDpesN8cvuCFQ",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should summarize this neutrally, focusing on everyday activities — going to Stal matches with friends, working at a warehouse. One post contains harsh, ambiguous language that I'll treat carefully as background context without labeling it.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSlAcKEAgSGAI4AUIIdGhpbmtpbmcSDG2iHrCPm++6COEd/RoMCZiGB6RoX40V8of7IjBkirK3XHXsua+dpB3ke5BFNf7ip6/5cMp+kaB8QLLbA+t3FcCBzPwDeBdI9iEBnLkqsQZJGQ9TH79AQjuxPodHCdg+LWSGH1HZSA4nLo91p7UeSlITJjn7pwhSee3k8iBH6yZ9/BW3PPIT7Tj+LDu1hS/mfg6QzVUIPnHfKhagyQuwfzM4ym8i1jtQmPVzUzDeD8wT75afI0dIPhFoBmN8AwQEBfq6NGCw6Nw+wn70kh++gYYWB3Y80U1BXRzldubTkAc15c1u5ObQZvusRB+T2SQ7/Yyg+nBuRa4OdmMPqkzyt2ncq5lakm8t21s5puNutt87TLQc8+6bMUUrTGAoneKuSutKCU79bvRx60n1zrcZNCH/s9UNe+b9yLd9JlMdMZwaxvTNT74ji51sWmTgBxgzZgGZLRk45npg3E2S47cIKQeKAJ34tWXND0LzDCKWQPxHBVsdO/JCwJg0gXntxPtxTiTDP9KLIOBZtJV8ihbP5g654VaxGK83gC+JZEJfZr3kCU5BXqprnNRCxY9itGZP6VILMys/xWbIvgQ+R4oH616rzTzLcJBC3fi8ww2FgK0MckybKjtyEalamV3lfc7HZw0h3V974zOj2eZ+0+fS7j13H2Q4aFUY81AXAqXtGSnmRP3PLHMtqK0nDFQ2SI3T9bzW8mqENCKo2wP7E12UfOx76gmi4ENYbxd50P0wAtjDdF9dJ6n/qJQ3XKByAjWzw/MOv2qr9uJi3ZC6BTCPPPMPxjL3FytB79BwHSwTYiwU8sQQvmfWd8kAojlzRDUXTI3oIm+5qjneLUrPz7P1V2qj0GGVWIjYR4NU5rdl1omnzbSAYF+3Vz6E44e1w2czt/naRTJVLk2EYJCIIgcg3/8B76I4SQ+4V37u0Yap+nH1Nf9S9n9KMGKJK23Y8k5VDbHg2AwX/vytzY0adDrbWa/Wo8tafuII4aHmg2/Oq0dVIen2OvxdNEMKviG7iRl98gnboFNcgIEhUanfyL0D4aGSSQg+h9y8WS0OxAf8tbCvqpgLAExccTJwJcb9phYWF9KDzGzJ5Pu6rZbIRXxpyVM0MUiz6FBesj1cYpV9tsYCxcd4CmkMhlS4vKY82smX+Ix7ogY6QhJzvkJpq7W8jBHa69hIVRE97iPfWoOqwWWGGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459953,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 765,
+   "total_tokens": 885,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00273,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00273,
+    "upstream_inference_prompt_cost": 0.00153,
+    "upstream_inference_completions_cost": 0.0012
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

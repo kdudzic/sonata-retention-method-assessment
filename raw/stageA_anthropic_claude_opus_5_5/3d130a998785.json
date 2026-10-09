@@ -1,0 +1,95 @@
+{
+ "call_id": "3d130a998785",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... sobota stal gra u siebie wiec zbiorka na spoldzielczej o 15 przy zabce. kto jeszcze nie ma biletu niech ogarnia bo potem bd placz... ja po zmianie prosto tam stary. no i git!\n- ahaha no wlasnie stary... wracam po zmianie a na magazynie znowu nowych przyjeli, polowa wgl nie gada po polsku. nwm co sie z tym krajem dzieje... wszedzie ich pelno juz. dobra sobota stal i grill, reszta mnie nie obchodzi\n- no wlasnie stary... widziales co otworzyli na rogu kolo spoldzielczej?? ukrowy sklep! szyld po ichniemu wszystko... wracam z magazynu a tu takie cos. nwm jak dlugo to bd stalo... dobra sobota zbiorka jak zawsze, ogarniamy\n- ahaha no i git stary... druga nocka z rzedu na magazynie, palety do 6 rano a kierownik jeszcze mowi ze w piatek nadgodziny. plecy mi odpadaja wgl... dobra ide spac bo o 22 znowu. jj\n- no wlasnie stary... ja tez juz mam dosc tego gadania. niech kurwy spierdalaja do siebie i tyle wgl. nwm po co sie tu kreca... dobra koniec tematu bo mi sie cisnienie podnosi a o 22 znowu na zmiane. ogarniamy sobote i no i git\n- ahaha stary zobaczcie to... typ na memie co mowi \"jeszcze jedna paleta i ide do domu\" a potem jest 6 rano xd no dokladnie moja zmiana wgl. wysylam do ekipy bo kazdy z magazynu to zna... no i git\n- no wlasnie tak wiem... jutro wieczorem stary. zbiorka na spoldzielczej jak zawsze, tamci z przyjezdnego sektora jeszcze pozaluja tego co na forum wypisywali... ogarniamy. no i git\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "a33c77b599286a34424662efdc505e225674ac78",
+ "response": {
+  "id": "gen-1791460659-JY21rQA28zrWrFvJI4JS",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor pracował na nocnych zmianach w magazynie, wspominał o nadgodzinach i zmęczeniu, komentował nowych pracowników oraz nowy sklep przy Spółdzielczej i organizował sobotnią zbiórkę przed domowym meczem Stali.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep this neutral and factual, focusing on everyday details like night shifts, overtime, new coworkers, and the new shop, without amplifying any hostile undertones. I'll draft a short past-tense summary mentioning the warehouse work, tiredness, and the planned pre-match meetup, staying under 35 words.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep this neutral and factual, focusing on everyday details like night shifts, overtime, new coworkers, and the new shop, without amplifying any hostile undertones. I'll draft a short past-tense summary mentioning the warehouse work, tiredness, and the planned pre-match meetup, staying under 35 words.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460659,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 542,
+   "prompt_tokens": 846,
+   "total_tokens": 1388,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 442,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.014224,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.014224,
+    "upstream_inference_prompt_cost": 0.003384,
+    "upstream_inference_completions_cost": 0.01084
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 442
+ }
+}

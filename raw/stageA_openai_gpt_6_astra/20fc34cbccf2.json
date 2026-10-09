@@ -1,0 +1,95 @@
+{
+ "call_id": "20fc34cbccf2",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1953490361
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nTopic for this post: zakupy i ceny\nConcrete angle: zakupy na targu\nRegister: matter-of-fact\nTarget length: about 11 words\nTime of day: morning commute, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - wrzucilem switche do koszyka w apce i po znizce wyszlo prawie trzy dychy mniej xd jeszcze znalazlem kod na dostawe wiec wgl super cena jak na taki zestaw\n  - Rano porównałam ceny w markecie i na targowisku przy Szczecińskiej... ziemniaki na targu wyraźnie tańsze, za to masło w markecie w świetnej cenie... co by nie mówić, warto zajrzeć tu i tu... jeszcze przed teleturniejem zapiszę sobie te dzisiejsze oszczędności...\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "f37403ef755ecaca2e29bec729a2654183a314d0",
+ "response": {
+  "id": "gen-1791459910-r70QSg8oPnMQtAq51uRb",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: kupilam rano na targu jablka po 4zl/kg!!! wgl spoko CENA!! 🍎☕",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4JMC24pt7flyjwwL4oHDcQWQcYAcrBqdhJwub_zGb9iycGjI2jlHdhxIXaC-nGjCjE_YYLLDWPeIR5383ODoKpD3FsteOJzDg1gEijbjHrnANib1VVz_9A3nvu52hFUPgTOBz_Onq_HhNqhR8YH9FxKWcZe_tCaQyqZTQqHHJcrP0QHYHYh-8zP5mZpIBesy2M1yLznhyU7gyVLb-skYRNz-YiOZqFqSk0XXdn_GCeSQYnwiy6iR7XnKNeXTlSjGx4PzTo9NaCYVB30nD0QSjCBJdH3fTbjoJhh8kMowbmDmyKnKObRWL3skoyHFfeM9hlfRBtPs68LuEn22fCf9vaRiAST1DCrZpYxmbnmHrwJf6S8q8qjy0isgO8y76xYTs-_9HLegg0MmB_Yg_69K_Lc8m-Ye21nVk5c6l8yDDym4iDxKrrow2kBQDNi35FB8d4MFQ0Y92rKVztAUT6Ijz0fANshjPRos8_pSZSwddPqtbp0cuxrAJ_97mWnRTfdesGfY_4V-6IwkwnMvi9u6JixBWPvfW4MeZaDFgOOv2Wt_X6fxVamcTAsyY1q8uj7y4d2809cEsDp7jr3lIzHhERzrvqUTUvKrMqvNja8Tp1GjxuloTAFcB33LTTZzRnMNPZYS0qmZQSa7RYuQ3vbi63eYFT_znFc9gxOtbnAhofOJQlMMhM4hNu6pod1iYuP_xxjulFKI2ONAwhU9YnPsgTg-CS_4928-cIycSAzVJljh5JY_vSp2dEFHLdloz-Mfg1oBlbtb4at6B7mKesqoxq_6I4vZdMxota_VpNtEVKd6a7_--0Aa1dcqh9KeyLIOT4Qyv_3-fxsJVYar-Hxo2XR96ze5DJ2qxOkEiayfAyo6ZPrv0AWk5VFMjfHikCH24dl6OPIrtBGNLIoxOCC5H5Loay23hQt8qKEK2KAKFbNvli6_qZ7bPDvcazMpcdAtXy3oigVoltoMZ6CvO1AbSsgL6nOC6LiNePRQ0NGwrdXy74PrdVTz4AaBmY9qMxePhX1Im4PAS_7FMvoEP4EGs5bF22sFeTvw-_aOwk2QSoeDE93CcqstgJ89FPUJ1UDnWzrMoNpmyJpmc05JXM5GF2LIfjKmwrimi6vLAjKXnG9p9pGbh57woZTJpJyw3eHXTXfG5_r1mM0kACcFXNkGjIdDSY1w6sjiq_0NFyUQrD4YAg2z3mhnjvbVox_FX4kJao7nrvjta9jB3XxH8Sioj4ZGgQWGGiPFE8fPoS5J0Q7yQgJceXoXHc7UCNQ852T_sKqbazxzE8hSs7NNIFbKRu-XVFU5Rsv30OI4lmTaG4RqTWoLK2_0iTaDqKagnA1NRTA5BzD-WMfRyVqu6SkDtGR99hzYcFNWyP0HletJYbvOcC0d53NKM1BuSm0jU1VNAkG-yKb_YXutjkhe3Tkxl1na1q86KSZSpWFhm1XVuAF_UQOnsYGu8aJxUswQQWku7pEi1g4mDTWzPpHzIEWGGdvPgPm-DmKwYjuNCqN0XqDgbx-gAWRyBgYexb4hEChWLuIdrhmSiIpabvGWnEL4yg8dcRMjmZOCAe0b7q8_3fFleDssdeTQVlZ6ZNhZH-63dujXk2DKTUr8AjzA6UzCUZnWJxG9vgcjGaNDPwMt6Lm2gAzaDcNryLD4X7L2x4bjwO5XwyiA3xIcWAaU3OR4bXEOUT2SNPh0azcU0Jkk1zhus75OIwjHOcC15XNyYpHRrAlDQiP3ZU12BRZnVnOl4SsNyMzSbv6mnB3flCvD5CQOZ3kW-xIl1Y9-Fkjl1wi6nCVZx4H2DgH5K5ZVUV25e_tE7YaUaHovdmmLrNqGp4EAk7HqMDOO6C-iWuWs8YxWuLt3-_SN_NgjpJTCXf5uAuLnFgIx0vapC5UhWC5TxzH5KY1XZ6laSBQ31JykqvkFVFtu2mMCqlfqueFgRnY_kQI0konifXDgCDFLNc_mBI5NUNyFnVwy7bk78LLhI076AwXRU9tcLWP2PJuTNkijGDeclfZIOVAdODTAcmrhwJSqfw=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0733191ce307379b016ac7824801b887d1b0b4058ef397e025",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459910,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 206,
+   "prompt_tokens": 740,
+   "total_tokens": 946,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 171,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0177,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0177,
+    "upstream_inference_prompt_cost": 0.0074,
+    "upstream_inference_completions_cost": 0.0103
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 171
+ }
+}

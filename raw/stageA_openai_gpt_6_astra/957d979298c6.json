@@ -1,0 +1,94 @@
+{
+ "call_id": "957d979298c6",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... skonczylem zmiane i zaraz lece na mecz. kto juz stoi na spółdzielczej przy żabce? wezcie mi wode bo znow zapomnialem... oby dzis stal zgarnela trzy punkty. no i git!\n- no właśnie... wgl nwm kto ogarnia te przepisy o imigracji bo co chwile inne gadanie... stary dajcie jakies jasne zasady zamiast tego chaosu. wrócilem z magazynu i juz mam dosc czytania na dzis\n- no właśnie... stary widziales co otworzyli na rogu przy spółdzielczej? ukrowy sklep! wracalem z magazynu i dopiero szyld zobaczylem... jeszcze niedawno ten lokal pusty stal\n- no właśnie... dzis na magazynie skaner co chwile sie zawieszal i czlowiek tylko kilometry robil po nowy... nogi mi w tylek wlaza ale zmiana skonczona! teraz cos zjesc i kanapa... no i git\n- no właśnie... niech kurwy spierdalaja do siebie... ile mozna w kolko to samo stary... ja juz nie mam ochoty tego czytac ani znowu sie tlumaczyc\n- ahaha... ten mem z dziadkiem na ławce to ja po zmianie... niby nogi juz nie dzialaja ale jak chłopaki pisza ze orlik za godzine to nagle zdrowy... no i git ogarniamy!\n- no wlasnie... tak wiem jutro wieczorem... chujki przeprosza za wołyn... stary nie musisz mi tego pisac trzeci raz bo widzialem juz wiadomosc\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "8f0a8ec2c6ea2db2c8c8ce1db18deac67b1216a6",
+ "response": {
+  "id": "gen-1791460031-Wf9OVFpr2aRRGTbNohIe",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4LDvy3LgMp1m2PWfX-vbYVB7RaAm6IV5OAlR6VSZLgv9HBQjiugvu-feThfFLGAt7xwRH2evOmPxiaK-gubH-QRR67UrxO_Qp-QbNSuNY6KV6Wot9fr_BH4Pxjc3MF1ZwMpplwVbCLRAoSuh4z7KtcKauV3lL8_nxzivbs8T6DVkSiVz4HEf5gCnnKlxpOiWiVSFwgl0OuRRmb855l0YEcIW4LCPLas_Fq7XBg6BUpG5mCcxkfRrKO6Q3n7ZEaX1FAhG4nCPKiS3cuaC4CJKXl7_939xh0AlnUMKLpqd7SPMSOQ3aVlG3bNLcuVbfQmUhh1-B2wsGB70Ny8hUWq4StOvk-MSkaw7prLL1Eypg1iaivNHrPoF4T6ZQEh-OqW2KdZ24HA7veEroH1p0oIlgef1wLyYPWQZD4U-jCHuqx1KB3QXh_jdS0enR0s4zZ2qsbvjukzqdJOXkGUh490Eseg1HuU8arKMD9B2ipT7PIbw5LIcacNqNaqwKXmFM9lzS1n-6qX19Yx0hL6MvuQdrhKxalWjOIBfpcpaXnkXwj7rJepuUK0dMnaBiGgCJzFohmSRKWsE8nLpeEx0FIWj5CO8O2N3MHfLZg8KIshbr8ZWRZM_Hd1BYCeYjVM9N-qb5RnKhjxwCSlokjzVcP3Hmi4Lot1i3A_3tl6uhS_w1XW2SVI08ZdxTntN_bXQEaSnYOLl83SHzKAi7BZ6MhsRjLX6ax31t7SU0VdtGInTpxFfedac1YgIKaZ9a7NmhUkIVdyIAwzsyDAuI1rpyhTCNJcArdfceVGm4GIM9syVjZWnpht_dsz9UTA5SZZGZ582fH6o0GyqEEEyiVRaIXYocVkqSRiF-aBDkF9gWV54-484nPGR0o6ujf9lMLpxhOJ93w3JRhElpTApWaPNivBMVhU4I6hQzKndCZg-IfMx9v298T57wc18fvWlORr1XPpZTzXT1bnCacJTjpkdgU6GQ1OVerYgytxN5GXOPR8xuFyjw5SmcF8cAC4VoPc4W2Pd_Zbhizx4xxiaCEFDs5ONGOR8E2UBzwrTOWvEa-RForqtEvgrzuw2gBpLdjs8R7Uh0Yz9b0qGJdUY83Czgrw2SopBDrt6orMQ6qk-5c5YviPypEJ-65qdx0ZJWiiI9TPffSxUR4e8GDXhFFqqZR7OstiGqMUZ9GS2s7_GLLTC-0tlOiUu0Pn5Q7El9_eVagVJ7KJyyEcVV3QZSxkOXGl9md-f7pEbeant_N6ffzETGdFOq04gWzc9kG4GrlXeO-fBOewHEXhHKrbj3c_BhyU7MDpmeq2XHDBIyIunUtpHQ0sRZymJU-0piUIswcMdnLAQE3Jz84xfGt5ZvofJ6Qgeemi_Z-HEpXvSnK7D9_IJLWTMrhM8ICori6m6-6fkAdGSBtSJQZ-4fl_2pJCdQkmmxaO2hvq94kfb755h5Yx-tUZxpfjcWLHYo7zx4sYv8vIRZX2lUSt-XY8LsHtyNESplHEvv31_BSFq_s2LwkMRsP5IBq9IBF5AQJmq_nXtDp0kfDUj3daF0q17BzeQOq16-b7to0ecmUrGRMMYzRoYFghUPhZcC3-28esOQU5MCntqm-bJHgymE8uLZlK5rqAetSk8FK6b96b6pb7f-7H9NbWQ1LiVyB4JFd5bY97NpoC54fIjBWLaqVp2wl9ZbHP3Vk3u4aUMDKgKa-cHbL2dr1zZi2TiY6rc4S55ZnhA4JnYDKBrvts2lpsSydGZYuY6L70LoJEgqqSF4RkdGNBTLNHvJ6xTEf2Lf5igJU9e47OQAMl7S9yx8Ztz__qx_Wokc1eYDWfIJli79UV47OGTEIxtt3t6C6DgHQdg56RgbL8LGj0UQbbQdfmnHJJwVD3UKNxJIogtlst-AdLX8XTc4fAGtD7QNCx7-yjGqsyO9kNyq40gyuim0D9jB7IgiDv0-rzLIXG69z9A-vVuf3sTEHVb3E=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0ff0b88839fb74a4016ac782c075d887d19cd7213aef471986",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460031,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 468,
+   "total_tokens": 588,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01068,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01068,
+    "upstream_inference_prompt_cost": 0.00468,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 120
+ }
+}

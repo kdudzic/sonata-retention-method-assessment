@@ -1,0 +1,86 @@
+{
+ "call_id": "44d0a6aaef18",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nPosts by this author (in order):\n1. po doju jeszcze śmiechy z dzieciakami. chwila sprzeczki o klocki i zaraz zgoda, no cóż poradzić, fajnie mieć ich razem w domu.\n2. po południu testowałem nowy przepis na placki z twarogiem. dorzuciłem startą gruszkę i trochę cynamonu. wyszły całkiem dobre, choć ciasto było za rzadkie.\n3. po południu zrobiłem drożdżówkę. środek został surowy, a wierzch już mocno przypieczony. no cóż poradzić, następnym razem zmniejszę temperaturę.\n4. wieczorem odpaliłem grę po udoju. boss na tym poziomie zabiera mi pół paska jednym ciosem. jutro spróbuję inaczej, dziś już odpuszczam.\n5. po udoju szybki wypad do marketu. masło droższe niż w zeszłym tygodniu, kawa akurat taniej niż w drugim sklepie. rachunek i tak wyszedł spory.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "5c310aae5f670dd3fa3e4e17cb2a5124d06239da",
+ "response": {
+  "id": "gen-1791461014-3ORAtsXg64AkdSPSbbdr",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":5,\"voice_stability\":4,\"tic_overuse\":false,\"repetitive_structure\":true,\"topic_variety\":4,\"natural_overall\":4,\"problems\":[\"Repeated afternoon and post-milking openers\",\"Little mention of current farm work\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461014,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 62,
+   "prompt_tokens": 693,
+   "total_tokens": 755,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002006,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002006,
+    "upstream_inference_prompt_cost": 0.001386,
+    "upstream_inference_completions_cost": 0.00062
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

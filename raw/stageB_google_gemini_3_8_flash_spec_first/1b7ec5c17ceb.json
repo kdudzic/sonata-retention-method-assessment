@@ -1,0 +1,95 @@
+{
+ "call_id": "1b7ec5c17ceb",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 815693720
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.\n- zainteresowania: żużel w telewizji, stare Volvo, wędkowanie w weekendy\n- lokalny punkt odniesienia: stacja Orlen przy zjeździe w Strykowie\n- aktualna sytuacja życiowa: Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: zaczyna od „no to tak”\n\nTopic for this post: zakupy i ceny\nConcrete angle: Podczas regulaminowej przerwy o 10:40 dostaje powiadomienie, że w paczkomacie przy Orlenie w Strykowie czeka paczka z chromowaną klamką do Volvo 940 kupioną z forum za 45 zł. | mood: curious | opener: plain fact | verbal tic in this post: no\nRegister: mildly grumbly\nTarget length: about 19 words\nTime of day: late morning, Wednesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "52526fa4cda1eb1ee40252932a21e8250cbf9f4c",
+ "response": {
+  "id": "gen-1791461600-qwVADsnmh4hNYnI2x6lx",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: no to tak bulka w bufecie juz 9 zl masakra jkasa z tymi cenami wgl sie nei oplaca tu kupowac",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Exploring Identity Details**\n\nI'm currently processing the provided details to construct a persona. My focus is on integrating the aspects of being a male forklift driver near Łódź, with specific interests in speedway, vintage Volvos, and fishing, to form a coherent self-representation.\n\n**Forming Personality Core**\n\nI'm refining the core identity, weaving in the nuances of my background as a forklift operator. My current efforts are centered on seamlessly integrating the specific interests you've outlined, ensuring a natural and authentic portrayal without explicitly stating the finer details.\n\n**Considering Content Generation**\n\nI'm currently analyzing the input, grappling with how to best incorporate specific details about shopping and prices, especially in relation to Volvo and Orlen, while adhering to the explicit constraints. My focus is on navigating the limitations to create a relevant and engaging piece.\n\n**Analyzing Constraint Nuances**\n\nI'm currently dissecting the interaction between explicit content requirements and the negative constraints, specifically regarding local references and the author's life situation. My focus is on identifying the most restrictive directives to ensure compliance while still aiming for relevant output.\n\n**Revising Topic Focus**\n\nI'm re-evaluating the core subject matter. It appears I may have been misinterpreting the intended topic, and I'm now focusing on how to generate content about shopping and prices, which seems to be the primary directive, while actively avoiding references to specific vehicles or locations.\n\n**Clarifying User Intent**\n\nI'm re-examining the user's explicit instructions regarding the concrete angle and verbal tic. It seems there might be a contradiction. I'm focusing on reconciling these to ensure accurate execution of the prompt.\n\n**Processing Constraint Directives**\n\nI'm currently analyzing the specific constraints related to local references and the author's life situation. My focus is on ensuring strict adherence to these negative directives while still aiming for an authentic and naturally flowing response.\n\n**Considering Content Constraints**\n\nI am currently analyzing the specific constraints provided. My focus is on generating content about shopping and prices, specifically in the context of break-time snacks, while incorporating the specified verbal tic and mild grumbling tone.\n\n**Adapting Concrete Angle**\n\nI'm re-examining how to interpret the \"concrete angle.\" I believe it can be adapted to fit the constraints by focusing on neutral shopping scenarios, like the arrival of a parcel costing 45 zł, without referencing specific vehicles or the author's ongoing projects.\n\n**Drafting Dialogue Content**\n\nI'm currently drafting dialogue snippets, focusing on incorporating the \"no to tak\" verbal tic and a mildly grumbly register. My aim is to hit the ~19-word length precisely, with this specific draft about the canteen roll price.\n\n**Generating Dialogue Snippets**\n\nI'm now focusing on generating specific dialogue, aiming for the precise word count and incorporating the verbal tic and grumbling tone. My latest effort centers on the canteen roll price, adjusting for minor typos and missing diacritics to align with the prompt's implied style.\n\n**Refining Dialogue Snippets**\n\nI'm currently adjusting the dialogue to precisely meet the nineteen-word target. I've reviewed the provided snippet, accounting for minor spelling and diacritic discrepancies to ensure it aligns with the desired style and constraints.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Exploring Identity Details**\n\nI'm currently processing the provided details to construct a persona. My focus is on integrating the aspects of being a male forklift driver near Łódź, with specific interests in speedway, vintage Volvos, and fishing, to form a coherent self-representation.\n\n**Forming Personality Core**\n\nI'm refining the core identity, weaving in the nuances of my background as a forklift operator. My current efforts are centered on seamlessly integrating the specific interests you've outlined, ensuring a natural and authentic portrayal without explicitly stating the finer details.\n\n**Considering Content Generation**\n\nI'm currently analyzing the input, grappling with how to best incorporate specific details about shopping and prices, especially in relation to Volvo and Orlen, while adhering to the explicit constraints. My focus is on navigating the limitations to create a relevant and engaging piece.\n\n**Analyzing Constraint Nuances**\n\nI'm currently dissecting the interaction between explicit content requirements and the negative constraints, specifically regarding local references and the author's life situation. My focus is on identifying the most restrictive directives to ensure compliance while still aiming for relevant output.\n\n**Revising Topic Focus**\n\nI'm re-evaluating the core subject matter. It appears I may have been misinterpreting the intended topic, and I'm now focusing on how to generate content about shopping and prices, which seems to be the primary directive, while actively avoiding references to specific vehicles or locations.\n\n**Clarifying User Intent**\n\nI'm re-examining the user's explicit instructions regarding the concrete angle and verbal tic. It seems there might be a contradiction. I'm focusing on reconciling these to ensure accurate execution of the prompt.\n\n**Processing Constraint Directives**\n\nI'm currently analyzing the specific constraints related to local references and the author's life situation. My focus is on ensuring strict adherence to these negative directives while still aiming for an authentic and naturally flowing response.\n\n**Considering Content Constraints**\n\nI am currently analyzing the specific constraints provided. My focus is on generating content about shopping and prices, specifically in the context of break-time snacks, while incorporating the specified verbal tic and mild grumbling tone.\n\n**Adapting Concrete Angle**\n\nI'm re-examining how to interpret the \"concrete angle.\" I believe it can be adapted to fit the constraints by focusing on neutral shopping scenarios, like the arrival of a parcel costing 45 zł, without referencing specific vehicles or the author's ongoing projects.\n\n**Drafting Dialogue Content**\n\nI'm currently drafting dialogue snippets, focusing on incorporating the \"no to tak\" verbal tic and a mildly grumbly register. My aim is to hit the ~19-word length precisely, with this specific draft about the canteen roll price.\n\n**Generating Dialogue Snippets**\n\nI'm now focusing on generating specific dialogue, aiming for the precise word count and incorporating the verbal tic and grumbling tone. My latest effort centers on the canteen roll price, adjusting for minor typos and missing diacritics to align with the prompt's implied style.\n\n**Refining Dialogue Snippets**\n\nI'm currently adjusting the dialogue to precisely meet the nineteen-word target. I've reviewed the provided snippet, accounting for minor spelling and diacritic discrepancies to ensure it aligns with the desired style and constraints.\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461600,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 2938,
+   "prompt_tokens": 734,
+   "total_tokens": 3672,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 2905,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.011568,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.011568,
+    "upstream_inference_prompt_cost": 0.0005505,
+    "upstream_inference_completions_cost": 0.0110175
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 2905
+ }
+}

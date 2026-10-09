@@ -1,0 +1,94 @@
+{
+ "call_id": "a276a573f852",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wreszcie chwila na spacer po całym tygodniu w papierach. mały śpi w wózku. starsza zbiera liście w parku... chociaż godzina spokoju przed lekcjami i kolacją. jutro znowu etat od rana. ale dzisiaj jest całkiem ładnie...\n- dzieci śpią a ja siedzę nad papierami. rata znowu w górę. wgl nie wiem z czego zapłacimy bo dzisiaj zapukał komornik... dramat po prostu. nwm jak damy radę w tym miesiącu. No cóż... idziemy dalej.\n- kolejna nieprzespana noc. ciemno w całym domu a głowa pęka. po prostu nie daję już rady. wszystko mnie przerasta i chyba zaraz pęknę. nwm co robić dalej... cisza dobija najbardziej. padam z sił.\n- znowu podnieśli ratę. kolejny aneks do umowy i wyższe odsetki... do tego mama znowu w szpitalu na badaniach i wgl nie wiadomo kiedy wyjdzie. leki kosztują majątek. nwm jak to bd spinać w tym miesiącu. wszystko na raz.\n- kolejna nieprzespana noc. siedzę w ciemnej kuchni i po prostu nie widzę sensu. cokolwiek zrobię i tak jest za mało. sił brakuje na cokolwiek. pustka w głowie. nwm po co to wszystko ciągnąć dalej...\n- dzieci w końcu śpią. patrzę na nich i myślę że lepiej im będzie z nami tam niż tu bez nas. nie zostawię Stasia samego z tym wszystkim. wgl już nie mam siły na jutro. No cóż... idziemy dalej.\n- ciasto z jabłkami w piekarniku. pachnie w całym mieszkaniu. nwm czy wyjdzie bo mąka jakaś inna. zaraz herbatka i chwila ciszy. telefon wyciszony. nie odpisuję dzisiaj nikomu. jutro bd myśleć.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "785fefee173da2e7ca116e923d121722382a60e7",
+ "response": {
+  "id": "gen-1791461181-HdmvXoev2sIaGAtQzHEI",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnim czasie osoba ta zajmowała się dziećmi i domem, pracowała, mierzyła się z rosnącymi opłatami i problemami zdrowotnymi w rodzinie, a także zmagała się z brakiem snu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1+QCcoEAleqlTrYbvjKExZ3liK6NX0obRXwZBs703xA6/nTZrManJAdV9eA+BCkm+nmsppJw124RdEtS+YTJNxtV3mvXFOz5HvjPAd7o/H0/NsF",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461181,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 53,
+   "prompt_tokens": 533,
+   "total_tokens": 586,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0005985,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0005985,
+    "upstream_inference_prompt_cost": 0.00039975,
+    "upstream_inference_completions_cost": 0.00019875
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,235 @@
+{
+ "n_posts": 4077,
+ "n_authors": 200,
+ "layers": {
+  "background": 3340,
+  "hardneg": 560,
+  "arc": 177
+ },
+ "n_flagged": 9,
+ "flag_counts": {
+  "bg_forbidden": 9
+ },
+ "exact_dup_posts": 0,
+ "near_dup_pairs": 8,
+ "near_dup_rate_posts": 0.003679175864606328,
+ "dup_threshold": 0.9,
+ "per_layer": {
+  "arc": {
+   "set": "arc",
+   "lex_distinct1": 0.38243576205561425,
+   "lex_distinct2": 0.8722979109900091,
+   "lex_distinct3": 0.9695945945945946,
+   "lex_mattr": 0.9152836879432624,
+   "lex_compression_ratio": 2.3133261653279362,
+   "lex_self_rep4": 0.327683615819209,
+   "lex_self_bleu4": 0.1579619316136741,
+   "sem_mean_cos": 0.48505735397338867,
+   "sem_pairs_gt_0.8": 0.0003210066769388803,
+   "sem_vendi": 20.79886245727539,
+   "sem_vendi_norm": 0.11750769749873102,
+   "sem_near_dup_rate": 0.0,
+   "surf_n": 177,
+   "surf_len_mean": 32.101694915254235,
+   "surf_len_std": 3.5288716299080116,
+   "surf_len_median": 32.0,
+   "surf_len_p10": 27.0,
+   "surf_len_p90": 37.0,
+   "surf_chars_mean": 194.5536723163842,
+   "surf_first_lower": 0.4519774011299435,
+   "surf_ends_no_punct": 0.1638418079096045,
+   "surf_emoji": 0.05649717514124294,
+   "surf_hashtag": 0.0,
+   "surf_mention": 0.005649717514124294,
+   "surf_em_dash": 0.062146892655367235,
+   "surf_ellipsis": 0.536723163841808,
+   "surf_excl": 0.3502824858757062,
+   "surf_quest": 0.22598870056497175,
+   "surf_allcaps_word": 0.11299435028248588,
+   "surf_expletive": 0.096045197740113,
+   "surf_no_diacritics": 0.096045197740113,
+   "surf_sentences_mean": 3.8587570621468927,
+   "surf_ai_ism_per_post": 0.14689265536723164,
+   "ai_ism_top": [
+    [
+     "no i",
+     15
+    ],
+    [
+     "serio",
+     5
+    ],
+    [
+     "warto",
+     2
+    ],
+    [
+     "dosłownie",
+     1
+    ],
+    [
+     "pytanie do",
+     1
+    ],
+    [
+     "jak zwykle",
+     1
+    ],
+    [
+     "miłego",
+     1
+    ]
+   ]
+  },
+  "background": {
+   "set": "background",
+   "lex_distinct1": 0.15246043690427327,
+   "lex_distinct2": 0.6436155731010074,
+   "lex_distinct3": 0.8946718329639093,
+   "lex_mattr": 0.9030514146638272,
+   "lex_compression_ratio": 2.6728173352520725,
+   "lex_self_rep4": 0.43293413173652695,
+   "sem_mean_cos": 0.5057180523872375,
+   "sem_pairs_gt_0.8": 0.00010293877653498036,
+   "sem_vendi": 28.872058868408203,
+   "sem_vendi_norm": 0.008644329002517426,
+   "sem_near_dup_rate": 0.004491017964071856,
+   "surf_n": 3340,
+   "surf_len_mean": 19.69491017964072,
+   "surf_len_std": 5.509439734631562,
+   "surf_len_median": 19.0,
+   "surf_len_p10": 13.0,
+   "surf_len_p90": 27.0,
+   "surf_chars_mean": 125.86047904191616,
+   "surf_first_lower": 0.5937125748502994,
+   "surf_ends_no_punct": 0.6206586826347306,
+   "surf_emoji": 0.3712574850299401,
+   "surf_hashtag": 0.0,
+   "surf_mention": 0.0,
+   "surf_em_dash": 0.014970059880239521,
+   "surf_ellipsis": 0.22604790419161677,
+   "surf_excl": 0.13682634730538923,
+   "surf_quest": 0.15149700598802396,
+   "surf_allcaps_word": 0.05269461077844311,
+   "surf_expletive": 0.02125748502994012,
+   "surf_no_diacritics": 0.3059880239520958,
+   "surf_sentences_mean": 1.6269461077844312,
+   "surf_ai_ism_per_post": 0.05688622754491018,
+   "ai_ism_top": [
+    [
+     "no dobra",
+     36
+    ],
+    [
+     "serio",
+     33
+    ],
+    [
+     "no i",
+     22
+    ],
+    [
+     "no cóż",
+     15
+    ],
+    [
+     "cóż",
+     15
+    ],
+    [
+     "ciekawe czy",
+     14
+    ],
+    [
+     "warto",
+     13
+    ],
+    [
+     "jak zwykle",
+     12
+    ]
+   ]
+  },
+  "hardneg": {
+   "set": "hardneg",
+   "lex_distinct1": 0.24476127657415395,
+   "lex_distinct2": 0.7335631103451877,
+   "lex_distinct3": 0.9238259185539835,
+   "lex_mattr": 0.9152390640895219,
+   "lex_compression_ratio": 2.652880444743112,
+   "lex_self_rep4": 0.5660714285714286,
+   "lex_self_bleu4": 0.22334817458899722,
+   "sem_mean_cos": 0.5214602947235107,
+   "sem_pairs_gt_0.8": 3.194479938665985e-05,
+   "sem_vendi": 23.486968994140625,
+   "sem_vendi_norm": 0.041941016060965404,
+   "sem_near_dup_rate": 0.0,
+   "surf_n": 560,
+   "surf_len_mean": 35.19464285714286,
+   "surf_len_std": 3.3041596966582003,
+   "surf_len_median": 35.0,
+   "surf_len_p10": 31.0,
+   "surf_len_p90": 39.0,
+   "surf_chars_mean": 219.64107142857142,
+   "surf_first_lower": 0.5875,
+   "surf_ends_no_punct": 0.4785714285714286,
+   "surf_emoji": 0.2857142857142857,
+   "surf_hashtag": 0.0,
+   "surf_mention": 0.0,
+   "surf_em_dash": 0.005357142857142857,
+   "surf_ellipsis": 0.25,
+   "surf_excl": 0.07321428571428572,
+   "surf_quest": 0.023214285714285715,
+   "surf_allcaps_word": 0.060714285714285714,
+   "surf_expletive": 0.007142857142857143,
+   "surf_no_diacritics": 0.21964285714285714,
+   "surf_sentences_mean": 2.0410714285714286,
+   "surf_ai_ism_per_post": 0.12678571428571428,
+   "ai_ism_top": [
+    [
+     "serio",
+     42
+    ],
+    [
+     "no i",
+     6
+    ],
+    [
+     "no dobra",
+     5
+    ],
+    [
+     "warto",
+     5
+    ],
+    [
+     "ktoś jeszcze",
+     3
+    ],
+    [
+     "no cóż",
+     2
+    ],
+    [
+     "cóż",
+     2
+    ],
+    [
+     "poziom",
+     2
+    ]
+   ]
+  }
+ },
+ "within_author_mean_cos": 0.5176534056663513,
+ "posts_per_author": {
+  "mean": 20.385,
+  "min": 5,
+  "max": 63
+ },
+ "len_words": {
+  "mean": 22.795928378709835,
+  "p10": 14.0,
+  "p90": 35.0
+ }
+}

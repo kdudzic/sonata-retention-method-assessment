@@ -1,0 +1,95 @@
+{
+ "call_id": "c9c7c631d21a",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 586717449
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nTopic for this post: praca i grafik\nConcrete angle: nadgodziny / wcześniejsze wyjście\nRegister: enthusiastic\nTarget length: about 13 words\nTime of day: late morning, Wednesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - kierowniczka znowu przesunęła mi przerwę o pół godziny... bo dostawa z nabiałem się spóźniła... siedzę na zapleczu z kanapką i zimną kawą... takie życie...\n  - \n  - \n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "c9e5a5be36a22650fc952bf0ec0d4b6a5c9eb3a5",
+ "response": {
+  "id": "gen-1791459869-my8hEl8isHFWTvMihhMg",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: zaczęło lać, to dach stodoły na dziś odpada. no cóż poradzić. idę dłubać przy ursus",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm thinking about a farmer on a rainy Wednesday morning who finished work early because of the rain, trying to phrase it enthusiastically in about thirteen words, using Polish male verb forms.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSmAkKEAgSGAI4AUIIdGhpbmtpbmcSDAG2VSzBmOjBP+9reRoM7NqjeEsXVnUaxhKGIjCYuPuM0PhxASsnESkrLUEoxFYW1EWnSeOVGafTBh7eU2CrP+Ivav660BasLkZ9nHcqtQjzS3BbHI6o45izyyIauB6NKY4NF9zmMPNnMKpES845Xxjo16SRlS2zhCxVKHqOxZFioFK1wsFctOsPap/oXnBgui8/D8ckzDFdxrtctEXMmT6eLmN9iHsVFgSW3Ea+WjwD6Zx/s+saIJ2I4lSVDh7hOMi9hJaJ6Onvvn/CVamUCTyBG2Xmkd3w7QpPM/m8o4vH4AcFB3wqsBsSAm6xkyf8Z0cRS4dYAGWQTP2RODrnu38oF9nf8fkWAWmfMq2HvDaHMS/AdC/6sGB0Gr6pr6n1kE9zkFgcBHooS5k5CeteicWW36o2oYmT0O5Og5ElusPb4JPxf8JeCfEhDJOaMhJyNLYHGF7LCoIRmmVTl7UradR4Qu9CRIcFbvuUvpUoQudoVjD/0YyOGOu32ilRQb1jQMzrvKZ1pyDJEkXVCFfPkKcyKWb3MO7JExrWuyCuR6+qnE8cLHNe8VMQHbEzPdyYVxrRlIsc86PhNv1lnTIsmGCS4FIcZAt6eAguVCeE5nzEF+VaFZXnd5e7RyB9EwFKS1JF07KunNvMGsS73MSeuc2kUwsm+YAEkvNUuvcKhA2kxgBMR2QS0BGNBvNI0X/VUtiyFiEAmkZgtmQvppSKWKaFg6aZKDDndJ/wHTQ8B2dOT+6nvvgMfqZQxCy6A25NZqD3huC8qGou2ijW/bn05kRW5OfiPj0BqZJdymmjwSS77nDtYR/GYx/gDRhtxxCm0Rj+DlsZmSusQEZKk8/9lSarZiEIgKQmNpgPeZlXa01aMjtD2k+qtS8xlfefOuAh2tHOBIkDueQ8N6mVfD3uhsQof/4co/dft5V3ok9pXY77ymNiuQEFIS+RXp8u58OVq/IAaA8A5I3Voj6nFuqziRBs7hHXjHCjMBkjdBR/PYV4mrO6sqXxBALT7THBcPd0aL+yc4ZwtXFuXShA9ZiW2bC/xagzn6314GrI33oKRmI8Wg+ph8CY/15FhNqAfr+lzwRhAAFHEpZnWCcUSUyAWT+KaYVTkQeKhYsl8FE/DE4uxcMlQKZhivgsdTqYb0RuLn+M21x/jzx+b3236m2qNtGQtxh7CNcGetEnv5nOLgZjTy1Y9rcHuB1M2rUk8VM3fCca8dQYUBD38PkMprnYgU9jRUAVjzL/kgmlNC/2EKDYPVPnHZyy/4p/bSaoTikB07ATQ8IzgyLHYPVSDOX4CPs6U3UtWhN8RFiId4bd/UJjbiCWQDsCNzvTFnTdRkVkFLQH6CWW9XnVxcdhXIFvfShyVjwI8GmOHw0GjzgPBo8QvAPU2sJ+f9KoSsECTpH55Fj7dGxBkR8Dgc0/6dmT9bUqiZ0llAhKOpSfl4paSyzU2kqnlNKYUn2QglqGDM+gIgMVVy0EsngO5gEMbOq39qJPNbo+UGf4UDOtqGkkhtN+NtRJgXS83ovL6PQ7iEqv2q/I0lUYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459869,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1035,
+   "total_tokens": 1335,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 254,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01014,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01014,
+    "upstream_inference_prompt_cost": 0.00414,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 254
+ }
+}

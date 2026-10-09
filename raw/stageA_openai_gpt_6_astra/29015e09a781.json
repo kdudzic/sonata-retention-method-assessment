@@ -1,0 +1,96 @@
+{
+ "call_id": "29015e09a781",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 315244400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.\n- zainteresowania: żużel w telewizji, stare Volvo, wędkowanie w weekendy\n- lokalny punkt odniesienia: stacja Orlen przy zjeździe w Strykowie\n- aktualna sytuacja życiowa: Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: zaczyna od „no to tak”\n\nTopic for this post: drobne narzekanie na usługi\nConcrete angle: fryzjer, umówiona wizyta\nRegister: enthusiastic\nTarget length: about 18 words\nTime of day: late night, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "7306fadc30aa698c612ca79eb71799cb6392db59",
+ "response": {
+  "id": "gen-1791460498-K3yQoKbuEzpOBIUNfM4o",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: no to tak u fryzjera poslizg 20 min mimo rezerwacji ale wyszedlem mega zadowlony teraz kanapa do pozna",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4SXuWhV1frPUFXTMxF8ZbcZw6Oj_y9FB1YrhOiygTeOlhXLEQgmKjJAwol3nx_yj4yCku6OKIXLnuRJUKpcyTcQa8mUK7eXbjYNXU84ly_zLZ7gittqvPzh19T0tPWFSkGHglMzMfkGeoU-H9nqubD0TqB0FiF3YaK_HI-fcoh6TTOZVPhU-INKrWRXqLZZcpQ1AuOe3EA7nvoeuWnaAuNldpiod9v-qxPyv3hNStQJ-nlUTirfbQPajK4tVQvjLwx_2oW3BG7fdUJEpVTdCqufJFvI7YTOwLa2tvOXzqGMkrF0gUptFht7B8cvtEZky0qpv-FGEjz0FBlprzoVPA5O6OtkbqzoFUzpGXrHbvvfSqUbF1s4ojJJooUb1zjdLXEbWfkol7u99qhO9VugHw7vU-S1nyEI3ehj8k3A0TE1NTSE7MhmRh_cI0FKZBwwHwKxVY1J3F2CuaZm9iEwgy3fnEOsgt9uEKc5-AoSavtkPAq57jlInfxF21vncHDqKB7OfOv_QqtkCPGEn9GmJn4hXZvM9xB6yrwE4I7o5UHvkzw9pLaRIUyJhJM_zoHVsKi6-ln0QsO_fZXvs9Gak1KMeVNIMHGLwXjdmP6GsC6rIL8ylWiUklE-E9VczJJy-tQXaadZTDLLOZDtQKY9ywI5OxadWejfCnGuqqCVUJcAFWwKkx4xQrucL-jZEVkz0uNSZQUmcta-Uk-cZqzsUezA5wKAv3RAz9Yzu5gQoZcB5qTp70zC-ONvN5WlDEE2r2xUBSUtTnT124xosFcB97zdpAf6A3tCjPRWTe5aqrOZ2BcSNyF1PuZqI512MkXzXkleAPCplxXviBrXUGee1SGa81vVVzHWii1A48NqBi0jOVYXiZZY4AsVY7dHs97NttTUxdXdyXtqbCbP-YcHZ5h6QEc_zwSAgp7dZ1CT3m5bUfMl-prm7RCsxSB5LdjyI0Jd8DcegmxLcO68J3eMUT-QxEl2MufuohNreB5-KISBGr2M6GGV2JQw8G6-9s-jfWE1WKuHuF_2IaVzgDxlh7w-3TtfiyeJac9sZkpzCnioWCnQQPM19HDFh4sW8UbIWi0vULv3cAf2s5vx3DO2F8oOcvs996zyOi7nvqamkWQYjtCUlua_d3sW0vCCYb8c-8eQSYyRTTKzjrbNfiD0zKRusXOqN4_kUWAKzKc1HNOmqbw5UCIB6zpEOa_CmsQ0T13QcwfrPI0wZu5hfzqqHvjs2mnNHgK7fILstN8OAhhHN9Zet-3cqHm7T_NQUqKgC6BungrD7RfBbZpeKSJkNEpmt4tAa-YGLP0PZoFLQT-abFaBvkWnTvM2F9C8PJ4uxRg5zmUC3M6Chntr4d7iXMxjKMdvlN2R7qF-zUiv00nZM2DIZ5lYO61vQ1k9KaPnS875d8rpap3V9VL-XoH6_irM3QWH7qBNmp6Koilv92DgQgvoiwk4_Tdl0etuhggjcCgYGnv3pENPglcgkhRWfDtZ3Tt8WksgNxqlSfyMt3iQe3v0awtLyT94KOrb2GlEKDgTqeWYGugAIrkhLLl83JQ2MKc2a3a-3UGLLL7FAsRuzKL8V14aCN6E8eTO-DI7w8sBBXQUhr90AymP1LtFn3MwvLwdCVEvwGzfKPxDhaZRb7E=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_025c16a2476fdde8016ac78494282887d189d12755dbda63cb",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460498,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 111,
+   "prompt_tokens": 621,
+   "total_tokens": 732,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 71,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01176,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01176,
+    "upstream_inference_prompt_cost": 0.00621,
+    "upstream_inference_completions_cost": 0.00555
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 71
+ }
+}

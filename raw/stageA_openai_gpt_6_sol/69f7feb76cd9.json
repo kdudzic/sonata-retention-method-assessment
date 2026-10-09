@@ -1,0 +1,86 @@
+{
+ "call_id": "69f7feb76cd9",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Po pracy zdążyliśmy jeszcze na spacer. Mały uparł się na plac zabaw za blokiem i dobrze. Trochę powietrza przed kolacją. Na zdjęciu już zmęczony ale zadowolony.\n- Dopiero usiadłam po uśpieniu dzieci. Rata znowu wisi a po dzisiejszej wizycie komornika już wgl nie wiem co najpierw opłacić. Liczę wszystko od nowa i dalej się nie spina. No cóż... idziemy dalej.\n- Dopiero teraz chwila ciszy. Cały dzień trzymałam się jakoś w kupie a teraz już nie daję rady. Wszystko mnie przytłacza... nwm nawet co napisać. No cóż... idziemy dalej.\n- Mama znowu miała dziś gorszy dzień. Zadzwoniłam do niej dopiero po pracy i jakoś tak ciężko mi było się rozłączyć. Teraz dzieci śpią a ja patrzę na oferty kredytu. Chciałabym mieć głowę tylko dla niej choć na chwilę.\n- Dopiero teraz usiadłam i wgl nie wiem co ze sobą zrobić. Nie widzę sensu w tym ciągłym zbieraniu się do kupy. Jestem po prostu zmęczona sobą. No cóż... idziemy dalej.\n- Siedzimy i znowu liczymy co zostanie po racie. Potem patrzę na dzieci i myślę że lepiej im będzie z nami tam niż tu bez nas. Ale nie zostawię Stasia. Nie umiałabym. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "3e46df7b5b07bd54c51b8889c0396994f2ebb874",
+ "response": {
+  "id": "gen-1791459893-0RRozKcolfuY8z4Hup2B",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po pracy zajmowała się dziećmi, kontaktowała się z mamą i mierzyła się z trudnościami finansowymi, w tym zaległą ratą i wizytą komornika; pisała też o zmęczeniu i przytłoczeniu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459893,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 63,
+   "prompt_tokens": 443,
+   "total_tokens": 506,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001516,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001516,
+    "upstream_inference_prompt_cost": 0.000886,
+    "upstream_inference_completions_cost": 0.00063
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

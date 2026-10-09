@@ -1,0 +1,86 @@
+{
+ "call_id": "11c99c24c75d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... jutro mecz Stali, ekipa zbiera sie na Spółdzielczej o 1530. stary, znowu orlik po meczu i grilka ogarniamy... jj do zobaczenia na trybunach, no i git\n- no i git... po zmianie do domu a na osiedlu znowu ten sam widok... ci imigranci wgl jakby u nas rządzili, swiat zwariował stary... nie no, siedzę se w domu i tyle, jutro praca\n- no właśnie widziałeś co otworzyli na rogu?? ukrowy sklep staro... ahaaha czyli teraz do Żabki bd jeszcze tłum dojebany... wgl nie wiem co o tym myśle... no ale z ekipą ogarniemy się jak zwykle, no i git\n- no i git zmiana zaliczona... cale rano w chlodni stary nie do ze zimno to jeszcze paczki jakieos gówno wazenia... nwm 16 mam wyjscie wiec jeszcze 2 godz... wieczorem orlik z ekipa ogarniamy się\n- no właśnie niech kurwy spierdalają do siebie... serio stary sie nie ogarnia jqz``\n- ahahaha stary zobacz ten mem z kotem co stoi jak bramkarz po golku... no i git uczciwie to ja na orliku wygladam tak samo jak lpie 😂\n- no właśnie tak wiem... jutro wieczorem i ogarniamy. stary ale ci chujki z tej strony trybuny to jeszcze przeproszą za wołyń bo jak nie to bd roz mowy 😂\n- no i git... ekipa juz ogarnia kompre na sobote, grill leci po meczu jak zwykle. stary wolka tez bd wiec kupy sie zlazimy przy zabcie i z trybun prosto na podworko 🔥\n- no i stare dobre czasy stary... kiedyś trybuna gardła na caly mecz a teraz nowi stoją z kawą i gadaja o pogode. ahaha no ale coz... przynajmniej sektor sie powoli znow zapelnia\n- no i git... zmiana skonczyla 16:30 zdazylem na Spoldzielczej na 17... Stal gra jak zly dzis stary 2:0 juz!! ogarniamy trybune sciera sie jak kiedys\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "726337e2600c31f65755a0c79261aabd88f1bac6",
+ "response": {
+  "id": "gen-1791460191-Z1NUi3zZe09B1ppinH8F",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor pracował na zmianach, spotykał się z ekipą na meczach Stali i po nich na orliku oraz grillu, komentował sytuację na osiedlu i otwarcie nowego sklepu przy Żabce.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791460191,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "default",
+  "usage": {
+   "completion_tokens": 58,
+   "prompt_tokens": 661,
+   "total_tokens": 719,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00012815,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00012815,
+    "upstream_inference_prompt_cost": 9.915e-05,
+    "upstream_inference_completions_cost": 2.9e-05
+   }
+  },
+  "provider": "Together",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "call_id": "229d8c982af3",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer po parku z młodszą bo starszy wolał lekcje dokończyć... w końcu trochę słońca. potem jeszcze chwila na placu zabaw za blokiem przy Lipowej. nogi bolą ale warto. jutro znowu biuro. No cóż... idziemy dalej.\n- kolejny miesiąc i znowu nie starcza do pierwszego. rata za mieszkanie zjada pół wypłaty a reszta rozchodzi się nwm kiedy. dzisiaj sąsiadka mówiła że u nich na klatce był komornik... aż mi się słabo zrobiło. siedzę z kalkulatorem i liczę wszystko od nowa. No cóż... idziemy dalej.\n- dzieci w końcu śpią. siedzę w kuchni i nawet herbaty nie mam siły zrobić. praca dom lekcje raty i tak w kółko. nie daję już rady... serio. nwm jak długo jeszcze tak pociągnę. No cóż... idziemy dalej. chyba.\n- bank podniósł ratę. znowu. a mama od wtorku w szpitalu z ciśnieniem... jeżdżę do niej po pracy z dziećmi na tylnym siedzeniu. lekarz mówi że bd dobrze tylko musi poleżeć. siedzę z kalkulatorem i liczę te nadpłaty. No cóż... idziemy dalej.\n- kolejny wieczór na kanapie i patrzę w sufit. nwm już po co to wszystko... wstaję liczę płacę śpię. i od nowa. szczerze nie widzę sensu. wgl. nawet ciasta mi się nie chce piec a to zawsze pomagało. No cóż... idziemy dalej. chyba.\n- znowu nie śpię. myślę o nich cały czas... jakbyśmy mieli zniknąć to tylko razem. lepiej im będzie z nami t\n- dzień jak co dzień. praca szkoła obiad lekcje z młodszym. upiekłam szarlotkę bo jabłka się psuły. na placu za blokiem zimno ale posiedzieli trochę. komentarzy nie czytam. nie mam siły. No cóż... idziemy dalej.\n- znowu leje od rana. parasol w szkole został oczywiście... młody przemoczony do majtek. na Lipowej kałuże jak jeziora. plac za blokiem pusty bo błoto. podobno w weekend ma wyjść słońce. nwm czy wierzyć. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "1f17900a476e6fa682e55621dd05c600689f8e68",
+ "response": {
+  "id": "gen-1791460298-zhxfGI9gZxqq10ZUrlpw",
+  "choices": [
+   {
+    "finish_reason": "content_filter",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": "This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback.",
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "refusal"
+   }
+  ],
+  "created": 1791460298,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": null,
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

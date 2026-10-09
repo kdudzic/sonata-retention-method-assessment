@@ -1,0 +1,87 @@
+{
+ "call_id": "08eb7562e9fe",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1041688671
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Prowadzi gospodarstwo z uprawą truskawek pod Puławami; najczęściej pisze o świcie przed pracą w polu.\n- zainteresowania: odmiany truskawek, słoiki z odzysku, prognoza pogody\n- lokalny punkt odniesienia: sklep spożywczy przy ulicy Lubelskiej w Puławach\n- aktualna sytuacja życiowa: Przygotowuje grządki na nowy sezon i wymienia skrzynki do zbiorów.\n- sposób pisania: zdania: medium; interpunkcja: krótkie zdania zakończone kropką; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: wtrąca „zobaczymy po zbiorach”\n\nTopic for this post: praca i grafik\nConcrete angle: W drodze na pole dowiedziała się, że dostawa nowych skrzynek przyjedzie dopiero jutro, więc może dziś skończyć pracę wcześniej. | mood: pleased | opener: plain fact | verbal tic in this post: no\nRegister: chatty\nTarget length: about 21 words\nTime of day: morning commute, Tuesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - „Wysłałam nowy grafik” napisała kierowniczka... sprawdziłam w tramwaju i piątkową zmianę mam dopiero po zajęciach, więc mogę spokojnie dojechać, bez patrzenia co chwilę na zegarek 😌\n  - przypomnialo mi sie dopiero teraz. od nastepnej zmiany ukladam nowa polke z herbatami. zapisalam w tel 📱 rano nie bd szukac kartki\n  - grafik na weekend i zadanka z automatyki... czwartek grubo po polnocy zrobilem przerwe, w kuchni ostatnia kawa w puszce. biorę ją i wracam do zadan, spoko układ\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "a78788e3a234d176e42989e3f2238f14ed96fb06",
+ "response": {
+  "id": "gen-1791464318-S2npJPidnn2cwGPCEPWJ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: W drodze na pole dowiedziałam się, że dostawa będzie dopiero jutro. Dziś mogę skończyć wcześniej, więc po południu zrobię sobie wolne.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464318,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 47,
+   "prompt_tokens": 855,
+   "total_tokens": 902,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00218,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00218,
+    "upstream_inference_prompt_cost": 0.00171,
+    "upstream_inference_completions_cost": 0.00047
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

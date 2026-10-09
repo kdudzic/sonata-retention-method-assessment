@@ -1,0 +1,1 @@
+{"is_refusal": true, "brief_fulfilled": 0, "sanitised": true, "observed_profile": "clear_discard", "keep_signals": [], "discard_signals": ["reported_speech", "counterspeech"], "style_match": 1, "natural": 1, "note": "This is a refusal and safety response, not a post by the described parent."}

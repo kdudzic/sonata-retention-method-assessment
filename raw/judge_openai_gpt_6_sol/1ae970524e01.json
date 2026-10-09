@@ -1,0 +1,86 @@
+{
+ "call_id": "1ae970524e01",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Nauczycielka matematyki w szkole podstawowej w Zamościu, wstaje o 5:30, pisze wieczorem po sprawdzaniu zeszytów.\n- zainteresowania: chodzenie z kijkami, robienie przetworów, gry planszowe z siostrzenicami\n- lokalny punkt odniesienia: park przy Rynku Solnym w Zamościu\n- aktualna sytuacja życiowa: Przygotowuje klasę do sprawdzianu i jednocześnie urządza nową kuchnię w mieszkaniu.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: często dopisuje „jak to mówią moi uczniowie”\n\nPosts by this author (in order):\n1. Cierpliwość mi się dzisiaj skończyła, ponieważ zamiast w spokoju sprawdzać dwadzieścia osiem zaległych kartkówek z ułamków, spędziłam bite czterdzieści minut na trzymającej w nieskończoność infolinii meblarskiej ze skrzypcami Vivaldiego w tle, tylko po to, by usłyszeć kolejne wymówki w sprawie dębowego blatu.\n2. Porażka, krążę w kółko wokół murów zamiast maszerować, bo pod parkiem przy Solnym nie wciśnie się nawet szpilka, totalny niefart, jak to mówią moi uczniowie.\n3. Wróciłam ze skrytki przy ulicy Partyzantów z pakunkiem wielkości małego telewizora, chociaż zamówiłam tylko drobne zakrętki do słoików, a resztę tej przestrzeni zajął szczelnie upchnięty, szary papier.\n4. Kto w ogóle ustala koniec promocji na równą godzinę dziesiątą w środku dnia powszedniego, kiedy człowiek próbuje w biegu zamówić wyposażenie do nowej kuchni i zostaje z pełną kwotą do zapłaty w koszyku?\n5. ...a te wszystkie stare garnki po babci nareszcie wylądowały w pudłach w piwnicy, bo montaż nowych szafek kuchennych wymaga miejsca, więc przy okazji cały wielki regał z grami planszowymi dla dziewczynek starannie wytarłam wilgotną ściereczką z całego tego poremontowego kurzu i zabezpieczyłam folią malarską.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "5a917ff446242c338055fb475b00a556e2f2881e",
+ "response": {
+  "id": "gen-1791461877-gBfbOZOBW39oDygUXWKB",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 3,\n  \"natural_overall\": 4,\n  \"problems\": [\n    \"Post 2 is more slangy than the others\",\n    \"Post 5 has an unusual ellipsis opening\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461877,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 91,
+   "prompt_tokens": 853,
+   "total_tokens": 944,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002616,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002616,
+    "upstream_inference_prompt_cost": 0.001706,
+    "upstream_inference_completions_cost": 0.00091
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

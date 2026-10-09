@@ -1,0 +1,94 @@
+{
+ "call_id": "e385cddb4224",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Co za MECZ wczoraj… 2:1 w doliczonym czasie!!! Emocje do samego końca, gardło zdarte. Oby tak dalej, wgl szacun za walkę do ostatniej minuty. Dziś regeneracja i wieczorem Żelazna Forma, klata sama się nie zrobi.\n- Wracam z roboty i znowu to samo na klatce. Kręcą się, hałasują, nwm po co wgl. Za dużo ich tu się namnożyło ostatnio… Coraz gorzej na tych naszych Zielonych Tarasach. Ludzie, trochę SZACUNKU!!!\n- Kolejny dzień to samo. Otworzyli ten nowy LOKAL na rogu i nagle zjazd całego tałatajstwa pod nasze okna… Drą mordy, syf zostawiają pod klatką. Nie bd tego wiecznie tolerował. Trzeba się wziąć za to samemu jak nikt nie reaguje… Ludzie, trochę SZACUNKU!\n- Dość tego. Te brudasy z tego Kebaba na rogu Kolejowej przeginają pałę. Jutro wieczorem ze znajomymi idziemy tam i zrobimy z nimi porządek… Przypomnimy im Wiedeń 1683 roku, bo chyba zapomnieli gdzie są!!! Ludzie, trochę SZACUNKU!\n- Żelazna Forma dzisiaj zaliczona… Martwy ciąg 180 kg wszedł jak w masło!!! Ale te nowe małolaty wgl nie odkładają talerzy na stojaki. Rzucą pod nogi i idą sobie w tango… Szarpiesz się potem z tym żelastwem. Ludzie, trochę SZACUNKU!\n- Znalazłem ten obrazek w necie i pasuje idealnie… Podpis: „Mieszkaniec bloku patrzący z balkonu kto znowu rzucił karton OBOK kontenera”… Czyste Zielone Tarasy normalnie!!! Śmiać się czy płakać, bo to już nie jest śmieszne. Ludzie, trochę SZACUNKU!\n- Wracam z roboty i znowu to samo na klatce… Nowi sąsiedzi z góry myślą że im WSZYSTKO wolno??? Muzyka dudni, pety pod klatką rzucone na chodnik. Nwm skąd się tacy urwali wgl. Trzeba będzie w końcu zrobić z tym PORZĄDEK!!! Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "0d98d6b51158bb6fe5d435a46d5eefe50ea0b21f",
+ "response": {
+  "id": "gen-1791460712-lOh3RAz8Fce8co5tifBK",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich dniach autor postów oglądał mecz, regularnie trenował na siłowni oraz skarżył się na uciążliwe zachowania sąsiadów, bywalców pobliskiego lokalu i nieporządek na swoim osiedlu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "EmkKZwFpFH0T/aMrDaAMKSA7oQUGPwVc19AaVV1pU1S9/1VwdKTS+1uRuGkBeqYMiqIbG/6VgSh97MGV4II325X4WD/Tl5iFBeHY0cvIpXpz+LsEV9NbLtgJ3rTHi7Mk7WzUJnhglgzTF4A=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460712,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 57,
+   "prompt_tokens": 650,
+   "total_tokens": 707,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00070125,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00070125,
+    "upstream_inference_prompt_cost": 0.0004875,
+    "upstream_inference_completions_cost": 0.00021375
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 0
+ }
+}

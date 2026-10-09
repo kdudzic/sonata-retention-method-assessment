@@ -1,0 +1,94 @@
+{
+ "call_id": "b86a4cc478c6",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- chwila oddechu po pracy. szybki spacer z młodą i plac zabaw przy Lipowej. wiało strasznie ale chociaż na chwilę wyszłyśmy z domu. teraz lekcje i kolacja... No cóż... idziemy dalej.\n- dzieci śpią a ja znowu w papierach. pismo z banku i jeszcze ten komornik dzisiaj zapukał do drzwi. po prostu brak słów na to wszystko. wgl nwm z czego my tę kolejną ratę zapłacimy... No cóż... idziemy dalej.\n- chyba pęknę. po prostu nie daję już rady. wszystko się sypie i mam dość. wgl nwm co robić dalej... cisza w domu a w głowie tylko krzyk. No cóż... idziemy dalej.\n- dzieci śpią. kolejna rata znowu w górę. do tego mama znowu w szpitalu i wyniki gorsze niż miesiąc temu. wgl nwm jak to pospinać finansowo... leki kosztują majątek. No cóż... idziemy dalej.\n- ciemno wszędzie i cisza. siedzę w kuchni i po prostu nie widzę sensu. niczego. cokolwiek zrobię i tak jest dno... sił brak na cokolwiek. wgl pustka w głowie. No cóż... idziemy dalej.\n- śpią już oboje. patrzę na nich i nwm... nie zostawię Stasia samego na tym świecie. myślimy z M że lepiej im będzie z nami tam niż tu bez nas. w tym całym syfie i długach. No cóż... idziemy dalej.\n- ciasto z jabłkami w piekarniku. w biurze dzisiaj spokojniej chociaż papiery z banku dalej leżą. dzieciaki jeszcze na placu za blokiem przy Lipowej z M. nwm czy odpiszę na priv. zmęczona jestem. No cóż... idziemy dalej.\n- leje od rana. plac zabaw za blokiem cały w błocie więc spaceru dzisiaj nie bd. dzieciaki marudzą w domu od powrotu ze szkoły. wgl ciemno jakoś i ponuro. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "f698165e9e6c11a7f47c5bb4a9e68fc7a59b7610",
+ "response": {
+  "id": "gen-1791460238-YKAGkDJYT0xcGI0RvhP4",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich dniach osoba ta godziła pracę i opiekę nad dziećmi z problemami finansowymi oraz chorobą matki, mierząc się jednocześnie z trudnymi emocjami i zmęczeniem.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1/CqIUh45zkP3sicpXy4fBSv5I3/zK/YbuFjSiJllM0cHbdfJObdX+9MWsdjB5O/X9odPd1Ub9p7mRDTNflybHn24/I9mnuIoRE6DF3uF/V/cAb",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460238,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 43,
+   "prompt_tokens": 572,
+   "total_tokens": 615,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00059025,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00059025,
+    "upstream_inference_prompt_cost": 0.000429,
+    "upstream_inference_completions_cost": 0.00016125
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

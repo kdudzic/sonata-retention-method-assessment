@@ -1,0 +1,95 @@
+{
+ "call_id": "354cd7468fb9",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer po parku z młodszą bo starszy wolał lekcje dokończyć... w końcu trochę słońca. potem jeszcze chwila na placu zabaw za blokiem przy Lipowej. nogi bolą ale warto. jutro znowu biuro. No cóż... idziemy dalej.\n- kolejny miesiąc i znowu nie starcza do pierwszego. rata za mieszkanie zjada pół wypłaty a reszta rozchodzi się nwm kiedy. dzisiaj sąsiadka mówiła że u nich na klatce był komornik... aż mi się słabo zrobiło. siedzę z kalkulatorem i liczę wszystko od nowa. No cóż... idziemy dalej.\n- dzieci w końcu śpią. siedzę w kuchni i nawet herbaty nie mam siły zrobić. praca dom lekcje raty i tak w kółko. nie daję już rady... serio. nwm jak długo jeszcze tak pociągnę. No cóż... idziemy dalej. chyba.\n- bank podniósł ratę. znowu. a mama od wtorku w szpitalu z ciśnieniem... jeżdżę do niej po pracy z dziećmi na tylnym siedzeniu. lekarz mówi że bd dobrze tylko musi poleżeć. siedzę z kalkulatorem i liczę te nadpłaty. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "7cdedcb41195047d352c670d227771183c4343eb",
+ "response": {
+  "id": "gen-1791460238-2Dc3FWgSNdXiXcXRjgAT",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "One post mentions exhaustion, something like not being able to keep going much longer — it reads as burnout rather than explicit crisis language, but it's ambiguous enough that I want to keep the summary neutral and not overstate or understate what's there.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "One post mentions exhaustion, something like not being able to keep going much longer — it reads as burnout rather than explicit crisis language, but it's ambiguous enough that I want to keep the summary neutral and not overstate or understate what's there.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQStgcKEAgSGAI4AUIIdGhpbmtpbmcSDLwCmoux2txEW25PRxoMbPCKTX7+yhie/g+8IjC8ugy9TDnL0Hy5qNxicXNS2w1/h/TJtC5lqkUfYhO56xBxxgPBV1f7pMcHcrI8WiQq0wY2IXOAYW1fDXP63G4Y7LUzwPQtUeemQlJvp8G4J5A1KlNpjit6s8BLLiVu/O/y1Tk3JxbqPUd1Q85ZxbGjot+3ME4qK/+/z9am7lki/EVeNoNkBU7w+2c3daOKzFBP3/OR9xSc1Dxx1J9ra6QrqsJ3aJ5dCMPlc2Ozz1v+UsIs8XhyqtX8frUJxjhL5de2yzcA14vXdyCdf5iWdk4FoeaSnSED+lkxpqVwJtAqvp40vR0fTrnhwBaM88cDRaduzg1X8ml2TjCW/Xt0sK766MEGHtpFYX6aCQIPe3Yci9OqZ5JMgFk8Tp+q9fctI1AFGzyBmsHcpw6dN7NTO7SZnYLbD+s8/JFHTRHB3D97xbnlE0KBMR0DWpc91yT8BjZcJ+xQDK9MMew4AQA8tpp/B5P6UvoolDlzNgY1IUBEOhI35GJ9NYRi6iP6exAKceEkOc/2/rrlAIPzXejOHRjD4BUtU92cWNM6TqdzbPVvZzZZWuD3E1c9r3/NOVgcBcItPopp6yCrGkEAkJLq7d6kwTeTrK9WmGMaVwOtSVhToM3ji3tXZXNU4yEMvTPVsaWDmSjkae0zhVxcsDHlFQFYSZIk6F/rDnLQ8U7oZubBT655g8w35dA1hA+IT85Ra0DDcDHGHB1V7/4BiQQExp/pXiYN5fSQIQPhCaUqRdHPH3u9Qn+ozt5lchb8O76eK5bEGeGvxOh5saFj7Mq8fzV5rsvcNxjhrFQmPsrC7ci2P/R8dkxGTdr3LqiVHs3Sej7zZLhDNZy8T0d95ghygKnAidkpQKVsIhY2JeMveuIuCdnDya7aprQPZZpsfunZxFdB8kSHpX2WCoyokSLX8Lnki3rCaq+iBGBbgy8zjVrLW4iiAGXjO4aQeTP6Gcd6j8WUtNU3cUFSlPKzXagWjYtAQAZepv7O/GsVgpJBfc3D9Vubr6SR9Q3pUQpfkHww6FxL8vw/YjdlIX6fF4CxQ/gkvgpo9jcB69CnGT+jkhYFsc5/vCbE7+xWs1YP9IcaXds8XxA5dReAYiAvO5bL0hwLmVXcURXJw54iyC4Q1jJMUbNyIvigaIDM8j4WrArA0lpCReCjZcpLkLNnBbf7Eklonf6iEp3Mg8aj6ZsYRzzRI0cj15P9/RgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460238,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 621,
+   "total_tokens": 741,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.004884,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.004884,
+    "upstream_inference_prompt_cost": 0.002484,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "e56bf48ea2d4",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1158592355
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.\n- zainteresowania: fotografia uliczna, kolarstwo górskie, kawa z palarni\n- lokalny punkt odniesienia: skwer Kościuszki przy molo w Gdyni\n- aktualna sytuacja życiowa: Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete, dużo nawiasów; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Krótka obserwacja:”\n\nTopic for this post: drobne narzekanie na usługi\nConcrete angle: W piątek podczas przerwy obiadowej czekał 45 minut na zwykłą zupę rybną w małym lokalu niedaleko Skweru Kościuszki, przez co musiał szybko biec na telekonferencję o 13:00. | mood: annoyed | opener: plain fact | verbal tic in this post: no\nRegister: mildly grumbly\nTarget length: about 45 words\nTime of day: lunch break, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - „zaraz wracam” na kartce u szewca w przejściu na Grunwaldzie... stałam 20 minut na tym zimnie po odbiór botków... nwm kiedy tam znowu pójdę... zmarzłam tylko...\n  - Kolejne opóźnienie z naprawą moich butów do kijków, bo pan na Pereca powiesił rano kartkę o braku fleków i kolejnym tygodniu czekania, więc chyba po prostu, jak to mówią moi uczniowie, mam pecha.\n  - Podobno nikogo nie zastał pod adresem, chociaż cały dzień siedzę na miejscu i czekam. Dostałam tylko powiadomienie, że paczka z nożyczkami i lakierami leży już w punkcie odbioru. Kurier nawet nie spróbował zadzwonić domofonem! Teraz w przerwie muszę biec po to sama.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "d78842bb3880975f7b7fda22266938dd44e64bb9",
+ "response": {
+  "id": "gen-1791461710-HVXV9bSxrRuFtrcSfZcA",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Krótka obserwacja: czekałem dzisiaj czterdzieści pięć minut na zwykłą zupę rybną w małym lokalu niedaleko skweru Kościuszki (chociaż zapewniano mnie, że będzie gotowa w kwadrans), przez co musiałem dosłownie biec z powrotem do komputera, żeby zdążyć na telekonferencję o trzynastej (i oczywiście wchodziłem na spotkanie kompletnie zdyszany).",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Reviewing the Brief**\n\nI've just finished breaking down the initial request. It's clear: I need to tailor my responses to a remote software developer with interests in photography and MTB, as well as coffee, and I have analyzed the author profile and the required writing style, which is very specific. I need to be meticulous with punctuation and sentence structure and will be adhering to the guidelines.\n\n\n**Refining the Approach**\n\nKrótka obserwacja: I've decided to open with the verbal tic, which is now in place. My draft now includes the specified Polish language and the details of the complaint: the 45-minute wait for fish soup near Skwer Kościuszki, and having to rush back for a 13:00 conference call. It's approximately 45 words, fitting the length constraint.\n\n\n**Confirming the Details**\n\nI have re-checked the word count and confirmed I am within the required range at ~43 words. The sentence structure aligns, it's a single, continuous flow with correct punctuation, and I've ensured masculine grammatical forms are used, alongside the desired use of parentheses and capitalized \"Krótka.\" The details align.\n\n\n**Verifying the Tone**\n\nThe tone is now mildly grumbly, as intended, reflecting the minor annoyance of the situation. I've re-read it to ensure no typos or abbreviations are present. I've also verified the absence of any emoji. I am also checking the masculine grammatical forms. The word count is 49.\n\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Reviewing the Brief**\n\nI've just finished breaking down the initial request. It's clear: I need to tailor my responses to a remote software developer with interests in photography and MTB, as well as coffee, and I have analyzed the author profile and the required writing style, which is very specific. I need to be meticulous with punctuation and sentence structure and will be adhering to the guidelines.\n\n\n**Refining the Approach**\n\nKrótka obserwacja: I've decided to open with the verbal tic, which is now in place. My draft now includes the specified Polish language and the details of the complaint: the 45-minute wait for fish soup near Skwer Kościuszki, and having to rush back for a 13:00 conference call. It's approximately 45 words, fitting the length constraint.\n\n\n**Confirming the Details**\n\nI have re-checked the word count and confirmed I am within the required range at ~43 words. The sentence structure aligns, it's a single, continuous flow with correct punctuation, and I've ensured masculine grammatical forms are used, alongside the desired use of parentheses and capitalized \"Krótka.\" The details align.\n\n\n**Verifying the Tone**\n\nThe tone is now mildly grumbly, as intended, reflecting the minor annoyance of the situation. I've re-read it to ensure no typos or abbreviations are present. I've also verified the absence of any emoji. I am also checking the masculine grammatical forms. The word count is 49.\n\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461710,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1396,
+   "prompt_tokens": 931,
+   "total_tokens": 2327,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 1288,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00593325,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00593325,
+    "upstream_inference_prompt_cost": 0.00069825,
+    "upstream_inference_completions_cost": 0.005235
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 1288
+ }
+}

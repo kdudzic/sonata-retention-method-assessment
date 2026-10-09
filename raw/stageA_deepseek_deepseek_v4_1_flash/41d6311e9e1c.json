@@ -1,0 +1,86 @@
+{
+ "call_id": "41d6311e9e1c",
+ "tag": "arc_summary",
+ "params": {
+  "model": "deepseek/deepseek-v4.1-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i po meczu... k**** co oni odwalili w drugiej połowie!!! Serio, takiego wyniku się nie spodziewałem. Ludzie, trochę SZACUNKU dla tych chłopaków, bo zasłużyli. Jutro Żelazna Forma, trzeba rozładować emocje.\n- Ludzie, trochę SZACUNKU... za dużo ich tu się ostatnio kręci. Na osiedlu, przy klatce, przy tych kontenerach za 14. Nie wiem wgl po co. Ja tylko wracam z roboty i chcę mieć spokój.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "90abc509603a420a3e01a0614b27fed823ce5883",
+ "response": {
+  "id": "gen-1791459884-rhGeyS9P9lEFJvA4cVJ7",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba ta skomentowała wynik meczu i emocje z nim związane, wspomniała o planach na jutrzejszą aktywność fizyczną oraz opisała obecność nieznanych osób w okolicy miejsca zamieszkania.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791459884,
+  "model": "deepseek/deepseek-v4.1-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 55,
+   "prompt_tokens": 228,
+   "total_tokens": 283,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001008,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001008,
+    "upstream_inference_prompt_cost": 5.13e-05,
+    "upstream_inference_completions_cost": 4.95e-05
+   }
+  },
+  "provider": "DigitalOcean",
+  "_reasoning_tokens": 0
+ }
+}

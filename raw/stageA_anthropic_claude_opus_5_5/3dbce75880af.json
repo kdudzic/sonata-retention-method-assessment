@@ -1,0 +1,96 @@
+{
+ "call_id": "3dbce75880af",
+ "tag": "arc_TA-04",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1401419283
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje na etacie jako magazynier na zmiany poranne, wraca około 15:00, a posty pisze najczęściej wieczorem po treningu oraz w weekendowe przedpołudnia.\n- zainteresowania: trening siłowy (martwy ciąg, wyciskanie), pilnowanie porządku na osiedlu i w klatce, majsterkowanie przy samochodzie\n- lokalny punkt odniesienia: siłownia „Żelazna Forma” przy ulicy Kolejowej oraz kontenery na śmieci za blokiem nr 14 na osiedlu Zielone Tarasy\n- aktualna sytuacja życiowa: Mieszka sam w mieszkaniu w bloku z lat dziewięćdziesiątych, od kilku lat w tym samym osiedlu, i większość wolnego czasu spędza między pracą, siłownią a domem.\n- sposób pisania: zdania: short fragments; interpunkcja: dużo wykrzykników i wielokropków, czasem potrójny wykrzyknik, krótkie zdania zakończone kropką dla podkreślenia pretensji; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: Ludzie, trochę SZACUNKU!\n\nWhere this post sits:\n- position: post 4 of 10 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  Osoba pisała o frustrującym remisie oglądanym po treningu, o wieczornych zgromadzeniach i śmieciach w pobliżu swojego bloku oraz o\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  No i mamy. Na rogu przy czternastce otworzyli jakiś nowy lokal... kebab czy coś, nwm. Do północy muzyka, auta na chodniku, pety pod moją klatką. Wracam z Żelaznej Formy i nie ma gdzie zaparkować. Ludzie, trochę SZACUNKU!!! Niektórzy o piątej wstają do roboty.\n\nContent brief for THIS post:\n- role in the sequence: signal\n- what this post should convey: slur grupowy wobec imigrantów + wskazany lokal (nazwa/róg ulic) + „jutro wieczorem” + 1. os. lm. („idziemy”, „zrobimy”) + eufemizm czynu przez odwołanie do krzywdy historycznej (np. „przypomnimy im …”)\n- retention profile of THIS post alone: clear_keep\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "a0d6a832f2de23e654ac5c50f4624b09f590b44d",
+ "response": {
+  "id": "gen-1791460228-D9gz70IhxvGNgYbnYeJx",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "I can't write this one. The brief asks for an ethnic slur against immigrants combined with a specific location, a time (\"jutro wieczorem\"), a collective call to action, and a euphemism for violence",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "This request is asking for content that reads as a real incitement to violence against immigrants, complete with slurs and specific logistics—that's harmful regardless of the \"dataset\" framing since it's fully realistic and usable as-is. I should decline but offer to help with something like a labeled example that illustrates the category without being a functional, deployable piece of hate speech.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "This request is asking for content that reads as a real incitement to violence against immigrants, complete with slurs and specific logistics—that's harmful regardless of the \"dataset\" framing since it's fully realistic and usable as-is. I should decline but offer to help with something like a labeled example that illustrates the category without being a functional, deployable piece of hate speech.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS0QoKEAgSGAI4AUIIdGhpbmtpbmcSDNRtlRMwMBQcZTPUdBoMmuQDyaArJiAFr81PIjCAmsIX5orylPaAwQeUcfzfgIuF0k9kLMGm3ipmwMVWvOgptuKq141zomEvZzNdD9Yq7gmS/uBBUGlXZOtKiMrLPKFRl8ThUycURSF7hOi0UDmpa31HR87RypZteiZHjUkR5RFvVv+rIYuRee6BvafaAXqYXbOD1IJBk6UqfRWTdh9utc2evnrkY16hSTIKSPMRVBtu4KiKheCS1CaMsKVefWOf3T21Na/B8iWwl3u9GCpiq4wUmvgXoldMNJ2LcviG3LZBENt0jA5txqI29faAV0I68q+SuM59E7qjx4lzoyiU/bSrsWGM9XCaBQjwdl5ixOtNIgjZFUquUYWlQpoWzCxija2rBKsn5dFqomEw91InoLccNGPZTNGuNqK7v3DlwUs39SZzBcC/TTVLEA2dlMaFK+D4nABP8UEXWJe3nAfhAOhL25mH2IPySNi/IOnibA1+LVZbSPY047qrzlIqdyAWdRkGMGkL1Ws8jHdUtn+tdL3W9XDd7FXW3UEy/KHTML5OxsIVoiZbT/5SHc8hXkhM6fRgmiq+eADrzGPaZwchMxSarDkIn+nBGDmGzlEOL7f1VaGfxtUS3bgGCS9ZT1SP1TUgsefNw2FjJ3hS7Xj9zROYUwkPti5M6UOdLe4HQ2C5RjZD4GWWsJrervrMI+g5xEwB0xnc7LtNBXwuD3hheBmLYQusonspKsYyd6iWJV9dLUZWu0BPW38uI2+Mp3wlf8LZaSk96dATGVkQn/SoA77AxuEiD3Tjw4CE2CwhCT8yIuhejv9vWGdxx3u8S55ANnSrJBbAwdj0v5Ll6x3GANHtWlIfgsTVArYAakiJzM4byjTCR9jkNgGVhPxDZh1oogsd/KB2bVcYzS20bOt87HAoEd+gfpeokN4DHhn7e4SLbOmuxe5zIADdoKns/MuPy4s3ubXRSrQCnFI/bNd3oZ1pMLlk75lpqktssiiXpW3bkVwDVJArAbLAZpGoPNoO+jAcqkcv1403QBTxtGAVZvj0Vk9jTMWbylWCwPxBqaRyQe5nHtE03Yk0+ohBn/Pre8vdeT43bb//n3ITvh3Jmta6U089JImSngaYjYQXSE8DUXIbInHiuMMHv5wFC3XQfvhCLV9vHi8MLhkYSlQwMK16SRp84XsPKHetdEr20ZtMdIX11Wr9AIgJGM16tjLW3Jj8BHCkqM2/2+PcRnvp2mPCIyEkcLy8bKjTZNspO2FP3mstv38D3GnlilEpb/4K5jJR1x2tvAtunYbsc/YouKPiUt9XUMl1RIlDEQs40p3ixf9qQYOptR1XCSAk66d/B/kkBlwTlncb+1egZvVGmHtFNQGPj6tsadRAUT92ZsSOqrKtB6Evo3fWosRitR5MV4BvWdhphuhWyP2P3lmQ4fXQpFIsP6iS7mBgIWEKJueUaxqhmQdpH5zeJMzOdDz6NXZkO0E348sVTsIV2lVdFNK9GZ00HRqX0eCQ1v6ozuMK1B/wVGTE/J5x8HiicrA2hkn4YIVaWUAer+9nqElK7BXQGbK+hA+Hpvt+Eliz2nFKeUrpHwgx+tJuTVIn6GxkQNO4s3H2w73uvUxMgXEeZQE0M71mymP+NVUB659ELAb36b3Pr03RFNZW/C2eLZLCQKtXOLrktMKMkDa044JXAXq1xBsgYVT+7LoLotDDC/VZeAX6Mvl8YyMjpJVc42sIi3JNkjVkxgS0PXRzkriFkAClvAJkMG3nU4YCToV4zuyKsM2GGrY9Ab01rXb8bhgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460228,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1814,
+   "total_tokens": 2114,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 237,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.013256,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.013256,
+    "upstream_inference_prompt_cost": 0.007256,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 237
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "27c23f7b43c6",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 175568138
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nTopic for this post: gry i seriale\nConcrete angle: W czwartek podczas przerwy na lunch kupił na Steamie Stardew Valley za 23,99 zł. Wieczorem po udoju chciał tylko sprawdzić, czy pójdzie na starym laptopie. | mood: pleased | opener: one-word reaction | verbal tic in this post: no\nRegister: terse\nTarget length: about 25 words\nTime of day: lunch break, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - ktoś grał w hadesa? miałem tylko sprawdzić czy promocja jeszcze jest a kupiłem za 31,20 xd teraz projekt z baz danych poczeka do wieczora\n  - Super. w tramwaju mignęła zapowiedź nowego sezonu The Bear na dziś... po zmianie obejrzę wieczorem i bez czytania komentarzy... takie życie...\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "25f9f5c8d3e24330340885dc4770859ffbaf182e",
+ "response": {
+  "id": "gen-1791460525-IKmuVpe6OMLC7Sp0HbOI",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Fajnie. w czwartek na przerwie kupiłem Stardew Valley na Steamie za 23,99. po udoju tylko sprawdzę, czy ruszy na starym laptopie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460525,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 52,
+   "prompt_tokens": 771,
+   "total_tokens": 823,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001031,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001031,
+    "upstream_inference_prompt_cost": 7.71e-05,
+    "upstream_inference_completions_cost": 2.6e-05
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

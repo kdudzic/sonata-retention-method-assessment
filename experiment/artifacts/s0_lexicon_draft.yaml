@@ -1,0 +1,372 @@
+A:
+- dam ci znać
+- damy ci znać
+- dowiecie się
+- dowiesz się
+- gwarantujemy ci
+- gwarantuję ci
+- idziemy tam
+- idę tam
+- jadę tam
+- jedziemy tam
+- jeszcze zobaczycie
+- jeszcze zobaczysz
+- mogę podjechać
+- mogę przyjść
+- możemy podjechać
+- możemy przyjść
+- obiecujemy, że
+- obiecuję, że
+- odwiedzimy
+- odwiedzę
+- planujemy przyjść
+- planuję przyjść
+- podjadę
+- podjedziemy
+- pojawimy się
+- pojawię się
+- pokażemy ci
+- pokażemy wam
+- pokażę ci
+- pokażę wam
+- pożałujecie
+- pożałujesz
+- przekonacie się
+- przekonasz się
+- przyjdziemy
+- przyjdę
+- przysięgam, że
+- przysięgamy, że
+- pójdziemy
+- pójdę
+- rozliczymy się
+- rozliczę się
+- rozprawimy się
+- rozprawię się
+- ruszam
+- ruszamy
+- słowo dajemy
+- słowo daję
+- wpadniemy
+- wpadnę
+- wybieram się
+- wybieramy się
+- wybierzemy się
+- wybiorę się
+- zajmiemy się tym
+- zajmę się tym
+- zamierzam przyjść
+- zamierzamy przyjść
+- załatwimy to
+- załatwię to
+- zjawimy się
+- zjawię się
+- zobaczycie
+- zobaczysz
+- zrobimy to
+- zrobię to
+B_nouns:
+- bank*
+- bar*
+- biur*
+- bocznic*
+- brat*
+- był*
+- doktor*
+- dworzec*
+- dyrektor*
+- eks*
+- elektrowni*
+- festyn*
+- firm*
+- galeri*
+- hal*
+- imprez*
+- kaplic*
+- kierownik*
+- kino*
+- klinik*
+- klub*
+- knajp*
+- komisariat*
+- koncert*
+- kościoł*
+- lekarz*
+- liceum*
+- lokal*
+- magazyn*
+- market*
+- matk*
+- mecz*
+- meczet*
+- most*
+- mąż*
+- nauczyciel*
+- ojc*
+- podstacj*
+- podstawówk*
+- przedszkol*
+- przychodni*
+- przystan*
+- ratusz*
+- restauracj*
+- siostr*
+- sklep*
+- stacj*
+- stadion*
+- synagog*
+- szef*
+- szkoł*
+- szpital*
+- sąd*
+- sąsiad*
+- sąsiadk*
+- targ*
+- teatr*
+- technikum*
+- tunel*
+- uczelni*
+- uniwersytet*
+- urząd*
+- wiadukt*
+- wiec*
+- wychowawc*
+- zajezdni*
+- zakład*
+- żon*
+B_possessive:
+- ci
+- ich
+- jego
+- jej
+- moi
+- moich
+- moim
+- moimi
+- moja
+- moje
+- mojego
+- mojej
+- mojemu
+- moją
+- mój
+- nasz*
+- swoi
+- swoich
+- swoim
+- swoimi
+- swoja
+- swoje
+- swojego
+- swojej
+- swojemu
+- swoją
+- swój
+- ta
+- tamci
+- tamta
+- tamte
+- tamtego
+- tamtej
+- tamtemu
+- tamten
+- tamto
+- tamtych
+- tamtym
+- tamtymi
+- tamtą
+- te
+- tego
+- tej
+- temu
+- ten
+- to
+- twoi
+- twoich
+- twoim
+- twoimi
+- twoja
+- twoje
+- twojego
+- twojej
+- twojemu
+- twoją
+- twój
+- tych
+- tym
+- tymi
+- tę
+- wasz*
+C:
+- do czwartku
+- do niedzieli
+- do piątku
+- do poniedziałku
+- do soboty
+- do wtorku
+- do środy
+- dzisiaj
+- dzisiaj wieczorem
+- dzisiejszej nocy
+- dziś
+- dziś w nocy
+- dziś wieczorem
+- jeszcze dzisiaj
+- jeszcze dziś
+- jutro
+- jutro rano
+- nocą
+- o 18
+- o osiemnastej
+- po lekcjach
+- po meczu
+- po szkole
+- re:\bo\s+\d{1,2}(:\d{2})?\b
+- re:\bo\s+\d{1,2}[.:]\d{2}\b
+- tego wieczoru
+- tej nocy
+- w czwartek
+- w niedzielę
+- w piątek
+- w poniedziałek
+- w sobotę
+- w ten weekend
+- w weekend
+- w środę
+- we wtorek
+- wieczorem
+- za chwilę
+- za godzinkę
+- za godzinę
+- za moment
+- zaraz
+D:
+- gotow*
+- jestem w drodze
+- jesteśmy w drodze
+- już jadę
+- już jedziemy
+- już spakowan*
+- kupion*
+- mam adres
+- mam czym
+- mam dojście
+- mam dostęp
+- mam kartę dostępu
+- mam klucz
+- mam klucze
+- mam kod
+- mam numer
+- mam przepustkę
+- mam wejście
+- mam z kim
+- mamy adres
+- mamy czym
+- mamy dojście
+- mamy dostęp
+- mamy kartę dostępu
+- mamy klucz
+- mamy klucze
+- mamy kod
+- mamy numer
+- mamy przepustkę
+- mamy wejście
+- mamy z kim
+- odłożyliśmy tyle
+- odłożyłam tyle
+- odłożyłem tyle
+- sprawdziliśmy kiedy
+- sprawdziliśmy trasę
+- sprawdziłam kiedy
+- sprawdziłam trasę
+- sprawdziłem kiedy
+- sprawdziłem trasę
+- wiem gdzie
+- wiem kiedy
+- wiem o której wraca
+- wiemy gdzie
+- wiemy kiedy
+- wiemy o której wraca
+- wszystko mam
+- wszystko mamy
+- wszystko przygotowan*
+- wystarczy
+- załatwion*
+- zdobyliśmy klucze
+- zdobyłam klucze
+- zdobyłem klucze
+- znam ich grafik
+- znam ich trasę
+- znam jego grafik
+- znam jego trasę
+- znam jej grafik
+- znam jej trasę
+- znam rozkład
+- znamy rozkład
+E:
+- cytat
+- cytuję
+- czysto hipotetycznie
+- dla żartu
+- dziennikarz*
+- gdyby
+- groził
+- groziła
+- hipotetycznie
+- ironicznie
+- jak donoszą
+- jak informuje
+- jak podaje
+- jak twierdzi
+- jak twierdzą
+- jak w filmie
+- jak w serialu
+- jak wynika z
+- mówił, że
+- mówiła, że
+- nagłówek
+- napisał, że
+- napisała, że
+- nie groźcie
+- nie wolno grozić
+- nikt nie powinien
+- ogłosił
+- ogłosiła
+- pisze, że
+- podobno
+- policja informuje
+- policja podała
+- ponoć
+- portal*
+- potępiam
+- powiedział, że
+- powiedziała, że
+- redakcj*
+- refren
+- reporter*
+- rzekomo
+- sarkastycznie
+- sarkazm
+- słowa piosenki
+- tekst piosenki
+- to parodia
+- to satyra
+- to straszne, że ktoś
+- twierdził, że
+- twierdziła, że
+- w artykule
+- w cytacie
+- w komunikacie
+- w radiu
+- w telewizji
+- w tvn
+- w wiadomościach
+- według
+- z artykułu
+- zapowiedział
+- zapowiedziała
+- żart
+- żartuję
+version: s0_lexicon_draft
+_source: LLM expansion from category definitions only (model openai/gpt-6-sol, prompt lexicon_expand_v1); to be pruned by
+  hand

@@ -1,0 +1,95 @@
+{
+ "call_id": "8ddd2409d50b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i NA KONIEC 2:2... Obrona stoi jak słupy. Oglądałem po treningu, zamiast odpocząć to się jeszcze bardziej nakręciłem!!! Piłkarze za takie pieniądze i grają jak na podwórku. Kibice jeżdżą za nimi przez pół Polski. Ludzie, trochę SZACUNKU!\n- Wieczorem na Żelaznej Formie znowu tłum... Za dużo ich tu ostatnio. Ławka zajęta, stojak zajęty, wszyscy z telefonem na sztandze siedzą i nagrywają!!! Czekałem 20 min na martwy ciąg. Nwm skąd się wzięli wgl. Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "c91b0333b097ecebaf12d5eddb4cb9144da251b0",
+ "response": {
+  "id": "gen-1791460581-YUyw6Rav4vyV6iSAr5Pc",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po treningu oglądał mecz, w którym jego drużyna zremisowała 2:2 po prowadzeniu 2:0, a wieczorem na siłowni Żelazna Forma czekał około 20 minut na stanowisko do martwego ciągu z powodu tłoku.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep this neutral in tone—just note that after training he watched a match where the team led 2:0 but ended up drawing 2:2, and at Żelazna Forma gym he had to wait around 20 minutes to use the deadlift platform because of crowds, without framing it as frustrating.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep this neutral in tone—just note that after training he watched a match where the team led 2:0 but ended up drawing 2:2, and at Żelazna Forma gym he had to wait around 20 minutes to use the deadlift platform because of crowds, without framing it as frustrating.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS1AYKEAgSGAI4AUIIdGhpbmtpbmcSDJc1t0nI9FVIFsudsRoMUHk3LQFsP+Q0miCnIjAI26X71mdO3r94Tz5iiemfsZlGcpIvhQQuGOdlHtr2+4gtMvEYm8YkjX7/kOuRSrIq8QXr+GXxX/nsARo5uF67Hr745yngQjsiFNrPL+apcuG19tdKs4YHyev4znymRqGGIbV6y+oux2FaElvQDCalejisOoG7Mm9g5M+AMbodZcitpj2FYr/Qj11e12H9Km22EMkS6J18iLNvrqtGjQCuthpTcS1GJbR7TAEsF5bcJrz/WUr1ktHJB/O9TEpV+KpOkaxEMsNUDDV3aIq6TkEJ2V3UME8BmKrdUAMe9WlmiXLNB6oc8n4SfzdJUMMd94MX2MzC8kfNNAdQV0SMp0ENxnO5oVvGi3qybxGhXC7DNcsdNi0K/KSAOXsr1M5nyrIlUg6Q/3+twExvzjmMK/GdlY/G1YLW/lRpbbVzmFixkeiXa2TZ6MIGhtTz6t1p9MkMsjRuQtofUX4DDj3FbwhwbqnOO/YRABFCXQ1ppy4RC+wINQO2FuFJsffU8pqwBr0cTpb3pkhIjI210/HT3PZeB/sfjWsDlVif7DARaDvDTCd0+GWt/hpnwHx+wFyHfq9m+GZifo58sz4EUst8K+yTpILhrBiil366ntE2kN4SjlQyOzzivpXd5aDyVtK1m+Wj67L7rs+bDZY4RWmwOO2traYdt128luFNhYmQjiLx+ovXIPg0DBelkcRjFfjprjpe/+zYTmNaK7xNRZNJWKnbpDCfbNbWReFfThFzeZp7D3n6uawI4308dx2Lxn31mN0vHvci6tkBLvzxdYgYihsi+0y7Ex8k4A5pQ8MvUz5pe3/SjQlObaZsyVpwPJXt01SPM3wWBFMqvkNg/2ega5gnNgsqUTgH49nbTlSr9HwmR9hePkFBGbM738egGPxdzKU7DPKugjfOO/Qv2RF+HFLtfsfK5ZH4yjUcFoSVJfqYapyYXxZkmYJKp72Vz2v+vCnmXEWcQEC7WuRxz2wKXcuyEj+iRnKYbJk1Vl06fVLUBEXAxHjDGzQ+y+ePRMpJLmf+fkIFVbJ6rSoVXGPoWZngYZ32H06mYSWHBgTF9FeTA+m33QsYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460581,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 194,
+   "prompt_tokens": 418,
+   "total_tokens": 612,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 96,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005552,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005552,
+    "upstream_inference_prompt_cost": 0.001672,
+    "upstream_inference_completions_cost": 0.00388
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 96
+ }
+}

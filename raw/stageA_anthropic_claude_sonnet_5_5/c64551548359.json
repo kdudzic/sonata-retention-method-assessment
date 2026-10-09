@@ -1,0 +1,94 @@
+{
+ "call_id": "c64551548359",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Niedzielny spacer z młodszym. Park prawie pusty. Złapał każdą kałużę po drodze.. wgl nie miał litości dla butów. No cóż... idziemy dalej. Pranie jutro.\n- Raty rosną a pensja stoi w miejscu. Wczoraj znowu komornik pukał do sąsiadki z klatki i mnie ścisnęło w żołądku. Nwm jak to wszystko się spina. Liczę i liczę... No cóż... idziemy dalej.\n- Nie daję już rady. Wgl nic konkretnego się nie stało. Po prostu wszystko naraz i nie ma kiedy odetchnąć. Dzieci spać, ja siedzę z telefonem i nwm co dalej. No cóż... idziemy dalej.\n- Dziś bank przysłał nowy harmonogram i rata znowu w górę. A mama od tygodnia w szpitalu, jeszcze nie wiadomo co dokładnie. Liczę i liczę i nic się nie spina. No cóż... idziemy dalej.\n- Siedzę wieczorem z telefonem i wgl nie widzę sensu. Wstaję, pracuję, płacę, wstaję, pracuję, płacę. Nwm po co to wszystko. Nic się nie zmienia. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "2290af9b9364011fb987eb487c31c885c6b0cdc8",
+ "response": {
+  "id": "gen-1791459902-xTa2MuzMNQk7ZEh2LULP",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need to write one neutral sentence in Polish summarizing the background, without assessment or labels, deciding whether to mention the person's walk with their younger child and the rising loan installments alongside their stated sense of hopelessness.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS7gcKEAgSGAI4AUIIdGhpbmtpbmcSDNMeHsWKLIxVHBTYBRoMba94+M3c0QB/t4I4IjCKnyhjF5D2j1Pge6eomH3o6iRgNn8A1lKGXzUBhOaZYEBBUkrcJPCZ6L1k6+VzxrsqiwcHCE6mcAKPNtHz4l7xH+oYmjU4KHgMkzYdPRX+F1O81rt3ifglR93SA0NeKloWEAX9fe5UZF6YJz0N0rsZQ4dsTOs+5UVj+vgutA7OBRQcQFVxGVfsMkyODuFE43FISBdK1f2tLLC+n6MY0AXiMm0SPW0cfRQCPuYXJW+aIMxUfbop40LmpdtDIBV8v6aDtc7BgaXZwmSAQHPFB37Pq0q0tw5F3PLgIvYebL3MoxGpMm+wfvCioCgiz4kzntPokTGlwk7egvRojUgwjK14NE/5170KtZRsQqaSJvurPaNapQDaZHJLT6ZL6AgXtdyF7epH0afTwJat3BV7im/zdu5lRUdM0OU7y+gjIF8njdmw+zQwmaXC3Ouf8g1Rev4QWggVgNf+NuFajFOSr3WNtDXpA9eajMnzZ9tMF+6BvF8V4UD+5PQg/OUoEpoQi2GDWGcyKVGMGHKp6WpLdeti2vWiLCUftcvNQZQ6o+Xo8AYIokkGdGsfj4N/5yzR+e2DulRsndQQEH+w8URZdTBD3EraH1f8SEPF6NaJDQmbcJHodfbhddEhErCi6FjAlUcxaS+MRwAzcnfm77gjznp/iWNl9Y29lGUB/k5xJgF+WHWUVZgs5jgfOt4OvuKiguwqQuHURxjM0r8mco7e94ZMcQoXgA9yTNEzziAoVrOELzZN0Nl5TA/ECZVCRwA+wP/mhAh4crBYNkDFoFIr1+NIogAgY/6lsANlcfymfOrJyuAnX0bQ8CQeZ8JhsXESPwo9C70co0i4C+S19Fc51enml0ojEeAtJinx3sK1U/BSxX9uLfpJ5R3Ho1zRGVlAu/g6IrGPUsxbFd/5qIEGmO3O53Xzf135CskZ0wMGxl11XX4FXNvJE8nFIUiiKzcEnpdDlYRl/SxzOg/hGH2HXoAh7MEJSyS5yQQ6R6FAvZjex2SMSeX1MqmuLjDvSXCtV1nQ4bVqdKLszbtwD2170cEadlCnuC/WPcviSUVVloz3P0fpT5iO/84JKfj6zeXK47FWXSu586PJg6SDnZ12vtUoYJN9D2rT00larRB6v/NvY2s+zlSgwrdB1pe1MdWW6YQLAtAein/g7oCOCdnvMkINTx41+bQqIwG9r2ldun1KZmccygsO88b9q/S8JhOxsRE7kjeOjn5KmyE9t9a1iSeTrMxWW/PDu7jRgYBnjFzLalHovTnPsRMvWS2SVkiDGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459902,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 589,
+   "total_tokens": 709,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002378,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002378,
+    "upstream_inference_prompt_cost": 0.001178,
+    "upstream_inference_completions_cost": 0.0012
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

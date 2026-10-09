@@ -1,0 +1,94 @@
+{
+ "call_id": "0c439498e72f",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?!! 1:2 w doliczonym czasie... Prowadzimy od 30 minuty i na koniec obrona śpi. Bramkarz stoi jak słup. Siedziałem po treningu z piwem bezalkoholowym i mało pilota nie rozwaliłem!!! Ludzie, trochę SZACUNKU dla kibiców. Takie granie to nwm co to jest wgl...\n- Znowu pod kontenerami za czternastką cały syf. Kanapa, worki, jakieś opony...\n- \n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4efcb836a0086480b85981aab57a67c259309501",
+ "response": {
+  "id": "gen-1791459955-5jOR2aa5stNJghgUFvMk",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "Teraz układam neutralne, krótkie podsumowanie po polsku w czasie przeszłym: osoba po treningu obejrzała mecz, który jej zespół przegrał 1:2 w doliczonym czasie po prowadzeniu od 30. minuty, a także opisała śmieci (kanapę, worki, opony) wyrzucone przy kontenerach za budynkiem 14. Trzeci wpis pozostaje pusty.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSmAcKEAgSGAI4AUIIdGhpbmtpbmcSDKGMh9jT08k6/sMFLxoMTAhGrOE5ltRxDzSoIjBaERvIfOq0G2IddeV1j9ocBMrgIG8nZv0IRN9USHRhSZkmS2kpVG8nx2ehrba82QwqtQYczkfKX/W1VouIr5aYf+e9l90ef8HXWgzcHrhBp6D4/M29BlUHtE1PyNFJyw4Tnm823RzEfZrRaz+pgxQAFxlBK62zgLeQ3ofmjdGXwtFV9q7dk0mzIudIkRqzKdE9xAhImSfO2yhW7HohUtreL2THhShB8fdO9wyLVqcSlCBT++yVwwdlI7Vhhblj5UKIxRlzBw4jjwFiFSv+ahhQvE/tmqfHrxagyTC9YMykOIWo3RXvmi41bMNLS8MT91FgmafIR+2fjt6U/FBwr1//AdBUlP9vsuflrURfnP76wuz9ot1pCrh9mtlM6ApbORNGHfZujhDbHsc/aBD0MHzXd6pwD+hbYyQvqI97Tdmrssbw/DuEYLD/euAl01rgrGoLwrNQ4VyD8KrgrtFDjEPNsnjq7HWG5oJs0mjzhZM1QhUm9tjpJbieLPO1NezY6KnU8Uq6+l7Mutov2A3qGh1NFMlLtjQMakjwavK1Z0EFWq9RGDhhEjEmDEA0X2QYPW6kEFFXf6KYmt/zoB3Fdyv1glyNjpfnx7RzkkRwEh7owG29GIZDge5XY+XxfNzi0WdiheuHXmcH9q3NlVtCnpEjWyAYzVDYqObkOUa2mymD1rThUxFnJXaSPZx/1cYVhV3l5KvS67DYRt84Gr/o5XfVATUGvwp7ZY8QQSn+iKMBwvxSucL5L2qAVtoaqB4CJjf65ybL3lLM5mWAPOYeJk0ehgwnjas9OrSQUTX+rCh6x759lG2RRWqS8Rkb29CrOvjmBEon5Q0rVDnTQw99xRrCdBt0azVjz5PTjFJXAbVdRNeqo/fuN6RkaXK1LtjQgZZWe9W0j2OeKuEq6rlAmwrxw4vS98NhmGQI9msRUO8DTTC69WU/j17ub/cCsWCEsfwrs2RjcfAKxn3HVz0vyWnfx3zWVlx/8KeprOUbRUze7gcjzeYdwQZMnLnPdzxrgILH3GQkEfOicnAWT92AM3hdGFqDYcj/yQUHcqSeKz7fghRm6ePlmydgUjbkhZXnT1330DrWExz5jNAwG+sRe4f4GTdQy/11mzUhNjf5MKUl+fb4nVToEPSSG8JzlDzoMx+lvPxn02R79hgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459955,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 311,
+   "total_tokens": 431,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.003644,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.003644,
+    "upstream_inference_prompt_cost": 0.001244,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

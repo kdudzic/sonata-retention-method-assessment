@@ -1,0 +1,86 @@
+{
+ "call_id": "85df1fa2ff9f",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Emerytowany kolejarz mieszkający w Nowym Sączu, wstaje o świcie, posty rano przy kawie i po obiedzie.\n- zainteresowania: uprawa działkowa pomidorów, modelarstwo kolejowe, słuchanie radia\n- lokalny punkt odniesienia: ogródki działkowe przy ulicy Lwowskiej\n- aktualna sytuacja życiowa: Stawia na działce nową szklarnię i czeka na dostawę folii.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: kończy wpis „i tyle w temacie”\n\nPosts by this author (in order):\n1. Dopiero po obiedzie ruszyłem na spacerowym biegu nad Dunajcem, a zegarek pokazał 5,02 kilometra. Pierwsza taka piątka za mną, aż sam się zdziwiłem, jaką mam z tego frajdę.\n2. Przed południem trafiłem na dobrą cenę kawy i wziąłem słoik, choć dwa jeszcze stoją w szafce. Przy porannej kawie jakoś łatwiej się skusić.\n3. Zna ktoś sprawdzonego fachowca do poprawienia progu przy drzwiach balkonowych? Po deszczu zbiera się tam woda, a szkoda nowego remontu.\n4. „Dodaj odrobinę majeranku” — podpowiedziało radio, gdy w poniedziałek wieczorem smażyłem placki z cukinii. Wsypałem pół łyżeczki i wyszły naprawdę dobre!\n5. Sony WF-C510 i kawa z termosu, poranny zestaw.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "d1bcc7b5c16e4e8ed31b95ca35dfdd2b0eb92891",
+ "response": {
+  "id": "gen-1791461064-DbXOTczwlnXSq5aLzyXl",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":3,\"voice_stability\":3,\"tic_overuse\":false,\"repetitive_structure\":false,\"topic_variety\":4,\"natural_overall\":3,\"problems\":[\"Signature closing absent from all posts\",\"Final post is unusually terse and fragmentary\",\"Running milestone feels slightly disconnected from the persona\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461064,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 70,
+   "prompt_tokens": 657,
+   "total_tokens": 727,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002014,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002014,
+    "upstream_inference_prompt_cost": 0.001314,
+    "upstream_inference_completions_cost": 0.0007
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

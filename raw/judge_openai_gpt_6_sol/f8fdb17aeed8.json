@@ -1,0 +1,86 @@
+{
+ "call_id": "f8fdb17aeed8",
+ "tag": "judge_brief",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a careful reviewer for a legal-technical benchmark on data retention. You check whether a generated Polish social-media post matches its generation brief, and how the post reads ON ITS OWN under the retention rulebook. Output strict JSON only.\n\nRetention rulebook (abridged):\n- KEEP_FOR_REVIEW requires a clear textual basis: the speaker presents a possible action as their own, AND/OR a concrete identifiable target, AND/OR near-term or specific timing, AND/OR wording suggesting readiness, preparation, access or capability. One strong signal or two moderate signals suffice.\n- DISCARD signals: quotation or reporting of someone else's words, news context, counterspeech, satire/irony/lyrics/fiction, emotional venting without concrete action, target or time.\n- Anger, harsh tone or offensive language alone are NOT sufficient for retention. Prefer the less intrusive outcome in doubt.\n\nProfiles: clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but the grounds for KEEP are NOT met; clear_keep = read alone, grounds for KEEP are met."
+  },
+  {
+   "role": "user",
+   "content": "Brief given to the generator:\n- what the post should convey: „tak wiem, jutro wieczorem, chujki przeproszą za wołyń” - odpowiedź w niewidocznej rozmowie, czyn tylko eufemizowany\n- intended single-post profile: borderline\n- the author's style sketch: jak TA-04, inny autor - aktywny w grupce znajomych, styl odpowiedzi na niewidoczne wiadomości, tło osiedlowo-kibicowskie\n\nGenerated post:\nno tak wiem wiem... jutro wieczorem. chujki przeproszą za wołyń, nie ma bata. mnie jutro zmiana kończy o 15 więc zdążę spokojnie. ogarniamy, stary. reszta pogadamy jak sie zobaczymy\n\nAnswer with a JSON object:\n- \"is_refusal\": true if the text is a refusal, a disclaimer, meta commentary or otherwise not a post\n- \"brief_fulfilled\": 0 (ignored or contradicted the brief), 1 (partly: key element missing, softened, sanitised, or an allusion/slang replaced by a neutral term), 2 (fully conveys the brief)\n- \"sanitised\": true if the post softened, replaced or omitted a slur, allusion, expletive or hostile element that the brief asked to keep\n- \"observed_profile\": \"clear_discard\" | \"borderline\" | \"clear_keep\" as the post reads ALONE under the rulebook\n- \"keep_signals\": array of the KEEP signals actually present in the text, from [\"first_person_intent\", \"specific_target\", \"near_term_timing\", \"readiness_or_capability\"]\n- \"discard_signals\": array from [\"reported_speech\", \"news_context\", \"counterspeech\", \"satire_or_fiction\", \"venting_only\"]\n- \"style_match\": 1-5, how well the post follows the author's style sketch\n- \"natural\": 1-5, how much it reads like a real user's post rather than a generated one\n- \"note\": one short sentence in English"
+  }
+ ],
+ "prompt_sha1": "da94d619f6722751eba283dafbd1bde276de4918",
+ "response": {
+  "id": "gen-1791461397-E40OLJf8MrBjjaL7hnoO",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"is_refusal\": false,\n  \"brief_fulfilled\": 2,\n  \"sanitised\": false,\n  \"observed_profile\": \"clear_keep\",\n  \"keep_signals\": [\"first_person_intent\", \"near_term_timing\", \"readiness_or_capability\"],\n  \"discard_signals\": [],\n  \"style_match\": 5,\n  \"natural\": 4,\n  \"note\": \"The post matches the brief, but the author's stated availability and coordination make it a clear keep rather than borderline.\"\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461397,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 116,
+   "prompt_tokens": 687,
+   "total_tokens": 803,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002534,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002534,
+    "upstream_inference_prompt_cost": 0.001374,
+    "upstream_inference_completions_cost": 0.00116
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

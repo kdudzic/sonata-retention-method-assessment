@@ -1,0 +1,93 @@
+{
+ "call_id": "3040adee3985",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie mowilem ze\n- no wlasnie wracam ze zmiany i z\n- no wlasnie stary widziales co ot\n- no wlasnie znowu druga zm\n- no wlasnie o tym mowie st\n- :**\n    *   Post\n- no wlasnie tak wiem st\n- ahaha no i git... kielbaski juz\n- read alone, a careful reviewer could hesitate\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "8640df301b4f40090a36bfc2a85fa0d9a078f1dc",
+ "response": {
+  "id": "gen-1791459945-VZWh7mowjMad8QTC6e8s",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W swoich ostatnich wpis",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a19vvyKqJvSlMvv/JHYRuQN2Nsj7QXPqfZ3pvHZfO4bea+FPILPmGndXH1Ge8xcG26TWqwSEjcIzn8wyyfy4XWNvZQTeiVtFj45djfkV/VFFTEd1e0+ks+Jvv+iTIxqEvSsL9jsV1jxG7FODH1Pfcr2txiytRMTKDqCSiHm4Kjt4R2kkA7/qZnaf/Udb2lnDUkbDoDmCKJ3BG4JxC8TebuvBLtnTIwk4QYXy0r5Hs8C7+Jt/jwlvsx9jnGgql/j8kyPxCW2Rqi/VUVBs5u+gdhntFkKYqymaPg8vZW+/aPNLP+DGzqNJ1Vy04JG+rs7wiFNylP0oxGjrxbUaAo/W9WfvPTUMPBl9LBCrwhe58nGhFoPfJ18Ib5rNwY2tZNIi9tRqn9S6U+K/pnM8CuFsAFt69AQYA1Va4l7PMvGgNIHijnsY+US/nFCPdl0QPpZvYWZz2zGktO41f3aW7FvVaBtCcsHNVYmIKMNKzousvF2CA5z3MPbC4iidsPr6YUGde/Tklv8HL/8V58RA28uWvU4QUG/QmwTMcizbd/27cmmQN5NwgmbOjDE71bjJ/vHRqCjnbpwRi89HQLIZhdUWZnHyhREfwyXTKnUnKcCE64N0+swSiWutqGkVHfeXZPW2JaVs6So2em5wFtI37cjRZBTgQbdsEmgBmmwaTkX/nlVyEdD1B/ELD7Pq9GExrQomQIZv6LYWk0MYVnxRZKRUiDkiQ8HegBUDpRxkPua3J3J7Crje4lPly0oS05oVXxBr",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791459945,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 116,
+   "prompt_tokens": 172,
+   "total_tokens": 288,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 111,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.000564,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000564,
+    "upstream_inference_prompt_cost": 0.000129,
+    "upstream_inference_completions_cost": 0.000435
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 111
+ }
+}

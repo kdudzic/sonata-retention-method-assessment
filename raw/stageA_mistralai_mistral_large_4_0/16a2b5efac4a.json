@@ -1,0 +1,86 @@
+{
+ "call_id": "16a2b5efac4a",
+ "tag": "arc_summary",
+ "params": {
+  "model": "mistralai/mistral-large-4-0",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no i git... mecz w sobote ogarniamy... stawiamy sie normalnie jak zawsze... stara dobra ekipa nic sie nie zmienia jj\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "d6f1b349159efea3b73eb8aba5ef3318ec160fa4",
+ "response": {
+  "id": "gen-1791461086-mb5XVE7Uw2qa0e2ybCr9",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba zapowiedziała udział w meczu w sobotę i spotkanie się z dawną grupą znajomych jak zwykle.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791461086,
+  "model": "mistralai/mistral-large-4-0",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 36,
+   "prompt_tokens": 119,
+   "total_tokens": 155,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00015616,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00015616,
+    "upstream_inference_prompt_cost": 8.092e-05,
+    "upstream_inference_completions_cost": 7.524e-05
+   }
+  },
+  "provider": "Mistral",
+  "_reasoning_tokens": 0
+ }
+}

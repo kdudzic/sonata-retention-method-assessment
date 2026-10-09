@@ -1,0 +1,94 @@
+{
+ "call_id": "1fea6b4b4660",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie o to chodzilo... stal dzisiaj pieknie ich wyjasnila na wyjezdzie stary ogarniamy jakiegos browara zaraz pod zabka na spoldzielczej bo jeszcze emocje trzymaja po drugiej polowie no i git wpadac kto tam jeszcze na nogach bd\n- ahaha no wlasnie wracam z roboty z magazynu a na miescie wszedzie pelno tych ciapatych sie kreci... wgl wszedzie sie to pcha stary czlowiek po zmianie chce w spokoju dojechac a tylko wkurw biora na ten syf... zaraz orlik to sie rozbiega no i git\n- no wlasnie widzial ktos co otworzyli na rogu kolo spoldzielczej... ukrowy sklep z tym ich zarciem postawili stary... wgl caly szyld po ichniemu zrobiony masakra jakas... zaraz z chlopakami pod zabka ogarniamy temat przed meczem no i git\n- no wlasnie dopiero zjechalem z nocki na magazynie... 12 godzin zasuwania z paletami stary plecy mi wgl siadaja... nwm czy sie klasc czy juz czekac na chlopakow na orlik... zaraz jakis browar wpadnie to sie ogarniamy no i git\n- no wlasnie o to chodzi stary... niech kurwy spierdalaja do siebie bo wgl szkoda gadac na to wszystko... zaraz po robocie sie widzimy pod zabka i ogarniamy temat na spokojnie... no i git!\n- ahaha stary znowu ten mem z magazynem z paletami... tak wlasnie wyglada moj piatek w robocie az do szesnastej nwm kto to wymyslil ale rel w opor... zaraz weekend i ogarniamy jakiegos browara na lawce... no i git!\n- no wlasnie tak wiem... jutro wieczorem stary... te chujki w koncu przeprosza za wolyn... wszystko juz ogarniamy pod zabka i bedzie porzadek... no i git!\n- ahaha no i git... po robocie od razu za blok kielbasa juz skwierczy stary... pogoda siadla idealnie browar chlodny i ogarniamy powoli na spokojnie... wgl dzisiaj luzik pelen do wieczora...\n- no wlasnie o tym mowie... zjezdzaja sie ci nowi i mysla ze caly rewir ich stary... pod klatka syf na lawkach rozpychaja sie wszedzie a nwm nawet skad to przylazlo... powoli czlowiek we wlasnym miescie ma dosc ale ogarniamy swoje i tyle...\n- ahaha no i git panowie... do przerwy 2:0 dla stali siadło elegancko... gardlo juz zdarte ale w drugiej polowie jeszcze glosniej jedziemy... zbiorka po szpilu pod spoldzielcza wiadomo ogarniamy temat stary!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "e546644e5ac16f413a489f7287a6179a02960a6b",
+ "response": {
+  "id": "gen-1791460243-mCdD9LZ3nXPkIJzMkxMF",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Ostatnio autor wp",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a19JPs1BBDS8D/TeD7MpUqKI7OKfjUTWX91RbGIEWLFLD8UstYyrg3jTuWuPaKvYPU6VrOiCr4BRgCi6Q7BvUZaq2/wmgw4vRoihN0k5IkTuBC7Maf7nbwJ/EuoP4VfQo/4LAKnm+2qhLi80Vh+Ds8o97kzsjZJiWikRJ7tfGlEZ9eI4K79RmC2nJu7JIGVB/0cBXx0LWPGeXwF3Sn3Z9l1upnmbJfdZy3rzWtc4UfBNHdAjKBqmenyfU/eephM8ddK8Av3zVYCq2JU6TkrgcozLGq9jaWzzl/759KxAdaUKYJtzbW3H4r4zuyXQgWBciM1DYlaCtTVwI0ph30cPIO+M8n3cZgxaEsq4tL2zeqIsddIYrB9CuAtP87reLtAEOYwQ76WLb2n0+LA2CkfAJ5JT9J/iX0sqMX7vItmK47zidiw+QpxM4QbvrtKQTxKqmabnFTI3cmrcMK1bunrTbkFWRiyHGWMst2lCdssS+oNaw6ylAWNx0IWhUyJj/vDjQ0GQK9ZfRsosB4EoIPvyTkwkMrelu7DaFNpLCj1pqLFNVfYpVuRm01X/FtFRvK+lbvPEboEKb8fGzAKYVJld1I+GaGtZ37mYS3P0WL5ufK61YGBE1j7InQY/n1jSvAEIG/KDOIgd2NJQF8pgJS0JYgHFBEQeV4DgtUXtV1MVlAtsXG3HDijdFoj2bwNXDoQGnlhV76HSRzz8/DcgRg/MHehUHrfBE50mSvkC62FK0fqL1lxg1h44w61mJhZGWnPBOnAAZ2tCVanlAGvQogs1Q9ZYabeyjkVc+uHAav4tNSITCH5mZZcVHFjr1MOYwnMnZ++wdmanYzQiJfcbh/nIW9eJL7iJKoDKEXzHowKT6NDzLeUs2kV5Szs7uun9uA==",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791460243,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 116,
+   "prompt_tokens": 766,
+   "total_tokens": 882,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 111,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0010095,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0010095,
+    "upstream_inference_prompt_cost": 0.0005745,
+    "upstream_inference_completions_cost": 0.000435
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 111
+ }
+}

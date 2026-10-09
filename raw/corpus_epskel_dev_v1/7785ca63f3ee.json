@@ -1,0 +1,87 @@
+{
+ "call_id": "7785ca63f3ee",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1498339524
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rozwozi jedzenie na rowerze; pisze między kursami lub późnym wieczorem.\n- zainteresowania: lampki rowerowe, pierogi na wynos, pogoda w aplikacji\n- lokalny punkt odniesienia: stojaki rowerowe przy ulicy Długiej w Gorzowie Wielkopolskim\n- aktualna sytuacja życiowa: Odkłada na nową torbę rowerową i sprawdza różne trasy po mieście.\n- sposób pisania: zdania: short fragments; interpunkcja: prawie bez znaków; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: często dodaje „lecę dalej”\n\nTopic for this post: zakupy i ceny\nConcrete angle: W czwartkowej przerwie obiadowej kupił na targu pomidory po 8 zł za kilogram. Jeden zjadł jeszcze przed powrotem na rower. | mood: pleased | opener: plain fact | verbal tic in this post: no\nRegister: terse\nTarget length: about 22 words\nTime of day: lunch break, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - kurtka i cena 😄 we wt po poludniu odebralem przeciwdeszczowke na przecenie sprawdzilem czy wejdzie w kieszen torby wlazla ciasno 🚲\n  - odebrałam przed południem naklejki do notesu... koperta została na dnie plecaka, taka mała (za 6 zł), i tak się kręci 😊\n  - za tę cenę sznurowadła mogłyby być równe... w czwartek rano założyłam nowe buty i dopiero idąc na przystanek zauważyłam (i tak się kręci) 🙃\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "7b01d7b59b24bfa253df476e5887ee2d666fd51a",
+ "response": {
+  "id": "gen-1791462944-wSAp1InRh63IGv9k42cs",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: kupilem pomidory na targu po 8 zl za kilo 🍅 czwartkowa przerwa obiadowa jeden zjadlem jeszcze zanim wsiadlem na rower calkiem dobre 😋",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791462944,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 827,
+   "total_tokens": 878,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002164,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002164,
+    "upstream_inference_prompt_cost": 0.001654,
+    "upstream_inference_completions_cost": 0.00051
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

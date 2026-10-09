@@ -1,0 +1,95 @@
+{
+ "call_id": "24f3ca2d611a",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1124779569
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Emerytowany kolejarz mieszkający w Nowym Sączu, wstaje o świcie, posty rano przy kawie i po obiedzie.\n- zainteresowania: uprawa działkowa pomidorów, modelarstwo kolejowe, słuchanie radia\n- lokalny punkt odniesienia: ogródki działkowe przy ulicy Lwowskiej\n- aktualna sytuacja życiowa: Stawia na działce nową szklarnię i czeka na dostawę folii.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: kończy wpis „i tyle w temacie”\n\nTopic for this post: jedzenie i gotowanie\nConcrete angle: Podsumowując niedzielę, wspomina poranną bułkę z serem zjedzoną na stojąco w sieni przed wczesnym wyjazdem po drewniane kantówki do szklarni. | mood: amused | opener: question | verbal tic in this post: no\nRegister: enthusiastic\nTarget length: about 22 words\nTime of day: evening, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - ...no i stoję o 23 nad blachą bo pachną OBŁĘDNIE te drożdżówki z rabarbarem i białą czekoladą z nowego bloga ale ta kruszonka to jakaś PORAŻKA wyszła twarda jak kamień przez złą mąkę wgl nie jest sypka tylko taka zbita bryła masakra 🙄🤦‍♀️ ciekawe jak to jutro bd smakować!!!\n  - pieknie zaspalem na trzynasta to wjechal zimny kebs z foli do monstera\n  - czy smazenie tego starego ryzu z niedzieli z sosem czosnkowym o czwartej rano to juz dno xd sql mnie wykonczy dzis\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "1158a05bdc147ae4e14788b70a981a0aa59d1654",
+ "response": {
+  "id": "gen-1791461620-a8Xr4E5le1fEE83x8PqZ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Czy zwykła kajzerka z plastrem żółtego sera może smakować lepiej niż cały niedzielny obiad? Pochłonięta rano na stojąco w sieni smakowała po prostu wybornie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a19/6J9mxtzbtz0vnLOF3MASPPjzNSozSxHrTH2aedTV3oVcKlkEJC+KuHMJf8RN9+kAwf0jD6Mtxb4DTAqfeFTl6/aBinSIcZAA/pUtTOQ8vvvA",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461620,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 49,
+   "prompt_tokens": 855,
+   "total_tokens": 904,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.000825,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000825,
+    "upstream_inference_prompt_cost": 0.00064125,
+    "upstream_inference_completions_cost": 0.00018375
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

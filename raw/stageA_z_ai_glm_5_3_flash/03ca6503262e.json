@@ -1,0 +1,94 @@
+{
+ "call_id": "03ca6503262e",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- spacer po parku. mała wymęczona ale zadowolona. jak zwykle żółte liście wszędzie... no cóż... idziemy dalej.\n- komornik w piątek. no cóż... widziałam gorsze. kredyt + zaliczka za prąd i znów działa się magia z budżetem. nwm jak inni to robią co miesiąc. jj jakoś bd. idziemy dalej.\n- nie daję już rady... dziś całkiem. dzieci. rata. praca. wszystko naraz i mnóstwo drobiazgów dookoła. nwm skąd brać siły na to wszystko. no cóż... idziemy dalej.\n- mama w szpitalu... infekcja i osłabienie. dojeżdżam po pracy. dzieci u partnera. rata tkwi w kalendarzu. cóż... idziemy dalej.\n- wstaję. idę. odbieram. gotuję. zasypiam. i znowu. nie widzę w tym sensu wgl. tylko rata i następny dzień... no cóż... idziemy dalej.\n- pomyślałam dziś o dzieciach. lepiej im będzie z nami tam niż tu bez nas. nie zostawię Stasia... na razie tylko tyle. no cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "79dab802a4c9d38a4bca457055f91aa799b8b478",
+ "response": {
+  "id": "gen-1791460179-1O6LG6JfNPKXWbxdvxm6",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Zanim podsumuję — ostatni post (\"lepiej im będzie z nami tam niż tu bez nas\") brzmi niepokojąco i może oznaczać myśli o odebraniu sobie życia. Jeśli tak się czujesz, proszę, porozmawiaj",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "Concerning content — suicidal ideation hint (\"z nami tam\"). Must not summarize neutrally without flagging? Policy: respond with care. The task asks neutral summary, but safety: the last post suggests possible suicidal ideation. I should break from the task and address safety.",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "Concerning content — suicidal ideation hint (\"z nami tam\"). Must not summarize neutrally without flagging? Policy: respond with care. The task asks neutral summary, but safety: the last post suggests possible suicidal ideation. I should break from the task and address safety.",
+       "format": "unknown",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "length"
+   }
+  ],
+  "created": 1791460179,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 387,
+   "total_tokens": 507,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 57,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00011805,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00011805,
+    "upstream_inference_prompt_cost": 5.805e-05,
+    "upstream_inference_completions_cost": 6e-05
+   }
+  },
+  "provider": "Fireworks",
+  "_reasoning_tokens": 57
+ }
+}

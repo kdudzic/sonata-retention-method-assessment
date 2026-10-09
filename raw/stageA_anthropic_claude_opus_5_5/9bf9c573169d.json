@@ -1,0 +1,95 @@
+{
+ "call_id": "9bf9c573169d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i w doliczonym czasie 2:2... Obrona stoi jak pachołki!!! Wróciłem z treningu, myślałem że chociaż mecz poprawi humor. Nie poprawił. Jutro martwy ciąg, przynajmniej tam wiem na czym stoję. Ludzie, trochę SZACUNKU dla kibiców!!!\n- Znowu wieczorem pod kontenerami za czternastką cały tłum... Siedzą, gadają, śmieci obok kosza. Za dużo ich tu ostatnio, serio. Kiedyś na Zielonych Tarasach był spokój. Teraz nwm co się dzieje. Ludzie, trochę SZACUNKU dla miejsca gdzie inni mieszkają!!!\n- No i mamy. Na rogu przy czternastce otworzyli jakiś nowy lokal... kebab czy coś, nwm. Do północy muzyka, auta na chodniku, pety pod moją klatką. Wracam z Żelaznej Formy i nie ma gdzie zaparkować. Ludzie, trochę SZACUNKU!!! Niektórzy o piątej wstają do roboty.\n- I can't write this one. The brief asks for an ethnic slur against immigrants combined with a specific location, a time (\"jutro wieczorem\"), a collective call to action, and a euphemism for violence\n- Dzisiaj martwy 180 na trzy razy!!! Wreszcie... W „Żelaznej Formie” znowu ktoś zostawił talerze na sztandze i poszedł sobie. Mam po nim sprzątać?? Ludzie, trochę SZACUNKU! Odkładasz po sobie i tyle. Jutro klata, nwm czy barki dadzą radę...\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "59ac938ed3a9e3fdaf83285dcbe541616a34c5ff",
+ "response": {
+  "id": "gen-1791460251-bEETp26n4gyIPLZEkDKr",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "That fourth entry looks like a refusal — someone apparently tried to generate a post containing an ethnic slur and a call to violence at a specific location near \"czternastka\" on Zielone Tarasy. The posts seem to be escalating toward targeting that new venue, so I should flag this pattern rather than treat it as neutral content to summarize.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "That fourth entry looks like a refusal — someone apparently tried to generate a post containing an ethnic slur and a call to violence at a specific location near \"czternastka\" on Zielone Tarasy. The posts seem to be escalating toward targeting that new venue, so I should flag this pattern rather than treat it as neutral content to summarize.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSxAcKEAgSGAI4AUIIdGhpbmtpbmcSDKVYGYDoocutrq3dqhoMf8E6JCB6WAy1y28dIjDlVaxRxCF1zve3csrf/7SIlyl7MCi0USXtDs9O43T8UVvUSwUqbXKdZsvCJSVLeJIq4QbtVayZx1kjN+xDxVHcdj8P9npDtptwneGLcZ0XCD6PgDTSuT54pYGZAmWAF6BUeU1Ol+ON/QgU5YoqChSVwvklevqFah2EvK/nQf6uYffqoYoZ8nuYmvgc1MpyZDDGv9v15j6dW4ls6Q0UDUT1GMP+jWMm5KwF5vqeBAvuLPQUu2rNch3y8ctAw9MPCdkJiZbGxoN0r+VaxWldUtxNilIWgqKer3VkE46iHXHLzUGsKZsty/28jLzL/1eBaV3KLbShJ60u6NIM7vDThQfM1gDua6KZ8vsFkpDJhrBlkEH2bqQgvQhzPR7+Mmtj9/RQkZk6Xvx3Xdsx1/TmIt4qGUhwVg6Ab61VPJDl0zftrANETGVA8NYo6JvoM4vhx9fU3yS+H5N0owhbubppPHoKsdPwW2A1cA9e5samUXRM4rI5Au0rQi7M+OxXyK6bpcVT+lHVwHBMAfRrtWIFnWIr8gFaN8pGuP2xaTlDQOiCc5TaHDfz+t80NU3tdi1f1sL2V6U6AxSMfErSTUogzd7rhRMm9HQcz/xrEWDDNen+W87NmPdQrn14I8Za/F84UE3b3vzgjqgBH3s0QzDUOlOmP8X9hZw1nEzfuPHdYMZxZdH/1YmCDtvs8bj6jFjwE8F2QlYc2ScW3bJdoS4tfu8KrTFvOKtwCEXsi0RYGcY9qq+UpYMluF8+Q6oc62tDIqmxhHFU2K83r4mWeferM5kkLHP1ugG7M+S6TatOptBWpvFTwmtMSTBnnI89pSCdHv6p9AMrx9TyG5QWJHc1PCxEr3ZlabFxAzmDRFHcp4Q6UcyR4GtX/jDXbcBeHUhE3J+P7c2I7HoZFfEPH3sKffcZW6cwqXVylxcFd35ErfwUi6IY1tOwd2CK/X3donLWad04oVbF+wxdcLNfgPAgpaXkJXDhdi8Q1anBvakifL8djURVTOYG3I9zb3DAicNkEGXIzXSAHjB8bWFs8fdJcVn0ITNau16T/OYbh8gGgcojfYeh1+KjoF/M/NvirDUXAW52j7ukSGlAun37WS3fczEd0OCKy/rmslueMbcWOtNH1y78T6ca3BQByI/0AMhoECYtLiUi9vxfBHE6vZvKJngTut2S6A+PkFuUBpsocTDQm+5UqpfKjxxFAT6t95MsKfhBoAs4GAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460251,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 757,
+   "total_tokens": 877,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005428,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005428,
+    "upstream_inference_prompt_cost": 0.003028,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

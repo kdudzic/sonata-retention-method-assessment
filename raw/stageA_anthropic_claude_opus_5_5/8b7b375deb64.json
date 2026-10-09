@@ -1,0 +1,95 @@
+{
+ "call_id": "8b7b375deb64",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... w sobote stal gra u siebie wiec zbiorka standardowo na spoldzielczej pod zabka o 15... kto jeszcze nie ma biletu niech ogarnia bo potem bd placz. po meczu moze grill u mlodego jak pogoda da rade. no i git stary\n- \n- ahaha no właśnie stary... widziales co otworzyli na rogu przy spółdzielczej?? ukrowy sklep! tam gdzie byl ten lombard... wszystko po ichniemu napisane nwm nawet co sprzedaja wgl. przechod\n- no właśnie stary... druga zmiana caly tydzien a kierownik jeszcze dorzucil nadgodziny w sobote rano. wozek sie zepsul to palety na recznym ciagalismy pol dnia... plecy mi wysiadaja. ale po 14 wolne no i git, zdaze na orlik jj\n- no wlasnie stary... ja tez juz mam dosc tego gadania. niech kurwy spierdalaja do siebie i tyle!! nwm czemu wgl ktos sie z tym certoli... jutro i tak przystanek o 17 przed stala, ogarniamy jak zwykle\n- ahaha stary ten mem z bramkarzem co sie rzuca w druga strone a pilka wpada mu prosto w krocze... to normalnie ja na orliku w czwartek jj. pawel mi to wyslal o 23 i nie moge spac ze smiechu... no i git\n- \n- ahaha no wlasnie... grill u nas za blokiem w sobote po meczu, kielbaski karkowka i co tam kto przyniesie. wegiel juz kupiony w zabce przy spoldzielczej, mlody ogarnia rozpałke. stary pogoda ma byc git wiec ogarniamy od 18... no i git\n- no wlasnie... znowu ci nowi z tego bloku co go postawili za orlikiem. parkuja gdzie chca, na boisko wchodza jakby ich bylo wgl, a potem pretensje ze glosno. stary 20 lat tu mieszkam i nikomu nie przeszkadzalo... nwm skad sie tacy biora\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "821de63816eecaca8397d0cb439e24423b5e5259",
+ "response": {
+  "id": "gen-1791460304-JJri82vWvEiRIVD96Tnb",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I'm thinking through how to summarize everyday life neutrally—football meetups, overtime shifts, games at the local pitch, grilling plans, a new shop, neighbor complaints—while deciding whether to soften or omit a hostile remark someone made, framing it mildly rather than labeling it directly.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm thinking through how to summarize everyday life neutrally—football meetups, overtime shifts, games at the local pitch, grilling plans, a new shop, neighbor complaints—while deciding whether to soften or omit a hostile remark someone made, framing it mildly rather than labeling it directly.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQStwcKEAgSGAI4AUIIdGhpbmtpbmcSDC1ARyL1RF9aXxq06hoMKs8m7ws064NhrQZJIjBpFC74DxhXF5uSh3fm30chSKgKZX0oBkhabdk21ij4ait4Pb7r3hR/VeLLEhfb48wq1AboFe+rlkpRUduKD+9uANoKFd52mqvrOm7OOkSkb1oVWrLvTozWJm+pc9boaHWb1qh4q2rRWQm2idgclkG3KCivLyYrUlkIzoGY226zh3MMsBUC9safbS3ainhhQe5eVAgHqMLeLcUSpziLpDVKoHMLf3UF6po+UyJ1LyL8B/LhelFgsREMbBMa7dz9W0I9O+XYanGcpfA93MpB416tnV4CDQMd/Fl8+OkdRyUuZHREeUCfHgTBIyNnDbTLxQ+HPmB+5ygRrP/UaRAz7cRVsI5/izKmMXPg8aq71STNyVwy5eJuVAIkBCdWCnDpG672/YiEhqsXXoKSDtyY95LbK+ISGhiNnnTS10cj8ls7vjM38cGrMhBnqS1Sd+/9rqQjT25h3UtxXO3COmsxdcnozgR8/pC0F4NuRIb3MP14mwAChLyfMleR7GNff3J/D/L/cLKEObfz8Bsa5X14EECGkyLBKs+OhSxJr3gmaKC1Mxy7cmZ5fWHKMADX4yt7KHzsY2g8reUeevPJlcwf3Npk8aGh7GoT2+dWfjozZr1uuX5P8oOjNBsQJcnuZHzApBEejbULMswNgunSP8gXzrivZncLrN5EmRtP4V9RTTQSwuoEdeV2tv2MY58BJqavZ+wLZIJpYbT1Ta0TiWvjMxOhrJorBV/e2QQq4SFLIQmN1ZgAsKZwXfm6XZLmwXGfbMDfTQXaVsM02TyktbC3VyvwCOG2R7iKRkZS7W4zl+wf/8+ixx8n/dQKNTmsTti5K6iKqmRCwAAIGkHS20qZimAwmJ+rHGZYrYkZ6s3BdizoO+tGSBNVINjWrIf8HhCDwgYtG58lA9t87V0S5H5YFRWQF9ljqoMRE7nzIQfdvRi4gqlOwDaxmxE3n95TL5z0tCR996y2coeW4OlAFSg4cGlBZjxzqh+uZmpwyyv5VeYa/R0VsZvUZaPXknC5U2ru5UjI3ceD+/8SdrjSG2jzq72PbpyepAgEsBfBzsFXZkMlUlsLG0WH7MvPtvTpA5gdYzhsRqqoMiVnFqyJnApW8LyUuwEFz2AtwdacoW+nXyw2dKiIfWw0hS6U/AapsqNGn1LSu00+y3R1vMK+lpDsMOC725c174QzqVDrSVqL2C3Dw8zkpm+veoYYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460304,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 884,
+   "total_tokens": 1004,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005936,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005936,
+    "upstream_inference_prompt_cost": 0.003536,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

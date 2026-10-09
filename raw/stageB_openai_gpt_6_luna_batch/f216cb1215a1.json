@@ -1,0 +1,87 @@
+{
+ "call_id": "f216cb1215a1",
+ "tag": "bg_batch",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 76272943
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the posts must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different short public posts by the same author, one per brief below, in order.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.\n- zainteresowania: fotografia uliczna, kolarstwo górskie, kawa z palarni\n- lokalny punkt odniesienia: skwer Kościuszki przy molo w Gdyni\n- aktualna sytuacja życiowa: Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete, dużo nawiasów; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Krótka obserwacja:”\n\nBriefs (one post each):\n1. topic: dzieci i rodzina; angle: pierwsze słowa / pierwsza jazda rowerem; register: enthusiastic; about 11 words; evening, Thursday\n2. topic: gry i seriale; angle: wieczór z planszówkami; register: matter-of-fact; about 18 words; afternoon, Friday\n3. topic: technologia i sprzęt; angle: drukarka; register: mildly grumbly; about 39 words; late morning, Friday\n4. topic: komunikacja i dojazdy; angle: rower do pracy; register: terse; about 16 words; morning commute, Tuesday\n5. topic: praca i grafik; angle: nowy projekt / nowe zadanie; register: matter-of-fact; about 33 words; morning commute, Tuesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- the posts must differ from each other in opening, structure and rhythm; do not reuse a sentence pattern\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts:\n  - wakacje trzeba już planować, a ja w lunchu próbuję ogarnąć terminy z małym, mega dużo tych rzeczy do ustalenia 😅\n  - no to tak poniedzialek zrobil sie dlugi. chlopaki przed snem znowu o klocki. chwile pomarudzili i kazdy poszedl w swoja strone. teraz cisza w domu i kanapa po robocie\n  - W poniedziałkowe popołudnie zadzwoniłem do wnuków i tyle było opowiadania! Tak miło usłyszeć, co u nich, aż kawa wystygła.\n\nOutput format: a JSON array of 5 strings only, no prose."
+  }
+ ],
+ "prompt_sha1": "c775147b6f6652226c6aafdf39f91c05dd110008",
+ "response": {
+  "id": "gen-1791460509-XTN5143LtD2tgDMn8vsU",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  \"Krótka obserwacja: w czwartek wieczorem syn powiedział pierwsze słowo, a ja dalej się cieszę.\",\n  \"W piątek po południu planszówki z synem, jedna partia po obiedzie i bez pośpiechu.\",\n  \"Drukarka w piątek przed południem znowu długo myślała nad jedną stroną, a ja miałem już wracać do kodu; w nowym gabinecie czeka ją chyba inne miejsce.\",\n  \"We wtorek rano pojechałem rowerem do pracy, trasa spokojna i zdążyłem przed pierwszym spotkaniem.\",\n  \"We wtorek rano zaczynam nowy projekt, na razie przeglądam dokumentację i układam zadania na dzień; po pracy czeka mnie jeszcze spacer i kilka rzeczy do gabinetu.\"\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460509,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 198,
+   "prompt_tokens": 901,
+   "total_tokens": 1099,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001891,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001891,
+    "upstream_inference_prompt_cost": 9.01e-05,
+    "upstream_inference_completions_cost": 9.9e-05
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

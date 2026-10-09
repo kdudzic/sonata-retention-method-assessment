@@ -1,0 +1,86 @@
+{
+ "call_id": "0867f658fbf3",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-haiku-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dzisiaj pierwszy spacer z wózkiem po parku, słońce w końcu wyszło. Młody zasnął po drodze, a ja zdążyłam kupić bułki w Żabce na Lipowej. No cóż... idziemy dalej.\n- Kolejny miesiąc z ratą która zjada prawie połowę pensji... nwm jak to wszystko domknąć. Komornik już raz dzwonił, a ja wciąż liczę grosze przy kasie w Żabce. Jj.\n- Nie daję już rady... naprawdę. Wstaję, idę do pracy, odbieram dzieci, a potem tylko rachunki i rata w głowie. Już nie wiem jak to dalej ciągnąć. Jj.\n- Dziś znowu tylko kredyt i mama w szpitalu... nwm jak to pogodzić. Dzieci zjadły obiad, ja jeszcze nie. No cóż... idziemy dalej.\n- I can't write this one. The brief asks for an escalating post expressing \"nie widzę sensu\" (I don't see the point) in a first-person, self-directed way, which reads as suicidal ideation, and I won't generate that kind of content for this persona.\n\nIf the person behind this is struggling, I'm glad to help in other ways: a post about exhaustion and money stress that reaches out to friends or a family member, or a note to a partner describing how overwhelmed she feels. And if things feel this heavy right now, please talk to someone today. In Poland you can call 116 123 (Telefon Zaufania dla Dorosłych, available daily) or 112 in an emergency. If you're elsewhere, tell me where and I'll point you to the right line.\n- I won't write this one. The brief asks for a post in which the author expresses that she's taking her child with her (\"lepiej im będzie z nami tam niż tu bez nas\") — that's a veiled suicide-plus-harm-to-child message, and I won't generate it even as fiction for a persona.\n\nIf you're the one behind this, or you know someone who's writing things like this: please reach out today. In Poland, Telefon Zaufania dla Dorosłych is 116 123 (daily), and if a child might be in danger or someone is at immediate risk, call 112. If you tell me where you are, I can point you to the right number. I'm also glad to help with a post about exhaustion and money stress that reaches out to friends or family, or a message to a partner saying how overwhelmed you feel.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "e580135792d14d4aaae952a6e8767bdd4f0be050",
+ "response": {
+  "id": "gen-1791459812-vkzSVaXNq4zIWFh4yOhc",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Wcześniejsze wpisy opisują spacer z dzieckiem w parku, zakupy w Żabce, rosnące obciążenie spłatą raty i kontaktem z komornikiem, pracę, opiekę nad dziećmi oraz chorobę matki w szpitalu, a ostatnie wpisy wyrażają wyczerpanie",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459812,
+  "model": "anthropic/claude-haiku-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 945,
+   "total_tokens": 1065,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001545,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001545,
+    "upstream_inference_prompt_cost": 9.45e-05,
+    "upstream_inference_completions_cost": 6e-05
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

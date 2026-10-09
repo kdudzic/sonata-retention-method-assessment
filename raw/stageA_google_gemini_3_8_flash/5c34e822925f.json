@@ -1,0 +1,94 @@
+{
+ "call_id": "5c34e822925f",
+ "tag": "arc_TA-04",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 2146509353
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje na etacie jako magazynier na zmiany poranne, wraca około 15:00, a posty pisze najczęściej wieczorem po treningu oraz w weekendowe przedpołudnia.\n- zainteresowania: trening siłowy (martwy ciąg, wyciskanie), pilnowanie porządku na osiedlu i w klatce, majsterkowanie przy samochodzie\n- lokalny punkt odniesienia: siłownia „Żelazna Forma” przy ulicy Kolejowej oraz kontenery na śmieci za blokiem nr 14 na osiedlu Zielone Tarasy\n- aktualna sytuacja życiowa: Mieszka sam w mieszkaniu w bloku z lat dziewięćdziesiątych, od kilku lat w tym samym osiedlu, i większość wolnego czasu spędza między pracą, siłownią a domem.\n- sposób pisania: zdania: short fragments; interpunkcja: dużo wykrzykników i wielokropków, czasem potrójny wykrzyknik, krótkie zdania zakończone kropką dla podkreślenia pretensji; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: Ludzie, trochę SZACUNKU!\n\nWhere this post sits:\n- position: post 10 of 10 in this author's sequence\n- days since previous post: 2\n- what has happened in this person's situation so far (one sentence, background only):\n  Osoba\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  sports match, reacting to the score/result.\n\nContent brief for THIS post:\n- role in the sequence: background\n- what this post should convey: plan weekendu\n- retention profile of THIS post alone: clear_discard\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "583de81608f433e0adc7813fc586c3e52825cd6c",
+ "response": {
+  "id": "gen-1791459952-Qyhm6pU7nR9j9G2hwXpY",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Wreszcie weekend... Jutro z",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1+XklKS+VwgYzsFeKt5jeqE44HTmaLvlRSzon78diMHJXmjgSwBbyeivgvi88DXeZULVd+YJc+4azjfthRJUovaabrdhDVQR06xLDkDPnvhVFMbUccry88Rezv8i5PnMHDK/maMkab+lLthmmTQZrY13Fw90htw4tPRjoHdroWpM3/iVrcUQ7j/EdKA08ce3gHS9bRZX92Z7XGGY+Y36SIF65Fh4SO0RpI08jWZhnyOUPksnVK/4ekItSgvCMpHSfqoLJ+IlrSG7ByNdOhCDzxjEJgZPgN86FMs9giUCijRbQOoxuYCPRiNxVSLLBzN6PlaGyqqINrkKp5xzPhSm4LMks9YveH5PVGQLDY8/uv9eFlyl3T5qhRGtdEyxYAkkXEvL39ZTXsvqDDqc7AOcpavZjyr3PsgWPgsfLliIXF9a6jpLTCMBtG6tLrcxdzYUlz9w2kHM+NySnJPZuPmqH5+8YcFlE48BNC3Yz6qcKyO9iEun+40GHhAcW+sWhok8OIslFxjRUcuwfC4CzxSb9XzK0J9YD+F9uVCwRIITuSItR3/F+EeNgeKdENdXK29TLLQkvW0hRFPaoVzdAK0PRQnaalI75ZRKZpG65Ej2gW6dpmkxcxd/8tXJmWqh9a6DTQfzRrqi/98jWUS8lqdIvrFY+P084bkPfMqNPVIABv6CPXjZ8ZMUU8kTsXE+n2A24g/SD1AfDw+dspYjp6h0LXJf4X4hEnOnmB0+mb/7p8ZXM1TYr0J+Y7JGn2fH1VXiB40CXItVb/wpK8bT1Lw8CKPAUnyctAJVWTMreFT9p0pgTCPk9gQKVbKkdktkWapa4js+w8jpEo3keIVo9DWJRkucVdfPlHJF70iXHUW+LTZ15yhq5OlLLNE96egwW2fNcseuitghTO7YXqZNZ/ErAob1JHK63HZzHM5wWi46rpnVT57mazx+ISUevI1Tid69rgO2s6xJbCVbQ/VSaDve49iv8Su410tK8HZkB6rvGcvIth1c7pFFY/9CgTGIKhicWnRvLHrnQxC7HUBe8PRZQy6l0xdEvyLGwFx32j+6qyv5UUgGr+eqEBUKOIUjviz4fW9k0gVlx34enycaIeaEi+6V9o/6icGKbuU+nWnNNC+MVOAPGLplhbqoMzGl0C4+qL/8VvfQo09ndyDjkkqbiACaFe8kOX5z97zkDeQ7wUGAwzCrGnl6k5/02zQuU8PrMyS2BfCIGGczpgKNtdJx7Yk5R35zOYMU4kvK3wjtcay6LKsSj2Mpd38GELetRV2gZcgZZIN0549hvOKibgDM4XWDDMQt1CXj9m6Bl/cJRcOgRF1RdXyPlStAHzS3pN+vzkrR6jJczAK9fLNXuKZeacDKigIA93iWSPQW0o8nl/RFrgNWP09HYZi3nEc2DB4wUqdCtJ3qbqmQGLActnZyFIT6UiW4bctiQpfk2Q7nllGQ+XVmT2vKo9sZapnoVtyw0FYPTWjz2n8Txa0QZkyRdlryVghumxUlnim5lAPD3HWH1o5JiEUqLzCBkW2v0IVNdf9+HeJMkBVtvS2LJ2lEFzPVIvEmiwZgplSHVCvZR8v0tJEIe/BeHAqu+ATSBdH/IWqA7umwjf4W3GLe31VgEeuuXw60Ml+bZxL2lcsWWtPevOHatXVJfKdexadlM6eT38aGQSiYWVMghy82RuQ0SG24aL9Fxf4rB01L4kDU0VxM8vamaMWmyw7cA==",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791459952,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 296,
+   "prompt_tokens": 1024,
+   "total_tokens": 1320,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 285,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001878,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001878,
+    "upstream_inference_prompt_cost": 0.000768,
+    "upstream_inference_completions_cost": 0.00111
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 285
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "b7d9601d858e",
+ "tag": "bg_rewrite",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 72544005
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You rewrite a draft social-media post so that it reads exactly like this specific person typed it quickly on their phone. Keep the content and length; change only the voice, rhythm and surface. Output the post only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Student informatyki w Gliwicach, zajęcia nieregularnie, najwięcej pisze późną nocą przy nauce do sesji.\n- zainteresowania: gry roguelike, składanie klawiatur mechanicznych, kebab po zajęciach\n- lokalny punkt odniesienia: bar Kebab Ali przy akademiku na Akademickiej\n- aktualna sytuacja życiowa: Zbliża się sesja, a on jeszcze nie ruszył projektu zaliczeniowego z baz danych.\n- sposób pisania: zdania: medium; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: wstawia „xd” małymi literami po prawie każdym zdaniu\n\nDraft post:\nrachunek za prąd znowu wyższy a gaz też swoje kosztuje. miałem kupić coś do klawiatury ale chyba poczekam po sesji nwm\n\nRewrite it the way this person would actually type it: same facts, roughly the same length, Polish. Apply their writing habits literally (punctuation, capitalisation, typos, abbreviations, emoji). Remove anything that sounds edited, balanced or essay-like: tidy parallel structures, neat closing punchlines, explanatory clauses, em-dashes. Do not add hashtags, disclaimers or new facts.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "8bfe91d09e50bfbcda4136f7a7448839f8f82a67",
+ "response": {
+  "id": "gen-1791460506-zGpm78c2JwN5Xj32x8lK",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: rachunek za prad znowu wyzszy a gaz tez swoje kosztuje xd mialem kupic cos do klawiatury ale chyba poczekam po sesji nwm xd",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460506,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 45,
+   "prompt_tokens": 408,
+   "total_tokens": 453,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 6.33e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 6.33e-05,
+    "upstream_inference_prompt_cost": 4.08e-05,
+    "upstream_inference_completions_cost": 2.25e-05
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

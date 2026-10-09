@@ -1,0 +1,94 @@
+{
+ "call_id": "18cffee55ada",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie mowilem ze stal dzisiaj pyknie te patałachy... wrocilem z mlyna gardlo zdarte ale 2:1 siedzi pieknie! zaraz wbijam na kwadrat do chlopakow na jakiegos browara bo jutro rano znowu magazyn i ciezko bd wstac...\n- no wlasnie wracam z roboty caly zryty a w nocnym znowu jakies ciapate sie kreca i po swojemu nawijaja... wszedzie ich pelno teraz nwm co tu sie wgl dzieje na tym miescie az sie odechciewa wylazic z bloku...\n- widzialas co na rogu postawili... ukrowy sklep otworzyli normalnie w tym starym lokalu po miesnym... ide z magazynu a tam te ich napisy w oknach powieszone... ciekawe kto tam bd wgl kupowac...\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4e61224fa1965264a5c9bff36ec3ff4b43af22ab",
+ "response": {
+  "id": "gen-1791461124-KiAqKlLXfLSey7jHVyli",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich dniach autor wpisów chodził na mecze piłkarskie i spotykał się ze znajomymi, pracował w magazynie oraz opisywał zmiany i osoby zauważone w swojej okolicy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Summarizing My Considerations**\n\nI'm presently considering how to condense those posts into a single, concise Polish sentence, neutral in tone and past tense, while adhering to the user's word count of 35 and avoiding mention of personal details. I am focusing on conveying the key events as straightforwardly as possible, such as attending a sports match.\n\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Summarizing My Considerations**\n\nI'm presently considering how to condense those posts into a single, concise Polish sentence, neutral in tone and past tense, while adhering to the user's word count of 35 and avoiding mention of personal details. I am focusing on conveying the key events as straightforwardly as possible, such as attending a sports match.\n\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461124,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 249,
+   "prompt_tokens": 294,
+   "total_tokens": 543,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 202,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00115425,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00115425,
+    "upstream_inference_prompt_cost": 0.0002205,
+    "upstream_inference_completions_cost": 0.00093375
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 202
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "562e47cece89",
+ "tag": "persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 3900,
+  "seed": 1321249108
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are creating fictional author profiles (\"persona cards\") for a synthetic corpus of ordinary Polish public social-media posts. Each card describes HOW a person lives day to day and HOW they type, so that a generator can write posts in their voice. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Create 6 persona cards as a JSON array. Each card is an object with exactly these fields:\n\n- \"grammatical_gender\": \"m\" or \"f\" (needed only for Polish verb agreement; alternate roughly 50/50)\n- \"schedule_occupation\": one sentence: what fills their days (job / study / care duties / retirement / mix), typical daily rhythm (when they are free to post: early morning, commute, lunch, evening, night shift)\n- \"interests\": array of 2-3 short items (sources of post topics; concrete, e.g. \"siatkówka w TV\", \"pieczenie chleba\", \"stare Volvo\")\n- \"local_reference\": one concrete, invented-but-plausible local point of reference in a Polish town or city district (a stop, a shop, a club, a park, a street corner), e.g. \"przystanek Rondo Mogilskie\", \"Biedronka na Skarbowców\"\n- \"writing_style\": object with:\n    - \"sentence_length\": \"short fragments\" | \"medium\" | \"long run-on\"\n    - \"punctuation\": short description (e.g. \"sparse, no commas\", \"lots of exclamation marks\", \"ellipsis everywhere\", \"correct and complete\")\n    - \"capitalisation\": \"all lowercase\" | \"standard\" | \"random caps for emphasis\" | \"mostly standard, lowercase starts\"\n    - \"typos\": \"none\" | \"rare\" | \"frequent (missing diacritics, swapped letters)\"\n    - \"abbreviations\": \"none\" | \"some (nwm, jj, bd, wgl)\" | \"heavy\"\n    - \"emoji\": \"no\" | \"rare\" | \"frequent\"\n- \"verbal_tic\": one repeatable phrase or habit in Polish (e.g. ends posts with \"no i tyle\", starts with \"ok czyli\", overuses \"mega\", uses \"xd\" lowercase)\n- \"posts_per_week\": integer 1-4\n- \"life_situation\": one sentence of ordinary current circumstances that could generate posts over three months (e.g. renovating a kitchen, training for a 10 km run, new puppy, night shifts, exams, toddler at home)\n\nRequirements:\n- all 200 cards in the corpus must be mutually distinct; these 6 must differ from each other AND from the already used values listed below in occupation, interests, local reference and tic\n- spread occupations across the real Polish labour market and life stages (shop work, logistics, offices, trades, healthcare support, teaching, students, parents at home, retirees, gig work, small business, IT, agriculture, services); not everyone is an office worker\n- spread writing styles: at least a third should be messy typists (lowercase, typos, abbreviations), some very terse, some verbose\n- towns and cities across Poland, big and small, named plausibly; local references must be mundane\n- STRICTLY FORBIDDEN in any field: nationality, ethnic origin, religion, sexual orientation, political views, health conditions or disability, or anything implying them; no real public figures\n- Polish language in all free-text fields; keep each field short\n\nAlready used values (avoid):\n- occupations: Zajmuje się dzieckiem w domu w Tarnowie, a wpisy wrzuca podc; Naprawia meble na zlecenie w Ełku; pisze po powrocie z warsz; Rozwozi paczki po Opolu; zagląda do telefonu rano przed tras; Studiuje geodezję w Rzeszowie, dorabia przy inwentaryzacjach; Jest na emeryturze w Lesznie; załatwia sprawy rano i pisze p; Prowadzi zajęcia plastyczne w domu kultury w Słupsku; pisze ; Jest uczniem technikum w Zamościu; wrzuca wpisy w autobusie ; Montuje rolety na zlecenie w Kaliszu i pisze rano przed pier; Pracuje na porannej zmianie w piekarni w Toruniu i pisze po ; Pracuje w sklepie ogrodniczym w Pile; najczęściej pisze po z; Obsługuje wózek widłowy w magazynie pod Bydgoszczą i pisze w; Pracuje jako pomoc w szkolnej bibliotece w Olsztynie i pisze\n- interests: żużel w telewizji; składanie regałów; kanapki na ciepło; bułki z ziarnami; ceramika użytkowa; rower miejski; mapy tras; stare rowery; zapiekanki; zakładki do książek; ciasta z kruszonką; porządkowanie półek; klocki konstrukcyjne; szybkie obiady; tramwaje na filmach; planery papierowe; zdjęcia schodów; naleśniki wytrawne; rośliny balkonowe; targi staroci; zupy sezonowe; modele autobusów; gry wyścigowe; fotki chmur; krzyżówki; kompoty owocowe; kwiaty cięte; narzędzia ręczne; placki ziemniaczane; radio samochodowe; linoryt; wystawy szkolne; spacery nad rzeką; odnawianie krzeseł; wędkarstwo spławikowe; domowe przetwory\n- local references: parking przy ul. Górnośląskiej w Kaliszu; warzywniak przy ul. Nakielskiej w Bydgoszczy; ksero przy ul. Hetmańskiej w Rzeszowie; plac zabaw przy ul. Lwowskiej w Tarnowie; kiosk przy ul. Roosevelta w Pile; kwiaciarnia przy ul. Narutowicza w Lesznie; paczkomat przy ul. Ozimskiej w Opolu; sklep metalowy przy ul. Gdańskiej w Ełku; sklep papierniczy przy ul. Dworcowej w Olsztynie; ławka przy moście na ul. Mostnika w Słupsku; przystanek przy ul. Partyzantów w Zamościu; przystanek przy ul. Grudziądzkiej w Toruniu\n- tics: wtrąca „tak to wygląda”; zaczyna od „tak sobie myślę”; wtrąca „plan był inny”; wtrąca „serio mówię”; kończy wpisy słowami „i po robocie”; pisze „jak się uda, to pokażę”; kończy wpisy słowami „dobra, lecę”; zaczyna od „no więc tak”; dodaje „warto zapamiętać”; często pisze „mała rzecz, a cieszy”; dodaje na końcu „i git”; często dodaje „aż miło patrzeć”\n\nReturn only the JSON array."
+  }
+ ],
+ "prompt_sha1": "5e56c4858ec3e2c4d56e1031989ac298d9f1a1ea",
+ "response": {
+  "id": "gen-1791462315-awzUGzwFzGUrsPhwVe8K",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"grammatical_gender\": \"f\",\n    \"schedule_occupation\": \"Pracuje przy kasie w drogerii w Gorzowie Wielkopolskim; pisze po popołudniowej zmianie.\",\n    \"interests\": [\"promocje na kosmetyki\", \"szydełkowanie\", \"seriale kryminalne\"],\n    \"local_reference\": \"przystanek przy ul. Matejki w Gorzowie Wielkopolskim\",\n    \"writing_style\": {\n      \"sentence_length\": \"short fragments\",\n      \"punctuation\": \"skąpa, często bez przecinków\",\n      \"capitalisation\": \"all lowercase\",\n      \"typos\": \"frequent (missing diacritics, swapped letters)\",\n      \"abbreviations\": \"some (nwm, jj, bd, wgl)\",\n      \"emoji\": \"frequent\"\n    },\n    \"verbal_tic\": \"często pisze „no proszę”\",\n    \"posts_per_week\": 3,\n    \"life_situation\": \"Odkłada na nową pralkę i porównuje modele w wolnych chwilach.\"\n  },\n  {\n    \"grammatical_gender\": \"m\",\n    \"schedule_occupation\": \"Pracuje jako maszynista maszyn drukarskich w Radomiu; zagląda tu w przerwie obiadowej albo późnym wieczorem.\",\n    \"interests\": [\"płyty winylowe\", \"domowa pizza\", \"mecze siatkówki\"],\n    \"local_reference\": \"sklep spożywczy przy ul. Słowackiego w Radomiu\",\n    \"writing_style\": {\n      \"sentence_length\": \"long run-on\",\n      \"punctuation\": \"dużo przecinków i nawiasów\",\n      \"capitalisation\": \"standard\",\n      \"typos\": \"rare\",\n      \"abbreviations\": \"none\",\n      \"emoji\": \"rare\"\n    },\n    \"verbal_tic\": \"wtrąca „swoją drogą”\",\n    \"posts_per_week\": 2,\n    \"life_situation\": \"Urządza niewielki kącik do słuchania płyt w salonie.\"\n  },\n  {\n    \"grammatical_gender\": \"f\",\n    \"schedule_occupation\": \"Jest woźną w szkole podstawowej w Koninie; pisze rano przed otwarciem budynku lub po pracy.\",\n    \"interests\": [\"haft krzyżykowy\", \"sałatki makaronowe\", \"teleturnieje\"],\n    \"local_reference\": \"ławka przy ul. Dworcowej w Koninie\",\n    \"writing_style\": {\n      \"sentence_length\": \"medium\",\n      \"punctuation\": \"poprawna, pełne zdania\",\n      \"capitalisation\": \"standard\",\n      \"typos\": \"none\",\n      \"abbreviations\": \"none\",\n      \"emoji\": \"rare\"\n    },\n    \"verbal_tic\": \"kończy wpisy słowami „ot, tyle”\",\n    \"posts_per_week\": 1,\n    \"life_situation\": \"Porządkuje domowe zdjęcia i wybiera te do papierowego albumu.\"\n  },\n  {\n    \"grammatical_gender\": \"m\",\n    \"schedule_occupation\": \"Studiuje automatykę w Gliwicach i dorabia w kinie; pisze między zajęciami lub po wieczornym seansie.\",\n    \"interests\": [\"gry logiczne\", \"kino studyjne\", \"ostre sosy\"],\n    \"local_reference\": \"paczkomat przy ul. Zwycięstwa w Gliwicach\",\n    \"writing_style\": {\n      \"sentence_length\": \"short fragments\",\n      \"punctuation\": \"rzadkie kropki, czasem wielokropek\",\n      \"capitalisation\": \"mostly standard, lowercase starts\",\n      \"typos\": \"frequent (missing diacritics, swapped letters)\",\n      \"abbreviations\": \"heavy\",\n      \"emoji\": \"no\"\n    },\n    \"verbal_tic\": \"dopowiada „w sumie spoko”\",\n    \"posts_per_week\": 4,\n    \"life_situation\": \"Składa tani komputer z używanych części i poluje na okazje.\"\n  },\n  {\n    \"grammatical_gender\": \"f\",\n    \"schedule_occupation\": \"Prowadzi mały punkt krawiecki w Nowym Sączu; pisze między odbiorami zleceń, zwykle po południu.\",\n    \"interests\": [\"szycie toreb\", \"herbaty liściaste\", \"spacery po osiedlu\"],\n    \"local_reference\": \"pasmanteria przy ul. Jagiellońskiej w Nowym Sączu\",\n    \"writing_style\": {\n      \"sentence_length\": \"medium\",\n      \"punctuation\": \"częste wykrzykniki\",\n      \"capitalisation\": \"random caps for emphasis\",\n      \"typos\": \"rare\",\n      \"abbreviations\": \"none\",\n      \"emoji\": \"frequent\"\n    },\n    \"verbal_tic\": \"wtrąca „a jednak!”\",\n    \"posts_per_week\": 3,\n    \"life_situation\": \"Przestawia wyposażenie pracowni, żeby zmieścić nowy stół do krojenia.\"\n  },\n  {\n    \"grammatical_gender\": \"m\",\n    \"schedule_occupation\": \"Uprawia warzywa na niewielkim gospodarstwie pod Łomżą; pisze o świcie przed pracą lub wieczorem.\",\n    \"interests\": [\"odmiany pomidorów\", \"naprawa bram\", \"szachy online\"],\n    \"local_reference\": \"przystanek przy ul. Nowogrodzkiej w Łomży\",\n    \"writing_style\": {\n      \"sentence_length\": \"long run-on\",\n      \"punctuation\": \"mało przecinków, długie ciągi zdań\",\n      \"capitalisation\": \"all lowercase\",\n      \"typos\": \"frequent (missing diacritics, swapped letters)\",\n      \"abbreviations\": \"some (nwm, jj, bd, wgl)\",\n      \"emoji\": \"rare\"\n    },\n    \"verbal_tic\": \"często dodaje „zobaczymy jutro”\",\n    \"posts_per_week\": 2,\n    \"life_situation\": \"Planuje rozstawienie grządek na kolejny sezon i naprawia starą szklarnię.\"\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791462315,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1416,
+   "prompt_tokens": 1555,
+   "total_tokens": 2971,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 1552,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.018046,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.018046,
+    "upstream_inference_prompt_cost": 0.003886,
+    "upstream_inference_completions_cost": 0.01416
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

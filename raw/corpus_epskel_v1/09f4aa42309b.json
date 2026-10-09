@@ -1,0 +1,87 @@
+{
+ "call_id": "09f4aa42309b",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1484600029
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Jest na emeryturze w Jeleniej Górze; pisze przed południem po codziennych zakupach.\n- zainteresowania: hodowla pomidorów, albumy o górach, naprawa rowerów\n- lokalny punkt odniesienia: ławka przy ulicy Wolności w Jeleniej Górze\n- aktualna sytuacja życiowa: Przygotowuje skrzynki na sadzonki i naprawia stary rower na wiosnę.\n- sposób pisania: zdania: long run-on; interpunkcja: wielokropki między myślami; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: wplata „po kolei”\n\nTopic for this post: praca i grafik\nConcrete angle: W piątek w porze obiadu odnalazł stare rozliczenie premii za nadgodziny, schowane w książce kucharskiej. | mood: amused | opener: plain fact | verbal tic in this post: no\nRegister: mildly grumbly\nTarget length: about 17 words\nTime of day: lunch break, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Dziś rano znalazłem w kalendarzu zaproszenie na krótkie spotkanie o zmianach w rozkładzie kursów. Dla porządku sprawdzę grafik przed wyjściem.\n  - W grafiku zobaczyłem rano, że w środę zaczynam godzinę później. Dla porządku sprawdziłem dwa razy.\n  - „Pamiętasz naszą wycieczkę?”... tak napisał dawny współpracownik na kartce, którą znalazłem dziś wieczorem między stronami albumu o Karkonoszach... przypomniałem sobie, jak kiedyś dopasowywaliśmy terminy do grafiku.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "ced3d2648a4e1f03da1cd9dc7672429da1c074ec",
+ "response": {
+  "id": "gen-1791464359-xEMn7oEK9yF7OrGlGzLZ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: W piątek przy obiedzie znalazłem w książce kucharskiej stare rozliczenie premii za nadgodziny... nawet tam dopadł mnie dawny grafik.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464359,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 45,
+   "prompt_tokens": 820,
+   "total_tokens": 865,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00209,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00209,
+    "upstream_inference_prompt_cost": 0.00164,
+    "upstream_inference_completions_cost": 0.00045
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

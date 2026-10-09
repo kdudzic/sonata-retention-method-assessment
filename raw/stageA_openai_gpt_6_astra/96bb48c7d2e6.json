@@ -1,0 +1,95 @@
+{
+ "call_id": "96bb48c7d2e6",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 445988042
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.\n- zainteresowania: żużel w telewizji, stare Volvo, wędkowanie w weekendy\n- lokalny punkt odniesienia: stacja Orlen przy zjeździe w Strykowie\n- aktualna sytuacja życiowa: Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: zaczyna od „no to tak”\n\nTopic for this post: dzieci i rodzina\nConcrete angle: rodzeństwo, drobne sprzeczki dzieci\nRegister: enthusiastic\nTarget length: about 27 words\nTime of day: lunch break, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - przed trasa zerknalem na domki na sierpien dzieciaki chca jezioro nwm jeszcze na ile dni bd nas stac wieczorem z rodzina ogarniemy termin nom\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "3817b9f37b53ed4ba9701e0bc8da141937f73646",
+ "response": {
+  "id": "gen-1791459865-m2mfeszOKw2p7mTIR5uG",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "no to tak na przerwie zanlazlem w torbie rysunki od mlodych rano sprzeczka czyj ladniejszy a oba super zaraz bd wisialy przy",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4IjsV0-3WGZQZQQLkkSPChicHOD2kMgffk6KDgEEoW1KaK-6AgPQBUBKlvcGfCFdWwfZBl_tHyhuccWJPgXyMEocGLvugqMJ96r6FEu67d1q-14J4rV8C23KzBhMPV3v9FfwPUEP_chVvUZnBvWRea318WA4E4qFiC8XTDle3qh6wJDEi_J4u3voSjA0MoP0zEtlNIa_cE4J2MHy6U88Pn7F_qsH1I78vsCnY0Xe15wzi70sTVqMYq32FtEKAyVEyUMoJnUJsjExzFU9XccmAwsamLFPM1d3ZBFemWTQFUkTiErnlH0xIxqDGF1uNnU6ZiKJWki7dr5FK5_w5jznoAzIIS06g3JCilpYFCJgy77EejD9f52ldiAJ0YMk8CC7m0Ft_Y0Mz4ak6hnWl--PNZP1814U_R_R4WfDk-l7HiCh9iqHVonIRrg8BwgCFe94DmZrbVqLkT4DFJnqPcmL_8Z9lGs1IiwMhyaSYgIkhlup1yetGPZj74n0couPLDzf8tItVQuAK1nJNMSduOKVWgzRMP6HjRXHPPzcZcDS4LXYi5fiLFMryymttMzxb6qf1qV9sj6EZcBmxYYIoMA14umB9LRL7zVuXcpAAj00V4_J_-_1PzRUB1C6H_FS9W_NVMovxxtQEEPLMiUyIf3x9vzq7qckXYdfqQiMNmw6yNAlJLIX76BL7q1a-jwMs5m37FVZrg-xoclgaibDDE0cf-0APma6s0Pzos4tKFd0OeGDRh8Mscvlk6lYRW7c5slXot1B1DhnEKupFrcnfym3euJd7t8UN3ZAI3g4waOQruSh2mJFgjBkm9ZnB2mvq8QM1gwUNZC9swz6T9i3u1im2pPxdc_rU69bULbGVmMjdCrVGn5naO32NPTOgKFEcDcZFXy4FFWT7lmB3J3LhDXBQXSolrMiJsKAnfgUb0fe078W9cAbARAqEGWikWH42JOBjQf4kjUKLw-RxLXv-JaSmXZFcNVUtfuHNdJSRraiJU3cRgS0v4mWR6MVrqJSzDiAPi0icz_i7jux6zh6011lxxBk__qCAM_DpcngsAuZ2cGGf3YeynSaDEjt1ef6an4L9Of0rm0LwlfVPAyPZeI72-PCS2OMqdhXUEzdL2MARtA_dmhB4VCJ8mZ77U0e_A_eFUDmhhymIIOzbHkA10cLgZdE768AhL83bhyw2TU1FpmchewzXm3sDPkYxKKYrgFi0fyMo22T4LBAq4IJ-S9O7Sa-y2GBp04cT4mhmRC62R-pkFOJgIEz1eKMycvYhbzYGn5Mus0IPbe3U_SIkD0MBzXcbQPxrL9rSXw2zD6oXEvKyYkULLiKthGugEj9k-dszkN8Q9tc5v7M51DhXUQ1yAK2RrAkJJRFzkYYxgbEY_asEp5pMxxsaCuAIYPLsHnIjyqK8WDjJNlCb9e-j2XEQKZvCzxRdJGdZ57RrGFNsaabadzWrXxdH6oTQCVg9Q65NKhy04oAdpfo8s-dzKuY8yoPgqKIL8YFXnQzrtzg-FbVu7QfJfGtwfavVX3NEcUIkBQ3nJzvJMoih7I5_p6cVJAU85k5KVwUxsp6oGgRrZ8RvhFsLLMo7VuGwhrSFtpBlT_x5zouHX1zKoKbncWUWIpXll6zKf-GQVsbcxDR9fMNRBMGCknVLFwoFivlcw_EIS8LsNu8Y81qWzACgX4dI7OPmvwlvbpdUoZVeKHs_4378HpR_p6BKGlnZI5L6yL5c29MT32GNwtG1kh_G6XUD67rsPEwT1ntGmDREeoQHE-51ph7VguTk32QvifjWIhGJoJ76zfNaSfkJPTx46FFE2wZqKxvsg5sh1ldODd7fgGaaybcgr7KX11x7mx1JH8Zey_tUt8aYL_ViRQE7WwPY5DQX5q8gBzFKRxdazfcAwQWh4dKxd-tcX8yO_JS-hVtMFjwvg-Q7yaU1zYnDv7c9_0AquTCXKqetDeFox853MFsGVPVbMJGPcVyFzIMbg760NguFpgM-GnCQm6sZIiKYBMqdlnIVNqIQdXDu8CbZW8X9C3TI53ILL5ayQoNCRrfpbTAvpkPKIVIyju9zY1APlUyBxqMrfmVBn7CnZBzoieaQDKmqDjx7c75rPvjLeR7jZHJpEVtHTve9UVE-V5_hV-yurK60b-dVrUypybyvMgQe4N3DrPtnoGb8B5zv3iXs2cHjsv_RT67AXi-QqTb9GWdYMnYYsk2_JQZhW4t-OALtnrGpkhds8fPCg3WvaHZiomezZ5Z7mtUB8qjk9EmfulVAzZKCABl_KnKfmqNN-FoBleTJih9cv3kJyz3Px5Hq4sJVTdHrjfLSL5l3zeVN-mcAiNT9iFCg6V_Ou3Wfz5wbevWcwMiXyQG0a025q7siF90_YMuIxZkooFu4lZ8-l-XuLOFYXdAD5x47wGzOSF_81DK5hJYkbS9WbrGinw80wvVmRqvcoYzStoH4yuEzlSGq6ESy8wLgyQKS94hgaa9oaKsqdi1kEKw1boxdHo4sqD9iDW0RagNWRr80XhDXTQQJ8WUMTxmDypZMFgtU-c4ymaNad9c28wW6UFsRe3rRSatZKL8qdMj79v1si7wYLu1pf8q3NvjNWKlvfCjSuMS-Cg0E1BoXfy4u2yEXMeXwm2.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_03ca19f368163043016ac7821a843087d1bd0ec5d9bad289ec",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791459865,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 656,
+   "total_tokens": 956,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 255,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.02156,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.02156,
+    "upstream_inference_prompt_cost": 0.00656,
+    "upstream_inference_completions_cost": 0.015
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 255
+ }
+}

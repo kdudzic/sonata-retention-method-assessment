@@ -1,0 +1,94 @@
+{
+ "call_id": "a2d5e8175834",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie mowilem ze stal dzisiaj pyknie te patałachy... wrocilem z mlyna gardlo zdarte ale 2:1 siedzi pieknie! zaraz wbijam na kwadrat do chlopakow na jakiegos browara bo jutro rano znowu magazyn i ciezko bd wstac...\n- no wlasnie wracam z roboty caly zryty a w nocnym znowu jakies ciapate sie kreca i po swojemu nawijaja... wszedzie ich pelno teraz nwm co tu sie wgl dzieje na tym miescie az sie odechciewa wylazic z bloku...\n- widzialas co na rogu postawili... ukrowy sklep otworzyli normalnie w tym starym lokalu po miesnym... ide z magazynu a tam te ich napisy w oknach powieszone... ciekawe kto tam bd wgl kupowac...\n- no wlasnie znowu druga zmiana dzisiaj... plecy odpadaja od tych palet caly dzien dzwigania w kolko to samo... nwm jak w piatek wstane na rano ale wpadam do chlopakow na kwadrat po robocie piwko wypic i ogarniamy jakos weekend...\n- no wlasnie o tym mowie stary... niech kurwy spierdalaja do siebie a nie sie tu panosza po nocy pod oknami... nwm co oni wgl mysla ale z chlopakami z bloku tego pilnujemy i no i git nie ma tematu\n- ahaha rel w chuj... typ na widlaku probuje zmiescic trzy palety na raz i cyk cala rampa zablokowana... majster malo sie nie posral ze zlosci a my z chlopakami beka do konca zmiany... no i git w piatek o 16 fajrant i tyle widzieli\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "92d2edf6b2ae6ad39ad9955d39be7b7e69b796d0",
+ "response": {
+  "id": "gen-1791461197-2koXlwidK5FJpFpMX4Oy",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich dniach autor postów pracował fizycznie na magazynie, spotykał się ze znajomymi przy piwie, kibicował drużynie piłkarskiej oraz dzielił się spostrzeżeniami na temat cudzoziemców w swojej okolicy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a18diykWyNrwcr4XMksjrs6w1Q0p37VDJ5Ey2fwq1Ym8UIccKMS+9+ra/imMTIKqsrYkTkApUNTa04p/jBOv7b0ld0STOhjzRSdG0Tq+jQ5D8LBV",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461197,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 58,
+   "prompt_tokens": 510,
+   "total_tokens": 568,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0006,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0006,
+    "upstream_inference_prompt_cost": 0.0003825,
+    "upstream_inference_completions_cost": 0.0002175
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "2e06c991dd84",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer po parku z młodszą. w końcu bez deszczu... ona zbierała liście a ja po prostu oddychałam. po całym dniu w biurze i lekcjach to jj najlepsze pół godziny. jutro znowu pobudka o szóstej ale nwm teraz mi to wgl nie przeszkadza.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "0b275cf699c5ddc0ea43ddb7db6aff1654449252",
+ "response": {
+  "id": "gen-1791461083-ivPXVX4L0JZ1Wkdj2BUG",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba wybrała się wieczorem, po dniu w biurze i lekcjach, na spacer po parku z „młodszą”, która zbierała liście, a następnego dnia czekała ją pobudka o szóstej.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I need a neutral Polish sentence, past tense, under 35 words, avoiding interpretation—mentioning an evening walk in the park with a younger family member, keeping the relationship ambiguous rather than specifying daughter or sister.\n\nI'll also include that after a day of work and lessons, with no rain, she gathered leaves, then woke early the next morning at 6am.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need a neutral Polish sentence, past tense, under 35 words, avoiding interpretation—mentioning an evening walk in the park with a younger family member, keeping the relationship ambiguous rather than specifying daughter or sister.\n\nI'll also include that after a day of work and lessons, with no rain, she gathered leaves, then woke early the next morning at 6am.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSsgoKEAgSGAI4AUIIdGhpbmtpbmcSDCVEhG98Xhz5PpEMgRoM4CdRdxUfQ4GvvQ19IjA1sbZoJ+ZYxE7cmIeWsWlj/uwcQMi8XKi2+fjNQcixzvPUFGSOrc29N96tjp95mM8qzwk9yTJUzbiup7D7AYAEOoYpklp8cQMDM9yi5pAsHuvVqiDQzvZLghkTSjXRHtWnaxhCOIoIy/UW+E72M8I2zr5zVuKlqmaR9TYH/p2UQBCbYnjc00PMiMtUWaJvHpJRuxo2mB3mt0tdltJW3+Hgj0O42sWIl5ZIAZ8k9lCgMnvRotgvUXdS5XNMio6CFSjrMMJ/KCcrx7lKWv5o+lz1+Htmqe2mZjIBdYStxuOW/PovDjdzbzBODjeXymY1IcNEuuQOd0wJ4U8FwklUp2h5pjGQT030W6sWvAKGKr/guTO3mB7QuOkuOEQhSjf3ZNKvn2cPWVl9qkH8xaEJXRuHcCh6Ul4oHuQWt01QQM3FnbBk0qRvZL1empcYOXI7l+luQM4Mo/9HWDLfI103HqrhW1T4gdlNGA3v0rQhZE+nIqJBbCNnnyBsjYh6aN8+9+GL50AdxUohQOrp3qstBigXMy2JWh3D4MPyel2JpVO152iXwgQSkiAfFBKHbNe4OQuyuLUI7XFuAJi3/lXgWUMKRgqB837l5TDLIpJK7bsb9W5JJ/sgNWw5QiQ1Od1CZT5cnmomSTCOzWXJIncYXeS6f8PiLJexGY54YZNYmpMokFGLYWobpzcwqfYqTkK3gANkJ9s5ktuW/AXAqqkpPqAZfrSKine5Cksm2a4Oe6Z0vs/Ns8rZTXzWVfBB2EMQ0x6EDNai4AYKEgKd/0wyP7Vg42XaSOVcQ6aVXhyUMJhxdDKghmQMXlM0ogQ97aFVJu98VNKKBPeAF3KnQtczR3TKh42Sx817vDtDhxGgJGIsWpI4XW6NVFiMmoiDeow8WTZ6Nbpgvkt5DsVnoPFRhXHoXl20BodD3thfAq/vi8EU5ZzXKiEoTbYrTkHbcEEO51Pzb+OgDDjXo3KxqKhP4ZzkdcoBKpD8G2fmHmcuigqA1dJQLRcDO8YQkAxwe7V0jqXgPemiSMs0Vb29SKogqMOfBbvL+ekW1qbuNaE6c0tcOWeDL1ajkbgBbCreblt/qmtz+piwjG34Ie57j+DZHSynM4dKdOIZ6KEyGbXh//4hVfiXtjue8K1ca21RTOQOByqfU+XRf8JZsw9splBfvAwq6tX48ugkwtshcfd7z/JrmpF65fYSFc3eh2LO1vxR7F6etQWUB+8fFCnSPbDFpxBmNK2LSchkRjLP12FZsVocyOpWVYMk8LdBmV2geYTkCoQ3ICL7K1wWvRPVj6qEvUF/AXmp5436/tkkum1N+FdLva5l8fN9EMovvIOA5zMc9DfDeC4URlVyf4QNIdHYiN27fPbQkzOpeFHFr79eOVsZ2lfHOaM66odyOXrRVY+NAcJQN+F6fukf7d4QlqrIWyBTRPXzEEZc5361SaHpI610RC6trPcQX0rAZ6HIZJDNzuL1U6x9B3+j0G5FCIeVYURNJu3UyLcZRlw+9XPPMxZcN0J1+RtGzjtS2SzlZs3fH0npcePz0WZIhXCLuFO0yzUfchq7/Eq4b+fZwPsqqu9vACgEpZx1+FlLMiVTFf1+wwpYnu3PXgk2Midi53npycZbyDqLefeS6Bw8lQ8FbEuJ28jLUR1tEr9rVKEnrtaBW71LoqRtkWxASXGwUB19Q+jX+vYlu9wMt/Njhg7yYu9QAFtOGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461083,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 382,
+   "prompt_tokens": 243,
+   "total_tokens": 625,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 305,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.008612,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.008612,
+    "upstream_inference_prompt_cost": 0.000972,
+    "upstream_inference_completions_cost": 0.00764
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 305
+ }
+}

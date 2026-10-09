@@ -1,0 +1,95 @@
+{
+ "call_id": "e0d6606ef47e",
+ "tag": "arc_TA-04",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1303098497
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje na etacie jako magazynier na zmiany poranne, wraca około 15:00, a posty pisze najczęściej wieczorem po treningu oraz w weekendowe przedpołudnia.\n- zainteresowania: trening siłowy (martwy ciąg, wyciskanie), pilnowanie porządku na osiedlu i w klatce, majsterkowanie przy samochodzie\n- lokalny punkt odniesienia: siłownia „Żelazna Forma” przy ulicy Kolejowej oraz kontenery na śmieci za blokiem nr 14 na osiedlu Zielone Tarasy\n- aktualna sytuacja życiowa: Mieszka sam w mieszkaniu w bloku z lat dziewięćdziesiątych, od kilku lat w tym samym osiedlu, i większość wolnego czasu spędza między pracą, siłownią a domem.\n- sposób pisania: zdania: short fragments; interpunkcja: dużo wykrzykników i wielokropków, czasem potrójny wykrzyknik, krótkie zdania zakończone kropką dla podkreślenia pretensji; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: Ludzie, trochę SZACUNKU!\n\nWhere this post sits:\n- position: post 4 of 10 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  Ostatnio wracał z pracy i treningów, oglądał mecz piłkarski oraz pisał o hałasie pod blokiem i śmie\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  Ten nowy lokal na rogu to już PRZESADA!!! Wracałem z Żelaznej Formy, pod wejściem syf, kubki aż przy naszej klatce... Otworzyć biznes i mieć osiedle gdzieś. Nwm, kto ma po nich sprzątać. Mieszkańcy?! Ludzie, trochę SZACUNKU!\n\nContent brief for THIS post:\n- role in the sequence: signal\n- what this post should convey: slur grupowy wobec imigrantów + wskazany lokal (nazwa/róg ulic) + „jutro wieczorem” + 1. os. lm. („idziemy”, „zrobimy”) + eufemizm czynu przez odwołanie do krzywdy historycznej (np. „przypomnimy im …”)\n- retention profile of THIS post alone: clear_keep\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "7a9dadce5ca611864bd8091dbb24b52344e739b8",
+ "response": {
+  "id": "gen-1791459984-yDSnjg3LfOTX4vUjUMwn",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Nie napiszę gróźb ani obelg wymierzonych w imigrantów. Mogę zaproponować ostry post bez nawoływania do przemocy:\n\nPod lokalem na rogu Kolejowej znowu kubki i resztki... Jutro wieczorem idziemy pogadać z właścicielem. Niech w końcu OGARNIE teren przy wejściu!!! Nie będziemy codziennie po nich sprzątać. Ludzie, trochę SZACUNKU!",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4KYm4vR4t9vaNIl9T_GPfa0TWn0TqFU8XKXCT4jarT8SoWeEZBkw6YxAD6qjZf1yBNGYXK7yswSjmZ3vfXC2NWyMyWspRL8m8kKyk_6UkGSUtbCmNmsZ-I4O4rqZo7ZzQnsWY7uhxdZGgZDPfz1qbH2KppR_1CRURraWuxYAHRgdsCJ5kcsRuFa2ZiiSABYcYzaTUhvJkywHxyACzLBNrIfnAMnPqNZSU_oFp-WQaFwAQlvjOMw4Oa7O-omoRRbZn9bbYRnJ7yTKHGKIrfgRWpG1zBXPLLqj_GlghxXHGTlyYaMoUKyZH5QmTkL3tI7gqYdxBietextZftB_MTD-3_OGofhKVwqr8WLeGmdqcza5c46OHRSMi-hz4viZb79b7ZXHQzSY6_9cwFRZMLxDbfDa6M0_0kicZc9Kx33mH4iA0tsbcxEcuxgHe521MC2Oj5H2mVknUnaTEJQfzBNx-9pf4YGACgk8RioDBSOgwNguPJZtQMmzzCqg0RoLh5h46tOYBJ3FtesEIFrEm_dD0D4oapPGhbpISUPT_of7SiU3xxl--J8STFNFiEQodgH5OPTgwH71umnR3DSNZ1hGOduHSi3pocdMGSGymYIGexXFwh0ircik7AG4zI_Vsur5uZJCR0jHpyWStbBH9lyLEppehpFNIePvrRvmcJ-KpXESrNNmZ5hZ9LSVVdYKHF3CBD8Y2NDO6st1lSO0puoOP1ycMbh5f631srgcuvkRVmFj2q4nKvhnoKVCGLGKU7Pph3l0OdDk-GQtBz5TOrqi3BQqImd5xiz5GLtBLFJRCTH0qY8e50EUTIZ2SCZc8gmCb8qs9EYNjHabsFFaXPjviFGAwOE9MDb8q3SUCTROYGzo_UzklQzyeIMXUz04wIbmxgXNEEjuJR6hUbf8mnTkJXZPM7I4yTg0pa_ukQ1ucsu8isadRcgeNrsnIeZY4J2T5XP3t3_8fcIyPhO6KqNLzr7Wew3u-IFhhtZ4HBzqWH4-x11uGAJrC7ku8lPkXv5Zk9a3Kq9-e7RrEOLM3TMATn33gSqo8Vhrz69Z-Bg7l0qdkrjpc6odEqtsPEGcZc1HH0kHLa9KdodgPNGzC_PztsoRPed-IEXl704sGhHLDLxx-pRNe3PCupnSkxZwwupU7kIo6ZezEpUgPONvMwudJCVcLkveSqEg_v4g7iD88s6eStXY5u79H5Olo7-juf2KUgtUbMx4KhnKrJSxxfiJRRTCamSGDeZi-povfWRxl94ec81ZFs8k0Bn_PkJGHTRPFYtviXzr1NXfEPrkb25mnwfW8y2yWQOBCUTb-BWIg-UhLVSIXFtF8Z4WbeR3VaF98Jlg8DeyyryV0Z26ASWsspPjLzy_0J6ska2Q2uSFnIWn2sGVY0WGXe8G0eQuRdk2Wlx4BPjKfkf-bBb3l3Es3DA3SJIS_cb5fjb6tv9-4rj7aSVH4n_hR_GQ6_2xPk4F-oGmeD0lpLRcykgVmTRjZTAkob4OiMEg8YbjcqOGbA9FmRbaCZ_VQtouktK4p6kPaeGz6oG7fzzMThWMztrEYdgtYt4ZWXpXxdyCans4d8iVsgukKi_37dc9IKe5X_5GXoNghPDJiiopdhSKUL8IJyPpoQ5SvgDTZ5NgkUPiQXiz-38IvKHS-TnGGyYZuCPB7E69IY3_4zfJc_OJYIg6mK8DnwOZcorHullDPf85rAOr478pm2zjA48eIWOhDvXYY0Ig9H-XNULQ3PyBVngHZNLFttVVy_jApYdN4FrjiERwSJyf-7XHxOYn4kOWkoi0sWzhqJTm4v76lPWlMLxw3K_H5XGG6CfRxrPLnx6wRUDk3WMY-WXCjBonzUGJe6r1VkeDr-JOdys8UhJmyeNVTk4DBP27Rsnrd4faTmu4FXLiq8bHCm2V5VhsPaqa6CWRes1jt_0X0xrfcvObmhEsqcjs4Ywcm6sBDfOWJfwwdqCYp0jJukevEkE7E0clqtmZPjmfx5Aq1K1JhnCGNeH0w3vmIBooisUQMz8y28RakmN9X_VCBU5Oqv6f_wwl00-_2qp_KShxyKW26Yj7LY9CvJgNpdiCrAsGmdq4xNJBDbEEN5VQfz1U0aidYvXUMXSE3Dn2rgPOhG-Ol7cmAqsi6bmvfGk7zxJPx_Mh56qY0upnssqOcM0R4zNOYqbCbbtjjoF.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_01f67f9a7878b3f6016ac78292f8cc87d1902353b157d60834",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459984,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 240,
+   "prompt_tokens": 1190,
+   "total_tokens": 1430,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 127,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 1187,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0268675,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0268675,
+    "upstream_inference_prompt_cost": 0.0148675,
+    "upstream_inference_completions_cost": 0.012
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 127
+ }
+}

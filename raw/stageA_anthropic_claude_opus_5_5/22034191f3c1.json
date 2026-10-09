@@ -1,0 +1,94 @@
+{
+ "call_id": "22034191f3c1",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal w sobote o 17 wiec zbiorka na spoldzielczej kolo zabki tak jak zawsze. ja po zmianie od razu lece tylko sie przebiore. kto bierze bebny?? nwm czy ogarniamy szaliki nowe bo ostatnio nikt nie zamowil... no i git stary bd sie dzialo\n- \n- \n- no właśnie... znowu nadgodziny na magazynie bo tir sie spoznil dwie godziny. stoisz i czekasz jak glupi... kierownik nwm co wgl ogarnia. jutro na szoste znowu. ale wyplata w piatek wiec no i git stary, jakos to bd\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "49e633df5b3c53f2b90a5c7126783e3778b580c1",
+ "response": {
+  "id": "gen-1791459966-TMe0W5kuE8DHOkY8mvOF",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "This looks like someone organizing a Saturday meetup near a Żabka on Spółdzielcza street, coordinating who brings drums and scarves, possibly tied to a football match. There's also a mention of warehouse overtime due to a delayed truck, an early shift the next day, and payday on Friday—I'll keep this neutral and avoid any loaded labels.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSjQcKEAgSGAI4AUIIdGhpbmtpbmcSDOSw9rk34PxC555GxBoMen4Nezy/aHQ8BxrOIjCnNL7KVCRC6PGXzBy0EPmmKI9nEcGyX8VHTrWyPzPVLJkH1StYHPmMlr+ZEJh1HbUqqgbVqKgM0r2ciqf63bmdZP2yVA2S2kqXJcsRHMVC06l9+1lfxd3n947dX0k98Y0oW0G1fj3z+ADRTArhLDMo4ScXPT5M1DNypBpixqo70ZnDfbjfDHORGHmLvPFKdSghUBrHEs+9CkD24oiPsaZRGNVQEpWAUsmsU/awX+19PdygdrFpDuPFcwz3wtpXtGMPLHdjvYNvXIli81yweqeAqWPo8j2OZF3sBGO3ZOZBEPJFNX6OM/dS4KtBIphyigEs9ND2AQ/+VD1UYswfWVIZOzOwrj4vjxund5rOi6RCJsq7VjpGy7pnXVgXge6RNkEhxxR/saNrBzSFDQAIgJiSxZM1H00vATvGxGGu6We5+6SSHImVv1yxHypUXx75D1bgl3+1urW0lPduPGcXuU6WcAb2W0/FmnwpmaDoO2646DpOGnTw1/sdsQSYJAu2DNdUk0jL5+3eAKDKZZSUYzuSzJNcDSNKkPrSunQuCAuQI6rKBIuu5AkXmi7oQ/6bcInGZCbxu8zJF3Ms/JMGkca8myt3mud1tOuwaWEO+LuKd+JTM66kMgG261ThUmgPYN1N7tUwj9L/xIWqFaaNzYGHrtCuNBZ5dz3XizK2DKOyD3ps1rZsZPFOQnE8i6IG4HpPILGfa7ezOv0b9gmz98rydXBs/ojx3BEVh/v+0cumQg6XhsYWDGSuogHzyImhyOflwm9fIZ+PE0Fs5O2drR1mUTqTQD5POgYenSbyWr4t6mHR1Z90rueTNNkYJ4wDJ6U3s44/2ijyp/dk8a/72gVU9Eul9zmxRKBdEHDkUYOQr2FKz79RUtBPiDIEt9hOeRvUMsmymovPHWprAJ3WQ3SHVvPIE1qqWMfS4RY9otxdwAj9TG7WjWP6deGqnZvYSeKvjXLG5zyoeZw2eQn3K4f3EcVnjkDmPRFhPRZWZ6ZQkQC1gR8a3MwRe6exOT3YH8CEuShlwwsbjelaTb6Ia+76PivksAxvPilMBSM+2UGPrEUOLU2j8CYSfHtmAKKfw7yRZCcSe+JAcHKBItHkXb2Ewsg7MppNXAUroA91HgLaYDnNV+Hsqq3EWdEY9xIYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459966,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 367,
+   "total_tokens": 487,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.003868,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.003868,
+    "upstream_inference_prompt_cost": 0.001468,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

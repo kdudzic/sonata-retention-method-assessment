@@ -1,0 +1,85 @@
+{
+ "call_id": "7efc7938dad8",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... skonczylem zmiane i zaraz lece na mecz. kto juz stoi na spółdzielczej przy żabce? wezcie mi wode bo znow zapomnialem... oby dzis stal zgarnela trzy punkty. no i git!\n- no właśnie... wgl nwm kto ogarnia te przepisy o imigracji bo co chwile inne gadanie... stary dajcie jakies jasne zasady zamiast tego chaosu. wrócilem z magazynu i juz mam dosc czytania na dzis\n- no właśnie... stary widziales co otworzyli na rogu przy spółdzielczej? ukrowy sklep! wracalem z magazynu i dopiero szyld zobaczylem... jeszcze niedawno ten lokal pusty stal\n- no właśnie... dzis na magazynie skaner co chwile sie zawieszal i czlowiek tylko kilometry robil po nowy... nogi mi w tylek wlaza ale zmiana skonczona! teraz cos zjesc i kanapa... no i git\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "35fa03cf740b1e3bc1b68e5d046e2c0b0bee52bf",
+ "response": {
+  "id": "gen-1791459995-F2XgowTAJIgmkj6yQUVw",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował na magazynie, gdzie ostatnio zacinał się skaner, po zmianie wybierał się na mecz Stali, komentował przepisy imigracyjne i zauważył nowy ukraiński sklep przy Spółdzielczej, a po pracy planował posiłek i odpoczynek.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459995,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 74,
+   "prompt_tokens": 321,
+   "total_tokens": 395,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00691,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00691,
+    "upstream_inference_prompt_cost": 0.00321,
+    "upstream_inference_completions_cost": 0.0037
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

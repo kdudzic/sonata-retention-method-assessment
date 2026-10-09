@@ -1,0 +1,15 @@
+{
+ "model": "mistralai/mistral-large-4-0",
+ "n_posts": 104,
+ "cost": 0.09564067000000002,
+ "calls": 133,
+ "prompt_tokens": 115115,
+ "completion_tokens": 8451,
+ "elapsed_s": 161.9,
+ "refusals": 1,
+ "empty": 0,
+ "errors": [],
+ "reasoning": {
+  "enabled": false
+ }
+}

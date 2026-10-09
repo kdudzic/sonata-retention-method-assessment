@@ -1,0 +1,174 @@
+# Topic sampler for the mundane background layer (plan, Annex A).
+# weight = share of the layer (to be tuned on the dev corpus).
+# Each topic has sub-prompts to push variety inside a topic; one is sampled per post.
+topics:
+  - id: praca_grafik
+    weight: 14
+    label: praca i grafik
+    sub:
+      - zmiana grafiku w pracy
+      - nadgodziny / wcześniejsze wyjście
+      - spotkanie albo szkolenie w pracy
+      - szef / współpracownik, drobna sytuacja bez konfliktu
+      - przerwa, kawa, stołówka
+      - zmęczenie po zmianie
+      - nowy projekt / nowe zadanie
+      - pierwszy dzień po urlopie
+      - praca zdalna, domowe biuro
+      - wypłata, premia, rozliczenie
+  - id: komunikacja_dojazdy
+    weight: 10
+    label: komunikacja i dojazdy
+    sub:
+      - spóźniony autobus / tramwaj
+      - korek na obwodnicy / w centrum
+      - zmiana rozkładu jazdy
+      - rower do pracy
+      - parking, brak miejsc
+      - pociąg regionalny, przesiadka
+      - kontrola biletów
+      - hulajnoga / scooter na minuty
+      - remont drogi na trasie
+  - id: pogoda
+    weight: 6
+    label: pogoda
+    sub:
+      - nagły deszcz
+      - upał
+      - pierwszy mróz / śnieg
+      - mgła rano
+      - wiatr, burza
+      - ładny wieczór, zachód słońca
+      - zmiana pogody vs plany
+  - id: jedzenie_gotowanie
+    weight: 10
+    label: jedzenie i gotowanie
+    sub:
+      - obiad z resztek
+      - nowy przepis, eksperyment
+      - nieudane ciasto / danie
+      - zamówienie jedzenia z dowozem
+      - bar mleczny / pierogi / kebab
+      - kawa z nowego miejsca
+      - zakupy na obiad, czego zabrakło
+      - grill, ognisko
+      - śniadanie w biegu
+  - id: sport
+    weight: 8
+    label: sport
+    sub:
+      - bieganie, pierwsza 5/10 km
+      - siłownia, nowy rekord
+      - mecz ligowy w TV, wynik i emocje (bez wrogości)
+      - rower, trasa weekendowa
+      - basen, zajęcia
+      - kontuzja, lekka, powrót do treningu
+      - piłka z kumplami na orliku
+      - skoki narciarskie / siatkówka / żużel w TV
+  - id: gry_seriale
+    weight: 8
+    label: gry i seriale
+    sub:
+      - nowy sezon serialu, bez spoilerów
+      - gra, trudny poziom / boss
+      - zakup na promocji na Steamie
+      - wieczór z planszówkami
+      - film w kinie, krótka opinia
+      - maraton serialu, zarwana noc
+      - mobilna gra, uzależnienie żartem
+      - stream ulubionego streamera
+  - id: zakupy_ceny
+    weight: 8
+    label: zakupy i ceny
+    sub:
+      - ceny w markecie, porównanie
+      - promocja, zakup impulsywny
+      - zwrot / reklamacja (bez gniewu, drobne)
+      - paczkomat, odbiór
+      - zakupy na targu
+      - nowe buty / kurtka
+      - koszyk w aplikacji, zniżki
+      - drogi prąd / gaz, rachunek
+  - id: dzieci_rodzina
+    weight: 8
+    label: dzieci i rodzina
+    sub:
+      - odbiór dziecka z przedszkola / szkoły
+      - zebranie w szkole
+      - obiad u rodziców / teściów
+      - dziecko chore, zwykłe przeziębienie
+      - urodziny, prezent
+      - wakacje, planowanie
+      - rodzeństwo, drobne sprzeczki dzieci
+      - dziadkowie, telefon
+      - pierwsze słowa / pierwsza jazda rowerem
+  - id: remont_dom
+    weight: 6
+    label: remont i dom
+    sub:
+      - malowanie pokoju
+      - meble do złożenia
+      - awaria pralki / kranu
+      - sprzątanie, porządki sezonowe
+      - zmiana dostawcy internetu
+      - ogródek, balkon, rośliny
+      - sąsiedzi wiercą (łagodnie)
+      - szukanie fachowca
+  - id: zwierzeta
+    weight: 5
+    label: zwierzęta
+    sub:
+      - spacer z psem
+      - kot i jego humory
+      - weterynarz, szczepienie
+      - nowe zwierzę w domu
+      - zwierzę zniszczyło coś
+      - ptaki na balkonie / karmnik
+  - id: zdrowie_sen
+    weight: 6
+    label: zdrowie i sen
+    sub:
+      - niewyspanie
+      - przeziębienie
+      - wizyta u lekarza, kolejka (bez konfliktu)
+      - dieta, postanowienia
+      - ból pleców od siedzenia
+      - dentysta
+      - alergia, pylenie
+      - kawa i sen, ironicznie
+  - id: technologia_sprzet
+    weight: 5
+    label: technologia i sprzęt
+    sub:
+      - aktualizacja telefonu
+      - padła bateria / ładowarka
+      - nowy laptop / słuchawki
+      - problem z wifi
+      - aplikacja bankowa nie działa
+      - drukarka
+      - backup, utracone zdjęcia
+  - id: narzekanie_uslugi
+    weight: 6
+    label: drobne narzekanie na usługi
+    sub:
+      - infolinia, oczekiwanie
+      - kurier nie zadzwonił
+      - urząd, kolejka, numerek
+      - fryzjer, umówiona wizyta
+      - restauracja, długie czekanie
+      - serwis samochodu
+      - przychodnia, rejestracja telefoniczna
+      - pralnia / szewc
+
+registers:
+  - terse
+  - chatty
+  - mildly grumbly
+  - enthusiastic
+  - matter-of-fact
+
+# word-length sampling: plan says 12-45; we use a right-skewed draw so short posts dominate
+length:
+  min: 8
+  max: 50
+  mode: 18

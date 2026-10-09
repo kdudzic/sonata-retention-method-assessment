@@ -1,0 +1,87 @@
+{
+ "call_id": "29d7460de8f2",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 365441951
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje w kwiaciarni w Tarnowie, zaczyna rano i pisze po zamknięciu sklepu.\n- zainteresowania: wiązanie bukietów, ozdabianie doniczek, targi staroci\n- lokalny punkt odniesienia: przystanek przy ulicy Krakowskiej w Tarnowie\n- aktualna sytuacja życiowa: Przestawia wystawę sklepową i testuje nowe sposoby pakowania bukietów.\n- sposób pisania: zdania: medium; interpunkcja: dużo wykrzykników; wielkie litery: standard; literówki: rare; skróty: none; emoji: frequent\n- tik językowy: często zaczyna od „ale dziś kolory”\n\nTopic for this post: komunikacja i dojazdy\nConcrete angle: W środę po zamknięciu sklepu autobus utknął w korku w centrum, więc z okna zdążyłam obejrzeć całą nową wystawę sąsiedniego sklepu. | mood: bored | opener: mid-thought | verbal tic in this post: no\nRegister: matter-of-fact\nTarget length: about 26 words\nTime of day: evening, Wednesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - ...a autobus w centrum tczewa stoi już tyle, że piesi za szybą doszli do następnego przystanku 😐 chwila i gotowe... jasne 🙃\n  - znowu ten objazd przez remont a autobus do kwiaciarni w sobote rano skrecil inaczej wysiadlam przystanek dalej ale i tak bylam sporo przed otwarciem\n  - gdzie po drodze szybko dopompować tylne koło? odebrałem rower spod mieszkania po montażu drzwi. jadę do domu. fajnie się kręci.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "880f061807b5a29cedaef3a51f053ca2749e279c",
+ "response": {
+  "id": "gen-1791464581-8FfDigqBe5MS1IyRdHHz",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Po zamknięciu kwiaciarni w środę wracałam autobusem, ale w centrum tak długo staliśmy w korku, że obejrzałam z okna całą nową wystawę sąsiedniego sklepu! Trochę mi się dłużyło 😐",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464581,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 70,
+   "prompt_tokens": 810,
+   "total_tokens": 880,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00232,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00232,
+    "upstream_inference_prompt_cost": 0.00162,
+    "upstream_inference_completions_cost": 0.0007
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "8ac9fc1a90ee",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.\n- zainteresowania: żużel w telewizji, stare Volvo, wędkowanie w weekendy\n- lokalny punkt odniesienia: stacja Orlen przy zjeździe w Strykowie\n- aktualna sytuacja życiowa: Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: zaczyna od „no to tak”\n\nPosts by this author (in order):\n1. no to tak. od wczoraj mamy w domu kota od kuzyna. maly szary i caly czas pod kanapa. rano przed 6 dalem mu jesc i poszedl spac na moich butach do roboty. trza kupic zwirek po pracy\n2. no to tak kierownik zmienil mi grafik na przyszly tydz bez slowa. dowiedzialem sie od janka na hali. niby ok ale wedki plan sie sypie\n3. no to tak w poniedzialek szkolenie bhp na 7 rano przed zmiana. wozek poczeka. kawe wezme z orlena w strykowie bo inaczej nie przezyje\n4. no to tak koles z biura caly tydz na home office a ja na wozku jak zawsze. fajnie mu w kapciach przy kompie\n5. no to tak pociag regionalny do zgierza 5 min spozniony ale przesiadka i tak zzdazona. na 6 do roboty wchodze bez nerwow. w kolejny pon biore auto albo rower\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "85873b338f064d0a5414b98cfaed328092279b8f",
+ "response": {
+  "id": "gen-1791461116-YT98V2Hr01k0uadoVdlR",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 5,\n  \"voice_stability\": 4,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 4,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"Identical opener in every post feels mechanical\",\n    \"Repeated setup-complaint-ending rhythm\",\n    \"Train commute is slightly at odds with the stated routine\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461116,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 100,
+   "prompt_tokens": 689,
+   "total_tokens": 789,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002378,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002378,
+    "upstream_inference_prompt_cost": 0.001378,
+    "upstream_inference_completions_cost": 0.001
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

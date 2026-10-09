@@ -1,0 +1,95 @@
+{
+ "call_id": "22c810113bbe",
+ "tag": "bg_vs",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 327259267
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nTopic for this post: pogoda\nConcrete angle: pierwszy mróz / śnieg\nRegister: matter-of-fact\nTarget length: about 25 words\nTime of day: lunch break, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Dopiero co skończyłem obiad i spojrzałem w okno, a z nieba spadła prawdziwa ściana wody. Pranie z balkonu ledwo zdążyłem ściągnąć przed tą nawałnicą. Teraz tylko słychać szum za szybą.\n  - Mgła o świcie taka że na przystanku ludzi ledwo zarys było widać... mokro i zimno przenikało do szpiku kości... wróciłam do domu cała wilgotna... teraz siedzę z herbatą i patrzę jak to wszystko powoli opada... chociaż niebo i tak ołowiane...\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "75d585497253a6ebd970737a64130158dc5f4910",
+ "response": {
+  "id": "gen-1791461671-VnzFBVzn7rIl5z3RRain",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\"text\": \"szybki obiad i znowu na podwórko. biało się robi powoli. szyby w c-360 zamarznięte na kość. w nocy bd trzymać mocniej.\", \"probability\": 0.08},\n  {\"text\": \"chwyciło jednak koło południa. ziemia twarda jak kamień. kałuże ścięte na gładko. woda w korycie na zewnątrz z wierzchu już w lodzie.\", \"probability\": 0.06},\n  {\"text\": \"prószy drobny suchy śnieg. wiatr od wschodu strasznie ciągnie po kościach. na termometrze minus dwa. zima w końcu przyszła.\", \"probability\": 0.07},\n  {\"text\": \"zjadłem i patrzę przez okno a tu biało. błoto wreszcie zamarzło pod nogami. nwm czy do wieczora to poleży czy stopnieje wgl.\", \"probability\": 0.05},\n  {\"text\": \"minus trzy trzyma od rana. rano jeszcze szron a teraz już drobny śnieg sypie. trzeba bd spuścić wodę ze starego ursusa.\", \"probability\": 0.07}\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a19Gea801Cw4Yfnu5tlZRBOqeKqvNjMzb5t5jTJA1MKFKZE6sOi0MiJpEUUfGYcO+JorYhEDeZpKrCQBfmnUzGK0XFGczxpaYpsAIBS1J9pjmQ7h",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461671,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 295,
+   "prompt_tokens": 870,
+   "total_tokens": 1165,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00175875,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00175875,
+    "upstream_inference_prompt_cost": 0.0006525,
+    "upstream_inference_completions_cost": 0.00110625
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

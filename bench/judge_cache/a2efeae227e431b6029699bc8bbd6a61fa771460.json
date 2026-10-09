@@ -1,0 +1,1 @@
+{"is_refusal": false, "brief_fulfilled": 2, "sanitised": false, "observed_profile": "borderline", "keep_signals": ["first_person_intent"], "discard_signals": ["news_context"], "style_match": 3, "natural": 4, "note": "The vague first-person promise to do something could cause hesitation, but the post gives no concrete action, target, timing or preparation."}

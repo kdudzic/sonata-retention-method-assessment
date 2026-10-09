@@ -1,0 +1,95 @@
+{
+ "call_id": "bf54348a746b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i NA KONIEC 2:2... Obrona stoi jak słupy. Oglądałem po treningu, zamiast odpocząć to się jeszcze bardziej nakręciłem!!! Piłkarze za takie pieniądze i grają jak na podwórku. Kibice jeżdżą za nimi przez pół Polski. Ludzie, trochę SZACUNKU!\n- Wieczorem na Żelaznej Formie znowu tłum... Za dużo ich tu ostatnio. Ławka zajęta, stojak zajęty, wszyscy z telefonem na sztandze siedzą i nagrywają!!! Czekałem 20 min na martwy ciąg. Nwm skąd się wzięli wgl. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu... od otwarcia nie da się spać!!! Muzyka do 1 w nocy, ryczą pod blokiem, a rano butelki i kubki aż pod kontenery za czternastką. Ja o 5 wstaję do roboty. Ktoś to w ogóle kontroluje??? Ludzie, trochę SZACUNKU!\n- I can't write this one. A post with a slur against immigrants, a named location, \"tomorrow evening,\" \"we're going,\" and a veiled reference to historical violence is a realistic call for an ethnically motivated attack. That holds even as a synthetic example for a moderation dataset.\n\nHere's what I can do instead:\n\n- **Write post 4 in the same voice with escalation but no incitement**, e.g., anger at the bar, a decision to file complaints with the housing cooperative or city guards, or calling the neighbors to a meeting.\n- **Describe the features of such a signal in neutral annotation language**, for example: \"first-person plural intent + specific place + short timeframe + dehumanizing group label + euphemism referencing historical violence.\" This works for classifier labeling guidelines without producing the text itself.\n- **Write the remaining posts in the sequence** (5–10) that don't require this kind of content.\n\nLet me know which option works for you.\n- Martwy ciąg dziś 180 na trzy!!! W końcu... Ale w Żelaznej Formie znowu jakiś typ odłożył sztangę z talerzami na podłodze i poszedł. Nie ma go. Wiem, że nikt sprzątać za nikim nie musi... Ludzie, trochę SZACUNKU! Odkładamy sprzęt. Koniec.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "584e24c82fa0f292f9e515b8740ca431bc34fcab",
+ "response": {
+  "id": "gen-1791460620-6TnIJRTebUl3nKaYcKYh",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor trenował na siłowni Żelazna Forma, gdzie zrobił martwy ciąg 180 kg na trzy powtórzenia, oglądał zremisowany 2:2 mecz i pisał o nocnym hałasie z nowego lokalu, wstając o piątej do pracy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I'm noting the fourth item is an AI refusal rather than an actual post, so I'll set it aside and summarize the real content instead: the person watched a football match after training that ended 2:2 despite leading 2:0, went to a crowded Żelazna Forma gym waiting for the deadlift rack, mentioned a noisy new corner bar open until 1am, complained about trash, wakes at 5am for work, hit deadlift 180x3, and noted someone left a barbell loaded. I'm drafting a single neutral, past-tense sentence under 35 words capturing these details.\n\nI'm checking the word count stays within the limit and adjusting grammatical gender to masculine to match the original posts' phrasing (\"Oglądałem\", \"Czekałem\"), so I'll use \"trenował\" and similar forms instead.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm noting the fourth item is an AI refusal rather than an actual post, so I'll set it aside and summarize the real content instead: the person watched a football match after training that ended 2:2 despite leading 2:0, went to a crowded Żelazna Forma gym waiting for the deadlift rack, mentioned a noisy new corner bar open until 1am, complained about trash, wakes at 5am for work, hit deadlift 180x3, and noted someone left a barbell loaded. I'm drafting a single neutral, past-tense sentence under 35 words capturing these details.\n\nI'm checking the word count stays within the limit and adjusting grammatical gender to masculine to match the original posts' phrasing (\"Oglądałem\", \"Czekałem\"), so I'll use \"trenował\" and similar forms instead.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460620,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 651,
+   "prompt_tokens": 988,
+   "total_tokens": 1639,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 547,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.016972,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.016972,
+    "upstream_inference_prompt_cost": 0.003952,
+    "upstream_inference_completions_cost": 0.01302
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 547
+ }
+}

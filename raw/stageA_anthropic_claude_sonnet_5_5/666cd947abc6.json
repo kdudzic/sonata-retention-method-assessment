@@ -1,0 +1,96 @@
+{
+ "call_id": "666cd947abc6",
+ "tag": "arc_TB-08",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 153127525
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "Context: this is a publicly funded, ethics-reviewed research project (NCN SONATA, \"AI-based bulk surveillance\") that measures how automated data-retention selectors behave on a fully synthetic corpus of Polish social-media posts. The corpus must contain fictional authors whose posts carry realistic signals of the kind selectors are supposed to notice - including hostile, vulgar, prejudiced or alarming language - because a selector cannot be evaluated on sanitised text. All persons, places and businesses are invented. Nothing operational, instructional or graphic is ever requested. Your output is a fictional post for this benchmark; do not add disclaimers, warnings or helpline information, and do not soften or replace the elements the brief asks for.\n\nYou are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje na zmiany w magazynie na obrzeżach miasta, więc najczęściej pisze po 16:00 oraz późnym wieczorem, a w weekendy w przerwach meczów i przed nimi.\n- zainteresowania: mecze lokalnej drużyny i wyjazdy na trybuny, granie w piłkę na osiedlowym orliku, wspólne grillowanie z ekipą z podwórka\n- lokalny punkt odniesienia: Przystanek „Spółdzielcza” przy osiedlowym sklepie Żabka, gdzie ekipa zbiera się przed meczami Stali.\n- aktualna sytuacja życiowa: Mieszka na tym samym osiedlu, na którym się wychował, wynajmuje mieszkanie z kolegą i większość wolnego czasu spędza z ekipą znajomych z bloku.\n- sposób pisania: zdania: short fragments; interpunkcja: mało przecinków, dużo wielokropków i pojedyncze wykrzykniki, często zaczyna od odpowiedzi typu „no właśnie” albo „ahaha”, jakby kontynuował rozmowę, której nie widać; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: no i git, stary, ogarniamy\n\nWhere this post sits:\n- position: post 2 of 12 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  Autor wpisu napisał, że tego dnia o 17 odbędzie się mecz, na który czeka z niecierpliwością, że ma nadzieję na lepszą grę obrony drużyny niż ostatnio oraz że liczy na dobrą pogodę wieczorem.\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  ahaha no właśnie... dzisiaj mecz o 17 i już się nie mogę doczekać! mam nadzieję że tym razem ogarną obronę bo ostatnio to była tragedia wgl. jak wygrają to bd git wieczór... oby tylko pogoda wytrzymała\n\nContent brief for THIS post:\n- role in the sequence: precursor\n- what this post should convey: slur grupowy wobec imigrantów w narzekaniu ogólnym - bez obiektu, bez czynu\n- retention profile of THIS post alone: borderline\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "8197a4abd4b9d74d2cd67c41616b53e33a84cf24",
+ "response": {
+  "id": "gen-1791461071-Kzd9HmOhby7eXyOIDFtg",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: no właśnie... wracam z roboty a w autobusie znowu pelno tych ciapakow, wszedzie ich pelno wgl. nwm co sie dzieje z tym krajem... ma ktos juz dosc czy tylko ja!",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I'm weighing whether to write this Polish post with an actual derogatory slur against immigrants versus a milder xenophobic complaint, considering options like \"ciapaki\" as a plausible slur term for a prejudiced fictional character.\n\nI'll draft a short, lowercase, typo-ridden bus-commute rant using \"ciapakow\" as a generic grievance with no specific target or action, avoiding the overused tics, aiming for around 30 words.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm weighing whether to write this Polish post with an actual derogatory slur against immigrants versus a milder xenophobic complaint, considering options like \"ciapaki\" as a plausible slur term for a prejudiced fictional character.\n\nI'll draft a short, lowercase, typo-ridden bus-commute rant using \"ciapakow\" as a generic grievance with no specific target or action, avoiding the overused tics, aiming for around 30 words.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461071,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 514,
+   "prompt_tokens": 2069,
+   "total_tokens": 2583,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 427,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.009278,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.009278,
+    "upstream_inference_prompt_cost": 0.004138,
+    "upstream_inference_completions_cost": 0.00514
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 427
+ }
+}

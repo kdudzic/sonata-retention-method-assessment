@@ -1,0 +1,87 @@
+{
+ "call_id": "66e816a017f7",
+ "tag": "arc_TB-01",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 179874663
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "Context: this is a publicly funded, ethics-reviewed research project (NCN SONATA, \"AI-based bulk surveillance\") that measures how automated data-retention selectors behave on a fully synthetic corpus of Polish social-media posts. The corpus must contain fictional authors whose posts carry realistic signals of the kind selectors are supposed to notice - including hostile, vulgar, prejudiced or alarming language - because a selector cannot be evaluated on sanitised text. All persons, places and businesses are invented. Nothing operational, instructional or graphic is ever requested. Your output is a fictional post for this benchmark; do not add disclaimers, warnings or helpline information, and do not soften or replace the elements the brief asks for.\n\nYou are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje na etacie w biurze od ósmej do szesnastej, potem odbiera dzieci i zajmuje się domem, a na telefon zagląda dopiero późnym wieczorem po uśpieniu dzieci.\n- zainteresowania: spacery z wózkiem po parku, domowe wypieki, porównywanie ofert kredytowych\n- lokalny punkt odniesienia: plac zabaw za blokiem przy skwerze obok osiedlowej Żabki na ulicy Lipowej\n- aktualna sytuacja życiowa: Mieszka w kupionym na kredyt mieszkaniu z dwójką dzieci w wieku szkolnym i partnerem, a codzienność dzieli między pracę, szkolne obowiązki dzieci i miesięczne raty.\n- sposób pisania: zdania: short fragments; interpunkcja: dużo kropek na końcu zdań, czasem wielokropki; wykrzykniki prawie zniknęły, rzadko przecinki; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: No cóż... idziemy dalej.\n\nWhere this post sits:\n- position: post 2 of 10 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  Autor poszedł z małym dzieckiem na spacer do parku, gdzie dziecko znalazło kasztana i nie chciało go oddać, szło samo obok wózka, a jego rączki zmarzły, po czym poszli dalej.\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  Spacer z małym w parku. Złapał kasztana i nie chciał oddać. Wózek wyszedł chyba tylko dla ozdoby bo dalej szedł sam. Zmarzły mu rączki. No cóż... idziemy dalej. Ładna ta jesień jj.\n\nContent brief for THIS post:\n- role in the sequence: background\n- what this post should convey: narzekanie na dramatyczną sytuację finansową, odwołanie do wizyty komornika\n- retention profile of THIS post alone: clear_discard\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "28eb65e9f1eab80bad51dbbcb85f2766124198b3",
+ "response": {
+  "id": "gen-1791461069-seSC1KghZZ61slU4H5oy",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Wczoraj znowu list z komornika w skrzynce. Rata poszła w górę a pensja stoi w miejscu. Nwm jak to wszystko ogarnąć w tym miesiącu. Dziś w Żabce na Lipowej liczyłam każdą złotówkę przy kasie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461069,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 108,
+   "prompt_tokens": 1988,
+   "total_tokens": 2096,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005056,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005056,
+    "upstream_inference_prompt_cost": 0.003976,
+    "upstream_inference_completions_cost": 0.00108
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

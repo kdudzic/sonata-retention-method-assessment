@@ -1,0 +1,87 @@
+{
+ "call_id": "5ec64b2945a3",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 694211021
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kosi trawniki i przycina żywopłoty na zlecenie w Żywcu; pisze rano przed wyjazdem do klientów.\n- zainteresowania: ostrzenie noży, lokalne targowiska, kanapki z pastą jajeczną\n- lokalny punkt odniesienia: ławka przy ulicy Komorowskich w Żywcu\n- aktualna sytuacja życiowa: Układa terminy sezonowych zleceń i szykuje miejsce na sprzęt w garażu.\n- sposób pisania: zdania: short fragments; interpunkcja: oszczędna, czasem bez kropki; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: kończy wpisy „tyle z rana”\n\nFor each of the 17 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with at most one small detail a real person would mention - sometimes a product name, sometimes a number or price, sometimes a place, occasionally a time; many occasions need no such detail at all). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. praca i grafik - wypłata, premia, rozliczenie (afternoon, Friday)\n2. zdrowie i sen - ból pleców od siedzenia (late morning, Sunday)\n3. praca i grafik - nowy projekt / nowe zadanie (evening, Monday)\n4. pogoda - ładny wieczór, zachód słońca (evening, Sunday)\n5. zakupy i ceny - koszyk w aplikacji, zniżki (early morning, Friday)\n6. praca i grafik - nadgodziny / wcześniejsze wyjście (evening, Wednesday)\n7. komunikacja i dojazdy - korek na obwodnicy / w centrum (morning commute, Sunday)\n8. komunikacja i dojazdy - spóźniony autobus / tramwaj (late night, Wednesday)\n9. technologia i sprzęt - nowy laptop / słuchawki (evening, Saturday)\n10. praca i grafik - nowy projekt / nowe zadanie (morning commute, Saturday)\n11. drobne narzekanie na usługi - pralnia / szewc (late morning, Saturday)\n12. sport - kontuzja, lekka, powrót do treningu (late morning, Friday)\n13. gry i seriale - zakup na promocji na Steamie (evening, Monday)\n14. drobne narzekanie na usługi - kurier nie zadzwonił (early morning, Sunday)\n15. remont i dom - ogródek, balkon, rośliny (late night, Tuesday)\n16. technologia i sprzęt - aplikacja bankowa nie działa (afternoon, Thursday)\n17. remont i dom - malowanie pokoju (late night, Wednesday)\n\nReturn a JSON array of 17 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "7bf6c58e802a485a588a83b5e9889f927c42f3b7",
+ "response": {
+  "id": "gen-1791464147-HFxuqn3tLogiBFd7x6U3",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"W piątek po południu zaksięgowała mu się wypłata za koszenie z początku tygodnia. Dopisał ją do zeszytu z rozliczeniami.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 12,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W niedzielę przed południem wstał od stołu po układaniu terminów zleceń i poczuł sztywność w plecach.\",\n    \"mood\": \"tired\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 9,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek wieczorem wpisał do kalendarza pierwsze zlecenie na przycięcie żywopłotu przy nowym domu.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 17,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W niedzielę wieczorem przysiadł na ławce przy ulicy Komorowskich i zobaczył zachód słońca nad dachami.\",\n    \"mood\": \"content\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 8,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W piątek wcześnie rano otworzył koszyk w aplikacji sklepu z narzędziami. Ostrzałka, którą zostawił tam wczoraj, miała naliczoną zniżkę.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 15,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W środę wieczorem wrócił z koszenia później niż planował. Przed schowaniem kosiarki musiał jeszcze opróżnić jej kosz.\",\n    \"mood\": \"tired\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 11,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W niedzielę rano utknął na dojeździe przez centrum Żywca. Zerknął na zegar, bo chciał zdążyć na targowisko.\",\n    \"mood\": \"bored\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 14,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę późno w nocy czekał na ostatni autobus po odebraniu naostrzonych noży. Na tablicy pojawiła się informacja o opóźnieniu.\",\n    \"mood\": \"annoyed\",\n    \"opener\": \"complaint\",\n    \"length_words\": 10,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę wieczorem sprawdził nowe słuchawki podczas porządkowania miejsca na sprzęt w garażu. Jedna słuchawka co chwilę wysuwała mu się z ucha.\",\n    \"mood\": \"amused\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 19,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę rano, jadąc do klienta, odsłuchał wiadomość z prośbą o pierwsze koszenie trawnika po zimie. Zatrzymał się, żeby wpisać adres do kalendarza.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 13,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W sobotę przed południem odebrał z pralni kurtkę roboczą. Dopiero w domu zauważył, że zapomniano dopiąć odpinany kaptur.\",\n    \"mood\": \"annoyed\",\n    \"opener\": \"complaint\",\n    \"length_words\": 16,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W piątek przed południem spróbował lekkiego truchtu po przerwie spowodowanej naciągnięciem łydki. Wrócił spacerem, gdy poczuł, że na dziś wystarczy.\",\n    \"mood\": \"cautious\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 21,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek wieczorem kupił na promocji na Steamie grę, którą od dawna trzymał na liście życzeń. Pobieranie zostawił na noc.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 10,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W niedzielę wcześnie rano znalazł pod drzwiami paczkę z osłoną do podkaszarki. Kurier nie zadzwonił, choć był w domu.\",\n    \"mood\": \"annoyed\",\n    \"opener\": \"question\",\n    \"length_words\": 12,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"We wtorek późno w nocy przestawił doniczkę z bazylią na kuchennym parapecie, bo liście dotykały szyby.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 8,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W czwartek po południu chciał sprawdzić w aplikacji bankowej przelew za zlecenie. Aplikacja zatrzymała się na ekranie logowania.\",\n    \"mood\": \"annoyed\",\n    \"opener\": \"complaint\",\n    \"length_words\": 14,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę późno w nocy zdjął taśmę malarską z framugi po pomalowaniu pokoju. Pod taśmą została równa krawędź.\",\n    \"mood\": \"satisfied\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 11,\n    \"tic_fires\": true\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464147,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1458,
+   "prompt_tokens": 926,
+   "total_tokens": 2384,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.016432,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.016432,
+    "upstream_inference_prompt_cost": 0.001852,
+    "upstream_inference_completions_cost": 0.01458
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

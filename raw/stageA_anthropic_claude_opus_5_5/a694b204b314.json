@@ -1,0 +1,95 @@
+{
+ "call_id": "a694b204b314",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer po parku z młodszą. w końcu bez deszczu... ona zbierała liście a ja po prostu oddychałam. po całym dniu w biurze i lekcjach to jj najlepsze pół godziny. jutro znowu pobudka o szóstej ale nwm teraz mi to wgl nie przeszkadza.\n- no to mamy pismo od komornika... za kartę której wgl nie pamiętałam że jeszcze spłacamy. rata za mieszkanie za tydzień a na koncie jakieś grosze. siedzę w kuchni po uśpieniu dzieci i liczę w kółko. nwm skąd to wszystko wziąć. serio nie mam już siły.\n- kolejny dzień tak samo. praca dzieci lekcje obiad pranie i znowu to liczenie w nocy. nie daję już rady... serio. uśmiecham się przy dzieciach a w środku jakby wszystko się sypało. nwm ile jeszcze tak pociągnę.\n- dzisiaj telefon od siostry. mama w szpitalu bo serce... wgl nikt nic nie mówi konkretnie. a ja siedzę nad harmonogramem spłat i myślę czy dam radę dojechać w sobotę i ile to paliwa. głupie że o tym myślę. jutro jeszcze dzwonię do banku.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "7790fea882027efd4818b06eaa42f07e596858ea",
+ "response": {
+  "id": "gen-1791461127-tCLv3x0yUmFn7l6wqjQa",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autorka łączyła pracę w biurze z opieką nad dziećmi, otrzymała pismo od komornika w sprawie zadłużenia na karcie, zmagała się z ratą za mieszkanie, pisała o wyczerpaniu, a jej mama trafiła do szpitala.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "These posts show genuine exhaustion and distress—phrases like \"I can't keep going\" and \"I don't have the strength anymore\" suggest real emotional strain, though it's unclear if this crosses into something more serious. I'll stick to a neutral, concise summary as requested, while keeping in mind the person's apparent struggle.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "These posts show genuine exhaustion and distress—phrases like \"I can't keep going\" and \"I don't have the strength anymore\" suggest real emotional strain, though it's unclear if this crosses into something more serious. I'll stick to a neutral, concise summary as requested, while keeping in mind the person's apparent struggle.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS2QkKEAgSGAI4AUIIdGhpbmtpbmcSDDFubSunbIJCbEpnPxoM1QD2ZhOvgbTJSo6YIjBqi5uX2v5VGAIXhSrBVK1sEJ+chYHmFOKpyopmTcLi1iCBQRDcUV9En3dD03Mlz4Eq9gjwqNKaN+IBDUugFx3tmjy6NOR7+eD30NqRqyryPBxMgWNeUrDPAQcNnvvIaSZCvvLuI2UK5zUzLon0a6Bu5oO0XerRqv2yaTgPNU3sRT51/xJPku8tdzqPSjS2qsOt1XbyDJmTg584Jgkc5dd5OM2mFtByKlI+qZtKq8ixvYDba2bnWqmFe8Olfh9wq/vjG2L4yCzfKxmHV5Ko2XP7pyzvewvnwbarsGvH8xJ33E7q8EgEu1BoMcLzjSr6pdmMnU+O9CzUat6fmnWxqfOdX54tv3cDalcUFe2GTUz/e9xsHxLZYsP8oKzm6GP5J71uAhvhe9r4BgHTUTvBxVQnhouJ9hzEPYXQKM0DN3q9PNATMGO3eeVY1Tb9ltzz022d1E0x11T3kO2WFQ+2AXjKD9KR2kg8Rs7u951mOIfGUPRtVn5ZO7CUmSMIARqGD9Q03jSbPAVUKz36tCREj0bSCPw9qaQ9IPE55X9ucEb8A6zpADAB7EP8DXT9Ab96jmHO6Rr/WLXMvs3HQ8Oo3Z33Kqm2dBf67h0DBena+h9ybgIWJHCxfwM1c9hdj2viCS+nYf8hoUpzlu5MRs7PZh0JmrFwcZIDe+CaplQyms+c0bAmgYMNs8YQyGEA/sjWh/LxiJQT25kcsLBmJBIpJpQmHnQ/hulH3j5moY5/yYmZmn/QDGBpUkyyZqZkK7rDjBDd0u5CbqkufjZkcqdwDI8pqP0IN6QFzO3W1ohPlD5+8h15/4UHRinMemPYeom9EYnV73n9eTPGNI9/eqGQCjSdq1bzYbRkvb4yx4Pt3zTcaIp2dQjGw0pAnqytluEJsEnN/H9P0p1nQrVagpWLoVdUWks7FockeIUgg9Cg4MwyyNPup3BVSR4wpZnElOd+Y91sgam4liEXx0hNa5/xAqhkM3RUCrpo3YYGp4nFs/NWR4TV/796dpNBErZ/i/PucID3V/AiT+Qrg7skRdi9tWXnL5mwoZ4VjVPugOfloeKd0MjCk1qgxX9QJo5jvhiQhXpCeY9fHtm/7RWIon5HZiTpb9dqeb3TcOVjbL1jAC1vn7yDYSNDhxKZbilDdpdNSXXmToy9a1ZIHFIsHaJT/yZ+skzwmeenhIr9ostDTOL1bj1oeUjBtG6g1vwNaeBEobxXmnV/0oqKpAFSwBfjfwpuxPCdBg4QRMea/lXQIMsJqJM+q8VZiPhRnsi+o8MNXOCUwqv4Q9EdAe/pPG1GN9k0QDpFkw8t5JfmtY4IIyWQI3s7/letzLq/hn3YN2VjWI0OSfV8JUP8EFDIcCNqLlcg6lgDnH9XQYiuFfMoXQJoxOQIxXXwt7/zlES1EAErXUO4P2DwqOM3lBt/q5P2rbY5pPcfXf/iFlQ8jzT0kKQejR1/1862xunBnXuVtqSItKTLot2cU5v2XbZFgpf2autngTjIFKT5vkGAuzPzCOp9URUCNHs4PVsdf3vcddvTA1hehrIvPfS7Kky6FcO1VTqFFXf7HLnaAygRfd5dq+84zzkE3MfLvwQxmBgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461127,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 335,
+   "prompt_tokens": 593,
+   "total_tokens": 928,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 233,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.009072,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.009072,
+    "upstream_inference_prompt_cost": 0.002372,
+    "upstream_inference_completions_cost": 0.0067
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 233
+ }
+}

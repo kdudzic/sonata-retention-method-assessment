@@ -1,0 +1,86 @@
+{
+ "call_id": "328be00f9afe",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Na urlopie wychowawczym z rocznym synkiem w Białymstoku, posty podczas drzemek dziecka i późnym wieczorem.\n- zainteresowania: spacery z wózkiem, wypiekanie ciast drożdżowych, grupy sprzedaży ubranek dziecięcych\n- lokalny punkt odniesienia: plac zabaw przy Plantach w Białymstoku\n- aktualna sytuacja życiowa: Synek zaczyna chodzić, więc zabezpiecza mieszkanie i planuje powrót do pracy na jesieni.\n- sposób pisania: zdania: long run-on; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: przesadza ze słowem „mega”\n\nPosts by this author (in order):\n1. o 5:40 wiatr przewrócił pusty wózek na balkonie, potem przeszła krótka burza, obudziłam się i sprawdziłam, czy osłona przeciwdeszczowa nadal jest w koszu, mega niewyspana jestem dziś 😴\n2. dopiero po drzemce małego ogarnęłam, że po 14 moje śniadanie to była połowa bułki z twarożkiem jedzona jedną ręką przy składaniu prania!!! 😅\n3. „Bierzemy pierogi z jagodami” — powiedziałam w barze mlecznym po spacerze, synek zasnął w wózku i pierwszy raz dziś zjadłam coś ciepłego!!! 😋\n4. próbowałyście dodawać skórkę z cytryny do drożdżówek? wsypałam dziś do ciasta od cioci i kuchnia pachniała MEGA świeżo!!! aż jestem ciekawa, jak wyjdą 😋\n5. Ulga! pralka stanęła z ręcznikami i E18, już myślałam, że wieczór z głowy, a w sitku odpływowym siedziała mała skarpetka synka 🙈 wszystko działa!\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "250ec42722b089bd2071032a7c0c439acafc2f81",
+ "response": {
+  "id": "gen-1791461063-f4xJ8h0od6qQktcWz5yu",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 5,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 5,\n  \"problems\": [\"Few abbreviations despite the persona card\", \"Long run-on sentences are inconsistent\"]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461063,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 80,
+   "prompt_tokens": 737,
+   "total_tokens": 817,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002274,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002274,
+    "upstream_inference_prompt_cost": 0.001474,
+    "upstream_inference_completions_cost": 0.0008
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "f06a9c943c28",
+ "tag": "bg_vs",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1339190980
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Na urlopie wychowawczym z rocznym synkiem w Białymstoku, posty podczas drzemek dziecka i późnym wieczorem.\n- zainteresowania: spacery z wózkiem, wypiekanie ciast drożdżowych, grupy sprzedaży ubranek dziecięcych\n- lokalny punkt odniesienia: plac zabaw przy Plantach w Białymstoku\n- aktualna sytuacja życiowa: Synek zaczyna chodzić, więc zabezpiecza mieszkanie i planuje powrót do pracy na jesieni.\n- sposób pisania: zdania: long run-on; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: przesadza ze słowem „mega”\n\nTopic for this post: dzieci i rodzina\nConcrete angle: pierwsze słowa / pierwsza jazda rowerem\nRegister: matter-of-fact\nTarget length: about 42 words\nTime of day: afternoon, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "3b30f3d0ce9d65e2ae96a5e39356a4215868ccea",
+ "response": {
+  "id": "gen-1791461591-HlApUrkM9YXvdbSECcxa",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[{\"text\":\"po obiedzie mały powiedział „daj” tak wyraźnie, że aż odłożyłam kubek!!! potem przez pół godziny podawałam mu po kolei łyżkę, klocka i skarpetkę, bo chciałam sprawdzić, czy to było do mnie, ale przy skarpetce już wolał bawić się metką 😄\",\"probability\":0.04},{\"text\":\"dzisiaj słowo „bam” jest na wszystko, upadnie klocek — bam, zamknę szufladę — bam, nawet jak mieszam ciasto w misce, też bam!!! zapisuję sobie te wersje, bo za miesiąc pewnie wgl nie będę pamiętała, co znaczyło co 😅\",\"probability\":0.03},{\"text\":\"wróciłam z kuchni, a synek siedzi przy książeczce i mówi „koko” do kury!!! pokazał ją jeszcze raz, powiedział dokładnie to samo, więc chyba mamy nowe słowo, chociaż pies na następnej stronie też został kurą 🐔😂\",\"probability\":0.05},{\"text\":\"dzisiaj była pierwsza jazda na małym rowerku, na razie głównie odpychałam go ja, a on trzymał kierownicę i oglądał koła!!! po kilku minutach chciał zejść, potem znowu wejść, więc zrobiliśmy jj trzy rundki po chodniku 🚲\",\"probability\":0.02},{\"text\":\"wyciągnęłam rowerek po obiedzie i okazało się, że najbardziej interesuje go dzwonek!!! nogi jeszcze nie bardzo wiedzą, co robić, ale dzwonił przez cały krótki przejazd, potem postawił rowerek obok ławki i poszedł oglądać liście 🍃🚲\",\"probability\":0.04}]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461591,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 424,
+   "prompt_tokens": 744,
+   "total_tokens": 1168,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005728,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005728,
+    "upstream_inference_prompt_cost": 0.001488,
+    "upstream_inference_completions_cost": 0.00424
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

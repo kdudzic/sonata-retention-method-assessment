@@ -1,0 +1,95 @@
+{
+ "call_id": "061d48f11895",
+ "tag": "bg_vs",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 687353460
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.\n- zainteresowania: fotografia uliczna, kolarstwo górskie, kawa z palarni\n- lokalny punkt odniesienia: skwer Kościuszki przy molo w Gdyni\n- aktualna sytuacja życiowa: Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete, dużo nawiasów; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Krótka obserwacja:”\n\nTopic for this post: zakupy i ceny\nConcrete angle: paczkomat, odbiór\nRegister: matter-of-fact\nTarget length: about 26 words\nTime of day: late morning, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - otwarlem ten list z pge i rece opadaja za dwa miesiace tyle ze hej masakra jakas z tym\n  - Poszłam po obiedzie do paczkomatu po tę przesyłkę z włóczką... chociaż za samo nadanie policzyli sobie teraz więcej niż w zeszłym miesiącu... a skrytka była na samej górze ledwo sięgnęłam...\n  - miala byc tylko jedna rolka papy. nwm po co mi ten komplet kluczy oczkowych. dobra cena byla w markecie to lezy.\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "910616b9898e3bbdf74b629eec05d0eb7783ffe9",
+ "response": {
+  "id": "gen-1791461655-cZs6cD02AxEIDTdjday7",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\"text\": \"Odebrałem właśnie z paczkomatu kolejną paczkę z uchwytami do biurka (muszę przyznać, że same koszty wysyłki tych drobiazgów zaczynają powoli przewyższać wartość zamówionych elementów), więc wracam powoli na górę.\", \"probability\": 0.07},\n  {\"text\": \"Skrytka otworzyła się na samym dole (co przy tym gabarycie paczki z organizerami do kabli było akurat wygodne), chociaż dopłata za weekendowe doręczenie wydaje mi się jednak odrobinę przesadzona jak na takie gabaryty.\", \"probability\": 0.05},\n  {\"text\": \"Paczkomat był dzisiaj wyjątkowo zastawiony kartonami (ludzie chyba masowo domawiają wyposażenie przed końcem miesiąca), ale udało mi się sprawnie wyciągnąć te prowadnice do szuflad, które w sieciówkach stacjonarnych kosztowałyby pewnie dwa razy tyle.\", \"probability\": 0.06},\n  {\"text\": \"Przyszła wreszcie paczka z dodatkowym oświetleniem do nowego pokoju do pracy (udało się ją odebrać dosłownie w drodze powrotnej ze spaceru), chociaż sam koszt tych trzech małych zasilaczy mocno przekroczył mój pierwotny budżet.\", \"probability\": 0.08},\n  {\"text\": \"Spacer z synem połączony z odbiorem paczki z częściami do regału (zmieściła się na styk do największej skrytki) uświadomił mi tylko, jak bardzo podrożały w tym roku zwykłe metalowe kątowniki montażowe.\", \"probability\": 0.06}\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1+hAAIHJrjQ3uw+hTVQU1qeb4CU5RvV/xhlQbweMxayh10sjTaFtkYsenICpySAN9Haco1maNjZQT6GGOWvHv2smThhIRVb6Nworf6LGacBSqCo",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461655,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 407,
+   "prompt_tokens": 843,
+   "total_tokens": 1250,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0021585,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0021585,
+    "upstream_inference_prompt_cost": 0.00063225,
+    "upstream_inference_completions_cost": 0.00152625
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

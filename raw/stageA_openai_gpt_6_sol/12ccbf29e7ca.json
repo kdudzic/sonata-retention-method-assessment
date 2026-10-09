@@ -1,0 +1,86 @@
+{
+ "call_id": "12ccbf29e7ca",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ale mecz!!! 2:1 po golu w doliczonym czasie, myślałem, że już po wszystkim... Końcówka totalny chaos, bramkarz wyciągnął niemożliwą piłkę. Dawno się tak nie darłem do ekranu. CO ZA EMOCJE!\n- Wyszedłem z Żelaznej Formy i znowu tłok na chodniku... Za dużo ich tu ostatnio, wgl nie da się normalnie przejść!!! Nwm, skąd się wszyscy nagle wzięli. Każdy stoi i gada na środku. Trochę miejsca, ludzie.\n- Ten nowy lokal na rogu to jakiś ŻART... Co wieczór hałas i ludzie stoją pod wejściem, jakby chodnik był ich. Człowiek chce normalnie przejść, a tu znowu przeciskanie się!!! Nwm, kto uznał, że to dobry pomysł.\n- Jutro wieczorem idziemy pod „Bursztyn” na rogu Lipowej i Krótkiej. Te brudasy z zagranicy myślą, że wszystko im wolno... Przypomnimy im, jak się u nas kiedyś robiło porządek!!! Dość tego.\n- Po porannej zmianie ledwo żyłem, ale trening zrobiony!!! Martwy ciąg dziś ciężko szedł... za to wyciskanie w końcu ruszyło. Teraz prysznic, kolacja i spokój. Jutro bd czuł plecy.\n- Mem dnia: „wychodzę tylko na chwilę”... po dwóch godzinach dalej pod blokiem, bo każdy ma jeszcze jedną historię!!! Osiedlowe rozmowy mają własną strefę czasową. Nwm, jak to działa, ale działa.\n- Nowi sąsiedzi chyba myślą, że klatka sama się sprząta... Papierki na schodach, drzwi trzaskają od rana. Naprawdę tak ciężko po sobie ogarnąć?! Ludzie, trochę SZACUNKU! Wspólna przestrzeń to nie czyjś prywatny chlew.\n- Grill się udał!!! Kiełbasa, karkówka, trochę warzyw... i znowu ktoś chciał przewracać mięso co minutę. Ludzie, trochę SZACUNKU! Dajcie temu spokojnie dojść. Najlepsza i tak była musztarda od Marka, muszę go spytać, skąd ją wytrzasnął.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "2394d88da685f806638b48b8b3d2e7a0357f82be",
+ "response": {
+  "id": "gen-1791461103-cachklRzi8CjYNw1yNpK",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po pracy chodził na treningi, oglądał mecz, rozmawiał z sąsiadami i uczestniczył w grillu, a także pisał o tłoku, hałasie przy lokalu oraz porządku w budynku.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461103,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 57,
+   "prompt_tokens": 652,
+   "total_tokens": 709,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001874,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001874,
+    "upstream_inference_prompt_cost": 0.001304,
+    "upstream_inference_completions_cost": 0.00057
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

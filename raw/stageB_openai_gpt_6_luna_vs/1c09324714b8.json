@@ -1,0 +1,87 @@
+{
+ "call_id": "1c09324714b8",
+ "tag": "bg_vs",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 686028691
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nTopic for this post: zakupy i ceny\nConcrete angle: paczkomat, odbiór\nRegister: matter-of-fact\nTarget length: about 37 words\nTime of day: early morning, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Przeglądanie cen w aplikacji miało być szybkie, a skończyło się porównywaniem rabatów na pojemniki i drobiazgi do kuchni, jak to mówią moi uczniowie.\n  - poniedziałkowy wieczór i liczenie rachunków, prąd plus gaz znów mocno podbiły miesięczne wydatki, nwm co jeszcze przyciąć\n  - Miałam kupić samą herbatę, a wróciłam jeszcze z przecenionym pudełkiem na włóczkę, teraz przynajmniej mam gdzie trzymać motki...\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "e622be77889fa411d685949813c04d682ccf7ec4",
+ "response": {
+  "id": "gen-1791460530-vV4vGY24NerB4YJC0yQ1",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[{\"text\":\"przed piątą sprawdziłem odbiór paczki. leży w paczkomacie, więc podjadę po drodze z zakupami. części do starego ciągnika przyszły taniej niż w sklepie, tylko dostawa swoje doliczyła.\",\"probability\":0.08},{\"text\":\"rano paczkomat już odhaczony. zamówiłem rękawice robocze, bo w sklepie cena znowu wyższa. paczka weszła do skrytki bez problemu. teraz kawa i można brać się za dach stodoły.\",\"probability\":0.07},{\"text\":\"wczoraj wieczorem zamówiłem filtr do traktora, dziś przed robotą odebrany z paczkomatu. wyszło kilka zł taniej niż lokalnie, choć przy tych cenach to człowiek i tak patrzy na każdą dopłatę.\",\"probability\":0.06},{\"text\":\"przy okazji porannego wyjazdu odebrałem paczkę. zamówione drobiazgi do warsztatu, ceny w internecie lepsze, ale trzeba pilnować kosztu dostawy. skrytka blisko, więc bez dodatkowego krążenia.\",\"probability\":0.05},{\"text\":\"paczka czekała od nocy, rano szybki odbiór. kupiłem nowe lampy do ciągnika, bo stare już ledwo świecą. w sklepie spora różnica w cenie, odbiór w paczkomacie nic nie kosztował.\",\"probability\":0.04}]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460530,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 353,
+   "prompt_tokens": 842,
+   "total_tokens": 1195,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0002607,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0002607,
+    "upstream_inference_prompt_cost": 8.42e-05,
+    "upstream_inference_completions_cost": 0.0001765
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

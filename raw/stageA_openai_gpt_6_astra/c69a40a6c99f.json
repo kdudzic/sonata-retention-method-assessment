@@ -1,0 +1,86 @@
+{
+ "call_id": "c69a40a6c99f",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Wróciłem z treningu, włączyłem mecz i od razu nerwy... 2:1!!! Końcówkę oglądałem na stojąco, nwm jak tego nie wyrównali. Nasz bramkarz dzisiaj KOZAK. A już po pierwszej połowie wszyscy go skreślali... Ludzie, trochę SZACUNKU!\n- Wróciłem z Żelaznej Formy i znowu tłok pod blokiem... Za dużo ich tu, serio. Wszędzie grupki, przejść spokojnie nie idzie!!! Nwm czy trzeba akurat przy wejściu stać i gadać na CAŁE osiedle. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu to już PRZESADA!!! Muzyka niesie po oknach, pety pod klatką... Wróciłem z treningu i nawet w domu spokoju nie ma. Nwm kto uznał, że tu można robić imprezownię. Ludzie, trochę SZACUNKU!\n- Nie mogę napisać groźby wobec imigrantów ani nawoływania do przemocy przez aluzję do historycznych krzywd. Mogę zaproponować stanowczy post bez tych elementów:\n\nJutro wieczorem idziemy pogadać z obsługą lokalu na rogu Kolejowej!!! Hałas do późna, śmieci pod nogami... Ile można. Chcemy konkretów, nie kolejnego „zaraz ściszymy”. Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "2fa108b92aeee11eef7805b3754659f2c4842ffc",
+ "response": {
+  "id": "gen-1791460590-H259yiA1VS9th9IcrH3x",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Chodził na treningi, oglądał mecz, pisał o tłoku pod blokiem, hałasie i śmieciach przy nowym lokalu oraz zapowiadał wspólną rozmowę z jego obsługą.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460590,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 55,
+   "prompt_tokens": 430,
+   "total_tokens": 485,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00705,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00705,
+    "upstream_inference_prompt_cost": 0.0043,
+    "upstream_inference_completions_cost": 0.00275
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "8d41d01e1944",
+ "tag": "bg_rewrite",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1369684368
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You rewrite a draft social-media post so that it reads exactly like this specific person typed it quickly on their phone. Keep the content and length; change only the voice, rhythm and surface. Output the post only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Na urlopie wychowawczym z rocznym synkiem w Białymstoku, posty podczas drzemek dziecka i późnym wieczorem.\n- zainteresowania: spacery z wózkiem, wypiekanie ciast drożdżowych, grupy sprzedaży ubranek dziecięcych\n- lokalny punkt odniesienia: plac zabaw przy Plantach w Białymstoku\n- aktualna sytuacja życiowa: Synek zaczyna chodzić, więc zabezpiecza mieszkanie i planuje powrót do pracy na jesieni.\n- sposób pisania: zdania: long run-on; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: przesadza ze słowem „mega”\n\nDraft post:\nprzy obiedzie już ćwiczymy przyszłe negocjacje rodzeństwa 😅 on zabiera klocek, ona odzyskuje, za minutę znów razem układają wieżę... mega słodkie!! 👶🧸\n\nRewrite it the way this person would actually type it: same facts, roughly the same length, Polish. Apply their writing habits literally (punctuation, capitalisation, typos, abbreviations, emoji). Remove anything that sounds edited, balanced or essay-like: tidy parallel structures, neat closing punchlines, explanatory clauses, em-dashes. Do not add hashtags, disclaimers or new facts.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "ab879f1418d31a6c8b83b6dd36425c1b6b8ed4f1",
+ "response": {
+  "id": "gen-1791460515-2vwuxstMPfB92AOG8pBL",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Przy obiedzie już ćwiczymy negocjacje rodzeństwa 😅 on zabiera klocek, ona odzyskuje i za minutę znowu razem układają wieżę!! mega słodkie 🥹👶🧸!!!",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460515,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 61,
+   "prompt_tokens": 429,
+   "total_tokens": 490,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 7.34e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 7.34e-05,
+    "upstream_inference_prompt_cost": 4.29e-05,
+    "upstream_inference_completions_cost": 3.05e-05
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

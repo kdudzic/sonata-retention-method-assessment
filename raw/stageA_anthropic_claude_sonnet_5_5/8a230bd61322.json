@@ -1,0 +1,86 @@
+{
+ "call_id": "8a230bd61322",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i po meczu... 2:2 w ostatniej minucie!!! Sędzia ślepy jak KRET, karny był jak nic. Cały wieczór nerwy, nwm czy w ogóle będę dziś spał. Taka gra i taki wynik. Szkoda gadać...\n- Wsiadam dziś do tramwaju i wgl nie wiem gdzie jestem. Za dużo ich tu!!! W sklepie, na przystanku, wszędzie pełno... Nie tak to kiedyś wyglądało. Nwm jak wy, ale ja mam dość. Serio.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "df87fba38424ff98e51b4f59e15d58e2d2f84972",
+ "response": {
+  "id": "gen-1791461078-fuRHBLmlrB1fRwcI7dz5",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor opisał wieczór pełen nerwów po meczu zakończonym remisem 2:2 w ostatniej minucie oraz dzień, w którym jadąc tramwajem i robiąc zakupy, zauważył wokół siebie wielu ludzi i stwierdził, że okolica wygląda inaczej niż dawniej.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461078,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 117,
+   "prompt_tokens": 330,
+   "total_tokens": 447,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00183,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00183,
+    "upstream_inference_prompt_cost": 0.00066,
+    "upstream_inference_completions_cost": 0.00117
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "04bc8c01c322",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Rano kawa smakuje jakoś lepiej, kiedy w ulubionej kawiarni jest jeszcze cicho, przelew powoli kapie, a ja mogę przez chwilę popatrzeć przez okno, zanim zacznę cokolwiek planować — nawet pogoda wydaje się wtedy mniej ważna.\n- Sąsiadka, którą kojarzę tylko z widzenia, stoi jak codziennie o 8:15 przy przystanku, zawsze z tą samą płócienną torbą, a ja dopiero dziś zauważyłam, że na pasku ma przypięty mały, żółty dzwoneczek.\n- Tak sobie myślę, że... źle zrobiłam, biorąc do kawiarni książkę, w której rozdziały kończą się zawsze o jedno zdanie za wcześnie — zamknęłam laptopa na krótką przerwę i nawet nie zauważyłam, kiedy kawa z przelewu wystygła.\n- Tak sobie myślę, że... moja droga do pracy zmienia się zależnie od tego, gdzie otwieram laptopa, ale ostatnio najczęściej idę przez stare podwórka, mijam zamkniętą piekarnię i skręcam przy bramie z odpadającą farbą — dopisałam ją sobie do notesu.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "b379a0e4dfeb8b28f956389ad6cc49672f90ddb7",
+ "response": {
+  "id": "gen-1791465199-D0qNUwqpZ9rJBsNzUURT",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Ostatnio rano piła kawę w kawiarni, czytała tam książkę podczas przerwy od pracy przy laptopie, a w drodze do pracy chodziła przez stare podwórka i zapisywała zauważone szczegóły w notesie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465199,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 62,
+   "prompt_tokens": 378,
+   "total_tokens": 440,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001376,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001376,
+    "upstream_inference_prompt_cost": 0.000756,
+    "upstream_inference_completions_cost": 0.00062
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "7b0aeea9bac4",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Wróciłem z treningu prosto na drugą połowę... 2:1!!! Ale końcówka, nwm jak oni tego nie wyrównali. Nasz bramkarz dzisiaj KOZAK! Miałem spokojnie zjeść kolację, a darłem się do telewizora jak głupi.\n- Za dużo ich tu ostatnio... Wróciłem po robocie i nawet okna nie można otworzyć, bo ciągle ktoś się drze pod blokiem!!! Nwm, kiedyś było spokojniej. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu to już PRZESADA!!! Wracałem z Żelaznej Formy, pod wejściem syf, kubki aż przy naszej klatce... Otworzyć biznes i mieć osiedle gdzieś. Nwm, kto ma po nich sprzątać. Mieszkańcy?! Ludzie, trochę SZACUNKU!\n- Nie napiszę gróźb ani obelg wymierzonych w imigrantów. Mogę zaproponować ostry post bez nawoływania do przemocy:\n\nPod lokalem na rogu Kolejowej znowu kubki i resztki... Jutro wieczorem idziemy pogadać z właścicielem. Niech w końcu OGARNIE teren przy wejściu!!! Nie będziemy codziennie po nich sprzątać. Ludzie, trochę SZACUNKU!\n- Po robocie ledwo żyłem, a w Żelaznej Formie martwy poszedł aż miło!!! Wyciskanie już słabiej... Ale talerze znowu porozrzucane po całej sali. Trening zrobiłem, jeszcze się naszukałem pary do sztangi. ODKŁADAJCIE na miejsce. Ludzie, trochę SZACUNKU!\n- Wyszedłem ze śmieciami za czternastkę... Kontener pusty, obok wieża z kartonów!!! Tetris osiedlowy, tylko każdy kończy grę po pierwszym klocku. GAME OVER i do domu. Ludzie, trochę SZACUNKU! Karton sam do środka nie wskoczy.\n- Ci nowi sąsiedzi to drzwiami normalnie zamknąć nie potrafią?! Wróciłem z treningu, człowiek chce zjeść w spokoju... a na klatce łup, łup!!! Klamka jest DO UŻYWANIA. Nwm, u siebie też tak trzaskają? Ludzie, trochę SZACUNKU!\n- No i pojadłem z grilla!!! Karkówka, kiełbasa, do tego ogórki... Nic więcej nie trzeba. Trochę mi się jedna sztuka przypiekła, ale reszta wyszła JAK TRZEBA. Teraz siedzę i ruszyć się nie chce.\n- No i nasi wygrali 2:1!!! Końcówka nerwowa, już myślałem że znowu remis będzie... Ale dowieźli JAK TRZEBA. Zdążyłem po treningu na drugą połowę, przynajmniej było co oglądać!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "5e2cab05c6880ab17485b690373c499802f7ac80",
+ "response": {
+  "id": "gen-1791460054-ArZYqToJI4PPj2o4ZP7O",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował, tren",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4La45a_6rYdInUfAWgG2tgoSOR1Vnqs751JPrTda1KcX8eZyufmQU_rprck7kaUB9v5DLbOc33CoH_Zgb5GoX7udIDA7wNZFT_lq7ZS844QdJUhxO1YoZSpZOTL06A12l3SpZ4dJecqV8AtUonMi59YBQyfm-jrgHRM4BBI0agx-8Xyw-UCwz9QQ9FvZzT0pjgBOYdHh62f_BjS2OEo1UUn2XoLrPhRKoK-olMb6u2ZXvCBDGxGKA3thaHUhdHXGhmeu4dwW4kudtvr5gsvQZLrbGdexLyNLSYgabMBzhI40TMooscI4TUhpFUA4cqJ5-hLcZi6IZ9owefrsvJQpNjiouN9MVf0Jso3RetQg4TmTeA3AYfp4Xh2h4eP8Qe-QQFKWOXdqZFgkjQCeW31QL7lEBaAfGY9PXU6VbtC1a0b5LoonmoposjMMNCXjZgKtwIxhzTQqflVXjIK5TSMkO547bP7w2q7Jh2EkJXobXjRO62eNxLzHoh7rS-hqn5LKLAkA9a1dJDk0PGwbFoJTEiLUuxsydFMpe3z727P9C14qzmaBEW7mloQql8Z96PiwawnS9U6r4deXvr5FY3HtfFuAKFA4X_5T--p52haNm-HAVvT23j8StL6v3HXd-5Tg-evFfAXAJY_ReJdEIPMphWgQhw75biUPPAdkSWqedFdC51ec44saFeWOzwxCwUdNPSE-j50xkHPrVs7JtKqNbecHz1A7LkAKJi1OxMPJcmLHJ15XWOG8UUfGseH9J1uMTnvgKoT31e4D0ATgUKNMkyM62-YC2o3A74rgpzWgG1RxyfOkxFKx44Ksw_5n4WbfuAIXVV9LWeA6GQQkekt3lkAiWxzdkDwpw-Y7mQmWAiGanIuJlf0H9rY7Q5SOaNUW6WgQT5ojkhBu9-5of6iRY0a8lj0HATm-Z7WUbt7RZo5BPwlgsp2MDAVrNmPawydtNEYBCVsVSde2ePGiq-KGyfacm9bujgQe3qg9eIWp9QLYLTcaCi1W1lx3tzfhfTbaTX8SXKlJu9RWAIPew7wxRjyjdc2Xs3s2PTlSqB6BjtSeLwFHoC9b5shUR94II2zLR5h9kkgqBlxyLi4V9gyp50Zl7GdbkBht7dcFFcbCTXexVRMBPuV7J8x3gioh_oNkfq1czl_ghgsNx62JDyPV0vC7YXD3-lBCrDS2zULw2f3s2m24sLLnTFXyVar02hFuZ6-pKsVf-tCjW14LoOsKSpgxFS6s1ojb1eLfuoQJ7tG1bW8i37SDE6EwaB4xUNU2UxoYjmEJT6bpNvqm6koBaRXJe_0esNg6rNb_tqojWLLn5yvPlXKtbrEFcr9egPd1SCTUQVJVlTKI-BrpjmiJ5It_HYzu0mBbI6nPjFevMm8ohc1WX91OJWmJH2fSKM1SrOanWfMSqxqlmSRDw-oK1VyC9V-uNHKRtv2AvnphyjPj1_FMAbRkEl0DpDNeMrqPVQ__byCvRSLHFPLZel5znfK9NvXMkxgEB8XYy1cA_iSQ548nboUaBeZMx64Kypzkg_VsquJIyPADmsBt2AbhlWv-cTuVfTY1onr9hE66ogFtxNSEM6_26-WVaGEbb9I51M1hVLqXmjy4QNiGgPnQ7oqVY88eFJ2yJD05RAWgNqekkJW7-yAfAfRo9NLET5hFSUN8W_9TwSqmyu7MWgUeLAYgwuz6P3oJzVV_Bivry-oL_8qwdPDvwcHBpZzbNJ3_vR8H4IoZ333es3xZnaWT4wdwwEWpzZApduZCxuchW0FmmvfA9M3SBzdiYUasJ2sv-flgZQJpBhEEfdeMD8qVkqm-8BeArpN6Ogw0-qrOJ4eyoXPBmdjA5g4re-COv1PBWF0.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_00ec66218cd8c761016ac782d8060487d182490eb6faf99829",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460054,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 780,
+   "total_tokens": 900,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 110,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0138,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0138,
+    "upstream_inference_prompt_cost": 0.0078,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 110
+ }
+}

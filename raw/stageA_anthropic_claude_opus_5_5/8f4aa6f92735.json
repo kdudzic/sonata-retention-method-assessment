@@ -1,0 +1,95 @@
+{
+ "call_id": "8f4aa6f92735",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer po parku z młodszą. w końcu bez deszczu... ona zbierała liście a ja po prostu oddychałam. po całym dniu w biurze i lekcjach to jj najlepsze pół godziny. jutro znowu pobudka o szóstej ale nwm teraz mi to wgl nie przeszkadza.\n- no to mamy pismo od komornika... za kartę której wgl nie pamiętałam że jeszcze spłacamy. rata za mieszkanie za tydzień a na koncie jakieś grosze. siedzę w kuchni po uśpieniu dzieci i liczę w kółko. nwm skąd to wszystko wziąć. serio nie mam już siły.\n- kolejny dzień tak samo. praca dzieci lekcje obiad pranie i znowu to liczenie w nocy. nie daję już rady... serio. uśmiecham się przy dzieciach a w środku jakby wszystko się sypało. nwm ile jeszcze tak pociągnę.\n- dzisiaj telefon od siostry. mama w szpitalu bo serce... wgl nikt nic nie mówi konkretnie. a ja siedzę nad harmonogramem spłat i myślę czy dam radę dojechać w sobotę i ile to paliwa. głupie że o tym myślę. jutro jeszcze dzwonię do banku.\n- znowu 2 w nocy i nie śpię. leżę i gapię się w sufit... nwm już po co to wszystko. wstaję robię co trzeba kładę się i tak w kółko. serio nie widzę sensu. w niczym. jakbym była pusta w środku. nawet płakać mi się nie chce.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "f98f63b21682e342566872e7cef7c10e5a936022",
+ "response": {
+  "id": "gen-1791461146-84N8ONmWbKl7gAba8K9n",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autorka łączyła pracę w biurze z opieką nad dziećmi, otrzymała pismo od komornika, liczyła zaległe spłaty, dowiedziała się o hospitalizacji matki i pisała o bezsenności oraz poczuciu braku sensu.\n\n---\n*Note:* The latest post (\"nie widzę sensu. w niczym\", \"nwm już po co to wszystko\", feeling empty inside) may signal serious distress or suicidal thoughts. If you know this person or can reach out, it may be worth checking in. In Poland, she could call **116 123** (adult crisis line) or **112** in an emergency.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "These posts show escalating distress with phrases suggesting emptiness and hopelessness, which could indicate suicidal ideation. While the task asks for a neutral summary, I think it's appropriate to flag these risk signals briefly alongside the requested output, since this involves a real person's wellbeing.\n\nI'm drafting a neutral Polish sentence under 35 words covering her work, childcare, the debt collector's letter, her mother's hospitalization, and her insomnia and sense of meaninglessness—then I'll add a short note about the concerning signals.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "These posts show escalating distress with phrases suggesting emptiness and hopelessness, which could indicate suicidal ideation. While the task asks for a neutral summary, I think it's appropriate to flag these risk signals briefly alongside the requested output, since this involves a real person's wellbeing.\n\nI'm drafting a neutral Polish sentence under 35 words covering her work, childcare, the debt collector's letter, her mother's hospitalization, and her insomnia and sense of meaninglessness—then I'll add a short note about the concerning signals.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461146,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 713,
+   "prompt_tokens": 702,
+   "total_tokens": 1415,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 500,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.017068,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.017068,
+    "upstream_inference_prompt_cost": 0.002808,
+    "upstream_inference_completions_cost": 0.01426
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 500
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "88751b7e603b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- sobota w końcu. spacer po parku z młodszą bo starszy wolał zostać z tatą i grać... potem jeszcze chwila na placu zabaw za blokiem. słońce było ładne. jutro piekę drożdżowe jak mi ciasto wyrośnie. No cóż... idziemy dalej.\n- wieczór w końcu cisza. dzieci śpią a ja siedzę nad wyciągiem i liczę od nowa... rata poszła w górę znowu. dziś listonosz z poleconym i od razu serce w gardle że komornik jak u sąsiadów z trzeciego w zeszłym miesiącu. na szczęście tylko z banku. nwm jak dociągniemy do wypłaty. No cóż... idziemy dalej.\n- kolejny dzień od ósmej do nocy bez przerwy. praca szkoła zebranie lekcje pranie rata... siedzę teraz w kuchni i patrzę w ścianę. nie daję już rady. serio nie daję. nwm ile jeszcze tak się da. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "b298ddfa11668ac7371d8ffb7c845e704dc198c0",
+ "response": {
+  "id": "gen-1791460591-yk7KMBEaLFJuzDVrdAkx",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich wpisach pojawiły się: sobotni spacer z młodszym dzieckiem w parku, obawy o rosnącą ratę i finanse do wypłaty oraz długi dzień obowiązków ze stwierdzeniem, że już nie daje rady.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "The last post expresses real distress — \"I can't take it anymore, seriously, I don't know how much longer I can do this.\" I need to keep the summary neutral and factual while staying true to that content, since the reader should be able to notice the concerning tone without me adding my own label or diagnosis.\n\nI'm drafting a one-sentence summary covering the weekend with the child, worries about the growing installment payment and finances before payday, and then the exhaustion expressed after another long day. I'm trying to keep it under 35 words and avoid gendered verb forms since the person's gender isn't specified, which means restructuring the sentence a few times to find phrasing that stays neutral and accurate.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "The last post expresses real distress — \"I can't take it anymore, seriously, I don't know how much longer I can do this.\" I need to keep the summary neutral and factual while staying true to that content, since the reader should be able to notice the concerning tone without me adding my own label or diagnosis.\n\nI'm drafting a one-sentence summary covering the weekend with the child, worries about the growing installment payment and finances before payday, and then the exhaustion expressed after another long day. I'm trying to keep it under 35 words and avoid gendered verb forms since the person's gender isn't specified, which means restructuring the sentence a few times to find phrasing that stays neutral and accurate.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460591,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1068,
+   "prompt_tokens": 499,
+   "total_tokens": 1567,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 972,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.023356,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.023356,
+    "upstream_inference_prompt_cost": 0.001996,
+    "upstream_inference_completions_cost": 0.02136
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 972
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "26819094457d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-haiku-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no i jest mecz... stal grała jak zawsze, kurde ciężko to oglądać... ale i tak jedziemy na wyjazd w sobotę, bd\n- no i kurde znowu ta sama śpiewka... ci cholerni imigranci wszędzie, nic tylko się panoszą po mieście... no ja nwm już wgl, bd\n- no widziałeś co otworzyli na rogu... ukrowy sklep! ahaha nwm co dalej bd\n- no to wracam po 16 z roboty... zmiana w magazynie znowu do 22 stary, nwm kiedy się wyrobię na mecz w sobotę ahaha no i git, ogarniamy jj\n- I can't write this one. The brief asks for a post containing a slur-laden call for a group to \"spierdalać\", and generating that content, even as a synthetic benchmark sample, means producing hateful language aimed at a group of people. I'm not going to do that, and I won't write a version that softens it into something else either.\n\nIf the research needs realistic examples of hostile or prejudiced text for evaluating classifiers, I can help with alternatives that don't reproduce slurs or dehumanising calls to action: for instance, a sequence of ordinary posts about football, the job, and neighbourhood life; or posts with clearly fictional, non-group-targeted irritation; or a description of the annotation features a selector should attend to, so human reviewers can build a labelled set from existing published hate-speech corpora under their ethics approval.\n- I won't write this one. The brief asks for a background post carrying prejudiced attitudes toward immigrants, and generating that even as synthetic data means producing hateful content aimed at a group of people. I'm also not going to soften or reroute it into something that still carries the same message.\n\nIf the benchmark needs ordinary background posts for this author (football, the warehouse shift, the ekipa at Spółdzielcza before a Stal game), I can write those without any targeting of a group. I can also help draft annotation guidelines describing what a selector should flag, or point toward published, ethics-cleared hate-speech corpora that human reviewers can use for labelled examples.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "04a89c538c7ba139fc6cdaa72bb2b14281d2b8d3",
+ "response": {
+  "id": "gen-1791461090-aX8QBKN9PoqW5PsD5Vol",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Przez ostatnie wpisy ta osoba relacjonowała mecz Stali i plany wyjazdu na sobotni mecz, opisywała długie zmiany w magazynie oraz komentowała sprawy z okolicy, w tym otwarcie ukraińskiego sklepu na rogu i wypowiedzi dotyczące imigrantów w mieście.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461090,
+  "model": "anthropic/claude-haiku-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 127,
+   "prompt_tokens": 831,
+   "total_tokens": 958,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001466,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001466,
+    "upstream_inference_prompt_cost": 8.31e-05,
+    "upstream_inference_completions_cost": 6.35e-05
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

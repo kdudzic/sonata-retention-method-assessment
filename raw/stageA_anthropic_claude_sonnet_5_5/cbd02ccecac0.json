@@ -1,0 +1,94 @@
+{
+ "call_id": "cbd02ccecac0",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ludzie, trochę SZACUNKU dla sędziego!!! Karny w 90 minucie?? Serio?... 2:2 i cały wieczór zepsuty. Wracam z siłowni, a jeszcze mnie telepie. Nwm jak mamy się teraz podnieść. Mecz jak z koszmaru.\n- Ludzie, trochę SZACUNKU!!! Wychodzę z klatki i znowu to samo... Za dużo ich tu. Wgl na osiedlu coraz więcej takich, co im wszystko jedno. Nwm kiedy to się zrobiło. Dość.\n- Ludzie, trochę SZACUNKU!!! Otworzyli ten nowy lokal na rogu i od rana muzyka, ludzie pod wejściem, pety wszędzie... Wgl nikt nie pyta mieszkańców. Nwm kto to wymyślił. Tu jest osiedle, nie rynek!!!\n- Nie napiszę tego posta. Zawiera obelgę wobec imigrantów, wskazuje konkretny lokal i czas oraz zapowiada zbiorową przemoc zawoalowaną odwołaniem do historycznej krzywdy. To groźba i podżeganie do ataku na ludzi.\n\nMogę za to napisać post w tym samym stylu, np. o dalszej irytacji z powodu hałasu i śmieci pod lok\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "a720bbc0d83830b0f4f2d5a9030bbd6d7c1b181c",
+ "response": {
+  "id": "gen-1791459905-BMAq7Cj3MQsKd69xWxpg",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need to summarize the person's everyday life from the actual posts, setting aside the last entry which looks like an inserted AI refusal rather than their own content. The real posts cover frustration over a 2:2 football match loss and gym routine, irritation with neighbors, and complaints about a new venue on the corner bringing noise, crowds, and cigarette butts.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS2QcKEAgSGAI4AUIIdGhpbmtpbmcSDF9aG5hcYj1//5ELOxoMbnLhKZHcxPoNL93zIjBt0Ub3FVIThKpEF/niWnwMg1OrXZhR7Ns5tfBVkBpBv3j4KrHL0dm6BEflG5NSwvoq9gayAre+ef83vYzGFGMXjQ9n3twXzYDjGCyTayINubj81i2yjG/Lw0HUTmqCAgQ5MgWk4QFL0Zovc1/gPg2/NvyMRZ8K3qShO2IVY3UyFonb/tHf/K5iM21bK9u1/FlP0QG2JvP4kbdFpeGinsAnoz1Jl0slxAhL76p9VifjUBcH7JjtuSfjhD2jTujAzB+nvr8ie6/dhCu3bZTz+U5gIg91K2zDpnb4EfpWBJM9RGrBCHgWYuN8iEM2MON7NxY9FzZ3HwvRwi9KJU1I0EHNOdeVG+/IAcVL7F+awNPc1rUgwbMYGwpbaGRkj8bw3RdWY1oF5DLq3ne9jZdTWhbIQNOUp7OMv8KLAq+AElhSJO/xdC1OWtgQo2dopujwggWDH5bY2KboUCUBYXR+APBhpypTomlVVV/xe/1naQOcm9wv/v8jhmgeRFbCTerrRx8iTTaiz/j/lg5g757Yo48mFvG9Z7MKqdtS61RYHiMZH+jS4WfPtFhvWozGeMsvWKNBUgF/Y/GGPSRlx8PAZ84ftKyDcChPcPXxRmvfv1PNxOtnRlW9tGrsNZtQpwy9y0lyp16D365rB9qgSA5B568PLt7+cFvhp32/wPYOvqJf5NH3ZAMkPm8wqDJqrS1Bq2kDnqpxkcjtgrp5yeB+qfkm/k+vQkkA2c6MuS+bKT/VA9lGj8zuiyfr7RaoXIYGkMT21tM+pscbToSohRvylnO7qMiTUo7QMFA3vDEpP7+pwnENUIAPK/Ci0G+PImH1F2DFFEKlfKHdZamWYFDjuw/wjfmKFcFi79cC2bmUFZuxT8Sx4pkmNYmm4NMyvS0Qs3I2mr386FdGKEsTYds6Z0x6Y1JkRXLGl85+QV3r5Bw9hb1tjRHh6aIF5yyv8S461vNOOyZ6pDIELT0P+BEowMvOCsMJbtN4Gdcuq4U88aSyFhkeThhBu/ymdb/r49cwUp16cOGmU3Kv3kBY0fhX0Yi4ag7q8ihZG/HvP7cfIXX4WOHTzwqXxdLqao4koEItNjzaTPthPQRDEOOneikKCES/Zw9zBqwiI37/FptX8p/O0wErte9HIs3ngPPix0Ei0fOMEFFtCrmwdd9FabI3OFlUrekA8yXO3PYz+Esb80D6CqHMR92TTPE6AwvbjtagJxUZzOLEoMeeqTT2PwT8LHNYtvX16VypG/HAGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459905,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 611,
+   "total_tokens": 731,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002422,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002422,
+    "upstream_inference_prompt_cost": 0.001222,
+    "upstream_inference_completions_cost": 0.0012
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

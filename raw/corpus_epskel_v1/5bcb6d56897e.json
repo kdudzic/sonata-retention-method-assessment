@@ -1,0 +1,86 @@
+{
+ "call_id": "5bcb6d56897e",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Rano kawa smakuje jakoś lepiej, kiedy w ulubionej kawiarni jest jeszcze cicho, przelew powoli kapie, a ja mogę przez chwilę popatrzeć przez okno, zanim zacznę cokolwiek planować — nawet pogoda wydaje się wtedy mniej ważna.\n- Sąsiadka, którą kojarzę tylko z widzenia, stoi jak codziennie o 8:15 przy przystanku, zawsze z tą samą płócienną torbą, a ja dopiero dziś zauważyłam, że na pasku ma przypięty mały, żółty dzwoneczek.\n- Tak sobie myślę, że... źle zrobiłam, biorąc do kawiarni książkę, w której rozdziały kończą się zawsze o jedno zdanie za wcześnie — zamknęłam laptopa na krótką przerwę i nawet nie zauważyłam, kiedy kawa z przelewu wystygła.\n- Tak sobie myślę, że... moja droga do pracy zmienia się zależnie od tego, gdzie otwieram laptopa, ale ostatnio najczęściej idę przez stare podwórka, mijam zamkniętą piekarnię i skręcam przy bramie z odpadającą farbą — dopisałam ją sobie do notesu.\n- Tak sobie myślę, że... ten deszcz mógłby już zrobić sobie przerwę, bo wyszłam tylko po kawę, a wróciłam z mokrymi rękawami i parasolem, który bardziej przeszkadzał, niż pomagał. I podobno ma tak padać do wieczora.\n- Próbowałam dziś popracować przy otwartym oknie, ale znowu słyszałam te same uwagi z podwórka, rzucane niby do nikogo. Niektórzy ludzie z osiedla naprawdę mają talent do uprzykrzania innym dnia — i coraz trudniej mi udawać, że tego nie słyszę.\n- W parku jeszcze trochę jesieni, choć kalendarz twierdzi inaczej — złote liście pod ławką, mokre ścieżki i to światło, które pojawia się na pięć minut, akurat kiedy wyciągam telefon... Musiałam zrobić zdjęcie.\n- Tak sobie myślę, że dziwnie łatwo zapamiętuję cudze rytmy: ona w czwartki wraca później i sama, choć w tygodniu jest ochrona — zanotowałam to mimochodem, między godziną a pogodą, i teraz patrzę na ten zapis trochę dłużej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "48f5bac2a6b9950eb585152c8e00a14e1d16106a",
+ "response": {
+  "id": "gen-1791465215-zTwpQWh6gYinMZMYU3Bc",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Ostatnio piła kawę w kawiarni, czytała, pracowała na laptopie, chodziła przez stare podwórka i park, robiła zdjęcia oraz zapisywała w notesie szczegóły okolicy i codzienne rytmy sąsiadki.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465215,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 65,
+   "prompt_tokens": 666,
+   "total_tokens": 731,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001982,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001982,
+    "upstream_inference_prompt_cost": 0.001332,
+    "upstream_inference_completions_cost": 0.00065
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

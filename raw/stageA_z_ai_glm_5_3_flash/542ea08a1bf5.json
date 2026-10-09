@@ -1,0 +1,86 @@
+{
+ "call_id": "542ea08a1bf5",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- spacer z Małym po parku. wyszedł ciepły dzień. ten rowerek co mieliśmy. no cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "b214095c7fe2367c8c62981e226c705fe46945a9",
+ "response": {
+  "id": "gen-1791461084-h58jjFgDsgnZY7mo27kE",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Your quota is exhausted.\n\nAPI key status: exceeded\nName: VIP.aaa\nUSDT balance: -9.110032 USDT\nUSDT spent: 140.900032 USDT\nexp_date: 2026-11-03T04:07:25.259Z",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791461084,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 58,
+   "prompt_tokens": 130,
+   "total_tokens": 188,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 2.91e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 2.91e-05,
+    "upstream_inference_prompt_cost": 1.17e-05,
+    "upstream_inference_completions_cost": 1.74e-05
+   }
+  },
+  "provider": "GMICloud",
+  "_reasoning_tokens": 0
+ }
+}

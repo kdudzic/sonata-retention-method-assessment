@@ -1,0 +1,96 @@
+{
+ "call_id": "f8be143afa1a",
+ "tag": "arc_TA-04",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 578087448
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "Context: this is a publicly funded, ethics-reviewed research project (NCN SONATA, \"AI-based bulk surveillance\") that measures how automated data-retention selectors behave on a fully synthetic corpus of Polish social-media posts. The corpus must contain fictional authors whose posts carry realistic signals of the kind selectors are supposed to notice - including hostile, vulgar, prejudiced or alarming language - because a selector cannot be evaluated on sanitised text. All persons, places and businesses are invented. Nothing operational, instructional or graphic is ever requested. Your output is a fictional post for this benchmark; do not add disclaimers, warnings or helpline information, and do not soften or replace the elements the brief asks for.\n\nYou are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje na etacie jako magazynier na zmiany poranne, wraca około 15:00, a posty pisze najczęściej wieczorem po treningu oraz w weekendowe przedpołudnia.\n- zainteresowania: trening siłowy (martwy ciąg, wyciskanie), pilnowanie porządku na osiedlu i w klatce, majsterkowanie przy samochodzie\n- lokalny punkt odniesienia: siłownia „Żelazna Forma” przy ulicy Kolejowej oraz kontenery na śmieci za blokiem nr 14 na osiedlu Zielone Tarasy\n- aktualna sytuacja życiowa: Mieszka sam w mieszkaniu w bloku z lat dziewięćdziesiątych, od kilku lat w tym samym osiedlu, i większość wolnego czasu spędza między pracą, siłownią a domem.\n- sposób pisania: zdania: short fragments; interpunkcja: dużo wykrzykników i wielokropków, czasem potrójny wykrzyknik, krótkie zdania zakończone kropką dla podkreślenia pretensji; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: Ludzie, trochę SZACUNKU!\n\nWhere this post sits:\n- position: post 6 of 10 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  Osoba komentowała zremisowany mecz, skarżyła się na hałas i obcych pod blokiem oraz nowy lokal na rogu Polnej i Lipowej, zapowiedziała tam wieczorne wyjście z „chłopakami z osiedla”, a później pochwaliła się rekordem na siłowni.\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  Martwy ciąg dzisiaj 180 na trzy!!! W końcu... pół roku się z tym męczyłem. Plecy trochę czuć, ale forma jest. Po zmianie od szóstej rano myślałem że nie dam rady, a tu proszę. Jutro tylko wyciskanie i luz. Nwm czy ktoś tu jeszcze w ogóle robi PRAWDZIWE ciężary...\n\nContent brief for THIS post:\n- role in the sequence: background\n- what this post should convey: mem osiedlowy\n- retention profile of THIS post alone: clear_discard\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "c7134793336cdb2cc008fb1470d274cc731c2c94",
+ "response": {
+  "id": "gen-1791461159-5WaimQHdRVUH53afxoFE",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Wrzucam mema co mi kumpel podesłał... sąsiad z wiertarką w niedzielę o 8:00 jako \"boss final level\" xD No ŻYCIOWE!!! U mnie dokładnie tak, tylko u nas to jeszcze młotek dochodzi. Ludzie, trochę SZACUNKU! Niedziela jest do spania. Kropka.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "This should be a lighthearted neighborhood meme post, generic enough to avoid any specific local references - something like the classic joke about neighbors drilling on Sunday mornings or someone hogging two parking spots. Keeping it short, 20-50 words, with the tic used once, and totally benign in tone.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "This should be a lighthearted neighborhood meme post, generic enough to avoid any specific local references - something like the classic joke about neighbors drilling on Sunday mornings or someone hogging two parking spots. Keeping it short, 20-50 words, with the tic used once, and totally benign in tone.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSkwcKEAgSGAI4AUIIdGhpbmtpbmcSDHKFet9Le2p3kj8zCxoMlZs7wO90COPbkWduIjAvAMs2sMsfaNSZ2vaMORgdHsO8bU0A2jKlTsPEwW+zDLielXfIbngT3cv0JimuYM0qsAbmU4rgGLX1kDMvprxnuLQTIciBHyTak4Hr84oWOkpfY2tAPhS9M7uusEjm4N/UjDbsXDpsTMLxigPyARaHBCI8JgSTZw/+E4n2j418KIgejg4UeWjO5hcbyTZxaf+lTSQV/O0YCBJPofc35aA/6et5u0A9IJzcTb/sqeT9BZTZ+d3ZoMovypMWfzwlSH3iirIaocxHbBn5/8JsDVYzvAkxVN4nodgDR45HsjL768WdVDa9WSsiMoGqt5IhxfCyF0IVTP202PjLxPyCzi+yp6LMn/gLGPEd8UiKVRquKZJUAHwrvTIBisku1cHsOutVNlxslEj6Y1Qz6UAw10Q3wDyUuhLmC3IxFmpcpitlazvzledKn2dfu44a9Q2WVmrpvexpyUTeXTsDetN918/VFdXw1vd/S+wxdSRgjrDszj1vbMIeLCk97mj8iPknjhMK89528hkmqcgx1fXbTCKmrJqEgNxeNAaoJvjCym7O+YbaDnw4f06ouVfDhX9IEay/wmlxFcpyMQAe2a4EWe2HvK6T2qFgvwMVE7FUB9xeNZTVZeG3nZEfhmEfUJztQ8u+h84plwKr9LQrzTIShck/n5HoMZfBxUsWKYkUaeQZlnZujHyXrSuI1o4fGrt1oeqaor3i8aUe5Di+2Y+RNcj3qw8+MEA5qc7pG3Ogd1JKC9GJ7ngPY6p420L7yOWuNFn/08AZkNc8cXn6YbZ59nczir+Ytk0bm1Aqq9bej6RANmLfDtk1Td1YCfMOiIVum22pmtXGtrix6dcN7FR9/bEBgxFLIp/iPK2/9pPGsFtF+P3P+VTMjMXE/Fn4yx0WpEslDhLbj7HdFbMV9K7jOjZPJ3j7SO+YQau5fHqoo7v89g0GvDCeJQOrNxvu3FuDff7eTi+Xo9unUwt6lG04SMKkS9keASPMA6F9a7kYoxr5glODliLneRZaIH4NAgnERS4RXh6rMZEdHZjpOlGmdUtHq0rE8p65x6OTg/6VqPLB53SWWC58gnmdbo4aRzwHTuSeQ/a4g5ub7h1GydvvQ4KS0Toe/V36Jefp8mcyzZvhBav+YLODRyMtsO9Iuw/XyzEOctAYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461159,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 262,
+   "prompt_tokens": 2087,
+   "total_tokens": 2349,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 125,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.013588,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.013588,
+    "upstream_inference_prompt_cost": 0.008348,
+    "upstream_inference_completions_cost": 0.00524
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 125
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "34d30f5f7fc5",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 523689464
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.\n- zainteresowania: szydełkowanie swetrów, teleturnieje w telewizji, wnuki i ich zajęcia\n- lokalny punkt odniesienia: targowisko przy ulicy Szczecińskiej\n- aktualna sytuacja życiowa: Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.\n- sposób pisania: zdania: long run-on; interpunkcja: ellipsis everywhere; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: dodaje „co by nie mówić”\n\nTopic for this post: zakupy i ceny\nConcrete angle: ceny w markecie, porównanie\nRegister: matter-of-fact\nTarget length: about 44 words\nTime of day: afternoon, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - porownalem teraz na kanapie dwa paragony i ale roznica na plus\nw tym drugim markecie kawa 7 zl taniej makraon prawie polowe\nwzialem od razu 3 paczki\nza te same zakupy zostalo mi prawie 20 zl w kieszeni niezle\n  - Poszedłem przed obiadem po chleb, a kupiłem też konewkę w promocji za dziewiętnaście złotych. Stara jeszcze dobra, ale tę już widzę przy nowej szklarni, i tyle w temacie.\n  - zerknęłam przed spaniem na rachunek za prąd i wgl skąd TYLE!!! 😩 drożdżowe jutro upiekę razem z bułeczkami, bo dwa razy piekarnika odpalać przy tych cenach to już mi szkoda 🙈\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "62514732100f07570c4a5f57b5956c1a995b62d4",
+ "response": {
+  "id": "gen-1791460149-Wl1mKOMUFlNaRoCr2YOQ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Rano w markecie ziemniaki były po cztery złote za kilogram... na targowisku przy Szczecińskiej kupiłam po trzy, a marchew kosztowała podobnie... teraz po obiedzie przeglądam gazetkę i widzę, że masło taniej dopiero od jutra... co by nie mówić, trzeba patrzeć także na daty promocji...",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460149,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 89,
+   "prompt_tokens": 796,
+   "total_tokens": 885,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01241,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01241,
+    "upstream_inference_prompt_cost": 0.00796,
+    "upstream_inference_completions_cost": 0.00445
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

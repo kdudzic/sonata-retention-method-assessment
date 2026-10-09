@@ -1,0 +1,94 @@
+{
+ "call_id": "3e99420a666a",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie mowilem ze stal dzisiaj ogarnie... 2-0 do przerwy i mlyn caly czas leci z dopingiem... stary zaraz druga polowa wbijajcie pod kasy jak ktos jeszcze nie wszedl no i git ogarniamy te 3 punkty na spokojnie dzisiaj!\n- ahaha no wlasnie wracam z roboty a na spoldzielczej znowu to samo... pelno tych ciapatych sie kreci pod zabka i tylko dra ryja caly wieczor... stary zyc sie odechciewa w tym miescie przez nich no i git zaraz chyba sam to ogarne bo juz wgl sie przejsc nie da...\n- no wlasnie widzial ktos co otworzyli na rogu przy spoldzielczej... ukrowy sklep z jakims ich zarciem stary... znowu pol osiedla sie tam bd krecic do nocy... nwm co oni mysla ale no i git zobaczymy jak dlugo postoi...\n- no wlasnie dopiero zjechalem z nocki... znowu pol palet rozwalone na rampie stary rece opadaja... kierownik sie pluje a sam nic nie widzi... ogarniamy browara i ide spac bo o 18 znowu to samo no i git...\n- no wlasnie o tym mowie stary... niech kurwy spierdalaja do siebie i tyle w temacie... nwm po co wgl ktos z nimi jeszcze gada... zaraz zbieram sie na przystanek i ogarniamy swoje no i git...\n- ahaha rel w chuj stary... dokladnie tak wyglada kazdy piatek po drugiej zmianie... najpierw szybka zabka a potem juz tylko kanapa i mecz... no i git ogarniamy weekend zaraz\n- no wlasnie tak wiem... jutro wieczorem stary... w koncu te chujki przeprosza za wolyn bo juz za duzo sobie pozwalaja... ogarniamy temat pod blokiem i tyle w temacie!\n- no wlasnie kielbasa juz na ruszcie wlatuje... zaraz po drugiej zmianie chlopaki dojada pod klatke i ogarniamy na spokojnie... piwko jest pogoda sztos stary wiec no i git do wieczora siedzimy... wpadajcie jak ktos ma blisko\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "61a91f657e7980f0ef0490048a16ec6f83ee540a",
+ "response": {
+  "id": "gen-1791460111-qmpHKpe70dBGzNyQoOd1",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnim",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1/Xyox7XW1fsJ8+gVDg6GIv0f9HYZDuIQUWLtc2AQ+VER5AxKdq01QT6vKiBZV24LPdGbNfCgxyX+1ylfJWU/cdEo2H+wP6f8/H449z1Ze62pWLBtlP4kN6WUGmOhLlpCJGtQGSIIkfLYNnnEtjF8Szqze01Fi79RXJPqQceUVDCj7KPSIPd2B7DpgskTBQgExMXwopBoQ/vXi5ZRRoEcvfc4hExxmOKvEWhd/Nnt+r5Qzaj85wLsJ2AyCm2RRCLhwbBvPtPaOUV0ZQ4CHkIbwhdOQU8QSL76JOJ98uJm4Oy5Rt+lzv0hmaNjtvh+Sp4ZeCn2BYa510p+K96LqzgLnAKQckDzAjquT+v85m/f181h2cvgrtQsyq+4y3rJfL0dc4zHOKf3vhtR86rGw94IBZq2I2i/wv4C9n2FWNNNM7Anz+GbuQahZqPyvfP2lGEg4E6HZqTwzy2Vgpcz4eEstTLyqtJt9euNiVj/Sr/i9ggQw7GVBypeChJ0JYXNiyjulZr02NG13DX4Q7wjK1miwAyQmQNMqyB9r9dJn+hF9k0941vnXhVsarlBqsjNWjHjFCDGlKxFirA2MKrB2tsc79vINuWJg6ovdp0nuF5q9mwxy2BeqfsiQQ52HTxIoK8qZUBA4WrFOLhY0Mhl3U8KyrwKRJ9i31MjYkG+0Uf9n/bRHwgF9EEyVHyMQ20oOLHRsyW6HJk5Nxgq5fuLie7/div+Qdg+yvUcy1FAplS9pCBaGrCAqg0+47aN2Or+lD19txz7l6fMZVy7oZjqhIrozQUrbXQRXOXMmkBdbKqVxfKHZA1N35N5PWeKr7tl8Bd2tYmuVQ3s3dKZfqtlKCNmteNS19IFdom2AXIig=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791460111,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 116,
+   "prompt_tokens": 611,
+   "total_tokens": 727,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 113,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00089325,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00089325,
+    "upstream_inference_prompt_cost": 0.00045825,
+    "upstream_inference_completions_cost": 0.000435
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 113
+ }
+}

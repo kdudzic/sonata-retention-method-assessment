@@ -1,0 +1,95 @@
+{
+ "call_id": "2015b52aecdd",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 844346722
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Na urlopie wychowawczym z rocznym synkiem w Białymstoku, posty podczas drzemek dziecka i późnym wieczorem.\n- zainteresowania: spacery z wózkiem, wypiekanie ciast drożdżowych, grupy sprzedaży ubranek dziecięcych\n- lokalny punkt odniesienia: plac zabaw przy Plantach w Białymstoku\n- aktualna sytuacja życiowa: Synek zaczyna chodzić, więc zabezpiecza mieszkanie i planuje powrót do pracy na jesieni.\n- sposób pisania: zdania: long run-on; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: przesadza ze słowem „mega”\n\nTopic for this post: zwierzęta\nConcrete angle: kot i jego humory\nRegister: chatty\nTarget length: about 16 words\nTime of day: evening, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "7f134172b0d2903062e267f5bb9e14b8905f225d",
+ "response": {
+  "id": "gen-1791459865-lobxCwWhKuJO66VVim1e",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "usiadłam wieczorem na kanapie, kot NAGLE chce głaskania, wcześniej nawet nie zerkał w moją stronę!!! 😸🙈",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4If5Hb4B33pu4AOD5lBwVkMqizveHAdQ9eVRUnzP4cp0tRIhFVUNlBPim5-GmobzNqXntm9H9reBcX4MZpAeJrZqLKn_Tf8AoWxKq8KEG72A03A-eunxXcly-z0QO2Gk_2Jws2GdHY7UgDiBf3Sug0-9am4AA0lc0-X2EAT5RzV45iNg_4vMsyy8KWDYsztlffLwd-Bv-uMgosuzuFIE8wq-XoyY8hzh5s60ZthqFphges6TDZWLq4eZ1awDvSoiNRfuSZe2bRZyQcf5ROqC9Uouz8yiKGKyDR1Mc_X-gR6tALHXrJRGYhIU9Abv4LuzCYIfa_R-dKxXPSlv6FdGtA-KsxtiB_ch2UbHQFsPsd-0FjDEqKMW53TsEk8EGuf33r5JzQKdoTpZ3ZTc40sCDMl4lT-ogbErXXe24UgRa0LHEGTTekPPbxFSyJhu4hksnZmzP6A9ITwuSX0t_6w92vbSISq6vbIJIpUhjjJFwAFG4O9Vp0qWjM3JnDkn62FY-ri7zmPV4Z9vr9a0h3nYA_0Hdce0UNLR9Zpy2xLhyJdJ2eh9NH5qKGqzFpGLtu05PE0tFcI9eWIMWvBm5071b9Baz1JDZWpUgnQehrzJjawpzkwkHlHrdFD_D5xS1F0_9lCYOiXfWAutaoHtxAdZHusYyb4cG13jx65eCxgYW0xLCzF1FZgDR2n7IBuPAF6wxKrkuPtqx-TmKmSWV_A2bxo2tV2oOdSc5kD5DlBoXUF1lz-iPlOxLQbsiYghhzygvXfZd4174wNrTkrSrf4TZezAUIQQx1TPFlQDSuIJLkqMRNsBxd4Sb1cz9IpFZAQjn8Dx4Q4m8Sc8xE8CO99DwF4w1U-70lOcnwgRPsPURubNdiLoe9nxoTjYIGdeJLyh3fMpeozseONVOMrtcbtZe0wdb-7I8ZjmBjhrkUGfxlvs2DfBGudiXbsPEK-5Al-954FNrA190C3y6H0Xb8FRf8c0XMOvGSf-c6CbETmftHW-PuSIHoXV6GG_dVdlyk7mlzeniHR-kfeVdJiYpsmvVLhQ15ebgZPeUNx5JzOpXcEj0PzL4s4PjifdIRjTzI3BTuRTPx8P-4tKYGrildi1rQmTRB-8UjxvuAoWFcdrChntfyW5WHPP8UcymYJisxu59NHKISQ8dGNNPOgoD4RCs1juCZD2uW966FcMrAuyAzt_AXL8l4zG1_euoa6UDIiH7IWpBpsnMGlmyy3KuAy0dDnL4p8fl_gSwvyWtIPgrvAay1KoAVFPOy6VHHEySfC3aHgq-LyUoA1Xhq8niBUAqAmmjQwr8RPXJTaD3AEg8FO8_w9_vXkw7_ByD2nIm94iFAbfCPWd2QagEiF_fSuteRsfvrzAmqMicH_Ebr6iomlzxDeQIpOoub7fQGY0RMoK-SAw6bI0FPVExIcG_89Ky8RCow8FMwiXLMUrWUQcsvW7QLj7RgnJVZ59upKqYZ1JfF0D2jcxKV0pjhnR8o_CZn2d-F8WgCUyea4OjxtPN_7Sq_9rTSpqVl8e6MRLR6i19pgHMXclG9iivMUU-D37ErQH93QkKQ8w7kAt_GNtU5O27uomxe70rzZpbX6ESnws6j63ubWPkLuPnh2VWa4P7drZ9axD9ptVFaUd_CtmlBvXiYjuEx6AOpsbhDYPlX1OBqHABuwqRvHhF30EfMlbyn2s_d84lCWo4V_23qxktpU4Ipe0tmHxXQJJm0g47TZc1l_szsfRXyPNgCK_pLhJifM3oRL8Mphvisr7vKdpwm6K9Ql4Q9eHVZweSCcMk3dJ3yh8mSPmYLN_OBGpJuGoGxX-fBWPYnlDZfeBspPMV44ZI55X1zwMX0OSujyS8ZWR9YRnPwBLfPXbbjXLgz7Ub2IfQIXuz9_HbBrPMaqWgvtiCIDAJqq55cpDiAzbNetbH3w1gja33ukMwk9HOmB5mNGEWdF3wm4ZFWgkuWN9zUrXAg8iO2O7zLBDiI85yS-LTOIlTdvVoeEEuPIwoYeZcH0D4FPXXS1fcy7msf8zIiG-c7aixUOvNQ7Cdv3Ta3rDRdzI63HzpI5naxuYW-CAVEMA5H_fm7kepF5NBrWfIIjzX9tiDGMe-dOXWsd31BwsXYWTx8wh0UWruIQlx6wpdedGA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_04a0408cb9c81d1c016ac7821a436887d19c9828d0a06929b5",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459865,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 214,
+   "prompt_tokens": 622,
+   "total_tokens": 836,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 173,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01692,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01692,
+    "upstream_inference_prompt_cost": 0.00622,
+    "upstream_inference_completions_cost": 0.0107
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 173
+ }
+}

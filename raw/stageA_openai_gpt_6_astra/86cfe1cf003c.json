@@ -1,0 +1,95 @@
+{
+ "call_id": "86cfe1cf003c",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 542884616
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Student informatyki w Gliwicach, zajęcia nieregularnie, najwięcej pisze późną nocą przy nauce do sesji.\n- zainteresowania: gry roguelike, składanie klawiatur mechanicznych, kebab po zajęciach\n- lokalny punkt odniesienia: bar Kebab Ali przy akademiku na Akademickiej\n- aktualna sytuacja życiowa: Zbliża się sesja, a on jeszcze nie ruszył projektu zaliczeniowego z baz danych.\n- sposób pisania: zdania: medium; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: wstawia „xd” małymi literami po prawie każdym zdaniu\n\nTopic for this post: sport\nConcrete angle: skoki narciarskie / siatkówka / żużel w TV\nRegister: mildly grumbly\nTarget length: about 25 words\nTime of day: evening, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Już wstałam... zaraz basen z wnukami... ależ one się cieszą na te zajęcia...\n  - Dobra, słuchajcie, stoję na przystanku Rybnik Rynek i sprawdzam, czy wieczorem będzie siatkówka w telewizji. Wczoraj wybierałam lustra do salonu, dzisiaj po pracy chętnie obejrzałabym mecz.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "3acc93b8e7e3a94e64daf0ed4da959c1ad369abb",
+ "response": {
+  "id": "gen-1791459866-704lzI7TuxQUZgK702FF",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "wlaczylem siatkowke do kolacji i znowu bd siedzial do konca meczu xd projekt z baz dalej nietkniety a jutro pewnie ledwo wstane na zajecia",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4Ig39FJkNLHaJn1k9UtjxXcGQ48h3OFYKgEiOBaurJf1_uiRpXNBHzapql4idP5Vm9LQdifyHhKpsjZcvM39PJkLf53l5-Uzi0qfEi0od-3c0xIL0U-F2E-nsoTP_R8op0Uy5FczVu1n1EyUbDeaTxKXCeEqXs5NSevqHSiySzqEoaZok5zzaL5yWwZqFU4I3sq07bxbh_L4tV3Df7DpGHOsMvuIZeY_Qyu_WoefmObHl6UURWG8rt0SIPwx_y-P_5qFERG6jMYio5EyW3vjxbM4EJuA7pZDRNJJSUhvLzVeZNBcGTkjNeJ6YvdHfC1HXyRrbda036fi6lyBsDJVLiSsybfvFTqh86xTHY2tzBnbzxO7Ajng-NmqSXwu09m18dYJ1IuzsZScoHXs_uDXHWVPK3qpERGB4yt-t6DcPPjHHFHg5QaKhJuuWbJj3I4pZ3vBqELJYZ_wQAAKo5vkOHu6EgKMo1aUmhW0ncdu_y8kvNVRbYHcl5HaM6d_jrT2t_587DRY6nrBkH0VABENiaK7bR5Gt7V4WtvhJyhhaogbP8n4_LEcZ0ZXtS6JQj1FsgStiMserue3DV67IlI-QmHEDUqndxUfOrDXaVcRzSmQgYzxh1GA2g_dt23PXl9I-89963DR6yfsdge85fRbMsG32yy6EUQj4f0DxRuIjqKRf83fS9_nx_X1W0nlivSuF-ftXZo4Yv57KkViMZ9nycFgp747QaRqAQCxOve5wNALo9IYYxFJhlOBnca-XAwtKwezRAGl1qLw-JYr-Btpx03dEOjO4PptP9JF6HU8V7tXSu-OPB2XxnJeT1kv3lBfFUNR9ZEzzSBkOV7zCfGKWy1A8uWHIdDKqyK0UPdH0qXVKsZVZtrC6WH5YvIbDiBkGiwCN2rXuNC7F_1n97a_HoGnt_njf80gRx0o5ALf6Dac4ppJuoB6MZFiLXrlsMcnBRCy8G1yxwyOsrgcAwyGZMEQjexV9NRDNorUdTRd5Z9YO2r1_moWjey-SaxlyHSehAyOwxVCpPNAXv5X6jBDEAOjMOHggE2fS-Dx3dTREU4eBxxYQ8dMarxo7nFbreIKu64zY5opr4xUBvxzz6EIuhQKunzTl6nSWiuzOHLXGP46OrgMVlUSc5ZnbCdeflxzkphE00mfuH27iZSoV0rB3IZREO1CqGjVIvjA5Cfkwd6fwbP98DCn__h3lZo3hyZ6b_BbKkykJOzoNhpFEx923xawZL2DPGkE8mmWSy4ZngQgame7onyu6wXXfdHmdyrKBo1y-8_i_TBtzmpl8j9crc98EWPQjJ-UYujeuJLtdwLohixFTcJQUJQYAsp5TH96kCAv_I3SR6v6LAzVfpTdefnSTsFUO0JffLU1JcFq_KzLEKLvLeK6CM8GLk09_dM0pR22V0PHxcBzsBBiaoyMVVcZ80DfhQb2CcNEY-zBdte3YqHZFRlgrzAlt6orxV39hwmxiR5kulJl0ehjyfvwmdPB2wS6C3bl2sloUy0CtFXU4aEKMdrrFk2W0b0O9TbNL_oEm5yNNrAZi49Fy-EFuJcsi8wU-fRMl7qpcdptPOifHv0Mq9khZrft_97TA-yM8S8Oyeewn8nGSitOILL1MVRsBAw0pF496LG3BGVqEuMKqJxB5kDUd8Mte4TN0OKWwO34byPWQyyvlRtwRNE_Z7ob2EALmsZ3ljUDUc0FUDNpJYwGw1-gOSahxX0rZS-zqUjcdUNlLY_XymST-Rw5-2aHCEhzhqLpKA4gXiMpBiah2cO9aYhdKQpfxp9ae-d1pnQh1xYVVNO6cH4SvwebRv_wc1HgYExcMk18nfj_ltCLdq27ljuw1EmCL7sccV02uLaiBrEAQvkkVrH-_9KaF-LQ5DIo9RCnQHyTRNvXzAQu4PhEunLV2Uk5GSe6jhudkQMY4b7riYn6oD8EU7wm8fsow==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0b0bbd35eb8b297c016ac7821bbc7487d1aa2a469d12009bfd",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459866,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 177,
+   "prompt_tokens": 721,
+   "total_tokens": 898,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 126,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01606,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01606,
+    "upstream_inference_prompt_cost": 0.00721,
+    "upstream_inference_completions_cost": 0.00885
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 126
+ }
+}

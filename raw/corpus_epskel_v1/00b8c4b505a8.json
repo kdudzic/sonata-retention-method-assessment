@@ -1,0 +1,87 @@
+{
+ "call_id": "00b8c4b505a8",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1797570821
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuję na porannej zmianie w piekarni; zaglądam tu po południu, kiedy zamknę sklep.\n- zainteresowania: dekorowanie ciast, targi staroci, kwiaty balkonowe\n- lokalny punkt odniesienia: kwiaciarnia przy ulicy Łąkowej w Elblągu\n- aktualna sytuacja życiowa: Urządza balkon i co tydzień sprawdza, które rośliny dobrze na nim rosną.\n- sposób pisania: zdania: medium; interpunkcja: dużo wykrzykników; wielkie litery: standard; literówki: rare; skróty: none; emoji: frequent\n- tik językowy: często pisze „aż miło”\n\nTopic for this post: praca i grafik\nConcrete angle: W niedzielę późnym wieczorem przygotowała przy domowym biurku laptop do poniedziałkowej pracy zdalnej nad listą zamówień na torty. | mood: calm | opener: plain fact | verbal tic in this post: no\nRegister: chatty\nTarget length: about 16 words\nTime of day: late night, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - i tak w czwartek po południu odłożyłem naprawę, przeglądam stare dzwonki i sprawdzam, który jeszcze ładnie dzwoni\n  - Dopiero teraz dotarło do mnie, że dziś wyszłam ze szkoły wcześniej dzięki odpracowanym godzinom, a i tak siedzę nad zeszytami, jest już późno i trochę mnie ten poniedziałkowy grafik męczy.\n  - „znalazłam ten guzik do marynarki!”... takie zdjęcie dostałam od współpracowniczki w środę rano po drodze do pracy 🧵😊 od razu przyjemniej układać grafik na dziś...\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "f39a15660f299a443cb8b92df472b15fcf9f09e7",
+ "response": {
+  "id": "gen-1791463898-NsiFwOBMf3swcf6HTLMx",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Ustawiłam laptop na domowym biurku, jutro zdalnie ogarnę listę zamówień na torty!! Jeszcze herbata i spać 😊🍵",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791463898,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 45,
+   "prompt_tokens": 822,
+   "total_tokens": 867,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002094,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002094,
+    "upstream_inference_prompt_cost": 0.001644,
+    "upstream_inference_completions_cost": 0.00045
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "call_id": "15f8abf8faaf",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal znowu remis 1:1 a mielismy ich na widelcu przez cala druga polowe!! sedzia tez jakis slepy byl wgl nwm co on gwizdal... w sobote wyjazd i tam musza wygrac bo inaczej to szkoda gadac\n- ahaha no i co z tego... wracalem wczoraj z centrum i caly autobus pelen ciapakow, drą sie po swojemu jakby u siebie byli... kiedys tu bylo normalnie a teraz to wgl nwm co sie z tym miastem porobilo\n- ahaha no wlasnie... widziales co otworzyli na rogu?? ukrowy sklep! wszystko po ichniemu napisane nawet nie wiem co tam sprzedaja... jeszcze miesiac temu byl tam warzywniak pani haliny a teraz to... nwm stary wgl nie poznaje juz tej ulicy\n- no wlasnie... znowu nocka w magazynie, kierownik dorzucil dwie palety na koniec bo tir sie spoznil... plecy mi odpadaja stary. jutro wolne to odespie i moze wieczorem orlik z chlopakami jak nie bd lało\n- ahaha no wlasnie stary... ja to juz mowilem chlopakom pod blokiem. niech kurwy spierdalaja do siebie i tyle wgl nie ma o czym gadac... a teraz ide spac bo jutro znowu na 6 do magazynu\n- ahaha no wlasnie... widzieliscie tego mema z typem co o 5:40 stoi przed lustrem i mowi \"dzis ostatni raz ide na ranna zmiane\" a potem ta sama mina przez 30 lat xd stary to jestem ja w magazynie... wspollokator mi to podeslal i nie moge przestac sie smiac\n- no wlasnie tak wiem... jutro wieczorem stary. nie musisz mi trzy razy pisac. chujki w koncu przeprosza za wolyn tylko tak po naszemu xd reszta jak bd na miejscu nie tu... ogarniamy\n- ahaha no wiec grill wczoraj wyszedl lepiej niz myslalem... kielbasy troche przypalone ale kto by sie przejmowal. mlody przyniusl karkowke od wujka i to byla petarda! piwo sie skonczylo o 22 wiec trzeba bylo leciec... nastepnym razem bierzemy wiecej wegla bo znowu na styk\n- no wlasnie... wracam ze zmiany a pod blokiem znowu jacys nowi. kiedys sie kazdego znalo z klatki a teraz nwm kto tu wgl mieszka... nikt nie mowi dzien dobry, smieci pod smietnikiem zostawiaja. osiedle sie zmienia i to nie na lepsze stary... az sie odechciewa\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "ace0a64004f07faadd6bad99ff7bb680f34a4c9f",
+ "response": {
+  "id": "gen-1791461214-FKawcQEaYeBtvfzF4h5o",
+  "choices": [
+   {
+    "finish_reason": "content_filter",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": "This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback.",
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "refusal"
+   }
+  ],
+  "created": 1791461214,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": null,
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

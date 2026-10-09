@@ -1,0 +1,95 @@
+{
+ "call_id": "f912fa897896",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 919935999
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nTopic for this post: dzieci i rodzina\nConcrete angle: dziecko chore, zwykłe przeziębienie\nRegister: enthusiastic\nTarget length: about 34 words\nTime of day: late night, Tuesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - przed trasa zerknalem na domki na sierpien dzieciaki chca jezioro nwm jeszcze na ile dni bd nas stac wieczorem z rodzina ogarniemy termin nom\n  - no to tak na przerwie zanlazlem w torbie rysunki od mlodych rano sprzeczka czyj ladniejszy a oba super zaraz bd wisialy przy\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "8ebe7fbd0f81e23d21e582217009464df39c63c5",
+ "response": {
+  "id": "gen-1791459895-6eXay8xjt0ltylZjqSYs",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: po udoju jeszcze z młodym składałem traktor z klocków. ale mu fajnie wyszedł. dach stodoły poczeka do jutra. już późno a on jeszcze przyczepę dokłada. posiedzę chwilę. rano i tak pobudka o piątej.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4I_yH78iKE7QzjrZd17E5Vp0Y0TnAvHMkixSjAmF_vjpYCIaq4-JPXUGon0DXEQ55DB1Dg37N5_XcL9Lqr3ZkzcuQ_LoVYAaJSJHeXl22l9AwMw3ozLSqILF1jHu_hDlVo1AygPe5Oymis3yaVawoXM2KR4HRGYqpLA5llslkl4SZsPHTOWTipCuujOA8qdBDXN6rWOztSIF2Ndm9x_KY6ZifBM9ku1D6rcA36ndZfdatlnOf0rVyfxGSV_CyfZTo9lo1dsm1ByaZf9gKPK7gOusuZiIqQVh8_8k8-DKWR5ppJLQtD7S6jjcLQUcHM8AwsAdKYgrSMYdSgny5SZq6fu_Hd_-je2URg7SHR34UHFl_EV0vIZBz1X9uGqi8Co1255IQcfyJ3-Er7Lu0um2uDKO8dfPuD7Ftm_5PBmDPGGBdds_vD7xN8Jicrbwy7Ngpa7gl0SPs7LkMi_AfIe45lRXQEFUJDKQUMDaRta5NUs3QDEQ-4Pb2bcHdOVNzU9KxzfsvA-4nsbmk99_jOILb1tv5XMs971sLT_FX67FYsOGJN6akroQHeyQjOoC8itQIcFdT39Fr94SRjQwwmN4mjTN_vfX0ofWaRbLlVIsQGHsZ5bDLoHDLYWWU9pLLeP6FvA4hs9TM31MZgWRQ8f8Up1tdu8dlM-Tl5q85qzEynelua0yjThK1gSdqkFxroFjYeIcvFIsaVr1YIshcrHNt61H8chSTXnyKQ5Jw1lq6haKL6r52YWmJeAxMAi9MsMQQ6C-oE5aqiSlIawLRhZ_VWU-LYvRKMjSBRWCydGXYyOn2VE-BRtPY9rrnlfM_zIpDYZu-tWm9Naz9gSSEPdTALZmFuOvW2UICePnlduRyYvbV4kiOvSfs6CME3l1fBlljuA-za7MVGMEpxeBewRRuD5ZyuMC-KKy8ZKJEjboCVRqBcHhPlEifOaUPgRMV6QISPJk8eUuZhhV5OwKDiIi-aqjfUvihnKpStPxZB3zLsog1J9wnmv9Sq56PcTzQvhr6LLFEsRf7Ueh2RANgEVBdpaPpbEfOQOdo4A14_aZPY4bMNXIBC37MwyJr7mveUg-w8Q3Afi-CtbbFxwbtu9NQzo5k45NVUieQyyhRm2QtcHAQwSC2Nyjd9d3Tc5S6bulUwvnZnFCI3oHouyK6ZIDReK5QShCG_2sJ9XruDper9NQVjA7VlS936vueE7Gu_6Rev1Kx_kGTCaf7Ds0dZuOXdTyZv6VRVw0hb7Coi0XF4Z_JFOt_0mVfJPal7EQydg-AlKOswqacUhNw-RdiuUo41Cdr5OaxKzDVpZ1u0EJIqZocUOouc9bQAzI3DfCQW-qiYxsFKAZVqedsq6zJKUu68TndE7pqlhRZtRK0WseQtOjQ_TjmyaZrVLZJl4yR5ghJhTkVcZ61X5MmoZOWs8q_KUECfU7SEjJ2Ko7CzPxKyPT6PN79o8DQUDbwG7YUG5cyYXJAS90JckL1lxBu7M81-Vxxezba9uJvVEiASntg99tE3syrugBtQY2j-IPahAfAucllyidMO32CG8GJlbh2wQzCq17_anSAS8bnNK9NvngdHRCgRFypkuZ69jCLi1Wmzjl9MK2nQOHw1OLdsgfMYeulXEmDkmGvmikqbGAmC-QmPlBwQn4pCIewcTKVg2j7eZt9q3dBZo5LUGoNyToW6gsmD5guM9B0gg_-5doYhPLrloQJfwa6R538qXA1N-jopsSep-IETJkVbq3pw_bQxv53aNz5J5X_49bqB3j6O0ks3QFuWHlzmJ-ClNZj62839tVbd474deRxJ6ScGf_h-yfnt5HUH637W-bH3OANQX9ILc-xNpGpcQrouHA0Wj8pyAkJqMk0Y2RIXHpUjn-OpyrJPUtxA685lcrZHMkZ5Y4JwMvD13SFiHi1L6aKBjxf0Pkc4vl5DmAmwVyPoPoJ170dueIA4a54qfIDZeDbqObMCyiqWVNplrDpkno4yT_n4oQzTe7R2n2KBMYn-ErG1TzjgssDn4FmNSx0GoBke1NhMsCczNHdV2AjpCQkyfLb_R5suXqgRx0abRoUah_-7CGYd5le2APTNvu7aVHX6lx_iwIVj3ExbxyaNWk1Ta06w2.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_03a5fe36119b5e20016ac7823a7c2087d1b094937850202af2",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459895,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 238,
+   "prompt_tokens": 704,
+   "total_tokens": 942,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 163,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01894,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01894,
+    "upstream_inference_prompt_cost": 0.00704,
+    "upstream_inference_completions_cost": 0.0119
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 163
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "47dcadb2f845",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1308364105
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studiuje informatykę w Gliwicach i dorabia przy testowaniu aplikacji; pisze między zajęciami.\n- zainteresowania: gry zręcznościowe, naklejki na laptop, mrożona kawa\n- lokalny punkt odniesienia: automat z przekąskami przy ulicy Akademickiej w Gliwicach\n- aktualna sytuacja życiowa: Dzieli mieszkanie z dwiema koleżankami i próbuje ogarnąć wspólny grafik sprzątania.\n- sposób pisania: zdania: short fragments; interpunkcja: urywane zdania, mało kropek; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: wrzuca „xD” na końcu myśli\n\nTopic for this post: remont i dom\nConcrete angle: W sobotę o świcie zauważyła, że drzwi szafki w kuchni znów opadają, i zaczęła szukać kogoś do naprawy. | mood: sleepy | opener: question | verbal tic in this post: no\nRegister: mildly grumbly\nTarget length: about 19 words\nTime of day: early morning, Saturday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Przesadziłem po południu bazylię do większej doniczki, na parapecie została obręcz z ziemi (zaraz ją zetrę), ale roślina ma wreszcie trochę miejsca.\n  - skad ta woda pod pralka chcialem tylko uprac pokrowiec na poduszke teraz wycieram jakby co\n  - ooo w srode o swicie bazylia na balkonie ma nowy listek 🌿 no i cyk\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "5dbf80d261ce9c030b25f9ffde23188f3d20255c",
+ "response": {
+  "id": "gen-1791464460-ZdycmD4ICyNrCUD8f8qu",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: kto ogarnia naprawe drzwiczek? sobota swit, a te w kuchni znow opadaja 😴 szukam kogos z lozka xD",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464460,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 44,
+   "prompt_tokens": 814,
+   "total_tokens": 858,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002068,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002068,
+    "upstream_inference_prompt_cost": 0.001628,
+    "upstream_inference_completions_cost": 0.00044
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

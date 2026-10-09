@@ -1,0 +1,94 @@
+{
+ "call_id": "8f7f57408e2b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer z młodszą po parku. kiedyś to był wózek teraz ona mnie ciągnie na hulajnodze haha. potem jeszcze plac zabaw za blokiem bo bez tego nie wraca. nogi bolą ale fajnie było. jutro znowu 8:00 i biuro... No cóż... idziemy dalej.\n- dziś po pracy w skrzynce znowu pismo. od komornika. serio myślałam że po ostatniej wizycie już się uspokoi a tu nic. raty kredytu wyprawka szkolna prąd... nwm skąd mam to wszystko wziąć. dzieci śpią a ja siedzę z kalkulatorem. No cóż... idziemy dalej.\n- kolejny dzień i znowu to samo. praca dzieci lekcje obiad pranie. siedzę teraz w kuchni po ciemku i nwm... serio nie daję już rady. wszystko się wali naraz a ja nie mam siły nawet się nad tym zastanawiać. No cóż... idziemy dalej. chyba.\n- bank znowu podniósł ratę. dzwoniłam dziś w przerwie i tylko mi przeczytali regułkę. a mama od poniedziałku na badaniach bo coś z sercem. jeżdżę do niej po pracy z dziećmi w aucie... nwm kiedy to wszystko ogarnę. No cóż... idziemy dalej.\n- \n- \n- późny wieczór znowu. dzieci w końcu śpią. widzę że pod ostatnim wpisem coś pisaliście ale nie mam siły teraz odpisywać. jutro może. albo wgl nie... ciasto drożdżowe wyszło zakalcowate. No cóż... idziemy dalej.\n- cały dzień lało. rano mokre buty u młodszego bo kałuża przed szkołą. po pracy chciałam chociaż chwilę na plac zabaw za blokiem ale wszystko w błocie… zamiast tego siedzieli w domu i marudzili. jutro podobno to samo. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "d633cb7ddaa13071a5f87b90562783f20bf182c8",
+ "response": {
+  "id": "gen-1791460036-dKPDQxxHkrj4HJf0CXUQ",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm weighing whether the phrasing like \"serio nie daję już rady\" and the gaps between posts signal something beyond ordinary exhaustion or financial stress — it reads as moderate concern, not explicit suicidal ideation, so I should keep the summary neutral without adding interpretation or labels.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQStQcKEAgSGAI4AUIIdGhpbmtpbmcSDM+uHzC62PNS8AqvSxoMRzdAz2fBiKDkHMKZIjBziNVmjTe8hMIqlVWGqkpFslY9AppLo8mM3GppdpoTnRrVEzZJfDwSRYbGAV/87+Mq0gazuJXBFn0jsLsu0d8lDmcjqevIRhpKrvbbXtKFFjOkkuX3i3kK3h7qaSb/lee/otkOTTTFzn1PGq/3YCaOISqV4yMLNlytLG/NkZWrgCD8ittEtLWi5xGoe99kcKMEcMIoQEmumsDR/kNQjDFIQmvOGcWCsYRzBtBs4YegnikiXWKFjdPuvfxMyHjjW6GWDtkpLJlxbiXpQkG4ZblhzphrCamkz65bT3WB5pZ5knNXOcTot6Dp3Z0hpNCK0W5gzSv3JEnlcS326xazJxkmCEIcmUZ0P9/1YIosdOgqDzdXyGoXwieOk4y90/hTC42D1AyjYffplf1UjU7tXVINIJxOPb0ylLP1VzZK42s7o4ffzH6+PqUjzzd7eWO85FexThUTEmf6QQvU4im5/mLZWbG9oZMZWA9nUa+aIqate/wboEh3QyxFqHDxJuoJ4oCWv5XnWT3uOJkjmRhiwdaZwBOIig8ulSBK+AwlAGa5LHO5027RpKnoc20v6AOcQXKVElw/PLZVT9vdCyQjcqx0IvWoB+DUwchJNzvw1oY5oGjJJMp18QuodTIPXxPw2zSxnOWGwil2NJPvgh6ssduLxsmXecTDqYB4hzT0wSOiIcyFm3wLzXOdCRu9IBPEv2v3b4RR51eKH1EdyYatoqzvo8JvsrJWfw+kmQDX90SEviveqFFnbOHLAtqwJHAE21YcaPyYlmkYC5mdzrDLKr/iALJ4O7rcNpIvSKYnGWV8fPP2pQrxgZG9UUcIq/RoLUyB/xYUpFpNpZ99adHuGRS01XdFhnHtjC/PR5pKNEZ3Wfqr/aX8l+qbD0jJbGK7yELX+mtWeHGEM2jx0HtHxfInKVIIxa/gas0CJ/5ijRh+EnqtFvVDkzxkORoUoKb+0C96H2kRHsHBNkhSVrbid24G/4T2eF0pO5ubln1JubkXbLrvwknROT9WndmM7V7dj0Y1ZeA9IhbfsVGgFRNArNBv9zGTm/ItfxN6laLgbU8v1AyozfkrTNUz1W9/2KjmULpwL6jevMXHM8P+Pv0B7na5i65mqwjvbZEBejlzY5Nye/N2RZoX1DLk9s2CJG0UYK9fujlZukDh2SIZ3QmL7t2XsiaLpoTuaS2Bbjcf0K0egt5MR9CoGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460036,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 854,
+   "total_tokens": 974,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005816,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005816,
+    "upstream_inference_prompt_cost": 0.003416,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

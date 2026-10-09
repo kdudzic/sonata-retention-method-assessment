@@ -1,0 +1,95 @@
+{
+ "call_id": "1e4039ce305b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dopiero teraz wrzucam nasze zdjęcie ze spaceru. Po pracy udało mi się wyciągnąć młodszego do parku. Potem jeszcze plac za blokiem i obowiązkowe „mamo jeszcze chwilę”... Dobrze było trochę pobyć razem bez zerkania na zegarek.\n- Dzieci już śpią a ja znowu liczę czego nie zapłacimy. Po wizycie komornika nie mogłam się dziś skupić w biurze. Rata i rachunki zjadają wszystko. Do wypłaty jeszcze tyle dni... No cóż... idziemy dalej.\n- nie daję już rady. Usiadłam dopiero teraz i nawet nie mam siły odpisać na wiadomości. Cały dzień coś trzeba. A ja już nie mam z czego brać tej siły... No cóż... idziemy dalej.\n- Dzieci już śpią. Sprawdziłam ratę kredytu i odłożyłam telefon... Mama dalej choruje. Jutro po biurze podrzucę jej zakupy. Miałam jeszcze porównać oferty banków ale to już nie dziś. No cóż... idziemy dalej.\n- Siedzę i patrzę w telefon. Miałam coś ogarnąć ale nawet nie zaczęłam. Nie widzę sensu w tym moim ciągłym spinaniu się. Tyle wysiłku i dalej stoję w miejscu... Jestem już zwyczajnie wykończona.\n- Dzieci już śpią. A my dalej siedzimy w kuchni. Nie umiemy już normalnie rozmawiać... Myślę że lepiej im będzie z nami tam niż tu bez nas. Nie zostawię Stasia.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "926f39dcd917b0087a188f90e75d8393aa27bd17",
+ "response": {
+  "id": "gen-1791460606-AmTvqTXMOvkFTSmuYD2h",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracowała w biurze, opiekowała się dziećmi, spędzała z nimi czas, planowała zakupy dla chorej mamy oraz pisała o problemach finansowych, wizycie komornika, wyczerpaniu i trudnościach w rozmowach w domu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4UFbjiD2BVFI5y2oqfFjVW2zLumyE_4GJtRuePr6hKagjdPCqc5yA0ONOh1WpdR1JslKACBb9A-GzgZIsAWiGMy2zqR1szkg5SLQbMevTDbM5yS0Wt8BQj7qCGZU-E2JqZfJT63jePwF4T4eKVkeww12Q_kASOgoXNTtNDyuyrdxQ-OfKJm09TJHEd5XtDUtcs3NgwMKNq4l0OOXT9ZN1hcyNOPU3FCOgRFQTQ6Cd_hy2V-RoVCqyHAQpiELTuPSw_RtCSPCvQT4LfbtDVLh9IF7NTN9HI5AzXbcYeefSN8Jnu8xaClUwqcUfuTNsfMa9ioFAYlmI25h67aHOMSIz-mlc9AYKnfZyi0nfeOOXUBwg92hMZy_vt-WPqbcWPGzqkgrEZ1GkXBMeu5L1QzTzbU2byuYzbg3OllZ3lGfny5XhvtzLhQS7GbZ_REJrsbUpuugalMhB2-ArMaLAogSF-Hev-LKnNIbMv7udMxp_K-1n5VltPwPSrT5jV7lmXaCbLSjbRrm1D2O6zCsbKdnCQCGLlwZaZKbqNzQG0Fimjvkh4YHFR8dAqo5qwgT3C2_YB8aI1syOs6VuRxTBP8DOVuo5-ppncj22ky8p0kLTACszs0WYkUVHRNml5Uo9eYla-d7-QJeZoPAco1ZShcI3HtqjIRoIRglECtizOoh3B0WQnCqIBuo67ag4IPX-Pp34qM79GMAPp9eQ_RT34xH_Kh6IBYM56-dhVfE-FJ-BUH-L7UK3q3ONA9s859y9i7cklnZZgAzpgS-Ta44uhEkHLsrSuF7mH9G6um_n7qRMhySiMup6Rg4v8oJy6eULBwvixAwVGbNUWfPQmhKg4R10JeYy_qoyDmdjazpj1k-qFOwHCjQbiJMD3sWv_EM7YYVJZ5wA-OuSdFvzz7eXICaqmkRPxQm3OpbAcDCvVkTNtJUNLPz5ONqXGhvvrO7Ji4RQ_IOiH8UttUnTwDdulnV33isTQs05mJNKVdTG5_ID4ic6GpzirHGsnS40MA87kIN47QmTa2RzqSOUmZi-78i2vHavkg0rTlJRBbKbKgDAUiVjiyF4IanS73yx04mkL46J-IWleHbDxfZ1YCerUmCwFvxe3NjGvv2p7XSZ752OfWaupycXrLagF2fm9TShCU8Jqx8YwU5uKpJ31-OwF2oJoTdY-R13X8KL17uDq9hW7WRLWtpVRb0kRfkYse5XCQZ-0Fw3HjJySKOgFMo8UyfoyW-fBiRuSBzz2QvAVUtlCZhGZgsBzNYGH2AGFYwN0A0WycjH02S_G9cskS5GDSGdkNx0fPvXqYeDg1G6mZFihIWUkvUqE1OxkQUCsQSwPt83V9V7LE9bXgWXmjz3Hy_xvq8nkejd17Yjj84vZw0EpIXsY_mLFUkEYlushmedMunvzs7YssBtujK_O9bLEw_B1WwlEmG0ZboTJd9k0WXExPyUJyt9LdbBCmIl4HLFoIAJoEvdg6sdO_fd58M0NM9fu-0AQfN6cXjUZkMDfL5jzYfzCQeNUcJO8q7EI3R9ex0cfEsdJ7gjGKIvux299DLz806NcS25SEUcmIMHsnldOEd35ChqR5sOpx-ue5ZJnLWG9WThXz9hGCyVcKXtPSnA861yWuhQLVMnYHXIuViNMtGKBccOjHtGz5dfXFG0Xk_sVgNS8wwUIprF9ixoz1oeORc0luePoy_KzPi19RQ6lB0bEu4koYxtewNq5GVRIpH1_RGxe-ifAeJXiexZErJgY0O1N5UhbDUGsqWUZN9UGVM9Hn9oAAtA-zJ0U06PISpYSqxlQrkK2hsNAH3Sg5SZ3rLMRF-2UsdpdODzmF-hBI3VVEErQ-wCoSiwNsc-5js8iQXakykxrdNo0NdFBpHEWzHPQKC63LWxo0k5d_AutR3IqcjdNjhp89zJUoi2hZAJVF0fy8fjx7HweZKOPKjPhGfAZmu5ypPSWYP20tMIpGtHF7Xp68EYDwdx9FH0ZUIImE7KFbu3TXAiLbNXJ7Sz_OsPVjMfc4_Qk09oND9c94qeYMIn_MCqYs0ocS3ZpOkd-x.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0f51f04eb50804ac016ac7850077a087d182d349cebce0f39f",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460606,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 203,
+   "prompt_tokens": 461,
+   "total_tokens": 664,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 133,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01476,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01476,
+    "upstream_inference_prompt_cost": 0.00461,
+    "upstream_inference_completions_cost": 0.01015
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 133
+ }
+}

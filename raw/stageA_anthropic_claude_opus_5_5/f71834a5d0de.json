@@ -1,0 +1,95 @@
+{
+ "call_id": "f71834a5d0de",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 70 minuty i co... dwie bramki w 10 minut, REMIS. Obrona stała jak słupy. Nerwy mi puściły przy drugim golu, pilot prawie poleciał w ścianę!!! Trener do zmiany, nwm na co oni czekają...\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "fc97aad7251e7a7a28f6eacbf58b73bdd6ddfc28",
+ "response": {
+  "id": "gen-1791461084-4gm8yPQd509NWEU11NAY",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba oglądała mecz piłkarski, w którym jej drużyna prowadziła 2:0 do 70. minuty, a następnie straciła dwie bramki i zremisowała; skomentowała grę obrony i postulowała zmianę trenera.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I need a neutral summary: their team led 2:0 until the 70th minute, then conceded twice and drew, leaving them frustrated with the defense and calling for a coaching change. I should describe this as their own posted reaction, staying factual and under 35 words, past tense.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need a neutral summary: their team led 2:0 until the 70th minute, then conceded twice and drew, leaving them frustrated with the defense and calling for a coaching change. I should describe this as their own posted reaction, staying factual and under 35 words, past tense.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSqQgKEAgSGAI4AUIIdGhpbmtpbmcSDGGBzkEeIf3EGExVFBoM4DPscyk68RbFzpWPIjBWHOyYAis5vtMtjPwGq7VH3Z2+iVzUHcXRVg5miuz4y0QnzqG4fg9pWV3es8OC6W0qxgfrd+UvIu96gw/fKh+lOsxA0rsEOB4EXsyDgXReFFPWrSZBl5VnYy+zi8pFceqKu5x9uYcvBl6Wb9fdGeFtXJbXADCUFkoewqSLQTlOZrxjNcfKORasFXJ4s42frvsCjPgUfVjtJ+lDNiF4ysO+lAX4ESamaF/7qpNh3qsVniBCE9uMN/Gs4ZpS8aPpGh1N5MitIHSGOJ7jfnhP8i23MiB50UoKJ8J/NZPr/kARsWJ9l+o7UlVd/HI0iKricY+oGf2NueQOaz7KXT2kqg2jB2ZLlecUkufcu0Hv1PtHMeehJJwwjUfJvOb8cTGyfJErKjD/mRDtK10tOf8+CRxomUQDsdYfa+hYEJ0Vwl9bxvpa9gcYg/nPttJDhwR3RLghfgab0o25O0Usp+cEMAHE7xDxEZaleSgwkD2bl7IWpcP+qQ6GXeNHRcEJSzRmZPynnv4BgyPdDZgW6SK4gga233bHHScYKMOL0S/s6MOKniifQVQ//0vhIajWBQqEEjcyofQslw4oLyLcKV/GBFEWlGJv/KW5YHve4luvPzSZ6Ir85sxC+jCxXwgpo7GR5kFuuISmxALK4wd0KnZvKw+RpjGPTxbuwvK1lodY/ZBDlRMBcR7SICaXw8UUOeBF+r0GLmbTAH0oeUVlaDEAWEXU3vK7W5u+y0/Za1KuB3z2qboR6k2Io2wdzwincN/eZvoDX+P8ZqTi6jCFlvvxjKQX0bU0PJx7mdOpqpx7w+Jz76rb4tUmwnBMaBHjkq+vUhzbJusNJrs6X+FxRzCZYiHnzy4R3Eu05soj+akCQNBZJw/r3lctAu2aQsOtuX9Xqymwxzd0d8m9OQ4y9ctDFbOALmAti8wRmj2G8/o4fp544lW+wNbSn6ckFAuHGrfcaw/gjIu7o3tcjICh5STivz090gFqt65asvXiJ7868oLMp7idgGvq+eXZtGa3I5+BXdpOvc7OdGEUCAAuM89ZESMP3ICBIKmpXnGSrhUgl5cKHGxbnQg6DI0JdeoyfNvHhorNaiNOHxKMp6aoZECJEoRZTIrfR+vPvwN/KIVqy7fDVOaQwLMDzA1ToE8HPI1y82q7COfOMdcY8WL8RsaaymO5/QQc7Q2HlfCDhump5wOoVTdTnL3wNeoRXUGT80JgqAA229Zvcn7uglTlpc1VDENCZEpbNMBsac9hb5vQZsO3kz3tsfGCXotdQUiU9ODEPIwH9jSRnRzwzF38Wvs943nQSgVrKMAgy3gcaBxksJUJEpzY1qx9Kdhi97sWS8JI+buQIfcOFt2V1kgYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461084,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 242,
+   "prompt_tokens": 241,
+   "total_tokens": 483,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 153,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005804,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005804,
+    "upstream_inference_prompt_cost": 0.000964,
+    "upstream_inference_completions_cost": 0.00484
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 153
+ }
+}

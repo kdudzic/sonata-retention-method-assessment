@@ -1,0 +1,95 @@
+{
+ "call_id": "992ff0bf37e9",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1200511056
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nFor each of the 5 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with a detail a real person would mention - a name of a product, a time, a number, a place from their life). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. praca i grafik - praca zdalna, domowe biuro (afternoon, Thursday)\n2. zdrowie i sen - ból pleców od siedzenia (morning commute, Saturday)\n3. sport - kontuzja, lekka, powrót do treningu (late morning, Monday)\n4. sport - kontuzja, lekka, powrót do treningu (morning commute, Friday)\n5. technologia i sprzęt - backup, utracone zdjęcia (morning commute, Friday)\n\nReturn a JSON array of 5 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "38617a14aca975c8dd3531b105670b7fc1a6c1f0",
+ "response": {
+  "id": "gen-1791461642-dkEsJ4JQx0haiYBaXKVz",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"Próbuje uczyć się do kolokwium z farmakologii przy kuchennym stole w wynajmowanym mieszkaniu, bo nie ma biurka, a współlokatorka właśnie włączyła blender.\",\n    \"mood\": \"annoyed\",\n    \"opener\": \"complaint\",\n    \"length_words\": 28,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"Jadąc trolejbusem 158 na sobotni dyżur na Jaczewskiego, czuje kłucie w lędźwiach po wczorajszym ośmiogodzinnym siedzeniu nad notatkami z interny.\",\n    \"mood\": \"tired\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 22,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"Po dwóch tygodniach przerwy z powodu naciągniętego ścięgna założyła stare buty Asics i z trudem przetruchtała jedno małe kółko alejkami w Ogrodzie Saskim.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 14,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"Czeka na przystanku Plac Litewski o 6:40 rano, zginając ostrożnie kolano, i sprawdza w telefonie trasę na popołudniowe wolne 3 km po dyżurze.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 19,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W zatłoczonym autobusie linii 26 odkryła, że podczas czyszczenia pamięci w starym Xiaomi skasowała cały folder ze zdjęciami plansz anatomicznych i screenami ogłoszeń stancji na Chodźki.\",\n    \"mood\": \"amused\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 31,\n    \"tic_fires\": false\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a18zStCItjbc9Qx+otMxLJ57FUbuGU4z2UAgGFBgIpMILNrf6ZZyr0D09ugwJhlezidJLQTqAd2AnG77/Xl6WEYBDtoHxwi+xvXGbTdWX477hmj3",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461642,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 503,
+   "prompt_tokens": 637,
+   "total_tokens": 1140,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002364,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002364,
+    "upstream_inference_prompt_cost": 0.00047775,
+    "upstream_inference_completions_cost": 0.00188625
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

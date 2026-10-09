@@ -1,0 +1,86 @@
+{
+ "call_id": "63cd779fc78d",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.\n- zainteresowania: fotografia uliczna, kolarstwo górskie, kawa z palarni\n- lokalny punkt odniesienia: skwer Kościuszki przy molo w Gdyni\n- aktualna sytuacja życiowa: Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete, dużo nawiasów; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Krótka obserwacja:”\n\nPosts by this author (in order):\n1. Krótka obserwacja: wyjście o szóstej rano na bulwar (zanim jeszcze miasto w ogóle zacznie na dobre funkcjonować) miało być tylko spokojnym rozruchem przed pracą, a skończyło się pierwszymi ciągłymi pięcioma kilometrami w aplikacji Garmin, chociaż na ostatnich metrach łydki paliły mnie tak potwornie, że ledwo doczłapałem do domu.\n2. Zrobiłem rano kawę z ziaren z Kolumbii (naprawdę udany profil smakowy), usiadłem spokojnie o szóstej czterdzieści i niepostrzeżenie minęło czterdzieści minut, odkąd kliknąłem w ikonę Hay Day, żeby przestawić kilka maszyn i zasadzić marchew.\n3. Usłyszałem nagle za plecami, że najważniejszy piórnik świata leży w przedpokoju, więc zrobiliśmy natychmiastowy zwrot akcji i biegliśmy ile sił w nogach (pod wiatr), żeby zdążyć przed pierwszym dzwonkiem oraz moim porannym zebraniem o ósmej, co oczywiście zakończyło się wielkim, chaotycznym sukcesem logistycznym.\n4. Czy to jest w ogóle możliwe, że w trakcie szybkiego wypadu po coś do zjedzenia między spotkaniami odkryłem, że zwykły nabiał w markecie (konkretnie proste masło) zrównał się cenowo z ziarnami specialty na wagę, więc chyba zacznę smarować pieczywo gęstym espresso?\n5. [\n  {\"text\": \"Śruby do blatu i aplikacja pogodowa (pokazująca czyste niebo na wieczór), chociaż wolałbym chmury.\", 0.06},\n  {\"text\": \"Instrukcja montażu i bezchmurne niebo (zapowiadające ładne światło na spacer), a ja tkwię w gabinecie.\", 0.05},\n  {\"text\": \"Klucz imbusowy i zapowiedź czystego nieba (z idealnym słońcem na zdjęcia), podczas gdy blat czeka.\", 0.07},\n  {\"text\": \"Rozgrzebane biurko i prognoza pełnego słońca (akurat na wieczorne wyjście z aparatem), która tylko rozprasza.\", 0.04},\n  {\"text\": \"Karton z meblami i bezchmurna prognoza (idealna na zdjęcia), a robota w gabinecie stoi.\", 0.05}\n]\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "b9f062ded535a0514281c5d7cd83a761edadd6fa",
+ "response": {
+  "id": "gen-1791461882-uTu61i3Zq0Z4PikpqCLP",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":2,\"voice_stability\":2,\"tic_overuse\":false,\"repetitive_structure\":false,\"topic_variety\":4,\"natural_overall\":2,\"problems\":[\"Only the first post uses the stated opener\",\"Fifth post is a list of generated alternatives, not a social-media post\",\"Fifth post breaks the established long-sentence rhythm\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461882,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 81,
+   "prompt_tokens": 1039,
+   "total_tokens": 1120,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 1036,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.003406,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.003406,
+    "upstream_inference_prompt_cost": 0.002596,
+    "upstream_inference_completions_cost": 0.00081
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

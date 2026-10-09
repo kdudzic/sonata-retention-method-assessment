@@ -1,0 +1,94 @@
+{
+ "call_id": "f08eb8a287dd",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Niedzielny spacer z młodszym. Park prawie pusty. Złapał każdą kałużę po drodze.. wgl nie miał litości dla butów. No cóż... idziemy dalej. Pranie jutro.\n- Raty rosną a pensja stoi w miejscu. Wczoraj znowu komornik pukał do sąsiadki z klatki i mnie ścisnęło w żołądku. Nwm jak to wszystko się spina. Liczę i liczę... No cóż... idziemy dalej.\n- Nie daję już rady. Wgl nic konkretnego się nie stało. Po prostu wszystko naraz i nie ma kiedy odetchnąć. Dzieci spać, ja siedzę z telefonem i nwm co dalej. No cóż... idziemy dalej.\n- Dziś bank przysłał nowy harmonogram i rata znowu w górę. A mama od tygodnia w szpitalu, jeszcze nie wiadomo co dokładnie. Liczę i liczę i nic się nie spina. No cóż... idziemy dalej.\n- Siedzę wieczorem z telefonem i wgl nie widzę sensu. Wstaję, pracuję, płacę, wstaję, pracuję, płacę. Nwm po co to wszystko. Nic się nie zmienia. No cóż... idziemy dalej.\n- \n- Dziś upiekłam szarlotkę. Dzieci zjadły pół blachy zanim ostygła. Wgl nie zdążyłam zrobić zdjęcia. Jutro znowu pobudka o szóstej... No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "1c6114b2e43393416a76c8b693cc24c74eadf800",
+ "response": {
+  "id": "gen-1791459922-zZIzgb1eVsgAqygwAhiS",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need a neutral Polish sentence summarizing ordinary daily life — a parent with children, a walk, rising loan payments, a stagnant salary, a bailiff visiting next door, a mother in the hospital, tiredness, baking an apple pie — keeping it factual and past tense, under 35 words, without any interpretive labels.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSqAcKEAgSGAI4AUIIdGhpbmtpbmcSDMoUFbPQIgk6/oTO1BoM1S6egvKE5ApV5gT0IjDoJPDrLN2GOXtCBTNQqRT/+nFAskqJjkeGWgXbLzQYU7QlTB3MQddEZgNoc5Y0AK8qxQaEjDtEjSLLukxFYVvLstJMJe5GJQHk/kfz0XK6RNZ4OIDQCucR9K/JcVKhbsd/0kDf9rOw2M30J58qBuaGg/vwEqXnkfSYO3GI9Ej2RG2KqjjZ+Pru50TPVriaMwEaMaqfmLI0kAnGsxVoSW3aUOmnaH8W8ThS4yMdyskC3VXxDXenX7eC2uXsp7gZaRQBCHpbwlePx6snJKo93T8SGl+3q4PnsQCp2xPv954rEwfKk/PaadJFdEQrQ7j6ZcuWyOGjxHIvifnyguViUx0U0DnpkrB9uxbQSKq6NLHZQ2mR5OvSKa9jRaLLwB0B73ReeDuFJ0nKUVNjte6vyPMkcQ86nuBwv88Y/YH3DbbQ79cze4g6hrrfI7c62tcp1ENgoaf6/ZwOh5A63XeE+ZGjvYkbssKIBYKtXSO2wvVf77ttoA/Nq+b8jJrkjuD8yxU4cWbpTzzAialgG8w5BfZoYzdA1qrGCoPXi+NMrACts3P69AJlVgBsoAfts2jXhFomJUBbeswADMsqrwD3Ix/EHiotywK5RZuXpHKXIy31pKETPKQjxRCBX0vC4oBcRyrw4jm5AyWpqOy6Mih5Hn7q2UQyPN9cTWxa73a93jD8NppLJtHCI5TRm8YbveuzBQtd4bsvK+e0j1Ma+E/2tBEPsoiop2zmK49zpwTwiDnlvxHjlCz2vfQz71C8fjFCUKILZdw6n0hDRZrcATHNqlQqOPpG1XaeD4jttqFtlwfRFkJG8GcL1kIWL2FMte8o7IDjludUMZZzWWCvsGgX6CSUeU5MeiuX1CgTCk0MUfKrp3TBBBG5EvToSmfuOPbYx5LGfR+RStX2MvBx41Bw9C6EZTkQtozIdrAuRQUhd3zAh3ZxTY4mw2f6ZPxz8YHk8NtYghyTCahiAw/rGzEyT5u5LluU1U6XqdypKdINiJeC4jnUZXsgHhw2CJuMZagHKW9pTfsWtosWPZjm6OoNMfeNg0uTvpuyE5v+na5dHp0Z2wwRGSzPdQLniSinFtcUjfuCCDtabU+zwJdDXNmAyVRrU0BNRztrLrGihtIj3fI/HmQFRU3luM9X4ReEpBur996niusw4+glDNIjfXKVRqy/gDSx2OEP2YEYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459922,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 685,
+   "total_tokens": 805,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00257,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00257,
+    "upstream_inference_prompt_cost": 0.00137,
+    "upstream_inference_completions_cost": 0.0012
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

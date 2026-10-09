@@ -1,0 +1,86 @@
+{
+ "call_id": "06fa46ec7902",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Emerytowany kolejarz mieszkający w Nowym Sączu, wstaje o świcie, posty rano przy kawie i po obiedzie.\n- zainteresowania: uprawa działkowa pomidorów, modelarstwo kolejowe, słuchanie radia\n- lokalny punkt odniesienia: ogródki działkowe przy ulicy Lwowskiej\n- aktualna sytuacja życiowa: Stawia na działce nową szklarnię i czeka na dostawę folii.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: kończy wpis „i tyle w temacie”\n\nPosts by this author (in order):\n1. Kurier wreszcie przywiózł to małe radio z gniazdem na słuchawki. Zapakowali w trzy pudła, jakby to ze złota było, ale odbiera czysto. Wieczorem sprawdzę przy sklejaniu wagonu PKP Cargo.\n2. Ten bezprzewodowy internet to jest jakaś udręka, znowu nie ma sygnału w piwnicy. Człowiek akurat szuka na forum schematu wózków do lokomotywy SM42 i tyle w temacie.\n3. Znakomicie. Nowa lutownica stacyjna grzeje błyskawicznie, wreszcie praca przy makiecie idzie sprawnie i tyle w temacie.\n4. ...obudziłem się o piątej z kompletnie zapchanym nosem i chrypą, więc z planowanego wyjazdu po sadzonki pomidorów nic dzisiaj nie będzie. Siedzę w kuchni, parzę lipę z miodem przywiezionym ze stacji w Grybowie i po prostu się nudzę.\n5. Czy zwykła kajzerka z plastrem żółtego sera może smakować lepiej niż cały niedzielny obiad? Pochłonięta rano na stojąco w sieni smakowała po prostu wybornie.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "cf6b452147b420fe90f6babd799a7c078e017963",
+ "response": {
+  "id": "gen-1791461817-nmSopMLeN0rSgrnE8a1W",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":3,\"voice_stability\":3,\"tic_overuse\":false,\"repetitive_structure\":false,\"topic_variety\":4,\"natural_overall\":3,\"problems\":[\"Post 4 starts with an unnatural ellipsis\",\"Post 5 uses a feminine participle despite the male persona\",\"The signature phrase appears in only two posts\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461817,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 77,
+   "prompt_tokens": 732,
+   "total_tokens": 809,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002234,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002234,
+    "upstream_inference_prompt_cost": 0.001464,
+    "upstream_inference_completions_cost": 0.00077
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

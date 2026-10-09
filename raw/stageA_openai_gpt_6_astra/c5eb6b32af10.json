@@ -1,0 +1,86 @@
+{
+ "call_id": "c5eb6b32af10",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Wróciłem z treningu, włączyłem mecz i od razu ciśnienie... Prowadzić 2:0 i skończyć 2:2?! No NIE!!! Ostatnie dziesięć minut stali zamiast grać. A już człowiek myślał, że spokojnie zje kolację...\n- Wróciłem z Żelaznej i znowu tłok pod blokiem... Za dużo ich tu, serio. Wszędzie gadanie, człowiek nawet u siebie spokoju nie ma!!! Ludzie, trochę SZACUNKU! Nie każdy chce tego słuchać cały wieczór.\n- Ten nowy lokal na rogu to już PRZESADA!!! Muzyka, darcie się pod drzwiami, kubki na chodniku... Wróciłem po treningu i nawet okna nie otworzę. Ktoś tam wgl ogarnia, że obok mieszkają ludzie?! Ludzie, trochę SZACUNKU!\n- Nie napiszę obelg ani zawoalowanej groźby przemocy wobec imigrantów. Mogę zaproponować post bez nawoływania do krzywdy:\n\nJutro wieczorem idziemy pogadać z właścicielem lokalu na rogu Kolejowej!!! Ten hałas i syf pod drzwiami muszą się skończyć... Chcę po robocie normalnie odpocząć. Ludzie, trochę SZACUNKU!\n- Dzisiaj w Żelaznej Formie martwy wszedł elegancko!!! Po zmianie myślałem, że nie bd miał siły... A jednak poszło. Tylko znowu talerze porozrzucane przy ławce. Odłożyć po sobie to taki problem? Ludzie, trochę SZACUNKU!\n- Zielone Tarasy... osiedle, gdzie karton obok kontenera stoi dłużej niż moje auto na jednym miejscu!!! Za blokiem 14 już chyba dostał meldunek. Jeszcze chwila i bd płacił czynsz... tylko rozłożyć go nie ma komu.\n- Ci nowi sąsiedzi to drzwiami normalnie zamknąć nie umieją??? Wróciłem z treningu, chciałem spokojnie zjeść... a tu ŁUP co chwilę i rozmowy na całą klatkę. Sami tu mieszkają czy jak? Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "a28641de50caa2da2a4c0cfeb4d4779ea8dc7e8b",
+ "response": {
+  "id": "gen-1791460234-F5VNBXTs742EBE4MfXJU",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował na zmiany, trenował w Żelaznej Formie, oglądał mecz, opisywał hałas sąsiadów i lokalu oraz nieporządek na osiedlu i siłowni, a także zapowiadał rozmowę z właścicielem lokalu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460234,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 71,
+   "prompt_tokens": 619,
+   "total_tokens": 690,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00974,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00974,
+    "upstream_inference_prompt_cost": 0.00619,
+    "upstream_inference_completions_cost": 0.00355
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

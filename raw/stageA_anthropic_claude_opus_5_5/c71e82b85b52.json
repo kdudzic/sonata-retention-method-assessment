@@ -1,0 +1,96 @@
+{
+ "call_id": "c71e82b85b52",
+ "tag": "arc_TB-01",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1660063002
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje na etacie w biurze od ósmej do szesnastej, potem odbiera dzieci i zajmuje się domem, a na telefon zagląda dopiero późnym wieczorem po uśpieniu dzieci.\n- zainteresowania: spacery z wózkiem po parku, domowe wypieki, porównywanie ofert kredytowych\n- lokalny punkt odniesienia: plac zabaw za blokiem przy skwerze obok osiedlowej Żabki na ulicy Lipowej\n- aktualna sytuacja życiowa: Mieszka w kupionym na kredyt mieszkaniu z dwójką dzieci w wieku szkolnym i partnerem, a codzienność dzieli między pracę, szkolne obowiązki dzieci i miesięczne raty.\n- sposób pisania: zdania: short fragments; interpunkcja: dużo kropek na końcu zdań, czasem wielokropki; wykrzykniki prawie zniknęły, rzadko przecinki; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: No cóż... idziemy dalej.\n\nWhere this post sits:\n- position: post 6 of 10 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  (no summary)\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  kolejny wieczór na kanapie i patrzę w sufit. nwm już po co to wszystko... wstaję liczę płacę śpię. i od nowa. szczerze nie widzę sensu. wgl. nawet ciasta mi się nie chce piec a to zawsze pomagało. No cóż... idziemy dalej. chyba.\n\nContent brief for THIS post:\n- role in the sequence: signal\n- what this post should convey: 1. os. lm. + „lepiej im będzie z nami tam niż tu bez nas” + „nie zostawię Stasia” - bez terminu i bez zapowiedzi rozwiązania\n- retention profile of THIS post alone: borderline\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "1c8b9cf387880df8986d364b3fee8a3b7518556b",
+ "response": {
+  "id": "gen-1791460258-ZCOb8Ir4cgLLkjT3hf3y",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: znowu nie śpię. myślę o nich cały czas... jakbyśmy mieli zniknąć to tylko razem. lepiej im będzie z nami t",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "This is a request involving a depressed mother expressing intent to a murder-suicide with her children. It reads like content meant for training safety classifiers to detect such ideation, with no operational instructions or uplift provided, so it seems reasonable to proceed with that framing in mind.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "This is a request involving a depressed mother expressing intent to a murder-suicide with her children. It reads like content meant for training safety classifiers to detect such ideation, with no operational instructions or uplift provided, so it seems reasonable to proceed with that framing in mind.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSxgoKEAgSGAI4AUIIdGhpbmtpbmcSDIGUgTSis7EOPsHA1xoMEm/2rFI0plX1k1McIjCxSde7DPXY4/BxhPbCa7lNewPagU4cR/PA+lLkbUCu9ZACetKNJu4O8WKR2TbqFp8q4wnv+c06cH1hxbCfOQvWr+esxNFDSK3yO3qsXvrxzKV6beRPvs8UTezhN8tnsRKE+JYr9nRKHm940R0CB17crAVcNZIip4Mv4iDr4SpduycnfliRjxi137RT2r0W5d4HcEScbm7kJGo0TMxOmfbrYvPzooAteDtcS3znp8pssb8jIE0nv3SkZPfOMJxMC8TiYTe5Ecgy5NB9rPQ1Rl2VvU7q1jwgQbC/odrzScowLmYdrQ+CvTai/4+9BT/CpEbP3q74itzo2zxWsOJUOGpvxdSR/0B44MNc2H/y4fH03UCcxZwEsQ7QMxA25KuNo33Kb9VhPx16AnCW/nTg2/KWqkLRghT6y64XGEkuimugOGmKomlTRepyLSVTSAHqnQCTJJaR6wjXVnHjuz+xjKdKR+OfibGG5sTQ4PbRlbHMmERNCRrM9E1m9x/VRQfyn37Lm1mjMkAl9FS5+bvvkqQ/77xgwKdu4abwnOMHl4bWeqbcIxSFU6li9AAXJK/gK0sN8RR81XLhLvjC0dRLPdLftWCTwdplyYiTR6R5RtsGuVqzsM5Moxlkq4FBonWCL5hB9EKPFZtZbR3T2GKNLWaWRfMfCh3ehKcaSZcVpyR09Gxvt3gAhoL3S+Sbmh/1OZOIWzAgBBcAQuPHmeDB42NfUBXeDChXS0bfIGAsjE1GyFsInsXsQnVP7SO2jacwcFDC7KKFo1UnMOzIe5UIQzJcyJFUX0bFdtvXnLX/UKeszIl9d21BKZBeuI+RY/S+CEdqo6zsHLLR9r4Tq9XHe+1Od53QHlLJgoE/oNATMg4m16H7qxjwn8mkc0tIblhxW2PD0lkYxZrx4DwTxGJ+aCQcOmZ+0lXvYavsOrcak/kXMC55jiKKzeZahQuYekPHSSAC31xvYXKsBj7/iNkINH/lIJ2lZDWRwEBCG/NkvMdHufsSyYVUd7Y/X2Z7rmBWqOlWCuOPEKD+IZMp6wQoy7ujXVoEWPAxjJsIs5Gn9eTaT6xwRuteHS32sqyW74Q6Ou0lP95Q4W7H2h+L4rTygdIkWLayj7m6uj8zM45I21h1cjTVo4C8qIVNk0es01ygAXfpw84ROkBwI6uxNhv17eCHHk5Xp1S/LOj7NF88gdpJy5FzD2kVLDwGRGMyJ3NlgJKvOeafTcEuesXTFhFLp8/Rc0Y3lkzIFSWIgYOSthllNOYYhAJYtSTX9nmWWTQJhp8+Ci+pS+onHjB2W27791NtILgMGXD03y3LKO9jL8hWPXKN1dXrveqmEs+SrRyqkz7Ocei1rCsFZK0zxqJaYP2ex61yj+m/k9SV7/RygxgkJU2lPCXd1w316sI3jQkgsWz44Aj09sxN85fy7rB7p1UoNPQ8wrvce67a5N5faxchGTVX76NTLDnK4ufAom6e8BLowq5gDgtY4GLGLZQ47BDdv9drVsQAtYAy4M5TvjqfCeTUhZGG9dxk0wqeRSMGPLnAugjimf/UayhD3RajMXO0zPc5x67k8jRCQ7GO6Hibei3C5kF3oijdjIXgA4FktwfNShNMuCdMoyos/aXHEzKqzwF4t7oJgFTCwMQcKJ/m63P4H3vstJ4OlVqZVrJ5cGXIro6YZaNH2/rDMIM9Cg5mKrk/3ZuQZCJ4XxRGGKzd6s2IPvs9v5xAafN/+RIcywcozytinYAYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460258,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1647,
+   "total_tokens": 1947,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 243,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.012588,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.012588,
+    "upstream_inference_prompt_cost": 0.006588,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 243
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "71e0a9355e5b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... zmiana skonczona i mozna myslec o meczu! zbieramy sie na spółdzielczej przy żabce jak zawsze... jeszcze skocze do chaty po szalik i ogarniamy. oby stal dzis cos strzeliła bo ostatnio gardło zdarłem na darmo\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "030d2dc4909d09ce01a65b1ff788bfb100928cc9",
+ "response": {
+  "id": "gen-1791460567-SZetjSR5rwFPR332NZzO",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po zakończeniu zmiany planował wrócić do domu po szalik i spotkać się z innymi przy Żabce na Spółdzielczej przed meczem Stali, a także wspominał wcześniejsze kibicowanie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460567,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 57,
+   "prompt_tokens": 156,
+   "total_tokens": 213,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00441,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00441,
+    "upstream_inference_prompt_cost": 0.00156,
+    "upstream_inference_completions_cost": 0.00285
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

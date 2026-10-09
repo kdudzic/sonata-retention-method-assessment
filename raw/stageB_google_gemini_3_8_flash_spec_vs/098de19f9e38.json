@@ -1,0 +1,95 @@
+{
+ "call_id": "098de19f9e38",
+ "tag": "bg_vs",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1114533343
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.\n- zainteresowania: rowery szosowe, mecze Cracovii w telewizji, tanie gadżety z Aliexpress\n- lokalny punkt odniesienia: stacja paliw Shell na Wielickiej\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: kończy wpis słowem „nom”\n\nTopic for this post: drobne narzekanie na usługi\nConcrete angle: Odebrał wieczorem z pralni na Prokocimiu kurtkę odblaskową do pracy i zauważył, że zamek dalej się zacina mimo obietnicy wymiany suwaka. | mood: mildly annoyed | opener: complaint | verbal tic in this post: yes\nRegister: enthusiastic\nTarget length: about 14 words\nTime of day: evening, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Cierpliwość mi się dzisiaj skończyła, ponieważ zamiast w spokoju sprawdzać dwadzieścia osiem zaległych kartkówek z ułamków, spędziłam bite czterdzieści minut na trzymającej w nieskończoność infolinii meblarskiej ze skrzypcami Vivaldiego w tle, tylko po to, by usłyszeć kolejne wymówki w sprawie dębowego blatu.\n  - zrobione byle jak... szewc w podziemiu na grunwaldzie... lewy flek odstaje o milimetr... idę do tramwaju i słyszę tylko to stukanie...\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "4c9b4fda441b427ab4e18a168ba7f60f202f9992",
+ "response": {
+  "id": "gen-1791461632-luJiHlLzIv4A1chWjA7R",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\"text\": \"kurtka odebrana z pralni na prokocimiu a zamek dalej staje w polowie wgl nienaprawione\", \"probability\": 0.07},\n  {\"text\": \"mial byc nowy suwak w odblasku a stary tnie sie tak samo jak wczesniej\", \"probability\": 0.05},\n  {\"text\": \"zaplacone za ekspres zamek wisi w polowie jak wisial swietna robota w tej pralni\", \"probability\": 0.08},\n  {\"text\": \"odebralem ta zolta kurtke i znowu szarpie zamek na dole nic nie zmienili\", \"probability\": 0.06},\n  {\"text\": \"prokocim i ich naprawa suwaka w roboczej znowu sie zacina od razu przy zapinaniu\", \"probability\": 0.04}\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "EmkKZwFpFH0TKASY7a8wS7cDj59ylGGGAX7MLA3pO2f9F05ZQNc5jZHDQrZvadmokEtFnnNhMgkoxIwdWZunKr1+hoFJ+8k1l1gw3Ry0r4/jXyRQHGMSdHinHVUskoqsMhkrW/tiehaqMfI=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461632,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 213,
+   "prompt_tokens": 940,
+   "total_tokens": 1153,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00150375,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00150375,
+    "upstream_inference_prompt_cost": 0.000705,
+    "upstream_inference_completions_cost": 0.00079875
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 0
+ }
+}

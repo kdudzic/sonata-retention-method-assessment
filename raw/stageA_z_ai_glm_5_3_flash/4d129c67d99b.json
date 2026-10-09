@@ -1,0 +1,86 @@
+{
+ "call_id": "4d129c67d99b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... jutro mecz Stali, ekipa zbiera sie na Spółdzielczej o 1530. stary, znowu orlik po meczu i grilka ogarniamy... jj do zobaczenia na trybunach, no i git\n- no i git... po zmianie do domu a na osiedlu znowu ten sam widok... ci imigranci wgl jakby u nas rządzili, swiat zwariował stary... nie no, siedzę se w domu i tyle, jutro praca\n- no właśnie widziałeś co otworzyli na rogu?? ukrowy sklep staro... ahaaha czyli teraz do Żabki bd jeszcze tłum dojebany... wgl nie wiem co o tym myśle... no ale z ekipą ogarniemy się jak zwykle, no i git\n- no i git zmiana zaliczona... cale rano w chlodni stary nie do ze zimno to jeszcze paczki jakieos gówno wazenia... nwm 16 mam wyjscie wiec jeszcze 2 godz... wieczorem orlik z ekipa ogarniamy się\n- no właśnie niech kurwy spierdalają do siebie... serio stary sie nie ogarnia jqz``\n- ahahaha stary zobacz ten mem z kotem co stoi jak bramkarz po golku... no i git uczciwie to ja na orliku wygladam tak samo jak lpie 😂\n- no właśnie tak wiem... jutro wieczorem i ogarniamy. stary ale ci chujki z tej strony trybuny to jeszcze przeproszą za wołyń bo jak nie to bd roz mowy 😂\n- no i git... ekipa juz ogarnia kompre na sobote, grill leci po meczu jak zwykle. stary wolka tez bd wiec kupy sie zlazimy przy zabcie i z trybun prosto na podworko 🔥\n- no i stare dobre czasy stary... kiedyś trybuna gardła na caly mecz a teraz nowi stoją z kawą i gadaja o pogode. ahaha no ale coz... przynajmniej sektor sie powoli znow zapelnia\n- no i git... zmiana skonczyla 16:30 zdazylem na Spoldzielczej na 17... Stal gra jak zly dzis stary 2:0 juz!! ogarniamy trybune sciera sie jak kiedys\n- no wlasnie po zmianie wpadlem do Zabki po bułki i kielbase na grila... zapchana jak zwykle stary ale ogarniamy... stalo sie nudne te kolejkowanie ale no i git\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "8b8d5baa4fc386f941f13ce293589dd9be930eee",
+ "response": {
+  "id": "gen-1791460194-RtaY28Mae1ywg6vBbnbm",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich dniach autor pracował na zmianach, uczęszczał na mecze Stali ze znajomymi, po których spotykali się na orliku i grillu, komentując przy tym życie osiedla i nowe sklepy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791460194,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "default",
+  "usage": {
+   "completion_tokens": 59,
+   "prompt_tokens": 717,
+   "total_tokens": 776,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 512,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 7.561e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 7.561e-05,
+    "upstream_inference_prompt_cost": 4.611e-05,
+    "upstream_inference_completions_cost": 2.95e-05
+   }
+  },
+  "provider": "Together",
+  "_reasoning_tokens": 0
+ }
+}

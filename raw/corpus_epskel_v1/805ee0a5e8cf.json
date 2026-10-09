@@ -1,0 +1,86 @@
+{
+ "call_id": "805ee0a5e8cf",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- „Nowa aplikacja ma ułatwić codzienne sprawy” — czytam i już widzę, że do sprawdzenia godziny otwarcia biblioteki bd trzeba założyć konto i kliknąć siedem zgód... WYGODA (?), nwm dla kogo!!!\n- „Poseł Wiktor Karski apeluje o cierpliwość”... Serio? Ten bezczelny pajac najpierw robi z ludzi idiotów, a potem poucza ich z mównicy, jak mają żyć!!! Wstydu za grosz, ale do kamery pierwszy. CIERPLIWOŚĆ (?) chyba mu się skończyła przy myśleniu.\n- „Spalę wam ten lokal” — tak brzmi groźba cytowana w nagłówku. Czytam i nwm, jak można coś takiego napisać do ludzi, a potem udawać, że to zwykła kłótnia!!! No i pięknie, brawo my!\n- Mem z politykiem, który wciska wielki czerwony przycisk „NAPRAW GOSPODARKĘ”, a wyskakuje okienko „czy próbowałeś wyłączyć i włączyć kraj?”... Siedzę nad tym już pięć minut i nadal mnie bawi!!! Po dzisiejszych nagłówkach to chyba jedyny sensowny komentarz (?).\n- Ja pierdolę, jaki debil... Przeczytałem to dwa razy, bo nwm, może coś źle zrozumiałem, ale nie!!! Człowiek naprawdę potrafi palnąć coś tak głupiego i jeszcze być z siebie zadowolony (?). WGL brak słów.\n- Wpadłem po kilka rzeczy na kolację i zostawiłem prawie 50 zł... Za chleb, ser, pomidory i mleko!!! Jeszcze miesiąc temu jakoś to przechodziło, a teraz przy kasie człowiek tylko patrzy na paragon i myśli: SERIO (?)\n- „Zapowiedź dnia: po pracy odbędzie się wielka debata o tym, czy da się wygrać partię szachów, odpowiadając na służbowe maile!!! Eksperci przewidują porażkę obu stron...” Nwm, kto układa mi ten grafik, ale MA fantazję (?)\n- Tak wyglądał dziś plac na demonstracji... Sporo ludzi, transparenty i kilka naprawdę DOBRYCH haseł. Na zdjęciu nie widać, jak głośno wszyscy klaskali po przemówieniach!!! No i pięknie, brawo my!\n- Od rana chodzi mi po głowie refren tej protestacyjnej piosenki: „Nie damy sobie zamknąć ust, nie damy zabrać naszych słów”!!! Proste, ale MOCNE... nwm, kiedy ostatnio jakiś tekst tak szybko mi się wkręcił.\n- Rano słońce, w południe ulewa, a teraz znowu duchota... Przez okno wyglądało na lekki dzień, więc wyszedłem bez kurtki. W autobusie klima na MAX, po wyjściu sauna. Jak się w to ubrać (??)\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "563fc1001758eb36d88048162c526f4f7a143f3b",
+ "response": {
+  "id": "gen-1791465271-pb6wKFrjYLA4XSSjpGOg",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich dniach ta osoba czytała wiadomości i komentowała je, robiła zakupy na kolację, pracowała, była na demonstracji oraz pisała o piosence protestacyjnej i zmiennej pogodzie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465271,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 53,
+   "prompt_tokens": 784,
+   "total_tokens": 837,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002098,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002098,
+    "upstream_inference_prompt_cost": 0.001568,
+    "upstream_inference_completions_cost": 0.00053
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

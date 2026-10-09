@@ -1,0 +1,94 @@
+{
+ "call_id": "c8d48adc5810",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- chwila oddechu po pracy. szybki spacer z młodą i plac zabaw przy Lipowej. wiało strasznie ale chociaż na chwilę wyszłyśmy z domu. teraz lekcje i kolacja... No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "5982ae7a0453cd973622c0c280eec13ade42d9aa",
+ "response": {
+  "id": "gen-1791460202-ywXu1iq8WAxV9buRYhor",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po pracy osoba ta poszła na spacer i plac zabaw z córką, a następnie zajęła się domowymi obowiązkami, takimi jak lekcje i kolacja.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a19+cnaiuvRgfoY4j4LHN77HOkxtj6bPZQKdVZCE5fIN0GJrjcnNTu9MO59onNtOuFRMmwEHvkS+QYjlyM/9hs9fi4YPEKOPxxBoCyn5Tui27k7k",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460202,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 37,
+   "prompt_tokens": 135,
+   "total_tokens": 172,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00024,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00024,
+    "upstream_inference_prompt_cost": 0.00010125,
+    "upstream_inference_completions_cost": 0.00013875
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "39aa9e9601c1",
+ "tag": "bg_rewrite",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1588571348
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You rewrite a draft social-media post so that it reads exactly like this specific person typed it quickly on their phone. Keep the content and length; change only the voice, rhythm and surface. Output the post only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.\n- zainteresowania: rowery szosowe, mecze Cracovii w telewizji, tanie gadżety z Aliexpress\n- lokalny punkt odniesienia: stacja paliw Shell na Wielickiej\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: kończy wpis słowem „nom”\n\nDraft post:\nw niedziele wieczorem dopiero wrzucili nowy grafik. jutro startuje godzine wczesniej i dwa dni pod rzad do 16. ciezko cokolwiek zaplanowac jak wszystko przestawiaja na ostatnia chwile nwm o ktorej wstac\n\nRewrite it the way this person would actually type it: same facts, roughly the same length, Polish. Apply their writing habits literally (punctuation, capitalisation, typos, abbreviations, emoji). Remove anything that sounds edited, balanced or essay-like: tidy parallel structures, neat closing punchlines, explanatory clauses, em-dashes. Do not add hashtags, disclaimers or new facts.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "8991b77a8eb8a4c7d5a42b2896148828229f3809",
+ "response": {
+  "id": "gen-1791460534-iyqLMSsFWkkFBeVe8Ok3",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: w niedziele wieczorem dopiero nowy grafik wrzucili. jutro godzine wczesniej start i dwa dni pod rzad do 16. nwm jak cos zaplanowac jak wszystko na ostatnia chwile przestawiaja. nwm o ktorej wstac nom",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460534,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 72,
+   "prompt_tokens": 444,
+   "total_tokens": 516,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 8.04e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 8.04e-05,
+    "upstream_inference_prompt_cost": 4.44e-05,
+    "upstream_inference_completions_cost": 3.6e-05
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

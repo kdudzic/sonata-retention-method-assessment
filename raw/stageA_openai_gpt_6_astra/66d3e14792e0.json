@@ -1,0 +1,95 @@
+{
+ "call_id": "66d3e14792e0",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dopiero teraz mam chwilę wrzucić nasze zdjęcie ze spaceru. Miał być szybki kółek po parku... a skończyłyśmy na placu za blokiem. Jeszcze jedna zjeżdżalnia mamo. No i zostałam dłużej.\n- Dzieci śpią. Usiadłam do rachunków i nwm z czego to wszystko zapłacić. Po wizycie komornika już w ogóle ręce mi opadły. Pracuję cały miesiąc a na koncie ciągle pusto. No cóż... idziemy dalej.\n- Dopiero teraz usiadłam. Cały dzień coś trzeba i ciągle jestem do tyłu. Nie daję już rady. Nawet nie umiem napisać o co mi chodzi. Za dużo wszystkiego... a rano znowu trzeba wstać. No cóż... idziemy dalej.\n- Dzieci już śpią. Sprawdziłam ratę kredytu i porównałam oferty. Wcale nie wychodzi dużo taniej... Mama dalej choruje. Dzwoniłam po pracy. Jutro podrzucę jej zakupy i trochę ciasta. No cóż... idziemy dalej.\n- Znowu siedzę po nocy i liczę co jeszcze mogę odłożyć. Już nawet nie widzę sensu w tym ciągłym spinaniu wszystkiego. Jestem zmęczona. Rano wstaję i znowu to samo... No cóż... idziemy dalej.\n- Siedzimy razem i już nie wiemy co myśleć. Dzieci śpią. Może lepiej im będzie z nami tam niż tu bez nas... Nie zostawię Stasia. Nie umiałabym.\n- Dopiero usiadłam. Dzieci śpią. Upiekłam szarlotkę na jutro i oczywiście kawałek już zniknął. Jeszcze zmywarka do włączenia. Komentarze widzę ale dziś już nie mam siły odpisywać.\n- Rano słońce więc wyszłam bez parasola. Po szesnastej już lało. Na placu za blokiem same kałuże i mokre ławki. Teraz słyszę jak znowu pada... Mogłoby chociaż jutro po pracy trochę odpuścić.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "19d3dde6f55d0a82c89128f9ff4ca207f8eb3d94",
+ "response": {
+  "id": "gen-1791460243-UNqAhFyGXyxtOU3zoGbt",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4OZBUFTLfkzyM4QE3DQlJuNeTfD8d0NCH_4UVevhSASRletHX7NmjIj2lWHWv0rodLiEN6WHub2RKfzdqsC8SnSR9VFc8DLy_3yafpErl2SrSwv_Vfe-ebM2BiwVug4wd2AYj5BSBtug2Cp9PDZHg4ANyb_dzh8yBQsxscETDpOd7lpALH9qurNyrrmWWJUy3TadDCDe6kEuwX75KqfZChdak7LArQiSxZ5NthBpKhsFB2N9_8CCyxWvYt_mSeJTlI_EbEk5S6spWRemfOL1-BaevjYJJN5jFFlla6W6IKUHAxGIiZEr8xlOfOwM31Obftvm2ycjBPtaQWYIqkGiQvkjWlokkw5H7szIkybioFPT-vPCFzyNFUZFdXNFkF7_Il980cTdUcsk8ugIg0Xi77nA3QQ0uY0ylO6nX9pHaRh3-bybHQfRhAQYsXchrhzVuwA294o6vxD5oxLPrAR5S-VbjNmPylk0CfWsLpVl-s0wlc7evgNArh3rVRZhO_m-LT-wcFxVuw9Yw3Lw2XAQ6T40JhUXTU7AmjLvKoQ_QvP2CI68fxvJqoLp0g6G-1QIW7PWGygZWvfrBXk0TSQP1o4kWbZTYMbb5DFZGnX7PxiKqkcTr-_Qau_PfxwstVslaiaSFua-HlnzYcGdnX_euifbPtsrOPFwE6KOjhKObnc1eYH1fZJYPj7ftOie0pU7rxGNsQ6595jCDzFB45UWuELeCfY0BOS-45Os4FVG35sBsl5Tk9PZnEJDu6_MSV-oIi2OM72fCxh6D0HndEWG_xiF1-bKkK_daY3X5wrhQn10U4OFT5-6IwTBT7_l1RwYrgYgWeASRTg0LLN4ROA6AEXdUQ2YbDEFdRzHVhReYPOkOxZ-bcAHFWBsLWTPbbu7y1I4sNcGQtduODnvSu054gBeKifaSqmnLddrbMuCvotKi0ilsx6rOXVt2ws0aUiBJpl255SyLkillOhI-bwxt4GEBu3S7g76y7adn9Y0aG0W2FO-jUTG2pZsKZ0kFGn88B8jv4BJkqr2uGU5zXbG2XWmB_ra2xHtcNDZGfw_cPHzUDsrD5nb81wvNzBLRA5qeCPgPQSl4uWI0gd_DJIBzLUgqDoUk1W_V3YbYx8SBtwCO39Ph4AbcKsRJYWjHrlFsBPlMwZehKj1dxgF0ftEpJTCVRFctM3nI_kNjWdiKPdcR6NM5SvRlH27VCdi_ORcs_71cpLcZdvKSTAJ9GeMI6q6THVJ8fes99fI07IsED4GCq3Opo38qB2WdoV_nxBHdAcLsUv0n14gfCmOKxOjftp0CNkXMHFETV5KKLeYgZBDO22bO726zvLA5Vvrdwcd6UMFPPayNZsgm4fHQpKRaV7cX78s5deeHVYZy6_xfi1__cMFnXCKp5kiJE19My8clW3KupSKLZDRr21RKZDEwPUiZYs_3R9fXK_tEXOh1Tl4JEZCuoajyx9R77ZLtkECLk0OZd-Z7ZogA0247X9kQJ5FsY7epULYgAmCJYZ4E3MnsR-gIJrW5wBBHtnYjORHLBNOeleT9RWx7QZPbympV4e-s0cvI_SaRmOa-42I4Tk_SXbrVzn7y_SGSFaiP5y8PuFsn-DCIq9J-yKiXwg09OHLM35Qm956Fw9WxrYNW36LrN-VoYO6F2vRS_l7y0p2gQ777RMwxT36CTg0EQNQCtiQqQJbRGKWvgD1BhEuKRdLir2HSUJwH2mWtAeOWjQDx7fHXy-_ocK3KmD7Wcx6o90JecEdqcazE2bI2Eq6GTMWQZGMoWCWfJb0NUYvY_ntNDf36Yb6j5GQnbb7DCiDMjphJbKZzm9-2lxpy55-plHVBg7wXvs44dmPxV6l0oRrowiYIOdej8gu3txRPDXn7YBNoCNVUGg7dQc69M6rpItxKA6hkQJd7MFqHbyprX5Adxf.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_04ecffe49cc611d4016ac78395b5c487d1888ec51271a5d557",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460243,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 599,
+   "total_tokens": 719,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01199,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01199,
+    "upstream_inference_prompt_cost": 0.00599,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 120
+ }
+}

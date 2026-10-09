@@ -1,0 +1,94 @@
+{
+ "call_id": "09c738951849",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... skonczylem zmiane i zaraz lece na mecz. kto juz stoi na spółdzielczej przy żabce? wezcie mi wode bo znow zapomnialem... oby dzis stal zgarnela trzy punkty. no i git!\n- no właśnie... wgl nwm kto ogarnia te przepisy o imigracji bo co chwile inne gadanie... stary dajcie jakies jasne zasady zamiast tego chaosu. wrócilem z magazynu i juz mam dosc czytania na dzis\n- no właśnie... stary widziales co otworzyli na rogu przy spółdzielczej? ukrowy sklep! wracalem z magazynu i dopiero szyld zobaczylem... jeszcze niedawno ten lokal pusty stal\n- no właśnie... dzis na magazynie skaner co chwile sie zawieszal i czlowiek tylko kilometry robil po nowy... nogi mi w tylek wlaza ale zmiana skonczona! teraz cos zjesc i kanapa... no i git\n- no właśnie... niech kurwy spierdalaja do siebie... ile mozna w kolko to samo stary... ja juz nie mam ochoty tego czytac ani znowu sie tlumaczyc\n- ahaha... ten mem z dziadkiem na ławce to ja po zmianie... niby nogi juz nie dzialaja ale jak chłopaki pisza ze orlik za godzine to nagle zdrowy... no i git ogarniamy!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4fe798c723196f72a47fd5805de6829aac0f8e29",
+ "response": {
+  "id": "gen-1791460017-onjSKUJNMdmdUq9sMesH",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował na magazynie, wspominał o problemach ze skanerem i zmęczeniu po zmian",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4K19v9xFRNMd8bpSdbmRIpTDXwkzxH6ZpEF2Vp5oRXMwbjA9n_wJQVaaVnDIWKJCc6bTbJ2WolTFJI-JXQwHhpoDR38AM_oE44-Mx-WWErpKsPqqmpgGqammNWhuhb2bZH2kYWZa-SHmYFTnenX_V_xluTJ8rkfDol9x1TIW6_Ch3K15TI3XpI4ZRgtmB6r6hklgE69MR5jqWNWpQL302zXYUJSS-U-uCXJ1UkVPbGHkDdmxWq_a2Unr0pN2PADu6-yujIhsVuUPFC74aRmk7OfrQKAC_E2LwAf5sMU4k_f2zgo2iFGhQNOveh7nnN1wmpKZq5hKa-0y4PZ7Xyo3F8qPeY4Eoz6VYwQ0McvccctdHYAfp8y-eqG5XUxhD_TCmFrcWYfhw6mTAetkHXD7hpGNOdySFto2tcw3QwzBcBRH0BVqtfI_ONZddn_ZXqU9jwfNTGzrryX0WfD35rWLM1hAnK1GuhRktXQFVT5SGOpcenCX5Zp9PF1vpc_U6a4EhoC3cdNdJp_CRurCnQjXJVjWc1ECTGrD0lJ-H63Sm7MtS5SVB2HG_R0agSj2pLP-IvW6PeFhj1O2jegjfC7BrgrCBJo0KlynCmBvEahM2J4dELT5CDBi3BVxYWatVydYATuTx0Y0MOuMkdJQ3N3-HFZO50vySHHxsglBeLkENGfuHcn5uybdhGPghYt1gTO7UqcyGOMNVLJ5emI6TErx0b67swNdtGejnMMl50QydvsJhCc7z3zS8qsCgIrP6F-cx7RveNjCGHMpDO_kMjucl4R8qUJ--5wY6bJKZIje89HlTta7KjL3YaASo9HQkRsmRMkZ2RGLNrhj52XrzfYgSsljdmWlBmzQbsjJZWr_yPexyOy6ndlKDbIhMvyye0-DY1vmzZkH1FMgwW9HrKtErxCbIbmLWjCtowBxHV8NoAHhTP3byzL5vRz51qQgLChj4KJ47cGgmm2STLNq7c8UBqngD_x6bO-GnX8clCN_s6UA9_RZWprcF7Hu5CNlB-VNMMaaNpT0F8b6HYzLzHizACFP1BPej70Sq3MDqbDTt_TGPZGrKQ4V_TgSYCmkqhWvE6inaCytF8HTuKWmYoi8Xi6b_iyMYKBS9CwSneDl-Yd8udsUuBURNLPIR3_7y2EuFUhDK_PxbNwi9y1lACQq6efDjf1-wKbEErUpslcVof_cM02Qzk6CKJrnSfjkfuuGUXunrLHkegCiVOeeLXAntWLLfGLByu2olxA1cKyLa4pUiaR3_OmnQcMxugq-dw7Gn8Ruge2fIg6gKI32e3dg7JM_i1qupuWdsMfVbpvxOUAK7FbW3EM8-2m40cfi_2PHulb1CjbYU6HA-o-wlUSE_2e0Yletwxw7VHOKUX0DSxDj5b4FBgmmBF1bk4V-nGAog_Im0GeQIyY06pyLEgIdf6DaFoTMxCTys4RfkBhhFFtUyjqXY3wx4D1SCQkmuRtP4XuGQa72cR8KjI-AaIpsGzOR8mTw65KsWt_CXe9TD5ZNn5vDyzsDvrDZcGPe0i3-DoHXedjGPzwcUSmQ3x7a5nestrUwPf6h3xQDZAtla5mUdy8qcvwi0jAQPgBJeJ16Wm_IVKNUTO8-uDe9wt-FwQZ_RKMzdzCM-bs7eI678o1EsMWNGZ8QBmHqwmYA8fPOqOag9KHhDm8zQQCYoN0_Mr7DLm816XmXkYNN1k-UNP0MG4oAoas8om1dlxeOQrzfRom4qzs0xMR3CluWWbEdYDMrg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_09d24b152cdb607a016ac782b2fbf887d1a39f565cb30f6ba7",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460017,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 421,
+   "total_tokens": 541,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 91,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01021,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01021,
+    "upstream_inference_prompt_cost": 0.00421,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 91
+ }
+}

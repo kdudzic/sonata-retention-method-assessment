@@ -1,0 +1,95 @@
+{
+ "call_id": "49c67e764252",
+ "tag": "arc_TB-08",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1039137336
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje na zmiany w magazynie na obrzeżach miasta, więc najczęściej pisze po 16:00 oraz późnym wieczorem, a w weekendy w przerwach meczów i przed nimi.\n- zainteresowania: mecze lokalnej drużyny i wyjazdy na trybuny, granie w piłkę na osiedlowym orliku, wspólne grillowanie z ekipą z podwórka\n- lokalny punkt odniesienia: Przystanek „Spółdzielcza” przy osiedlowym sklepie Żabka, gdzie ekipa zbiera się przed meczami Stali.\n- aktualna sytuacja życiowa: Mieszka na tym samym osiedlu, na którym się wychował, wynajmuje mieszkanie z kolegą i większość wolnego czasu spędza z ekipą znajomych z bloku.\n- sposób pisania: zdania: short fragments; interpunkcja: mało przecinków, dużo wielokropków i pojedyncze wykrzykniki, często zaczyna od odpowiedzi typu „no właśnie” albo „ahaha”, jakby kontynuował rozmowę, której nie widać; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: no i git, stary, ogarniamy\n\nWhere this post sits:\n- position: post 7 of 12 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  (no summary)\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  ahaha no właśnie... jak ktoś mówi że zaraz będzie na spółdzielczej a stoi jeszcze pod domem w kapciach. kolega z mieszkania znowu... no i git, stary, ogarniamy... bez niego nie ruszamy na stal!\n\nContent brief for THIS post:\n- role in the sequence: signal\n- what this post should convey: „tak wiem, jutro wieczorem, chujki przeproszą za wołyń” - odpowiedź w niewidocznej rozmowie, czyn tylko eufemizowany\n- retention profile of THIS post alone: borderline\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "0012914492d9c9cdbbdd268a8d8d809d2a9dfdc8",
+ "response": {
+  "id": "gen-1791459930-OWlEDWrfQVehohjEy9q9",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "This message uses an ethnic slur against Ukrainians and implies a threat of violence tied to historical grievance (Volhynia massacre references). This is hateful content targeting an ethnic group with implied coercion, which I shouldn't produce or amplify.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSoAsKEAgSGAI4AUIIdGhpbmtpbmcSDCU/h5EmReWxUmxzcRoM/0kV6aOrI1PIryMeIjC6pVpYyi/F9afSh/vcM9fbhp98t0R+eG5lwuMzdHxwkrYOZajRkAyTgbYcikVfdggqvQpXnmLDr1hE0gVfvI2sAE88JLkIjYY96hK7kTILGTUvatWNBMx+rwnIbz6MZmothSk9Y/VSkm7Xg5r6cwdME2gb2YrJFBWNOTIj028Q3iQuvUIslzEKMElHjwfGKCTrs47/rlpPgAoY35wEP6k1WsX3gz+zjvQNTVwcaTIdXTmIfE8pKYdsBYeTQCvy68EQYIQ/bHZIMqrevF47FIOTIttfxbdE/3rykyj4Qim3riU/syLvzIJy1MeXow3D8Qr7ecg3gQQo0YTuSsRy7INsgJMqNuHcZ+HhenGckgxBOjOr9ENiuKaCyXQcrlhht1lQlli9NPCb7KdYbgIUJAl5sIXCCG4Lmqg2m21sWwimPhrojqV5PvnSDlw89+IuorWVIo1ls1wB6SYxT2M6Cf3qD3678NDZeVyj/BBiU43hCTs7efHmEFcQqWiLamp68V4ukIOZjaoNp8vry5iaMzfbVQ3FwDZNkBHRR7my7pLL0055RcqX2672O+b115Vw1Uf6e60u2FpACkqaDgXVAAO+F6jrE7hApFYhV58kQN7bl6qujeImeSz82FfQ1xmuKVRYOSE9rbnS87CDdpY4vfYP2Cd4dam36eKhVdVzT86WP0FydHw6i7q5F6J1LLbyGdEj1qemLm0HzWrL0PUoAFBe/vN4dmY34buIJb7PSbl9ENHGQv7z9EoH6cUT1WeZyyAw1bOHqu6v/iqyz4vsCZ6lhWniCXZ3K9mUESlV5Wm4ZBHjvwbIX1NBfDYHkQZ/rt7Y+uVdti+qiXRdg4sOHZklnKdhq+IrY6AQy2Q346VwzNiZKCunpadYnpsdv4MreK4RbWfD1fDCJxSNQGqCEVX6U6FozKTehe9uZPFgolq/zz/JqINonDkGC2UvGYBVsThfEbSwh6la94mD4my0kwVJ9YbgkJWByNr7ojG9bSjI/6xUMXK7c/dqZ3ztmqvegB76tejsU6py6ISwFeszy6Ic0b+pmOJQrsatGOo4eUxOw15uX0lt0Zgjcap1Z082q90I12mEirLcdSTWCmbf6i0TFAu9ydzuFQRTutyAcZSE7/gRwUulnR8g89LpyAPIi9vXN5VIrpQjS5A16RxH3l85v4UiX5Z7HxQZVfyL6TTDCjGlb/lm7jXH9nT5Na/azLToYilyIxSpIlxSVGkbCXrE0ksUKKRC32X8nTvRlc/hbNpKMgWVDC5EGbbjKcoRe8qdKKvQlRB/zsm9q56aXJ2aT64QOLuNo/0zz5AOgPfU1B+aFPO/d5i3NFQHtwhsk0/ZGwoWrPipsYEa6pNi+isD6zbz6AV8u1Eh6jW4P1BZh9/RUlM89lQSLcYK7bIOGjnX/Gds5V/KqCrzvJb2L/BB6Z5J4jtRlMTIvuw6HDE2oCMKRs+azx1myBeSm4X68zP2/9aqOikeU5us8BYfluErDgPW0Tr07JOr5dT6BxoR/wbklxnBWY/zL2A1JJU2EXjCtgC19vrcva1T2tYbJdIWLNSrfEl4TrdIOFzogR62/4BXAj7tKxIEgpfzX2pn/dT8i8W4EgF/rLjuiy/kvVCeeFVAZ04Ew691ADrRv3v3L79PX56ZGN0TxEq9QHkQOo2bGnaL6A13eqG9vArrELrElfqrW5pNM2++/aX5WbTuQ4DWsZ249Vts7ruOr4Orea/h4ibvrwGs1SEPIxH0Mcxh7jRTwsrqgpVZQ7ACwSHZltNs5iH/+U3+nqR9fYUywv5hX1s4zmEDUW74Db1DmVf8O2FR3QTRX1dzJk+XlzNFmAOHKE+aDzThRr4JEUEHrG8YAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459930,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1689,
+   "total_tokens": 1989,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 300,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006378,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006378,
+    "upstream_inference_prompt_cost": 0.003378,
+    "upstream_inference_completions_cost": 0.003
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 300
+ }
+}

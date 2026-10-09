@@ -1,0 +1,87 @@
+{
+ "call_id": "4538d1df12e9",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 523689464
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.\n- zainteresowania: rowery szosowe, mecze Cracovii w telewizji, tanie gadżety z Aliexpress\n- lokalny punkt odniesienia: stacja paliw Shell na Wielickiej\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: kończy wpis słowem „nom”\n\nTopic for this post: zakupy i ceny\nConcrete angle: ceny w markecie, porównanie\nRegister: matter-of-fact\nTarget length: about 44 words\nTime of day: afternoon, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - no to tak dzis w markecie kawa 8 zl taniej niz tam gdzie zwykle biore. makraon tez sporo mniej. wzialem od razu po dwie paczki bo warto. teraz na kanapie przegladam pargaon i az chce sie takie promo lapac\n  - Poszłam tylko po chleb, ale były słoiki w promocji po trzy złote, więc wzięłam dwanaście, chociaż w nowej kuchni jeszcze nie mam gdzie ich poustawiać, a przetwory dopiero latem.\n  - mialem juz spac ale zerknalem na rachunek za prad. wgl skad taka kwota jak caly dzien mnie nie ma. przeliczylem i znow mniej odloze na busa w tym miesiacu nom\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "c23615ca12937b7e9825be88263d10c02ab0a683",
+ "response": {
+  "id": "gen-1791460525-mV5PJQ50BnMRUGeUnLtk",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: stanalem na chwile pod marketem i porownalem ceny sera za kilo. duze opakowanie niby tansze a wychodzi drozej niz dwa male. wgl te ceny na polce takie drobne ze trzeba sie nachylic. wziolem mniejsze i bulki na reszte trasy. jeszcze godzina jezdzenia nom",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460525,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 81,
+   "prompt_tokens": 804,
+   "total_tokens": 885,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01209,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01209,
+    "upstream_inference_prompt_cost": 0.00804,
+    "upstream_inference_completions_cost": 0.00405
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

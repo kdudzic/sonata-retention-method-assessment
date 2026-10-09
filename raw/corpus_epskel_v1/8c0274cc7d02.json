@@ -1,0 +1,87 @@
+{
+ "call_id": "8c0274cc7d02",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 344592553
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje przy wykładaniu towaru w markecie w Olsztynie; pisze po porannej zmianie.\n- zainteresowania: rośliny doniczkowe, siatkówka w TV, domowe kompoty\n- lokalny punkt odniesienia: ławka przy ulicy Dworcowej w Olsztynie\n- aktualna sytuacja życiowa: Przestawia meble w małym mieszkaniu i sprawdza, gdzie najlepiej rosną jej rośliny.\n- sposób pisania: zdania: short fragments; interpunkcja: prawie bez przecinków; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: często pisze „ale numer”\n\nTopic for this post: sport\nConcrete angle: W środę wcześnie rano sprawdza wynik wczorajszego ligowego meczu siatkówki: 3:2. Cieszy się, że zdążyła obejrzeć końcówkę przed snem. | mood: pleased | opener: plain fact | verbal tic in this post: no\nRegister: terse\nTarget length: about 18 words\nTime of day: early morning, Wednesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - mówili żebym strzelała. poszłam w pożyczonych korkach na orlik i gol ale wyszło\n  - ale! obejrzałam przed południem skrót wczorajszego meczu... już myślałam, że tak zostanie, a tu nasi wyrównali na 2:2 tuż przed końcem 😭⚽ obejrzałam tę akcję chyba trzy razy... dalej mi się chce skakać z radości 😂\n  - Zakupy i basen za mną; po zajęciach zauważyłem, że przepłynąłem cały tor bez postoju przy brzegu (pierwszy raz).\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "4584a8ceb935b2467c1d331f9e1af6215454fe98",
+ "response": {
+  "id": "gen-1791464298-5rHXUdrRjunoCAUV5VTd",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: sprawdzilam rano wynik wczorajszego meczu ligi. 3:2 🏐 fajnie ze zdazylam obejrzec koncowke przed snem 🙂",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464298,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 44,
+   "prompt_tokens": 852,
+   "total_tokens": 896,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002144,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002144,
+    "upstream_inference_prompt_cost": 0.001704,
+    "upstream_inference_completions_cost": 0.00044
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

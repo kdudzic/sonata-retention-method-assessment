@@ -1,0 +1,86 @@
+{
+ "call_id": "d3c40b95438b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- dziś odpaliłam apkę ze zleceniami i przez pół godziny gapiłam się w mapę... same kursy na drugi koniec miasta? nwm jeszcze który autobus gdzie jedzie. Może po południu trafi się coś bliżej... na razie uczę się tras.\n- trafiło mi się w apce zlecenie na zdjęcia paru miejsc... ktoś serio za to płaci? dziwne ale łatwe. I tak robię fotki po drodze, więc cyknęłam kilka telefonem i już. oby więcej takich zleceń!\n- podaję dalej wpis Oli z VKontakte... wrzuciła zdjęcia tych starych szyldów i podwórek, które wypatrzyła na spacerze. Ten z kotem nad wejściem! Gdzie to wgl jest? Muszę ją spytać, bo sama bym tam nie trafiła.\n- miałam przerwę między zleceniami i skręciłam pod bocznicę Srebrna Łąka... ten stary mural przy wiadukcie wygląda super z daleka! Kto zna jeszcze takie ciekawe miejsca w okolicy? Bo nwm gdzie następnym razem pójść ze zdjęciami.\n- znowu leje... wyszłam na chwilę po zakupy i buty już całe mokre. A miało tylko pokropić? nwm czy dziś w ogóle przestanie. Nawet zdjęć nie chce mi się robić przy takiej pogodzie.\n- czekam na przesyłkę do odebrania... ma być jeszcze w tym tygodniu. Co chwilę sprawdzam powiadomienia a tam cisza. Oby dali znać przed weekendem? Nie chce mi się potem zgadywać czy już dotarła.\n- ja: wezmę jedno małe zlecenie i wrócę wcześnie... aplikacja: a może jeszcze trzy paczki po drodze? I tak siedziałam na przystanku dłużej niż jechałam autobusem. dorywcza praca to trochę mem... tylko bateria znika naprawdę.\n- Sprawdziłam, kiedy przy tym odcinku torów jest pusto... wieczorem prawie nikogo. W dzień nawet nie ma jak spokojnie obejrzeć starego szyldu przy nasypie. Zdjęcie wyszło rozmazane... może następnym razem bd lepiej?\n- A wy wiedzieliście, że tu jest...? Dobra nwm jak to napisać. Będzie gotowe? I ile bd czasu żeby spokojnie się zwinąć zanim pierdolnie? Odpisz jak możesz... bo siedzę i patrzę w telefon.\n- weszłam tylko po mleko i bułki... wyszłam z makaronem, pomidorami i jakimś dziwnym sokiem. Mleka oczywiście brak. Teraz stoję przed sklepem i myślę czy wracać... nwm czy mi się chce.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "745667ddb4b5ba24b872b3eac1a7d351ddd54b55",
+ "response": {
+  "id": "gen-1791465263-Vf4LINIghDceXH5bEPYv",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich dniach korzystała z aplikacji do dorywczych zleceń, jeździła autobusami, robiła zdjęcia w okolicy, robiła zakupy i czekała na przesyłkę.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465263,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 55,
+   "prompt_tokens": 735,
+   "total_tokens": 790,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00202,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00202,
+    "upstream_inference_prompt_cost": 0.00147,
+    "upstream_inference_completions_cost": 0.00055
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

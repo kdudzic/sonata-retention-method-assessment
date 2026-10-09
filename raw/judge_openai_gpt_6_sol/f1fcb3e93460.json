@@ -1,0 +1,86 @@
+{
+ "call_id": "f1fcb3e93460",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje na kasie w osiedlowym sklepie spożywczym na zmiany, wolne popołudnia i wieczory po zmianie rannej, posty głównie w przerwie lub w tramwaju.\n- zainteresowania: seriale kryminalne, uprawa storczyków na parapecie, wyprzedaże w drogerii\n- lokalny punkt odniesienia: przystanek Plac Grunwaldzki we Wrocławiu\n- aktualna sytuacja życiowa: Od miesiąca zbiera pieniądze na wymianę starej pralki i porównuje oferty.\n- sposób pisania: zdania: short fragments; interpunkcja: ellipsis everywhere; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: kończy wpis słowem „takie życie...”\n\nPosts by this author (in order):\n1. przerwa i oglądam skoki, kilku juhasów przelot ppt... mój ma 95m, nieźle. wieczorem jeszcze siatkówka w tv. takie życie...\n2. dzwonię na infolinię ws pralki... 20 min w kolejce i nic, nwm czy dodzwonię się przed tramwajem... takie życie...\n3. niedziela, plac grunwaldzki i wgl zero miejsc do zaparkowania... kółko po osiemnastej razy i nic... nwm jak ludzie wgl tu wpadają w weekend... takie życie...\n4. w tramwaju już, jestem u lekarza w piątek na 8:30,eee kolejka ale pidzea się... wgl się nauczyłam zadzwonić wcześnie rano, teraz wreszcie coś z tym pourazowym zmęczenia zbadają...\n5. przerwa ucieka... oczy_same ropią, pyli wgl mocno, antihistaminik brałaś jj... dziś w tramwaju pod placem grunwaldzkim zrobiło się gorzej, chcialam wwigrać ale nic... takie życie...\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "403158064aa7131ddda8be1a13949f69e1ff5bee",
+ "response": {
+  "id": "gen-1791461517-vwbrx9Zwdk3stblj2m4D",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 2,\n  \"voice_stability\": 2,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 4,\n  \"natural_overall\": 2,\n  \"problems\": [\n    \"Unusually frequent, garbled typos\",\n    \"Repeated sign-off feels mechanical\",\n    \"Abrupt shifts in phrasing and coherence\",\n    \"One post drops the usual sign-off\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461517,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 106,
+   "prompt_tokens": 730,
+   "total_tokens": 836,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00252,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00252,
+    "upstream_inference_prompt_cost": 0.00146,
+    "upstream_inference_completions_cost": 0.00106
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

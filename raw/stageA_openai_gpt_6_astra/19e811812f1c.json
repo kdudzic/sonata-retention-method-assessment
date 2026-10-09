@@ -1,0 +1,96 @@
+{
+ "call_id": "19e811812f1c",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 155370491
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nTopic for this post: dzieci i rodzina\nConcrete angle: dziecko chore, zwykłe przeziębienie\nRegister: enthusiastic\nTarget length: about 18 words\nTime of day: evening, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Przy porannej kawie sprawdziłem kalendarz. Wnuki mają przyjechać na tydzień w lipcu, więc zostawiłem sobie te dni wolne od większych robót na działce.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "35d41778fcc765cef9b7e107c101c235277cc1b4",
+ "response": {
+  "id": "gen-1791460515-JmPevKo0MBfab2BegTSz",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: ogarnelam kolacje i układamy z małym puzzle!!! wieczór z rodzinka NAJLEPSZY, notatki na sesje poczekaja jeszcze chwilke 😅🧩💛",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4SlZe_w9W9OfJrSoHm5aDwq_1Q9gIz-KrVRyhbpMPS2lGL_AIly3G_Hfpz5bzEgusbDjnB48oCl7Mn6IX4byV-r3sctbZJdc_GBNtPnpBkD4YiDlpwAIdtZJrvunNPEj8tscSkN5iXfnyA5iOm9gnd_8ltZvwEiPelzB1dtlzen94Lufr4LpwkfOI2q007In7ZEGBGc14sQp85le9sv1hr25yXpcHKbSQ_zKtHMPRBtWk8VTAhT05_wDBxI3TgKLg0IY0OWliG-QOQA5v2QSibQYBUtESSjaW-hRGODTYU4V-HeluYb6I-6g5c8hNB4bb5E6CAi6WcAEYoac3SX8mPJVBQBJlqRL9K_gH4NRf9c6RIz2Z6-IkqBeuf6s66-0t9X9rNuzY99TdnsxVbVinYzfqP0B3WDWU-ugmIzTAekhYl_6BOgC318vnoUFR2qdwGGGPInUPPqc4x6M7xRPNF6F5hvso6nEuSf31ysmmOZqHsd70g8s8UH-GrQP84eLQdKXNNz3FLZkzn7KHZRJTwRY7ZfOtB4wNe5i1OzBc7kjRyX5lcZ86oe6NaiOYplyp7blm0elcE-wEu1aijfsl_aBpC2hhgOOIRo2aXLUlqwvoX9BO37vU_kG09YsvaTd1j2dMpjk8Tw8AtlV8XIgrQB3fOOBHTgnVijFOQnUQp-o4ThfcKvZXw7EnIEwCu0a-a6YwAONC1duTI4EZXHM_skBAalqw0_2D0_sWU_aLZsQFgQG5zhL2ZUfHskYGfcNkkQWQ13YrnIzyhycv8Ok60vKOpsR-YvQyMYPoGI_lS16P9zGoDj5OI1gXXmyJreLAF0Qq99hU5FU3fWcEi7TIDKggu7kbX6ru5envJyjdRmgZRlLicmGF72QdIM5o3oO1Vagf55-fdAc22c0AlOeUbf--0SdPzeNkNWoyrzn6-0sqH8LTbhHprnz-xS7cTrxR5ox19zIc3sWzkKdshEpqz3NR2Y5Fo4Ld0_nj-hmPUtkmEvdPYxp1crVeii_Pcai-mF5NFDDUFOuZCwMYqnGCJxEzDmwBrI1dQWpJDjDA7WGEuHCvsaV87_-BHcwvGXs9YADie3hRAi3fcuFWKLjyrHvY2sbo-dt7cshnya1KAgmYStawRBp8p2O7vpULbLLfp_gSLXyTwLLaIJi7TZCDOjw_4RGXUbZKus-lynM0Ii47br6AnoYMOv6lDUf30S1FxGOIQYjstN1SzXqpANHn8yNM9YCDhNOgWuSs4TLYVRA-iy9MXLdt4u769DHnzPBDa7jd3xozRJnTexp_UDqmA9v05ADlLlP5w0v3ue-fW-0oiyDO8GHVWkHKcURe8yn8wW4ZyIYxhBqide3ZOMD__16Hn63QJcvHJ9u0XSLDDyWJccyK5dBA0JVpDceixqKw-3Kns-Hp0z5f5SjjtjKN8oc32OZSKJutV33plGZ_Y5y9AtnIGk5789VUUtBYv9H3zFNrcOWy1k1qPeNGJWuYrdt9U_FR6lwuYaFhXvNQmDKaYm7jrJ02PWp7qikUPOXrUk.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_01c02ac97c23eed7016ac784a4ac8487d1bd30d593b6506a32",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460515,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 88,
+   "prompt_tokens": 655,
+   "total_tokens": 743,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 34,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01095,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01095,
+    "upstream_inference_prompt_cost": 0.00655,
+    "upstream_inference_completions_cost": 0.0044
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 34
+ }
+}

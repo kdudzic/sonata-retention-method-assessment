@@ -1,0 +1,87 @@
+{
+ "call_id": "c823ccf73357",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1915889061
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje jako pomoc w szkolnej kuchni w Pile i publikuje krótkie wpisy po popołudniowych zakupach.\n- zainteresowania: przetwory owocowe, lumpeksy, krzyżówki\n- lokalny punkt odniesienia: warzywniak na rogu ulic Okólnej i Bydgoskiej\n- aktualna sytuacja życiowa: Przygotowuje słoiki na lato i wymienia zasłony w mieszkaniu.\n- sposób pisania: zdania: medium; interpunkcja: wykrzykniki częściej niż przecinki; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: pisze „aż miło!”\n\nTopic for this post: pogoda\nConcrete angle: Podczas niedzielnej przerwy obiadowej zobaczyła, że wiatr przewrócił pustą doniczkę na balkonie. | mood: mildly annoyed | opener: plain fact | verbal tic in this post: no\nRegister: mildly grumbly\nTarget length: about 11 words\nTime of day: lunch break, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - W poniedziałek o świcie otworzyłem okno. Powietrze już ciepłe.\n  - czy rano zawsze jest aż taka mgła nad Łyną? Przeglądałam wieczorem zdjęcia z rana, drugi brzeg ledwo widać (dopiero teraz to zauważyłam) 🌫️\n  - szron i slońce... w sobote na przerwie obiadowej zobaczylem pierwszy szron na lawce przy żeromskiego obok poczty, przetarlem deski rekawiczka i dopiero usiadlem, wiadomo\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "4005bf345af623d16a8a8538d65546cd9c5f8904",
+ "response": {
+  "id": "gen-1791464022-QgQWF3uWlGvF6w0MBXpO",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: wiatr wywrocil pustą doniczke na balkonie! Zobaczyłam w przerwie obiadowej, aż miło! 🙄",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464022,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 39,
+   "prompt_tokens": 830,
+   "total_tokens": 869,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00205,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00205,
+    "upstream_inference_prompt_cost": 0.00166,
+    "upstream_inference_completions_cost": 0.00039
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

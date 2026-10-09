@@ -1,0 +1,5 @@
+model,n,errors,cost,logprob_share,parse_ok,keep_rate,detected@5,bystanders@5,detected@20,bystanders@20,mean_signal_rank_pct
+deepseek/deepseek-v4.1-flash,200,0,0.022380394199999983,0.535,1.0,0.005,2,4,2,21,17.75
+z-ai/glm-5.3-flash,200,0,0.009423975999999997,0.12,0.97,0.005,2,5,2,18,18.083333333333332
+qwen/qwen3.8-27b,200,0,0.03972529230000001,0.785,1.0,0.015,1,6,2,17,18.416666666666668
+moonshotai/kimi-k3,200,0,0.259705595,0.0,0.995,0.015,2,4,2,13,5.916666666666667

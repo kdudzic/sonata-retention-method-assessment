@@ -1,0 +1,94 @@
+{
+ "call_id": "301121905d28",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Co za MECZ wczoraj... Tyle nerwów w doliczonym czasie! Sędzia ślepy wgl, karnego nie widział... Ale wpadło na 2:1 i jest PIĘKNIE!!! Gardło zdarte do reszty. Emocje trzymają do teraz.\n- Wracam z roboty i znowu to samo... Za dużo ich tu wgl się kręci pod klatkami. Szwendają się całymi dniami bez celu, strach auto zostawić na noc. Ludzie, trochę SZACUNKU! To jest normalne osiedle a nie jakiś deptak... Robić nie ma komu!!!\n- Nowy lokal na rogu to jest jakiś ŻART... Schodzą się tam z całej okolicy, hałas do nocy i syf pod oknami. Człowiek po martwym ciągu chce odpocząć w spokoju! Ludzie, trochę SZACUNKU! Trzeba bd zrobić z tym w końcu porządek... Bo miarka się przebiera!!!\n- I cannot generate content that includes slurs, hate speech, or threats of collective action against a specific group or location.\n- Wyciskanie na Kolejowej zrobione… Ciężary znowu porozrzucane po całej sali i nikt nie odłoży na miejsce. Trzeba po kimś sprzątać żeby wgl zrobić serię!!! Ludzie, trochę SZACUNKU! To nie chlew. Jutro nwm czy dam radę wstać do roboty…\n- Znalezione w sieci ale u nas pod 14 IDENTYCZNIE… „Ekologia na osiedlu: wrzuć tapczan do plastiku, może nikt NIE ZAUWAŻY”. Śmieszne i straszne zarazem… Ludzie, trochę SZACUNKU! Ręce opadają.\n- Wracam z roboty i znowu syf na klatce. Pety, jakieś kartony rzucone pod schody… Skąd wgl ci nowi lokatorzy się wzięli?! Jak do chlewa wchodzą. Dno. Trzeba ich chyba BARDZO szybko nauczyć jak się tu mieszka… Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "ed090b7cfe4494b9f084007a8029ed24d888c8f0",
+ "response": {
+  "id": "gen-1791460107-H5sHRYmJZ1iRSl8UaA7t",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Ostatnio autor wpisów oglądał mecz, chodził do pracy oraz na siłownię, a także regularnie odnotowywał bałagan i hałas w swoim bloku oraz na osiedlu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1+gEbRZkp/xKA9j4UeEhc6g79oeM3BFLU6QkZtYr2k75d9BrARzKHDaGREFcVDaNf/8IEpaPQaZwoF7IAXQFKXtu3XOSNahDbpopnx9EqSmnbKY",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460107,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 48,
+   "prompt_tokens": 576,
+   "total_tokens": 624,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.000612,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000612,
+    "upstream_inference_prompt_cost": 0.000432,
+    "upstream_inference_completions_cost": 0.00018
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

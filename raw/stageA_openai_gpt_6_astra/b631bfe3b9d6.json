@@ -1,0 +1,94 @@
+{
+ "call_id": "b631bfe3b9d6",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dopiero teraz wrzucam nasze zdjęcie ze spaceru. Wyciągnęłam młodszą na chwilę do parku. Po drodze oczywiście plac zabaw za blokiem... Miało być jedno kółko przed kolacją. Skończyło się na huśtawce i zbieraniu patyków.\n- Dzieci już śpią. Usiadłam do rachunków i nwm z czego to wszystko zapłacić. Po wizycie komornika jeszcze trudniej mi się pozbierać. Pracuję cały miesiąc. A potem rata i opłaty zjadają wszystko. Na zakupy znowu trzeba pożyczyć. No cóż... idziemy dalej.\n- Cały dzień coś ode mnie. Jeszcze to. Jeszcze tamto. A ja już nie daję rady. Jestem tak zmęczona że nawet nie umiem powiedzieć czym najbardziej. Siedzę z telefonem i nwm co napisać. No cóż... idziemy dalej.\n- Dzieci już śpią. Usiadłam porównać oferty przeniesienia kredytu. Niby taniej ale wszędzie jakieś dodatkowe opłaty. Mama dalej choruje. Rozmawiałyśmy chwilę przez telefon. Jutro po pracy zawiozę jej zupę. No cóż... idziemy dalej.\n- Usiadłam na chwilę i już nie mam siły wstać. Cały dzień odhaczam kolejne rzeczy. Wieczorem zostaje tylko zmęczenie. Nie widzę sensu w tym ciągłym spinaniu się. Ile bym nie zrobiła to i tak za mało...\n- Rozmawiamy po cichu kiedy dzieci już śpią. Może lepiej im będzie z nami tam niż tu bez nas... Jednego jestem pewna. Nie zostawię Stasia. Nie umiem sobie tego nawet wyobrazić.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "82862a354efdf52793ee4a41bae9403d4f3a3a5b",
+ "response": {
+  "id": "gen-1791460022-6knWvoTZJzIFblVDnytC",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4K6fflaDFXvh8VCAGGu5Ih9x_nZsFrQTt5ylYK1Ko9w-D4usuUbIjMmQXTvQCaH0WT1HhdJt6zgLdZJ7AtW0PdzCbqjRTw1lfLMtsWNWIDimgrFFZBrDDZN4dWbnIxLP4lEABuHPzGGxFFvXKdzv8gtKDZxA3Sn6XUtXZv9CdNtYcUSrbKh6GdAPhgF_J2sLXtmCtCeN-vqUKtD89ahH7Afl8SMP7K2MPG4rMgkK_6UCLuDUowICQXuDHDSo8dqKvFnPi4CWr2fIMM2kYgoGG-HTwjZUG0QzVgJDe9gEWrEP3lhJoo7Y0_MNACJqi-0-HZhTpCu3zg-347DicsS1n_Zr3J5Ltxrz2kM-VYHYFHYkwppY7EzRdvCBPe86AfHY6ewTH1S8E3PcHGeCw_IGg-LHLowpuT3AY1Pp_yjHjKnCTFHVT72Bw2EFY4k9j6926G29hZqm-VezSBObmubtSOBDc4-C8h9Eac_5oJkSMNeYTh8M3MyHPwkPWMULMUFRbGz2sOAbl8crF2KsFYpX893m8aN8Z3njYueghS9T34QwbsfpH0Ik0WrwRMjweuK7dgDiZfMTlOheMmbRbKIoyB-rlQEoFdvjeB3YqH0R70OgFa5gPBX3NP1PFEXUgldGUlWnUpctzqdkK3Flro-mcdZ6_faDOyABptEtxMrZl_cBknINUP0KBc60x_FuZIMZXU5K8Hm1-A4j6Bw37qP1ADlnozMfgdIWA-U9JRnh73zpfn90bqgtzJ3Unb-MEWiXZRTqu5mir-KdGRkTf1CyDotobmNOU7iummRbOMdfJoLUmobGzTO7qnWrhlViRVzAFaNzlOaeBHDLXwicJRTRLua1P-FLIulyTaElXDKeB6lKT3VXVYb-jfioiqj7mbGbfSDvyJCF0aSwClTai2EdCpOo74NulU8IVzOu_1nRvWhPHLXJX3fCEPSiG-kURm2_BUHnC6xfes3pUB4_wbSv58PSLRp0Drv-subQTuC-Hr-RNpgSbl-Lud-SI9_tS73QNwP1T1K_kaP1o54fwvdWXxqUJn7LNY83kFQcV9i44fVURZAM8vM9OFK550HDrjnQS1oyORb4A8NtD-L2KYm6a0Fop96ToxK-c6lmRSCzfGuo8OluH-ravbh3Mme6i_-2Xht0tMWHIwsc94-i_PIhSkZHw-H4k5uOgoZT96pznu_ZBWbzLCUcXu8ou7ChdI2-K6Aq3PIHab_QOyCfQfhegLvtRzq04fiGB8svdPx9vn85cHyqvqGQDAVYErof-bsXnoWzcPdVTkFSY76vZdS0PStCi-Wji1n60x6fc12Fy_qyFHeM3DPEN3d1eun7qrUaFhsPKdJlrA6cfIMYa-vPjy8yhuBH4KykUJZjk8IAf6wixqHgJ_jGtromSZw2G03nkUeSlBFcQ9pIqH8fRoWjq8C0N4wweuMg8-0IUBJTZjvxlHu2r3PcJxT2PHMCFMwvMfEjlvAfOqZ7ujdmHhNgAz-Lb0jLuHhmRu2zNkQamvqwH-K-li4vPJGSJUVcDV2uODpwhckx36oy73R1FlZ1_UnD2PaPldd3YyG2WEixbsCG-o0f0MgCYNxrw8ih76CSDseh0YIg-vRIyGr0RWhfpQ87geV99Xl6USWiMn-WgSiN9o1_FPMMN3iQUj3geOKKZOMU6JptFy8QMS91kPj0SGRRVqbzBRta4iPU8_jAOY7LhwtZlngI9a5ZrFXJphs4OcbIYsQS4eJS_yXC1190ozXmQ1QYY-tp48E2ZnwxuoBCzR6y6xKJipLuHRuRdam9YDoXS_GAeWdgafI97NBSM97Hx3WE8SsaBTer17EPNLG4LQpskhIp6eyADB7o5_r7QNkxKVo8xaeaZW_4H9EwiRg7koUrS_I0x5KnqzfthvomXdYqGHyMRBbXQaWUU1JcdWmRo9hX-FL8ifKk-PEJ6qCiQ116oawrwMrgxWrUK8MqeM=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_08efcf6bd2b56487016ac782b7911487d18f63fc018967ba78",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460022,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 503,
+   "total_tokens": 623,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01103,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01103,
+    "upstream_inference_prompt_cost": 0.00503,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 120
+ }
+}

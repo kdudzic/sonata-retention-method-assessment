@@ -1,0 +1,290 @@
+[
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Pracuje na kasie w osiedlowym sklepie spożywczym na zmiany, wolne popołudnia i wieczory po zmianie rannej, posty głównie w przerwie lub w tramwaju.",
+  "interests": [
+   "seriale kryminalne",
+   "uprawa storczyków na parapecie",
+   "wyprzedaże w drogerii"
+  ],
+  "local_reference": "przystanek Plac Grunwaldzki we Wrocławiu",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "ellipsis everywhere",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "kończy wpis słowem „takie życie...”",
+  "posts_per_week": 3,
+  "life_situation": "Od miesiąca zbiera pieniądze na wymianę starej pralki i porównuje oferty.",
+  "author_id": "A001",
+  "prompt_version": "persona_v1",
+  "generator_model": "anthropic/claude-sonnet-5.5"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.",
+  "interests": [
+   "żużel w telewizji",
+   "stare Volvo",
+   "wędkowanie w weekendy"
+  ],
+  "local_reference": "stacja Orlen przy zjeździe w Strykowie",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "sparse, no commas",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "heavy",
+   "emoji": "no"
+  },
+  "verbal_tic": "zaczyna od „no to tak”",
+  "posts_per_week": 2,
+  "life_situation": "Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.",
+  "author_id": "A002",
+  "prompt_version": "persona_v1",
+  "generator_model": "anthropic/claude-sonnet-5.5"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Nauczycielka matematyki w szkole podstawowej w Zamościu, wstaje o 5:30, pisze wieczorem po sprawdzaniu zeszytów.",
+  "interests": [
+   "chodzenie z kijkami",
+   "robienie przetworów",
+   "gry planszowe z siostrzenicami"
+  ],
+  "local_reference": "park przy Rynku Solnym w Zamościu",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "correct and complete",
+   "capitalisation": "standard",
+   "typos": "none",
+   "abbreviations": "none",
+   "emoji": "rare"
+  },
+  "verbal_tic": "często dopisuje „jak to mówią moi uczniowie”",
+  "posts_per_week": 2,
+  "life_situation": "Przygotowuje klasę do sprawdzianu i jednocześnie urządza nową kuchnię w mieszkaniu.",
+  "author_id": "A003",
+  "prompt_version": "persona_v1",
+  "generator_model": "anthropic/claude-sonnet-5.5"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Student informatyki w Gliwicach, zajęcia nieregularnie, najwięcej pisze późną nocą przy nauce do sesji.",
+  "interests": [
+   "gry roguelike",
+   "składanie klawiatur mechanicznych",
+   "kebab po zajęciach"
+  ],
+  "local_reference": "bar Kebab Ali przy akademiku na Akademickiej",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "sparse, no commas",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "wstawia „xd” małymi literami po prawie każdym zdaniu",
+  "posts_per_week": 4,
+  "life_situation": "Zbliża się sesja, a on jeszcze nie ruszył projektu zaliczeniowego z baz danych.",
+  "author_id": "A004",
+  "prompt_version": "persona_v1",
+  "generator_model": "anthropic/claude-sonnet-5.5"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Na urlopie wychowawczym z rocznym synkiem w Białymstoku, posty podczas drzemek dziecka i późnym wieczorem.",
+  "interests": [
+   "spacery z wózkiem",
+   "wypiekanie ciast drożdżowych",
+   "grupy sprzedaży ubranek dziecięcych"
+  ],
+  "local_reference": "plac zabaw przy Plantach w Białymstoku",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "lots of exclamation marks",
+   "capitalisation": "random caps for emphasis",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "frequent"
+  },
+  "verbal_tic": "przesadza ze słowem „mega”",
+  "posts_per_week": 4,
+  "life_situation": "Synek zaczyna chodzić, więc zabezpiecza mieszkanie i planuje powrót do pracy na jesieni.",
+  "author_id": "A005",
+  "prompt_version": "persona_v1",
+  "generator_model": "anthropic/claude-sonnet-5.5"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Emerytowany kolejarz mieszkający w Nowym Sączu, wstaje o świcie, posty rano przy kawie i po obiedzie.",
+  "interests": [
+   "uprawa działkowa pomidorów",
+   "modelarstwo kolejowe",
+   "słuchanie radia"
+  ],
+  "local_reference": "ogródki działkowe przy ulicy Lwowskiej",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "correct and complete",
+   "capitalisation": "standard",
+   "typos": "rare",
+   "abbreviations": "none",
+   "emoji": "no"
+  },
+  "verbal_tic": "kończy wpis „i tyle w temacie”",
+  "posts_per_week": 1,
+  "life_situation": "Stawia na działce nową szklarnię i czeka na dostawę folii.",
+  "author_id": "A006",
+  "prompt_version": "persona_v1",
+  "generator_model": "anthropic/claude-sonnet-5.5"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Fryzjerka we własnym małym salonie w Rybniku, pracuje od 9 do 17, posty wrzuca w przerwach między klientkami i wieczorem.",
+  "interests": [
+   "kolorowanie włosów i nowe techniki",
+   "rośliny doniczkowe w salonie",
+   "podcasty o zakupach i oszczędzaniu"
+  ],
+  "local_reference": "przystanek Rybnik Rynek przy cukierni Anna",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "correct and complete, czasem wykrzyknik",
+   "capitalisation": "standard",
+   "typos": "rare",
+   "abbreviations": "none",
+   "emoji": "rare"
+  },
+  "verbal_tic": "zaczyna od „Dobra, słuchajcie”",
+  "posts_per_week": 3,
+  "life_situation": "Remontuje zaplecze salonu i wybiera nowe lustra oraz fotele.",
+  "author_id": "A007",
+  "prompt_version": "persona_v1",
+  "generator_model": "anthropic/claude-sonnet-5.5"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.",
+  "interests": [
+   "rowery szosowe",
+   "mecze Cracovii w telewizji",
+   "tanie gadżety z Aliexpress"
+  ],
+  "local_reference": "stacja paliw Shell na Wielickiej",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "sparse, no commas",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "no"
+  },
+  "verbal_tic": "kończy wpis słowem „nom”",
+  "posts_per_week": 4,
+  "life_situation": "Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.",
+  "author_id": "A008",
+  "prompt_version": "persona_v1",
+  "generator_model": "anthropic/claude-sonnet-5.5"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.",
+  "interests": [
+   "szydełkowanie swetrów",
+   "teleturnieje w telewizji",
+   "wnuki i ich zajęcia"
+  ],
+  "local_reference": "targowisko przy ulicy Szczecińskiej",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "ellipsis everywhere",
+   "capitalisation": "standard",
+   "typos": "rare",
+   "abbreviations": "none",
+   "emoji": "rare"
+  },
+  "verbal_tic": "dodaje „co by nie mówić”",
+  "posts_per_week": 2,
+  "life_situation": "Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.",
+  "author_id": "A009",
+  "prompt_version": "persona_v1",
+  "generator_model": "anthropic/claude-sonnet-5.5"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.",
+  "interests": [
+   "naprawa starych traktorów",
+   "ceny zbóż",
+   "wędzenie kiełbas"
+  ],
+  "local_reference": "skup zbóż przy drodze do Piątnicy",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "kropki, bez wykrzykników",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "no"
+  },
+  "verbal_tic": "wtrąca „no cóż poradzić”",
+  "posts_per_week": 1,
+  "life_situation": "Przygotowuje maszyny na żniwa i remontuje dach stodoły.",
+  "author_id": "A010",
+  "prompt_version": "persona_v1",
+  "generator_model": "anthropic/claude-sonnet-5.5"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.",
+  "interests": [
+   "kawa z kawiarni na wynos",
+   "seriale medyczne",
+   "bieganie po parku"
+  ],
+  "local_reference": "przystanek Plac Litewski w Lublinie",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "lots of exclamation marks",
+   "capitalisation": "random caps for emphasis",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "heavy",
+   "emoji": "frequent"
+  },
+  "verbal_tic": "pisze „serio serio” po zdaniu",
+  "posts_per_week": 4,
+  "life_situation": "Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.",
+  "author_id": "A011",
+  "prompt_version": "persona_v1",
+  "generator_model": "anthropic/claude-sonnet-5.5"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.",
+  "interests": [
+   "fotografia uliczna",
+   "kolarstwo górskie",
+   "kawa z palarni"
+  ],
+  "local_reference": "skwer Kościuszki przy molo w Gdyni",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "correct and complete, dużo nawiasów",
+   "capitalisation": "standard",
+   "typos": "none",
+   "abbreviations": "none",
+   "emoji": "no"
+  },
+  "verbal_tic": "zaczyna od „Krótka obserwacja:”",
+  "posts_per_week": 2,
+  "life_situation": "Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.",
+  "author_id": "A012",
+  "prompt_version": "persona_v1",
+  "generator_model": "anthropic/claude-sonnet-5.5"
+ }
+]

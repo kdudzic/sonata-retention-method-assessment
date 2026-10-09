@@ -1,0 +1,95 @@
+{
+ "call_id": "7dc9eb54ee0b",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 556389176
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.\n- zainteresowania: żużel w telewizji, stare Volvo, wędkowanie w weekendy\n- lokalny punkt odniesienia: stacja Orlen przy zjeździe w Strykowie\n- aktualna sytuacja życiowa: Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: zaczyna od „no to tak”\n\nTopic for this post: drobne narzekanie na usługi\nConcrete angle: kurier nie zadzwonił\nRegister: enthusiastic\nTarget length: about 25 words\nTime of day: evening, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - \n  - \n  - juz\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "1deb931c03428068c589dc30af90f5eafd5bab33",
+ "response": {
+  "id": "gen-1791459870-UTo05aN8aAbR4WZgISVv",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: no to tak kurier nie zadzwonil wiec czekalem pod blokiem od 15 jak glupi a paczka i tak w paczkomacie ale luz jutro po robocie odbie",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm drafting a casual lowercase Polish message without commas or diacritics, mentioning the courier never called but the part ended up at the parcel locker anyway, with an upbeat tone despite the mild complaint, keeping it short and avoiding naming the courier company directly.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS4AgKEAgSGAI4AUIIdGhpbmtpbmcSDOacWUyGmx6aEYBaoxoMD8hzijVeq4NA5jt4IjDfSPbW8fXW83taxA5Aji7WquHmpBddVM/6AGS7cuE5s4+oMo2CoGXQDmRNZQXK5OEq/QfCC5Nmh1qHrFYkjlcX4+st6b/SfqnIPkquQRQnu5TOt6Pa2cRcCPwEBKu5FFckCT3xWCf/dopKUYw7iq7qLaXofpQM/T4p73oYT+ggoFGJhfzk4OFookCfA5EX86BnzerNxPkxqCf/dmmFT9Ni4Dct9IPQPsasppStKKvnlf+89dB16hqCLvdKiIBSYm4WhBPAWm8mmRgTvDcRUVHy3ibHLmK2f6rhEAAPtlSite/6XniX1XLmOniPNkzb4mjE4tFgNSe2gTD1S5Gn3idaLoeQMxipI90zd8f3dOBhJ50LO7Zj5tut/Mwt5Y3P5wo1kySxKJ/Eoy6R8tA/pduM6KRtBsy1FqpRO2jSVJ/n2qmjeIIJSMZeJfW0gGlgpOF6VuoAqIfzrLtiXzDA2ND9DvuJFtGEsD8jBs0+bpu5321VKONBUTVcfc6iAN52JGddO4WN499HSi3AWa+FFJbPnv480Txmv76NdFV3SgNFRaQzcTXkyE25U0tQgN/jgL3aP26YlQRQCQbOoVMUlYwzLAwY87UY5N1+kYd52CB2Te8ZEeO2zOZzse8UilQ5rQ+KKcIzIAU3d0kv56J+RrFDI1eLvIJtkYcBYgtM66ZJuEBDV1X8jwFqkn4k6xXIHPh/i8laP+IQHrJqvTxm+yI7xk72Xmj61difUbt3XJybEqmJ4vuZNWpcKWGzbCiLTlRp4zp6f8i8qGw3d2evbBVp+9npM3zF72VLPCChqjGu42XN6HonQ0hPNcSi3nCNMz7566SiKb2+gxtUQzdxUxCqbW84heJ9/MxNi/TE9KswQnyh912uiNdDtO/czIa3X8FVftEZcY07Eo7A6rgSzYb59BLARAvl01e1XSukQgwbBWqkv7+B6jk0leAZG9KbPbwA20QSBMaeK8BKnv73N91qoZ64XMXnASe0dSs3T0ReL0WbTzvJXHETx5o5kbGB+mYa2bALEM7zkMKb4yeYQkuXSjfKQ5fMBnuOKcDP8Swwh4lmi95Qm5BAg/+NoujHPylUMQV18WbQW/t9B2wOF8RC/abaayHDNW+/J/q7HT3+Ju3dwCRokWqF9sOMt60K2DxMMFaResmZr3kEn30RrBddi6xKI/2LXiUrGjVUhktzGM3RuHLS3VFvmzEx6fdTezz2GtqYULtvi4e5OTU2MGuO2g9zgVo4guh5CIKjn6OMTXfgc08XBjkd+qSevoL9JdaMJimF5AFvf/KtZFFBdrcEjEQg46vI2F87TAuZUC+L7JZu2AATtMtnsZs35DqcAmj4y8YmQlLzDxi+09LJ+grna6sYgd3XMSPQADkIjdk5kam0rB1wIN06usTE7PIOYp2fiX5KG6nHQINFu19wjYZvGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459870,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 952,
+   "total_tokens": 1252,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 232,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.009808,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.009808,
+    "upstream_inference_prompt_cost": 0.003808,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 232
+ }
+}

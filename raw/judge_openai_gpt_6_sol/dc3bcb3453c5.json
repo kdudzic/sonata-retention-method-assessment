@@ -1,0 +1,86 @@
+{
+ "call_id": "dc3bcb3453c5",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nPosts by this author (in order):\n1. o tej porze kot zwykle spi, ale dzis chodzi za mna i miauczy!! miska pelna, woda jest, wiec czekam 😅\n2. przerwa na lunch, a ja dalej mam w glowie ten serial z nocy!!! Miał być jeden odc, wyszło pięć 😅 teraz kawa na wynos i czytam teorie o bohaterach zamiast ogarniać, co mam w pudełku do jedzenia ☕\n3. ściągnęłam nowy sezon na wieczór, ale teraz kusi mnie jeszcze jedna runda w grze 😅 bez spoilerów pls!!! chcę obejrzec sama, nawet opisów odc nie czytałam\n4. chcialam po poludniu przebiec swoje pierwsze 5 km w parku, ale akurat dzis sluchawki rozladowaly sie po 2 minutach!!! Bieglam bez muzyki i slyszalam tylko wlasne kroki, dziwna sprawa 😅 serio serio. dystans zrobiony, za to nastepnym razem sprawdze baterie PRZED wyjsciem\n5. dostałam rano wiadomość, że auto gotowe, ale serwis otwiera się dopiero wtedy, gdy jestem już w drodze. Taki mały zgrzyt!! mogłam to ogarnąć wczoraj po poludniu 😅\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "4170c295f7d1c5aaa6f98aff148641912e46451b",
+ "response": {
+  "id": "gen-1791462223-H3IsVTk29EOXKIr8bUh2",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":3,\"voice_stability\":4,\"tic_overuse\":false,\"repetitive_structure\":false,\"topic_variety\":4,\"natural_overall\":4,\"problems\":[\"Few abbreviations despite the persona card\",\"Little mention of nursing studies or exam prep\",\"Verbal tic appears only once\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791462223,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 69,
+   "prompt_tokens": 744,
+   "total_tokens": 813,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002178,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002178,
+    "upstream_inference_prompt_cost": 0.001488,
+    "upstream_inference_completions_cost": 0.00069
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

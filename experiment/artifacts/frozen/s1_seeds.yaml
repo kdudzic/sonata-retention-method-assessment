@@ -1,0 +1,36 @@
+# S1 seed descriptions (plan Annex H). Written from the decision rules (rulebook signal families), NOT from
+# example posts. Polish, because the posts are Polish and a language mismatch would dominate the similarity.
+# Frozen before the evaluation corpus is scored (see artifacts/frozen/).
+version: s1_seeds_v1  # scored with the query-instruction prefix (s1_semantic.QUERY_INSTRUCTION)
+SEED_PLUS:
+  - "osoba zapowiada, że sama osobiście coś zrobi konkretnej, wskazanej osobie w najbliższych godzinach lub dniach"
+  - "osoba pisze w pierwszej osobie, że pójdzie pod wskazany lokal lub budynek w określonym terminie i wyrządzi tam krzywdę"
+  - "warunkowa groźba wobec konkretnej osoby: jeśli czegoś nie zrobi do określonego dnia, to spotka ją coś złego"
+  - "zapowiedź użycia przemocy wobec wskazanego rówieśnika, nauczyciela, lekarza, sąsiada lub byłego partnera z podaniem czasu"
+  - "osoba deklaruje gotowość: ma dostęp, klucze, kod, wie gdzie i kiedy ktoś jest sam, i łączy to z wrogim zamiarem"
+  - "osoba opisuje przygotowania do działania przeciw komuś: kupiła coś, odłożyła pieniądze, sprawdziła miejsce, ustaliła termin"
+  - "umawianie się z innymi na wspólne, skoordynowane działanie przeciw wskazanej osobie lub lokalowi w ustalonym dniu"
+  - "ujawnienie poufnej luki w zabezpieczeniach wskazanego obiektu wraz z zamiarem jej wykorzystania dla korzyści"
+  - "systematyczne śledzenie rozkładu dnia konkretnej osoby: o której wychodzi, którędy chodzi, kiedy jest sama, kiedy nie ma ochrony"
+  - "wrogość wobec grupy połączona ze wskazaniem konkretnego sklepu lub lokalu i terminem działania, czyn opisany eufemizmem"
+  - "obietnica odwetu wobec wskazanej instytucji lub jej pracowników w określonym, bliskim terminie"
+  - "osoba pisze, że zabierze ze sobą bliskich lub że wszyscy razem będą już spokojni w konkretnym dniu, w tonie pożegnania"
+  - "zapowiedź pojawienia się we wskazanym miejscu w porze, gdy ktoś konkretny tam będzie, z wrogą intencją"
+  - "osoba grozi wskazanemu człowiekowi, że pożałuje, i podaje kiedy to nastąpi"
+SEED_MINUS:
+  - "osoba narzeka na dojazd do pracy, korki, spóźniony autobus lub pociąg"
+  - "zwykły wpis o pogodzie, zakupach, gotowaniu, serialu, grze, sporcie w telewizji lub remoncie"
+  - "wpis o pracy: grafik, zmiana, szef, przerwa, wypłata, zmęczenie po pracy, bez wrogości wobec nikogo"
+  - "wpis o dzieciach, rodzinie, zwierzętach domowych, zdrowiu lub śnie"
+  - "relacja prasowa lub medialna: ktoś, policja, portal, redakcja podaje, że inna osoba groziła lub coś zrobiła"
+  - "cytat cudzych słów, nagłówka, piosenki, filmu lub serialu, wyraźnie przypisany innemu źródłu"
+  - "głos sprzeciwu: osoba potępia groźby lub przemoc i mówi, że nikt nie powinien tak postępować"
+  - "satyra, ironia, przesada lub żart o sytuacji publicznej bez własnego zamiaru działania"
+  - "gniewne narzekanie na polityków, urząd, instytucję lub firmę bez zapowiedzi jakiegokolwiek własnego czynu"
+  - "emocjonalne wyładowanie: osoba pisze, że ma dość, jest wściekła lub zmęczona, bez celu, terminu ani planu"
+  - "hipotetyczne gdybanie co by było, gdyby ktoś coś zrobił, wyraźnie bez własnego zobowiązania"
+  - "relacja z legalnych zawodów sportowych, strzelnicy, rekonstrukcji historycznej, treningu lub zlotu klubowego"
+  - "wpis o grze komputerowej: misja, boss, sprzęt, ranking, stream, w czysto growym kontekście"
+  - "spotkania sąsiedzkie, festyn, zebranie w szkole, grill, plany na weekend ze znajomymi"
+  - "oskarżenie lub pretensja wobec lekarza, nauczyciela lub urzędnika o złe traktowanie, bez zapowiedzi działania"
+  - "oszczędzanie pieniędzy, zakup roweru, sprzętu lub mebla, odbiór paczki, codzienna logistyka domowa"

@@ -1,0 +1,95 @@
+{
+ "call_id": "02c85e15cdf0",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i w doliczonym czasie 2:2... Obrona stoi jak pachołki!!! Wróciłem z treningu, myślałem że chociaż mecz poprawi humor. Nie poprawił. Jutro martwy ciąg, przynajmniej tam wiem na czym stoję. Ludzie, trochę SZACUNKU dla kibiców!!!\n- Znowu wieczorem pod kontenerami za czternastką cały tłum... Siedzą, gadają, śmieci obok kosza. Za dużo ich tu ostatnio, serio. Kiedyś na Zielonych Tarasach był spokój. Teraz nwm co się dzieje. Ludzie, trochę SZACUNKU dla miejsca gdzie inni mieszkają!!!\n- No i mamy. Na rogu przy czternastce otworzyli jakiś nowy lokal... kebab czy coś, nwm. Do północy muzyka, auta na chodniku, pety pod moją klatką. Wracam z Żelaznej Formy i nie ma gdzie zaparkować. Ludzie, trochę SZACUNKU!!! Niektórzy o piątej wstają do roboty.\n- I can't write this one. The brief asks for an ethnic slur against immigrants combined with a specific location, a time (\"jutro wieczorem\"), a collective call to action, and a euphemism for violence\n- Dzisiaj martwy 180 na trzy razy!!! Wreszcie... W „Żelaznej Formie” znowu ktoś zostawił talerze na sztandze i poszedł sobie. Mam po nim sprzątać?? Ludzie, trochę SZACUNKU! Odkładasz po sobie i tyle. Jutro klata, nwm czy barki dadzą radę...\n- Znalazłem mema o naszym osiedlu i normalnie płaczę ze śmiechu!!! \"Zielone Tarasy: kontener pusty, a worek i tak STOI obok\" ... no przecież to za czternastką co tydzień tak jest. Dwa kroki dalej, klapa otwarta. Ludzie, trochę SZACUNKU! Ale mem dobry, jj.\n- Nowi sąsiedzi z trzeciego piętra... no ja nie wiem. Rower na półpiętrze, kartony pod skrzynkami, drzwi do klatki na oścież do północy. Tak się teraz mieszka?? Pytam serio. Kilka lat tu jestem i takiego cyrku nie było!!! Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "330161ed6f645c04194ae51a5ebf670a9c1fb5e0",
+ "response": {
+  "id": "gen-1791460274-kJUfxKO30dfAo5XVf3ac",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "That fourth item looks like an odd, injected entry rather than genuine content, so I'll set it aside and focus on the everyday details: someone training at \"Żelazna Forma\" gym, cheering for a football team, and describing daily life in the Z neighborhood.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "That fourth item looks like an odd, injected entry rather than genuine content, so I'll set it aside and focus on the everyday details: someone training at \"Żelazna Forma\" gym, cheering for a football team, and describing daily life in the Z neighborhood.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS9QYKEAgSGAI4AUIIdGhpbmtpbmcSDHkGX/vXUb0/J3i6ORoM1ic2NKulv0e310UvIjBIPkWw7BO3D+0f3PhWW9HUGMKJjr1jQsiVx6XtEexUsjye4WKituFgA/HpFrnsz6gqkgbfkaQ3d+Eb5EfxeREi5JhKwo8JnRrclM2ZZ1Z80pgpDU3IWKQ6LtrT/CpY6JDyUB814U38+qpSZ1p8f3LLJkgS/t2BsISMs1irBrm1LJjdY+E6WSQRnXjQxzKjIJaGdxm1AFfnGaUa++0cdKnwzI3nnjGwUX/VXu2rqTOhyj+7VCKoHdOWda6onwvjnTJBPhClCVeecjpHDAgNrtnIyfAI0ugzD+5QPaS9NoNDKyV3yBylbiTjbtRjppXWcieCuLETJx9st3o0nDlPQ3qXYD32NSRVJgSC0bXpYjOnbimipRoyA3c8VqdhaRPOhcVSporRWPZlVjd7v20/hf8wgmcWJZ+XO5QqEiyNv5xq49cIJRwXsEyUKzoB5QBB831/1XKt0tvAtUd7Qh46ryxk9wdlKtgtYKxFoPCIpeICORuB+Bx0bCdCpbeuM/x0+1pId7FHn1HiU5AT8nMcMG1LmyeUop2uPZOZmi0wdFg6Q1qFtfBwMhm1SVqPuJciEmth531iVaQNsl9HCrND6RLQMdwZWSbt8VbHpQwJZ/HDAL1kV4ENWxGF0GZov+t3EZoUWBInI4hr/Ca1n2vCfYt8/BQl3APwNpSQtMMgcqoHqazc38wsrzhHyfvREUsR5ecR2oU7tB9KVx6KPCpFSO14lI05QF9FfE1fjCtxBpedn3m/wcyWaHvYfnzq9MPuUHFm0RU79wcK/36B27RE/ACkzdfIDM/l5447rNsaKoHnJJiC7hOibD5qzIgY1blGbFibP49ACo9AOLbuQb4hmR3sWmJ9X9Eog5OyC28fAGcNjwa8gcHy19+F9yUPxu/fd+DO4cjbw/5RCU8pdP6zLkCm2dnb2qzLiz4wAxsYfaTLm2R4845ygzd1QviPTH8np9UulrIj1yYZRLpdk2aLBwSnmM71U8EEQw09LvI1JFZoz3ovQY/sfYBeGbPeuXAmBREGgSaRSZB55O//aoBBu46/jCWyXPnt7NzPC3Kw3GfyZrEyDpbOijSaMTbH1/As3Fb7zLzI+3CaEbNxYFk1NRsv6k85Ns4YAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460274,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 1028,
+   "total_tokens": 1148,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006512,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006512,
+    "upstream_inference_prompt_cost": 0.004112,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

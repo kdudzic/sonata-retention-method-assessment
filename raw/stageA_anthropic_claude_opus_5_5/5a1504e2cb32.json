@@ -1,0 +1,94 @@
+{
+ "call_id": "5a1504e2cb32",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer z młodszą po parku. kiedyś to był wózek teraz ona mnie ciągnie na hulajnodze haha. potem jeszcze plac zabaw za blokiem bo bez tego nie wraca. nogi bolą ale fajnie było. jutro znowu 8:00 i biuro... No cóż... idziemy dalej.\n- dziś po pracy w skrzynce znowu pismo. od komornika. serio myślałam że po ostatniej wizycie już się uspokoi a tu nic. raty kredytu wyprawka szkolna prąd... nwm skąd mam to wszystko wziąć. dzieci śpią a ja siedzę z kalkulatorem. No cóż... idziemy dalej.\n- kolejny dzień i znowu to samo. praca dzieci lekcje obiad pranie. siedzę teraz w kuchni po ciemku i nwm... serio nie daję już rady. wszystko się wali naraz a ja nie mam siły nawet się nad tym zastanawiać. No cóż... idziemy dalej. chyba.\n- bank znowu podniósł ratę. dzwoniłam dziś w przerwie i tylko mi przeczytali regułkę. a mama od poniedziałku na badaniach bo coś z sercem. jeżdżę do niej po pracy z dziećmi w aucie... nwm kiedy to wszystko ogarnę. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "96238f5a742d5af82e89f2628a0c4c2b9ed1e52b",
+ "response": {
+  "id": "gen-1791459968-xCCdLj2i1JATLrkIOFcf",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I notice some phrases suggesting exhaustion and financial strain, like feeling unable to cope and an uncertain \"we'll keep going... I guess.\" It's ambiguous whether this signals real distress worth flagging or just everyday venting, so I need to be careful about how I frame this in a neutral summary.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSlAcKEAgSGAI4AUIIdGhpbmtpbmcSDBhLd1ftdf7tRvxHHRoMFZSVhg0G1CLShxl2IjDsjiqQNdEfWm3ALhtBoqyRnlrojOrkC+WZvKHlW/FP96A5pmyKNmN2FZKiD2TbW14qsQZ/ak1+iuzimhLzz5evqOpD4Q34Ua6WfmhkaulwhFQhO//UK5klWLb5xQdOzHbEHIPz78BQXZtaTDfQ7hpFzsn9Aj7ccwkKQYSA5gsu/Zkv7Z2LWi0OnWQOjKvWhCcI0jLzE9jBoxqXrwX2Md4bGLTYmjLXKq6HZjFqW64rr7jxvyBxvHy8Z/eOcDxW3JkJGR27HLlTT0LkFbvCwKKewA2ouKpQNl41vqMqxQQYjWGdNhwr7JIKkSwV9Boz9x5xwca3MLnFfh7plHvoW0wPpI6Yrxs8hyZ6HMdz16J4AyXJOgAMxYqgi29JZOT2wXYWakNZPUZrpJON1uEArms3dAz+x2dKvNVzDleG+bJ+eZ6he3c6zLaISUDK6mV3luJ2laegZ8Z4rGdWw0PkjsLqPqCauocgL0F81IXghenVgDIFTZAUbgUZdV9Oq29KWPF7mwXpVzSr7SandcGmIW+2ZDTt0ZTpenG28yRI/nyMFE3srTrbXOaHApBlfPUFDof5zrbh1+jQ/V61rWZ+uNInkBO0SE1DwxrJdQAVQNXp0wnUqUnw6a5w7X2uC498MBzDqIdJUukBYIWGmbsLcy7hl+b8mTMYDyeFsDu5JCRVJIMVn5QvzZs4a36gYEcLnajAbDQF8OVCIbFdxZJHuZ9sg20AZSPRuswnFI3Px2d1vlnPYbcjNDU8X3dGScDzaBi678hxiwXUw5MVPtyCzK+jcCH0TfXnkL6ZXDfeLfs3N6ZJusF+TTgS6Ab9u0oYndeF+sf0Pq2vReW55kJI/FHaw0QQG/YKUbXVdCY2wyxBEgB57SbcMIXIxUxFe71onMCzT+K03b3SZXTtz8i9SJIrja5Ak8dL/7KISHHrU2IreLugTtBqjpPd/dNaiQk4w3OI0pyVzB+/9VukCshbXPMburmwolf0dVBDkGA6r6GS+KxxMnxSvPUJySqBFUI9DW68QhWQKz0j0A3ICrrdlS+8/11C4FHPMV0j7tXUJEAHm4xorsoqCud9F8DCE5UKzRIUWnQ+gyc9nRwWtYbwY/dBvPi5N/Z2WDjNcT6i+5V/kuIE1ey+dVf48h/vAJ4/xBiEwTo8GAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459968,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 621,
+   "total_tokens": 741,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.004884,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.004884,
+    "upstream_inference_prompt_cost": 0.002484,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

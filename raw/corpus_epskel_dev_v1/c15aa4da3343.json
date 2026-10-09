@@ -1,0 +1,87 @@
+{
+ "call_id": "c15aa4da3343",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 677497660
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Prowadzi niewielki zakład krawiecki; pisze w przerwie obiadowej lub po zamknięciu.\n- zainteresowania: kolorowe guziki, tkaniny w kratę, quizy telewizyjne\n- lokalny punkt odniesienia: ławka przy ulicy Pocztowej w Jeleniej Górze\n- aktualna sytuacja życiowa: Porządkuje zapasy materiałów i przygotowuje nowe miejsce na maszynę do szycia.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: none; skróty: none; emoji: rare\n- tik językowy: często dodaje „ot, cała historia”\n\nFor each of the 5 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with at most one small detail a real person would mention - sometimes a product name, sometimes a number or price, sometimes a place, occasionally a time; many occasions need no such detail at all). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. drobne narzekanie na usługi - pralnia / szewc (lunch break, Wednesday)\n2. sport - mecz ligowy w TV, wynik i emocje (bez wrogości) (early morning, Friday)\n3. zakupy i ceny - nowe buty / kurtka (early morning, Tuesday)\n4. drobne narzekanie na usługi - restauracja, długie czekanie (evening, Thursday)\n5. jedzenie i gotowanie - nowy przepis, eksperyment (evening, Monday)\n\nReturn a JSON array of 5 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "29c7d70f0e4bd75459d1ae46e7da66354459f7b1",
+ "response": {
+  "id": "gen-1791462733-j2FuSVS6gvC9VqQk55Ot",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"W środę w przerwie obiadowej odebrała z pralni obrus, ale musiała go jeszcze raz wyprasować przed położeniem na stole w zakładzie.\",\n    \"mood\": \"annoyed\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 23,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W piątek rano sprawdziła wynik obejrzanego poprzedniego wieczoru meczu ligowego: 2:2. Nadal cieszyła ją wyrównująca bramka z końcówki.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 16,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"We wtorek rano przymierzyła nowe buty kupione dzień wcześniej i zastanawiała się, czy były warte 189 złotych.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 12,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W czwartek wieczorem, po zamknięciu zakładu, długo czekała w restauracji na zupę. Zdążyła w tym czasie rozpisać sobie ustawienie nowego miejsca na maszynę.\",\n    \"mood\": \"tired\",\n    \"opener\": \"complaint\",\n    \"length_words\": 28,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W poniedziałek wieczorem pierwszy raz dodała gruszkę do zapiekanki z ziemniaków. Ku jej rozbawieniu słodki smak pasował do sera.\",\n    \"mood\": \"amused\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 20,\n    \"tic_fires\": false\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791462733,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 435,
+   "prompt_tokens": 652,
+   "total_tokens": 1087,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005654,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005654,
+    "upstream_inference_prompt_cost": 0.001304,
+    "upstream_inference_completions_cost": 0.00435
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

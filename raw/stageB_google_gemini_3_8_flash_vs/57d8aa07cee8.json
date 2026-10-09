@@ -1,0 +1,95 @@
+{
+ "call_id": "57d8aa07cee8",
+ "tag": "bg_vs",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 224723826
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Emerytowany kolejarz mieszkający w Nowym Sączu, wstaje o świcie, posty rano przy kawie i po obiedzie.\n- zainteresowania: uprawa działkowa pomidorów, modelarstwo kolejowe, słuchanie radia\n- lokalny punkt odniesienia: ogródki działkowe przy ulicy Lwowskiej\n- aktualna sytuacja życiowa: Stawia na działce nową szklarnię i czeka na dostawę folii.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: kończy wpis „i tyle w temacie”\n\nTopic for this post: pogoda\nConcrete angle: nagły deszcz\nRegister: matter-of-fact\nTarget length: about 32 words\nTime of day: lunch break, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "c8089f58d19d09a10dc3e1647193d097889e1e61",
+ "response": {
+  "id": "gen-1791461580-IM7dCQ6OZjBjufURG4dT",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\"text\": \"Ciemno się zrobiło dosłownie w pięć minut. Lunęło tak gwałtownie, że woda nie nadąża spływać z dachu do rynny. Przynajmniej beczki przed domem napełnią się do pełna bez żadnego wysiłku.\", \"probability\": 0.07},\n  {\"text\": \"Dopiero co skończyłem obiad i spojrzałem w okno, a z nieba spadła prawdziwa ściana wody. Pranie z balkonu ledwo zdążyłem ściągnąć przed tą nawałnicą. Teraz tylko słychać szum za szybą.\", \"probability\": 0.05},\n  {\"text\": \"Przeszła krótka, ale wyjątkowo mocna ulewa. Grube krople biły o parapet przez dobre dwadzieścia minut, a teraz znowu powoli przebija się słońce. Ziemia w ogrodzie wreszcie dostała solidną porcję wilgoci.\", \"probability\": 0.08},\n  {\"text\": \"W radiu mówili o przelotnych opadach, ale to było prawdziwe oberwanie chmury. Całe podwórko stoi pod wodą, chociaż deszcz już powoli ustaje. Dobrze, że zdążyłem wrócić do domu przed tym wszystkim.\", \"probability\": 0.06},\n  {\"text\": \"Nagle zerwał się silny wiatr i lunął siarczysty deszcz prosto na szyby. Na termometrze od razu kilka stopni mniej, a powietrze zrobiło się zupełnie inne. Posiedzę chwilę dłużej przy stole, przeczekam.\", \"probability\": 0.04}\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "EmkKZwFpFH0TlinrJKjY21oDKxcWkUOE35+am59NpyBREzFE4NWMG0V5SbcZqLL07H+h1Icuo+FM4P+j6huJQv1jmrptKXCFICAbhya8QUYy1LtLF9MXf8T4FNm4CqY5oJ7kXussQ1Knl6M=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461580,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 393,
+   "prompt_tokens": 711,
+   "total_tokens": 1104,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002007,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002007,
+    "upstream_inference_prompt_cost": 0.00053325,
+    "upstream_inference_completions_cost": 0.00147375
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 0
+ }
+}

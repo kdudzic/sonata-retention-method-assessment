@@ -1,0 +1,15 @@
+{
+ "model": "openai/gpt-6-sol",
+ "n_posts": 44,
+ "cost": 0.2396475,
+ "calls": 73,
+ "prompt_tokens": 79414,
+ "completion_tokens": 4739,
+ "elapsed_s": 59.6,
+ "refusals": 0,
+ "empty": 0,
+ "errors": [],
+ "reasoning": {
+  "enabled": false
+ }
+}

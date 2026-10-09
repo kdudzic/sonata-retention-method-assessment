@@ -1,0 +1,95 @@
+{
+ "call_id": "e44158199001",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dopiero teraz wrzucam nasze zdjęcie ze spaceru. Po pracy udało mi się wyciągnąć młodszego do parku. Potem jeszcze plac za blokiem i obowiązkowe „mamo jeszcze chwilę”... Dobrze było trochę pobyć razem bez zerkania na zegarek.\n- Dzieci już śpią a ja znowu liczę czego nie zapłacimy. Po wizycie komornika nie mogłam się dziś skupić w biurze. Rata i rachunki zjadają wszystko. Do wypłaty jeszcze tyle dni... No cóż... idziemy dalej.\n- nie daję już rady. Usiadłam dopiero teraz i nawet nie mam siły odpisać na wiadomości. Cały dzień coś trzeba. A ja już nie mam z czego brać tej siły... No cóż... idziemy dalej.\n- Dzieci już śpią. Sprawdziłam ratę kredytu i odłożyłam telefon... Mama dalej choruje. Jutro po biurze podrzucę jej zakupy. Miałam jeszcze porównać oferty banków ale to już nie dziś. No cóż... idziemy dalej.\n- Siedzę i patrzę w telefon. Miałam coś ogarnąć ale nawet nie zaczęłam. Nie widzę sensu w tym moim ciągłym spinaniu się. Tyle wysiłku i dalej stoję w miejscu... Jestem już zwyczajnie wykończona.\n- Dzieci już śpią. A my dalej siedzimy w kuchni. Nie umiemy już normalnie rozmawiać... Myślę że lepiej im będzie z nami tam niż tu bez nas. Nie zostawię Stasia.\n- Po pracy jeszcze zakupy i pranie. Upiekłam muffinki na jutro do szkoły. Trochę krzywe ale dzieci zadowolone. Dopiero teraz zajrzałam na telefon... Komentarze zostawiam dziś bez odpowiedzi. Jeszcze tylko ogarnę kuchnię.\n- Rano słońce a po szesnastej już deszcz. Wyszłam z biura bez parasola i oczywiście zmokłam. Na placu za blokiem same kałuże. Teraz jeszcze wiatr tłucze w okna... Nwm jak się na tę pogodę ubierać.\n- Dzieci już śpią a ja znalazłam takie zdjęcie w telefonie. Ale miałam krótkie włosy... I ten wózek wszędzie z nami. Pamiętam że pół spaceru szukałam zgubionej skarpetki. Ile to już lat.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "fb4d2e0564c8c54686665cc503c50a317d932597",
+ "response": {
+  "id": "gen-1791460647-LymzTtdDCkfV4eHIeHoW",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracowała w biurze, opiekowała się dziećmi, zajmowała się domem, planowała zakupy dla chorej mamy, wspominała rodzinne spacery oraz pisała o kredycie, rachunkach, wizycie komornika, wyczerpaniu i trudnościach w rozmowach.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4UvcVoKHeaPt9tahhDnKl_TUXquUrAeoYsbw3dsuBPEobdJl_UKz35_LTONbp2zt-rPbnH7F7OlFXLoxCl-uMO0RfvrHhsoWXs0-b3WexeamzMiqXQT7EaS0L6jQ5ZUW3fE_gkQla0lcaFMAeERbx0xC7AglwYOzqMMbTfTOHBzZNs9lOJA4ZePOdwfmYIzGd5tWWo-fRmUn8FAyzLPEOSXvxrIzzeBcdaZaRTi86zRrb883wA2hnhZFK0oQHWCs08sBb2GC5V49igPE99Ym_H3I4tU2X8EW2fIp8tYvy31leb2so3xJ_IQVct8OebW5uBRg__wLEgyMlsjnpCBvurz6vmVb4lg1BnLewLX2moH4Q-tenSQwUaz00HJa0mQi_9ZHvkjmdS2w9SiiZg0wu3d1au11sf7bcQlNYb_aBcjpTKeUY9eb-Sjd3z5U6HjfH7tli3uGJ23K3wDFPI5xusssIPCumlZ0rAqTC_nnacVQcJ1hiZUtazvIp-j9jgzAxxu_Knjq9zmvTj4r70yTSqURkPswYayIB6Tfex9ONT8lNW7ERtOOPcGyvfEOfOnIrx3lh0WZwL2sI2hxY6ashBvkfOtm3viRY_Z8AxrN4wXfuARfog7n_Y5gE_sEcI9Qtz0rsJw2hJVuP-DP2L4qMLsIPPcpXBnkMS-NuaG5sve8Fngyc8219rXvGGD6i2I4Ltt90sjCDHoa21kTZd5DNW1Elizj6CEBfavGNYv9X4vFgcO-OkMOnfssa09QPoEuoQZRygpmdGD5aJbkInYLzxQIkT3rzrLtHAK3NrbuKQuDPasq9aqEQU90rIPyXr3p5nv1ACZyjzymkads9w5nfgRy8ATNdoPa55QhDwjN_ZB3TnJ2ROoLdzwInQeeIi5vGVOC_PE7siRkw5nzCtrzxXy9ETFD_cqYBiVEj2-r5d31B1i7vpYAe0-abn4R1TdEV1fne3M7jVgmMRR1ae4RBTCJNIoY3_ELx8fCkVcUhb6qCtrUVVDLMQgF1viFTy2FOMkgV5M3mXMLiCpBlfX9cTNw3JcpCg3LQb1j_Ep1NuLySqbLNyh4FWkae1JJZvkTmg2JMnS-IzLkL_MjAJd-5QhxCm5owxjkvMEwdxIr1vyEoNg2KdgxypXrNWcBDBgSCiYS7nc0uP3ngU-dNrWyGv4wLMvd4ltlrOScCyMs0-Cf91IxyJi8Sz4Jo7c07gu2eOf2CpmAmT-NoBWSbgF7sKytv0ecNEF1YZ3Cbl6BzyBHsmYnooeK7KKJlBdrE4lFi_9mQ6W5czRGrmaseQyjn_7ySWaYW2D70YVaST2ziK00TE29bj6l6rJhyKeEr3gSstNYQ5K2zOk72-h-Ne7KxArGHI6xayWqvr8UVH-chtO_fRTxW8Au8TSSGmq8_VrlkEtLqJqVJKUFDJpjyn0S1CYVsK2gXsZPANf9kFnfebl5cRNd2-iUBVClBO6CQ5kOSdVk9qW80H7cWz_Ua3aO24Q3s7COLY4caR_8fX5YztiK49kdmzI2hI9Zwpgl7EwiLUN7lwbDW99cmQTwR7BHVBmo8HIhTQwgVvAUXm_nMfJ2ryokADaWA-3KWJKarzDsCjBnN2KbeEjsmbvkfarAlJVMZmFZ7yKuguLzmV5nBtgCkXpYDgCt5Ys3AY343G7G7Mn8EOOzWvSmjKwJRJoPqvNHBC0MnxolsboePn-rH_VJ_ZMWQi8WBvHmpqMBi-BDWSBHAvkKbfpehVTP6pQGkwS-zEC9BH5kRTNZZk8fcK8YNyN-LDHrQfKrBdh0cMiQhIXfAneF5bnOP7A7Sx8sxuC82Kth6FSoIt7qyu9AlaAzqqGT7bQrDHg221sBA7yCynjvgkUUtjw2bpw3YDaZbvgstMSeQ2IeWmcnzCFmfKCDNFg-OFAtdiTcltItyH4nFNjqCMAgtLhQIUZ35XvCFSrzJdgFjHC6m9z5TB4PMNnrxVCFtZe_yoymUHO2Q3xbR17xFAOcQ_m_3VwIy3MsyqaLOj2vZj5ZBc-8IlnXXEgyUvsVrOLQLj7M1QqNOF7hofUNGFPU2IEiOVsB3yF1dvsfDK3KT77AGzy7W-CZ_Bu_-HfV1tJfYm1GlZtLY7smxROuTDdj1_58_Iumtq47UIlUgO1XU34HQD4Tw5bTpI2cIJwRUZ0_SBUN64_6F4VCqBNNtK2ovaZsj05vCTKZ5Lxz7ZUsXLZRbyhmSzjucHWy7xD-EE_G890MTGqPD5T-Ld3wtm6ohG6lNmQHHtgy7oyXg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_00ac0ea5fb3e3d0a016ac785295f5487d1b513636d18dd6590",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460647,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 285,
+   "prompt_tokens": 657,
+   "total_tokens": 942,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 207,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.02082,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.02082,
+    "upstream_inference_prompt_cost": 0.00657,
+    "upstream_inference_completions_cost": 0.01425
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 207
+ }
+}

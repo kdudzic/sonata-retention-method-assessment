@@ -1,0 +1,87 @@
+{
+ "call_id": "460681df2e26",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 602786564
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje na kasie w osiedlowym sklepie spożywczym na zmiany, wolne popołudnia i wieczory po zmianie rannej, posty głównie w przerwie lub w tramwaju.\n- zainteresowania: seriale kryminalne, uprawa storczyków na parapecie, wyprzedaże w drogerii\n- lokalny punkt odniesienia: przystanek Plac Grunwaldzki we Wrocławiu\n- aktualna sytuacja życiowa: Od miesiąca zbiera pieniądze na wymianę starej pralki i porównuje oferty.\n- sposób pisania: zdania: short fragments; interpunkcja: ellipsis everywhere; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: kończy wpis słowem „takie życie...”\n\nTopic for this post: praca i grafik\nConcrete angle: pierwszy dzień po urlopie\nRegister: mildly grumbly\nTarget length: about 29 words\nTime of day: evening, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Przy szklarni robota niby rozpisana, ale sąsiad z działki może pomóc dopiero po południu. Poczekam z ramą do obiadu.\n  - Przy kawie przypomniałem sobie, jak szkolenia na kolei potrafiły zająć cały poranek. Teraz czekam na folię do szklarni przy Lwowskiej.\n  - Jadę do szkoły i jeszcze czuję wczorajsze sprawdzanie zeszytów w oczach, a w planie znowu ciasno, bo przed lekcjami muszę przygotować zadania na sprawdzian.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "15a8bc9d66422c17f2ab4e8e7517d820af085b10",
+ "response": {
+  "id": "gen-1791459853-NRSB8mHl3wHlN3UNWAvk",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: pierwszy dzień po urlopie... rano kasa, a grafik na przyszły tydzień już zmieniony. W tramwaju z Placu Grunwaldzkiego dopiero sprawdziłam... miałam mieć wolne popołudnie w środę. takie życie...",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459853,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 62,
+   "prompt_tokens": 772,
+   "total_tokens": 834,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002164,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002164,
+    "upstream_inference_prompt_cost": 0.001544,
+    "upstream_inference_completions_cost": 0.00062
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

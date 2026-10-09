@@ -1,0 +1,95 @@
+{
+ "call_id": "54d43325efe7",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1701494130
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.\n- zainteresowania: żużel w telewizji, stare Volvo, wędkowanie w weekendy\n- lokalny punkt odniesienia: stacja Orlen przy zjeździe w Strykowie\n- aktualna sytuacja życiowa: Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: zaczyna od „no to tak”\n\nTopic for this post: zwierzęta\nConcrete angle: nowe zwierzę w domu\nRegister: matter-of-fact\nTarget length: about 33 words\nTime of day: early morning, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "5f6250bc76ad6d81c5e650366813a02319d23c31",
+ "response": {
+  "id": "gen-1791459845-jXsRsu8GwVBfB7m1EWzA",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm drafting a casual Polish post about getting a new kitten from his sister-in-law's litter, written in lowercase with no diacritics or commas, mimicking his texting style and early morning posting habit before his 6am shift.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSzwkKEAgSGAI4AUIIdGhpbmtpbmcSDIItJOmBCym6jbQT1RoMYcb6RSAbe1Kx6g+8IjAlKcXAYNdHLRrOx1pJNsQWSXFIGZZjx6uM1lH6A5XL7E9r7NkVvml0mba7CLiXd5Uq7AiwJ/EQ5TJFlj9xjK6EAQhRzqsS6RmRY1+LgeEfjxW6Z5wBHu5F8SsmwzBUiXLXyvun15pgMxktbvxlttNTevxQ+q97A7VqEb1NUGVND7E0jFao7Sftrer3PiP7eifs4XvdiISUkZOLqyHpkv/5AHJU32FP0tLX2bTWSRrxRWl9JPetmiGYRqBLJ0nNdwucwyEp9UCmcwQvN7IcAZu6qh2WuWYcvB+7KnYJWst+T4WPd4M8vAYADpyuLRGQiITUECnxS6ZuF2hKZkkV9P1g07EI124JpParTedG1d9KJLyc8zrG6TYLdfx7G6ePh+IBbBS2iipAlfJL/S/6+hJR62wGdniSPEKpzZFiRFJPsoPPqDaCXi55t3AJRTp9vs2MhjTP3WnyJAuzy4lAuGBmndUliqpJBr/hYhTuk5brasfghy+qPLuufXJZVXH/fEEZYke0Y50BkO9xjPfxKqNsNB8JXa/cBlzF+k4WEELawPHvEQlQLbxicx7y87aCF8Zz1bL4jDQrAjZQt30YtYK1F7QacmAEZtBgcp/XN31wExiNYHEv51d0hV8umhbfBtvXTAZTVVz6Z1WTjTuYOCLHTkrvHeQLKbCrFHtemxmqYMONBEqO5xfjKG8PNTjCgLDichu9wDFDRChMwEPoBG/pO0GnZ8PAL2PDaDN2vU3xP11K1akmjDincxFbbbpmilEcePh0IUGgcIzsaUh25PfYbmuESOqSYiDzltD1vVoh0ZXumu51uLsIlg7F8slHt6i+gZSISzeoaMFqMwP+h6ZSFRaC+8pWqy3vpRSgTgU1Hs08IRXTd0+sH7xw5qD2FbiWAuNY3tS9U0y/IGLGdc+AOU4qVjWPU6o0wGrmOggbLQTowYADd4Trm+EGJxmB7wama7amTEwXGoQ7AYXOe4PioCDacBO5kLRgDLD5HN9etyUCwHuSMEvm/TUSUZo7m8YDhX1tHTdfdqjtKZy7X/WYrMDMbNKIs053EW9Z9UcAYQB1z/0x13ALTVj0Zqw9VBgu4dUyAFaj9OxO0EaKztVOrbSIVeOwDuwlJiebJBI5bKBgAB+84bj7TnpJZEMMTZiCq8ObnUAULgrpfiNOovH8VIMLYlB9zJwKUFwG/U2Sgr/wx/i5t7RtTZnNv+p9krfQKwN2ACXtFvmbIdeqUChP/zntcvjroi4HR/SB9tai/biVLeGgTOd8VGsUFjxNyB5D0mJqAw1rp87RHFlA1qbw3FfHnE/G/EuKVOhT+FP4mKpA8ECqX0HIuWTSMUmYcVLCkY7phK+Imt6cOIWxSo2xjg93G7UGcqw3D201dijoGymNCH3QhwzSpqFuQCMVZ1zNL0XGmw09Q49Z3tbKHWQoANsuipzNCt6bJ2K7VpnnY+NU+2298c76CZE//KRKiUwlKtt7G8dQXUOWbMPDWWxOeV7GwNFj2nXPenbnZhNJ114GN8wSjTJ0AMR/k4U5oxvgImzAUJFMLDKW6k871RCP9HQFRHTkxslLHpheJarTGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459845,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 943,
+   "total_tokens": 1243,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 300,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.009772,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.009772,
+    "upstream_inference_prompt_cost": 0.003772,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 300
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "ddb4d6a1dfd9",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 407049007
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje jako sekretarka w szkole podstawowej w Tarnowie; publikuje po południu.\n- zainteresowania: papierowe zakładki, ciasta z jabłkami, spacery po parku\n- lokalny punkt odniesienia: sklep papierniczy przy ulicy Krakowskiej w Tarnowie\n- aktualna sytuacja życiowa: Kompletuje wyposażenie balkonu przed latem.\n- sposób pisania: zdania: medium; interpunkcja: poprawna i pełna; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: zaczyna od „Na marginesie dnia”\n\nFor each of the 12 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with at most one small detail a real person would mention - sometimes a product name, sometimes a number or price, sometimes a place, occasionally a time; many occasions need no such detail at all). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. jedzenie i gotowanie - bar mleczny / pierogi / kebab (early morning, Wednesday)\n2. zdrowie i sen - dentysta (late morning, Saturday)\n3. komunikacja i dojazdy - pociąg regionalny, przesiadka (early morning, Wednesday)\n4. jedzenie i gotowanie - zamówienie jedzenia z dowozem (early morning, Monday)\n5. gry i seriale - gra, trudny poziom / boss (late night, Tuesday)\n6. jedzenie i gotowanie - zakupy na obiad, czego zabrakło (morning commute, Monday)\n7. pogoda - upał (lunch break, Thursday)\n8. sport - skoki narciarskie / siatkówka / żużel w TV (late morning, Thursday)\n9. gry i seriale - mobilna gra, uzależnienie żartem (early morning, Friday)\n10. remont i dom - zmiana dostawcy internetu (evening, Sunday)\n11. pogoda - mgła rano (late morning, Saturday)\n12. gry i seriale - zakup na promocji na Steamie (late night, Sunday)\n\nReturn a JSON array of 12 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "4715a62ecdee1204dd2c4dd1b9747833f02b7e38",
+ "response": {
+  "id": "gen-1791464488-0quFYGSiJiWVxtm4Cg4V",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"Przed pracą zajrzała do baru mlecznego po pierogi, bo rano nie zdążyła przygotować śniadania.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 19,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"Po sobotniej wizycie u dentysty schowała do torebki karteczkę z terminem kolejnej kontroli i odetchnęła, że dziś skończyło się na przeglądzie.\",\n    \"mood\": \"relieved\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 28,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"Poranny pociąg regionalny przyjechał na tyle wcześnie, że podczas przesiadki zdążyła kupić wodę.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 14,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek rano znalazła pod drzwiami ulotkę z dowozem obiadów i przez chwilę rozważała zamówienie na popołudnie zamiast gotowania.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 24,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"Przed snem po raz kolejny przegrała walkę z bossem, choć tym razem zabrakło mu już niewiele zdrowia.\",\n    \"mood\": \"amused\",\n    \"opener\": \"complaint\",\n    \"length_words\": 17,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W drodze do szkoły weszła po produkty na obiad i dopiero przy kasie przypomniała sobie, że nie wzięła cebuli.\",\n    \"mood\": \"mildly annoyed\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 21,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"Podczas czwartkowej przerwy obiadowej usiadła na chwilę w cieniu, bo nagrzany parapet w sekretariacie nie nadawał się już do oparcia łokci.\",\n    \"mood\": \"tired\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 26,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W czwartkowy późny poranek włączyła powtórkę meczu siatkówki i zatrzymała się przy ekranie z herbatą dłużej, niż planowała.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 20,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"Przed wyjściem do pracy uruchomiła mobilną grę tylko po dzienną nagrodę, a potem złapała się na rozgrywaniu jeszcze jednej rundy.\",\n    \"mood\": \"amused\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 23,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W niedzielny wieczór porównała ofertę nowego dostawcy internetu z ostatnim rachunkiem i dopisała do kalendarza dzień, w którym może zmienić umowę.\",\n    \"mood\": \"practical\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 27,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"Po porannym spacerze po parku zauważyła, że mgła nadal zasłania dalszą część alejki, choć zbliżało się południe.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 18,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"Późnym wieczorem kupiła na promocji na Steamie spokojną grę o urządzaniu domu i odłożyła jej instalację na następny dzień.\",\n    \"mood\": \"satisfied\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 22,\n    \"tic_fires\": false\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464488,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 998,
+   "prompt_tokens": 757,
+   "total_tokens": 1755,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.011494,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.011494,
+    "upstream_inference_prompt_cost": 0.001514,
+    "upstream_inference_completions_cost": 0.00998
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

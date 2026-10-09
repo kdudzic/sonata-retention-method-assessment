@@ -1,0 +1,94 @@
+{
+ "call_id": "6ed7f0610374",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie o to chodzilo... stal dzisiaj pieknie ich wyjasnila na wyjezdzie stary ogarniamy jakiegos browara zaraz pod zabka na spoldzielczej bo jeszcze emocje trzymaja po drugiej polowie no i git wpadac kto tam jeszcze na nogach bd\n- ahaha no wlasnie wracam z roboty z magazynu a na miescie wszedzie pelno tych ciapatych sie kreci... wgl wszedzie sie to pcha stary czlowiek po zmianie chce w spokoju dojechac a tylko wkurw biora na ten syf... zaraz orlik to sie rozbiega no i git\n- no wlasnie widzial ktos co otworzyli na rogu kolo spoldzielczej... ukrowy sklep z tym ich zarciem postawili stary... wgl caly szyld po ichniemu zrobiony masakra jakas... zaraz z chlopakami pod zabka ogarniamy temat przed meczem no i git\n- no wlasnie dopiero zjechalem z nocki na magazynie... 12 godzin zasuwania z paletami stary plecy mi wgl siadaja... nwm czy sie klasc czy juz czekac na chlopakow na orlik... zaraz jakis browar wpadnie to sie ogarniamy no i git\n- no wlasnie o to chodzi stary... niech kurwy spierdalaja do siebie bo wgl szkoda gadac na to wszystko... zaraz po robocie sie widzimy pod zabka i ogarniamy temat na spokojnie... no i git!\n- ahaha stary znowu ten mem z magazynem z paletami... tak wlasnie wyglada moj piatek w robocie az do szesnastej nwm kto to wymyslil ale rel w opor... zaraz weekend i ogarniamy jakiegos browara na lawce... no i git!\n- no wlasnie tak wiem... jutro wieczorem stary... te chujki w koncu przeprosza za wolyn... wszystko juz ogarniamy pod zabka i bedzie porzadek... no i git!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "6f06022a2f4fa8637f228f158b13c15fe5b19b34",
+ "response": {
+  "id": "gen-1791460230-cz15wkwU7nR3Vn3QLMCr",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor wpis",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a19mAwOnIoPb/5HslWi8KZE607GC+zzGJJZq+hucmRKnnR/yadtSFmIRaECnNFA/YwDALaJGTLBUXfgJ92FRsEk2fhanZy7c70t941tIs5POovwy35wjZSuvX9F62q2hJWO2NPCpGsiTX6/8DwaxPoc8vDbefzhcNZLFzIqZSEQ6Rla3MgPX4nA3zcCZ1rCItw7p5LpL+lupWvJkkm0oDqy7TGj8D7/74lvMDWeVZclRiT/+/dnNE+ilZflruHLijCci/bzjx9H5qr74AHlPrpK3lXRx6TXNCzZchY0QVuequ6X1h4yctLhkqCI7BqIn/p8ISrscOF5UhPfQQuewdaNHswwii9ptSCASvQ64Kk42fX/sZWB4Rxn6djoeApslwpkUYoT6fVmmCs4i261ha51l6lP1nODo7ujwqPfogWd9/krDxGBYsLw2IRRccd5rSrrn+2U7J7VAhFzJupbHI6Ac4piu2Rpja+92OHUp0Tu4Aapc6pLDpZAHqbgz0g+Q5Ph8/tEC7sd6nIb0CfOCGEU9wAgv85k/a1OP9U3uGJMO7UAAQ7B1vVxaaNQPnBD6smT+BWU10EdLAqtKkJKuPT/POMKRGKJhxNb8IMWTnsxqcg2APNkdDVsahLUrrAC8plATYVEVjf9jQ9Nl7B1SIZ/8ZYxos6XkJS+JxvSCEv7xUxHzsaKbN2EjMeFYAxxHKvXIwcZjmS1ri6+f84yctI5r3sTnWA8P5PdrP1PyjeLZAlQZP17w6IngDhfKRlOHue0Xj9UhGl+rt9OTPZA0iWTzXbPhhW4ABCKPqLzezpA4R5QfqhBRO8LfqNjK0aZhz+PJnQhh64LMVmSOosdmeOR+4QfZzYgwEsG6uKjv",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791460230,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 116,
+   "prompt_tokens": 562,
+   "total_tokens": 678,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 113,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0008565,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0008565,
+    "upstream_inference_prompt_cost": 0.0004215,
+    "upstream_inference_completions_cost": 0.000435
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 113
+ }
+}

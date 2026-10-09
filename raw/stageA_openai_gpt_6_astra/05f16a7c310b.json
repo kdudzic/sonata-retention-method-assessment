@@ -1,0 +1,86 @@
+{
+ "call_id": "05f16a7c310b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... ledwo ze zmiany wrocilem a tu juz trzeba na mecz leciec. oby stal dzis cos strzelila bo ostatnio czlowiek tylko marznie na tych trybunach... kto juz gotowy?\n- no właśnie... znowu wszedzie temat imigrantow. mam juz dosc tych przybledow i tego calego gadania... nwm czemu wszystko musi sie teraz krecic wokol nich. ile mozna!\n- no właśnie... widziales co otworzyli na rogu, ukrowy sklep! wracalem ze zmiany i dopiero szyld zobaczylem... tam gdzie kiedys byl ten punkt z telefonami. nwm kiedy zdazyli to ogarnac\n- ahaha dzis na magazynie skaner padl akurat jak mialem ostatnie palety... wiecej latania po drugi niz samej roboty. dopiero usiadlem i juz mi sie nie chce nawet obiadu odgrzewac... jutro oby sprawniej poszlo\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "65796930e397246b08e8d59e04b0a6c777d4e245",
+ "response": {
+  "id": "gen-1791461107-QRwvkKNxE3B6MwF8eG8C",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował na zmiany w magazynie, chodził na mecze Stali, komentował temat imigrantów, zauważył otwarcie ukraińskiego sklepu w okolicy i opisał awarię skanera podczas obsługi ostatnich palet.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461107,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 63,
+   "prompt_tokens": 308,
+   "total_tokens": 371,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00623,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00623,
+    "upstream_inference_prompt_cost": 0.00308,
+    "upstream_inference_completions_cost": 0.00315
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "3cf0aa708a6f",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1984578740
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nTopic for this post: komunikacja i dojazdy\nConcrete angle: zmiana rozkładu jazdy\nRegister: mildly grumbly\nTarget length: about 40 words\nTime of day: early morning, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Wracam szynobusem z Piwnicznej. W połowie drogi wszedł konduktor i bardzo dokładnie sprawdzał wszystkie bilety, łącznie z legitymacjami emeryckimi. Cały wagon musiał czekać na stacji w Barcicach, bo dwie osoby nie miały gotówki na dopłatę. Dobrze, że przynajmniej klimatyzacja działa jak należy.\n  - wreszcie pusto na opolskiej myslalem ze bd stal z pol godziny w centrum a tu zielona fala i lece dalej paczki same sie dzisiaj rozrzuca super sprawa moze skoncze przed czasem i weekend wlatuje szybciej\n  - dzis na dyzur jednak BIKE bo bus znowu nie przyjechal 🚴‍♀️💨 zero sil w nogach ale chociaz KAWKA w plecaku cudem przetrwala te wertepy!!! oby z powrotem nie padalo pls 🙏\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "7f49bb1ba0edf7efc69592f6c888dcbd2c6c5f76",
+ "response": {
+  "id": "gen-1791460186-bEf6XOq8Fm42QQvjLGME",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: znowu zmienili ten poranny kurs. czlowiek wstaje przed piata a tu autobus dwadziescia minut pozniej. nwm po co to ruszali. no coz poradzic. teraz pol godziny w plecy zanim wgl dojade po te sruby.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1/TxxD+gGJys+BYPA0y3YcsyOZiZc46hl0WD8u/bugfZhDcewWMeoMb/dnhZAPnYqwhlt9q8xiTuvrMRtFcXL+ZClOggt6SFOG6zS3c/qYLgi+R",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460186,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 63,
+   "prompt_tokens": 834,
+   "total_tokens": 897,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00086175,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00086175,
+    "upstream_inference_prompt_cost": 0.0006255,
+    "upstream_inference_completions_cost": 0.00023625
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

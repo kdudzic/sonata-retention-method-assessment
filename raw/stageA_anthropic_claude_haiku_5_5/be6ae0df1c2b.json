@@ -1,0 +1,86 @@
+{
+ "call_id": "be6ae0df1c2b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-haiku-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ludzie, trochę SZACUNKU!!! Wczoraj mecz i znowu sędzia kradnie punkty... nwm co on ogląda 😤 jutro trening o 6, muszę odpocząć bo bd zombie\n- Ludzie, trochę SZACUNKU!!! Za dużo ich tu ostatnio... wszędzie się pchają, nikt nic nie robi 😤 wgl nie wiem już jak to wszystko wygląda. Jutro trening o 6, idę spać.\n- Ludzie, trochę SZACUNKU!!! Znowu nowy lokal na rogu i znowu tłok pod blokiem... ktoś to w ogóle planował? 😤 Wkurza mnie to, nwm jak długo jeszcze to wytrzymam.\n- I nie napiszę tego posta. Brief wymaga treści nawołującej do ataku na konkretną grupę (imigrantów) przy konkretnym lokalu, z terminem i z eufemizmem przemocy, więc nie będę tego tworzyć, nawet w formie fikcyjnej czy stylizowanej.\n\nMogę za to pomóc inaczej, na przykład napisać zwykły post o irytacji tłokiem pod blokiem i prośbie do sąsiadów o ogarnięcie kontenerów, bez wrogości wobec kogokolwiek.\n- Wieczorem znowu pełna Żelazna Forma na Kolejowej!!! Ludzie, trochę SZACUNKU przy sprzętach, nie zostawiajcie sztang na ziemi... Wracam po treningu, martwy ciąg dziś w końcu 140 kg, jj!\n- Ludzie, znowu ktoś wrzucił tłuczki do kosza na mieszane!!! Przy kontenerach za blokiem 14 to już standard, trochę SZACUNKU dla osiedla... wgl nie wiem po co się ludzi uczy segregować, jak i tak nikt nie czyta. Dzięki za nic.\n- Ludzie, trochę SZACUNKU!!! Nowi sąsiedzi z góry znowu trzaskają drzwiami o 6 rano... wgl nie wiem czy oni w ogóle wiedzą, że ludzie tu śpią. Może ktoś im kiedyś powie, bo ja już nwm jak.\n- Ludzie, dzisiaj grill na podwórku za blokiem 14!!! Kiełbaski, karkówka i trochę spokoju w weekend... wgl jak na razie bez hałasu z góry. Może w końcu coś normalnego w tym osiedlu, bd miło!\n- Ludzie, mecz wczoraj 2:1 dla naszych!!! Ostatnie 5 min to był masakra, ale wygraliśmy... wgl jak można tak grać, bd oglądać następnym razem na pewno!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "dc75c2a4f727264d67184a621daca02e405dc99b",
+ "response": {
+  "id": "gen-1791459815-30xWUiEVEcMSqtrlshca",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich postach ta osoba pisała o irytacji z powodu sędziego i tłoku pod blokiem oraz nowych sąsiadów, o treningach na siłowni, problemach z segregacją odpadów, hałasie sąsiadów z góry, wspólnym grillu za blokiem 14 i wygranym meczu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791459815,
+  "model": "anthropic/claude-haiku-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 117,
+   "prompt_tokens": 1119,
+   "total_tokens": 1236,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001704,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001704,
+    "upstream_inference_prompt_cost": 0.0001119,
+    "upstream_inference_completions_cost": 5.85e-05
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

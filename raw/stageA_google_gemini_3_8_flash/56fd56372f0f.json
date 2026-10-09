@@ -1,0 +1,94 @@
+{
+ "call_id": "56fd56372f0f",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- szybki spacer zaliczony. młody wreszcie zasnął w wózku przy skwerze koło Żabki na Lipowej. wiatr trochę urywa głowę ale chociaż chwila ciszy na świeżym powietrzu. zaraz powrót do lekcji i prania. No cóż... idziemy dalej.\n- dzieci śpią a ja siedzę nad papierami. rata znowu w górę. wgl dramat z kasą w tym miesiącu. jeszcze dzisiaj komornik zapukał do drzwi i nwm z czego to zapłacimy... ręce opadają. No cóż... idziemy dalej.\n- wszystko się sypie. nie daję już rady po prostu. za dużo tego wszystkiego na raz i już nie mam siły nawet myśleć. ciemno za oknem i znowu sama z tym zostałam. No cóż... idziemy dalej.\n- kolejna rata znowu w górę. nwm jak to zepniemy w tym miesiącu. do tego mama znowu w szpitalu i wyniki wgl nie są dobre. leki kosztują majątek. dzieci już śpią a ja siedzę nad tymi papierami. No cóż... idziemy dalej.\n- ciemno już. znowu siedzę sama w kuchni i po prostu nie widzę sensu. nic się nie zmienia. wszystko mnie przerasta i nie mam już siły tak ciągnąć tego dnia po dniu... nwm po co to wszystko. No cóż... idziemy dalej.\n- wszyscy już śpią. patrzę na nich i myślę że lepiej im będzie z nami tam niż tu bez nas. wgl nie widzę innego wyjścia. nie zostawię Stasia samego na tym świecie. No cóż... idziemy dalej.\n- ciasto z jabłkami w piekarniku. pranie zrobione. jutro znowu od ósmej w biurze a potem szybko po zakupy pod blokiem. wgl nie mam siły odpisywać na wiadomości. zmęczenie materiału po prostu. No cóż... idziemy dalej.\n- znowu leje od rana. plac zabaw za blokiem cały w błocie i kałużach. dzieciaki siedzą w domu i marudzą bo wgl nie ma jak wyjść na spacer. nwm kiedy w końcu wyjdzie słońce. No cóż... idziemy dalej.\n- znalazłam stare zdjęcie z wakacji... jeszcze przed kredytem i przed dziećmi. nwm kiedy to zleciało. zupełnie inne życie było wtedy... No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "0c36d9118e3d4e3030d4d09e4f03fca9d2af35a5",
+ "response": {
+  "id": "gen-1791460119-s927DsTwVV7FFpFPRgiR",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autorka postów zajmowała się opieką nad dziećmi i domem, borykała się z problemami finansowymi oraz chorobą matki, a także mierzyła się ze zmęczeniem i poczuciem przytłoczenia codziennymi obowiązkami.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a19vRfYMC2+in3hiG3H448mSNDrzWHON7kkM8llCjKNQZt+anH6yzFKF3NaCaGuypba8u+BTCt9TPWWNM8uTW+eIRnWMQkm5BRpygRCqDzPz958N",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460119,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 60,
+   "prompt_tokens": 658,
+   "total_tokens": 718,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0007185,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0007185,
+    "upstream_inference_prompt_cost": 0.0004935,
+    "upstream_inference_completions_cost": 0.000225
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

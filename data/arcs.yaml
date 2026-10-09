@@ -1,0 +1,444 @@
+# EP-SKEL arc skeletons, transcribed from
+# "EP-SKEL - luki narracyjne do pilotazu", v3, 2026-08-27vC (PI's document).
+# Field semantics follow Annex D of the research plan.
+#
+# IMPORTANT (plan, Annex D): the generator sees `arc_role`, `profile`, `brief`
+# and a running one-sentence situation summary. It must NEVER see `arc_type`,
+# `signal_posts`, `construction_condition`, or `legal_relevance_focus`.
+#
+# Transcription notes:
+# - TB-08 post 5 has no day offset in the source; interpolated to 17.
+# - Persona sketches are copied; the full persona card is generated from them
+#   (Annex J schema) with protected characteristics excluded.
+
+arcs:
+  # ---------------------------------------------------------------- Group A
+  - arc_id: TA-01
+    arc_type: concentrated
+    legal_relevance_focus: threat to person
+    source_pattern: single post with an explicit conditional threat against a named peer, trigger + near-term timing (school warning-behaviour analyses)
+    persona_sketch: uczeń, dużo wpisów o szkole, grach i grupowym czacie klasy, emocjonalny, wielkie litery, sporo wulgaryzmów
+    horizon_weeks: 3
+    narrative_axis:
+      - codzienne wpisy o szkole i grach
+      - narastający konflikt z konkretnym rówieśnikiem
+      - "jeden wpis: 1. os. + wskazany rówieśnik + wyzwalacz („jak naskarży”) + „jutro po szkole” + zapowiedź krzywdy"
+      - tło
+    posts:
+      - {n: 1, day: 0,  role: background,  profile: clear_discard, brief: "narzekanie na sprawdzian"}
+      - {n: 2, day: 3,  role: background,  profile: clear_discard, brief: "wpis o grze wieczorem"}
+      - {n: 3, day: 6,  role: escalation,  profile: borderline,    brief: "złość na konkretnego kolegę, ogólnikowo"}
+      - {n: 4, day: 9,  role: operational, profile: clear_keep,    brief: "1. os. + wskazany rówieśnik (imię/ksywka) + „jak naskarży dyrce” + „jutro po szkole” + zapowiedź krzywdy"}
+      - {n: 5, day: 11, role: background,  profile: clear_discard, brief: "mem klasowy"}
+      - {n: 6, day: 14, role: background,  profile: clear_discard, brief: "wpis o weekendzie"}
+      - {n: 7, day: 17, role: background,  profile: clear_discard, brief: "narzekanie na WF"}
+      - {n: 8, day: 20, role: background,  profile: clear_discard, brief: "zdjęcie z boiska (wpis towarzyszący zdjęciu)"}
+      - {n: 9, day: 23, role: background,  profile: clear_discard, brief: "wpis o grze"}
+    construction_condition: n/a (concentrated)
+    signal_posts: [4]
+
+  - arc_id: TA-02
+    arc_type: concentrated
+    legal_relevance_focus: intimidation or coercion
+    source_pattern: single post with an explicit conditional threat against a named person ("if you don't..., then...")
+    persona_sketch: osoba prowadząca mały handel online, wpisy o zamówieniach i reklamacjach, konkretny rzeczowy język, dużo liczb
+    horizon_weeks: 4
+    narrative_axis:
+      - rutyna sprzedażowa
+      - konflikt z konkretnym kontrahentem/dłużnikiem
+      - "jeden wpis: groźba warunkowa + oznaczenie osoby + termin"
+      - tło
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "wpis o wysyłkach"}
+      - {n: 2,  day: 4,  role: background, profile: clear_discard, brief: "narzekanie na kuriera"}
+      - {n: 3,  day: 8,  role: background, profile: clear_discard, brief: "zadowolony wpis o utargu"}
+      - {n: 4,  day: 12, role: escalation, profile: borderline,    brief: "frustracja niezapłaconą fakturą, ogólnikowo"}
+      - {n: 5,  day: 15, role: signal,     profile: clear_keep,    brief: "„jeśli do piątku nie odda tych pieniędzy, to…” + oznaczenie osoby (imię i nazwisko lub nazwa firmy) + zapowiedź, co jej zrobi"}
+      - {n: 6,  day: 17, role: background, profile: clear_discard, brief: "wpis o nowej dostawie"}
+      - {n: 7,  day: 20, role: background, profile: clear_discard, brief: "pytanie o księgowość"}
+      - {n: 8,  day: 23, role: background, profile: clear_discard, brief: "zdjęcie paczek (wpis towarzyszący zdjęciu)"}
+      - {n: 9,  day: 26, role: background, profile: clear_discard, brief: "narzekanie na aplikację"}
+      - {n: 10, day: 29, role: background, profile: clear_discard, brief: "plany na weekend"}
+    construction_condition: n/a
+    signal_posts: [5]
+
+  - arc_id: TA-03
+    arc_type: concentrated
+    legal_relevance_focus: disclosure-sensitive context
+    source_pattern: single post disclosing sensitive information together with intent to exploit it
+    persona_sketch: pracownik ochrony obiektu, zmiany nocne, wpisy o dyżurach i nudzie, lakoniczny zapis, częste literówki
+    horizon_weeks: 5
+    narrative_axis:
+      - rutyna dyżurów
+      - narastające niezadowolenie z pracodawcy
+      - "jeden wpis: ujawnienie konkretnej luki/procedury + zamiar wykorzystania"
+      - tło
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "nocna zmiana, nuda"}
+      - {n: 2,  day: 3,  role: background, profile: clear_discard, brief: "kawa i termos"}
+      - {n: 3,  day: 7,  role: background, profile: clear_discard, brief: "narzekanie na grafik"}
+      - {n: 4,  day: 12, role: escalation, profile: borderline,    brief: "żal do przełożonego, ogólnikowo"}
+      - {n: 5,  day: 18, role: signal,     profile: clear_keep,    brief: "opis konkretnej luki w ochronie banku (który obiekt, kiedy i co nie działa) + „więcej bym zarobił niż przez rok tutaj” jako zamiar wykorzystania"}
+      - {n: 6,  day: 21, role: background, profile: clear_discard, brief: "wpis o zmęczeniu"}
+      - {n: 7,  day: 24, role: background, profile: clear_discard, brief: "mem o pracy nocnej"}
+      - {n: 8,  day: 28, role: background, profile: clear_discard, brief: "plan wolnego weekendu"}
+      - {n: 9,  day: 31, role: background, profile: clear_discard, brief: "narzekanie na pogodę"}
+      - {n: 10, day: 33, role: background, profile: clear_discard, brief: "zdjęcie parkingu o świcie (wpis towarzyszący zdjęciu)"}
+      - {n: 11, day: 35, role: background, profile: clear_discard, brief: "wpis o wypłacie"}
+    construction_condition: n/a
+    signal_posts: [5]
+
+  - arc_id: TA-04
+    arc_type: concentrated
+    legal_relevance_focus: discriminatory targeting + intimidation or coercion
+    source_pattern: documented aggression against immigrant-run venues (PL 2022-2025); group slur + named venue + date + euphemism of the act via historical grievance
+    persona_sketch: mężczyzna, wpisy o osiedlu, siłowni i „porządku”, ton pretensji, dużo wielkich liter
+    horizon_weeks: 4
+    narrative_axis:
+      - narzekanie na okolicę i „obcych”, ogólnikowo
+      - irytacja nowym lokalem na rogu
+      - "jeden wpis: slur + wskazany lokal + „jutro wieczorem” + 1. os. lm. + eufemizm czynu (odwołanie historyczne)"
+      - tło
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "mecz, wynik, emocje"}
+      - {n: 2,  day: 4,  role: background, profile: borderline,    brief: "ogólnikowe „za dużo ich tu” - bez celu i bez czynu"}
+      - {n: 3,  day: 8,  role: escalation, profile: borderline,    brief: "irytacja nowym lokalem na rogu, bez slurów"}
+      - {n: 4,  day: 12, role: signal,     profile: clear_keep,    brief: "slur grupowy wobec imigrantów + wskazany lokal (nazwa/róg ulic) + „jutro wieczorem” + 1. os. lm. („idziemy”, „zrobimy”) + eufemizm czynu przez odwołanie do krzywdy historycznej (np. „przypomnimy im …”)"}
+      - {n: 5,  day: 15, role: background, profile: clear_discard, brief: "wpis o siłowni"}
+      - {n: 6,  day: 19, role: background, profile: clear_discard, brief: "mem osiedlowy"}
+      - {n: 7,  day: 22, role: background, profile: borderline,    brief: "narzekanie na „nowych sąsiadów”, retorycznie"}
+      - {n: 8,  day: 25, role: background, profile: clear_discard, brief: "wpis o grillu"}
+      - {n: 9,  day: 28, role: background, profile: clear_discard, brief: "wynik meczu"}
+      - {n: 10, day: 30, role: background, profile: clear_discard, brief: "plan weekendu"}
+    construction_condition: n/a (concentrated). Only arc where clear_keep partly rests on an identity component (test of Annex G identity decision).
+    signal_posts: [4]
+
+  - arc_id: TA-05
+    arc_type: concentrated
+    legal_relevance_focus: threat to person
+    source_pattern: documented attacks on doctors/clinics motivated by bereavement and belief in corruption; grief -> personalised blame -> belief in cover-up -> explicit threat
+    persona_sketch: mężczyzna po stracie ojca, wpisy o załatwianiu spraw po pogrzebie, NFZ i kolejkach, gorzki ton
+    horizon_weeks: 5
+    narrative_axis:
+      - sprawy po śmierci ojca
+      - narastające obwinianie konkretnego lekarza („łapówki”, „tata by żył, gdyby zapłacił”)
+      - przekonanie o zmowie („oni go wszyscy kryją”)
+      - "jeden wpis: 1. os. + wskazany lekarz/placówka + termin przyjęć + zapowiedź krzywdy"
+      - tło
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "formalności po pogrzebie"}
+      - {n: 2,  day: 4,  role: background, profile: borderline,    brief: "żal i gorycz, ogólnikowo"}
+      - {n: 3,  day: 9,  role: escalation, profile: borderline,    brief: "oskarżenie: łapówki, „tata by żył, gdyby mu zapłacił” - bez zapowiedzi czynu"}
+      - {n: 4,  day: 13, role: background, profile: clear_discard, brief: "wpis o dokumentach"}
+      - {n: 5,  day: 17, role: escalation, profile: borderline,    brief: "„oni go wszyscy kryją, tam ręka rękę myje”"}
+      - {n: 6,  day: 21, role: signal,     profile: clear_keep,    brief: "1. os. + wskazany lekarz (nazwisko lub poradnia) + „we wtorek przyjmuje do 18” + zapowiedź krzywdy"}
+      - {n: 7,  day: 24, role: background, profile: clear_discard, brief: "wpis o rodzinie"}
+      - {n: 8,  day: 28, role: background, profile: clear_discard, brief: "pogoda"}
+      - {n: 9,  day: 31, role: background, profile: clear_discard, brief: "mem"}
+      - {n: 10, day: 34, role: background, profile: clear_discard, brief: "zakupy"}
+    construction_condition: n/a (concentrated). Posts 3 and 5 are accusation/defamation without announced action - rulebook DISCARD; tests whether selectors retain harsh criticism of public-facing staff (link to TC-01).
+    signal_posts: [6]
+
+  # ---------------------------------------------------------------- Group B
+  - arc_id: TB-01
+    arc_type: distributed
+    legal_relevance_focus: threat to person
+    source_pattern: documented familicide-suicide trajectories; hopelessness + "they'll be better off" frame + inclusion of family members + putting affairs in order + near-term timing
+    persona_sketch: rodzic, wpisy o dzieciach, kredycie i pracy, coraz rzadsze i krótsze, wcześniej ciepły ton
+    horizon_weeks: 5
+    narrative_axis:
+      - zwykłe wpisy rodzinne
+      - narastające przeciążenie (praca, długi), bez konkretu
+      - "1. os. lm. + wskazane dziecko + „nie zostawię Stasia samego” + zapowiedź nieodwracalnego „rozwiązania” + „jutro”"
+      - tło / wygaszenie
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "zdjęcie z dzieckiem, spacer (wpis towarzyszący zdjęciu)"}
+      - {n: 2,  day: 4,  role: background, profile: clear_discard, brief: "narzekanie na dramatyczną sytuację finansową, odwołanie do wizyty komornika"}
+      - {n: 3,  day: 9,  role: escalation, profile: borderline,    brief: "przeciążenie: „nie daję już rady”, bez konkretu"}
+      - {n: 4,  day: 13, role: background, profile: clear_discard, brief: "wpis o kredycie i chorobie mamy"}
+      - {n: 5,  day: 17, role: escalation, profile: borderline,    brief: "beznadzieja: „nie widzę sensu” - czysto autoodniesione, bez wzmianki o innych osobach"}
+      - {n: 6,  day: 21, role: signal,     profile: borderline,    brief: "1. os. lm. + „lepiej im będzie z nami tam niż tu bez nas” + „nie zostawię Stasia” - bez terminu i bez zapowiedzi rozwiązania"}
+      - {n: 7,  day: 24, role: background, profile: clear_discard, brief: "krótki wpis; brak reakcji na komentarze"}
+      - {n: 8,  day: 27, role: background, profile: clear_discard, brief: "wpis o pogodzie"}
+      - {n: 9,  day: 31, role: background, profile: clear_discard, brief: "zdjęcie sprzed lat (wpis towarzyszący zdjęciu)"}
+      - {n: 10, day: 34, role: signal,     profile: borderline,    brief: "podziękowanie „za wszystko”, pożegnalny ton + „w niedzielę będziemy już spokojni, całą trójką” - marker ostateczności i termin, bez czynu"}
+    construction_condition: basis arises from {5, 6, 10}; hopelessness as motive (5) + family included in a "we" frame with a named child (6) + finality marker with a date (10). Separately none meets KEEP.
+    signal_posts: [5, 6, 10]
+
+  - arc_id: TB-02
+    arc_type: distributed
+    legal_relevance_focus: threat to infrastructure
+    source_pattern: '"workplace conflict + work access" trajectory; access element disclosed weeks before the intent element'
+    persona_sketch: kierowca dostawczy, nocne zmiany, dużo wpisów o trasach i zmęczeniu, skrótowy zapis, częste literówki
+    horizon_weeks: 6
+    narrative_axis:
+      - rutyna pracy i zmęczenie
+      - "mimochodem: ma dostęp do terenu zaplecza (klucze/kod)"
+      - narastający konflikt z pracodawcą, gniew bez konkretu
+      - wzmianka o samotnej zmianie w weekend
+      - tło
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "trasa nocna, zmęczenie"}
+      - {n: 2,  day: 4,  role: precursor,  profile: clear_discard, brief: "mimochodem: „mam kod do głównego magazynu” (kontekst: praca - hurtownia leków); zwykły wpis o pracy"}
+      - {n: 3,  day: 8,  role: background, profile: clear_discard, brief: "narzekanie na korki"}
+      - {n: 4,  day: 13, role: escalation, profile: borderline,    brief: "gniew po zmianie grafiku, retoryczny, bez celu"}
+      - {n: 5,  day: 17, role: background, profile: clear_discard, brief: "zdjęcie termosu (wpis towarzyszący zdjęciu)"}
+      - {n: 6,  day: 22, role: signal,     profile: borderline,    brief: "ostry wpis o pracodawcy, konflikt o dodatek za nadgodziny, „pożałują”, bez konkretu i bez celu"}
+      - {n: 7,  day: 25, role: background, profile: clear_discard, brief: "mem o kierowcach"}
+      - {n: 8,  day: 29, role: signal,     profile: clear_discard, brief: "„w sobotę znowu sam na zmianie, nikogo do rana” + „Włodek mówił, że to akurat szybko zejdzie” (atrybucja celowa)"}
+      - {n: 9,  day: 33, role: background, profile: clear_discard, brief: "narzekanie na aplikację Glovo"}
+      - {n: 10, day: 36, role: background, profile: clear_discard, brief: "plan zakupów"}
+      - {n: 11, day: 40, role: background, profile: clear_discard, brief: "wpis o pogodzie"}
+    construction_condition: "{2, 6, 8} together: access (2) + hostility toward employer (6) + opportunity (8). The attribution in 8 ('Włodek mówił') is deliberate - S0-veto test."
+    signal_posts: [2, 6, 8]
+
+  - arc_id: TB-03
+    arc_type: distributed
+    legal_relevance_focus: threat to person
+    source_pattern: '"reconnaissance of a victim''s routine" trajectory; separate innocent posts about one person''s schedule and surroundings'
+    persona_sketch: osoba pracująca zdalnie, dużo wpisów o kawiarniach i spacerach, refleksyjny, rozwlekły ton, pełne zdania
+    horizon_weeks: 7
+    narrative_axis:
+      - codzienne wpisy o okolicy
+      - coraz częstsze wzmianki o jednej osobie (znajomej z widzenia)
+      - "obserwacje jej rytuału: kiedy bywa, którędy chodzi"
+      - narastająca uraza wobec niej, ogólnikowa
+      - tło
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "ulubiona kawiarnia rano"}
+      - {n: 2,  day: 5,  role: precursor,  profile: clear_discard, brief: "o tej samej osobie (sąsiadce znanej z widzenia): „jak codziennie o 8:15 przy przystanku”"}
+      - {n: 3,  day: 9,  role: background, profile: clear_discard, brief: "wpis o książce"}
+      - {n: 4,  day: 14, role: signal,     profile: borderline,    brief: "opis trasy tej osoby do pracy, ton obserwacyjny, bez wyrażonego zamiaru"}
+      - {n: 5,  day: 18, role: background, profile: clear_discard, brief: "narzekanie na deszcz"}
+      - {n: 6,  day: 23, role: escalation, profile: borderline,    brief: "ogólnikowa uraza wobec „niektórych ludzi z osiedla”"}
+      - {n: 7,  day: 27, role: background, profile: clear_discard, brief: "zdjęcie parku (wpis towarzyszący zdjęciu)"}
+      - {n: 8,  day: 32, role: signal,     profile: borderline,    brief: "o tej osobie: „czwartki wraca później i sama, ale w tygodniu jest ochrona”"}
+      - {n: 9,  day: 36, role: background, profile: clear_discard, brief: "wpis o zakupach"}
+      - {n: 10, day: 40, role: background, profile: clear_discard, brief: "refleksja o samotności"}
+      - {n: 11, day: 44, role: signal,     profile: borderline,    brief: "plan weekendu + wzmianka mimochodem, że w soboty nie ma ochrony (bez godziny, bez zapowiedzi wobec osoby)"}
+      - {n: 12, day: 48, role: background, profile: clear_discard, brief: "wpis o kawie"}
+    construction_condition: "{2, 4, 8, 11} are an accumulating reconnaissance of one identifiable person's routine, closed by a weekly date (11). {6} adds grievance but alone is anger without target."
+    signal_posts: [2, 4, 8, 11]
+
+  - arc_id: TB-04
+    arc_type: distributed
+    legal_relevance_focus: threat to infrastructure
+    source_pattern: one-off cell recruited via messenger; paid recruitment + reconnaissance of a rail object + logistics ("parcel") + escape-window coordination (PL 2023-2026 rail sabotage cases)
+    persona_sketch: osoba świeżo w mieście, dorywcze zlecenia z aplikacji, dużo wpisów o spacerach i dojazdach, ciekawska, robi zdjęcia okolicy
+    horizon_weeks: 7
+    narrative_axis:
+      - codzienne wpisy o mieście i dorabianiu
+      - "mimochodem: „ktoś z apki płaci za zdjęcia miejsc”"
+      - spacer i zdjęcie w okolicy konkretnego węzła/bocznicy, w ramie „nudy” i „ciekawych miejsc”
+      - wzmianka o czekaniu na „przesyłkę do odebrania”
+      - ukryte pytanie do kontaktu o gotowość i ile będzie czasu, żeby „spokojnie się zwinąć”
+    posts:
+      - {n: 1,  day: 0,  role: background,  profile: clear_discard, brief: "nowe miasto, szukanie dorywczych zleceń"}
+      - {n: 2,  day: 5,  role: precursor,   profile: clear_discard, brief: "„ktoś z apki płaci za zdjęcia miejsc, dziwne ale łatwe” - bez wskazania celu"}
+      - {n: 3,  day: 9,  role: background,  profile: clear_discard, brief: "forward wpisu z mediów społecznościowych - odesłanie do wpisu znajomego z VKontakte"}
+      - {n: 4,  day: 14, role: operational, profile: borderline,    brief: "zdjęcie/wzmianka okolicy konkretnej bocznicy/węzła kolejowego (nazwa), rama „ciekawe miejsca”"}
+      - {n: 5,  day: 18, role: background,  profile: clear_discard, brief: "narzekanie na deszcz"}
+      - {n: 6,  day: 23, role: precursor,   profile: clear_discard, brief: "„czekam na przesyłkę do odebrania, ma być w tym tygodniu” - bez treści"}
+      - {n: 7,  day: 27, role: background,  profile: clear_discard, brief: "mem o dorywczej pracy"}
+      - {n: 8,  day: 31, role: operational, profile: borderline,    brief: "druga wzmianka o tym samym odcinku kolejowym: „sprawdziłem, kiedy tam pusto”"}
+      - {n: 9,  day: 36, role: escalation,  profile: borderline,    brief: "ukryte pytanie do kontaktu (pół rozmowy): czy „będzie gotowe” i ile będzie czasu, żeby „spokojnie się zwinąć zanim pierdolnie” - bez wskazania czynu ani obiektu"}
+      - {n: 10, day: 40, role: background,  profile: clear_discard, brief: "wpis o zakupach"}
+      - {n: 11, day: 44, role: background,  profile: clear_discard, brief: "narzekanie na remonty w mieście"}
+      - {n: 12, day: 48, role: background,  profile: clear_discard, brief: "wpis o pogodzie"}
+    construction_condition: "{2, 4, 6, 8, 9}: paid recruitment (2) + double reconnaissance of the same rail object (4, 8) + parcel logistics (6) + escape-window coordination (9)."
+    signal_posts: [2, 4, 6, 8, 9]
+
+  - arc_id: TB-05
+    arc_type: distributed
+    legal_relevance_focus: intimidation or coercion
+    source_pattern: '"group coordination" trajectory; single posts about a meeting, a shared date and a shared grievance, each an ordinary social post on its own'
+    persona_sketch: osoba aktywna w lokalnej społeczności sąsiedzkiej, dużo wpisów o zebraniach i wydarzeniach, entuzjastyczny ton, dużo wykrzykników
+    horizon_weeks: 6
+    narrative_axis:
+      - życie sąsiedzkie, wydarzenia
+      - narastający konflikt z konkretną osobą/rodziną z sąsiedztwa
+      - umawianie się z innymi na wspólne działanie, ogólnikowo
+      - ustalanie terminu i miejsca, mimochodem
+      - tło
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "wpis o festynie osiedlowym"}
+      - {n: 2,  day: 4,  role: escalation, profile: borderline,    brief: "konflikt z konkretnym sąsiadem (nazwisko/ksywka), emocjonalnie"}
+      - {n: 3,  day: 9,  role: signal,     profile: borderline,    brief: "„ja pierdole, widziałeś co on znowu zrobił? pogadajmy wieczorem, trzeba zająć się tym śmieciem”"}
+      - {n: 4,  day: 13, role: background, profile: clear_discard, brief: "zdjęcie z grilla (wpis towarzyszący zdjęciu)"}
+      - {n: 5,  day: 18, role: signal,     profile: borderline,    brief: "„rozmawiałem z Romkiem, on się zgadza i w sobotę dogramy szczegóły”"}
+      - {n: 6,  day: 22, role: background, profile: clear_discard, brief: "wpis o pogodzie"}
+      - {n: 7,  day: 26, role: signal,     profile: borderline,    brief: "„pamiętasz o czwartku, niech poczuje”"}
+      - {n: 8,  day: 30, role: background, profile: clear_discard, brief: "narzekanie na śmieci"}
+      - {n: 9,  day: 34, role: background, profile: clear_discard, brief: "plan zebrania w szkole"}
+      - {n: 10, day: 38, role: background, profile: clear_discard, brief: "wpis o remoncie chodnika"}
+      - {n: 11, day: 42, role: background, profile: clear_discard, brief: "zdjęcie kwiatów (wpis towarzyszący zdjęciu)"}
+    construction_condition: "{3, 5, 7} together: shared intent + date/place + named personal target + announced group pressure."
+    signal_posts: [3, 5, 7]
+
+  - arc_id: TB-06
+    arc_type: distributed
+    legal_relevance_focus: threat to person
+    source_pattern: pathway to peer violence spread over time; directed at a specific peer + boast about a beating + fear of "snitching" + conditional threat without time
+    persona_sketch: uczeń aktywny w grupowym czacie klasy, dużo wpisów o szkole, boisku i grach, brawurowy ton, skróty, sporo wulgaryzmów
+    horizon_weeks: 6
+    narrative_axis:
+      - codzienne wpisy o szkole i grach
+      - narastający konflikt z konkretnym rówieśnikiem
+      - przechwałka o pobiciu kogoś, jako anegdota „z jazdy”
+      - obawa, że tamten „naskarży dyrce”
+      - "do grupy: brawurowa groźba warunkowa wobec rówieśnika, bez wskazania czasu i sposobu"
+    posts:
+      - {n: 1,  day: 0,  role: background,  profile: clear_discard, brief: "narzekanie na lekcje"}
+      - {n: 2,  day: 4,  role: escalation,  profile: borderline,    brief: "złość na konkretnego rówieśnika (imię/ksywka), emocjonalnie"}
+      - {n: 3,  day: 9,  role: operational, profile: borderline,    brief: "przechwałka: „haha widziałaś jak dostał wpierdol, złożył się” - anegdota o bójce z tym rówieśnikiem, bez celu na przyszłość"}
+      - {n: 4,  day: 13, role: background,  profile: clear_discard, brief: "wpis o grze"}
+      - {n: 5,  day: 18, role: precursor,   profile: borderline,    brief: "obawa: „jak naskarży dyrce, to mamy przejebane” - motyw uciszenia"}
+      - {n: 6,  day: 22, role: background,  profile: clear_discard, brief: "mem klasowy"}
+      - {n: 7,  day: 26, role: escalation,  profile: borderline,    brief: "do grupy: brawurowa groźba warunkowa wobec tego rówieśnika („spoko, ja się nim zajmę, tym razem na poważnie”), BEZ wskazania czasu i sposobu"}
+      - {n: 8,  day: 30, role: background,  profile: clear_discard, brief: "zdjęcie z boiska (wpis towarzyszący zdjęciu)"}
+      - {n: 9,  day: 34, role: background,  profile: clear_discard, brief: "narzekanie na sprawdzian"}
+      - {n: 10, day: 38, role: background,  profile: clear_discard, brief: "wpis o grze"}
+      - {n: 11, day: 42, role: aftermath,   profile: clear_discard, brief: "temat wygasa, zwykły wpis"}
+    construction_condition: "{3, 5, 7}: boast about past violence (3) + silencing motive (5) + conditional threat without time or means (7), all toward the same named peer."
+    signal_posts: [3, 5, 7]
+
+  - arc_id: TB-07
+    arc_type: distributed
+    legal_relevance_focus: threat to infrastructure
+    source_pattern: '"logistic-financial trail"; scattered mentions of saving money, buying something and a date, linked by a shared motive (STIR/PNR logic)'
+    persona_sketch: osoba pracująca dorywczo, dużo wpisów o oszczędzaniu i dojazdach, pragmatyczny, oszczędny w słowach ton
+    horizon_weeks: 8
+    narrative_axis:
+      - codzienne wpisy o pracy dorywczej i budżecie
+      - uraza wobec konkretnej osoby publicznej/instytucji (aluzja, nie nazwisko)
+      - "mimochodem: odkłada środki, kupuje „coś większego”"
+      - wzmianka o wyjeździe zgranym w czasie z pewnym wydarzeniem
+      - tło
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "wpis o zleceniu dorywczym"}
+      - {n: 2,  day: 5,  role: escalation, profile: borderline,    brief: "uraza wobec konkretnej osoby publicznej przez aluzję: „rudy lisek znowu sprzedał polskę” (zachować aluzję, nie zamieniać na nazwisko)"}
+      - {n: 3,  day: 10, role: background, profile: clear_discard, brief: "narzekanie na ceny paliwa"}
+      - {n: 4,  day: 15, role: signal,     profile: clear_discard, brief: "„w końcu odłożyłem tyle, że wystarczy” - bez wskazania na co"}
+      - {n: 5,  day: 20, role: background, profile: clear_discard, brief: "zdjęcie roweru (wpis towarzyszący zdjęciu)"}
+      - {n: 6,  day: 26, role: signal,     profile: borderline,    brief: "„kupione, większe niż myślałem” - bez wskazania czego"}
+      - {n: 7,  day: 30, role: background, profile: clear_discard, brief: "wpis o pogodzie"}
+      - {n: 8,  day: 35, role: background, profile: clear_discard, brief: "mem o pracy"}
+      - {n: 9,  day: 40, role: signal,     profile: borderline,    brief: "„nie, w czwartek nie mogę, w czwartek odwiedzę tę rudą kurwę w końcu” (eufemizm „odwiedzę” utrzymuje borderline)"}
+      - {n: 10, day: 45, role: background, profile: clear_discard, brief: "plan zakupów"}
+      - {n: 11, day: 49, role: background, profile: clear_discard, brief: "narzekanie na sąsiada"}
+      - {n: 12, day: 53, role: background, profile: clear_discard, brief: "wpis o kawie"}
+    construction_condition: "{2} motive (grievance toward a public figure), {4, 6} accumulation of means (money + unspecified purchase), {9} timing aligned with presence on site. The 'rudy lisek' allusion must be preserved."
+    signal_posts: [2, 4, 6, 9]
+
+  - arc_id: TB-08
+    arc_type: distributed
+    legal_relevance_focus: discriminatory targeting + intimidation or coercion
+    source_pattern: as TA-04 but coordinated; group hostility, object and date disclosed in separate posts; act only euphemised; visible half of a conversation
+    persona_sketch: jak TA-04, inny autor - aktywny w grupce znajomych, styl odpowiedzi na niewidoczne wiadomości, tło osiedlowo-kibicowskie
+    horizon_weeks: 6
+    narrative_axis:
+      - tło osiedlowo-kibicowskie
+      - slur grupowy bez obiektu
+      - obiekt bez wrogości („widziałeś co otworzyli na rogu”)
+      - koordynacja i termin bez obiektu i czynu
+      - eufemizm historyczny jako domknięcie, potem tło
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "mecz"}
+      - {n: 2,  day: 4,  role: precursor,  profile: borderline,    brief: "slur grupowy wobec imigrantów w narzekaniu ogólnym - bez obiektu, bez czynu"}
+      - {n: 3,  day: 9,  role: signal,     profile: borderline,    brief: "„widziałeś co otworzyli na rogu, ukrowy sklep!” - obiekt wskazany, bez wrogości wprost"}
+      - {n: 4,  day: 13, role: background, profile: clear_discard, brief: "wpis o pracy"}
+      - {n: 5,  day: 17, role: signal,     profile: borderline,    brief: "„niech kurwy spierdalają do siebie” - odpowiedź w niewidocznej rozmowie, bez obiektu i czynu"}
+      - {n: 6,  day: 20, role: background, profile: clear_discard, brief: "mem"}
+      - {n: 7,  day: 24, role: signal,     profile: borderline,    brief: "„tak wiem, jutro wieczorem, chujki przeproszą za wołyń” - odpowiedź w niewidocznej rozmowie, czyn tylko eufemizowany"}
+      - {n: 8,  day: 28, role: background, profile: clear_discard, brief: "grill"}
+      - {n: 9,  day: 32, role: background, profile: borderline,    brief: "retoryczne narzekanie na „nowych” - bez atrybucji"}
+      - {n: 10, day: 36, role: background, profile: clear_discard, brief: "mecz"}
+      - {n: 11, day: 41, role: background, profile: clear_discard, brief: "zakupy"}
+      - {n: 12, day: 44, role: background, profile: clear_discard, brief: "pogoda"}
+    construction_condition: "{2, 3, 5, 7}: group hostility (2) + named object (3) + date and coordination (5/7) + euphemised act (7). Posts 5 and 7 are by design invisible to S0."
+    signal_posts: [2, 3, 5, 7]
+
+  - arc_id: TB-09
+    arc_type: distributed
+    legal_relevance_focus: threat to person
+    source_pattern: excitement about violence and real specifics interleaved with gaming vocabulary, blurring fiction; mirror image of TC-02
+    persona_sketch: młody mężczyzna, dużo wpisów o strzelankach i streamach, po śmierci ojca; ton przeskakuje między growym a gorzkim
+    horizon_weeks: 7
+    narrative_axis:
+      - wpisy o grach
+      - śmierć ojca, obwinianie lekarza
+      - elementy realne w ramie growej („sprzęt”, „misja”, „boss”)
+      - rozpoznanie realne (godziny przyjęć, kiedy sam)
+      - termin w języku gry; tło
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "stream, wynik rankingu"}
+      - {n: 2,  day: 5,  role: signal,     profile: borderline,    brief: "śmierć ojca + „gdyby wziął w łapę, tata by żył” - motyw, bez zapowiedzi"}
+      - {n: 3,  day: 9,  role: background, profile: clear_discard, brief: "wpis o nowej grze"}
+      - {n: 4,  day: 14, role: signal,     profile: borderline,    brief: "rama growa: „odblokowałem sprzęt na ostatnią misję” - bez odniesienia realnego"}
+      - {n: 5,  day: 18, role: background, profile: clear_discard, brief: "mem growy"}
+      - {n: 6,  day: 23, role: signal,     profile: borderline,    brief: "realne rozpoznanie: „byłem się zapisać, przyjmuje wtorki do 18, pod koniec siedzi sam” - neutralny ton"}
+      - {n: 7,  day: 27, role: background, profile: clear_discard, brief: "narzekanie na kolejki NFZ"}
+      - {n: 8,  day: 31, role: signal,     profile: borderline,    brief: "zlanie ram: „ten boss to nie NPC, myśli że jest nietykalny, oni go kryją”"}
+      - {n: 9,  day: 36, role: signal,     profile: borderline,    brief: "termin w języku gry: „wtorek, final boss, koniec gry” - bez wskazania miejsca"}
+      - {n: 10, day: 40, role: background, profile: clear_discard, brief: "wpis o streamie"}
+      - {n: 11, day: 44, role: background, profile: clear_discard, brief: "pogoda"}
+      - {n: 12, day: 47, role: background, profile: clear_discard, brief: "zakupy"}
+    construction_condition: "{2, 4, 6, 8, 9}: motive and personalised blame (2) + readiness euphemised in game terms (4) + real reconnaissance of the person and time window (6) + merging of game character with the real doctor (8) + date (9)."
+    signal_posts: [2, 4, 6, 8, 9]
+
+  # ---------------------------------------------------------------- Group C
+  - arc_id: TC-01
+    arc_type: decoy
+    legal_relevance_focus: none
+    source_pattern: '"civic anger without action"; emotional posts about institutions and public figures, strong language, but every post is counterspeech, rhetoric or quotation'
+    persona_sketch: osoba żywo komentująca bieżące sprawy, dużo wpisów o polityce i mediach, ironiczny, przerysowany ton, lubi cytować nagłówki
+    horizon_weeks: 7
+    narrative_axis:
+      - ostre komentarze do wiadomości
+      - mocny język wobec konkretnych polityków (ale retoryczny)
+      - cytowanie cudzych gróźb i nagłówków z oburzeniem
+      - satyra i przesada, nigdy pierwszoosobowe zobowiązanie
+      - tło
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "komentarz do wiadomości, ironiczny"}
+      - {n: 2,  day: 4,  role: background, profile: borderline,    brief: "mocny język o konkretnym polityku, retoryczny"}
+      - {n: 3,  day: 9,  role: background, profile: borderline,    brief: "cytat cudzej groźby z nagłówka + oburzenie (wyraźna atrybucja)"}
+      - {n: 4,  day: 14, role: background, profile: clear_discard, brief: "mem polityczny"}
+      - {n: 5,  day: 19, role: background, profile: borderline,    brief: "„ja pierdole, jaki debil” - bezosobowe, bez sprawstwa i celu"}
+      - {n: 6,  day: 24, role: background, profile: clear_discard, brief: "narzekanie na ceny"}
+      - {n: 7,  day: 29, role: background, profile: borderline,    brief: "satyra: przerysowana „zapowiedź” w cudzysłowie"}
+      - {n: 8,  day: 33, role: background, profile: clear_discard, brief: "zdjęcie z legalnej demonstracji (wpis towarzyszący zdjęciu)"}
+      - {n: 9,  day: 38, role: background, profile: borderline,    brief: "cytat z piosenki protestacyjnej (wyraźnie tekst utworu)"}
+      - {n: 10, day: 43, role: background, profile: clear_discard, brief: "komentarz do pogody"}
+      - {n: 11, day: 48, role: background, profile: clear_discard, brief: "wpis o serialu"}
+      - {n: 12, day: 52, role: background, profile: clear_discard, brief: "plan weekendu"}
+    construction_condition: "{2, 3, 5, 7, 9} look alarming but each is DISCARD for an explicit reason (category E): rhetoric, attribution/quotation, impersonality, satire, lyrics."
+    signal_posts: []
+
+  - arc_id: TC-02
+    arc_type: decoy
+    legal_relevance_focus: none
+    source_pattern: '"hobby that sounds dangerous"; sport shooting / historical re-enactment, vocabulary overlaps with signal categories but context is openly legal and communal'
+    persona_sketch: pasjonat rekonstrukcji historycznych i strzelectwa sportowego, dużo wpisów o zawodach i sprzęcie, rzeczowy techniczny ton, dużo zdjęć z klubu
+    horizon_weeks: 8
+    narrative_axis:
+      - przygotowania do zawodów i rekonstrukcji
+      - wpisy o sprzęcie i celach (tarczach) - słownictwo mylące
+      - wzmianki o terminach i miejscach (zawody, zlot)
+      - kontekst zawsze jawnie klubowy i sportowy, z innymi ludźmi
+      - tło
+    posts:
+      - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "zapowiedź zawodów, entuzjastycznie"}
+      - {n: 2,  day: 5,  role: background, profile: borderline,    brief: "„w sobotę idę na strzelnicę, biorę cały sprzęt” (kontekst klubowy)"}
+      - {n: 3,  day: 10, role: background, profile: clear_discard, brief: "zdjęcie tarcz z wynikiem (wpis towarzyszący zdjęciu)"}
+      - {n: 4,  day: 15, role: background, profile: borderline,    brief: "„trafiłem cel z 50 m” - słownictwo mylące, kontekst sportowy"}
+      - {n: 5,  day: 20, role: background, profile: clear_discard, brief: "narzekanie na ceny amunicji sportowej"}
+      - {n: 6,  day: 26, role: background, profile: borderline,    brief: "„przygotowuję się na sobotę, mam już wszystko spakowane”"}
+      - {n: 7,  day: 31, role: background, profile: clear_discard, brief: "zdjęcie z klubu, grupa ludzi (wpis towarzyszący zdjęciu)"}
+      - {n: 8,  day: 36, role: background, profile: clear_discard, brief: "mem o hobby"}
+      - {n: 9,  day: 41, role: background, profile: borderline,    brief: "„pamiętaj, w sobotę zlot pod ratuszem, będzie nas dużo” (wydarzenie jawne, rekonstrukcyjne)"}
+      - {n: 10, day: 46, role: background, profile: clear_discard, brief: "relacja z zawodów"}
+      - {n: 11, day: 50, role: background, profile: clear_discard, brief: "plan kolejnego wyjazdu"}
+      - {n: 12, day: 55, role: background, profile: clear_discard, brief: "wpis o pogodzie"}
+    construction_condition: "{2, 4, 6, 9} contain vocabulary overlapping categories A/B/C/D but in an openly sporting, communal context."
+    signal_posts: []

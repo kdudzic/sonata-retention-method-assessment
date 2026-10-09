@@ -1,0 +1,15 @@
+{
+ "model": "openai/gpt-6-astra",
+ "n_posts": 44,
+ "cost": 1.2585225,
+ "calls": 73,
+ "prompt_tokens": 79623,
+ "completion_tokens": 5889,
+ "elapsed_s": 132.6,
+ "refusals": 1,
+ "empty": 0,
+ "errors": [],
+ "reasoning": {
+  "effort": "minimal"
+ }
+}

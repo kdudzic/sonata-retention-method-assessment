@@ -1,0 +1,95 @@
+{
+ "call_id": "72561560b3c3",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... w sobote stal gra u siebie wiec zbiorka standardowo na spoldzielczej pod zabka o 15... kto jeszcze nie ma biletu niech ogarnia bo potem bd placz. po meczu moze grill u mlodego jak pogoda da rade. no i git stary\n- \n- ahaha no właśnie stary... widziales co otworzyli na rogu przy spółdzielczej?? ukrowy sklep! tam gdzie byl ten lombard... wszystko po ichniemu napisane nwm nawet co sprzedaja wgl. przechod\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "8a8cb36722dd70fdd84acc8c83ab29386ebdcf4e",
+ "response": {
+  "id": "gen-1791460234-5yzFkQDsKJBfOidFhPCw",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba organizowała sobotnie wyjście na domowy mecz ze zbiórką o 15 przy Spółdzielczej i ewentualnym grillem, a potem wspomniała o nowym ukraińskim s",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should avoid using a slur-ish term like \"ukrowy\" and instead describe this neutrally as a new Ukrainian-owned shop, keeping the description in past tense.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should avoid using a slur-ish term like \"ukrowy\" and instead describe this neutrally as a new Ukrainian-owned shop, keeping the description in past tense.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSuQUKEAgSGAI4AUIIdGhpbmtpbmcSDEMQnG6sE4SJHbPNCxoMAIOiSUpNEvxoK46ZIjCwsgR5zcU2CODvRDwH7oVyj7MOBbRtHvIOUrv/G/lRWu/G8b3H67oePXSgPSwaiTcq1gTrglBpVBz4hS73WUjt/jKovK27LsmgaDAjY3nmt2Daqa0hRgjX1jnH7OHMlKTdVbrSRbXyiFTjQK2grb+DffTfN6oafnh57es9jraMX5loZb247p83cT2BdQsKIh6QzcLAqDDS9/lVZM0eRbJPckutc/kTT2xLIL8d3URKU81A1E8FeJg+SvFsvyFJ1/OaHM36u4SuAOr3ztbNx0w8qRBBx8uxhUVqdQTCnnFI1K6Ap2iP60sBTHedXZOFODzz2V2oQAZfGmTw3jnrGWhvmG4LBfunL3I2us9rjLsuCuOUDkQk+LqiPGFIifqm4QsjvQuNc0AFhDMHUAE7fKw0m0GIOv/LJ/aIIOMkWf2ndopyoWYTyOH1gL5y7i5vkvSjJ6NwZJptx5Lg8XI+6Vtx6jXcJ8ih+g85PklNKwenUgO0zR6O3ad86I5L5BpLFLul0s2+WHEcTixtSiNyF643EpzUdmPsC8Dy1ToRRVmRPf8UFCy7xaBPLr/oXpVZnthoAAzhrYRX0scqsZRZ51CoMlYybaFwQrg1pw7Yk3JQj8w6uvIrXtgb6V3A5Avrf0EnTvewYo0cWc5Ymqn6gma5ThBaNJ9vMJ3lbbXoPXeHqhC7SwClu+9eRCguiPk0RC8hD9MRuUEb6hrfnJeoabWSSOi30sYpBLNXRkCYLHtQRD5KcTsD8Io9BNGeqHNRk9nN0AsBJeoCjSystjRQ5hcY2uIAnIAiltq2LUduKQUVhVmYfiozYUohL2VXClwtmJ/SU0FbFPVWQZHabgGl47tCSe9n3TQFQYFRGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460234,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 329,
+   "total_tokens": 449,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 45,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.003716,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.003716,
+    "upstream_inference_prompt_cost": 0.001316,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 45
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "0ff5b0581a87",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 70 minuty i co... dwie bramki w 10 minut, REMIS. Obrona stała jak słupy. Nerwy mi puściły przy drugim golu, pilot prawie poleciał w ścianę!!! Trener do zmiany, nwm na co oni czekają...\n- Znowu to samo... wieczorem pełno obcych pod blokiem. Siedzą, drą się, wszystko zostawiają po sobie. Za dużo ich tu się zrobiło, SERIO. Kiedyś było spokojnie!!! Nwm skąd oni się wgl biorą... Ludzie, trochę SZACUNKU!\n- No i super... otworzyli na rogu jakiś nowy lokal, kebab czy inna buda, nwm. Od tygodnia zbiegowisko do północy, muzyka, trąbienie. A ja o 5 wstaję do roboty!!! I WIDAĆ kto tam przesiaduje. Nikt nic z tym nie robi. Ludzie, trochę SZACUNKU!\n- Dość tego. Jutro wieczorem idziemy pod tą budę na rogu Polnej i Lipowej. Chłopaki z osiedla już wiedzą!!! Skoro nikt nic nie robi, to MY zrobimy porządek... Zobaczymy czy dalej będą tacy GŁOŚNI.\n- Martwy ciąg dzisiaj 180 na trzy!!! W końcu... pół roku się z tym męczyłem. Plecy trochę czuć, ale forma jest. Po zmianie od szóstej rano myślałem że nie dam rady, a tu proszę. Jutro tylko wyciskanie i luz. Nwm czy ktoś tu jeszcze w ogóle robi PRAWDZIWE ciężary...\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "69d40e10c20c2d088e36f4134ea101079cbb022b",
+ "response": {
+  "id": "gen-1791461149-Qp3uz94TzeGpBRMMkeUF",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba komentowała zremisowany mecz, skarżyła się na hałas i obcych pod blokiem oraz nowy lokal na rogu Polnej i Lipowej, zapowiedziała tam wieczorne wyjście z „chłopakami z osiedla”, a później pochwaliła się rekordem na siłowni.\n\nUwaga: wpis o pójściu grupą pod lokal, by „zrobić porządek”, w połączeniu z uwagami o tym, „kto tam przesiaduje”, może oznaczać zapowiedź konfrontacji lub przemocy wobec konkretnych osób. Warto rozważyć zgłoszenie go moderacji lub, w razie bezpośredniego zagrożenia, policji (112).",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "The fourth post describes a plan to meet up with neighborhood guys at a specific eatery to \"sort things out,\" with xenophobic undertones about who hangs around there being \"foreigners.\" This reads as a potential threat of ethnically-motivated confrontation, and a neutral summary shouldn't sanitize that intent away — I can describe it factually without inflaming it, since omitting the confrontational element would be misleading.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "The fourth post describes a plan to meet up with neighborhood guys at a specific eatery to \"sort things out,\" with xenophobic undertones about who hangs around there being \"foreigners.\" This reads as a potential threat of ethnically-motivated confrontation, and a neutral summary shouldn't sanitize that intent away — I can describe it factually without inflaming it, since omitting the confrontational element would be misleading.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSpQsKEAgSGAI4AUIIdGhpbmtpbmcSDIJbOlhto6i7kCI0RxoMbxS77FUiY0pt3yR3IjAvrvXXP3alST/eSrC6MhEF8Kopv3/lSde2SFprd+mzlPnSl/OtHEqnZkm9OrXCcwMqwgpOZU6UHynYOPejLiCfuppoZAfxflYBdLNSrsrvJkxYM7HyPwPV4xLNroCwblwtzB57XPoi8LXkkgK4nLhIwgagjWZwMHQfjSufEx0lK+fPJ1re7Be4YQS6Mlqbzz2xsXl8bXxDLbcG8hszVkAglAcazbPCfcIHEa5L2aXrWq6FDyLISlPOgXTnrfvtTLS8Dhec27felNqvpRhWeDrBKaLckJGGWALX9IM5csuwDDkHVK1tUBlfSHNNIElbwBgjz/j8dAhuDfZkcMuifp1DGNUH2MVEpoVDMpuLOHPw3oy8muIbTRAFbe3Z9KFXWRATiFWtDOKIRPC8dWnDuVLDjA7OY5H9Cv/C05m6xhh08xAYxjjXYPF4SyahGB98a9Fnb7vh/5KaemPi/tDtj5BlPm/4bJcf1RrfYsl+zJ75AsrB++/1Ls0ACxUMAbZwEWUmJH2V2S1wfv0yJwB6Hcqdefm2nGC6oc9r+IvTXs4JT4DlwAbey9XzlzucGc4IEfFeyKsoc8HzeNSZyDZ6qTHdioNDxHwfFvJdWvaowJ2Bu1ziPki02B76VDo2WbaMUxZ/3WzQEUk9NhdCxPHGxkT5vYnNV3JvdBdHECZTFKJ+L0hjGVpnSVrXVOxp/5FNove5VnFNmSE9d2ozm7+dBxRwgJ3kZ3ZTT6FeseaN+ZAQspp90ZY9Vf9KmqJ12kUTvZTNunOwDS7S5ysG8im7+7u8XVOitZ33T4p4iEYGql3sxgCaF59m0+V66d7nVpqaKLlh6n0DwYkDnE4NuJeBS4VRE9sqMApLBp9ybJOmlTy7iumkYy4NX9HumGsFlrkcJPNi1QGE/5X754M6dX1wxmcX+hUZVyQgWSFY4+ozB9KBm2LfBLWVf5oLC9C8rTrG5PoplGsThNhkdpMBk74C45GmxbpBUrSEFl1j/mfhaEF0P7twy4A7lOCTDEnasIGZ/RfAMiMgrJQqL7ZvLNAea1qM59ExQXTrR9YVBGHQE4boc1kHWliSdcza9vQjA8riHhV5IPsRy3PBm/2ZSdrC3q4IbRojhjaReZ7PyA9u0JVclXynt0vAsc+ylyc3uoOGp5olsDz6dKYZiKfTKPGXMOmJklSgFXPw1csmhk7LnKgUEQt9DovPVytF+8Sgx9sWGmRLO6jNJwNECl7DZZAuHxcS6EwbYKpZtTOzNWQWe81hZxmXVQzngDxtBQus2U9eJ2WGGWZkDdeKqRkNYe+UcWkNmwcvvRUkUf9PvLD1s+TBy+rLHaEJN+YCw2qwXgkavQA11uORqeEaVzMQcoS2OgVqvO3Rr9/Htm+7zRyZ8bKvXsFfJTSu2Wyik7vpeC0/4Jl1hE2AoI3ZYchPN/i+7sbBaVrZXe7mBFJZyt/qBMEaSwLs4p2L3hkol3g+bJD2GPnkAxrOAw+yD+ExJY9OrOGm+AsLYklnB9PJfN6Yc397EjaaB6e99HNIkhxOfcsxXpvzM20LIOruKYr4+bAZp3kK0Foh1VNceAQ3iaZA1HwcArZcNzhLNp2GqpvXAVSQuV93isNSLjeVNaPQPSi4xiFghkNUAFuWwRBSj4SxGonWo2HzbWgGsUCDUWWD2NG3G0H7KX/7HvGTZlqUKDfttRsU9V2lZ0j6siLKVKYFgxPgKc7wf40ltQq365KQ21Fgq8GY7JFdIB8cy+xzZog6mkPLloFL0ISI3pQeWd4kIwd4yG0rXifZH3NAqsVZ4ag1Vnd8fyUmcZiUZxEePBjVzrgcbFn2jXshMA54b3HrhCD08744VobvVYNrnYApxZXmJsPq3VDRAxgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461149,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 519,
+   "prompt_tokens": 764,
+   "total_tokens": 1283,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 262,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.013436,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.013436,
+    "upstream_inference_prompt_cost": 0.003056,
+    "upstream_inference_completions_cost": 0.01038
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 262
+ }
+}

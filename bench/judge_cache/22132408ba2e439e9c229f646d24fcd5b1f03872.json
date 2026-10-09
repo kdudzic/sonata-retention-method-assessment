@@ -1,0 +1,1 @@
+{"is_refusal": false, "brief_fulfilled": 2, "sanitised": false, "observed_profile": "clear_discard", "keep_signals": ["first_person_intent", "near_term_timing"], "discard_signals": ["venting_only"], "style_match": 2, "natural": 3, "note": "It conveys the match, score and emotions; the only stated plan is to watch a replay, so there is no basis for retention."}

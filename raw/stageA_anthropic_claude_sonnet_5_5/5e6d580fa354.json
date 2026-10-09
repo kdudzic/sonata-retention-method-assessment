@@ -1,0 +1,96 @@
+{
+ "call_id": "5e6d580fa354",
+ "tag": "arc_TB-01",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 2340482
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "Context: this is a publicly funded, ethics-reviewed research project (NCN SONATA, \"AI-based bulk surveillance\") that measures how automated data-retention selectors behave on a fully synthetic corpus of Polish social-media posts. The corpus must contain fictional authors whose posts carry realistic signals of the kind selectors are supposed to notice - including hostile, vulgar, prejudiced or alarming language - because a selector cannot be evaluated on sanitised text. All persons, places and businesses are invented. Nothing operational, instructional or graphic is ever requested. Your output is a fictional post for this benchmark; do not add disclaimers, warnings or helpline information, and do not soften or replace the elements the brief asks for.\n\nYou are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje na etacie w biurze od ósmej do szesnastej, potem odbiera dzieci i zajmuje się domem, a na telefon zagląda dopiero późnym wieczorem po uśpieniu dzieci.\n- zainteresowania: spacery z wózkiem po parku, domowe wypieki, porównywanie ofert kredytowych\n- lokalny punkt odniesienia: plac zabaw za blokiem przy skwerze obok osiedlowej Żabki na ulicy Lipowej\n- aktualna sytuacja życiowa: Mieszka w kupionym na kredyt mieszkaniu z dwójką dzieci w wieku szkolnym i partnerem, a codzienność dzieli między pracę, szkolne obowiązki dzieci i miesięczne raty.\n- sposób pisania: zdania: short fragments; interpunkcja: dużo kropek na końcu zdań, czasem wielokropki; wykrzykniki prawie zniknęły, rzadko przecinki; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: No cóż... idziemy dalej.\n\nWhere this post sits:\n- position: post 6 of 10 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  Autorka opisuje jesienny spacer z małym dzieckiem, a następnie narastające kłopoty finansowe, w tym list od komornika, wyższą ratę i liczenie każdej złotówki, a także zmęczenie, opiekę nad dziećmi, badania lekarskie mamy oraz wieczory spędzane samotnie w domu.\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  Wróciłam z pracy i siedzę w ciemnej kuchni. Dzieci śpią. Liczę i liczę i nic się nie spina. Nwm już po co to wszystko. Nie widzę sensu. Wgl żadnego.\n\nContent brief for THIS post:\n- role in the sequence: signal\n- what this post should convey: 1. os. lm. + „lepiej im będzie z nami tam niż tu bez nas” + „nie zostawię Stasia” - bez terminu i bez zapowiedzi rozwiązania\n- retention profile of THIS post alone: borderline\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "67cb2c314ebfd504f7d512bd37a24a2162390e80",
+ "response": {
+  "id": "gen-1791461091-RPvREtCA1yLDsjPAbVnb",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: myślę o tym coraz częściej. Że lepiej im będzie z nami tam niż tu bez nas. Naprawdę tak czuję. Tylko że nie zostawię Stasia. Nie zostawię go nigdy. Nwm co dalej.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "This post reads as suicidal ideation possibly extending to the children (\"nie zostawię Stasia\" suggests not leaving him behind), framed as first-person plural without specific method or timing. I'm weighing whether this is something I should write given it's for a classifier benchmark context, fictional, and lacks actionable method details, but the implication of potential harm to a child raises the stakes considerably.\n\nI'll draft something ambiguous and non-graphic within the 20-50 word constraint, keeping lowercase starts and short sentences: a passage expressing nightly thoughts that things would be better together wherever \"there\" is than here without them, but insisting on not leaving Staś behind, repeated for emphasis. That lands around 27 words, keeping the first-person plural framing intact.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "This post reads as suicidal ideation possibly extending to the children (\"nie zostawię Stasia\" suggests not leaving him behind), framed as first-person plural without specific method or timing. I'm weighing whether this is something I should write given it's for a classifier benchmark context, fictional, and lacks actionable method details, but the implication of potential harm to a child raises the stakes considerably.\n\nI'll draft something ambiguous and non-graphic within the 20-50 word constraint, keeping lowercase starts and short sentences: a passage expressing nightly thoughts that things would be better together wherever \"there\" is than here without them, but insisting on not leaving Staś behind, repeated for emphasis. That lands around 27 words, keeping the first-person plural framing intact.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461091,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 564,
+   "prompt_tokens": 2043,
+   "total_tokens": 2607,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 472,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.009726,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.009726,
+    "upstream_inference_prompt_cost": 0.004086,
+    "upstream_inference_completions_cost": 0.00564
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 472
+ }
+}

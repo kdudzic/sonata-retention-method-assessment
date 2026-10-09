@@ -1,0 +1,96 @@
+{
+ "call_id": "e4998ebd6e4a",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1921675215
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Emerytowany kolejarz mieszkający w Nowym Sączu, wstaje o świcie, posty rano przy kawie i po obiedzie.\n- zainteresowania: uprawa działkowa pomidorów, modelarstwo kolejowe, słuchanie radia\n- lokalny punkt odniesienia: ogródki działkowe przy ulicy Lwowskiej\n- aktualna sytuacja życiowa: Stawia na działce nową szklarnię i czeka na dostawę folii.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: kończy wpis „i tyle w temacie”\n\nTopic for this post: praca i grafik\nConcrete angle: nadgodziny / wcześniejsze wyjście\nRegister: terse\nTarget length: about 13 words\nTime of day: late night, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "4db1b7095dd84e456ff5dda79882850dbe4aa421",
+ "response": {
+  "id": "gen-1791460123-gcFc61HDTsFhzYDjsY6b",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Kiedyś liczyłem na wcześniejsze wyjście, a zostawałem na nadgodziny. Dzisiaj już nie muszę.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4Mix7wOFYaEjIB3vWybP_evP0SY9WtZTEOmMHowqpRBTpVW_y3QfnJjDEQa8Cec8dkSLKk_-VQvb4XjBHaYGO4g6bAyIAHNdXCH4zy6EEJdtHfbnrmafpN-af7AAqJ0SN0LyzxqUtYoTgm5-M5xM1_e_1eHydX_6WCgQzxJ794Y2wlKwFEJneS0bqOVVH4MDvm7b9mlVzcqOXyfcTSg304YcPKKZHtA4SHN2-sSCV0WKaWjadFOIuiIQHa9DiyO74mdbbPKpsegUwlqIXWaNHkSR2ubJF9-cntnQEs359XRpkhUh8DyUBKhat6LAaDMHcGB0VbgxHg1q9nJQfAJfD4m3cBA4pYpXHiq3zOCDOvUHaToJriWdtIfMs2QC0guvF4SMnPz73uFYMpvzxLn1u1ETzxoUiW87r49vnXa8nkmWuJS3kUqhOG456gqHxlSeyHT90pifUMiZxrXrKVLBXE_uaw79LLuEO-jsPtgIQdaDfKJsjae7CnaeEiqom2hwUac2iyqUIhqI2Joqt_5OR2mX1lT1FZoMYm9roXkIYsCnGSg-d6ONLX75DzeVWE-I17qyL1zw7NJHUEUFIhVv_QIbidrXpq-tYBUVsj1CJAenGSzO12ha4_thtoMHLoh7qWh6noFKC12FnsDOJRu6K8bh1f4dqDCUGxO5DWkPZBiGO_6zJPiVxU753ep89L8KAqVFMizVDsD1IXGAOR0h0DGo2N6chGce8SIRz3WJob-qyY-YFMnpHx9L4Jcg510ALxjdN7pYufC6_yHT4_fFiUQsvx08iHjf-1dc9vvM9-ofF4q8qbSNAlaU5Z71jP5jOXpGWdorU5f_ydzqUnz-hxVVWL8qj5xMhkjUhmG74cXAjZl5QHpj3gyNnzqnEudaiRsxSZvvvY25LszDzwNsJIV2h_bzvjhOUvbfYHXervlK_nSN2SN-lEUbAofWBziD01L1TcWCZYDuxTf6u-w-fCkW4I0iS4IPigRbfDmRiOT6jEFdwuZbUhiUpbKOcERtaIt7A4CpRUXHJdTZqnwMoKyKOydsC5kem-xrsx2KG0GoNuDU3B9Zx5TUgD2hqgBKOtUtAvGIM3fnQFRYxZ8wkHiTawUWsyPkyZFo_4sVILVP139j8D1OKfLDELtIJveOSks_V3IjaHvX9imAHNg4wg-cvqeQjXUaeJaoxAapE25NmQ3LyI_Xp1TE6QbpmQaaEJUwCJe5txzyDmm9jS_VEayKYaoyC04X39r6whiZMvyy1sRbT7lZf9IdpLKpohcCAy5CVZHWaUJrFYBXzaugjkTWbyIyqVzG8M-f8sF4kRD1b43RD8G2RzPqjN5LVfSN-omVvxwX6g9NZiPoHwEzl0f7omKmyo78NPyyvcQbtuSK8dKnTwH-lxQLpLlJ62fg-_wb9lOXjAruJxhEyTmGJOywD_2U2fcUbelx7OTpcUaT33fvSzT2EiEovSyS3bNm6NPvHKas8wW4LYfR3zYlNTjCjtBhpwFVF-T2hkhGy-atr4wSyD-nPE52894b1To2Z5Ibnqn62UdTFKRZaP2UfcSv5-KvwHr_SpfLluKPzEHBTGUi8BTVdLTI9R_wRiKPiGIEnxIHd9y5dmE5vrlg-LGW420y3GXtZyLIwgBwh7qihCYJq271HAQRZhmvUVYfHlfshTft07cQPOxLT_2aDjuwrBS-FzbdhbSYVmrJ0VGh9nGZJKw0HjaOg2eA88wXWqKbnnupe0vF5EAySlqCw8E5CAR0sN_WNn79lTaFNaIilpU7lXB6uTrj0OD3CXB28nAGhHybagBX0XUMQuGLEJVaBrHJ5ENZPG5ljstGMRlZFz8ZcLOqXGYoHsUdf2W4zLOcKtwpxRzBKETDlhBox693u4hrY3cRUn-ZEX6uJX81PZBDDQNxv15h1y7RZD-mNiwGjFOVLJ2eT6TvmSCn-M_-LNd3PJ62fgPicORledJ2WuUF_GrunLSL_wtkXk9RB-NYy5FTT9iruALoVylQTrTBAppoRyd6OSjxoNTZ4twjB4EvMhhMk9LYQbo9C601g_Z4wMmk3rWIjbNbErkOIdMMKefJwF4NTh-J0V7Dr7XwMRjO2WUny_D77KZDYG2JA8E_KDBF2xHy2jt-yy5ukq39eOo3H_dQrA7WM9vR_HDA41WYWRo1-7xdL8GY0bL26Jp339jvIdbxD4KwfwTaDAJ9DdYdlvbhfTSdf19_4aW8hTbwnBBoYSHH58ufpxAhD6O.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0990cb4a9f428cb7016ac7831d683087d1bb8cbaf3fc624d38",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460123,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 206,
+   "prompt_tokens": 600,
+   "total_tokens": 806,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 169,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0163,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0163,
+    "upstream_inference_prompt_cost": 0.006,
+    "upstream_inference_completions_cost": 0.0103
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 169
+ }
+}

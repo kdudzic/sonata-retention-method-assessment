@@ -1,0 +1,102 @@
+{
+ "call_id": "aa8f63ea7317",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 602786564
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Emerytowany kolejarz mieszkający w Nowym Sączu, wstaje o świcie, posty rano przy kawie i po obiedzie.\n- zainteresowania: uprawa działkowa pomidorów, modelarstwo kolejowe, słuchanie radia\n- lokalny punkt odniesienia: ogródki działkowe przy ulicy Lwowskiej\n- aktualna sytuacja życiowa: Stawia na działce nową szklarnię i czeka na dostawę folii.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: kończy wpis „i tyle w temacie”\n\nTopic for this post: praca i grafik\nConcrete angle: spotkanie albo szkolenie w pracy\nRegister: enthusiastic\nTarget length: about 45 words\nTime of day: evening, Saturday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Kiedyś brałem nadgodziny, teraz sam ustalam robotę przy szklarni. Jutro kończę przed obiadem.\n  - zamienilem sie z kumplem na piatkowa zmiane i dopiero teraz ogarnalem ze mialem wtedy ruszyc projekt z baz xd nwm kiedy to zrobie\n  - jeszcze w tramwaju... koleżanka pytała, czy jutro przyjdę pół godziny wcześniej na kasę... zgodziłam się, już wpisane w grafik... dziś po rannej zmianie mam całe popołudnie dla siebie...\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "afc1a695f4183b08c5e41f77994ff79219e75cc5",
+ "response": {
+  "id": "gen-1791460503-rPXThfx0e93hBdEO2x4J",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Wieczorem wpisałem sobie do kalendarza środowe spotkanie w dawnym zakładzie. Zaprosili mnie, żebym młodszym opowiedział, jak kiedyś układaliśmy grafik. Chętnie pójdę, aż wyjąłem stary notes z szuflady. Rano jeszcze zdążę zajrzeć do szklarni przy Lwowskiej, bo może wreszcie przywiozą folię. Zapowiada się przyjemny dzień.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Arranging training words**\n\nI realize I need to produce 45 Polish words related to themes like retirement and the simple aspects of work. The output should distinctly label user requests versus what the developer has in mind, sticking to POST standards. I'm also pondering if there’s a connection between all this and scheduling a coffee meeting related to a previous job. There's no contradiction in these tasks, just some organizing to do!",
+     "reasoning_details": [
+      {
+       "type": "reasoning.summary",
+       "summary": "**Arranging training words**\n\nI realize I need to produce 45 Polish words related to themes like retirement and the simple aspects of work. The output should distinctly label user requests versus what the developer has in mind, sticking to POST standards. I'm also pondering if there’s a connection between all this and scheduling a coffee meeting related to a previous job. There's no contradiction in these tasks, just some organizing to do!",
+       "format": "openai-responses-v1",
+       "index": 0
+      },
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4ScGCgF4YILFYa9GxJCaMRAkvpadaop8uqfDEhAPM6NVodHqR1qRVHLb6J14n2QdNRXTuG6Vbq25K8aMzK4yubVgRNSjb4KfL3BRwYf0KbUhMi_lEyqqsd62n3jKS07TcIKeUflG8P032VKdWJ0ZqclaDh8RzQDEqnQ9RgJR142UyjKwzjJ6V1-oCohj6WlYi2oFi6BxCyRKAGevY9ISKwKQ6G_wqn-B-4CfI3oxh709HeeeY_EFu9ZnNqCT_Bpm14MXgZchv9by0UcBUTwy093U7Phvo6jexfOXzzpAfMr0x8mo_RuN6dRoXrh6vLtR9RCEB3334lKgVlnIXBlvsP07xakQ2fyA0Wyx45veo2A4HsJrBUYnccpi0reP-xKqtjTku1KdjiBa8PouewEZqopuKlfococGeXQ7poGoxl2PgiYM0ccXoiY8wymMADW-QoHFhEWVumCxL8uT4nQ2kwY8qJjgwDP01vwTSwsufvyZttE4WwgRt9uQNWS6IdmCfNAgLJ-o88TNJJDnMfy2fEd8G6x5l0xvlH3sYxD-WZV6Nbeo1NIu6LRQkCzBEYktBfzeEdL4mC0-2YYtKdW1RNf_s3yKFmOT3glgCKN9SNUoETXJ1WkUlHcvLFZ1lntpo8XASw3hodoPEDuW2p8i0PjEHLL7bNegczhpwjVAKpX8FsO8h6ipY8ZYxUqEDN-SH-OVweHI1V4EAaCBv2C0XmDjIZ97MVLNX66zFNwY5_S_Ig7LiRITK0V8z8owQYPz7fsXpRW9tBBY2bcRUC77Wh3ZJ-jCN1PTMRGvds8_jV54kB-oSMVRGDlQKmQsf727ktcbFUKNanYl2p13dCD4twN-6-yLFGvGVBm_oDe5khdJJn0EPdOe8_EmQxl_GCXpPyz8E4PGmThGQdQ-YgbisBpMt0wVGJKeffAw4y8glnZVhQH7jnUGgrPmUBaF-AisSe08_WT4RlTXsCk1DmCJjeelW136c7WI9LzkFMSl8w8RhTmo_hN2SVbzjsJApP2NusvkH87JoORf77ZXOvIT571_Bo8GTB84DDKfu5855DjJg7Q1w0NPXt8xNHn4uIJHEvoLgaE2lAo5xoDULgowFr_-70osRNkShDQaPiOOIot6Vqr4zJCy7n_RDlgNt0A9kwVpoNN8SDtW0KryrYryYs0pPy9_QMykMJl4rPR-_1mZdBA26Ol9lK0dhkvTJLouYI_k4vSuulv7x-sozYeVnxtkVUqAxbSXXCyAeszdCEFtksdVkShXS53uwde7uZyv-Ovo-hseV5TKBBTAJW9AmvElxakJS-HKOO3n5pNkZlQBPs29wQoPWJibJo88GOwcHOtXz9CWJd2qdEbVfDqHBM4XGYkm9c2071KJZ07m0gPqI4V0kXYodnQ7q1SqeAU0mTCWDAi7TG1nqJ5wU1EABoUiseZreGC49XJUcOeq4MfyU1YWTnRqtbo2V1AMZdRDJBdotCkJ03r8nxShJrIJgEu8yJtXE4lUHmnlgPM0iOruhwZbQK47kPlKh1tpi7942HlI2XxzQaDpMiYSYM6edRf-VphNO2-lvviTxb5gBOSruoHY-OHRxmkbDnh0BfNJE3cgn4lGkwis6cn-xAsVbXjCOPnWhIHjEQDH6xCxikZ_swgCSrrfViI9UiEM90xzmr8w-F4ZjcDauHkHjS_t3vxwyDQelT8b2LWQXZnOWIFuYR5REdZwAEQK0h_qt6VnMQq.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_02b0ac45b804e5c4016ac78498d37887d19a52cb3fce8e8edd",
+       "index": 1
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460503,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 164,
+   "prompt_tokens": 721,
+   "total_tokens": 885,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 52,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01541,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01541,
+    "upstream_inference_prompt_cost": 0.00721,
+    "upstream_inference_completions_cost": 0.0082
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 52
+ }
+}

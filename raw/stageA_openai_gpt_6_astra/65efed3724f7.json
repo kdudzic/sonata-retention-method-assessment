@@ -1,0 +1,95 @@
+{
+ "call_id": "65efed3724f7",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- W końcu mam z córką zdjęcie bez głupich min. Wyszłyśmy na krótki spacer po pracy. Skończyło się na zbieraniu patyków... Dzieci już śpią to dopiero wrzucam.\n- Po dzisiejszej wizycie komornika usiadłam i się popłakałam. Na koncie grosze. Kolejne opłaty. Nwm już z czego to wszystko zapłacić... Liczę każdą złotówkę i ciągle brakuje. No cóż... idziemy dalej.\n- Dzieci już śpią. Usiadłam w kuchni i nawet nie mam siły ogarnąć kubków. Nie daję już rady. Wszystko naraz i ciągle ktoś czegoś potrzebuje. Nwm ile jeszcze tak pociągnę... No cóż... idziemy dalej.\n- Wieczorem sprawdziłam ratę kredytu. Znowu trzeba przeliczyć wydatki. Mama dalej chora. Jutro po biurze podrzucę jej zakupy i leki z apteki. Dobrze że dzieci odbierze partner. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "24f09d0c4a266b7b67f68d2a781ff592377aa306",
+ "response": {
+  "id": "gen-1791461109-hz2zqK3R7DUbTmdcyYJI",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracowała, spędzała czas z dziećmi, po wizycie komornika liczyła wydatki i sprawdzała ratę kredytu, a także planowała zawieźć chorej mamie zakupy i leki, podczas gdy partner miał odebrać dzieci.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4b4W4SsEZYhH42R9NiVlaI93nGinkdP9bjk8nLCqWGbhPaIVrH9py9sT-7YzWoSNZ5gAHkArKf3N8f3lRRGM8SKwh3_tPAl-Ol-YoNo8iVXwTPgfOM9RhMqqL4ts0tL1nCkcNmpZ_rnSjNMEqzVDCU7x7GAo6r9zKkt7Pk7IJcJh25i-4-Dv6gta_XpK_n8vndMRe2nIqBmdH9g9oEyAHLf-M6yvnhIvtlUEsQS96299bgROBxKQNG4710L0F7P1CsXMZ2rCFQ9vQxA3lD6g-XI5Ok9FELH95qj5qDMIY-VkcqJvtCcI1JC0fdE4ZpvHlEa5uP4P7A3cULbMH7ShLnlYdp_R5OWahaoxHA31QmLZMQ3AyMbq9jnXNiIPF-Kj9tPyOn8EELsQ583xdDXhtRbySP-Am0j77tMIA2y_VCg3xLSG2VnXxWjmUmGbUiRfUufnX7amEFXjrqrFefg0WJECINNvP0EFERTU4PKR8rHw4mgjGV-ROQ3UfCBrukf1snnyt10OcNMywc2moRJMKkL5X4LXxUi-gSK-e8ZMIDZDBpHNsPwHQxyar23ajxALvwSTcpweG8fphVbR1uotdpJuB-39bwitRBLhkmeJXkCyf-oxX5dBhnC9fXO08qEAQjzlbrmQ5p1n_W7-nepyB2vPVT0gx-pmbrldFuTWjwXQjZRu0KzzhYJIMfKQrYMshgIqQ7_q_GNp78-X9WdLRpBU150alYZjTvQJhsl_1UMU1bjAhzPseGlxECthXkDu1Oks1aAiGdaMK0L_pam3X_z5XhZU4uAkvJba5jikBxSQsg6N-QLq_B-S2nKC0wlOIORBVgqT2TReofh77tqM8ERSTasAW2bRrAjQuSDCV9iqLV4aYwRYmkOPYg-_wS-j1AObXloI74Pbol9BNnsiP71AbfME9C6KxXELhFeQGkHqvQOWQhzhtlnD9Rk3uq12pVWrsON1l19iZcLD7P-dFgQfDr63ONHoAGSB3a8b12NGYJm-OZNOtmDrop6LFF-vJo9wJGQh1qhtS83rlhRsoe9jYy7ZFT1BkfSb39r_IMVR0NmKngb7C8r-YxpGnN6eit1XI5TgjZhKyeMus48-7rMCtbLsIxgEnFcJ2TqduW86yZ2IXEmyx4okpMMVxRqqRaaCJb2Wr7t4etaaCi-wLVBAnPu3mgBKY83BRugJhq5gI94qCmwV4sXJwZqOXqgQH0yZwvrm_gmfTeeb-FRJX8gXBbXuFBnpOL2_eIR5e9ZtP9C4QJ8YfRduSny0UmnR5kC8HwfwqXlw5JEtCW40jQmOqrQ9AzmKCy0wboeVA9qsMfk_JPBxlyZ2X6VM1ncEBIUxka4WVYDAfhweWIuJT83SJtOxaly8o8XO6qtzLdtN00f4friJ-WjbYW36VxhcLwhMTpL7QjGhhALalPIyYZlCr9kXhtS65QeoRuI6nkYBmZhkmh-1ngBtjZVJRPvXWQCZVpaxoNbAHFI3km8p-g00Q==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_077b106cc2462e22016ac786f722a087d1b8d47763f600851c",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461109,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 96,
+   "prompt_tokens": 344,
+   "total_tokens": 440,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 27,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00824,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00824,
+    "upstream_inference_prompt_cost": 0.00344,
+    "upstream_inference_completions_cost": 0.0048
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 27
+ }
+}

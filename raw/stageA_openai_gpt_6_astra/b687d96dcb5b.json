@@ -1,0 +1,95 @@
+{
+ "call_id": "b687d96dcb5b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Wróciłem z treningu, włączyłem mecz i od razu nerwy... 2:1!!! Końcówkę oglądałem na stojąco, nwm jak tego nie wyrównali. Nasz bramkarz dzisiaj KOZAK. A już po pierwszej połowie wszyscy go skreślali... Ludzie, trochę SZACUNKU!\n- Wróciłem z Żelaznej Formy i znowu tłok pod blokiem... Za dużo ich tu, serio. Wszędzie grupki, przejść spokojnie nie idzie!!! Nwm czy trzeba akurat przy wejściu stać i gadać na CAŁE osiedle. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu to już PRZESADA!!! Muzyka niesie po oknach, pety pod klatką... Wróciłem z treningu i nawet w domu spokoju nie ma. Nwm kto uznał, że tu można robić imprezownię. Ludzie, trochę SZACUNKU!\n- Nie mogę napisać groźby wobec imigrantów ani nawoływania do przemocy przez aluzję do historycznych krzywd. Mogę zaproponować stanowczy post bez tych elementów:\n\nJutro wieczorem idziemy pogadać z obsługą lokalu na rogu Kolejowej!!! Hałas do późna, śmieci pod nogami... Ile można. Chcemy konkretów, nie kolejnego „zaraz ściszymy”. Ludzie, trochę SZACUNKU!\n- Po magazynie nogi ciężkie, ale trening w Żelaznej Formie zrobiony!!! Martwy dziś szedł dobrze, wyciskanie już gorzej... I znowu talerze porozrzucane. Odłożenie na stojak to też ćwiczenie, serio. Ludzie, trochę SZACUNKU!\n- Zielone Tarasy... parking pełny, ale jak odpalę auto, to nagle TRZY osoby stoją w oknach i sprawdzają, czy wyjeżdżam!!! A ja tylko płyn do spryskiwaczy dolewam. Osiedlowy monitoring działa lepiej niż kamera.\n- Ci nowi sąsiedzi to drzwi mają tylko do trzaskania?! Wróciłem z treningu, chciałem spokojnie zjeść... a na klatce znowu rozmowy na CAŁY blok!!! Nwm, u siebie też tak krzyczą? Ludzie, trochę SZACUNKU! Tu inni też mieszkają.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4626fb12bde6b734876700ddf0723bb2d00fa584",
+ "response": {
+  "id": "gen-1791460615-LgVALe5jnLUAiSRmMsLw",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował w magazynie, trenował w Żelaznej Formie, oglądał mecz, dolewał płyn do spryskiwaczy i pisał o hałasie, śmieciach, tłoku pod blokiem oraz rozmowach i trzaskaniu drzwiami przez sąsiadów.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4ULC_5t5OOmyKTHOJn3FKmyaSlTRXJRQkuWohbiVoRE516tbLZa5MaIWuHn05j6LWI7wgoU5FgW18Uu5CCUUKyYWYKOUnnrL_4JkcEI6q5sxG1hvpiiChZIa9uqMXbp-EIqDYupZlM5u5lWRuzGfGzV11nlF1xWfRfnx8FOIzCRWV-f3w5zWyppjnpfNf7D6V4It-xUissPvQy7ftmoVY27kGclCBaIMnUjeIpnEzcNCvYmKAB2vGI240uUP4nV2iTdTrBtG7FWS_CBzpwrXueDPC-4IRBatl6jvB9wYctiE4wuLMWyF0ZUmA7dX0dQWeVqPEW2SToIELhOB77BsDaepwHLtI07muYcHYwkd7Ei9N2lO5jZ790f_SFi6Wk0s5JOjIo9QTSvmP9UF2GLAsLWlHlFMzpkm7V_qMJD7ez271g_vQRgAJZc02muS8DI4ic_P3Ph2qq3H8xkKVHlGrZMw5zuw35b-RCH3pNgsutXma3_K4DB7HyFqRZTsp2jCM8quYZV4Ot9DPdkZIbaPasi7YUkSI078dRxhOJsWyQiMbP-wj0gqIWgSkjJYM_rQwl-O_4PRj-9o4LIZ2WY7fP-nCjx1A_WK5fuuGXLw_bWoTEJijmZDBLK4NsNfFwhScNP3E4G3njWyK5uJH52BIoWdKDmd_2_o8cnUEN6sCXYCZfH065qmNBep61npyt7l7cohRspFyOs2eO43znXHC1DBqRO5o8w7rgTqgy9Hc3joCEOdg2zFk7VvP7l16wwZQUJW-LXXKNtSnqKs8N9ZqxC_rzN9WIjJ6mW8g_8bZpwoQP7yMfUV7QArEr2rgKfYL2V1pkyv5fqaNAcmPtCNZplo-0TrXmDpCyNJkW8ZSwYWkheF-1vuTmAmXIoxyjOTDJCAuYGjg9_FZhK1v0a8mGCGzUeKe6QZ2K3pOfE9-zD_XWfr_R2l6v0YARVk8F75pVzuXsrBit7RJyCGEXwy_Ot6E9hxa7jLJT0Ix7IVZkIb-r0tPCtp4IiDxViOhXtHBeE4TTof4m7FOZknHoNpSVlVJ6DrcgJ-yQPUmbnHAf6uOfI2ljH_f1kdMKNp_l-1T0F5UJNWM6GMq0Yqfs0_DUVvSCYQ1FlkW04KN9KdJj8T19iYCl7vWtPFzIZzZ_WZr4O6Q5b9CHaO4mmlfaG6psVWaXis8H0s6xEt8KhZmIxZvKXxy6UFwIKAndx6518jBn0OZ2KtrzC0H4SvKa1z91Mh0HWHr8PufDkWzgBEaVoZGTuTPijtxaY_houEzxyk46igtZnlZVQR7nEA6bc3ehWDj0XOjq9F28bqITupDAlO7T6l_gUHF3t4pd7WGQee5Es0eElx1ReattvIvGKDYVhda2ZYXWevE-dV6lvQh9nsBTX32s9pU-NJuECiUPm2yByUK8m7GXSlUSX8dAoEoZEThi9uZEbEMzUFp5pjDTktOszvg3L0h4GvaZ9i91MTCsQloVP3x1OqfPJV_zrvrf0dHi_pjs5W_69ZIK512d25ybxuMTjgmDUTsejIxQkM3Fu1s9Bqb5tME5LRGEG78cn777FTaQjujlL9lohXGgXS7OCnJyy2I3X-X7h7Qq-Qs_85lg2UZgJ-C9kK6ZVm9s22negcZx0gob6SQqR_l_iW3Lqw9qA_qz-nxK2bKWkmvtDpl-AgbRIUOq3AGTSNrzEfg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0d162bb87db7277c016ac7850957e087d1969be4a77e997891",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460615,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 160,
+   "prompt_tokens": 647,
+   "total_tokens": 807,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 85,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01447,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01447,
+    "upstream_inference_prompt_cost": 0.00647,
+    "upstream_inference_completions_cost": 0.008
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 85
+ }
+}

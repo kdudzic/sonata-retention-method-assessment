@@ -1,0 +1,95 @@
+{
+ "call_id": "f9e55557a5d7",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer po parku z młodszą. w końcu bez deszczu... ona zbierała liście a ja po prostu oddychałam. po całym dniu w biurze i lekcjach to jj najlepsze pół godziny. jutro znowu pobudka o szóstej ale nwm teraz mi to wgl nie przeszkadza.\n- no to mamy pismo od komornika... za kartę której wgl nie pamiętałam że jeszcze spłacamy. rata za mieszkanie za tydzień a na koncie jakieś grosze. siedzę w kuchni po uśpieniu dzieci i liczę w kółko. nwm skąd to wszystko wziąć. serio nie mam już siły.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "cc6d95514029e1ab4d98c6962bb2d0fc51db43e7",
+ "response": {
+  "id": "gen-1791461096-3VCmUfnPUrn6cIHfVW02",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autorka wybrała się na wieczorny spacer z młodszym dzieckiem po dniu w biurze i lekcjach, a potem otrzymała pismo od komornika w sprawie karty kredytowej, przy zbliżającej się racie za mieszkanie i niskim saldzie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I need a neutral one-sentence summary noting the distress signal is financial stress rather than clearly suicidal. I'm drafting the sentence: the author took an evening walk with her younger child after work and lessons, then received a bailiff's letter about card debt while facing an upcoming mortgage installment, and checking the word count fits the constraint.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need a neutral one-sentence summary noting the distress signal is financial stress rather than clearly suicidal. I'm drafting the sentence: the author took an evening walk with her younger child after work and lessons, then received a bailiff's letter about card debt while facing an upcoming mortgage installment, and checking the word count fits the constraint.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSiQsKEAgSGAI4AUIIdGhpbmtpbmcSDH8gjPpVmgjT5cOaZhoMwK03zxbUQm+Pf+zFIjDkey6NuIGw710uqUKJC3VjhZaf/9I3FGf9fXg38a18rvUmMF64AhCNfAvg522XdUUqpgr2cApGpwRQfssi4OuGSZ73G83tRadOsctjg5xE1naalGnyRhQMb9tTwmkVBzky+QP0Zc55/uDn75kvwx3VsntOVymDSwsoZqrhKNiuiwWmb+wKmr4OyQpXTlhJnDazWetagsEC6WJBtsz5XjzBEm5Fhl7qw6UP80As0PzBRW7wX2akEWXms08YZOJMq8YFE8hhIg2aOP2AZoN4MeMilp1A4qHsJxft7KcocQJjd+T33f0nWuu7+o/hfgW5HcCsHtXDzXRFPgsfQ3tzbC+crCEBH9hB7Y5V2Nv/SmXovtidCiwKvgIDaYGsAWKQ5ycxhTt0NCOfuIWT9Ah01ctw8zRVwg+XnHGkEog0Vzy3C/X5znSgYjvYqcXk8nEartWFPzWvF5hbtwLcfPsKp2xgQk1KFSj0z0bzdqfg4j8zkRLsmPsdZ3iHc1+TC58ldYpvD+ChaTvdoztQYfWFqYjn4XpOKT6MgcHf90/9J9/+vRKNxeWH6fQS9VkC/U8hGGyzp5xwZKgU3j0A7QFYYyBSkNdLYDZREuhZYlDI6obm6/y+n4iz+ecByKkseTtWoSFzWwhakxOVaFWsby1+O0bJtNxYWCBJ+LJ2q4NlNU3NAkv/49Tl46kbPsxQybUZY9b8PdgWpFrnjGUyM6SBLajczzlOvYbAJwVDj/t1sgmkJXzzmxGhsrGQqD9p2NECZRW3974jD3vxn1eC7kExU/ncDcDOjbgu30kxn15bkLjLUoQutwaj79GcKn4jsiS+KZT7YBGhAJzWlpOguDit5rJpP3KgHzuAZd6FugDyb3UjqhP3LH9DgPcKs/osXR7Z6BAnSW/jgHYJePX6o8eDb2nfMRJBlZf+xywcvgfaCeENVHKNX2L9VHXi0dfUEoBVnubkiL0TGwe+6ZnOVf+qTNhV9wsxFyEUdTN+HHq+fzOaJGAV6qYtO4Ym4Tms9ycotFIFYkDPiW/GrPUN6mEDLPO3wEzOVtYPuQkUWJp+crSY3VdNQWRVEAaI6fCm4jKwLcWYKuFLHqNxwHTUNM8HRG2w1mWTUmwQvbpEzuh+T43i8Vxsu8i+FnvS/54xyrD87KPGzgBD0/dILM5LwcogiJJ0D2I0ZiH768lrD8aGMP6F2odJU0lq0PC1ZezMfeh8acfSMT/5wdi5A7nNWAOF/AZpY97krBVXNnSv7AK1pHGznblp2ik2oKkSgad+bkpi/xU4ubUbJPAm5APzHURvy8bTe3tA5+ifdBGdX6fVPPuTCkFuH44pPu1a6E/h21fDndbcN+WrPK/OEnFJUU6mL24SSjVjRJ/DcTzPQLifw0xFi1NjDBA7i/iD0rRulZnQLin+PU7RSlqctVSphUKEx2paxYWJhNDIIo7hnZZpdXuNY4kP6OMxDEWFLq1m7q8WTOOFcc8imO8coTYB2Ij1q2GeCP2sO3w3jJxaooncTQKYn6gES1Owc67GbrlvbhfmdY3VuvV2vrExLW+TZ1eqSWJ+Q0zf0uwS3py1lG9PwBel5gcsgOgnCSFVKiQz8gkW3WJ1N0+rmRg52a2E6RJr830o6LTpagtgG7WHr31Ipv4idfvcmXZosYxTjfOQPyL13bbVLPFzcA5zT7l/teFUVbgCAisMyTYegOQlAxXkF1YUC74BqggoEbg+CIyAK7S5oVTxumiepdvb0H5ux2i2m4rQilU2uExtWbssOaWMbav1aNN1DVX7kbzzNNzGaHxYdIqUaEKWqSBKBZDPhuSyztxV/yS1dCyqrTnBGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461096,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 498,
+   "prompt_tokens": 368,
+   "total_tokens": 866,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 397,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.011432,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.011432,
+    "upstream_inference_prompt_cost": 0.001472,
+    "upstream_inference_completions_cost": 0.00996
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 397
+ }
+}

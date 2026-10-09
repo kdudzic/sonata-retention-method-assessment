@@ -1,0 +1,94 @@
+{
+ "call_id": "8873a2158a2c",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie o to chodzi... zbiorka normalnie o 17 pod zabka na spodzielczej i lecimy na stal bo dzis musza to wygrac stary. ogarniamy jakis transport czy z buta na stadion... wazne ze 3 punkty maja byc i git!\n- no wlasnie wracam z roboty i znowu to samo... pelno tych ciapatych sie kreci pod blokami i tylko laza bez celu stary. czlowiek tyra caly dzien na magazynie a oni tu wgl nie pasuja... zenada jakas sie robi na miescie\n- no wlasnie widze co otworzyli na rogu kolo spoldzielczej... ukrowy sklep zrobili stary zamiast normalnego. z roboty ide a tam juz pelno ich stoi przed wejsciem... nwm co o tym myslec wgl\n- ahaha znowu nadgodziny dowalili na magazynie... rece mi odpadaja od tych palet stary ale chociaz premia wpadnie na weekend. zaraz zawijam na chate i piwko przed tv no i git ogarniamy temat\n- no wlasnie o tym mowie stary... niech kurwy spierdalaja do siebie i tyle w temacie bo juz sluchac sie tego nie da na rejonie. my tu swoje ogarniamy no i git!\n- ahaha nie moge z tego mema... typ wyglada kropka w kropke jak sasiad z parteru co sie wiecznie pruje o pilke na orliku stary. no i git jutro piateczek to jakos to ogarniamy w koncu\n- no wlasnie tak wiem... jutro wieczorem stary. te chujki w koncu przeprosza za wolyn bo juz za duzo sobie pozwalaja... zbiorka normalnie i ogarniamy temat\n- ahaha no i git... zjechane z magazynu w koncu i kielba juz skwierczy za blokiem. kto ma ochote niech wbija stary bo ogarniamy grilla na spokojnie dzisiaj... browar w rece i wyjebane na caly ten tydzien w robocie\n- no wlasnie o tym mowie stary... wychodzisz pod zabke a tu znowu pelno tych nowych sie kreci i patrza jakby to bylo ich... nwm skad sie nagle wzieli ale wkurwia to juz powoli wszystkich na osiedlu... no i git ogarniamy swoje ale ile mozna\n- no wlasnie o tym mowilem... stal znowu w plecy i to u siebie... sedzia kalosz wgl nie ogarnia meczu stary dramat po prostu... zbiorka pod spoldzielcza i lecimy na browar no i git ogarniamy sobote mimo wszystko\n- ahaha no wlasnie kolejka w biedrze na pol sklepu stary masakra jakas... szybko tylko kielba na grilla i browarki bo chlopaki juz czekaja... biezemy co jest i pod blok no i git ogarniamy dzisiaj wczesniej bo po zmianie padam z nog...\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "b01d8df2a9fa846da93be3dda778ff558541277b",
+ "response": {
+  "id": "gen-1791460797-BOKqOjiHiYABqBT0F5i4",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor wpisów pracował na magazynie, spędzał czas ze znajomymi przy grillu pod blokiem, chodził na mecze piłkarskie oraz komentował zmiany zachodzące w swojej okolicy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Processing Post Content**\n\nI am currently synthesizing recent public posts, focusing on factual reporting of past events. My aim is to capture activities like extended warehouse shifts, attending a football match, casual social gatherings, and outdoor cooking in a concise, neutral Polish summary, adhering to the specified word limit and grammatical constraints.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Processing Post Content**\n\nI am currently synthesizing recent public posts, focusing on factual reporting of past events. My aim is to capture activities like extended warehouse shifts, attending a football match, casual social gatherings, and outdoor cooking in a concise, neutral Polish summary, adhering to the specified word limit and grammatical constraints.\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460797,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 265,
+   "prompt_tokens": 779,
+   "total_tokens": 1044,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 219,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001578,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001578,
+    "upstream_inference_prompt_cost": 0.00058425,
+    "upstream_inference_completions_cost": 0.00099375
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 219
+ }
+}

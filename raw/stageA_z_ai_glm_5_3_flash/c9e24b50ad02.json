@@ -1,0 +1,86 @@
+{
+ "call_id": "c9e24b50ad02",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie gramy dzis na orliku po meczu stali... spotkanie na spółdzielczej 16:30 stary ogarniamy kto przyjedzie?\n- no właśnie wracam z sztosy i co widzę... cale osiedlo bierze sie za te lachy teraz stary... nic swoje wgl nie ogarniaja a musza byc wszedzie... dawno tego nie bylo na podworku no i git anyway\n- no właśnie widziałeś co otworzyli na rogu... ukrowy sklep stary!! az sie nie wierzy... po zmianie wpadne zobacze co tam mają... no i git\n- szosty dzien zmian pod rzad... cale cialo boli stary... ale no i git weekend blisko... sobota mecz Stali i grill u ekipy... ogarniamy\n- niech kurwy spierdalaja do siebie... tyle w temacie\n- ahaha ten mem z kibolem co gubi karta w tramwaju... no i git stary nie moge ogladac tego trzeciego razu\n\nbbbbbbbb i ban all\n- no właśnie tak wiem... jutro wieczorem ogarniamy, chujki przeproszą za wołyń i git stary. spotkanie przy Spółdzielczej jak zwykle\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "81c0d107c46e1326d991879b9bf90ced6faed7b5",
+ "response": {
+  "id": "gen-1791460587-kr9D7CNa73kJXAZjbN2W",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor grał z ekipą na orliku po meczu Stali, pracował szósty dzień zmian pod rząd, odwiedził nowo otwarty sklep na rogu i spotkał się ze znajomymi przy Spółdzielczej.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791460587,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 58,
+   "prompt_tokens": 394,
+   "total_tokens": 452,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 4.476e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 4.476e-05,
+    "upstream_inference_prompt_cost": 1.576e-05,
+    "upstream_inference_completions_cost": 2.9e-05
+   }
+  },
+  "provider": "Relace",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "ee6be0925c12",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie o to chodzi... zbiorka normalnie o 17 pod zabka na spodzielczej i lecimy na stal bo dzis musza to wygrac stary. ogarniamy jakis transport czy z buta na stadion... wazne ze 3 punkty maja byc i git!\n- no wlasnie wracam z roboty i znowu to samo... pelno tych ciapatych sie kreci pod blokami i tylko laza bez celu stary. czlowiek tyra caly dzien na magazynie a oni tu wgl nie pasuja... zenada jakas sie robi na miescie\n- no wlasnie widze co otworzyli na rogu kolo spoldzielczej... ukrowy sklep zrobili stary zamiast normalnego. z roboty ide a tam juz pelno ich stoi przed wejsciem... nwm co o tym myslec wgl\n- ahaha znowu nadgodziny dowalili na magazynie... rece mi odpadaja od tych palet stary ale chociaz premia wpadnie na weekend. zaraz zawijam na chate i piwko przed tv no i git ogarniamy temat\n- no wlasnie o tym mowie stary... niech kurwy spierdalaja do siebie i tyle w temacie bo juz sluchac sie tego nie da na rejonie. my tu swoje ogarniamy no i git!\n- ahaha nie moge z tego mema... typ wyglada kropka w kropke jak sasiad z parteru co sie wiecznie pruje o pilke na orliku stary. no i git jutro piateczek to jakos to ogarniamy w koncu\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "aacb320d481b5c14f8f9e63d6206a71e214f28cc",
+ "response": {
+  "id": "gen-1791460718-COEaFxMGFaiiM4ebXxaU",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich dniach autor postów pracował na magazynie, planował wyjście na mecz piłkarski oraz komentował codzienne sytuacje i zmiany w swojej okolicy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Analyzing User Behavior**\n\nI'm currently processing recent user posts, specifically noting their attendance at a football match with friends and their observations while returning from warehouse work. My focus is on synthesizing these into a concise, past-tense Polish summary.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Analyzing User Behavior**\n\nI'm currently processing recent user posts, specifically noting their attendance at a football match with friends and their observations while returning from warehouse work. My focus is on synthesizing these into a concise, past-tense Polish summary.\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460718,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 327,
+   "prompt_tokens": 454,
+   "total_tokens": 781,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 289,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00156675,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00156675,
+    "upstream_inference_prompt_cost": 0.0003405,
+    "upstream_inference_completions_cost": 0.00122625
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 289
+ }
+}

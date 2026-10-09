@@ -1,0 +1,87 @@
+{
+ "call_id": "183f5f98b921",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 2094494310
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studiuje geodezję w Olsztynie i dorabia przy inwentaryzacjach, więc pisze głównie późnym wieczorem.\n- zainteresowania: mapy miejskie, tanie obiady, spacery nad Łyną\n- lokalny punkt odniesienia: kiosk przy ulicy Pieniężnego\n- aktualna sytuacja życiowa: Zbiera materiały do pracy semestralnej i testuje przepisy na szybkie kolacje.\n- sposób pisania: zdania: long run-on; interpunkcja: dużo przecinków i nawiasów; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: wtrąca „tak swoją drogą”\n\nTopic for this post: komunikacja i dojazdy\nConcrete angle: W niedzielę wcześnie rano podczas przesiadki do regionalnego pociągu zauważyła przez okno poczekalni stary plan miasta. | mood: curious | opener: plain fact | verbal tic in this post: no\nRegister: enthusiastic\nTarget length: about 13 words\nTime of day: early morning, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - czemu autobus musiał odjechać akurat jak doszłam?! W czwartek rano wypozyczylam hulajnoge na minuty 🛴🙄\n  - i jeszcze zdążyłam kupić wodę po drodze, bo tramwaj rano się spóźnił, we wtorek taki mały bonus przed zajęciami 😄🚋\n  - odblokowalam hulajnoge na minuty, a po chwili patrze... bateria prawie pusta 🙃 no to bd spacer jednak\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "4c24cb834d19479a725e743e8cd662e5fc9ac2a7",
+ "response": {
+  "id": "gen-1791464073-lwLUOYmtRsjq5pSskrzw",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Przesiadałam się rano do regionalnego, a przez okno poczekalni wypatrzyłam stary plan Olsztyna (muszę go obejrzeć bliżej) 🗺️🚆",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464073,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 53,
+   "prompt_tokens": 810,
+   "total_tokens": 863,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00215,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00215,
+    "upstream_inference_prompt_cost": 0.00162,
+    "upstream_inference_completions_cost": 0.00053
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

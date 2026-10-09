@@ -1,0 +1,87 @@
+{
+ "call_id": "543338936d3e",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1393843483
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Jest na emeryturze w Jeleniej Górze; rano chodzi po zakupy, a pisze po obiedzie.\n- zainteresowania: stare pocztówki, zegar na wieży, domowe naleśniki\n- lokalny punkt odniesienia: ławka przy ulicy Wolności w Jeleniej Górze\n- aktualna sytuacja życiowa: Porządkuje pudełka ze starymi zdjęciami i podpisuje miejsca na odwrocie.\n- sposób pisania: zdania: long run-on; interpunkcja: liczne przecinki i średniki; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: dodaje „tak mi się przypomniało”\n\nTopic for this post: sport\nConcrete angle: We wtorek przed obiadem wróciłem z zajęć na basenie i zawiesiłem ręcznik do wyschnięcia, zanim usiadłem do podpisywania zdjęć. | mood: content | opener: list of two things | verbal tic in this post: no\nRegister: matter-of-fact\nTarget length: about 21 words\nTime of day: lunch break, Tuesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Jest! W piątek na przerwie obiadowej poszedłem na siłownię... martwy ciąg 70 kg, o 2 więcej niż dotąd. Tak wyszło... cieszę się.\n  - na basen w środową przerwę obiadową zdążyłem... klapki zostały w domu, wgl nie ogarnąłem.\n  - Ależ! Przy wtorkowym obiedzie obejrzałem powtórkę ligowego meczu, trochę się dłużyło; dopiero w ostatnich minutach zobaczyłem, że było 2:2.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "0b9b84749b9ba2390cf8069fb330313edf27852d",
+ "response": {
+  "id": "gen-1791464694-5jkD8RJHJskhgVneTS83",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Basen i mokry ręcznik, tyle z wtorkowego poranka; wróciłem przed obiadem, powiesiłem go do wyschnięcia, teraz nogi trochę odpoczywają.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464694,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 52,
+   "prompt_tokens": 819,
+   "total_tokens": 871,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002158,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002158,
+    "upstream_inference_prompt_cost": 0.001638,
+    "upstream_inference_completions_cost": 0.00052
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

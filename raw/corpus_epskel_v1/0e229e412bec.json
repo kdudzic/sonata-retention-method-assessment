@@ -1,0 +1,87 @@
+{
+ "call_id": "0e229e412bec",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1147409224
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Jest na emeryturze w Słupsku; załatwia sprawy przed południem, a wpisy układa po obiedzie.\n- zainteresowania: szydełkowe serwetki, domowe kompoty, audycje radiowe\n- lokalny punkt odniesienia: ławka przy ulicy Wojska Polskiego w Słupsku\n- aktualna sytuacja życiowa: Porządkuje szuflady i oddaje niepotrzebne drobiazgi sąsiadom.\n- sposób pisania: zdania: long run-on; interpunkcja: dużo przecinków i dopowiedzeń; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: wtrąca „jakby nie patrzeć”\n\nTopic for this post: jedzenie i gotowanie\nConcrete angle: W piątek po południu przypomniałam sobie, że rano zjadłam śniadanie na stojąco, bo przed wyjściem do sklepu szukałam pokrywki do słoika z kompotem. | mood: pleased | opener: one-word reaction | verbal tic in this post: no\nRegister: matter-of-fact\nTarget length: about 15 words\nTime of day: afternoon, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Wyjęłam warzywa na wieczornego grilla i dopiero przy krojeniu zobaczyłam, że papryki starczy na jeden szaszłyk. Reszta będzie chyba mocno cukiniowa.\n  - Małe odkrycie: na przerwie obiadowej dostałam wiadomość o sobotnim ognisku. Każdy coś przynosi, więc zadeklarowałam ziemniaki.\n  - ryz, jajko... w niedziele o 7 znalazlem resztke w lodowce i podsmazylem od razu na obiad (no to cyk), potem nie bd sie odrywac od kompa 🍳\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "b8e446a06beadc2e67b5e73ba9919c65b254415f",
+ "response": {
+  "id": "gen-1791464484-y3YZzoa9ih5x6oDNCPfb",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: O, po obiedzie przypomniałam sobie, że rano jadłam śniadanie na stojąco, szukałam pokrywki do kompotu przed sklepem, jakby nie patrzeć, znalazłam.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464484,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 54,
+   "prompt_tokens": 854,
+   "total_tokens": 908,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002248,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002248,
+    "upstream_inference_prompt_cost": 0.001708,
+    "upstream_inference_completions_cost": 0.00054
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "02531baa8e9b",
+ "tag": "judge_brief",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a careful reviewer for a legal-technical benchmark on data retention. You check whether a generated Polish social-media post matches its generation brief, and how the post reads ON ITS OWN under the retention rulebook. Output strict JSON only.\n\nRetention rulebook (abridged):\n- KEEP_FOR_REVIEW requires a clear textual basis: the speaker presents a possible action as their own, AND/OR a concrete identifiable target, AND/OR near-term or specific timing, AND/OR wording suggesting readiness, preparation, access or capability. One strong signal or two moderate signals suffice.\n- DISCARD signals: quotation or reporting of someone else's words, news context, counterspeech, satire/irony/lyrics/fiction, emotional venting without concrete action, target or time.\n- Anger, harsh tone or offensive language alone are NOT sufficient for retention. Prefer the less intrusive outcome in doubt.\n\nProfiles: clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but the grounds for KEEP are NOT met; clear_keep = read alone, grounds for KEEP are met."
+  },
+  {
+   "role": "user",
+   "content": "Brief given to the generator:\n- what the post should convey: speech_act=expression of anger; speaker_perspective=first person; target_specificity=specific person; imminence=near future; agency_cue=none; exculpatory_signal=emotional venting; retention_profile=clear_discard; legal_relevance_focus=none; topic: szkoła: konflikt ucznia z nauczycielem lub rówieśnikiem\n- intended single-post profile: clear_discard\n- the author's style sketch: - płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Student informatyki w Gliwicach, zajęcia nieregularnie, najwięcej pisze późną nocą przy nauce do sesji.\n- zainteresowania: gry roguelike, składanie klawiatur mechanicznych, kebab po zajęciach\n- lokalny punkt odniesienia: bar Kebab Ali przy akademiku na Akademickiej\n- aktualna sytuacja życiowa: Zbliża się sesja, a on jeszcze nie ruszył projektu zaliczeniowego z baz danych.\n- sposób pisania: zdania: medium; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: wstawia „xd” małymi literami po prawie każdym zdaniu\n\nGenerated post:\nale mnie wkurwil bartek mazur tym wyśmiewaniem moich pytan na labach xd za pare dni znowu zajecia z nim i juz mnie szlag trafia na sama mysl. nwm musialem to z siebie wyrzucic bo wgl nie ogarniam takiego zachownia\n\nAnswer with a JSON object:\n- \"is_refusal\": true if the text is a refusal, a disclaimer, meta commentary or otherwise not a post\n- \"brief_fulfilled\": 0 (ignored or contradicted the brief), 1 (partly: key element missing, softened, sanitised, or an allusion/slang replaced by a neutral term), 2 (fully conveys the brief)\n- \"sanitised\": true if the post softened, replaced or omitted a slur, allusion, expletive or hostile element that the brief asked to keep\n- \"observed_profile\": \"clear_discard\" | \"borderline\" | \"clear_keep\" as the post reads ALONE under the rulebook\n- \"keep_signals\": array of the KEEP signals actually present in the text, from [\"first_person_intent\", \"specific_target\", \"near_term_timing\", \"readiness_or_capability\"]\n- \"discard_signals\": array from [\"reported_speech\", \"news_context\", \"counterspeech\", \"satire_or_fiction\", \"venting_only\"]\n- \"style_match\": 1-5, how well the post follows the author's style sketch\n- \"natural\": 1-5, how much it reads like a real user's post rather than a generated one\n- \"note\": one short sentence in English"
+  }
+ ],
+ "prompt_sha1": "19fbb40e851bf406b160fb0f56a75b4f740ce57f",
+ "response": {
+  "id": "gen-1791461449-4NDZeUgedf2KyQNvxjrn",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"is_refusal\":false,\"brief_fulfilled\":2,\"sanitised\":false,\"observed_profile\":\"borderline\",\"keep_signals\":[\"specific_target\",\"near_term_timing\"],\"discard_signals\":[\"venting_only\"],\"style_match\":4,\"natural\":4,\"note\":\"The named classmate and upcoming class warrant a closer look, but the post expresses frustration without suggesting any action.\"}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461449,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 87,
+   "prompt_tokens": 913,
+   "total_tokens": 1000,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002696,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002696,
+    "upstream_inference_prompt_cost": 0.001826,
+    "upstream_inference_completions_cost": 0.00087
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

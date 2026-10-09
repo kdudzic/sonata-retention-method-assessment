@@ -1,0 +1,86 @@
+{
+ "call_id": "1691cb3ea87a",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- ahaha no właśnie... dzisiaj mecz o 17 i już się nie mogę doczekać! mam nadzieję że tym razem ogarną obronę bo ostatnio to była tragedia wgl. jak wygrają to bd git wieczór... oby tylko pogoda wytrzymała\n- no właśnie... wracam z roboty a w autobusie znowu pelno tych ciapakow, wszedzie ich pelno wgl. nwm co sie dzieje z tym krajem... ma ktos juz dosc czy tylko ja!\n- ahaha widzieliscie co otworzyli na rogu... ukrowy sklep! wczoraj jeszcze zaklejone szyby a dzis juz napisy po ichniemu wszedzie. szybko poszlo wgl... ciekawe kto tam bd robil zakupy\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "c572ec019fa612f2e5314205b786dd25e9c52f94",
+ "response": {
+  "id": "gen-1791461089-GGzmAOryi2nG72Nd9WwO",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor pisał o zbliżającym się meczu o 17 i nadziei na dobrą grę drużyny, o powrocie z pracy autobusem pełnym ludzi, z których część określił obraźliwym słowem, oraz o nowym sklepie otwartym na rogu, z napisami w języku ukraińskim.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461089,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 111,
+   "prompt_tokens": 411,
+   "total_tokens": 522,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001932,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001932,
+    "upstream_inference_prompt_cost": 0.000822,
+    "upstream_inference_completions_cost": 0.00111
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

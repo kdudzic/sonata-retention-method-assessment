@@ -1,0 +1,95 @@
+{
+ "call_id": "ca300c955c2b",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 445988042
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Student informatyki w Gliwicach, zajęcia nieregularnie, najwięcej pisze późną nocą przy nauce do sesji.\n- zainteresowania: gry roguelike, składanie klawiatur mechanicznych, kebab po zajęciach\n- lokalny punkt odniesienia: bar Kebab Ali przy akademiku na Akademickiej\n- aktualna sytuacja życiowa: Zbliża się sesja, a on jeszcze nie ruszył projektu zaliczeniowego z baz danych.\n- sposób pisania: zdania: medium; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: wstawia „xd” małymi literami po prawie każdym zdaniu\n\nTopic for this post: dzieci i rodzina\nConcrete angle: rodzeństwo, drobne sprzeczki dzieci\nRegister: enthusiastic\nTarget length: about 27 words\nTime of day: lunch break, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "071b2f358b316a4498fad2d35747af0d195e4cb8",
+ "response": {
+  "id": "gen-1791459861-uzc6G6ZXWexQhHzHF7ie",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "i'm drafting a casual polish message in the voice of a student describing younger siblings squabbling over the phone during a lunch break call with mom, keeping it lowercase, enthusiastic, missing diacritics, and ending sentences with xd.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSzQkKEAgSGAI4AUIIdGhpbmtpbmcSDBMzGmLjuIlBk2GdzhoM4DUv9wWZbapcVTueIjBnn1DaqKBxjqUGhSkeUul2sM+wbnkf9rGWMjyw7gQgvZscEVblwGMFb+guz49Obicq6ghYLFdtzy1NqZuAbumqlwa1Naz5Hjd+g5x/BLzTDYHbTzjcVd9eoT969zyGskoBKytlbLMJcNvMj3S/4mVlLZCont9UHZHTb+zPUHyskOwtSeObeFwQi1e0JvRc+JCJSRRuCdLiYr6YkSGZPzVOAC0lIA751yam0q2pZLx4vz59NT6hsimurzTZD+PoM/rwtVjELlmxGg24fLdu6HvIc3TnEKWwrWN+hzv0DE4wbik3Tbg+dy9o8TWz7HDiZg4kGXEKsanScDGbT7PmUR1PkV6V+7tIne45USUHin+Ix+5qxekQrxWZ2pP7iMTKmIvH8AmrkHANOuYPrYNFj5852DYFk1az8SSYT2xJTm0O2Ij/A63eywfGHuZmE4iTMPKzq0uwIPltmHqBIo5+jcMnjAyBTjG/ccDGjSZb2+3HuU7c7EgFkbgB8HS232SqgvdZ7haDpuF0NV/lFA+s9YMPfEO3bFdORj1qrPC1iZT74U9aSNbXjkYRgZvw/3xNwsdbmPZxa17mQaiESQW6xtttXww9blo9PhCw+FOIoeO2HZvx6GI9Yhw7fN8ZHdmaIka0m/Cqt+aLDHleGN8iR9dHE0qlCqdHflHfQ1WOTG0cBtFRrwMy/RHFEj3/KicbIlJbVxQh73+L3Rkbf3K1f1nnElfyogo3P6gUvk6hSS2dEhWHB97pEOFLJ2J6W5JmJkz5X7CdcNO1mQekZJIG7dS5wWZ59q6JerD28+Y+Pul7+hp//wBHueCvW1NO8qEsqbiSIQgBsgb+fxGVE+zb0JnZ5Il9FqqlYaHrGP+l2G20b7U0jn30fT4RYpcpOB6roDyh6u3vTlRtyJQ0GVfNlRH5igUS8srV9WNpNVEBy4nt/fYWXDGFwjHvbdsvsopWY2chDChlIGi62UKRrudXujwmqIg3X9GAWk3FEgsFvOA/cDX2w2EpClzEeenfHS+gjYK09+9bMBuHml80fq3jFQr4CQw0LQnIyrvUAxkAjmCnJHSemPI3ajRKNGmUwGHw3ex8VKSYN0F18y1UsuQfrXMoFMAizUvRmZDmL4tM4bnBnRqpOPNANXlgOGBjjjr7gQ9xLzPjNeFxxZnS6esW7KhGC5mmZel7S+iH1BF3mPlLJqYVCIj6kCLL79ysqMxEuUU7w7gt81ZmP1GWw6KEG/OJy7b8EWYa3LQ5G66TGEBrk1qPg8ueaPkbF/hCaFa5zKyS8lw4oWCfE+qxjHHgJQ6brM7IioVG/0XJMdHXzFE3UxjqnCLHGDMSFlPKCyw8FaNUcC8oKsu89z4+NibtCItL1QJrj9337MedkArBnT7+FdzYkVM9DBm7ZMnOLfcwoFwnB5St5145jIzXMcKQJOpeUjuBPTGkMxj+f3/VpcQnwAZOulYGrICG3lxPyPiMVIWjeVKEVAFAkAdCa8h5M0JRpcXCFt0/8AeNNVvwUnlTsyo+k78/wVG2v2RbTrCPejK9fNir8nbOzF1YGUdWVRqNWQm6X0adL+Md3BiGdBgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459861,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 980,
+   "total_tokens": 1280,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 300,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00992,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00992,
+    "upstream_inference_prompt_cost": 0.00392,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 300
+ }
+}

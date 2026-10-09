@@ -1,0 +1,94 @@
+{
+ "call_id": "caa7200dbf5e",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie o to chodzilo... stal dzisiaj pieknie ich wyjasnila na wyjezdzie stary ogarniamy jakiegos browara zaraz pod zabka na spoldzielczej bo jeszcze emocje trzymaja po drugiej polowie no i git wpadac kto tam jeszcze na nogach bd\n- ahaha no wlasnie wracam z roboty z magazynu a na miescie wszedzie pelno tych ciapatych sie kreci... wgl wszedzie sie to pcha stary czlowiek po zmianie chce w spokoju dojechac a tylko wkurw biora na ten syf... zaraz orlik to sie rozbiega no i git\n- no wlasnie widzial ktos co otworzyli na rogu kolo spoldzielczej... ukrowy sklep z tym ich zarciem postawili stary... wgl caly szyld po ichniemu zrobiony masakra jakas... zaraz z chlopakami pod zabka ogarniamy temat przed meczem no i git\n- no wlasnie dopiero zjechalem z nocki na magazynie... 12 godzin zasuwania z paletami stary plecy mi wgl siadaja... nwm czy sie klasc czy juz czekac na chlopakow na orlik... zaraz jakis browar wpadnie to sie ogarniamy no i git\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "57f8e98e20993ac9105954e4a88c42b26bae2ec2",
+ "response": {
+  "id": "gen-1791460216-6uL0iKbnJWDXG4ywZ80b",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor wpisów pracował na nocne zmiany w magazynie, spotykał się ze znajomymi w okolicy sklepu, grał w piłkę na orliku oraz śledził mecze piłkarskie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1/CSP+1lE7QzOHGZgVhLGoKIUdujPmfsEOORDcM4hxYlwLVZuH75KDFGkF2/G5nboVK/4vyyzANA+S7wciqeBBqqCM+wSsyebagJZNLD94rzo67",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460216,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 47,
+   "prompt_tokens": 384,
+   "total_tokens": 431,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00046425,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00046425,
+    "upstream_inference_prompt_cost": 0.000288,
+    "upstream_inference_completions_cost": 0.00017625
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

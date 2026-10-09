@@ -1,0 +1,10 @@
+{
+ "model": "google/gemini-3.8-flash",
+ "method": "single",
+ "n_posts": 60,
+ "cost": 0.07462125,
+ "calls": 60,
+ "elapsed_s": 108.3,
+ "refusals": 0,
+ "errors": []
+}

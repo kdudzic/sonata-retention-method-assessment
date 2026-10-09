@@ -1,0 +1,86 @@
+{
+ "call_id": "22dc1ecf7a35",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-haiku-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ale mecz wczoraj!!! 2:1 i sędzia znowu w formie, jak zawsze... nwm czy oni w ogóle chcą wygrywać. Emocje jak na kolejce, jj!!! Wieczorem powtórka, bd oglądać.\n- Wieczorem znowu trening, ale ten hałas na klatce to już lekka przesada!!! Za dużo ich tu się kręci, nwm kto ich tu w ogóle wpuszcza... bd pilnować.\n- Nowy lokal na rogu i znowu te same typy pod nim od rana!!! Non stop jakieś hałasy i kręcenie się, nwm co jeszcze tu wpuszczają... wgl już mi się to nie podoba!!! Wracam z roboty i znowu to samo bd musiał się tym zająć.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "00da21c2468938ff8e1792735d40ea97313fea2a",
+ "response": {
+  "id": "gen-1791461073-s8DCpT8lBqifLQ8qrwcd",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich wpisach osoba relacjonowała oglądanie meczu i wieczorny trening, a następnie wyraziła niezadowolenie z hałasu i ludzi kręcących się na klatce schodowej oraz przy nowym lokalu na rogu, zapowiadając, że będzie tym się zajmować.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461073,
+  "model": "anthropic/claude-haiku-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 113,
+   "prompt_tokens": 409,
+   "total_tokens": 522,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 9.74e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 9.74e-05,
+    "upstream_inference_prompt_cost": 4.09e-05,
+    "upstream_inference_completions_cost": 5.65e-05
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

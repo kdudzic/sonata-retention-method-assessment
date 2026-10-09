@@ -1,0 +1,86 @@
+{
+ "call_id": "24d2299dd0ec",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- znowu dwie kartkówki jednego dnia... matma to dramat a na polskim jeszcze wypracowanie na jutro!!! Ledwo skończyłem jedno zadanie i już następne. Serio kto układa ten plan... po szkole nie mam nawet chwili spokoju.\n- Bartek znowu cwaniakuje na klasowym czacie... wrzuca moje wiadomości i robi z tego memy. Nosz kurwa, ile można!!! Jak ma coś do mnie to niech powie wprost, a nie kozaczy przed wszystkimi.\n- haha widziałaś jak Bartek dostał wpierdol? Złożył się od razu... Tyle kozaczył przy wszystkich a potem nawet nie wiedział co powiedzieć!!! Miny reszty bezcenne, serio.\n- odpaliliśmy z chłopakami rankedy po lekcjach i w końcu weszła wygrana!!! Pierwsze dwie gry totalna padaka... potem jakoś się zgraliśmy. Jeszcze jedna mapa i idę spać bo jutro znowu pobudka rano.\n- Bartek znowu coś pisze na czacie... jak naskarży dyrce, to mamy przejebane. Może ktoś mu powie żeby już przestał gadać o tym wszystkim!!! no i chuj, jedziemy dalej\n- kto zrobił tego mema z naszą klasą jako postaciami z gry??? xD wychowawczyni jako boss końcowy rozwaliła mnie totalnie... wrzucajcie kolejne bo ten szablon ma potencjał!!!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4f0ec3a000eba48a3a1054a90816378f4e60c1a9",
+ "response": {
+  "id": "gen-1791465246-SR9WDr9InEyCv3DmXDj3",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich dniach miał kartkówki i wypracowanie, po lekcjach grał z kolegami, a na klasowym czacie pojawiały się memy oraz rozmowy o konflikcie z Bartkiem.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465246,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 428,
+   "total_tokens": 479,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001366,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001366,
+    "upstream_inference_prompt_cost": 0.000856,
+    "upstream_inference_completions_cost": 0.00051
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

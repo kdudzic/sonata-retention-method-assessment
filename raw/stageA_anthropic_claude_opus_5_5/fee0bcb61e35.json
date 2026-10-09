@@ -1,0 +1,95 @@
+{
+ "call_id": "fee0bcb61e35",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 70 minuty i co... dwie bramki w 10 minut, REMIS. Obrona stała jak słupy. Nerwy mi puściły przy drugim golu, pilot prawie poleciał w ścianę!!! Trener do zmiany, nwm na co oni czekają...\n- Znowu to samo... wieczorem pełno obcych pod blokiem. Siedzą, drą się, wszystko zostawiają po sobie. Za dużo ich tu się zrobiło, SERIO. Kiedyś było spokojnie!!! Nwm skąd oni się wgl biorą... Ludzie, trochę SZACUNKU!\n- No i super... otworzyli na rogu jakiś nowy lokal, kebab czy inna buda, nwm. Od tygodnia zbiegowisko do północy, muzyka, trąbienie. A ja o 5 wstaję do roboty!!! I WIDAĆ kto tam przesiaduje. Nikt nic z tym nie robi. Ludzie, trochę SZACUNKU!\n- Dość tego. Jutro wieczorem idziemy pod tą budę na rogu Polnej i Lipowej. Chłopaki z osiedla już wiedzą!!! Skoro nikt nic nie robi, to MY zrobimy porządek... Zobaczymy czy dalej będą tacy GŁOŚNI.\n- Martwy ciąg dzisiaj 180 na trzy!!! W końcu... pół roku się z tym męczyłem. Plecy trochę czuć, ale forma jest. Po zmianie od szóstej rano myślałem że nie dam rady, a tu proszę. Jutro tylko wyciskanie i luz. Nwm czy ktoś tu jeszcze w ogóle robi PRAWDZIWE ciężary...\n- Wrzucam mema co mi kumpel podesłał... sąsiad z wiertarką w niedzielę o 8:00 jako \"boss final level\" xD No ŻYCIOWE!!! U mnie dokładnie tak, tylko u nas to jeszcze młotek dochodzi. Ludzie, trochę SZACUNKU! Niedziela jest do spania. Kropka.\n- Nowi sąsiedzi pod 7... no ciekawe ile wytrzymają z tym swoim stylem bycia. Buty na klatce, rower pod skrzynkami, drzwi trzaskają o 23. I co, ja mam to zgłaszać?? Serio?? Kiedyś ludzie wiedzieli jak się mieszka w BLOKU. Teraz każdy jak u siebie na wsi. Nwm, może to ja jestem dziwny.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "d3ed55413b04510da2106d7142c4f63a550bec74",
+ "response": {
+  "id": "gen-1791461186-cRlHT1i79FJzPyp7ceLk",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor komentował remis swojej drużyny, skarżył się na hałas obcych pod blokiem, nowy lokal na rogu i sąsiadów, zapowiedział pójście z kolegami pod ten lokal, by „zrobić porządek”, oraz chwalił się wynikiem na siłowni.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I'm drafting a neutral, factual summary of the post, noting that the person discussed gathering with others at the venue without labeling the intent, keeping it to one short sentence in past tense.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm drafting a neutral, factual summary of the post, noting that the person discussed gathering with others at the venue without labeling the intent, keeping it to one short sentence in past tense.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSjxAKEAgSGAI4AUIIdGhpbmtpbmcSDLOpB4FJjzO+r4COehoM/PZW99J3B+W/EPf+IjDgUmPHp5zwMZkFaVUH+We1sd8RzrGtTnoSeNVxSNvRyvUOTmZ/U4QScC9puG2EEVoqrA+YQuelGoUnR5BZPusHiE3TcoY5GnlIl55WcdQWsDKDw5tzkpp1z/C0WJDtZkdgcipP5wlBIollBK4OOaqCK87pdC1VM0sF78rIbTXvIllEUf+JzQMQVlFuLuawcW2ohNMV+8ZcHmdsASRm/2nmkw+0gDragfghxMGe7h1wFJ4JYWvLuB6uwIA7igj3jq8uJVpEWtYu3v9ErD+EaQTt63WhojdN4DkrUbpcQlen7/Xzgz6i2JeakZef3UVuimmXtoAnOIqZwxpWiFDBoFarPA3KGVOO0JCRwZfoK8+B9uAQKLIqgQLZTOjsDT4ZQ0DSWK1Ecbl1tPWm2QP7F8TWnfqmp3UoyVzVJalfMeNZ3KE6ai5/cdpHstWqiUQUq3H0TnX4JRVA5xMGcdD3tPH6OHlTRXnrKzpHi42OEuQidndzHdYtS+rNCDUphymI0JaMc1D8RhpHhOvYnK9wqR7x6Fbs9luwAg0PJHMx3PZatyDK3nsQOxCp+JxjBLEcpTzSrvAtciZ2c8LO6WVB7/MOJTES3BZFk30EoIqZy5YhlZ8PDjkAKF815CRFaqWQyqF9mOSRJvo1s2kvRF/b+S52vtTrzAXkR33qTyyStfuecq+qCX9kKSRVyqnRTT0a1/iYf75uYKnszDAvVuz9CTe0owFKQoGurVeISKVvvZUkW04EoJE4391QI8zZUaGRcV7FmGG5PGuiTm43qr5Zi7sDLqqzN6zVR0EMHtptVQOgrLjRWUa/znYhKVy6be/jTNgZS+6KmE4c1JxnNjBErp9f0gjmel+uuHbS8F1sMxEFjsN5TtB9ZA7NTV5jqqbGwmxpzQoaYhWDtey3YN50J82kzXFrRO+CYwH0ncYwCEA5Ub8Qlo9KvWeznb0a1UYgEX31NiZ4X7pNmQ+QH8fU7hlIEVtD6/RgFhTAMBK6RWWpZ23ywfAE4jnrLFdwHbq0tKWdvL/fGvkEX8J7R2xF6aNNPKtF9h9S7MM7DPMwugW8XD+FL1t/ttXlRYC4TZTrLU33F+fJcrPk3WQxrQuLNOvmYn1DCqv+CMANZSoySbjaXMsYQGPaewaO5kSypnwGdovDPyBZeImNa9XkXHkN4wlnVng7a2QLC/F34PLz42Utuf3rCgyYDlXslKFkALvYoLoHMHacyVPc5oMvq+TWgesb5qtoUk3M5LpLtHL8aRHI1HQ3tcNUx7q3VhDn4q1j+5v6effsusj1/OFr6wWXIhleJroqJZGx2JgMn56CHCAU905zwLzgomF8034CgtnTEaXWyM4c1Y6GER1QP3FRiiW2UKjNtsKXXYQGphQExo77fNxNcVst+ACNYlnOUh9Wf8z8UMzQP/1LO9JUYG8/964SNcIo4p8DlEFNJbpR6qL8nxi73lAFBY36/i56c2evnFEKmnt8nLLcKQNypg/yFCUG4OWJZcrW8ZhyM2Nu3oJHmfKWbEbS/vSwD89Hg8kc5k7AAmcQlmOmScIVOmQtdjxrLmT9FfKKCQJo7w3li4MbdymGJSXkd5+8weNMdHG9ewHcgGB6PpusThrUtT73utEbTA2JvNUcKelK6zRP4qZ978aiK0lxLWWHu1pDuNmXF6BDCb+xuoFXObLNxJNM2xq/Z0P7gdtRQQNsu3DtFFNbVVjYRbq2b/XUir81qsJHSVbUhabjBpuw3ww3FVpIFljfALiCM4Wqeg97FIQP/H8k+VUbJDL23xbQ4Nmbu1+7k+lri1lQfj9hFhqWS3B+D9y3GFycwno1/cVGgXoM32YhgGhTU/iYEJTXlv9Vb+zYiF4ENqRsDUB/+3OUZBqw6mUKG98sZa/tM9/YxH4S2sxvgHM60NgHRanSNKjb6D/SYb/RjbuXj/8v7vZqJQgtPtpqFcoZLa54z6L0UVUN2TjIbnQlNlOU4mgMari8TYaoe2Xhb/60Fm5rX7aD+R1ntoQw8lG3jbztDhZxBJu2uDfZBKaQ5TM9ZnW87Wpm3RLDvP52T5ReJSHa1mXgb7k8IS6AM1QBgeLtW/3dPZzZhikE1USmthIlScwhwUJZSaA8Qvu35kU9qi6HyAFdy454L7asga1w+1UFrIDpGw33QoAfZmDbtzgMrTQDOx80dvllZAse8E9GXm2x3xKWEDOsVEHx7safxpQqi1QXcXSH9o/kcmcCektBwc+0n0UFPngkfY8AQUOvfUdfvByLAaG1lvXv0e5NkSMvnfVJrNgJngseSA2WfvT4IdFS3oNBejDOtimQjkeMyMMLrkgXg56M14xeRvyWGUje2ZoilOcc6jZh1KMNDNdwz5ZrQIXgx/HEqEZ0LSB6yznWgGwUEIpbmoMLcgPSL019F3RF6TzzK86WAzVRors7SM716f5jHLKjcgmXg/suN00r1lz3W+zKpuZhPbeqFUGFbgYEjDuq4QE1G8o38kQ3fnt9p8lUEvOXVmOvfhKVk6m6cXuoZMSiI0Jt+w4Vw9phIRLSfHfCIeHeBr6lJX4hDXJrhsiaUXsH7sdKRgJpZ01tQj5lFnAVLIqJ+o4eEL0ycx0nhgk8qOfspN92vrD/dvG4d/0A/Lifz0MLi2J5+Ax2hN/KfL2lO89n3BEiaQbxe4QhVlWZROSjOaPxdaymVd55SjOxaI6STxgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461186,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 766,
+   "prompt_tokens": 1061,
+   "total_tokens": 1827,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 659,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.019564,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.019564,
+    "upstream_inference_prompt_cost": 0.004244,
+    "upstream_inference_completions_cost": 0.01532
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 659
+ }
+}

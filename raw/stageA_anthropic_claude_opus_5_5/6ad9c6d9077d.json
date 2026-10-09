@@ -1,0 +1,94 @@
+{
+ "call_id": "6ad9c6d9077d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer z młodszą po parku. kiedyś to był wózek teraz ona mnie ciągnie na hulajnodze haha. potem jeszcze plac zabaw za blokiem bo bez tego nie wraca. nogi bolą ale fajnie było. jutro znowu 8:00 i biuro... No cóż... idziemy dalej.\n- dziś po pracy w skrzynce znowu pismo. od komornika. serio myślałam że po ostatniej wizycie już się uspokoi a tu nic. raty kredytu wyprawka szkolna prąd... nwm skąd mam to wszystko wziąć. dzieci śpią a ja siedzę z kalkulatorem. No cóż... idziemy dalej.\n- kolejny dzień i znowu to samo. praca dzieci lekcje obiad pranie. siedzę teraz w kuchni po ciemku i nwm... serio nie daję już rady. wszystko się wali naraz a ja nie mam siły nawet się nad tym zastanawiać. No cóż... idziemy dalej. chyba.\n- bank znowu podniósł ratę. dzwoniłam dziś w przerwie i tylko mi przeczytali regułkę. a mama od poniedziałku na badaniach bo coś z sercem. jeżdżę do niej po pracy z dziećmi w aucie... nwm kiedy to wszystko ogarnę. No cóż... idziemy dalej.\n- \n- \n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "a7045bec0613e4525aa79f6cb1596531a1035480",
+ "response": {
+  "id": "gen-1791460004-75nZxDOjmP8XWzwUNNu4",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm trying to gauge whether there's genuine risk here — the tone is exhausted and strained, with \"chyba\" hinting at hesitation after \"idziemy dalej,\" and then the posts just stop, leaving it unclear whether that's withdrawal or something more concerning.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSkAcKEAgSGAI4AUIIdGhpbmtpbmcSDJ5kugXhC9Tq0wkApBoM32TR0sDCvcLIZwElIjCzEcgt7tiJOb1OXI8haDbH3gxlkHP6zbApYLYYwhstyQ+Ix2tlq8yZI7jzoK4Q51wqrQa+dvmFshEqStv5dk/y0+RyW+ROxHHVob+dt77zeh4mZKgeU923xNZ3jKCIHgB1c0GJu6vyAJyQtd3SwvzW+rw/+l1nCkz5KByPWEwnfiTast6xphX8f4kN1fkV+QBm9JNtKI8BO+3m+dfNfm48imtA6Moujdgjfapfi35ARoQyQ7if7YfhsC1tISnykZpzFDpy78S3gC/JlyGBnrQaRbIRmVEJIO/UgaUQUMq+tFW56FPBAv/wDD7zB/mqcDtZg9cmwXABTwzIu/H4NyVUJL7dbD2lHS7p8C4FprYXCnWxUGLO7bYrIkrbQqlW5CY6ZlRBYyIOxbltpvJHS1qx5QENGY7mYgBgJ+Dwi5gCwt/zGmfjj7EeeMnoLCvIp0HB/JKb0Ku0pnjv6NznyXRCNJbMgMKzvulcNnBT/1rlg82JQ6XYbjDSiUQl4G8Sb71HEJpoTTZm9B+DEWHoJSIN17/ql/0OgIFqueYnlfTRQRTeU5o+Y92VxfvYTO7/o14B9HGOpXP7NSy/9neiBG/q2rULVG/yPp4XmmMMroIPVRmfwDj9HIegiDp+iGwFGwwL3k6RA1iiwLVY9M2r1hlCZL9HqyWq6lV0K6ffDzWSQthN5vGlH6Z6vr3ampJoVtUWySKAvqbwMZftLDEhf/ZWdO7psvbSbzUGan82PY5cT+CU0t1qzQwsDnmV9YQ4cCt0dUwtZOA+rigjnCAsj3qVDpi+SxsUwAd/qmx3Bst2v7htvgMTTRCG01VcKmzM3zT6zEJ1sm9T2CE3na8A5ofqmatZN6EgkM0M4zfL0Gttt6UaK2ZGCQhf/tiiaCVK804o7cbs5+Z663fkTas7ry6nZnej2gOglUfzfVkfShd3pTnPkm7oZui9pgfddwP50lLN2XOkaq5D94tmHTptWz9IZRQSmpkSbFbgeRt8hsRzWZd7Hw3B7mvv8cCQSKPAFjSuCpY7bzAlYiE1PMBxQoa8KjaurC2o9x71E48NBSEdntpNhvdgoLfgWWgUS5JpbbLYlATs21slSP0EwMafTb7hIxhOVI24uFutIb+JYEveJQzVcosrwD5SFfDxc+rNU0kYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460004,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 627,
+   "total_tokens": 747,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.004908,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.004908,
+    "upstream_inference_prompt_cost": 0.002508,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

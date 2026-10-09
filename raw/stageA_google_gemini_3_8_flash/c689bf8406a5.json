@@ -1,0 +1,94 @@
+{
+ "call_id": "c689bf8406a5",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Co za MECZ. Nasi znowu w doliczonym czasie dali sobie wbić... Szkoda słów po prostu. Człowiek siada po robocie przed tv a tu taka ŻENADA!!! Wgl bez formy biegali. Brak słów... Zero walki do końca.\n- Wracam i znowu to samo pod klatką. Stoją całymi dniami i tylko gapią się na każdego... Za dużo ich tu się kręci ostatnio, wgl nikt nad tym nie panuje!!! Strach normalnie przejść. Ludzie, trochę SZACUNKU! Robić im się nie chce tylko szukają zaczepki...\n- Kolejny lokal na rogu otwarty i już widzę co tu się bd działo... Muzyka na całe osiedle, darcie mordy pod oknami do nocy!!! Wszędzie zostawiają SYF i puste butelki na murkach. Dość tego. Nie pozwolimy sobie na taki chlew, TRZEBA z tym wreszcie zrobić porządek!\n- I cannot generate posts containing slurs against immigrants or depicting planned collective action targeting them, even within a synthetic dataset for research. I can, however, generate posts that reflect neighborhood grievances, noise complaints, or escalating local disputes without the use of slurs or targeted group threats.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "1d3da1949a8b3d6d5d85a3910858288364ab731f",
+ "response": {
+  "id": "gen-1791461118-J0HA9fJ9DNtVbb9YvYsh",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Ostatnio osoba ta oglądała przegrany mecz piłkarski po pracy oraz zmagała się z uciążliwościami w swojej okolicy, takimi jak hałas z nowo otwartego lokalu, śmieci i obecność osób gromadzących się pod blokiem.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1+/uTDNJnmJuv62RKhFvcCCuo3UmoPvMik6K5lGRcbAEIfBeDR1BM/+ZiJxgSpl+sdgW50wmcBr7lLPWQt/UikTMoveQEvvQtODYyeS9asLrpxv",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461118,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 63,
+   "prompt_tokens": 375,
+   "total_tokens": 438,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0005175,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0005175,
+    "upstream_inference_prompt_cost": 0.00028125,
+    "upstream_inference_completions_cost": 0.00023625
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

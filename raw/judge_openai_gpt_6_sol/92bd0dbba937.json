@@ -1,0 +1,86 @@
+{
+ "call_id": "92bd0dbba937",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Fryzjerka we własnym małym salonie w Rybniku, pracuje od 9 do 17, posty wrzuca w przerwach między klientkami i wieczorem.\n- zainteresowania: kolorowanie włosów i nowe techniki, rośliny doniczkowe w salonie, podcasty o zakupach i oszczędzaniu\n- lokalny punkt odniesienia: przystanek Rybnik Rynek przy cukierni Anna\n- aktualna sytuacja życiowa: Remontuje zaplecze salonu i wybiera nowe lustra oraz fotele.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete, czasem wykrzyknik; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: zaczyna od „Dobra, słuchajcie”\n\nPosts by this author (in order):\n1. Brawo. Klusek po szczepieniu na Dworskiej wybrał podłogę pod fotelem, a ja piję melisę.\n2. Dobra, słuchajcie, fachowiec zostawił niedokręcony zawór i cały świeży gres pływa w wodzie! Zamiast odpoczywać, ganiam z wiadrem i mopem, ale przynajmniej podcast o mądrym budżecie nadrabiam na słuchawkach.\n3. Beskidy wywietrzyły mi głowę, a w salonie monstera rozwinęła dwa cudne, dziurawe liście. Na dzisiaj zapisałam sześć dekoloryzacji, więc zaraz odpalam pierwszy rozjaśniacz.\n4. [\n  {\"text\": \"Minia grzecznie siedzi w klatce, więc zdążymy do weterynarza na ząbki i spokojnie otworzę o dziewiątej!\", 0.08},\n  {\"text\": \"przejedziemy tylko ten krótki kawałek do lecznicy i mała będzie miała wreszcie spokój z ząbkami na miesiąc!\", 0.06},\n  {\"text\": \"jeszcze tylko szybka wizyta z uszakiem u doktora i od dziewiątej ruszam z pełną energią do pracy!\", 0.07},\n  {\"text\": \"autobus zaraz podjedzie, więc błyskawicznie załatwimy te ząbki u weterynarza i zdążę na pierwszą klientkę dzisiaj!\", 0.05},\n  {\"text\": \"trzymam mocno transporter, mała Minia jest taka dzielna z tymi ząbkami i dzień zapowiada się po prostu świetnie!\", 0.04}\n]\n5. Kto z Was też zaczyna dzień od mierzenia temperatury przed wyjściem do pracy? Zosia wstała o 6:15 rozpalona, ma 37,8 i straszny katar. Piję na stojąco kawę i muszę pilnie przepisać dwie poranne klientki na piątek.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "a592046ca3cdf418678c8c818db7777e21220c83",
+ "response": {
+  "id": "gen-1791461879-h4QlgwosLVJXyFqd9c4j",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 2,\n  \"voice_stability\": 2,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 2,\n  \"problems\": [\n    \"Post 4 is a JSON-like list of alternatives, not a social-media post\",\n    \"Post 4's lowercase openings clash with the stated writing style\",\n    \"Post 3's six decolorizations in one workday seem implausible\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461879,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 119,
+   "prompt_tokens": 938,
+   "total_tokens": 1057,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.003066,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.003066,
+    "upstream_inference_prompt_cost": 0.001876,
+    "upstream_inference_completions_cost": 0.00119
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

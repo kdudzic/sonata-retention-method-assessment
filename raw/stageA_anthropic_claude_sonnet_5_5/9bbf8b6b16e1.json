@@ -1,0 +1,86 @@
+{
+ "call_id": "9bbf8b6b16e1",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i po meczu... 2:2 w ostatniej minucie!!! Serio, SĘDZIA chyba oślepł. Karny był jak byk. Wracam z siłowni a ręce dalej mi się trzęsą ze złości... Ludzie, trochę SZACUNKU dla kibiców. Nwm, jak teraz zasnąć.\n- Wracam do domu i znowu pod blokiem pełno ich... Za dużo ich tu wgl. Na osiedlu każdy dzień to samo. Nwm, kiedy to się zmieni. Ludzie, trochę SZACUNKU!!!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "37e04ff779ea015caef321d62ea18452aba9ffb9",
+ "response": {
+  "id": "gen-1791460073-XWydhvKBfxiwXFfniamG",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor opisał, że po meczu zakończonym remisem 2:2 wracał z siłowni, był zdenerwowany decyzją sędziego i miał problem z zaśnięciem, a w innym wpisie napisał, że pod jego blokiem codziennie gromadzą się ludzie, co mu przeszkadza.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460073,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 112,
+   "prompt_tokens": 336,
+   "total_tokens": 448,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001792,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001792,
+    "upstream_inference_prompt_cost": 0.000672,
+    "upstream_inference_completions_cost": 0.00112
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

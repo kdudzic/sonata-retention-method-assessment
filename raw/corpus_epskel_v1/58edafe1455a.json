@@ -1,0 +1,87 @@
+{
+ "call_id": "58edafe1455a",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 842693130
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studiuje filologię polską w Szczecinie i dorabia w kinie; pisze w tramwaju między zajęciami a pracą.\n- zainteresowania: plakaty filmowe, gry logiczne, kawiarniane stoliki\n- lokalny punkt odniesienia: przystanek Plac Kościuszki w Szczecinie\n- aktualna sytuacja życiowa: Układa plan na koniec semestru i próbuje pogodzić terminy zaliczeń z grafikiem kina.\n- sposób pisania: zdania: medium; interpunkcja: częste wielokropki; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: wplata „tak czy inaczej”\n\nTopic for this post: pogoda\nConcrete angle: W sobotę wcześnie rano znalazłam w telefonie zdjęcie wczorajszego zachodu słońca nad przystankiem Plac Kościuszki. Nie pamiętałam, że kolory wyszły tak wyraźnie. | mood: pleased | opener: plain fact | verbal tic in this post: no\nRegister: mildly grumbly\nTarget length: about 21 words\nTime of day: early morning, Saturday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - wracałam wieczorem z zajęć... usiadłam na ławce przy Akademickiej, bo niebo było całe złote... aż miło było posiedzieć 🌅\n  - czemu już pada?... spojrzałam rano za okno i spacer po zajęciach odłożyłam 😕\n  - ale upal dzis w pon wieczorem klamka dalej goraca\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "31a9991313cc5e3e901f9d5e2ff582e5577050e6",
+ "response": {
+  "id": "gen-1791464136-jG0sg2eWlydawBqplWWu",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: znalazłam rano w telefonie zdjęcie wczorajszego zachodu... kolory wyszły dużo wyraźniej, niż pamiętałam. Szkoda tylko, że dziś za oknem szaro 🙃",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464136,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 53,
+   "prompt_tokens": 799,
+   "total_tokens": 852,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002128,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002128,
+    "upstream_inference_prompt_cost": 0.001598,
+    "upstream_inference_completions_cost": 0.00053
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

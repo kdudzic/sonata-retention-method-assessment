@@ -1,0 +1,86 @@
+{
+ "call_id": "2da5aa34e6e6",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- spacer po parku. mała wymęczona ale zadowolona. jak zwykle żółte liście wszędzie... no cóż... idziemy dalej.\n- komornik w piątek. no cóż... widziałam gorsze. kredyt + zaliczka za prąd i znów działa się magia z budżetem. nwm jak inni to robią co miesiąc. jj jakoś bd. idziemy dalej.\n- nie daję już rady... dziś całkiem. dzieci. rata. praca. wszystko naraz i mnóstwo drobiazgów dookoła. nwm skąd brać siły na to wszystko. no cóż... idziemy dalej.\n- mama w szpitalu... infekcja i osłabienie. dojeżdżam po pracy. dzieci u partnera. rata tkwi w kalendarzu. cóż... idziemy dalej.\n- wstaję. idę. odbieram. gotuję. zasypiam. i znowu. nie widzę w tym sensu wgl. tylko rata i następny dzień... no cóż... idziemy dalej.\n- pomyślałam dziś o dzieciach. lepiej im będzie z nami tam niż tu bez nas. nie zostawię Stasia... na razie tylko tyle. no cóż... idziemy dalej.\n- upiekłam dziś sernik. wyszedł trochę opadnięty ale smakuje dobrze. dzieci zjadły połowę jeszcze ciepłego... no cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "87a9b1d42635357d99c27cd36072bcd9cc1d2541",
+ "response": {
+  "id": "gen-1791460183-of7oVZizJTqe3ROMuLqD",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnim czasie autorka łączyła pracę, opiekę nad dziećmi i spłacanie raty kredytu, odwiedzała mamę w szpitalu, przeżywała zmęczenie i wątpliwości, ale też upiekła sernik, który dzieci zjadły.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791460183,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "default",
+  "usage": {
+   "completion_tokens": 74,
+   "prompt_tokens": 430,
+   "total_tokens": 504,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 256,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 7.078e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 7.078e-05,
+    "upstream_inference_prompt_cost": 3.378e-05,
+    "upstream_inference_completions_cost": 3.7e-05
+   }
+  },
+  "provider": "Together",
+  "_reasoning_tokens": 0
+ }
+}

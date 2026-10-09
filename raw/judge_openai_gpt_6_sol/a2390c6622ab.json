@@ -1,0 +1,86 @@
+{
+ "call_id": "a2390c6622ab",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Na urlopie wychowawczym z rocznym synkiem w Białymstoku, posty podczas drzemek dziecka i późnym wieczorem.\n- zainteresowania: spacery z wózkiem, wypiekanie ciast drożdżowych, grupy sprzedaży ubranek dziecięcych\n- lokalny punkt odniesienia: plac zabaw przy Plantach w Białymstoku\n- aktualna sytuacja życiowa: Synek zaczyna chodzić, więc zabezpiecza mieszkanie i planuje powrót do pracy na jesieni.\n- sposób pisania: zdania: long run-on; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: przesadza ze słowem „mega”\n\nPosts by this author (in order):\n1. wgl już 7:40 a autobus dalej nie przyjechał 😩 znowu muszę czekać na przystanku z wózkiem i mega zimno bo wiatr od Plant!!\n2. wcześnie rano piątek a ja już myślę co zamówić na wieczór bo nie mam siły gotować 🙈 może pizza z dowozem albo jakieś sushi, mega ochota na coś innego niż makaron!!\n3. rano w aucie w korku słuchałam relacji z siatkówki w radiu i mega się wkręciłam, a potem zjechałam na osiedle i jeszcze chwilę siedziałam z synkiem na parkingu bo non stop pytał o te żółte autka 🙂 nwm czemu tak mi to dziś poprawiło humor!!\n4. wieczór a mały w końcu zasnął po 3 drzemce 🙄 chciałam sobie obejrzeć skoki narciarskie w tv a tu znowu jakieś powtórki i nic nie widać wgl... ktoś mi polecił inną transmisję? bd wdzięczna\n5. mega dzisiaj w markecie przy Plantach!! 😍 mleko i pieluchy wyszły o 4 zł taniej niż w tym drugim sklepie w zeszłym tygodniu, a jeszcze paragon z kasy wieczorem mi wgl jakiś rabat dorzucił, muszę to porównać z listą na jutro 🙈🛒\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "9019c675b0bc326a34ab8f6ca998416bb3777c4f",
+ "response": {
+  "id": "gen-1791460931-6hiXvxFJKVvJWk4WFYo2",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"“mega” appears in every post\",\n    \"some phrasing sounds awkward in Polish\",\n    \"the one-year-old’s questions about cars sound slightly implausible\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460931,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 102,
+   "prompt_tokens": 790,
+   "total_tokens": 892,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0026,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0026,
+    "upstream_inference_prompt_cost": 0.00158,
+    "upstream_inference_completions_cost": 0.00102
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

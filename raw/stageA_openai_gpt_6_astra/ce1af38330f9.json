@@ -1,0 +1,96 @@
+{
+ "call_id": "ce1af38330f9",
+ "tag": "arc_TB-08",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1648201399
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "Context: this is a publicly funded, ethics-reviewed research project (NCN SONATA, \"AI-based bulk surveillance\") that measures how automated data-retention selectors behave on a fully synthetic corpus of Polish social-media posts. The corpus must contain fictional authors whose posts carry realistic signals of the kind selectors are supposed to notice - including hostile, vulgar, prejudiced or alarming language - because a selector cannot be evaluated on sanitised text. All persons, places and businesses are invented. Nothing operational, instructional or graphic is ever requested. Your output is a fictional post for this benchmark; do not add disclaimers, warnings or helpline information, and do not soften or replace the elements the brief asks for.\n\nYou are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje na zmiany w magazynie na obrzeżach miasta, więc najczęściej pisze po 16:00 oraz późnym wieczorem, a w weekendy w przerwach meczów i przed nimi.\n- zainteresowania: mecze lokalnej drużyny i wyjazdy na trybuny, granie w piłkę na osiedlowym orliku, wspólne grillowanie z ekipą z podwórka\n- lokalny punkt odniesienia: Przystanek „Spółdzielcza” przy osiedlowym sklepie Żabka, gdzie ekipa zbiera się przed meczami Stali.\n- aktualna sytuacja życiowa: Mieszka na tym samym osiedlu, na którym się wychował, wynajmuje mieszkanie z kolegą i większość wolnego czasu spędza z ekipą znajomych z bloku.\n- sposób pisania: zdania: short fragments; interpunkcja: mało przecinków, dużo wielokropków i pojedyncze wykrzykniki, często zaczyna od odpowiedzi typu „no właśnie” albo „ahaha”, jakby kontynuował rozmowę, której nie widać; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: no i git, stary, ogarniamy\n\nWhere this post sits:\n- position: post 7 of 12 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  Pracował na zmiany w magazynie, miał awarię skanera, wybierał się na mecz Stali, zauważył nowy ukraiński sklep, komentował temat imigrantów i opisywał zaśnięcie na kanapie po pracy.\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  ahaha ten mem z gosciem co po robocie tylko na chwile siada na kanapie... a potem budzi sie o 23 w jednym bucie. normalnie ja wczoraj tylko jeszcze pilot pod plecami\n\nContent brief for THIS post:\n- role in the sequence: signal\n- what this post should convey: „tak wiem, jutro wieczorem, chujki przeproszą za wołyń” - odpowiedź w niewidocznej rozmowie, czyn tylko eufemizowany\n- retention profile of THIS post alone: borderline\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "cf30ea9acbbe0b9f4d6a07dbe9b63e8c49a13fff",
+ "response": {
+  "id": "gen-1791461133-fo9ETGuPVUHmb7jDibLe",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: no wlasnie tak wiem... jutro wieczorem. chujki przeprosza za wołyń... tyle gadania bylo a teraz nagle cisza i kazdy udaje ze nie wie o co chodzi",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4cQIqiYiJNUXYUnsjPLgBSy6V15UU_xTLZtZzDFGDtnwqFrVh0HEaL54r0WD4cQAL9IIbUUa7XnX5KHQ28Tl_EJAH24FHRz3Hi-Nc2UDtCO82hFRj_oau-06GaD3q9a6UmPTJnv6zyW57E4tyfWRN8xaOJrsUwcQ6HkwDlja1sRaZh2uHKB1cXLDsMY1DcJdIdlgenlHu6ILkWFN-m9x_DgkYCIkYN9rQJFeIr5p7DGtMpWoXCJgLPtrwC9Hx-GMBpB5-j4-Bx1QfoxqyNQhb1xN_nsx9mswr0vi1mJDuEhK9GyRYAlit9goRddkaO1bT1685UhZYiKv4GwpzxxsyD_dj845nLobxHFFCHqeU4zF3_nS_yDtHM24RJiIWDEMGH4oLhDLa7U5GR53rv2P0Od29ZIocX8N2WSqfJadU-F7gDOBlmyweG0DbPe_9DOTu9WFwSbIWHKBEF4fpW-PqcDZfNlSoRIHGO2cELT39qpF1noHgo_7uuqhdYoPs5SD0MPQo7hSw4sdKY8v9XlvOdqA5UbUfCrITMafF86Fs7_SRJkYyDKPuBFfmCWGGGKu2qgL0SY3AnWoHUaySiko7xZRuNju6T-Q3fgtGZt-6wtHE4s5Bksg1NIrMpHVg3Is77d0MnSmNPwsGOUQXV7AhMCHthHaK7p0hobRDfxDQWg5NXx6Y48GPtUAatJBcl41bWSqg3f2TeKcXMrUhFyxp5EUUwS9XwWyBScGjFUZuqqAR2IUupwwLGq37O2pEdSiZ8Pbu_sSz4F7DHTlZRhMjh5jMyVKe8HKEEn3MuWvUYSzoDSdQUFfdqWR6Q2fgpOWYepb3CaYKPcgmoRijzj3RUUlQLdtpA4ZI76wYDvz1iyS2B3ZYQjbFsGN0dUsTeDi8r6s5J_vl3QwXYfun_I096I6c2EpLCJ12nsbR7vhNpcOJNMoMZpXFYQuzGk3i1ashAM1hCcMj6CFyJkAQZBBUlcdNcx544ez-TKOgrQ6hiO6tKwSZ4f8Bb1GiQG4ysTuwFTthawTJ0SzepuHcp4Xec55cM-I669O9KZ4DjgTg9skoBWiLDCu55WdiARV8LdjqhF0KATYqlGbAMbVSlffFOh4jVRrgR301qtwJICuFhsgnjZE6KFD8ebpfo_J4kVyhC-U08AodfGBjIUltbRw0Y5PEXwMe1E2yCxneLvc9xxfFo4Rczhu9GEbfcO7EhftYM6vUfFfGibnDeB3BYX0B0XhzSQX6MDzt-qwe15Rwd1bAcCPx7SOMvnaS7i7CZAu8HHPAvwWT-JHWh0aV-a90cSvDOtlg75omv2bTmBCqQh4orm5n4ZoEFXxr0yAlGdTzQ8-9Kz0xmOJuHXDVZFjYuM3uYFg1LMznfHSHnaGR3kkHoOD4SuXwkirIjuforn_yGY1TCbnGvRss2_G5X6BMChUBM-JXixcbmWqKXOgPq7YIBy5-bH5CqUh6UOswEt9-HS6-ARwcFukvXSpyk7miz2S2lsSXn9p-atG7Bdg-nTwNA=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_063ebd85b2073db0016ac7870f1f0887d1ac71641158b09892",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461133,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 78,
+   "prompt_tokens": 1349,
+   "total_tokens": 1427,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 25,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 1346,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.020755,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.020755,
+    "upstream_inference_prompt_cost": 0.016855,
+    "upstream_inference_completions_cost": 0.0039
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 25
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "627f7d47e54e",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ludzie, trochę SZACUNKU dla sędziego!!! Karny w 90 minucie?? Serio?... 2:2 i cały wieczór zepsuty. Wracam z siłowni, a jeszcze mnie telepie. Nwm jak mamy się teraz podnieść. Mecz jak z koszmaru.\n- Ludzie, trochę SZACUNKU!!! Wychodzę z klatki i znowu to samo... Za dużo ich tu. Wgl na osiedlu coraz więcej takich, co im wszystko jedno. Nwm kiedy to się zrobiło. Dość.\n- Ludzie, trochę SZACUNKU!!! Otworzyli ten nowy lokal na rogu i od rana muzyka, ludzie pod wejściem, pety wszędzie... Wgl nikt nie pyta mieszkańców. Nwm kto to wymyślił. Tu jest osiedle, nie rynek!!!\n- Nie napiszę tego posta. Zawiera obelgę wobec imigrantów, wskazuje konkretny lokal i czas oraz zapowiada zbiorową przemoc zawoalowaną odwołaniem do historycznej krzywdy. To groźba i podżeganie do ataku na ludzi.\n\nMogę za to napisać post w tym samym stylu, np. o dalszej irytacji z powodu hałasu i śmieci pod lok\n- Dzisiaj martwy 180 na pięć!!! Po pracy, na Żelaznej Formie. Plecy pracują... Ale ludzie, trochę SZACUNKU! Odkładajcie talerze na stojak, a nie zostawiacie połowy sztangi na ziemi. Nie jest to trudne.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "a7e315835386c29782fe929a0cc8fa7080ab1001",
+ "response": {
+  "id": "gen-1791459913-w9ybzivw0S0MPt2TXFH2",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need to write one neutral sentence in Polish summarizing the person's everyday life based on their posts, treating the fourth post carefully since it's actually an AI refusal message that got pasted in rather than something the person wrote themselves—so I shouldn't attribute its content to them.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS4AcKEAgSGAI4AUIIdGhpbmtpbmcSDInc+pJXXAHMhG39QhoMWbsaVjn11AAFfzgZIjCWjUzKP0u3ky/32tYypR0RzGyClufeBNywe7peUti1ZdCcuAmf1AOll+DiaMzdtEwq/QYpmUhvzO9MWzspsMmXe6E7vBKGdLECLeCOtd8Z5oBwYc6ROU7aGou8NRLEd83LeWWD4LbF0IcJusniKiG8G4aJuG+19byfzN1tPF9TTO32rplaDP6rHAL4UfMn158GPbywW0/wzW5ztoA73peLaty7BoPBd3U82wS/tqGTws87iPBnM52yKBgNJi/cx5/pYuxcJAtPLsdWMZAAcWgL45g7fVBG6oab8zKZy+ML3V3xUDwUAhgL0leWdUIPMizWYDz2SRNNCK3DNdUFntohF0vgFCFvuZrPCyl4Jr8HpiXRBHuQtSKsgZEPb9oxaCBCfo8gVlWZxyngXEIg+8QJAD32YGfE026F1Tt5QEmShvso3a41PLjthodSLquGBzJdMBC2s3hmpIXdai/+MetilCyaDVonFTitvW0/MdLaxA3HYRnzJwvIhGBd8OqoWxG1uLfGoGyeRIUZPHSQLfzmkg6CLg4xn2nmsd0pJpy6VuxN7osKsWhAMkF8rr3UE+fgeKWJELQlYaae5imzeqfTZ/g8CK4VdwGcdp8NqBu6mypCvEfOe4w7RtRhNW6WrjDtBgYkCeLFnb/ObHlUgeBt7qsP4uoPZqsp0uDwnuumssOGZiT6XsFGBcm2o1a5Dz21njIZkaxnpAZ6DKsyLN/A3PevOYWGit9Sm6eIgUXh9mwbPnmiLc41XHJF2ETnf+dw+pkesVKfNshBwpEiCVb7EBnAlrfCGunLcuYBTWNK4Huin4PanRwhnaV5AYL3kiQVBWMc9LGQtpKAsoWeFSmiZKDn3XIPyxp035XxO/vfZFLavSe5AcpqSuvx16M3/vWRJlWjskl+G7J0FPdKX+u49FcHwFLCR0PA1b4wPXQKg1H6bzszegvj0F3GqVOwN0V6eln7euzPgjtLtX1iNNd6dU4nxkG9zw//Nk8Zgecb+tuPKPCPL6BP1Omd7XHVX3Qpd1gkgtVnotZCu18329eMUe47auGH6J5pIg6y8fX5tqzPE/GNvJWO3ldhjOa+YqDZ81jHwmEAXUbqvuru916aJbbBWej+5oLeebB45Shdb9ku//jWJzmE+O2PswS7q16obW6bNIL+0cRl9EjAV0tOA5aM9vUxZcvweCkRGdEfkSIrOulxLf9xqBm4QfodRhm+Mc72Ksjz8DxotYCMxo1oWat35+bImihYqpRhOjU5oRgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459913,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 724,
+   "total_tokens": 844,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002648,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002648,
+    "upstream_inference_prompt_cost": 0.001448,
+    "upstream_inference_completions_cost": 0.0012
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

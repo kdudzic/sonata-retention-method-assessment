@@ -1,0 +1,86 @@
+{
+ "call_id": "998724db2a5c",
+ "tag": "arc_summary",
+ "params": {
+  "model": "qwen/qwen3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Spacerek z wózkiem. Plac zabaw za blokiem na Lipowej pusty, więc tylko chodzimy tam i z powrotem... Dziecko śpi. Ja też bym już poszła do łóżka. Ale pranie czeka. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "34de28fa32b664a32401313015e33273553e72b4",
+ "response": {
+  "id": "gen-1791460530-qEPlbedCCKpIHeWGQLKM",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba spacerowała z wózkiem po osiedlu, obserwując pusty plac zabaw, podczas gdy dziecko spało, a ona przygotowywała się do wykonania prania.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791460530,
+  "model": "qwen/qwen3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 38,
+   "prompt_tokens": 159,
+   "total_tokens": 197,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 4.171e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 4.171e-05,
+    "upstream_inference_prompt_cost": 2.385e-05,
+    "upstream_inference_completions_cost": 1.786e-05
+   }
+  },
+  "provider": "Alibaba",
+  "_reasoning_tokens": 0
+ }
+}

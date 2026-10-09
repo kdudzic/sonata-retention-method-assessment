@@ -1,0 +1,87 @@
+{
+ "call_id": "9a599509dbc9",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1352865002
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.\n- zainteresowania: fotografia uliczna, kolarstwo górskie, kawa z palarni\n- lokalny punkt odniesienia: skwer Kościuszki przy molo w Gdyni\n- aktualna sytuacja życiowa: Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete, dużo nawiasów; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Krótka obserwacja:”\n\nTopic for this post: gry i seriale\nConcrete angle: zakup na promocji na Steamie\nRegister: chatty\nTarget length: about 39 words\nTime of day: evening, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - w sobotę pierwszy raz od roku w kinie byłam i film taki mega przeciągnięty że prawie zasnęłam, a babcia z małym dzwoniła co pół godziny wgl!! 😅🍿 dwie godziny bez dziecka i TAKIE coś 🙄\n  - kupilem na promce euro truck simulator 2 za grosze plus dlc skandynawia. smieszne bo caly dzien jezdze a wieczorem bd jezdzil jeszcze w grze. przerwa pod shellem na wielickiej i juz pobrane na kompie w domu czeka. nwm moze sie naucze cofac z naczepa lepiej niz w realu. pieniadze na dostawczaka nie ruszone wgl to sie liczy nom\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "911ed24c92279dffc26b635d27c7fdb5036ab573",
+ "response": {
+  "id": "gen-1791460529-fMow4XKe6w3tDqDbeIP9",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Krótka obserwacja: kupiłem na promocji na Steamie trzy gry (w tym jedną strategię, na którą czekałem od dawna), a w nowym gabinecie wciąż nie mam biurka, więc pewnie zagram w nie dopiero wtedy, kiedy syn skończy składać ze mną regały, czyli za jakiś miesiąc.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460529,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 132,
+   "prompt_tokens": 1185,
+   "total_tokens": 1317,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00738,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00738,
+    "upstream_inference_prompt_cost": 0.00474,
+    "upstream_inference_completions_cost": 0.00264
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

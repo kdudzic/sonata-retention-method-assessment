@@ -1,0 +1,86 @@
+{
+ "call_id": "8797503dee41",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Fryzjerka we własnym małym salonie w Rybniku, pracuje od 9 do 17, posty wrzuca w przerwach między klientkami i wieczorem.\n- zainteresowania: kolorowanie włosów i nowe techniki, rośliny doniczkowe w salonie, podcasty o zakupach i oszczędzaniu\n- lokalny punkt odniesienia: przystanek Rybnik Rynek przy cukierni Anna\n- aktualna sytuacja życiowa: Remontuje zaplecze salonu i wybiera nowe lustra oraz fotele.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete, czasem wykrzyknik; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: zaczyna od „Dobra, słuchajcie”\n\nPosts by this author (in order):\n1. I akurat o 12:30 zrobiło mi się okienko, bo ostatnia klientka przełożyła wizytę. Pojechałam obejrzeć fotele, skoro miałam całą godzinę. Jeden był tak wygodny, że siedziałam na nim zdecydowanie za długo!\n2. Co można zrobić o 7:10 z ryżu z wczoraj i pół słoika pesto? Zapakowałam obiad przed wyjściem do salonu.\n3. Aj. Rano sprawdziłam kabel dwa razy, ale ładowarka nic. Jeszcze wieczorem ładowała. Wzięłam tę zapasową z szuflady na zapleczu.\n4. Siatkówka włączona, ja na kanapie i tylko na chwilę zaglądam do katalogu luster. Zatrzymałam się na ramie w ciepłym kolorze, potem na jeszcze jednej, a pierwszy set minął mi gdzieś między stronami. Drugi oglądam uważniej!\n5. „Sprawdź, ile naprawdę kosztuje jedna porcja” — padło w odcinku o oszczędzaniu na zakupach. W środę po południu czekałam 25 minut u lekarza i zaczęłam się zastanawiać, jak porównywać ceny farb do salonu. Zanotowałam pomysł, zanim zapomniałam. Jestem ciekawa, co wyjdzie z porównania.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "aa45c0d26e6ce9615c7ddd158dd0c9ae1bc3f1ab",
+ "response": {
+  "id": "gen-1791462174-hmBHmQBp0pJDEaGKjWts",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 4,\n  \"problems\": [\"Signature opener never appears\"]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791462174,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 69,
+   "prompt_tokens": 768,
+   "total_tokens": 837,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002226,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002226,
+    "upstream_inference_prompt_cost": 0.001536,
+    "upstream_inference_completions_cost": 0.00069
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

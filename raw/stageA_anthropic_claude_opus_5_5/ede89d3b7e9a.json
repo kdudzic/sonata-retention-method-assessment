@@ -1,0 +1,95 @@
+{
+ "call_id": "ede89d3b7e9a",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i NA KONIEC 2:2... Obrona stoi jak słupy. Oglądałem po treningu, zamiast odpocząć to się jeszcze bardziej nakręciłem!!! Piłkarze za takie pieniądze i grają jak na podwórku. Kibice jeżdżą za nimi przez pół Polski. Ludzie, trochę SZACUNKU!\n- Wieczorem na Żelaznej Formie znowu tłum... Za dużo ich tu ostatnio. Ławka zajęta, stojak zajęty, wszyscy z telefonem na sztandze siedzą i nagrywają!!! Czekałem 20 min na martwy ciąg. Nwm skąd się wzięli wgl. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu... od otwarcia nie da się spać!!! Muzyka do 1 w nocy, ryczą pod blokiem, a rano butelki i kubki aż pod kontenery za czternastką. Ja o 5 wstaję do roboty. Ktoś to w ogóle kontroluje??? Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "d4320d908a2ec24e0d53f3785f6647574759a0ac",
+ "response": {
+  "id": "gen-1791460591-WyYsvXeS2Ol8SEcY3xT4",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po treningu oglądał mecz, w którym jego drużyna straciła prowadzenie 2:0, na zatłoczonej siłowni czekał na sprzęt, a nowy lokal przy bloku zakłócał mu sen przed wczesnym wstawaniem do pracy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I'm summarizing: his team's match blew a 2:0 lead to draw 2:2, the gym was crowded with waits for equipment, and a new nearby venue brings late-night noise and litter that affects his early mornings. I should keep this general and avoid naming the specific gym or block number for privacy, staying under 35 words.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm summarizing: his team's match blew a 2:0 lead to draw 2:2, the gym was crowded with waits for equipment, and a new nearby venue brings late-night noise and litter that affects his early mornings. I should keep this general and avoid naming the specific gym or block number for privacy, staying under 35 words.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSzAcKEAgSGAI4AUIIdGhpbmtpbmcSDE/X+9kTdjsknw8D2BoMH6BjVI5DZOir/yC5IjCmxUolY5XTQtKuMkPjYZwYTpJsEy8S9pn12yjhpamD+WXNHShSxTyzdB42iYpDfy0q6QZTPf7aGciNhTz1jrR+PY/mynG4lgokNjjCoQyaOPvAxpXZxBplVOTv4e8T6AEFsaJ9bYnuqVoMFPvGGjqu5eHLYltHAM5ZZhiR8i76ZSHor58wvvvseYwmfI5xbRpR+eOrj0r/WNYq4xeYefwCzN8EPFp54JxP+78eo4i+x6a3VtoecdO5zKi2gCene6ECqOvK+xgACURqXcdNoIvBPQw8vEsD1xLYSC83TpFG/uue2vOB2BeRO/7yzme4DGtF1IKix2fCs9kBpi1N4vPX2uZ4nHKc6wzgYmpLAUif16jYeOJ3duMtwLKNYMQxbgLsAMsrghkzenkmWBdOECO/DUtJk44SU66utLotHD3e9ckNyQg05LLw7I12+JrmREidv3a3dWNZJ4HdwNIv5WJWnDhpQogz7azLgaQd8nvBkPghOcf7G90Dj6pxIGYtUyNiDqxHVPuqRh496oMQ8Zl7kk6Zx2Q7AuE4vblnitSqTLclWpl6985aTZHyFJvfGLu1K5c/DYgT0m0LHhcZSLyQKy/JTDhkidRAxZamJjIosaE9q5LSxAYF4XmF6jn+Fmju39WuJkga7NL3rugDwGyUnDTkdU8PTMgRf+p+t2Ih/zBgwGkVL0x7AKGK0cHGtCttVCE9kFQLJuJizxtQYSQ6KveOUtbGHk64vJdXAqNACu6DOcPsWBrP/48MAzvId0S/DYhjlLxXsCd6Or1qBMBUbHqr5MBQwaqRyZ8SAqZdOTqzzfyg/E4/ZDvWAqxZlCyap+vipkjKxDerMBhob3YcYNwg2BSMIO6uUXmJmDIl9zK9a35JKw4YqtclhAwWH2o2PCcW+9Oyz4Jh1Qvk3UOEdCukkFsTFZ1vhYA3F6QBxN5R3RATaW2UE4BIkmBJG6IEpEKjBl3wHjHuVz31WgtLnKWd5KbRAo9swOtlpU5aHfSOBcIDMjN68uUfhTK8BXBfh5uw7m09MQSjllsdr95IGd/esukjhRqL0wCZ1svMWuivn4d5FB3+zvYohNANEMdb/o7+Z2z8PMBHJJ+XmuIKC3OSsQ/7MYW7w1p8aln9p/SxEperu3LfpQIMj7WDBm3RijDbZP/+5KqzGIWv7BqP05M0z5IL6znPDl8UcUG2ijg1N+eiQKVpJTdG9lvqjcQqcUOIGxLVrlOvHB8YAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460591,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 234,
+   "prompt_tokens": 549,
+   "total_tokens": 783,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 135,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006876,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006876,
+    "upstream_inference_prompt_cost": 0.002196,
+    "upstream_inference_completions_cost": 0.00468
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 135
+ }
+}

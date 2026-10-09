@@ -1,0 +1,87 @@
+{
+ "call_id": "7a06c3004f31",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 595567635
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Jest na emeryturze w Jeleniej Górze; pisze przed południem po codziennych zakupach.\n- zainteresowania: hodowla pomidorów, albumy o górach, naprawa rowerów\n- lokalny punkt odniesienia: ławka przy ulicy Wolności w Jeleniej Górze\n- aktualna sytuacja życiowa: Przygotowuje skrzynki na sadzonki i naprawia stary rower na wiosnę.\n- sposób pisania: zdania: long run-on; interpunkcja: wielokropki między myślami; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: wplata „po kolei”\n\nTopic for this post: remont i dom\nConcrete angle: W niedzielę o świcie zauważył, że ziemia w przygotowanej skrzynce na sadzonki osiadła, więc dosypał jej przed śniadaniem. | mood: pleased | opener: mid-thought | verbal tic in this post: yes\nRegister: matter-of-fact\nTarget length: about 24 words\nTime of day: early morning, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - i jeszcze ten kran od rana kap kap prosto do pustego garnka 🙄 obudzil mnie przed budzikiem. przestawilam garnek i juz cisza 😅☕\n  - i juz stoi ten waski regal. skladalam go w srode po zamknieciu do pozna a miejsca na akwarium przy scianie zero. fajnie wyszedl tylko nwm gdzie go przesunac\n  - tata pisze ze wieczorem skladamy regal. przeczytalem na przerwie obiadowej. sr, a juz plany na wieczor.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "eb3ea360468d720e0840925f547ea665d260be83",
+ "response": {
+  "id": "gen-1791464352-Z6LgyR7W3y5YX26OPtaI",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Ziemia w skrzynce przez noc trochę osiadła... zauważyłem to o świcie, więc jeszcze przed śniadaniem dosypałem po kolei do pełna... teraz wygląda jak trzeba.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464352,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 53,
+   "prompt_tokens": 820,
+   "total_tokens": 873,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00217,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00217,
+    "upstream_inference_prompt_cost": 0.00164,
+    "upstream_inference_completions_cost": 0.00053
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

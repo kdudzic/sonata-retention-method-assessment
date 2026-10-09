@@ -1,0 +1,95 @@
+{
+ "call_id": "0e81a9dbe834",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 84313279
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.\n- zainteresowania: żużel w telewizji, stare Volvo, wędkowanie w weekendy\n- lokalny punkt odniesienia: stacja Orlen przy zjeździe w Strykowie\n- aktualna sytuacja życiowa: Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: zaczyna od „no to tak”\n\nFor each of the 5 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with a detail a real person would mention - a name of a product, a time, a number, a place from their life). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. jedzenie i gotowanie - zamówienie jedzenia z dowozem (early morning, Friday)\n2. jedzenie i gotowanie - obiad z resztek (early morning, Thursday)\n3. zakupy i ceny - paczkomat, odbiór (late morning, Wednesday)\n4. praca i grafik - nadgodziny / wcześniejsze wyjście (late night, Thursday)\n5. komunikacja i dojazdy - zmiana rozkładu jazdy (early morning, Thursday)\n\nReturn a JSON array of 5 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "8a14a95e5d9a99f24e12aa11e3ab2fa9c9925fad",
+ "response": {
+  "id": "gen-1791461580-G2UGuMLJ1c8rNRzIGSCL",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"Przed wyjazdem na poranną zmianę o 5:15 zamawia pizzę z nocnej pizzerii w Głownie z odbiorem na 14:15 pod magazyn, żeby mieć gotowe jedzenie na kanapę przed meczem Motoru Lublin.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 14,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"Pakuje o 5:30 do pojemnika do pracy podsmażone wczorajsze kopytka wymieszane z połową puszki mielonki turystycznej i resztką ketchupu Włocławek.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 11,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"Podczas regulaminowej przerwy o 10:40 dostaje powiadomienie, że w paczkomacie przy Orlenie w Strykowie czeka paczka z chromowaną klamką do Volvo 940 kupioną z forum za 45 zł.\",\n    \"mood\": \"curious\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 19,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"Leży po 23 na kanapie i nie może zasnąć, bo lider zmiany zapytał o 4 nadgodziny w piątek po 14, przez co ucieknie mu początek transmisji z eliminacji Grand Prix.\",\n    \"mood\": \"tired\",\n    \"opener\": \"complaint\",\n    \"length_words\": 26,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"Czeka o 5:10 na przystanku w Strykowie i dowiaduje się od kierowcy, że pracowniczy bus linii 2 przesuwa poranny kurs o dziesięć minut wcześniej od przyszłego poniedziałku.\",\n    \"mood\": \"mildly annoyed\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 16,\n    \"tic_fires\": false\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a18uSh0WpATyh76b/MK8lQsIN2XjaDPBx/dNwtRMlsY8Jrwsq8uTzu0W3dRPPYKUHDmolRAww0sW3A3aNRJqBv8Uhu5s/caOKSf+YER+QodPFXJj",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461580,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 536,
+   "prompt_tokens": 650,
+   "total_tokens": 1186,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0024975,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0024975,
+    "upstream_inference_prompt_cost": 0.0004875,
+    "upstream_inference_completions_cost": 0.00201
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

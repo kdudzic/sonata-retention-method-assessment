@@ -1,0 +1,87 @@
+{
+ "call_id": "b84379681948",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1338660210
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Dogląda sadu pod Sandomierzem, a wpisy wrzuca wieczorem po pracy w gospodarstwie.\n- zainteresowania: odmiany jabłek, drewniane skrzynki, pieczenie naleśników\n- lokalny punkt odniesienia: sklep ogrodniczy przy ulicy Mickiewicza w Sandomierzu\n- aktualna sytuacja życiowa: Naprawia stare skrzynki i planuje ustawienie ich przed sezonem zbiorów.\n- sposób pisania: zdania: long run-on; interpunkcja: myślniki zamiast części przecinków; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: dopowiada „czas pokaże”\n\nTopic for this post: dzieci i rodzina\nConcrete angle: W poniedziałek późno w nocy rozłożył z dziećmi kalendarz wakacji na stole, ale nie wpisali jeszcze terminu wyjazdu, bo najpierw chce skończyć naprawę skrzynek. | mood: hopeful | opener: reported speech | verbal tic in this post: yes\nRegister: enthusiastic\nTarget length: about 35 words\nTime of day: late night, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - W czwartek późno w nocy znalazłem na kuchennym stole dwa rysunki skrzynek — każde z dzieci osobno rozrysowało, gdzie mają stać, bo wcześniej nie mogły się dogadać — nawet strzałki narysowały inaczej, czas pokaże, czy rano dojdą do zgody.\n  - Kartka wystawała z plecaka córki — zobaczyłem ją rano w drodze do sklepu i przypomniałem sobie o poniedziałkowym zebraniu w szkole — czas pokaże, jak to wcisnę między skrzynki.\n  - „będziesz na obiedzie?” pyta mama... akurat doszyłam ostatni guzik, więc zamknęłam punkt. mogła zadzwonić wcześniej, ale zdążę 😊\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "5fca75fd15b4fcaf7d216e4ddd6ecbaa30ca6e69",
+ "response": {
+  "id": "gen-1791464579-2cetjGb0YKXSylwBaIEd",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: „To kiedy pojedziemy?” zapytały dzieci — w poniedziałek późno w nocy rozłożyliśmy na stole kalendarz wakacji, ale terminu jeszcze nie wpisałem, bo chcę najpierw skończyć naprawę skrzynek — już przebierają w pomysłach, czas pokaże.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464579,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 78,
+   "prompt_tokens": 869,
+   "total_tokens": 947,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002518,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002518,
+    "upstream_inference_prompt_cost": 0.001738,
+    "upstream_inference_completions_cost": 0.00078
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

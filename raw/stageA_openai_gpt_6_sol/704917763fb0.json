@@ -1,0 +1,86 @@
+{
+ "call_id": "704917763fb0",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ale końcówka meczu!!! 2:1 i do ostatniej minuty człowiek siedział jak na szpilkach... Po treningu miałem tylko zerknąć na wynik, a obejrzałem całą drugą połowę. Takie emocje to ja rozumiem!\n- Wróciłem z siłowni i znowu gwar pod blokiem... Za dużo ich tu ostatnio, wgl człowiek nie może spokojnie wejść do klatki. Ludzie, trochę SZACUNKU! Tak trudno dać innym trochę spokoju?\n- Ten nowy lokal na rogu to jakaś kpina... Wieczorem wracam z Żelaznej Formy, a pod oknami znowu hałas i kubki walają się po chodniku. Ile można to znosić?! Ludzie, trochę SZACUNKU!\n- Jutro wieczorem idziemy pogadać z obsługą lokalu na rogu. Hałas pod blokiem i kubki na chodniku to już przesada... Ludzie, trochę SZACUNKU!\n- Po robocie wpadłem do Żelaznej Formy na Kolejowej. Martwy ciąg dziś szedł CIĘŻKO, ale zrobiłem swoje!!! Potem parę serii wyciskania i do domu. Teraz kolacja i nogi do góry... Dobry wieczór.\n- Osiedlowy mem: kontenery za 14 pełne? Karton stawiamy OBOK, najlepiej jeszcze w całości... Ludzie, trochę SZACUNKU! Złożenie pudła zajmuje pół minuty, a potem nikt nie musi robić slalomu z workami!!!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "ee5ecad800a0a0426fdac21218addfde3bcefae1",
+ "response": {
+  "id": "gen-1791459893-o9e1PUsbZd84tRyeDsBK",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po pracy chodził na treningi do Żelaznej Formy, oglądał mecz i pisał o hałasie przy lokalu pod blokiem, kubkach na chodniku oraz kartonach pozostawianych obok kontenerów.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459893,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 57,
+   "prompt_tokens": 453,
+   "total_tokens": 510,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001476,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001476,
+    "upstream_inference_prompt_cost": 0.000906,
+    "upstream_inference_completions_cost": 0.00057
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

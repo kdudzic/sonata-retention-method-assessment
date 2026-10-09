@@ -1,0 +1,95 @@
+{
+ "call_id": "bc2c7b5c4d3a",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 499393142
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Fryzjerka we własnym małym salonie w Rybniku, pracuje od 9 do 17, posty wrzuca w przerwach między klientkami i wieczorem.\n- zainteresowania: kolorowanie włosów i nowe techniki, rośliny doniczkowe w salonie, podcasty o zakupach i oszczędzaniu\n- lokalny punkt odniesienia: przystanek Rybnik Rynek przy cukierni Anna\n- aktualna sytuacja życiowa: Remontuje zaplecze salonu i wybiera nowe lustra oraz fotele.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete, czasem wykrzyknik; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: zaczyna od „Dobra, słuchajcie”\n\nTopic for this post: zwierzęta\nConcrete angle: Po powrocie z pracy jej kot Bazyl ostentacyjnie zrzucił małą doniczkę z ukorzeniającą się monsterą ze stolika kawowego, po czym domaga się saszetki z łososiem. | mood: amused | opener: one-word reaction | verbal tic in this post: no\nRegister: terse\nTarget length: about 14 words\nTime of day: evening, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - bosko... ten psiak znowu okręcił się wokół krzaków... mokro wszędzie...\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "576e80aa0943adf36f640001ff42312e9c58eebf",
+ "response": {
+  "id": "gen-1791461645-R87QaHJzJf8LuBJQtoV8",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Pięknie. Dobra, słuchajcie, Bazyl właśnie zrzucił moją małą monsterę i bezczelnie żąda saszetki z łososiem.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Analyzing the Mood**\n\nI'm zeroing in on the amused mood, focusing on Bazyl's mischievous act. The terse register is proving interesting. Trying to fit this all into 14 words is a fun constraint, and I'm actively working on that one-word reaction opener. Interestingly, the instruction \"verbal tic in this post: no\" is in the prompt but not in the instruction for verbal tic.\n\n\n**Resolving the Contradictions**\n\nI've hit a snag, or rather, several! The prompt's constraints seemed inconsistent, especially regarding the verbal tic and one-word opener. But by carefully dissecting each element, I've resolved this puzzle. The \"Pięknie\" does indeed work as the opener. Moreover, \"Dobra, słuchajcie\" seamlessly provides the verbal tic. The length is spot on, too.\n\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Analyzing the Mood**\n\nI'm zeroing in on the amused mood, focusing on Bazyl's mischievous act. The terse register is proving interesting. Trying to fit this all into 14 words is a fun constraint, and I'm actively working on that one-word reaction opener. Interestingly, the instruction \"verbal tic in this post: no\" is in the prompt but not in the instruction for verbal tic.\n\n\n**Resolving the Contradictions**\n\nI've hit a snag, or rather, several! The prompt's constraints seemed inconsistent, especially regarding the verbal tic and one-word opener. But by carefully dissecting each element, I've resolved this puzzle. The \"Pięknie\" does indeed work as the opener. Moreover, \"Dobra, słuchajcie\" seamlessly provides the verbal tic. The length is spot on, too.\n\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461645,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 508,
+   "prompt_tokens": 744,
+   "total_tokens": 1252,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 466,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002463,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002463,
+    "upstream_inference_prompt_cost": 0.000558,
+    "upstream_inference_completions_cost": 0.001905
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 466
+ }
+}

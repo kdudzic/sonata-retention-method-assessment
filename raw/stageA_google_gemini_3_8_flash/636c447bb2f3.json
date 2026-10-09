@@ -1,0 +1,94 @@
+{
+ "call_id": "636c447bb2f3",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 556389176
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.\n- zainteresowania: żużel w telewizji, stare Volvo, wędkowanie w weekendy\n- lokalny punkt odniesienia: stacja Orlen przy zjeździe w Strykowie\n- aktualna sytuacja życiowa: Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: zaczyna od „no to tak”\n\nTopic for this post: drobne narzekanie na usługi\nConcrete angle: kurier nie zadzwonił\nRegister: enthusiastic\nTarget length: about 25 words\nTime of day: evening, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - )\n            *   Abbreviations: some (nwm,\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "69acd0016ae310d5744ff2e29c17642f88c5fb9c",
+ "response": {
+  "id": "gen-1791459860-2cG5PKGlBm3Ass2HqxcH",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: no to tak paczka z gratami do v",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "Ep4LCpsLAWkUfRPanPegkRpOMOMBcoBVV+DzbFT8OFtbkSMF97VgxQs+2GdKdUx+KYDzf52kW0UuaR8XzgY350zBVVIK9obw6Qun9Rj7j4tvQ8+NztqAGErEtq2NSBz0Y/w2v8UvodA3xdcpzEXRojsgrytEdOFBW1ugKr+vwTt8WtzOD6DtABI5AgiPugJCNn+F7m9dXoAi1LAjmVV5b+cl73yb0Xj0tikpfjN6Y+JILZjtXocut7vdmjiEEmZx7LCj4tXwnrAW5FAj7NapZm0kOHb9ONCKsJIpw7beWM7sMgySQZwvcI1676jTSRMnoGswWgkWtxHmq1PTd0cz+YUTntvpmY/aRmbnjYXDwCCt0YRqewERBhbLQXBSvdRG2OBTwaD4RrUmB8vT5jsCl27C8hUP1WLWF5DiBTc/JlUTYnUWIJ8KVH0P1kOihIGjAUwIN8RvSEXrV+DGXRvgJ7DKYIS6fTVvc6BVXDW5PttrwGkq01qRRbCot4xarVgySOK08Zf3AjGOxc6somwqNkMHxjWjwC0ei78YJnZCNOTIcHo324Ly+5DIgoootS4pu2FDfuO9IGLhxNryPUeHgXdeK1kOSc/lt9u+4W8J9wJZpJndb8v4frnz3PwFRqV6uSTaE5vgsCgNkbUsqrek7Hi544cM+FYZX/cLsYM6V9YYQcND07oHTcsLRJeGcoh4pjzUL0Nirp/0tjvF2ezJAhQGC0CaPV593vJCihLLnisHPY/BqR897Fn2jomzjbecrWZIOtEOIMFDq4qpaD9kJ22YL+5XMxwMWfmtVTAcDNf/z3Ewym9ipCchnV3VI8Vl9T75SOAlctFTPzZkbo24/0pU9I6Wz83bgxZTDbGr3gIN78dJAFIt9tqlURc5NFhJoMGRQa/OQho5qAGEhGDJ76WhfTOH/FsYFVZotrDK7WzkUPJFIfjIWp3p5COAUe4pRLdAtkVvb0NMLfLycgm9Fmby9VrlQKhQnPMbL49Xr5WuiTrJBrZVTi90Y1J8oVBjcY2g/NlS340U5GPjv9igbKE9eiKkYYMwhfF4GJcKn8hnsFoE4zv/17l7xATAJAihvQt8hd6nlIFhvXKftuI5y/k6eURLbfjaFwStm5b3CGIF98OR6QXGQQ6By9vThT6WWoA5aYERTbtklwFlmceNw95YrRtc7UO82EJ9LCqDZUIAueUAgUhU+K1ATZG4oSlDJn9QykWhRws7ImFfTOcX/XNl/N9jhh10FigPjYW9o0ylku4pWfxJZYnKOsh2lBPDh3PjIWrlVwKHJc3e/aLL49TTZokUZpqNlSye2cCCgaaP2g6ASorVO8Kdwy8kHFjNXA9bQtVX2mmLpbiVxHeWgUnCBRtVpQ4hfw9l58UCnsyLJYWb8VM+EzMpzwJKE9ZsFb/aT5I85UdzNxD1sxXa6Sqd2JJqd2qZv52tDYpabHdneyxVajSiyWSUXZR7kgG7sfQFGzzyUEp0I7GDqrFvzxqKGHCD+r1hUqrOnFXZ9ygqDJ9+Q8VBNmXd31dbEr78wSWwOmcgg4FOPMx7mhoBQwzkE8gtctNCtxyitbuiARiQPzjAfUlTim+KRuOZ9IdEpj8QZY7mkJYweUsKqC4XVKc7yoVjz49D0/9XLrvp3JoLFrOjifa/9VAQAwtfkTbVvD0nnx3xRBEy4wpVx5Whwl66Vr51QriHKn0b0xOQAtZhyU8lLucUtvr/fFjfUONxPShejRjNTe5HsHJdp3n++2ZlRNelNsCynPTG2A/E24ZGUO2OtHaNSqEkxNDGLPPxuLEUs5Z0CAjX1a+JO+6q8mNPYK3EylPkoNWkCBRtbvZTsJfzSi9/utbHYzk9YibtsGm0dOUjFLKvcGfMI5YOiLVxQO6d32QverHkmMhXSGx5BaiEQ61u+41LpLiQj9FQLw==",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791459860,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 296,
+   "prompt_tokens": 632,
+   "total_tokens": 928,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 284,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001584,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001584,
+    "upstream_inference_prompt_cost": 0.000474,
+    "upstream_inference_completions_cost": 0.00111
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 284
+ }
+}

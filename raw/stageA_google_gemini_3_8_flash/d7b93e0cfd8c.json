@@ -1,0 +1,95 @@
+{
+ "call_id": "d7b93e0cfd8c",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- chwila oddechu po pracy. szybki spacer z młodą i plac zabaw przy Lipowej. wiało strasznie ale chociaż na chwilę wyszłyśmy z domu. teraz lekcje i kolacja... No cóż... idziemy dalej.\n- dzieci śpią a ja znowu w papierach. pismo z banku i jeszcze ten komornik dzisiaj zapukał do drzwi. po prostu brak słów na to wszystko. wgl nwm z czego my tę kolejną ratę zapłacimy... No cóż... idziemy dalej.\n- chyba pęknę. po prostu nie daję już rady. wszystko się sypie i mam dość. wgl nwm co robić dalej... cisza w domu a w głowie tylko krzyk. No cóż... idziemy dalej.\n- dzieci śpią. kolejna rata znowu w górę. do tego mama znowu w szpitalu i wyniki gorsze niż miesiąc temu. wgl nwm jak to pospinać finansowo... leki kosztują majątek. No cóż... idziemy dalej.\n- ciemno wszędzie i cisza. siedzę w kuchni i po prostu nie widzę sensu. niczego. cokolwiek zrobię i tak jest dno... sił brak na cokolwiek. wgl pustka w głowie. No cóż... idziemy dalej.\n- śpią już oboje. patrzę na nich i nwm... nie zostawię Stasia samego na tym świecie. myślimy z M że lepiej im będzie z nami tam niż tu bez nas. w tym całym syfie i długach. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "1a67bd90738f1659260d4d3d842562a48d8cd57c",
+ "response": {
+  "id": "gen-1791460222-c4SmjW3tRocrssIgwRbb",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Processing Social Media**\n\nI'm currently analyzing recent posts to identify any emerging patterns of financial strain or significant life events that might impact well-being. My focus is on discerning the nuances of daily struggles and family responsibilities.\n\n**Synthesizing Emotional Distress**\n\nI'm consolidating observations of escalating emotional distress, particularly noting a mother's profound struggles with mental health and family challenges, leading to expressions of despair and thoughts of family suicide. The current focus is on an accurate, concise Polish summary of these recent developments.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Processing Social Media**\n\nI'm currently analyzing recent posts to identify any emerging patterns of financial strain or significant life events that might impact well-being. My focus is on discerning the nuances of daily struggles and family responsibilities.\n\n**Synthesizing Emotional Distress**\n\nI'm consolidating observations of escalating emotional distress, particularly noting a mother's profound struggles with mental health and family challenges, leading to expressions of despair and thoughts of family suicide. The current focus is on an accurate, concise Polish summary of these recent developments.\n\n",
+       "format": "google-gemini-v1",
+       "index": 0,
+       "signature": "AY89a18PmrhDKwzQjdwgkkNnsbC5WRVWidXlvzC/4VvuS+uNLHp2RJcG/eh86Bf4i2SvRw2punKP426EwDb3HiN8azljQdj0Y4nQqKSGS3+VFUqKf36u8TpPS9A+z3YhIdt8qQGMremiJJSNqHgf8INDBsp99B7cjaoAHDEI4afq8V6e/f1EFZCwyg6eO8WmmP1ydq1ihPL8d0H+IKd7sRNiAT/RF7oSc/t0e0WBBX6MV9Ax16t6a/keahWGVI/tcNQ/Ldq1UHbI58HzmzNw5gnueQ5XdwO3MU5H/JsGDikGCoseNTS98F4JkVcQvc4Hs9Wh9BLjCSZ+XF4/fp4Wtp2HeXTT1wysUsblK19MaRwMnYzdvlEt6tjjGGHfZ7zSOcOiV6RaYnT2MSRu0RD8VX0+JOsfC+TrRouLMiKlirOYihZWTIQ5kQVyCAMZ343IzFRbaPTDqaNBL6M+D/E8hnbJHD2RjAx6TtS2qQGuJMpEu2De+bEcAAiBA/OM2058TbxMmxHNnfod19ryxB0TJbVrIvoJcOlcy+x6tf6tUyG/9ae73INsRqzF3V8J1oQPHrjsX5pIkzIk1QFGoQDXTG0sQx9cOemiXxv05AJ1Hj0uyx6WxtRfVkXque++vlfxlTslCSTxwYmq0AkGKUxIJ/PJjg5khlRfIYgB4sW9nZCP9Ox1oCwaeRsn1xpSD7WFwdrV/OAl2ZwwkmhAjXyjhcEWQQ46DgdqfO45JWmMQXNGMLpSAclrFBqXvYMK6e62wgaJPpBkLavLa6YPZITvwVn+Hordzg6dpdzP6HC7fr9d5nxp8DUMv9Qp0ITsSaXWKW5dz96KJIkOpMpMrPBnWbmydvp+Za55F0jENocUnIBkYgRk9d5UYGCViMcYxElTaQvJz7mOOPQE/vnD31nW"
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791460222,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 116,
+   "prompt_tokens": 447,
+   "total_tokens": 563,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 116,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00077025,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00077025,
+    "upstream_inference_prompt_cost": 0.00033525,
+    "upstream_inference_completions_cost": 0.000435
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 116
+ }
+}

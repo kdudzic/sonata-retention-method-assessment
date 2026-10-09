@@ -1,0 +1,95 @@
+{
+ "call_id": "42f17837f8fe",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer po parku z młodszą bo starszy wolał lekcje dokończyć... w końcu trochę słońca. potem jeszcze chwila na placu zabaw za blokiem przy Lipowej. nogi bolą ale warto. jutro znowu biuro. No cóż... idziemy dalej.\n- kolejny miesiąc i znowu nie starcza do pierwszego. rata za mieszkanie zjada pół wypłaty a reszta rozchodzi się nwm kiedy. dzisiaj sąsiadka mówiła że u nich na klatce był komornik... aż mi się słabo zrobiło. siedzę z kalkulatorem i liczę wszystko od nowa. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "aa2295a0776df6d166fbcf9b978d3170e21922e3",
+ "response": {
+  "id": "gen-1791460214-D1pXHXTFyNIk8Y02LQdK",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba wybrała się z młodszym dzieckiem na wieczorny spacer do parku i na plac zabaw, a później pisała o napiętym domowym budżecie, w",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep this neutral and brief, staying in past tense and skipping the specific address for privacy—just a general sense of daily life, under 35 words.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep this neutral and brief, staying in past tense and skipping the specific address for privacy—just a general sense of daily life, under 35 words.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS7gUKEAgSGAI4AUIIdGhpbmtpbmcSDJKJSk51mvWYyNrHuRoMBBUMq60JMh84gj54IjBPYdGCmbZNLL/tEnogvk8LvwI8c1r6+vmGybgfgCyDuK6k0eIvgWVDZF1jguRgKGAqiwXWqvu/s4GFz7DevioVbdeVIB4lOYf7mqwyNSqiGpBgIjmzNlZGMK3B6UC8xtg7WqbVKlbECBjMay9NEcfZ0QIhv6ZYQkkEL0vleNyUFY/0mxmFtVrzxLTNZa8zuzw5hj3G0MYo823V4QyJgtdmiNRdG/w71QunTGuinezyyZXIvf5N/Kil70zt2sgfUbkloMk5U7COldgB98Kr5YHckIFbC8FDcHA12UmUTZThHzAbZZ53KB3onj1ClLxRacYBp5MXntWl7Br1F2Ljtu7TEexBUi+ctLD7VJBWSKO1pfLM+LRv++jHz8IkqwLqLqPO6h0hqu0nsxmBYUjJliJMbSP/Qm5Z+g19ia/GJgV/BSHHhIOaRf4bF0Ou3YTx4sj4bK8Ql0EuW4Ck8974ixN/5vB4UqE3uj+gBM3GVzECcDFlS1n6ZoQdT16efo77Nsvo1+vRVaYBVsTBDmnmCNVH4TlCKQDyg71OIwSBzYvlKOy0/FVmwAj9FSez/JW855SsvUOh0sNkei4olBLncH3N6X/U6GuzGeU5OJhCrLpXT4x7bu144cBctG9MtDQeiZPaTFgumuHp3JTG53q7ju+kO7Br7bcHcmZsp40ggPU0+99utErcwtDyAWBgemizGLZdwdzHZnwk5Jjm6PJoAsV6ofDPfI/waDum7cURTIftRudjwbR0QZlwH/EGG0SszH7AoA9ybzybN03n1XtFRwWCOQmEYS5wmIzICOV4GTVYf7or0dorxCGK1N7jCZTMtOSMn370po0ruSxjTWVXpARhqfgBN6IsEz+ayEDfV2BvmI/jbswZ76q7pfUuYoALD6DZqJBbSNcCDibBrDTUKVevSccBv1Ozn3q7uxCRMocYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460214,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 381,
+   "total_tokens": 501,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 60,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.003924,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.003924,
+    "upstream_inference_prompt_cost": 0.001524,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 60
+ }
+}

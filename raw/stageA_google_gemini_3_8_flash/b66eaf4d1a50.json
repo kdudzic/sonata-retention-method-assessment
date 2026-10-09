@@ -1,0 +1,94 @@
+{
+ "call_id": "b66eaf4d1a50",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1953490361
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.\n- zainteresowania: fotografia uliczna, kolarstwo górskie, kawa z palarni\n- lokalny punkt odniesienia: skwer Kościuszki przy molo w Gdyni\n- aktualna sytuacja życiowa: Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete, dużo nawiasów; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Krótka obserwacja:”\n\nTopic for this post: zakupy i ceny\nConcrete angle: zakupy na targu\nRegister: matter-of-fact\nTarget length: about 11 words\nTime of day: morning commute, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Dobra, słuchajcie, wesz\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "c40463db20947ecb4a8664f287a22b45969f623d",
+ "response": {
+  "id": "gen-1791459876-smp11pZMPPRLCgZijAf7",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Krótka obserwacja: na targu jab",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1/zaFDH73bwjGOpMjiVfjjA/n+1rS5jd/jc3xd+gbOdzWLm3lWjuQZxAcjU4s4jd+uLJs1RhVe4G0DU4Jc58Q5RSpEfHgJIFma2RVg3G1rFF0Y0IobgvBbxlU6TtoLMxRWJ8ibecpLVUfE30z/TRedV8MaK12nkrOKWagiBH2zo+PV7/QRPg6JG0io68Z/1XqXfc8uX4KnUzNfz2KskNrha8D0LWu8jkkYOKY6QS/Ks4gIigWChu/OcGpk2wUT/qj/jR3uOBNIn38uixtTwf/qWNCDBpox8rxVFDX5FTfphEmvVTTRa3FesUmQZ+YanoFgC0wbJw4/NzipPEReKBurDDfmjzkS/fXR6hTacvfxsdNoQECxu3iDAlLV8FgzRJOlt8ga8rpuMR8695Ozj/JJ6x2K1wtPNIRX+u3LDLhDIa7yesoLRTgF7D60b5zndtLmnDXZ1XoFzJW0jc/gX9BE0tLNgQP29GHktu1xvND7LBQLJ6zqxhjc8kmqTvW8ZceLB4X6iP39CVA3aw3sOS8AD92XJ/p/qrGf4D83r+AKNZ0d73UL7VsNZB7MYNLgwUcijjXIeSHUczogUbjG+ZHXTc4WX2fQ2Xe2i72uv8mw2q42NKit6M5O9p+d/EUL1qgZrwZGbrNqW4FhF8WtjMrkNQJiwAgAA31InQJkk1IXUAm8I7eJFfxDEdkXuXfqeNYTrnEh2O2FftL9BZxGQnDj7e2oxfVAYSnw04wvxFe18MmAWHQr909YwGsDfMAIJq27UzpC96au7g1JuFcpm5O5c9huzs98RYtZNcyQChvehhlcZ/G9TIan0DmUngeQtZ0XEZuXYsAUPoM137vL+apId280Uy3LtRwY01x/74DHHUjyxNC2RetkVxU2xG162I/TQMzdwg0QTkMmyZvjUefLMILYyXzwQ11btEyIxczoqHHB4HRDPJPEMCQ/wCS9vM27iGxWUFWHTdWflQCmanYv8ppqDjyliuF2Uv104DfqIskRRkYhIfB1s/KAfkOAzNSi5jDN11PwdD4Oi806nRSMd7cImNAeNf41PISqrh2009pg7S83bTtGZQsUl8ylYixbYJq6WxfZZO6HfQSXD+7hK+FNv46v3Y4+7UaxRhKccqhOUbb3ICQpsdbn4/mNPMwsjxg0P1JwO3FGu3unVu9L/RO+tGBzt59NHsREeTazs8Km7LLj5XTTmOplsAN0+kQgD7dcwhtwbmWjr9SNspdufOKu9v7k2o9EUMsjec+/aIEiC54ic2Y1gZpwiL6IhikootF5p/x07CCwDy+7qVIauUvPGVGDj7J2A3XPRvac030bEwaLU86YEJ6CRJFHuxB8Rdfj0G3U+ut2Ljz+B/HnLmbJcor5fGCKC8gfuU0poMQTu6LlW/Y3iKF2KpKZbYAD8e7wRCAD02ufEIl2wpVt+MbuR7eqFMafrc5i3ueztTNJ2SjG+KU7cdJ7BqyEKArGqQeBwzIxjDkzNFmRw6qv56f9TYUyjwtuhT2PsBGytNHuPkk5SPTdCJGI8DwVz/lqHTqWFmRfU8Au7Jw1Q9iWpIN0+x2GDMqlwxehN53yR5KcDAwsEuAIy6qcelgrUJEQbC2eLyaVtX0+urRL/+8TWG/j49V1iXyBQw8h64CTMt2tjB6h2Frat+dvLZXuhoJ3JA94O0WrRjpfUL581YzEGqzmhYGnsZdTsyKQbtTahW5qbptGLxQiamfik9ccTsAG9vtjhAiixFc5f4/j+0E2GvnMrrjJUOCdrAcYD5ywAeUT6VBs4S1V98BzhnvYOe4cjNerHgQivnR/ATzQje83cS7zTHOdwvNxJnIdoNK4=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791459876,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 296,
+   "prompt_tokens": 615,
+   "total_tokens": 911,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 284,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00157125,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00157125,
+    "upstream_inference_prompt_cost": 0.00046125,
+    "upstream_inference_completions_cost": 0.00111
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 284
+ }
+}

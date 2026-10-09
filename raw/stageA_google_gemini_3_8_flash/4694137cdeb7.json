@@ -1,0 +1,94 @@
+{
+ "call_id": "4694137cdeb7",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wreszcie chwila na spacer po całym tygodniu w papierach. mały śpi w wózku. starsza zbiera liście w parku... chociaż godzina spokoju przed lekcjami i kolacją. jutro znowu etat od rana. ale dzisiaj jest całkiem ładnie...\n- dzieci śpią a ja siedzę nad papierami. rata znowu w górę. wgl nie wiem z czego zapłacimy bo dzisiaj zapukał komornik... dramat po prostu. nwm jak damy radę w tym miesiącu. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "de159bb5e4eb6a0729071389bdd7418c85cc688a",
+ "response": {
+  "id": "gen-1791461107-HFa3mHGKY6FsBGkQUSXk",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor postów łączył pracę zawodową i domowe obowiązki z opieką nad dziećmi, a także mierzył się z rosnącą ratą oraz wizytą komornika.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1+NeNf65ytqj26Cpg0JWWmiq115OXBBlV3f4+MCinixYBYFHsKm/5WnDhyNjFeX6gS8fwDHUeqNpu8Xt7xDyDfLiqwxzDENIuAs55spb3gtmM/g",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461107,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 42,
+   "prompt_tokens": 211,
+   "total_tokens": 253,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00031575,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00031575,
+    "upstream_inference_prompt_cost": 0.00015825,
+    "upstream_inference_completions_cost": 0.0001575
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

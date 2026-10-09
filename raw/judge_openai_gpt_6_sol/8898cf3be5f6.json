@@ -1,0 +1,86 @@
+{
+ "call_id": "8898cf3be5f6",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.\n- zainteresowania: fotografia uliczna, kolarstwo górskie, kawa z palarni\n- lokalny punkt odniesienia: skwer Kościuszki przy molo w Gdyni\n- aktualna sytuacja życiowa: Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete, dużo nawiasów; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Krótka obserwacja:”\n\nPosts by this author (in order):\n1. Krótka obserwacja: przed pracą zrobiłem na siłowni nowy rekord w przysiadzie, 90 kilogramów (poprzednio było 85), a jeszcze zdążyłem wrócić na kawę przed ósmą, więc poranek całkiem dobrze się ułożył.\n2. W przerwie zamówiłem synowi prezent urodzinowy (wybrał lampkę do nowego pokoju), teraz sprawdzam wymiary biurka.\n3. Krótka obserwacja: w piątek po południu znalezienie miejsca przy skwerze Kościuszki trwa dłużej niż sam dojazd (a miałem tylko odebrać paczkę do gabinetu).\n4. Po południu objechałem trasę przez las do Orłowa (trochę piachu na podjazdach), a na powrocie zwolniłem przy skwerze Kościuszki.\n5. Krótka obserwacja: siatkówka w telewizji wciąga mnie dziś bardziej niż ustawianie biurka w nowym gabinecie (zostały jeszcze dwa kartony), więc zrobiłem sobie przerwę i oglądam dalej.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "f75ee7d2c881e49549e3201041816c8c61f5de48",
+ "response": {
+  "id": "gen-1791461475-I9ABHHmD3HniX8Fz2SF2",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 4,\n  \"problems\": [\n    \"Verbal tic appears in three of five posts\",\n    \"Local reference appears twice in close succession\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461475,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 88,
+   "prompt_tokens": 703,
+   "total_tokens": 791,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002286,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002286,
+    "upstream_inference_prompt_cost": 0.001406,
+    "upstream_inference_completions_cost": 0.00088
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

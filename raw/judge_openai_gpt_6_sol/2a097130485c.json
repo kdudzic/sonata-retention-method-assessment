@@ -1,0 +1,86 @@
+{
+ "call_id": "2a097130485c",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.\n- zainteresowania: żużel w telewizji, stare Volvo, wędkowanie w weekendy\n- lokalny punkt odniesienia: stacja Orlen przy zjeździe w Strykowie\n- aktualna sytuacja życiowa: Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: zaczyna od „no to tak”\n\nPosts by this author (in order):\n1. wczoraj zona wróciła z siostrzeńcem i nagle jest kot. mały rudy siedzi na kanapie i patrzy jak na głupiego. volvo stoi na podwórku i rdzewieje. trzeba będzie wreszcie zrobic ten zderzak przedni\n2. no to tak kregoslup od tej kanapy wczoraj zero spania plecy jak z betonu dziwne ze w pracy na wozku lepiej siedziec\n3. no to tak wstalem o 4:30 zeby dojechac na 6 do strykowa i teraz ledwo zyje czekam az sie wreszcie skonczy ten tydzien i bede mogl zajac sie tym volvem\n4. no to tak kto wymyslił ten remont przy strykowie, dziś dojazd zajął mi 40 minut dłużej, a jeszcze volvo czeka w garażu\n5. ta alergia mnie wnerwia juz nie wiem co brac zeby spokojnie przespac noc dzisaj znowu sie nie wyspalem a jutro na ryby trzeba wstac wczesnie\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "7603526001c66c66101458f83de278ba5c8eecd6",
+ "response": {
+  "id": "gen-1791461269-2nYt8WJh678hnwkg7gXe",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 3,\n  \"voice_stability\": 4,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 3,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"The opening tic appears in three consecutive posts\",\n    \"Abbreviations are largely absent despite the persona card\",\n    \"Volvo is mentioned in four of five posts\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461269,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 102,
+   "prompt_tokens": 702,
+   "total_tokens": 804,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002424,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002424,
+    "upstream_inference_prompt_cost": 0.001404,
+    "upstream_inference_completions_cost": 0.00102
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

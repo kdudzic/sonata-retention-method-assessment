@@ -1,0 +1,15 @@
+{
+ "model": "anthropic/claude-opus-5.5",
+ "n_posts": 104,
+ "cost": 1.2696880000000004,
+ "calls": 133,
+ "prompt_tokens": 181407,
+ "completion_tokens": 27203,
+ "elapsed_s": 241.5,
+ "refusals": 3,
+ "empty": 1,
+ "errors": [],
+ "reasoning": {
+  "effort": "minimal"
+ }
+}

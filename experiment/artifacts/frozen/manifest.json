@@ -1,0 +1,54 @@
+{
+ "frozen_at": "2026-10-08T15:38:38",
+ "note": "stage 0: S0 lexicon v1 (pruned draft), S1 seeds v1 + query instruction, Annex G weights, top-3 aggregation, S3-open deepseek-v4.1-flash pinned to Together/DigitalOcean/Novita",
+ "artifacts": {
+  "s0_lexicon": {
+   "path": "artifacts/s0_lexicon.yaml",
+   "sha256": "48dfb7f9745d3656951c1fdd70a8b491ab7ccf6d5c3a57292842f63a6667577d"
+  },
+  "s1_seeds": {
+   "path": "artifacts/s1_seeds.yaml",
+   "sha256": "e547505f8aaea3fba5cb8ee55d92d2f780062d68fe888c7aabb4ca629fa27caa"
+  },
+  "experiment_config": {
+   "path": "configs/experiment.yaml",
+   "sha256": "e5a340f0bb6922534b4bcef846b8fff42e68fe5283fed7ce4371f2499ae0f9ba"
+  },
+  "arc_split": {
+   "path": "configs/arc_split.yaml",
+   "sha256": "209f5de381e2feadc4160a4e85d5509c53ab310c65bcfc1af3cf3e36e19f60a0"
+  },
+  "prompt_d0": {
+   "path": "prompts/s3_d0_v1.md",
+   "sha256": "7adb3ed603c3a4b4ff2b64a8dda271f86bb7fe5f173efa51d8d383313d2501a9"
+  },
+  "prompt_d3nat": {
+   "path": "prompts/s3_d3nat_v1.md",
+   "sha256": "978efa2a09a03f94e67976a29b499b20e8edcb52bc8a0277a72bd0579f0de5d7"
+  },
+  "prompt_blind_d0": {
+   "path": "prompts/s3_blind_d0_v1.md",
+   "sha256": "fd5ad1d33298d8f3711ab04115617427c0fe210872c5680fc8137243b3523290"
+  },
+  "prompt_blind_d3nat": {
+   "path": "prompts/s3_blind_d3nat_v1.md",
+   "sha256": "27ded9f421ec1b01ee41906254d23c20a022ec1c2de66a46fb975ec742a70c21"
+  }
+ },
+ "s0_weights": {
+  "A": 3,
+  "B": 2,
+  "C": 2,
+  "D": 1,
+  "AB_proximity": 2,
+  "ABC_same_sentence": 1,
+  "E": 4
+ },
+ "aggregation": {
+  "kind": "top_k_sum",
+  "k": 3
+ },
+ "s1_model": "qwen/qwen3-embedding-8b",
+ "s3_open_model": "deepseek/deepseek-v4.1-flash",
+ "s3_control_model": "anthropic/claude-sonnet-5.5"
+}

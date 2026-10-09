@@ -1,0 +1,86 @@
+{
+ "call_id": "90cbacea9dc9",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Na urlopie wychowawczym z rocznym synkiem w Białymstoku, posty podczas drzemek dziecka i późnym wieczorem.\n- zainteresowania: spacery z wózkiem, wypiekanie ciast drożdżowych, grupy sprzedaży ubranek dziecięcych\n- lokalny punkt odniesienia: plac zabaw przy Plantach w Białymstoku\n- aktualna sytuacja życiowa: Synek zaczyna chodzić, więc zabezpiecza mieszkanie i planuje powrót do pracy na jesieni.\n- sposób pisania: zdania: long run-on; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: przesadza ze słowem „mega”\n\nPosts by this author (in order):\n1. liczyłam, że kurier zadzwoni, bo rano jestem ciągle w biegu, ale nic!! mega by mi to ułatwiło odbiór 📱\n2. zajrzałam na Steam dosłownie na minutę i mam nową grę 😂 była na promocji!!! serial musi poczekać do jutra, jeśli po usypianiu jeszcze bd miała siłę\n3. wyciągnęłam rowerek po obiedzie i okazało się, że najbardziej interesuje go dzwonek!!! nogi jeszcze nie bardzo wiedzą, co robić, ale dzwonił przez cały krótki przejazd, potem postawił rowerek obok ławki i poszedł oglądać liście 🍃🚲\n4. miałam podczas drzemki zamówić zabezpieczenia do szafek, ale tablet się rozładował i szukam kabla!!! 🙃\n5. obejrzałam dziś dwa odcinki nowego sezonu i NIC nie powiem!!! ale muzyka w tym serialu znowu robi robotę 🎶\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "e215d7b78fa0bde9c961ca1da9ef702e33b9b991",
+ "response": {
+  "id": "gen-1791462221-s4hPfVPOpgogxpfUa16E",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":4,\"voice_stability\":4,\"tic_overuse\":false,\"repetitive_structure\":false,\"topic_variety\":4,\"natural_overall\":4,\"problems\":[\"Little random capitalization\",\"Most posts are shorter than the described style\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791462221,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 58,
+   "prompt_tokens": 693,
+   "total_tokens": 751,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001966,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001966,
+    "upstream_inference_prompt_cost": 0.001386,
+    "upstream_inference_completions_cost": 0.00058
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "2207438c5ffc",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer z młodszą po parku. kiedyś to był wózek teraz ona mnie ciągnie na hulajnodze haha. potem jeszcze plac zabaw za blokiem bo bez tego nie wraca. nogi bolą ale fajnie było. jutro znowu 8:00 i biuro... No cóż... idziemy dalej.\n- dziś po pracy w skrzynce znowu pismo. od komornika. serio myślałam że po ostatniej wizycie już się uspokoi a tu nic. raty kredytu wyprawka szkolna prąd... nwm skąd mam to wszystko wziąć. dzieci śpią a ja siedzę z kalkulatorem. No cóż... idziemy dalej.\n- kolejny dzień i znowu to samo. praca dzieci lekcje obiad pranie. siedzę teraz w kuchni po ciemku i nwm... serio nie daję już rady. wszystko się wali naraz a ja nie mam siły nawet się nad tym zastanawiać. No cóż... idziemy dalej. chyba.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "343aa41eae24852d6fa4521bdbc40768611e0204",
+ "response": {
+  "id": "gen-1791459956-raYVwY4yH24PVbjXUJ46",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "These posts express exhaustion and ambivalence — \"I'm really not coping anymore,\" \"we keep going. maybe.\" It's not explicit suicidal ideation, but the tone carries real weariness and uncertainty worth flagging carefully in a single neutral summary sentence.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSwAcKEAgSGAI4AUIIdGhpbmtpbmcSDMCzQy2I+a6Tvy70txoMdjxAgDplO6INLBI8IjAzPFPF5sf1UVFuCUzO6IdU56C9g8bL/VgGPcKxA1SLXyFLumxY8MK08WeGm3+vLkIq3QYuIZ1qB0/JrNoKOfaOOkgzMPfmLHbwIhg/nPHYaEId1ijuWA5NtEggz36RhSPGy42ZY5R+/Af7P0hmG1UcJObpGClm2kdY0kTQgUUpqkbHBut1Ly/e8qYTTK5xtdGpDZrcrHeJtY6VOKwe/8hY98D+XX8m3pgGcitYW0isplZNV5bs+/Bt31/+XKrtG/iX0T25BQ1LG26toXuozYb04h+5j6YiYHRRk7h1hnCRhHhOsHPe5SOC6fe2/LuCgez6x0HLzWRqdssim5hVVNHn67tbOlACZPMYWVTqah2hb/tdkXSrgOnCViSslOL+xlwQItnvaWM3BzJ4n6VljZltL5QSFB5xSxm03eTGeleHbAkmQd/hAwoaaaHz9Nim+yu3XxThTOb5Nkq1tpm0xvv1qCxQEXu0dAHxpvAoTsIjO2Ni+NGrTCTHUBEVLcExP1W7znv6B1pzY0KfxuQPv2NHpfouauBbC4K6tKraXaa5lBROkl98VLUPpFy1XowZjKd+osk4XFHr+HcDRLyBGeczETJvCNa+1SpOiYpm6O1IAiEs53ccgJw1W2/CDGV/edXsx1JPJMFwQUut/qM1TVzVkuHrtGVQ3OT3b3Q0my52K+tOMmzNJ6trn+dDGuWBw66tgpM1y3ymFRYcgcxk0kYOAEJECmCPyXRp/Y6eLEf5nQIdZM7rbr/Cwylb7dMwSK+pKwd8VmemJ3bYDeA6bYuaPrcdFEHAO/4gxbhYG3S4kl6CiQYBaaVN53WoG0Qu3+KbLEYd+8jVtLPfxiQXXp2hOZ+a7fEYFKzP9vleY5Apht4c24EVdYS6P3ZK9b7bX4ogrt9vw1s5sAlOjHqgUtChLcUIolKhgW+meXo0kBjIZKIDqh9y19gY0+hldpIEcsNoV+G5I+CZAAppusBhdhzUOHyIlEtuxBzc7QJFoF2G2+GetX63A3Zx1k5RJteqVnADFgXCyOFFf4RKDvUmTGwf7oVtHsOvdtVvvDl8HDdQ9V8R7x0B7lrf7q0bXV5wmP4bqYABZOlvEtuelW/IzyORzXVodYiUfpOEgAYt4Qln325jyqzQ5Iag18eVQOxxcSqBSitX09w9uScChvKYJ7LGCLPALmqy44dsalSy12ectpqMSiqDWrEtT/uBjA+27JsYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459956,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 496,
+   "total_tokens": 616,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.004384,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.004384,
+    "upstream_inference_prompt_cost": 0.001984,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

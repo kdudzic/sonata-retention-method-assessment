@@ -1,0 +1,87 @@
+{
+ "call_id": "dfa67cd92b5c",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 70554036
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Prowadzi wózek widłowy w hurtowni w Radomiu; zagląda tu po popołudniowej zmianie.\n- zainteresowania: mecze piłki ręcznej, ostrzenie noży, komiksy\n- lokalny punkt odniesienia: sklep spożywczy przy ulicy Żółkiewskiego w Radomiu\n- aktualna sytuacja życiowa: Przez najbliższe miesiące składa regał do piwnicy i porządkuje przechowywane tam rzeczy.\n- sposób pisania: zdania: short fragments; interpunkcja: krótkie zdania, mało znaków; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: dopisuje „tyle ode mnie”\n\nTopic for this post: komunikacja i dojazdy\nConcrete angle: W środę wczesnym rankiem znalazł hulajnogę na minuty pod blokiem, ale miała prawie rozładowaną baterię. Poszedł na przystanek. | mood: neutral | opener: one-word reaction | verbal tic in this post: no\nRegister: enthusiastic\nTarget length: about 10 words\nTime of day: early morning, Wednesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Remont nawierzchni wydłużył mi dziś rano drogę do liceum, skręciłem w boczną ulicę (jak chyba połowa jadących), i chwilę postałem.\n  - autobus dotarl na moj przystanek 8 min pozniej 🙃 wpadlam na zajecia tuz przed prowadzaca, zdazylam jeszcze wyjac laptopa uff xD\n  - W przerwie obiadowej czekałam na autobus tak długo, że zdążyłam zjeść całą kanapkę, zanim w końcu przyjechał.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "69e69ffca40d1072e9347a2fc75bc0bfeb0ca13e",
+ "response": {
+  "id": "gen-1791464471-Tqe7WsUJEUEYbs7sxnZt",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: o, hulajnoga pod blokiem. bateria prawie pusta, poszedłem na przystanek. tyle ode mnie",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464471,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 32,
+   "prompt_tokens": 836,
+   "total_tokens": 868,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001992,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001992,
+    "upstream_inference_prompt_cost": 0.001672,
+    "upstream_inference_completions_cost": 0.00032
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

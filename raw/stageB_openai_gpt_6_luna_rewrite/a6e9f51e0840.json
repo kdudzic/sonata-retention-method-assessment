@@ -1,0 +1,87 @@
+{
+ "call_id": "a6e9f51e0840",
+ "tag": "bg_rewrite",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 708998887
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You rewrite a draft social-media post so that it reads exactly like this specific person typed it quickly on their phone. Keep the content and length; change only the voice, rhythm and surface. Output the post only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.\n- zainteresowania: szydełkowanie swetrów, teleturnieje w telewizji, wnuki i ich zajęcia\n- lokalny punkt odniesienia: targowisko przy ulicy Szczecińskiej\n- aktualna sytuacja życiowa: Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.\n- sposób pisania: zdania: long run-on; interpunkcja: ellipsis everywhere; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: dodaje „co by nie mówić”\n\nDraft post:\nniedzielny wieczór, a w domowym biurze laptop jeszcze otwarty i jutro znowu praca zdalna... co by nie mówić, przydałby się grafik bez zmian na ostatnią chwilę...\n\nRewrite it the way this person would actually type it: same facts, roughly the same length, Polish. Apply their writing habits literally (punctuation, capitalisation, typos, abbreviations, emoji). Remove anything that sounds edited, balanced or essay-like: tidy parallel structures, neat closing punchlines, explanatory clauses, em-dashes. Do not add hashtags, disclaimers or new facts.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "52b336b5524a0e3280d4936349d590776e492d9f",
+ "response": {
+  "id": "gen-1791460532-PeBPWsumDg6LZLHjDrHO",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Niedzielny wieczór... laptop w domowym biurze jeszcze otwarty, a jutro znowu praca zdalna... co by nie mówić, grafik bez zmian na ostatnią chwilę by się przydał...",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460532,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 57,
+   "prompt_tokens": 409,
+   "total_tokens": 466,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 6.94e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 6.94e-05,
+    "upstream_inference_prompt_cost": 4.09e-05,
+    "upstream_inference_completions_cost": 2.85e-05
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

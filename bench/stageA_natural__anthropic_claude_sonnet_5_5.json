@@ -1,0 +1,552 @@
+[
+ {
+  "model": "anthropic/claude-haiku-5.5",
+  "judge_p_ai_mean": 0.6595,
+  "judge_p_ai_ref_mean": 0.14100000000000001,
+  "judge_auc": 0.9855555555555556,
+  "judge_polish_mean": 3.7666666666666666,
+  "judge_n": 60,
+  "judge_tells_top": [
+   [
+    "overexplains context",
+    20
+   ],
+   [
+    "tic overused: serio serio",
+    3
+   ],
+   [
+    "emoji",
+    2
+   ],
+   [
+    "closing punchline 'takie życie'",
+    2
+   ],
+   [
+    "ellipses overused",
+    2
+   ],
+   [
+    "stacked mundane details",
+    2
+   ],
+   [
+    "scene-setting opener",
+    2
+   ],
+   [
+    "generic relatable complaint",
+    2
+   ],
+   [
+    "closing punchline 'i tyle w temacie'",
+    2
+   ],
+   [
+    "co by nie mówić tic",
+    2
+   ]
+  ]
+ },
+ {
+  "model": "anthropic/claude-opus-5.5",
+  "judge_p_ai_mean": 0.5131666666666668,
+  "judge_p_ai_ref_mean": 0.1247457627118644,
+  "judge_auc": 0.9415254237288135,
+  "judge_polish_mean": 4.2,
+  "judge_n": 60,
+  "judge_tells_top": [
+   [
+    "overexplains context",
+    15
+   ],
+   [
+    "closing punchline",
+    13
+   ],
+   [
+    "tidy narrative arc",
+    4
+   ],
+   [
+    "too tidy punctuation",
+    3
+   ],
+   [
+    "ellipsis-chained clauses",
+    2
+   ],
+   [
+    "closing punchline: takie życie",
+    2
+   ],
+   [
+    "emoji stacking",
+    2
+   ],
+   [
+    "serio serio tic",
+    2
+   ],
+   [
+    "\"krótka obserwacja:\" template opener",
+    2
+   ],
+   [
+    "neat slang insertion (nwm, bd)",
+    1
+   ]
+  ]
+ },
+ {
+  "model": "anthropic/claude-sonnet-5.5",
+  "judge_p_ai_mean": 0.5335,
+  "judge_p_ai_ref_mean": 0.14916666666666661,
+  "judge_auc": 0.9411111111111111,
+  "judge_polish_mean": 4.0,
+  "judge_n": 60,
+  "judge_tells_top": [
+   [
+    "overexplains context",
+    16
+   ],
+   [
+    "closing punchline",
+    7
+   ],
+   [
+    "too tidy punctuation",
+    4
+   ],
+   [
+    "tidy punctuation",
+    3
+   ],
+   [
+    "stray </br> tag",
+    3
+   ],
+   [
+    "ellipsis overuse",
+    2
+   ],
+   [
+    "stray html tag",
+    2
+   ],
+   [
+    "too tidy narrative",
+    2
+   ],
+   [
+    "tic overused: co by nie mówić",
+    2
+   ],
+   [
+    "trailing ellipsis",
+    2
+   ]
+  ]
+ },
+ {
+  "model": "deepseek/deepseek-v4.1-flash",
+  "judge_p_ai_mean": 0.491,
+  "judge_p_ai_ref_mean": 0.13633333333333333,
+  "judge_auc": 0.9186111111111113,
+  "judge_polish_mean": 4.166666666666667,
+  "judge_n": 60,
+  "judge_tells_top": [
+   [
+    "overexplains context",
+    15
+   ],
+   [
+    "closing punchline",
+    11
+   ],
+   [
+    "too tidy punctuation",
+    3
+   ],
+   [
+    "emoji tacked on",
+    3
+   ],
+   [
+    "tidy punctuation",
+    3
+   ],
+   [
+    "stock 'takie życie...' closer",
+    2
+   ],
+   [
+    "ellipsis overuse",
+    2
+   ],
+   [
+    "tic: \"co by nie mówić\"",
+    2
+   ],
+   [
+    "tic overused: co by nie mówić",
+    2
+   ],
+   [
+    "tic: serio serio",
+    2
+   ]
+  ]
+ },
+ {
+  "model": "google/gemini-3.8-flash",
+  "judge_p_ai_mean": 0.5081666666666667,
+  "judge_p_ai_ref_mean": 0.12233333333333334,
+  "judge_auc": 0.88875,
+  "judge_polish_mean": 4.25,
+  "judge_n": 60,
+  "judge_tells_top": [
+   [
+    "overexplains context",
+    10
+   ],
+   [
+    "too tidy punctuation",
+    5
+   ],
+   [
+    "closing punchline",
+    4
+   ],
+   [
+    "emoji cluster",
+    3
+   ],
+   [
+    "tic overused: ellipsis chain",
+    2
+   ],
+   [
+    "closing 'takie życie...'",
+    2
+   ],
+   [
+    "ellipsis overuse",
+    2
+   ],
+   [
+    "ellipsis-heavy cadence",
+    2
+   ],
+   [
+    "tic overused: serio serio",
+    2
+   ],
+   [
+    "opens with 'krótka obserwacja:'",
+    2
+   ]
+  ]
+ },
+ {
+  "model": "mistralai/mistral-large-4-0",
+  "judge_p_ai_mean": 0.5508333333333334,
+  "judge_p_ai_ref_mean": 0.14101694915254237,
+  "judge_auc": 0.9497175141242937,
+  "judge_polish_mean": 3.933333333333333,
+  "judge_n": 60,
+  "judge_tells_top": [
+   [
+    "closing punchline",
+    13
+   ],
+   [
+    "overexplains context",
+    11
+   ],
+   [
+    "tic overused: jj",
+    6
+   ],
+   [
+    "tic overused: ellipses",
+    3
+   ],
+   [
+    "tidy punctuation",
+    3
+   ],
+   [
+    "tidy narrative",
+    3
+   ],
+   [
+    "tic overused: serio serio",
+    3
+   ],
+   [
+    "closing punchline: takie życie",
+    2
+   ],
+   [
+    "ellipsis overuse",
+    2
+   ],
+   [
+    "ellipsis-heavy rhythm",
+    2
+   ]
+  ]
+ },
+ {
+  "model": "moonshotai/kimi-k3",
+  "judge_p_ai_mean": 0.5395,
+  "judge_p_ai_ref_mean": 0.13431034482758622,
+  "judge_auc": 0.942528735632184,
+  "judge_polish_mean": 3.966666666666667,
+  "judge_n": 60,
+  "judge_tells_top": [
+   [
+    "overexplains context",
+    12
+   ],
+   [
+    "closing punchline",
+    10
+   ],
+   [
+    "emoji stacking",
+    3
+   ],
+   [
+    "tidy narrative arc",
+    3
+   ],
+   [
+    "tidy narrative",
+    3
+   ],
+   [
+    "repeated 'takie życie...' closer",
+    2
+   ],
+   [
+    "ellipsis-heavy template",
+    2
+   ],
+   [
+    "balanced contrast structure",
+    2
+   ],
+   [
+    "tidy punctuation",
+    2
+   ],
+   [
+    "unnatural collocation: co by nie mówić",
+    2
+   ]
+  ]
+ },
+ {
+  "model": "openai/gpt-6-astra",
+  "judge_p_ai_mean": 0.5586666666666668,
+  "judge_p_ai_ref_mean": 0.14766666666666667,
+  "judge_auc": 0.9365277777777776,
+  "judge_polish_mean": 4.133333333333334,
+  "judge_n": 60,
+  "judge_tells_top": [
+   [
+    "overexplains context",
+    17
+   ],
+   [
+    "too tidy punctuation",
+    4
+   ],
+   [
+    "closing punchline",
+    3
+   ],
+   [
+    "ellipsis chain",
+    3
+   ],
+   [
+    "parenthetical aside",
+    3
+   ],
+   [
+    "ellipsis-heavy rhythm",
+    2
+   ],
+   [
+    "mundane filler",
+    2
+   ],
+   [
+    "stripped diacritics feel staged",
+    2
+   ],
+   [
+    "caps emphasis",
+    2
+   ],
+   [
+    "tidy punctuation",
+    2
+   ]
+  ]
+ },
+ {
+  "model": "openai/gpt-6-luna",
+  "judge_p_ai_mean": 0.6135,
+  "judge_p_ai_ref_mean": 0.1435,
+  "judge_auc": 0.9819444444444445,
+  "judge_polish_mean": 4.016666666666667,
+  "judge_n": 60,
+  "judge_tells_top": [
+   [
+    "overexplains context",
+    11
+   ],
+   [
+    "closing punchline",
+    4
+   ],
+   [
+    "trailing ellipses",
+    4
+   ],
+   [
+    "ellipsis overuse",
+    3
+   ],
+   [
+    "'takie życie' closer",
+    2
+   ],
+   [
+    "xd tacked on",
+    2
+   ],
+   [
+    "balanced parallel structure",
+    2
+   ],
+   [
+    "tic overused: co by nie mówić",
+    2
+   ],
+   [
+    "'krótka obserwacja' framing",
+    2
+   ],
+   [
+    "\"krótka obserwacja:\" template opener",
+    2
+   ]
+  ]
+ },
+ {
+  "model": "openai/gpt-6-sol",
+  "judge_p_ai_mean": 0.5455000000000001,
+  "judge_p_ai_ref_mean": 0.14349999999999996,
+  "judge_auc": 0.9036111111111111,
+  "judge_polish_mean": 4.116666666666666,
+  "judge_n": 60,
+  "judge_tells_top": [
+   [
+    "overexplains context",
+    15
+   ],
+   [
+    "too tidy punctuation",
+    5
+   ],
+   [
+    "closing punchline",
+    3
+   ],
+   [
+    "tidy parenthetical aside",
+    3
+   ],
+   [
+    "ellipsis pattern",
+    2
+   ],
+   [
+    "missing diacritics feel staged",
+    2
+   ],
+   [
+    "emoji closer",
+    2
+   ],
+   [
+    "emoji ending",
+    2
+   ],
+   [
+    "tic overused: nom",
+    2
+   ],
+   [
+    "\"krótka obserwacja:\" template opener",
+    2
+   ]
+  ]
+ },
+ {
+  "model": "z-ai/glm-5.3-flash",
+  "judge_p_ai_mean": 0.5371666666666667,
+  "judge_p_ai_ref_mean": 0.15199999999999997,
+  "judge_auc": 0.9108333333333334,
+  "judge_polish_mean": 3.6166666666666667,
+  "judge_n": 60,
+  "judge_tells_top": [
+   [
+    "overexplains context",
+    11
+   ],
+   [
+    "closing punchline",
+    6
+   ],
+   [
+    "parenthetical aside",
+    3
+   ],
+   [
+    "missing diacritics inconsistent",
+    2
+   ],
+   [
+    "too tidy punctuation",
+    2
+   ],
+   [
+    "tidy narrative",
+    2
+   ],
+   [
+    "staged typos",
+    2
+   ],
+   [
+    "tic overused: co by nie mówić",
+    2
+   ],
+   [
+    "tic overused: serio serio",
+    2
+   ],
+   [
+    "tic overused: takie życie...",
+    1
+   ]
+  ]
+ }
+]

@@ -1,0 +1,87 @@
+{
+ "call_id": "ba36e75a755a",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 527350437
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.\n- zainteresowania: szydełkowanie swetrów, teleturnieje w telewizji, wnuki i ich zajęcia\n- lokalny punkt odniesienia: targowisko przy ulicy Szczecińskiej\n- aktualna sytuacja życiowa: Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.\n- sposób pisania: zdania: long run-on; interpunkcja: ellipsis everywhere; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: dodaje „co by nie mówić”\n\nFor each of the 5 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with a detail a real person would mention - a name of a product, a time, a number, a place from their life). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. gry i seriale - mobilna gra, uzależnienie żartem (early morning, Friday)\n2. praca i grafik - nadgodziny / wcześniejsze wyjście (afternoon, Thursday)\n3. pogoda - mgła rano (lunch break, Sunday)\n4. praca i grafik - nowy projekt / nowe zadanie (late morning, Tuesday)\n5. komunikacja i dojazdy - spóźniony autobus / tramwaj (late morning, Tuesday)\n\nReturn a JSON array of 5 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "df77f81a196547cc57efb75764b6b4e2ad029b31",
+ "response": {
+  "id": "gen-1791461597-1w0t4LGJwG2rrnS4u46Q",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"W piątek o 5:40 sprawdziła godzinę na nowym smartfonie i przypadkiem otworzyła pasjansa. Przed wyjściem na targowisko przy Szczecińskiej rozegrała jeszcze trzy partie i żartem pomyślała, że musi pilnować tego nowego nałogu.\",\n    \"mood\": \"amused\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 29,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W czwartek po obiedzie znalazła w szufladzie dawny terminarz z biura rachunkowego, w którym przy ostatnim dniu przed świętami zapisała dwie nadgodziny. Teraz ucieszyła się, że może odłożyć szydełko o dowolnej porze.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 38,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W niedzielę podczas obiadu spojrzała przez okno i zauważyła, że poranna mgła, przez którą ledwie widziała przystanek, już zniknęła. Przypomniała sobie, jak szła po bułki, wypatrując wejścia do piekarni.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 22,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"We wtorek przed południem zaczęła nowe zadanie: spisać w notesie rozmiary swetrów dla trojga wnuków, zanim kupi włóczkę na świąteczne prezenty. Zatrzymała się przy rozmiarze najmłodszego, bo urósł od ostatniej wizyty.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 34,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"We wtorek przed południem autobus numer 35 przyjechał na przystanek koło targowiska przy Szczecińskiej dziewięć minut później, niż pokazywał jej nowy smartfon. Stała z siatką włóczki i zastanawiała się, czy dobrze odczytała rozkład.\",\n    \"mood\": \"mildly annoyed\",\n    \"opener\": \"complaint\",\n    \"length_words\": 17,\n    \"tic_fires\": false\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461597,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 590,
+   "prompt_tokens": 635,
+   "total_tokens": 1225,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00717,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00717,
+    "upstream_inference_prompt_cost": 0.00127,
+    "upstream_inference_completions_cost": 0.0059
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

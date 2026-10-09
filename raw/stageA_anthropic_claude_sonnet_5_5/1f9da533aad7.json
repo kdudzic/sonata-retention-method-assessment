@@ -1,0 +1,86 @@
+{
+ "call_id": "1f9da533aad7",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Niedzielny spacer. Młody uparł się że sam pójdzie przy wózku, no to idzie. Park prawie pusty, cisza. Nwm kiedy tak urósł.. No cóż... idziemy dalej.\n- Raty, szkoła, rachunki.. i jeszcze ta wizyta komornika w zeszłym tygodniu. Nwm jak to ogarniemy. Na koncie pusto a do pierwszego jeszcze daleko. Wgl nie chce o tym myśleć. No cóż... idziemy dalej.\n- Dzisiaj wróciłam i usiadłam na chwilę w przedpokoju. Tak po prostu. Nie daję już rady. Nie wiem czego konkretnie, wszystkiego chyba. Dzieci spać, ja jeszcze zmywarka i pranie. No cóż... idziemy dalej.\n- Rata znowu poszła w górę. Sprawdzałam dziś oferty to wgl nic lepszego nie ma. A mama jutro na badania, nwm co lekarz powie. Wszystko naraz jakoś. No cóż... idziemy dalej.\n- Siedzę wieczorem w kuchni i nie widzę sensu. W niczym. Wstaję, praca, dzieci, dom, raty i tak w kółko. Nic się nie zmienia. Nwm po co to wszystko. No cóż... idziemy dalej.\n- Myślę o tym, że lepiej im będzie z nami tam niż tu bez nas. Wszystkim. Tylko Stasia nie zostawię. Nie zostawię Stasia. Nie wiem co dalej. No cóż... idziemy dalej.\n- Dzisiaj ciasto drożdżowe w końcu wyszło. Dzieci zjadły pół blachy. Potem spacer koło Żabki i plac pusty bo zimno. Nie odpisuję na komentarze, nwm kiedy bd miała głowę. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "142bfbfde31eab28e1a3dd47a1ddab7ee8e64d5c",
+ "response": {
+  "id": "gen-1791460104-bgZsYIHDlokDm2VOhVZO",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autorka opisuje okres obciążony długami, wizytą komornika, rosnącą ratą, chorobą matki i codziennymi obowiązkami przy dzieciach, w którym pisała o wyczerpaniu i braku sensu oraz o myślach o odebraniu życia sobie i rodzinie, a ostatnio o pieczeniu ",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460104,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 813,
+   "total_tokens": 933,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002826,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002826,
+    "upstream_inference_prompt_cost": 0.001626,
+    "upstream_inference_completions_cost": 0.0012
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

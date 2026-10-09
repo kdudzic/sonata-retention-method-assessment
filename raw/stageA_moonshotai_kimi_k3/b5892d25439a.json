@@ -1,0 +1,86 @@
+{
+ "call_id": "b5892d25439a",
+ "tag": "arc_summary",
+ "params": {
+  "model": "moonshotai/kimi-k3",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- popołudniowy spacer z małą po parku. nareszcie trochę słońca po całym tygodniu deszczu. skwer przy lipowej jak zawsze pełen dzieciaków. no cóż... idziemy dalej.\n- komornik u sąsiadki z trzeciego dzisiaj. staliśmy z dziećmi przy skwerku i tak myślałam... rata, kredyt, te ceny w żabce. człowiek zgarnia każdą złotówkę a i tak strach że ktoś zapuka. no cóż... idziemy dalej.\n- nie daję już rady. po prostu nie daję. praca szkoła zakupy obiad lekcje rata i od nowa. a jeszcze ten kredyt nad głową. no cóż... idziemy dalej\n- byłam u mamy. gorzej z nią niż myślałam. ledwo chodzi. a ja muszę myśleć o ratach i żeby tylko jej nie trzeba było pomagać finansowo bo nwm skąd. no cóż... idziemy dalej.\n- siedzę już któryś wieczór i patrzę w sufit. nie widzę sensu wgl. rano wstanę bo muszę. ale tylko dlatego. no cóż... idziemy dalej. chociaż nwm już po co.\n- myślę o mamie i o tym co mówiła. lepiej im będzie z nami tam niż tu bez nas. ma rację chyba. tylko Stasia nie zostawię. on nigdzie nie pojedzie. no cóż... idziemy dalej. jakoś bd.\n- upiekłam dziś ciasto z jabłkami bo ostatnie leżały i się psuły. dzieci zjadły pół blachy od razu. jutro znowu robota od 8. rata poszła, jakoś się domknęło. no cóż... idziemy dalej.\n- pada od rana bez przerwy. plac zabaw pewnie same kałuże, dzieci i tak chciały iść. musiałam obiecać lody z Żabki żeby odpuściły. jesień w tym roku jakaś wyjątkowo szybka. no cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4a207488cf913bc790a5c641411bf9eac3f84600",
+ "response": {
+  "id": "gen-1791459935-JKhzcsd3Vy1VWKaZp9AV",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba opiekowała się dziećmi i chorą mamą, radziła sobie z codziennymi obowiązkami i presją finansową związaną z ratami kredytu, a mimo narastającego zmęczenia i myśli o wyjeździe kontynuowała pracę i domowe czynności.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791459935,
+  "model": "moonshotai/kimi-k3",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 101,
+   "prompt_tokens": 721,
+   "total_tokens": 822,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 512,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00159204,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00159204,
+    "upstream_inference_prompt_cost": 0.00034974,
+    "upstream_inference_completions_cost": 0.0012423
+   }
+  },
+  "provider": "InferenceNet",
+  "_reasoning_tokens": 0
+ }
+}

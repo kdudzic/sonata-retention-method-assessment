@@ -1,0 +1,95 @@
+{
+ "call_id": "7579ddf807db",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1076119704
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nTopic for this post: jedzenie i gotowanie\nConcrete angle: kawa z nowego miejsca\nRegister: chatty\nTarget length: about 27 words\nTime of day: early morning, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - znowu sąsiedzi rozpalili tego grilla pod oknem... cały dym w pokoju... kiełbaski im się zachciało a ja nawet prania nie powieszę... i tak w kółko... wgl zero pomyślunku...\n  - mialem oszczedzac na busa ale wpadla piza z dowozem bo padniety jestem po calym tyg wgl lodowka pusta jutro znowu od rana w trase trzeba sie wyspac wreszcie\n  - Jadę do pracy z pudełkiem pełnym zapiekanki z niedzielnych warzyw i ryżu. Wyszło tego tyle, że chyba starczy mi na dwa dni!\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "9999ab83d73544ac178d15a6f5f742a5501eb813",
+ "response": {
+  "id": "gen-1791461629-2xkUdXOi11cJBo2uOpER",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: wpadlam rano po to karmelowe latte do nowej kawiarni kolo Placu Litewskiego i wgl ODLOT!!! jest PRZEPYSZNA i taka mocna ze wreszcie ZYJE ☕️✨🤤 bdb syrop maja polecam mocno!!!",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Defining the Audience**\n\nI'm focusing on the nursing student's perspective: a woman in Lublin, juggling studies and hospital work, likely writing on the go. Her preference for coffee and medical dramas offers insights to guide further developments.\n\n\n**Crafting the Voice**\n\nOkay, I'm working on the post now! Focusing on nailing that casual, chatty style with those signature emojis ☕️🏃‍♀️✨. Medium sentences with LOTS of exclamation points!!! I'm aiming for the right amount of abbreviations (np., tbk). Typos are included to make it feel natural, like a quick morning message. The target length is about 27 words.\n\n\n**Refining the Draft**\n\nI've just added some Polish character typos, like missing diacritics and letter swaps. I'm focusing on those essential abbreviations: \"wgl,\" \"cb,\" \"nw\" – to create a very casual, authentically Lublin feel. Exclamation points are going in, and I added random caps for emphasis like \"CUDO!\" Now I'm working with the emojis and aiming for that 27-word target!\n\n\n**Optimizing Word Count**\n\nI'm aiming for concise language. \"G\" is now \"kawa\" (coffee). I've shortened \"Placu Litewskiego\" to \"Placu\". I am focusing on the essentials to reach that word count. The new version is \"Wpadłam rano po to karmelowe latte do nowej kawiarni kolo Placu i wgl ODLOT!!! Kawa jest PRZEPYSZNA i taka mocna ze wreszcie ZYJE ☕️✨🤤 bdb syrop!\".\n\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Defining the Audience**\n\nI'm focusing on the nursing student's perspective: a woman in Lublin, juggling studies and hospital work, likely writing on the go. Her preference for coffee and medical dramas offers insights to guide further developments.\n\n\n**Crafting the Voice**\n\nOkay, I'm working on the post now! Focusing on nailing that casual, chatty style with those signature emojis ☕️🏃‍♀️✨. Medium sentences with LOTS of exclamation points!!! I'm aiming for the right amount of abbreviations (np., tbk). Typos are included to make it feel natural, like a quick morning message. The target length is about 27 words.\n\n\n**Refining the Draft**\n\nI've just added some Polish character typos, like missing diacritics and letter swaps. I'm focusing on those essential abbreviations: \"wgl,\" \"cb,\" \"nw\" – to create a very casual, authentically Lublin feel. Exclamation points are going in, and I added random caps for emphasis like \"CUDO!\" Now I'm working with the emojis and aiming for that 27-word target!\n\n\n**Optimizing Word Count**\n\nI'm aiming for concise language. \"G\" is now \"kawa\" (coffee). I've shortened \"Placu Litewskiego\" to \"Placu\". I am focusing on the essentials to reach that word count. The new version is \"Wpadłam rano po to karmelowe latte do nowej kawiarni kolo Placu i wgl ODLOT!!! Kawa jest PRZEPYSZNA i taka mocna ze wreszcie ZYJE ☕️✨🤤 bdb syrop!\".\n\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461629,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1428,
+   "prompt_tokens": 802,
+   "total_tokens": 2230,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 1362,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0059565,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0059565,
+    "upstream_inference_prompt_cost": 0.0006015,
+    "upstream_inference_completions_cost": 0.005355
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 1362
+ }
+}

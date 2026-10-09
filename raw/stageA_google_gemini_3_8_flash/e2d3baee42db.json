@@ -1,0 +1,95 @@
+{
+ "call_id": "e2d3baee42db",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 875804046
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nTopic for this post: praca i grafik\nConcrete angle: praca zdalna, domowe biuro\nRegister: matter-of-fact\nTarget length: about 24 words\nTime of day: afternoon, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - dali mi dzisiaj ułożyć całą nową wystawę przy kasach... super sprawa... wreszcie coś innego... bd ładnie...\n  - Wróciłam ze szkolenia z nowoczesnych metod nauczania geometrii i naprawdę dawno nie miałam w sobie tyle energii, bo wreszcie pokazano nam świetne, praktyczne pomysły na bryły, które od poniedziałku przetestuję z siódmą klasą, a teraz z czystym sumieniem siadam do herbaty i płytek podłogowych.\n  - dostalam dzis NOWY przydzial na dyzurze do zrobienia cala dokumentacja pacjentow z oddzialu!!! 😅📋\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "06545740e677abf5a07a4c55493d737c50b431eb",
+ "response": {
+  "id": "gen-1791460558-BxGfpGyFVEQXDnt40NIv",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: deszcz przegonił z dachu stodoły. papierkowa robota przy fakturach w kuchni. niby praca zdalna z domu. nwm ile to bd liczył. no cóż poradzić.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a19Issodb5ckJzw0YTNTRBfqo7KrMGm8lXc28jglbeZqbXiGCyuQPavWe+mU3ZMIeTRWwR0qKr0Tsv7FyR0nOwcNpzouDFVImnwUCsnDHJOPLx9J",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460558,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 777,
+   "total_tokens": 828,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.000774,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000774,
+    "upstream_inference_prompt_cost": 0.00058275,
+    "upstream_inference_completions_cost": 0.00019125
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

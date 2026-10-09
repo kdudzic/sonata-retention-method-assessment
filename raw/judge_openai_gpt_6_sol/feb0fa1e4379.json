@@ -1,0 +1,86 @@
+{
+ "call_id": "feb0fa1e4379",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nPosts by this author (in order):\n1. zarwalam noc na maratonie Szpitala Miejskiego 😭🩺 jestem ZMORDOWANA ale warte to bylo!! teraz kawa na Placu Litewskim i modlitwa zeby na praktykach wytrzymac serio serio ☕️✨\n2. bylam rano na targu i ceny warzyw normalnie KOSMOS 😩 ale pomidory wziełam bo i tak taniej niz w biedrze 🍅 serio serio\n3. kolano juz prawie dobra!! tylko 2 km dzis ale bez bólu 😍 wracam do biegania, chyba zasne w tym tramwaju 😅 serio serio brakowało mi parku!! kawa z Zarysiej w dlonii i jade dalej, sesja czeka 😭\n4. rower ograny!! okolice Zemborzyc i z powrotem, jakies 40km 😍 slonce idealne, a jutro znow nauka do sesji 😭 kawa w trasie obowiazkowa ☕️ serio serio bylo warto\n5. dzis pierwsze 5km bez zatrzymywania!! 😍 chcialam sie poddac na 3km ale sie nie poddalam HA nogi bola jak cholera ale warto bylo 😅 nagroda kawa z zarysiej oczywiscie ☕️ teraz tylko sesja i jakis pokoj blizej szpitala znalezc bo dojazdy mnie wyorcza serio serio 🏃‍♀️\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "304804a480a26f2129589d149f600e979ba03bf2",
+ "response": {
+  "id": "gen-1791461339-xI3WUAfWOj2rnDKLkaKD",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 3,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"“serio serio” appears in every post\",\n    \"Repeated activity–coffee–study rhythm\",\n    \"Abbreviations are less frequent than the persona suggests\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461339,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 101,
+   "prompt_tokens": 758,
+   "total_tokens": 859,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002526,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002526,
+    "upstream_inference_prompt_cost": 0.001516,
+    "upstream_inference_completions_cost": 0.00101
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "d82961342704",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ale końcówka meczu!!! 2:1 i do ostatniej minuty człowiek siedział jak na szpilkach... Po treningu miałem tylko zerknąć na wynik, a obejrzałem całą drugą połowę. Takie emocje to ja rozumiem!\n- Wróciłem z siłowni i znowu gwar pod blokiem... Za dużo ich tu ostatnio, wgl człowiek nie może spokojnie wejść do klatki. Ludzie, trochę SZACUNKU! Tak trudno dać innym trochę spokoju?\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "1d9595d8826228e90d48ec82281d557d6bffed53",
+ "response": {
+  "id": "gen-1791459877-HxWLsQCqXC8kw0vU0EK2",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po treningu obejrzał drugą połowę meczu, który zakończył się wynikiem 2:1, a po powrocie z siłowni słyszał gwar pod blokiem.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459877,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 208,
+   "total_tokens": 258,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.000916,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000916,
+    "upstream_inference_prompt_cost": 0.000416,
+    "upstream_inference_completions_cost": 0.0005
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

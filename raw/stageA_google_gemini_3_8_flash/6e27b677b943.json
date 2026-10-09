@@ -1,0 +1,94 @@
+{
+ "call_id": "6e27b677b943",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Co za MECZ wczoraj... Tyle nerwów w doliczonym czasie! Sędzia ślepy wgl, karnego nie widział... Ale wpadło na 2:1 i jest PIĘKNIE!!! Gardło zdarte do reszty. Emocje trzymają do teraz.\n- Wracam z roboty i znowu to samo... Za dużo ich tu wgl się kręci pod klatkami. Szwendają się całymi dniami bez celu, strach auto zostawić na noc. Ludzie, trochę SZACUNKU! To jest normalne osiedle a nie jakiś deptak... Robić nie ma komu!!!\n- Nowy lokal na rogu to jest jakiś ŻART... Schodzą się tam z całej okolicy, hałas do nocy i syf pod oknami. Człowiek po martwym ciągu chce odpocząć w spokoju! Ludzie, trochę SZACUNKU! Trzeba bd zrobić z tym w końcu porządek... Bo miarka się przebiera!!!\n- I cannot generate content that includes slurs, hate speech, or threats of collective action against a specific group or location.\n- Wyciskanie na Kolejowej zrobione… Ciężary znowu porozrzucane po całej sali i nikt nie odłoży na miejsce. Trzeba po kimś sprzątać żeby wgl zrobić serię!!! Ludzie, trochę SZACUNKU! To nie chlew. Jutro nwm czy dam radę wstać do roboty…\n- Znalezione w sieci ale u nas pod 14 IDENTYCZNIE… „Ekologia na osiedlu: wrzuć tapczan do plastiku, może nikt NIE ZAUWAŻY”. Śmieszne i straszne zarazem… Ludzie, trochę SZACUNKU! Ręce opadają.\n- Wracam z roboty i znowu syf na klatce. Pety, jakieś kartony rzucone pod schody… Skąd wgl ci nowi lokatorzy się wzięli?! Jak do chlewa wchodzą. Dno. Trzeba ich chyba BARDZO szybko nauczyć jak się tu mieszka… Ludzie, trochę SZACUNKU!\n- Sobota, pogoda w miarę to wlatuje GRILL na działce u kumpla. Karkówka już zamarynowana, białko po wczorajszych ciągach musi się zgadzać… Odpoczynek od tego bloku w końcu. Miłego weekendu normalnym ludziom!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "cf54959c84295102402e9aa5cccc07d218b60741",
+ "response": {
+  "id": "gen-1791460112-6JnaoWLLMHrLPfV1sn02",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1/KuoS4P0alDhdv/RfY0NTvpdEY0DxEDPC4QT/WwMgB6EVh66qeZ0KVwhXx8N51Pz02yW6tNj8ydC1kWVxuFNxKyG6GBrjPaGvzlfy3QUo44rWc3TDxaMRdC2ItO7Si6fRcItYXGe99+cL034Tml9hdVFpSzWox3wytK9FN+TJLLsJf3d6YSIBANcHQvd/D4tj9179Xprqr8Wad7r4/HP6VQUJQbf/BO180JSacEyTlWxHyj98WWDJ5Ly9D0b48VOZH5KvPmUChKEO6LqWFbo8ArU6Ea/cQTuiccFkczEh2qWS1gDJa9naITJKHdIxUh/xMPc46n2RRt7auXwcHawzoLWNF4N5TbSVzoZJicVBYa/tFiGyCVlMtre+SDrX8fYAq8O3k+4dIjRHuX1qGRaqPgNA0MPcNYbnjNvZ8SfMf6NM7OWFpSr8gJ59Vucy54sZdRYV4icEPa+6E5mtCGXn5a+IaCtZibFarWm3b2c/iuN1BYvqPE9h/Fvfiba45RbvjAxxHJ+RvTEe1u/QuoAFEQOM81SOVII4lJFw7tt22fAkAYtVOxK2j45IZNtrp8OELuaSDsfVYphSZ3DcrHPt1T4zP0iojQU0zPKvK/Ol2sppKPRjarFxmDFOwq2eJZQle6UV7MKEgpjCuLTV/ovljN035rtOtoYkyOEhPkUlfpZj14QLr3qCsfiMw6SO+S5jU8eOHPARCcupeaoUljxzKr81WEZsXgwGKm9Bc4eQJkus6kueu50/i3q2tenGHR6yz7fp37rtyC7RRHsb/ebN+d/pgD/EPnSS54NLuFFQINuq+2Fer51ED98RLUase",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791460112,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 116,
+   "prompt_tokens": 646,
+   "total_tokens": 762,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 115,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0009195,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0009195,
+    "upstream_inference_prompt_cost": 0.0004845,
+    "upstream_inference_completions_cost": 0.000435
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 115
+ }
+}

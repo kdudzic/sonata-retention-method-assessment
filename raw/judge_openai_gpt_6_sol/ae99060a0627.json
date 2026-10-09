@@ -1,0 +1,86 @@
+{
+ "call_id": "ae99060a0627",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nPosts by this author (in order):\n1. …i jeszcze ten objazd!! Wyszłam o 6:40 z kawą, a mój bus nie jedzie zwykłą trasą. Szybki rzut oka na rozkład, nowy przystanek dwie ulice dalej ☕😴\n2. Czemu apka banku staje akurat na logowaniu?! Środa 15:20, chciałam sprawdzić saldo przed kawą w Żabce 😂 Na szczescie miałam gotówkę.\n3. Kurczę! Nastawiłam rano fartuch na praktyki, po 20 min pralka wyświetliła E03 i zostawiła wodę w bębnie!! 📖 Instrukcję mam już sprawdzoną, teraz obczajam najbliższą pralnię. Piątek, a tyle atrakcji 😅\n4. Oglądałam o 11:30 powtórkę siatki: 3:2 dla Bogdanki LUK Lublin!! Przy końcówce dalej trzymalam fiszki z anatomii 😂 serio serio\n5. „Aktualizacja ukończona” mignęło mi, gdy w środę wieczorem otworzyłam ogłoszenie pokoju blisko szpitala. Zerknełam potem na budzik i przez chwile nie wiedziałam, na co patrze 😅 Nowy wygląd, ale alarm na 5:30 nadal jest włączony!!\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "3dcf787fe6e882841ab420e9571f273a822ebd27",
+ "response": {
+  "id": "gen-1791462174-H7Pj8ZgS3Voal9AQuzuk",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":3,\"voice_stability\":4,\"tic_overuse\":false,\"repetitive_structure\":false,\"topic_variety\":4,\"natural_overall\":4,\"problems\":[\"Few abbreviations despite the persona card\",\"Little random capitalization\",\"Verbal tic appears only once\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791462174,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 64,
+   "prompt_tokens": 749,
+   "total_tokens": 813,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002138,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002138,
+    "upstream_inference_prompt_cost": 0.001498,
+    "upstream_inference_completions_cost": 0.00064
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

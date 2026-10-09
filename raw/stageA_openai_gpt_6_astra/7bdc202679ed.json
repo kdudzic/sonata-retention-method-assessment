@@ -1,0 +1,96 @@
+{
+ "call_id": "7bdc202679ed",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1292925355
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.\n- zainteresowania: żużel w telewizji, stare Volvo, wędkowanie w weekendy\n- lokalny punkt odniesienia: stacja Orlen przy zjeździe w Strykowie\n- aktualna sytuacja życiowa: Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: zaczyna od „no to tak”\n\nTopic for this post: drobne narzekanie na usługi\nConcrete angle: kurier nie zadzwonił\nRegister: enthusiastic\nTarget length: about 33 words\nTime of day: evening, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Po obiedzie zajrzałem do szewca, ale buty jeszcze niegotowe. Przydałby się choć telefon, żeby nie chodzić niepotrzebnie.\n  - no to tak u fryzjera poslizg 20 min mimo rezerwacji ale wyszedlem mega zadowlony teraz kanapa do pozna\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "b3b5da7bf60c84fe16a7d4ca0c7b965f658cd6ee",
+ "response": {
+  "id": "gen-1791460509-SGtJyXLgl1vrCHmGXpNc",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: no to tak czesci do volviaka juz w punkcie tylko kurier bez tel troche lipa bo czekalem od 14 na kanpaie ale jutro odbiore po rob w sob wreszcie skladam 940 super sprawa",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4SjHt09Xf0bJYr0e94IZjYN1t2QclkRXc1M1IWIdq7-oWKaeSsdfpT88hqaZblVi7S8lioj0wub2yqFaTnynv-_jrzkhWH68nRBhktr1I1qsI22jaEzVAeZu6C6Q3dw-qLw3x53tLW13PkDnE8cRFm5a7pDPh6nfMI2Cpprtr2SgpSQQaxx_jQxzlBpUe8L0II-bZ0fTSwDTs85PTK1PMEAnLs8DB6nDmcsHTZ8o24XhbRyQtUAeebX9B4bXVQFNA1xBie267x7XOcqr4U3tczQJ-KQA3bYv3XbRzZeJPqMd0C0yOOiDC2rtU7iHfhb8zDZ330cyao8HOsQY0J2bAS1aIDGqlq8uwIT9ljOcXFr6-nEQd19RWjQatcRQVtU_QU41RF2f8gctUNUzNezaNCA7A-BALOP2RW-YGmDnkhUt0R40BoX0Y00wnPrTofrXtv_2vGJxh6Y4bec3Ma8Cfe8IMzvPJBef0mgKzuZz0RKWcLWqZEo1KL3YtD_OYVFu7Vo4fDlFpdsOWOt6oHQw7rzWu1TPL9lJyT3fYsy0300HHyRHzPtGTImHaWR77eLlY9tZ54KieUOyEt7JZl9lEXcG57-sSgXC1E6sp_Bjw_m0OkPFvi0kRrFDuBtYkgKPOsNx90rF0aFx7bnKL6nztqk_rZQflRsD05h5Xx7rpIPdEk2XIddLAMWJwdcneBDKwlUX5LuzQJNfNeFpZNyAhnudlw3-Tkqb8uVCRTzoGuLbfyxW8ctpZfHQneAcq1I1ILES6X4H-8BOCTRFyiVpWEpsNlyQLAM_0Xv-5WKjSQ-5OP3USubtEsdj01BeST9uv-gPNConfRxnUGwg2ht69pJLk936XvzJ3aC1gaJsx26sfP13e2O84ak7poEI6YOFb3amtKv8olu29rJIHZ_0xsNLHtpmXQrbUaftnkyUfyakOrvS31tjO1O6CnMGNOzMNI1MpRRvDWUZx63j0GDdmsVwjT08gXCkNC8tik9CISOj4-Ktyeta7soeG24KMI7FNLPUkF0lHPhHw3we9RNQbDQQn2vk8RGkfDLSmvP77YfaZ7BmeiEihFzLxLeZ7G4FMxR6QMU4JJowJFdwDFuyn0ekXZRumpk5XxQ4yZoWuuSVRiQFoX628OECCTpsXCpNKEa0aqRmMYloYsZ5UkGvJyKcaw-s68R8l-G1IYEd_TCfO1um3M5twCQU9V84W_1fgI9PlrR1kLY_E9cGnU9tdhIWQ1vNeOu60iDVf22jel_Go0obLdPeJOkzn4MElwk-7FG9NoWcemN_wHDPdfImuJi1dZcBYkQEDCk-s0I_0z7xFsjqmshivL4byFYkSg5S36RxrRmF61D9PjgPm_1LtV9KTsSyyz862l2vO8OxcNvh30dyjJFFMgHfncHEBXAUWOhoJiKq250K3wywT5n2qcC2MXjcFnBlPa-DDJxDam8543QPu11EVMOcnTARuu7rotGX_pt4Otl_jyEg4-UCrE1AU1OVvKraSFYu8-WaMfpG0vymiVcg66bgmHR_-3M8JyISSlrsx1ML3_DE_vN3C5S6Q0OQvV-S30InTL4TFkqN5yxm9ViYe7RtCXetdT-8S0TLr0iGJ5N5euuRlfQ7Jgt80hxbt3MByAS1GOSJpNSMgcoqmxQOfo7IHelhTl5JyyRoy81lVG0HPxfBg3xhArgWI2ZdtYhqjvHtfdAqRnenx1ICnum3oAmcLYhUW2XFvIHbHhTaKF6Lo-SFBvCyGDZow==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_025129e310b6f089016ac7849ef02c87d1b59eba07164a3b10",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460509,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 154,
+   "prompt_tokens": 688,
+   "total_tokens": 842,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 92,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01458,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01458,
+    "upstream_inference_prompt_cost": 0.00688,
+    "upstream_inference_completions_cost": 0.0077
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 92
+ }
+}

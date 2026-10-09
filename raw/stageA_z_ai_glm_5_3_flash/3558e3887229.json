@@ -1,0 +1,86 @@
+{
+ "call_id": "3558e3887229",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie jj w sobote idziemy na mecz... stara gra z ekipa na trybunach. narazie gdzies w srodku sekcji ale spoko. bierzemy grilla po meczu u Dawida. ogarniamy\n- no właśnie znowu w robocie znowu do 22... stary cale miasto pełne tych przyjezdnych juz. nikt nic nie robi a my sie独特 UWAGA? UWO... kwasimy po zmianach. jj dzis orlik jak wroce?\n- no właśnie stary widziałes co otworzyli na rogu?? ukrainski sklep... aha no super. polska polska i tyle... po robocie przechodze i wgl jakos tak dziwnie mi sie robi. nwm, zobaczymy co z tego bd\n- no i git zmiane mi przerzucili... teraz do 22 stary. wgl ciezko wstac rano ale okej. kasa sie zgadza to co tam. po robocie orlik jak bd czas\n- no właśnie niech kurwy spierdalaja do siebie... zjezdzaja stąd i tyle. mam skończone z tym tematem\n- ahahaha stary zmiana po 22 w sobote... no i git w sumie bo rano wolne i mecz ogarniemy. koles z ekipy przyslal mema ze magazyn to moje drugie mieszkanie... sedlo prawda ze sie nie da ukryc\n- Your quota is exhausted.\n\nAPI key status: exceeded\nName: VIP.aaa\nUSDT balance: -9.110032 USDT\nUSDT spent: 140.900032 USDT\nexp_date: 2026-11-03T04:07:25.259Z\n- no i git... grillka jutro u chlopaka z bloku, ekipa sie zbiera okolo 16 po mojej zmianie. ogarniamy mieso i wegle, reszta kwiatki haha. stary wkoncu NORMALNY weekend\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "39ce40d2bc101c43fc5a393186e9b5ef3623a8ad",
+ "response": {
+  "id": "gen-1791461141-HZj5ZJhEXfEoliUDfOPs",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor pracował na późne zmiany, spotykał się z ekipą na meczach i grillach, grał w orlika, a w międzyczasie komentował zmiany w okolicy i sprawy związane z pracą w magazynie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791461141,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 66,
+   "prompt_tokens": 568,
+   "total_tokens": 634,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 7.092e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 7.092e-05,
+    "upstream_inference_prompt_cost": 5.112e-05,
+    "upstream_inference_completions_cost": 1.98e-05
+   }
+  },
+  "provider": "GMICloud",
+  "_reasoning_tokens": 0
+ }
+}

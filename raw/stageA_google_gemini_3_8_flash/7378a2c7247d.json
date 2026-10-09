@@ -1,0 +1,94 @@
+{
+ "call_id": "7378a2c7247d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Co za MECZ wczoraj… 2:1 w doliczonym czasie!!! Emocje do samego końca, gardło zdarte. Oby tak dalej, wgl szacun za walkę do ostatniej minuty. Dziś regeneracja i wieczorem Żelazna Forma, klata sama się nie zrobi.\n- Wracam z roboty i znowu to samo na klatce. Kręcą się, hałasują, nwm po co wgl. Za dużo ich tu się namnożyło ostatnio… Coraz gorzej na tych naszych Zielonych Tarasach. Ludzie, trochę SZACUNKU!!!\n- Kolejny dzień to samo. Otworzyli ten nowy LOKAL na rogu i nagle zjazd całego tałatajstwa pod nasze okna… Drą mordy, syf zostawiają pod klatką. Nie bd tego wiecznie tolerował. Trzeba się wziąć za to samemu jak nikt nie reaguje… Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "1c3cf1eb9979dc2a50ad62f8b72e91e9f39ba62e",
+ "response": {
+  "id": "gen-1791460648-oXA6jmPRR75fuq8xwzsq",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnim czasie autor oglądał emocjonujący mecz piłkarski, planował trening na siłowni oraz skarżył się na hałas i nieporządek na klatce schodowej i pod oknami po otwarciu nowego lokalu w okolicy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "EmkKZwFpFH0TaiO1LyAoKzhmJQStPLmZSNYWeyUXDNLdFaC4b9Kjd3vQwpphVN1jTO+45RX/oHPXTTVgtcBrsN85b5LmW+X5+67uq5TTalOtIFTxAFFZoRoBglySUl0EYmFwNfWnGALnjfs=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460648,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 61,
+   "prompt_tokens": 309,
+   "total_tokens": 370,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0004605,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0004605,
+    "upstream_inference_prompt_cost": 0.00023175,
+    "upstream_inference_completions_cost": 0.00022875
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "38d27014d93d",
+ "tag": "bg_batch",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1898085554
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the posts must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different short public posts by the same author, one per brief below, in order.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Na urlopie wychowawczym z rocznym synkiem w Białymstoku, posty podczas drzemek dziecka i późnym wieczorem.\n- zainteresowania: spacery z wózkiem, wypiekanie ciast drożdżowych, grupy sprzedaży ubranek dziecięcych\n- lokalny punkt odniesienia: plac zabaw przy Plantach w Białymstoku\n- aktualna sytuacja życiowa: Synek zaczyna chodzić, więc zabezpiecza mieszkanie i planuje powrót do pracy na jesieni.\n- sposób pisania: zdania: long run-on; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: przesadza ze słowem „mega”\n\nBriefs (one post each):\n1. topic: komunikacja i dojazdy; angle: pociąg regionalny, przesiadka; register: matter-of-fact; about 26 words; morning commute, Monday\n2. topic: drobne narzekanie na usługi; angle: urząd, kolejka, numerek; register: matter-of-fact; about 12 words; early morning, Thursday\n3. topic: drobne narzekanie na usługi; angle: infolinia, oczekiwanie; register: matter-of-fact; about 28 words; lunch break, Monday\n4. topic: drobne narzekanie na usługi; angle: kurier nie zadzwonił; register: enthusiastic; about 25 words; evening, Monday\n5. topic: dzieci i rodzina; angle: wakacje, planowanie; register: mildly grumbly; about 14 words; lunch break, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- the posts must differ from each other in opening, structure and rhythm; do not reuse a sentence pattern\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts:\n  (none yet)\n\nOutput format: a JSON array of 5 strings only, no prose."
+  }
+ ],
+ "prompt_sha1": "737f7bd2337a5f3c05581b8f7cdfa85242f655e3",
+ "response": {
+  "id": "gen-1791460505-xx4SdXdjrpRaa1VcdQrx",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\"poniedziałkowy poranek i regionalny do Białegostoku, przesiadka po drodze wyszła całkiem sprawnie, zdążyłam jeszcze kupić kawę zanim ruszyliśmy dalej 🙂\",\"czwartek, urząd od rana, numerek mam i czekam już chwilę, dobrze że synek jeszcze śpi w wózku\",\"w przerwie na lunch próbuję dodzwonić się na infolinię, muzyczka leci już chyba z dziesięć minut, a ja tylko chciałam dopytać o jedną rzecz, nwm czy zdążę przed drzemką małego 🙃\",\"kurier jednak przywiózł paczkę wieczorem i mega miło, że zostawił ją pod drzwiami, bo synek już spał i nie musiałam schodzić z nim na dół!!!\",\"wakacje trzeba już planować, a ja w lunchu próbuję ogarnąć terminy z małym, mega dużo tych rzeczy do ustalenia 😅\"]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460505,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 229,
+   "prompt_tokens": 801,
+   "total_tokens": 1030,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001946,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001946,
+    "upstream_inference_prompt_cost": 8.01e-05,
+    "upstream_inference_completions_cost": 0.0001145
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

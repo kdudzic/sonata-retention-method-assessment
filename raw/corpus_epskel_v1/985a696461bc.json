@@ -1,0 +1,86 @@
+{
+ "call_id": "985a696461bc",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- W sobotę zawody w Sokole przy Leśnej. Po robocie udało mi się jeszcze zrobić trening, więc już przebieram nogami. Fajnie będzie znów postrzelać ze znajomymi i sprawdzić formę na torze. Szczegóły techniczne w komentarzu.\n- W sobotę idę na strzelnicę i biorę cały sprzęt, bo po treningu mamy jeszcze ogarnąć parę klubowych rzeczy. Dziś wieczorem pakuję torby w garażu, żeby rano nie szukać magazynków i okularów po kątach.\n- Tarcze z sobotnich zawodów. Na pierwszej serii trochę punktów uciekło, ale potem już trzymałem równy wynik. Jak na ten tydzień jestem zadowolony. Szczegóły techniczne w komentarzu.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "d3b0ce71af6f23326f9eaa4cb4cb3c7db9d11629",
+ "response": {
+  "id": "gen-1791465243-KTZMFt5v6sgSrQCzVx6u",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po pracy trenował strzelectwo, przygotowywał sprzęt, a w sobotę uczestniczył w zawodach strzeleckich i zajmował się sprawami klubowymi.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465243,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 46,
+   "prompt_tokens": 276,
+   "total_tokens": 322,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001012,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001012,
+    "upstream_inference_prompt_cost": 0.000552,
+    "upstream_inference_completions_cost": 0.00046
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

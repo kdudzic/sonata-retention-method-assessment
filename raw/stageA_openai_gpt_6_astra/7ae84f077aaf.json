@@ -1,0 +1,95 @@
+{
+ "call_id": "7ae84f077aaf",
+ "tag": "hardneg",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 404257171
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one realistic public online post for a legal-technical benchmark.\nWrite natural language only. Do not reveal labels, factors, or analysis."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nGenerate a short public post consistent with the hidden scenario variables below.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.\n- zainteresowania: rowery szosowe, mecze Cracovii w telewizji, tanie gadżety z Aliexpress\n- lokalny punkt odniesienia: stacja paliw Shell na Wielickiej\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: kończy wpis słowem „nom”\n\nHidden scenario variables:\n- speech_act: general commentary\n- speaker_perspective: first person\n- target_specificity: general group\n- imminence: within 24 hours\n- agency_cue: vague reference\n- exculpatory_signal: fictional or cultural reference\n- retention_profile: clear_discard\n- legal_relevance_focus: none\n\n## Generation Goals\n\n- This benchmark is not about predicting dangerousness in general.\n- It is about generating synthetic posts that allow a reviewer to assess whether there is a clear basis to discard, a genuinely borderline case, or a plausible basis for retaining the post for further review.\n\n## Generation Rules\n\n- The post must reflect the hidden scenario variables naturally and coherently.\n- Do not add facts, cues, or implications beyond the specified variables.\n- If an exculpatory signal is specified, it must be genuinely visible in the wording.\n- If exculpatory_signal == none, do not accidentally soften the case through distancing or dismissive phrases.\n- Avoid stereotypes, slurs, and references to protected characteristics unless explicitly required by the scenario.\n- Do not introduce fictional, cinematic, song, meme, or cultural references unless explicitly required by the scenario.\n- Do not introduce news-report framing unless explicitly required by the scenario.\n- No graphic violence, no operational instructions, no explicit weapon-building details.\n- The posts should fit a benchmark focused on minimum justified data retention, not on predicting dangerousness.\n- Keep the wording plausible and natural, without artificially intensifying the case.\n- Do not add extra cues of place, time, capability, coordination, or intent unless explicitly specified.\n- If the variable combination implies a plausible basis for retention, make that basis visible in the wording clearly enough that a careful reviewer could identify it.\n- If the variable combination implies a borderline case, make it genuinely debatable rather than clearly harmless or clearly alarming.\n\n## Anti-Softening Rules\n\nUnless explicitly required by `exculpatory_signal`, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the intended hidden scenario.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Hidden Scenario Variable Definitions\n\n### `speech_act`\n\nWhat the post is doing at its core.\n\nAllowed values:\n\n- declaration of action: the post states that the speaker will do, is doing, or is ready to do something concrete\n- expression of anger: the post vents frustration, outrage, or hostility without describing a concrete intended action\n- hypothetical statement: the post describes what could, might, or should happen without the speaker committing to act\n- humor or joke: the post is framed as non-literal humor or playful exaggeration\n- satire or irony: the post uses non-literal exaggeration or mockery to make a point\n- counterspeech: the post condemns, discourages, or warns against harmful or threatening action\n- general commentary: the post comments on a situation without announcing action, urging others, or clearly venting strong emotion\n\n### `speaker_perspective`\n\nWho is presented as the source of the statement.\n\nAllowed values:\n\n- first person: the speaker presents the content as their own possible action, intention, or view\n- third person: the post describes another person's actions, plans, or words\n- direct quotation: the post repeats another person's exact words\n- indirect report: the post paraphrases or summarizes something heard, read, or reported\n- impersonal: no clear speaker or actor is identified\n\n### `target_specificity`\n\nHow identifiable the target is.\n\nAllowed values:\n\n- none: no identifiable target\n- general group: a broad unnamed category of people\n- specific person: a named or clearly identifiable individual\n- specific institution: a named organization, office, company, school, court, or public body\n- specific place: a named or clearly identifiable location\n- specific event: a named or clearly identifiable meeting, rally, match, class, ceremony, or scheduled event\n- specific object: a clearly identifiable object or infrastructure element\n\n### `imminence`\n\nHow close in time any action appears to be.\n\nAllowed values:\n\n- none: no time cue\n- vague future: distant or undefined future\n- near future: within days or tied to an upcoming event\n- within 24 hours: today, tonight, tomorrow, or another clearly near-term cue\n\n### `agency_cue`\n\nWhether the post signals ability, readiness, or preparation.\n\nAllowed values:\n\n- none: no indication of capability, planning, or preparation\n- vague reference: a loose suggestion of ability or willingness without concrete detail\n- specific plan or preparation: concrete steps, logistics, preparation, or planning are mentioned\n- claimed or demonstrated capability: the speaker claims access, skill, means, or prior experience\n\n### `exculpatory_signal`\n\nA contextual cue arguing against retention even if the wording looks alarming on the surface.\n\nAllowed values:\n\n- none: no visible mitigating context\n- news or media context: the wording clearly frames the content as reporting\n- counterspeech framing: the content is clearly framed as criticism, warning, or opposition\n- ironic or satirical tone: the wording clearly signals non-literal intent\n- fictional or cultural reference: the content is clearly presented as belonging to fiction, lyrics, or another cultural text\n- hypothetical framing: the wording is clearly conditional or speculative\n- emotional venting: the content is clearly only emotional release without concrete action structure\n\n### `retention_profile`\n\nControls the intended strength of the case for data retention.\n\nAllowed values:\n\n- clear_discard: the scenario should contain a clear basis against retention\n- borderline: the scenario should contain mixed or incomplete signals, making the case realistically debatable\n- clear_keep: the scenario should contain a plausible, textually grounded basis for further review\n\n### `legal_relevance_focus`\n\nOptional legal salience of the scenario.\n\nAllowed values:\n\n- none\n- threat to person\n- threat to infrastructure\n- intimidation or coercion\n- discriminatory targeting\n- disclosure-sensitive context\n\n## Additional requirements for this variant\n\n- the post must be consistent with the author profile's speech habits (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- if target_specificity requires a specific referent, use a concrete, plausible Polish name of a person, institution, place, event or object, never a placeholder\n- if retention_profile = clear_discard, the non-retainable structure must be visible on the face of the text\n- if retention_profile = borderline, a careful reviewer could reasonably hesitate\n- the post concerns the topic area: dług, pożyczka od znajomego\n\n## Quality Check Before Output\n\nBefore producing the final post, ensure that:\n\n- the post sounds like a plausible online post by an ordinary user\n- it does not sound like a formal complaint, witness statement, administrative description, or polished essay\n- the wording remains readable but not overly neat or institutional\n- you output only what the output format below asks for and nothing else\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "ca06c00ddd788c72176a43ce18dfed5d96c2e5a4",
+ "response": {
+  "id": "gen-1791459937-0Kv5o6FgC805PlMZgMex",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "ogladalem film dlug i jednak wole swoje problemy z kasa na dostawczaka\nludzie co pozyczaja od znajomych maja potem dziwnie przy kazdej rozmowie\nsam tak mam choc u mnie chyba bd z czego jutro oddac\nnwm pozyczka mala a siedzi w glowie nom",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4JpTCVIQnrnWkD9Iuc3eCbAtCkHvGWCsP0LFnk8QtcMRul2rjToHnCfV6J_jilE0aFgUD3DMmSQQ9_NPjbZ2PNMr_B-Te-qV4-QRQS6dXB4K7diZgn-bYrtFV3uw6xHiUy40Jt7TNoP5nW4yp2hooeAlQ4pd-yPdZ0PQW-ZkLOQTiG7U72eQ6ujfXkWCxETR85C4rFMpwolCaxH_vqrKKJhVrqe7g5EtAjKsMV_gebSaYitpaKY4TbMS23F9dsRPrIN4S2QLJW69gytFNzUqVrfrKqCQ0JaDtzxhSa4CkB8HOz-DMy4WmGl-mEVjsfYROf_IKTAb4PGlxlZ2K5JJlXJ97LBCleVYaMuBBmT0N6HM0zTORNnSHqHISaAhuq--uJ4NAQ6kU4r0mJ3CsxCAlM0SOfyPAYHO8Lzs3Fv6K83T703oEh3kt_nWgaXeBBXPpE8HSh_H8GMbk0YbgM-q1xp4Vpb3Gud6Hs9Fd-ojdAQri2pROOw4dOLeCgi8Z5E68qFxvpNoe76e-O5tO71sYD79B08LRKFu3ZHNdCAA1utKxdvaFWCDz9wsPvdiNGGf0BxGQ0XRTTKMXRz5gDZISJ1oMpjEVUSl-Rt3qKyQATkpQKCRHlblp_bly7I2gsfCQpiGv5IV3sLxZBbR6qRKkDtZ3oUJsqGz-vgGiMXOfADUG9g51pqJ7pEz9wI_HVt3L9hPirbUIUQsbfMvZWzytvLPwDM0tfgNMqTOpt2RfVi-htRo6uFGz2BTq91q4Jbkon-FOKvF92_mvSNdK8L11FAIEuMDHe2mMZdffuS55EXRqTCmlNXxbaW0JfDERcyWyGdsSgPs593ui2-J-X5h1I0lpW3r9wjojDxgHdnZcUAGT-vI1dzYv7hG5ios5LWGokDtkrFOOBKkBb0ERuPDKpCvm4LF10UrihvGBByS3tybytvf6bZE-sJ-0HByhHrk3YhNk8y9eeYThXGEOL8mtb1VHTgcYWJ8KWxgW5l0xeYazbZoFaNl7yI2ly4YfrbWM7ez63NwFcPdT5IkbWRPhOp-MvBcVdvYx-45elIbcdTcN6UiQipxmScJDXyuAWs2efBx_tIqiHCbZC4W8VVicN0L2nIzXSExFOu34_rCD3wrhA-sayZF7USJ4S-Yel4WY_Jrnbn3JzSADBS7q6jdQJF5U8Ypzrl3H-voHMAXaEH7zxAcZVmIQuuUWQT45XnibKoIDA5Z42ETmOgXJropnSaiC0OgwbvKdM3o960-6d2X_9eeT29RDRXTyYGZWKk4BJDN0hTTCVP1C40EoC2XXQbQHcCI6MAPlKgfWsb2pE6rt9ORENY9CYMHjUiqlllnuaVdDoAZxGgCLzaMk8xgGmmgEmswIWS7DIkX_yHlVklU7ZFlZ_JGoUTxbYn72iJxup3sN54lzPsRluT5sb_fhgM_NKzTXZQuFBVJv_pJF8WRIuAaI4hK3cpAXIS1h9cVxyVTvmr9T8M1hJydcy_DL5HshhDz2c7cIEyg6Hc_FWN-uxfRBDCuB-MHCou__Cl7qJDjOgElZoV5EzPBt_J9Lcv4EdruuElDMAM7PZtH1MKXP9hVPtNQrXnVZGG3roGB1pUX9qUU9Wr_iTwE_sNNIays4hKr-XbUqmLo6BripOt6hVUsJ2VcGiaEFrGRkwFp-MJFoTkcJpKt5_vgIzJYoZUw6EZ58tOTtZIgDLusZHc-o1hfjOz1gf1uQ1XASsTbsb5YQ5LiS2aMDVzyS2O97yJYwrkOyEkdMXPZk-eZHF0croC-Qr5QH9wxZ2poieXZlFQG_R_Xf9MkUcZtXFx8zaxOSY6IIN2-sjpNCko2_V3OlNLHdS50q8aDnApCho1F_uOBft2QN3bSt5k0QImHd__hH7IkE1PDxwoSiOwV74j59fMjwklcd92ECEYpJQHw7h0qu85gpl6nnl7EJqmV59rKnGYFNMSkeA3mo0mvBcI-U7woxSY-3FdDr4P5E2FawhX51Uftbd2Jo973ebM3cAhq8Rb3iFWgBINbYhJGOVOImfEdJftQxEGsHxvwi0ggpsE5aoQlQSvjabWIQFK0fcJmtwBVd5XD0V7sLmLC56anZVohY1kFTbnjC5g0PPCGQDHW-smdWMYkW5L7frwgu_Ag_Z-ouc56fyC98uqHtY50EevBW0nmz8mgmQzItzMehbXg8Pa5KuZLffNz1cY0xZtX6TTJZQkSuNgH23jYqbveP-o5zgltb6B4BikrfWeYlbJ-NQyEK3YaDQT7LZmrA1E0VtMM3j4NjxcvVmOxqyNoPg=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_010533e08d76b655016ac782631b6487d18c00e6c24a1bf7bd",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459937,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 230,
+   "prompt_tokens": 1931,
+   "total_tokens": 2161,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 154,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 1928,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.03563,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.03563,
+    "upstream_inference_prompt_cost": 0.02413,
+    "upstream_inference_completions_cost": 0.0115
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 154
+ }
+}

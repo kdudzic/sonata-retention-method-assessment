@@ -1,0 +1,96 @@
+{
+ "call_id": "4382b427bbea",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 67207932
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nTopic for this post: komunikacja i dojazdy\nConcrete angle: kontrola biletów\nRegister: terse\nTarget length: about 44 words\nTime of day: afternoon, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - na zwyciestwa znowu rozkopane i autobus jedzie objazdem przez pol gliwic xd wyszedlem 20 min wczesniej a i tak sie spoznie na lab nwm kiedy to skoncza wgl\n  - W sobotę przejechałam rowerem trasę do szkoły na próbę, przez park przy Rynku Solnym wychodzi dwanaście minut, więc od poniedziałku zostawiam samochód pod blokiem, jeśli tylko pogoda pozwoli.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "2105a8025172b0f9fab1dcbd386cc58a24f24062",
+ "response": {
+  "id": "gen-1791460150-TFyJCk3uQGfqYTes0S8f",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I'm settling on a mundane framing: a farmer returning from Łomża by bus since the tractor's in the shop, with ticket control happening right after the collection point on Piątnicka street, keeping the tone terse and plain with short fragments.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm settling on a mundane framing: a farmer returning from Łomża by bus since the tractor's in the shop, with ticket control happening right after the collection point on Piątnicka street, keeping the tone terse and plain with short fragments.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSiwoKEAgSGAI4AUIIdGhpbmtpbmcSDLjH/OgDWJRl93lMKhoMiXzCKwKaBFwk/1rHIjAkDhYkdy5R2/Uiop3pU2F4TpBkYOxr+xssXS2EfmAHJo5ZXMyPF7VqSKt3b+sVBhwqqAlFu/3liX+4SKTVoYv/vCzB+0cJWBcBhqhnKVGPMpsARSClFRR3bLqpC8AbQ701+dfexU9oWUOah8AUHgHE/d8Et7/FWfeAVuxA/ljC1PzHYeHYVmNEIhbJLtUp+1tkY/EhkgOl1RWgO7rO9AVSeFvMlLqrctBKC8kfsndnygEl4GWsspFJ8pDwyebLjZoiz2U+r0H+uHGsiqNoz/2e31ghR1k4thdzQza6EN60sxRk/UuR0tTet2ctD6hkL8fUijjdWQRVAsRgEC9EWujlsHRpbdJE1iavJ48SQaufCJlFU4jiV8BtV6Gr3CMDWnBvhsxob9dfDyzL0ovb3t0F/Wlxdt+Jv8wPdqtlp5ib1XMdv+hWihgJ87+MGtlZH/hAm2TAEEnaq3mdsmTeLmxP7BlcGzA035MshWzheYePaa1wAN+m/JCHwPPmUowf4pcXWrHPCEcjCNJT2bReJPhLpfvRjKR8PVnxainzbU5QuwKi0U1a6U8cD+Gi6uD9yv+S3qSS/qm+x5xYsQjb61GNbbY5g5e23HC1qQOdEQLeYr4Ex/Ud2uPIbL+lTXSfNeqvL2WwUe2pZq6ouJrswv5FYiLJDnmDRNFslBKoZA3pmmfwgMC7VDPYTXrsTKkJMzcsFhTS1+qsl2bxbajwnyUrv2ztthfsfcRYMcCigGxyTpe7NOp7p/hZRffRQ4Tl08YPO/vq7BY/s9m1SfdwV9FUjevsmY5LmKM/HJqUmKAgANezuQuTF7oyNKrH0m25SZL2nhY8w5fmhieMOkJXyTxP2AH0jXo2WA52PNhANSgKhWb0cLNSOK3Pi6WvWXFvSURzu9SFN2Uc4IPWlTZDGDY9cUw7VawOfONUbQw2oFyvvZ61fCVVjp8lLmXqWHDKNWooSYsmZ1qF/ktb0bCdg7x9w/H7PkL/9xZpLzYTCMjIivD5Np/qGCGTocGg2CHIpP+P+Dw5A1qxEC0HiME6UI5eORq93/rDXROkdKrbsiLssUo3OzHVqfpZgdWF6bgVPfk4UVNLbuHTEOLHyz8yKVPhA/DI+vXzcs7ZSzj17IwzvNU00vXAMtVSFfg0X2UiEjMKk/xe57SGLUAIrxj0dI9dG6gRfN3bgBOX83DFOpbY5ejucJ1ofGUpHLbOcJk9JT+LE9v4UQg0WCZLdSFp3mP8TVp6HcTUva4ONgwDvXIjRpZ3ec3mfEBacaPVS4b13cJBCo2yKV2RY/780sasMfB7OyofSttxIuCq91ra1XM96NJkfv+YYcnGYoJ1lWnUW1/rykYuLtI2s+M0YaBm5sqCK15a5gnSlEzqZqQ3bF4h8Ke0lowB78UaevKv3bgSG+soVPf95ZXGJ6djFEq5wcPsc/BZtMP06m/zrN+lFyFT+F0pVAXNpQi3yob3q5SI9BNLTap2Rrv3/A/zlYZ+Qe5JUoCTsBYRi3fbU7HccenkbS7LtMA4Olnp4B+eG5B8N3TRjwHzt6xahW6akcRxhaiHiVrlRZa+msev+kzMELjKpBWhIbv22VTdCtXPp+E5F3tVoWhU09JPuswWHPipe1PH/XpJ9Odc3KKSqGx5zVVrEP1bGvcby2F5GPJdGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460150,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1121,
+   "total_tokens": 1421,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 300,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.010484,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.010484,
+    "upstream_inference_prompt_cost": 0.004484,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 300
+ }
+}

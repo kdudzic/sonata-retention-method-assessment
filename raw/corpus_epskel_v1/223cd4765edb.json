@@ -1,0 +1,87 @@
+{
+ "call_id": "223cd4765edb",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1629120379
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Jest na emeryturze w Siedlcach, przed południem załatwia sprawunki, a pisze po kolacji.\n- zainteresowania: budki dla ptaków, domowy budyń, stare kalendarze\n- lokalny punkt odniesienia: piekarnia przy ulicy Floriańskiej w Siedlcach\n- aktualna sytuacja życiowa: Segreguje stare pudełka z domowymi drobiazgami i urządza miejsce do majsterkowania.\n- sposób pisania: zdania: long run-on; interpunkcja: wielokropki i nawiasy; wielkie litery: random caps for emphasis; literówki: rare; skróty: none; emoji: no\n- tik językowy: kończy wpisy „takie moje spostrzeżenie”\n\nTopic for this post: praca i grafik\nConcrete angle: W środę późnym wieczorem przesunął w starym kalendarzu własny plan skręcania budki dla ptaków, bo rano musiał załatwić sprawunki. | mood: mildly annoyed | opener: complaint | verbal tic in this post: no\nRegister: terse\nTarget length: about 31 words\nTime of day: late night, Wednesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Kawę zrobiłam sobie we wtorek między zleceniami, ale wypiłam ją dopiero po przestawieniu stojaka na odbierane buty. Teraz wracam do napraw, trochę już zmęczona.\n  - ...i dopiero teraz, w czwartek po kolacji, przestawiłem lampkę na stole i pisze mi się przy nim WYRAŹNIE wygodniej (choć zrobiło się już późno)... z grafikiem na jutro poczekam do rana\n  - wróciłem dziś wieczorem do składania karmnika po kilku dniach wyjazdu... instrukcji od razu nie znalazłem, choć śrubki leżały na wierzchu... trochę czasu zeszło na samo szukanie.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "fc02c25916847b6079533c16a0a96ea3deb76975",
+ "response": {
+  "id": "gen-1791464776-eoyEjSWgDtRMJZHpiKkH",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: znowu musiałem przesunąć własny plan... jest środa, późno, a ja poprawiam stary kalendarz, bo rano mam sprawunki i skręcanie budki dla ptaków się NIE zmieści (pudełka nadal stoją przy stole).",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464776,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 69,
+   "prompt_tokens": 859,
+   "total_tokens": 928,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002408,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002408,
+    "upstream_inference_prompt_cost": 0.001718,
+    "upstream_inference_completions_cost": 0.00069
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

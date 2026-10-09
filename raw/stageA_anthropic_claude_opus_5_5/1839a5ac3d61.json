@@ -1,0 +1,96 @@
+{
+ "call_id": "1839a5ac3d61",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1071588168
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Na urlopie wychowawczym z rocznym synkiem w Białymstoku, posty podczas drzemek dziecka i późnym wieczorem.\n- zainteresowania: spacery z wózkiem, wypiekanie ciast drożdżowych, grupy sprzedaży ubranek dziecięcych\n- lokalny punkt odniesienia: plac zabaw przy Plantach w Białymstoku\n- aktualna sytuacja życiowa: Synek zaczyna chodzić, więc zabezpiecza mieszkanie i planuje powrót do pracy na jesieni.\n- sposób pisania: zdania: long run-on; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: przesadza ze słowem „mega”\n\nTopic for this post: zdrowie i sen\nConcrete angle: wizyta u lekarza, kolejka (bez konfliktu)\nRegister: enthusiastic\nTarget length: about 17 words\nTime of day: morning commute, Wednesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "c369f97358445e78a5b8340a58f0ec77f597dbda",
+ "response": {
+  "id": "gen-1791460502-mYIUDdHwAEP05USqqk5b",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: siedzimy w kolejce na bilans roczny a młody MEGA zadowolony bo zaczepia wszystkie panie w poczekalni!! nwm kiedy on się tak rozgadał 😂😍🍼",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should steer clear of specific health conditions and go with something neutral like a routine annual checkup instead. Setting it for Wednesday morning, in Polish, with female grammatical forms, a run-on casual style, exclamations, random capitalization, emoji, and maybe a \"mega\" thrown in, around 17 words.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should steer clear of specific health conditions and go with something neutral like a routine annual checkup instead. Setting it for Wednesday morning, in Polish, with female grammatical forms, a run-on casual style, exclamations, random capitalization, emoji, and maybe a \"mega\" thrown in, around 17 words.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS2gYKEAgSGAI4AUIIdGhpbmtpbmcSDCzHS9QtW3R5/SugGRoM5V+4Sbs+8n6sACAVIjCBKKsKnyWhqf00D0hso0SGXJNyf+KX7/JL9mNDpN+5+CQLlfruYI8USW+XYi7G5TQq9wWd8AUJRsMmX7g39yzqNdJwxJram0vRa7EK0pAsg2qORKkL4oTVlF4XwkeiDvgWNmMFgbA5kbpAbsOj+QN79QVUVx2A7KEy3gq1rcVwRYga3He1MU7H3bqgxfi3/25ePcJ2hCrnSBje8NhlIesPae7hSedWm9+7xN2M0xQF3VE0ez5AMslB32NmRQVp4DQpsvRD/HXWP3ltHxGP5KQbySSqcty3GTnoKPhxgmnOpysWy1dPz+cFGa01zx8DU6PJ5JOeVoI2eRkzTXI7J2wO+qY0cxb0WeqdwdC1SeldsA/i8P8HyoXEizJpooZsg4enfokhS0Uy2gOIt60+b4X8wTnJWJ4vDr0G+0FTVLNpOMTSHJrpKB8McSSXShBBaFd0StrxeyhM57zKcz6f20g5krtbNaqObdPSiyCLRGD5l0UGMrLGv5K/yFawLBROeNF+djIz1yVOl4K4j4lyy9gaXV+lYSZxp03lOf+o+BLAbZ0BTKAVBGpnatNUJLyXi2mloUB0AkPJ38hrwFe2cyYCC45LMDSMxJFBoh8KncsbiRs/CzBbU/iJyM7mWFI3nLzBNodI2PRJlaK76SdZDs6D4eMePNkes1J8PXbuy3zMmzs6O+1mbTvNO24JcbDAY5DySXicHdX/7Gd17alCCHLFO+CZuINvo7AaVmp0wocgyhSobSXX6rqihzeGMj8hz+AVLAlwU/vZuLLjC0Rok4cs3ga/YxGdRHHgZiDyz0EdoVNo0nXh7WgXvWuKb9zBtFnQ65Ju+8H3qLYLV4GoUaNOnViCCZURxF4OXd3Gbvy5T3D3fKga1/JOykbh/8CWbQCFd9h1GqgGA+5Au4ITZ1NMwD3pZQy2SOLA2hWdIN87i5ba8PLrp0DOTyiCzap5g7g9lgPwgtVsy3pjL9JtWTEDN9gSeYGziSxj5/boSm3l4VUasPRKNLjRn4MVAO5HQ+42GatMblmyEl6Gln9pygx0vFQDS9m/y3q8V7YGbQv71Es6qlU9KGAM+ckYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460502,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 182,
+   "prompt_tokens": 984,
+   "total_tokens": 1166,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 102,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.007576,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.007576,
+    "upstream_inference_prompt_cost": 0.003936,
+    "upstream_inference_completions_cost": 0.00364
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 102
+ }
+}

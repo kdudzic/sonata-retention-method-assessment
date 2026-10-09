@@ -1,0 +1,86 @@
+{
+ "call_id": "f5539245562a",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Nauczycielka matematyki w szkole podstawowej w Zamościu, wstaje o 5:30, pisze wieczorem po sprawdzaniu zeszytów.\n- zainteresowania: chodzenie z kijkami, robienie przetworów, gry planszowe z siostrzenicami\n- lokalny punkt odniesienia: park przy Rynku Solnym w Zamościu\n- aktualna sytuacja życiowa: Przygotowuje klasę do sprawdzianu i jednocześnie urządza nową kuchnię w mieszkaniu.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: często dopisuje „jak to mówią moi uczniowie”\n\nPosts by this author (in order):\n1. Pobrałam numerek w urzędzie i chyba zdążę sprawdzić wszystkie kartkówki.\n2. Przesunęli mi dzisiaj wizytę u fryzjera o całe dwie godziny, ale fryzura wyszła po prostu genialna, pełen hit!\n3. Miałam pójść z kijkami wokół parku przy Rynku Solnym, ale nagle zerwał się wiatr i chyba znowu spadnie deszcz, więc wracam do domu.\n4. Wróciłam ze szkolenia z nowoczesnych metod nauczania geometrii i naprawdę dawno nie miałam w sobie tyle energii, bo wreszcie pokazano nam świetne, praktyczne pomysły na bryły, które od poniedziałku przetestuję z siódmą klasą, a teraz z czystym sumieniem siadam do herbaty i płytek podłogowych.\n5. Zerwał się taki wiatr, że aż zatrzasnęło okno w klasie, a z oddali słychać już grzmoty i wygląda na to, że nadciąga potężna burza, jak to mówią moi uczniowie, prawdziwy pogrom.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "75128460de6c6acd8f1c3318924bc35c6ae21c3e",
+ "response": {
+  "id": "gen-1791461208-yPOj3Fl4kuhxSjLoDmHs",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 5,\n  \"natural_overall\": 4,\n  \"problems\": [\n    \"First two posts are shorter than the stated writing style\",\n    \"Storm imagery repeats in posts 3 and 5\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461208,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 92,
+   "prompt_tokens": 715,
+   "total_tokens": 807,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00235,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00235,
+    "upstream_inference_prompt_cost": 0.00143,
+    "upstream_inference_completions_cost": 0.00092
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

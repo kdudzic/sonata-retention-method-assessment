@@ -1,0 +1,86 @@
+{
+ "call_id": "cc4a6fc4f4cb",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Na urlopie wychowawczym z rocznym synkiem w Białymstoku, posty podczas drzemek dziecka i późnym wieczorem.\n- zainteresowania: spacery z wózkiem, wypiekanie ciast drożdżowych, grupy sprzedaży ubranek dziecięcych\n- lokalny punkt odniesienia: plac zabaw przy Plantach w Białymstoku\n- aktualna sytuacja życiowa: Synek zaczyna chodzić, więc zabezpiecza mieszkanie i planuje powrót do pracy na jesieni.\n- sposób pisania: zdania: long run-on; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: przesadza ze słowem „mega”\n\nPosts by this author (in order):\n1. piątkowa przerwa na lunch a ja już układam grafik na jesień 😅 mega by było dogadać wcześniejsze wyjście zamiast nadgodzin, trzymajcie kciuki!!! 💛🙏\n2. niedzielny lunch, a mnie plecy już bolą od siedzenia przy małym 😩 mega bym się po drzemce rozprostowała na spacerze!! 🚶‍♀️💕\n3. Przy obiedzie już ćwiczymy negocjacje rodzeństwa 😅 on zabiera klocek, ona odzyskuje i za minutę znowu razem układają wieżę!! mega słodkie 🥹👶🧸!!!\n4. miała być tylko kawa a wracam z koszem pełnym rzeczy z promocji 😅 rachunek MEGA zaskoczył!!! 😅\n5. po drodze z targu mam jajka i młode ziemniaki, ceny dziś mega w porządku!!! 😊🥔🥚\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "2e209abbb4d4d4befbdb3f1c6deb8b7ba36a75e2",
+ "response": {
+  "id": "gen-1791460958-wUzEqOPvR19nDvQPv2vh",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 3,\n  \"voice_stability\": 3,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 3,\n  \"natural_overall\": 2,\n  \"problems\": [\n    \"Every post uses “mega”\",\n    \"Similar setup-and-reaction rhythm\",\n    \"Post 3 implies a second child absent from the persona card\",\n    \"Little of the stated long, run-on style\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460958,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 111,
+   "prompt_tokens": 670,
+   "total_tokens": 781,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00245,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00245,
+    "upstream_inference_prompt_cost": 0.00134,
+    "upstream_inference_completions_cost": 0.00111
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

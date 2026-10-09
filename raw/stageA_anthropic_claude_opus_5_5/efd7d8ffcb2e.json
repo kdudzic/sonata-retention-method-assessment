@@ -1,0 +1,95 @@
+{
+ "call_id": "efd7d8ffcb2e",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... sobota stal gra u siebie wiec zbiorka na spoldzielczej o 15 przy zabce. kto jeszcze nie ma biletu niech ogarnia bo potem bd placz... ja po zmianie prosto tam stary. no i git!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "54a32a7dd39920983768353b533fb9c704a81a40",
+ "response": {
+  "id": "gen-1791460571-xtcOCMcqgSB3PzYI0jhx",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba organizowała sobotnią zbiórkę o 15:00 przy Żabce na Spółdzielczej przed domowym meczem Stali, przypominała o zakupie biletów i zapowiadała, że dotrze prosto po zmianie w pracy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "This post is about a Saturday meetup for Stal's home game, meeting at 15:00 near Żabka on Spółdzielcza street, with a reminder about tickets and a note that he'll come straight after his shift.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "This post is about a Saturday meetup for Stal's home game, meeting at 15:00 near Żabka on Spółdzielcza street, with a reminder about tickets and a note that he'll come straight after his shift.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS9AUKEAgSGAI4AUIIdGhpbmtpbmcSDIad0Ueot+Evb2uvcBoM5ZvALdVsDPsfwGiHIjDRFXDkinDIurVzsS0gohwAscUYs1tI4CFHbo1+bE1EhA+IWsEhmcro/g2UZL6mLkwqkQX6C65QSw/qfcMHNfYUQrUbHmmY3ISLWb6VcTRePbq9KPEcRpBTY6jjUdWei7oP5Wi0+Q8ddz1EsfvL/YT20LHzyfIBFnRDUfmdbdx/BKThJJUY5J7MtM2jPh4ZbG0Ovko3K//XBXRf+XTsYOSaNmHhUe+Ps1zcgucuir3KXNd++kmzY7tbJaKGaHqyNeNxBHpK8jVOOWFWSorGpOrGP9UVn/NQjsK41TANQpA0WQMv6UcYFWxiP8kUTas37DhpadM0s9wMDAq4jGA8tydTF0yL+HEkSRNlZJSz1499z+PcSz7B+sJ0u0/jZ/mMZaqNvld/DoF4CyNzGsgnweduXz57NQWZF0SMYmqq/nKVDCVBn3sZs0L3U/yr9Bt+SJjmalti1M3lOK0Yrn0dQLx6KjB3sO4ADQzWFhDj2nMJaDtrrLF3epnLBgEdkIuILcRk5U6DtbJg3I+ib/OVX7/VgDcUrzC7XGx7KYrflLFH5d7taLbiQLjnetd5WTYF6IN8Clmj8/pXx1IXwX9PcR9v7pFrg6QSjBoQTUHi7BLeveaAjj/yI96B83BARHM7EjM2RBb1MJX/N5Vh0v95wjs1ImIPNGbMw3/fiPcBoN5JsHvI6mV+iTr4vqVhaEIpEoXezudo+Cl7dtUBiENQ8RysDXxRaeuLm241l3gq8Nnh1Y5u8z7rxdD25DfM32CGrT29QxYe5ed7yrwYNpqK4GEpUR/NWtlu6Geuw1SG8RLjTn2XsqzZn6uLclEi27DrfF8i90F7SxO3uHhW62rbmvjbRfoAFGU/one/zjhxj50lB6MRZ+/Glu/GJtoQSJOVXv6OCnF+kbNAFA00IXRukX1SHJ0TIKPMxE9B4vajvl7QKTFFk5MYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460571,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 156,
+   "prompt_tokens": 219,
+   "total_tokens": 375,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 64,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.003996,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.003996,
+    "upstream_inference_prompt_cost": 0.000876,
+    "upstream_inference_completions_cost": 0.00312
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 64
+ }
+}

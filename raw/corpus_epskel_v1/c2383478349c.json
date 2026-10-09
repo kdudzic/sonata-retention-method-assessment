@@ -1,0 +1,87 @@
+{
+ "call_id": "c2383478349c",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1333961454
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Jest na emeryturze w Siedlcach, przed południem załatwia sprawunki, a pisze po kolacji.\n- zainteresowania: budki dla ptaków, domowy budyń, stare kalendarze\n- lokalny punkt odniesienia: piekarnia przy ulicy Floriańskiej w Siedlcach\n- aktualna sytuacja życiowa: Segreguje stare pudełka z domowymi drobiazgami i urządza miejsce do majsterkowania.\n- sposób pisania: zdania: long run-on; interpunkcja: wielokropki i nawiasy; wielkie litery: random caps for emphasis; literówki: rare; skróty: none; emoji: no\n- tik językowy: kończy wpisy „takie moje spostrzeżenie”\n\nTopic for this post: dzieci i rodzina\nConcrete angle: W sobotni wieczór usłyszał przez telefon, jak wnuk po raz pierwszy wyraźnie powiedział „dziadek”. | mood: pleased | opener: reported speech | verbal tic in this post: no\nRegister: enthusiastic\nTarget length: about 10 words\nTime of day: evening, Saturday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - wez pojemnik prosili rodzice. spakowalem rano przed wyjsciem. obiad wezme w nim do domu 🙂\n  - dziadek pytal czy znalazlem juz material na to drugie krzeslo. oddzwonilem dopiero pozno w poniedzialek. chcial tylko o to zapytac no nie? 🙂\n  - mama pisze ze mlodzi znow o miejsce przy oknie sie kloca 😅 jade do szkoly i juz widze te miny 😂\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "1974a2ac67629f0681b0161fb9f090a73f2e7612",
+ "response": {
+  "id": "gen-1791464783-vDNfVLep0p978itDevCl",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: „Dziadek!”... wnuk powiedział to WYRAŹNIE przez telefon, aż się uśmiechnąłem (i nadal się uśmiecham)... takie moje spostrzeżenie",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464783,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 792,
+   "total_tokens": 843,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002094,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002094,
+    "upstream_inference_prompt_cost": 0.001584,
+    "upstream_inference_completions_cost": 0.00051
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

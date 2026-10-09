@@ -1,0 +1,95 @@
+{
+ "call_id": "6e18e2eee13c",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal znowu remis 1:1 a mielismy ich na widelcu przez cala druga polowe!! sedzia tez jakis slepy byl wgl nwm co on gwizdal... w sobote wyjazd i tam musza wygrac bo inaczej to szkoda gadac\n- ahaha no i co z tego... wracalem wczoraj z centrum i caly autobus pelen ciapakow, drą sie po swojemu jakby u siebie byli... kiedys tu bylo normalnie a teraz to wgl nwm co sie z tym miastem porobilo\n- ahaha no wlasnie... widziales co otworzyli na rogu?? ukrowy sklep! wszystko po ichniemu napisane nawet nie wiem co tam sprzedaja... jeszcze miesiac temu byl tam warzywniak pani haliny a teraz to... nwm stary wgl nie poznaje juz tej ulicy\n- no wlasnie... znowu nocka w magazynie, kierownik dorzucil dwie palety na koniec bo tir sie spoznil... plecy mi odpadaja stary. jutro wolne to odespie i moze wieczorem orlik z chlopakami jak nie bd lało\n- ahaha no wlasnie stary... ja to juz mowilem chlopakom pod blokiem. niech kurwy spierdalaja do siebie i tyle wgl nie ma o czym gadac... a teraz ide spac bo jutro znowu na 6 do magazynu\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "cd1d8398e31c91c97a9b13ca8d0f11388cd62e81",
+ "response": {
+  "id": "gen-1791461149-tBg3sXnOQpqshyOqwpUX",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba śledziła mecze swojej drużyny, wracała autobusem z centrum, zauważyła nowy sklep w miejscu warzywniaka, pracowała na nocnych i porannych zmianach w magazynie oraz planowała odpoczynek i grę na orliku.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep this neutral and factual—just everyday details like the football match ending in a draw, the upcoming away game, the bus ride from downtown, a new shop replacing the old greengrocer, his night shifts at the warehouse, and plans around football and sleep, without amplifying any biased commentary about neighborhood changes.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep this neutral and factual—just everyday details like the football match ending in a draw, the upcoming away game, the bus ride from downtown, a new shop replacing the old greengrocer, his night shifts at the warehouse, and plans around football and sleep, without amplifying any biased commentary about neighborhood changes.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSxwcKEAgSGAI4AUIIdGhpbmtpbmcSDMg4ve+vFYbVtD50CxoMReWWbzO5HaLfbVD3IjDKaIMbsk6K2fS6tdtj+mpeuMvtiGMACbdPiduPXGx/2uiOYpjwneB6ppexWCiENBYq5AbPjpIhMRnIOwMJ7Z6KpYwOnjqMWjo5uSQ4L7Sl2MLi5AGucI9te+4pAkj8QcA35sMzXyzbfOwJ0yG6+RYglQUUTXGOv57DS/7ZtcgvCptPsBVACUJwUfV9XJRaCBInJncD4VJVaPno0E6QyqQBYZSJ1KZbuCJSe39t21uXbUM4bOqec1r10Kt4D5kQTnwQTyuN5SV0T+mXz3Qq60phpA2xwCSVBIxZEZjP8GaHILOFQ03bIZvIPcYFEOm42ogHEvEr/t4M9BKDwthu+mHYTeS7Ka6mfCOfVTLbFanIOVhsviVJHP29QOIGrqVEEn8tSDCRBLpru+nJc2kUhMtcBCjzlRgmHwZaSmxgMGMD1/DWIzQnx0uTzuOln4ebWIhr6jpPIr5ULQOgOxmLIWnXGUZOJ/+jnl8fXR+UehArbBCNaLBOplJfBvWkneeeWf+sPnSkhr9tUXNpNfjhqwuQzvgSL7ga2GAXKAA5aGxptICuYCx2mdRTIUg40aYcQzEjMYcHmjzto/GFtYSoj0HUlVRlZk2u5dNBni1ox/QEM/DyYaN5t9+ncIwEPwhGXpo/u27+ZTqPNgYQmwE/00PI/YJrEU9/jHaXbDStKHjMAzuJAs2tb5D/xs+JjNW/GEmfmhnfHf9uxjuMFkPRj1PNJvXsMBLuar4EAbiLJBbaoATciR9JN05qH/i2AIWg/W7Oqe9TR4nfnoyWYtLxCs1rVhL7Trf+Ht5Dn5xZgvqPCDnqKuOWXECam3h2mkkb4THXfyH838NVEWwjJqf3vXXNljmEmneEtlt0iIAFgIixEEjKu69WljUC2n4fBlJYLLzqiYXi6tNEGtJH2WY2BSiJAqa6SLLzv9lPqAFXnZstArjdgjvXuFHuEDWNCnQM9vspvpney/L7eVCN0P2aYZV5oYK10VCfSXavh9sJSmB1YzXFgefFdrUfNwjNPIkTc97o7d3eleKocg2pvx4umo2DACgMZYJ8UqtMUV/XWgZg4Q/KyWyC8tISGTeF+2TGv9ARQVJFDo+S4BcKjBW+xFBPO3zPLDVWGezWaZAcBwbEyCF6jwG/mwniVqelkzHMWw0DJxdEclvHtXOwss08sfDJOqWAeMeq2oWfAhObkxHwsxrwhSBR8xh5xzCOFddqfhb8b259I2RyGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461149,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 230,
+   "prompt_tokens": 639,
+   "total_tokens": 869,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 132,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.007156,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.007156,
+    "upstream_inference_prompt_cost": 0.002556,
+    "upstream_inference_completions_cost": 0.0046
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 132
+ }
+}

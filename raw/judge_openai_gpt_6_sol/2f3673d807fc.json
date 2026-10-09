@@ -1,0 +1,86 @@
+{
+ "call_id": "2f3673d807fc",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.\n- zainteresowania: szydełkowanie swetrów, teleturnieje w telewizji, wnuki i ich zajęcia\n- lokalny punkt odniesienia: targowisko przy ulicy Szczecińskiej\n- aktualna sytuacja życiowa: Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.\n- sposób pisania: zdania: long run-on; interpunkcja: ellipsis everywhere; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: dodaje „co by nie mówić”\n\nPosts by this author (in order):\n1. Rano mgła stała tak gęsto, że z okna ledwie widziałam ławkę po drugiej stronie... Wyszłam tylko po chleb i wróciłam z wilgotnymi włosami, choć deszczu nie było... Po obiedzie już trochę jaśniej, ale szyby nadal jakby zaparowane.\n2. Po kolacji spróbowałam jeszcze raz przejść ten trudny poziom na telefonie... przy ostatnim ruchu zabrakło mi jednego punktu... jutro zobaczę, gdzie się pomyliłam.\n3. Miałam spokojnie dojechać regionalnym... po przesiadce okazało się, że następny pociąg jest dopiero za godzinę.\n4. Po zmianie miałam jeszcze odłożyć kilka rzeczy... nie odłożyłam nic, tylko sprawdziłam jutrzejsze godziny w grafiku i usiadłam, bo oczy same mi się zamykają.\n5. Rano zajrzałam do dwóch marketów po drodze... w pierwszym pomidory były po 12 złotych, a w drugim po 8... aż miło było wrócić z pełną torbą i jeszcze zdążyć spokojnie na autobus.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "57d1bdd1fa980fcd4df79db6fa88226a6c5aa6f4",
+ "response": {
+  "id": "gen-1791462223-vyeZFAL91WDzI28kaxqK",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"Post 4 implies a work shift despite the retired persona\",\n    \"Signature verbal tic never appears\",\n    \"Little mention of the persona's distinctive interests\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791462223,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 99,
+   "prompt_tokens": 710,
+   "total_tokens": 809,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00241,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00241,
+    "upstream_inference_prompt_cost": 0.00142,
+    "upstream_inference_completions_cost": 0.00099
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "8c8962318dfe",
+ "tag": "bg_vs",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 495230507
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.\n- zainteresowania: żużel w telewizji, stare Volvo, wędkowanie w weekendy\n- lokalny punkt odniesienia: stacja Orlen przy zjeździe w Strykowie\n- aktualna sytuacja życiowa: Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: zaczyna od „no to tak”\n\nTopic for this post: zakupy i ceny\nConcrete angle: W środę o 11:40, podczas przerwy w pracy, odebrał z paczkomatu obok Orlenu przy zjeździe w Strykowie używany przełącznik szyb do Volvo 940. Na etykiecie zobaczył, że przesyłka kosztowała prawie tyle co część. | mood: amused | opener: one-word reaction | verbal tic in this post: yes\nRegister: mildly grumbly\nTarget length: about 35 words\nTime of day: late morning, Wednesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "d3357664833e0acedea30508ce009a25a733cffd",
+ "response": {
+  "id": "gen-1791461596-sTdXNl8y2PwuVuz0K9sI",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[{\"text\":\"heh. no to tak przerwa 11 40 i skok do paczkomatu. przelacznik szyb do volvo 940 odebrany. patrze na etykiete a przesylka prawie tyle co czesc. za klikanie zaplacilem dwa razy chyba\",\"probability\":0.07},{\"text\":\"oho. no to tak w srode na przerwie o 11 40 wyjalem uzywany wlacznik szyb do 940. czesc tania. dopiero etykieta pokazala ile poszlo na dostawe. prawie to samo. no ladne zakupy\",\"probability\":0.06},{\"text\":\"hm. no to tak paczkomat zaliczony na przerwie 11 40. uzywany przelacznik do szyb w volvo 940 jest. na naklejce cena wysylki i musialem spojrzec drugi raz. prawie cena samej czesci\",\"probability\":0.08},{\"text\":\"aha. no to tak sroda 11 40 przerwa i odbior z paczkomatu. uzywany przelacznik szyb do 940 w srodku. etykiete czytam potem. przesylka prawie drozsza od tego malego plastiku. troche mnie to rozbawilo\",\"probability\":0.05},{\"text\":\"oj. no to tak na przerwie o 11 40 odebralem paczke z przelacznikiem szyb do volvo 940. uzywka za grosze niby. na etykiecie wyszlo ze samo nadanie prawie tyle samo. zakupy przez neta\",\"probability\":0.07}]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461596,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 380,
+   "prompt_tokens": 812,
+   "total_tokens": 1192,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005424,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005424,
+    "upstream_inference_prompt_cost": 0.001624,
+    "upstream_inference_completions_cost": 0.0038
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

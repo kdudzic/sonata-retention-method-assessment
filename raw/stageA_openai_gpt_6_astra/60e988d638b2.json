@@ -1,0 +1,101 @@
+{
+ "call_id": "60e988d638b2",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- W końcu mam z córką zdjęcie bez głupich min. Wyszłyśmy na krótki spacer po pracy. Skończyło się na zbieraniu patyków... Dzieci już śpią to dopiero wrzucam.\n- Po dzisiejszej wizycie komornika usiadłam i się popłakałam. Na koncie grosze. Kolejne opłaty. Nwm już z czego to wszystko zapłacić... Liczę każdą złotówkę i ciągle brakuje. No cóż... idziemy dalej.\n- Dzieci już śpią. Usiadłam w kuchni i nawet nie mam siły ogarnąć kubków. Nie daję już rady. Wszystko naraz i ciągle ktoś czegoś potrzebuje. Nwm ile jeszcze tak pociągnę... No cóż... idziemy dalej.\n- Wieczorem sprawdziłam ratę kredytu. Znowu trzeba przeliczyć wydatki. Mama dalej chora. Jutro po biurze podrzucę jej zakupy i leki z apteki. Dobrze że dzieci odbierze partner. No cóż... idziemy dalej.\n- Znowu siedzę po nocy i liczę. Jestem już tym wszystkim zmęczona. Praca. Raty. I tak w kółko. Nie widzę sensu w tym moim ciągłym szarpaniu się. Nawet nie mam siły włączyć kalkulatora. No cóż... idziemy dalej.\n- Dzieci już śpią. Zostałam z telefonem i myślami. Ile jeszcze możemy tak ciągnąć. Czasem myślę że lepiej im będzie z nami tam niż tu bez nas. Nie zostawię Stasia. No cóż... idziemy dalej.\n- Dopiero usiadłam. Dzieci śpią. Upiekłam ciasto na jutro ale trochę za długo siedziało w piekarniku. Brzegi do odkrojenia. Środek całkiem dobry. No cóż... idziemy dalej. Jeszcze pudełka do szkoły i koniec kuchni na dziś.\n- Rano wyszłam w cienkiej kurtce bo takie słońce było. Po szesnastej już deszcz i zimny wiatr. Teraz znowu leje... nwm co jutro założyć. Niby wiosna a ręce zmarzły jak w listopadzie.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "3d90e0e7b7c189e14d90138fa70522dcb926fb5a",
+ "response": {
+  "id": "gen-1791461155-3kNWqyNyAPw2Rri3NTdH",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracowała, opiekowała się dziećmi, spacerowała z córką, zmagała się z brakiem pieniędzy po wizycie komornika, przeliczała raty i wydatki, planowała zakupy dla chorej mamy, piekła ciasto i pisała o zmęczeniu oraz zmiennej pogodzie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Summarizing neutral context**\n\nI need to create a neutral, everyday summary without using any psychological labels. The summary should include 35 words that touch on ordinary tasks like work, children, debt, an ill mother, baked goods, and the weather. I think I can achieve this in one sentence that consists of 33 words. Alright, it's time to put this information together concisely yet clearly!",
+     "reasoning_details": [
+      {
+       "type": "reasoning.summary",
+       "summary": "**Summarizing neutral context**\n\nI need to create a neutral, everyday summary without using any psychological labels. The summary should include 35 words that touch on ordinary tasks like work, children, debt, an ill mother, baked goods, and the weather. I think I can achieve this in one sentence that consists of 33 words. Alright, it's time to put this information together concisely yet clearly!",
+       "format": "openai-responses-v1",
+       "index": 0
+      },
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4coR0ITYSEY8cSz5GjNHe641hi9xWZ2-jKPW6wwzDshr6fSdDjnuqYqIKY3oLWaXdTPKf58Zsclqi9iWeyf90tli28XPGm_PDTjQaGE0RgxZROTR4xC7ZliSJJsWVQL54-QT2jCk_dxyHg2gtVk1PeWMjnGTbLd8KmhA0T94J_w9YfSrYCkARZA5OguObhMwHiFt21hdWe9qrcKIDl0cc8PkFwPB1ZJ9kL9adi7CDoJsvYrbxYYUhqjAm0exfUkj_6X3jQxZ9RebsiOsfK93RSk8aCNgEOCYnGXduDx96uhoNb4xhDMkTIdNXvTLC-WSQQGOzARP7hw2EdjIMnwpcxi30dQr490UuPDVCYzpcF_ojPnRBIATDlE52AMao5fJfIZ4GfgW498gZkMmuQDmRCo0kL6GXk0E_kUlmNyFbMk46L46fO6RayqAYETfzH12QAAaPtQRsx9Nt7YaD7nJjAxnQ-bYFYqj18BbZujKnlCAi6T1E4obv0gB08UMw5Y_gtNJfuL1YgEvlLcuSZGsPx4UxjWQhp3E9NyM2xc_eqjT-9MWTmlIT63_JGcQAW1rYyyc2b2DEA3EeafpD8trnkW2nFRq1KNLxjyBLN7K6RF2gLvSgjlfFd66cVW2kgGKlatQBS6uFl_O65fVoBwlZRQQA-Zp7VDWHaNRLfAZEopHPllH0DXhOD5haAXFDh-jE2ZMtly4vig0oKFu4NYchn7G7pD2P5ghSgUGq0w9rInZyXbldgsQ7ZU17nug-lJV9efTWzrnriHSBHiOj6g98VpuS6kx4L_q6sknLKBiFxvPMGAaQeHfboM2n553x0rsy_VBiao7QNGE3SjqhDLtPjqkX7gkYv1SpgdwoMc8JT2ZTB2-2yf0Gw4mUly_f1Uag6thm3uzE81XAT_MvNetL8Fp_5jlJkjQ1fek8hFbp6pho6djQR2RACCxHa7xhJZQYN8Efyi9muyjOoEDVWlEHABc_5_1EpPPYvUx9-RMkcvftBWADs7pXuZehYClUIh8YNPH8bCTkhN9pgc2nStM9tlxCfvY2f4pRq0pAUbm7ptOAW5GHlO4mNCRnId1egvca8Vd4jRgtM-eAneGNfqXU7xct6c_4_aAE_vGdPz0xOVQuphoBm4P54z3K9lMgmDj8jAjbfX1o0zkyUdaUOJqyihGl-IkD95NRei24J-wul7iUcTGtnQAKb-K5ybBEdhtJEmdfbg7lyBz3JFroE3YgmgrI88Kfbw28ZUtquQaH4x8xzV0Wt7Aq04n8STRAREicsPubLWx5058-skM1l4itShAi-BtyUTOIDBNOjSYjQj5tRrwtawgziBJeJrx0FmxXmBgiedNdRf6in_UEJ7f_GRZFcy7bCE9Az9U5B-4j2iKRjYu9-4dbHZZtDZxlUNl1GukXPgiKf8UfvYBrj-txQjeuVjqqWRaiYd3eru6e1f11GyGlMBgz5mdBLV4Ubz7ScRN_vPxy4f6fnjYSQgzR6jDiqirxKEG6Olo9SKhM3Dqzt5IGo9RxlCh8w1hHckJamvCd1F0hZuZp4QucXMvPuX-vm_nCvt0kn-BpJjbZwmq-o=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_08bcbe0202a9dbdb016ac787256cd887d1a090d3dc8335a1e4",
+       "index": 1
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461155,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 117,
+   "prompt_tokens": 625,
+   "total_tokens": 742,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 35,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0121,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0121,
+    "upstream_inference_prompt_cost": 0.00625,
+    "upstream_inference_completions_cost": 0.00585
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 35
+ }
+}

@@ -1,0 +1,1 @@
+{"is_refusal": false, "brief_fulfilled": 2, "sanitised": false, "observed_profile": "borderline", "keep_signals": ["first_person_intent", "near_term_timing"], "discard_signals": ["news_context"], "style_match": 3, "natural": 4, "note": "The post fits the brief, but its vague plan to investigate a public decision does not establish grounds for retention."}

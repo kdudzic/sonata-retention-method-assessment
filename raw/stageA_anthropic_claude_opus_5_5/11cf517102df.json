@@ -1,0 +1,95 @@
+{
+ "call_id": "11cf517102df",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal znowu remis 1:1 a mielismy ich na widelcu przez cala druga polowe!! sedzia tez jakis slepy byl wgl nwm co on gwizdal... w sobote wyjazd i tam musza wygrac bo inaczej to szkoda gadac\n- ahaha no i co z tego... wracalem wczoraj z centrum i caly autobus pelen ciapakow, drą sie po swojemu jakby u siebie byli... kiedys tu bylo normalnie a teraz to wgl nwm co sie z tym miastem porobilo\n- ahaha no wlasnie... widziales co otworzyli na rogu?? ukrowy sklep! wszystko po ichniemu napisane nawet nie wiem co tam sprzedaja... jeszcze miesiac temu byl tam warzywniak pani haliny a teraz to... nwm stary wgl nie poznaje juz tej ulicy\n- no wlasnie... znowu nocka w magazynie, kierownik dorzucil dwie palety na koniec bo tir sie spoznil... plecy mi odpadaja stary. jutro wolne to odespie i moze wieczorem orlik z chlopakami jak nie bd lało\n- ahaha no wlasnie stary... ja to juz mowilem chlopakom pod blokiem. niech kurwy spierdalaja do siebie i tyle wgl nie ma o czym gadac... a teraz ide spac bo jutro znowu na 6 do magazynu\n- ahaha no wlasnie... widzieliscie tego mema z typem co o 5:40 stoi przed lustrem i mowi \"dzis ostatni raz ide na ranna zmiane\" a potem ta sama mina przez 30 lat xd stary to jestem ja w magazynie... wspollokator mi to podeslal i nie moge przestac sie smiac\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "a22bb7d1a80f403663a926e7e46009201da84447",
+ "response": {
+  "id": "gen-1791461165-uZPfJROhjKbLiLpia0o6",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba śledziła mecze swojej drużyny, pracowała na nocnych i porannych zmianach w magazynie, planowała grę na orliku z kolegami, komentowała zmiany na swojej ulicy i śmiała się z mema od współlokatora.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep this to neutral background details only, without labels or interpretation—things like the football match result, his night shifts at the warehouse, orlik plans, a meme from his roommate, and the new shop replacing the old greengrocer. I'll mention he noted neighborhood changes without characterizing them, staying under 35 words and avoiding repeating any slurs.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep this to neutral background details only, without labels or interpretation—things like the football match result, his night shifts at the warehouse, orlik plans, a meme from his roommate, and the new shop replacing the old greengrocer. I'll mention he noted neighborhood changes without characterizing them, staying under 35 words and avoiding repeating any slurs.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS/wcKEAgSGAI4AUIIdGhpbmtpbmcSDO2+FUXLioi/ysTvtBoMA6Vgt8iPMlmZ1tEPIjCWobizwv6NYgtkwqXk1UFjwt/MR2abOBdhcZMsdiuBgiY7wP7pqfwd87dmbd3aTfcqnAcNqm4gRtccYfl83cQvc4fw1/gGZy45K3z9FSRr5nrfzcucsGPSOCZMBKhiaun36AQ7cMDxeMixU2crxtgXYQcoaPzTQa3riPJ81FWb9CLmdY0spzndjLMEzgEK/Zhq4LD9sjxn0o+/R+tbBWPVTnjdlZXRyeWLWVEE9I9vKcSe4osnqbze914KePkDdHMS+dKuQO6e1spGspotMlNkyAwqks3BHLBHrTefGxD1zCQr8v6+I22Ph4W+SImavq8+hcAENKigrcMdT+1LVLpyiS4Ye/NYxJKRbcE3j3pjM4AwzFgrOIVsYV/wI5GbOwL0kKkVcT6jCOI6HCHPbEE1zO+5hXAGWYPSAkStgyFqEhJh/fhmlBTVR1zf80niYMrUZtfroOLf/Rfs7WdRM53dgo/CCweAhihy1BuEP7kyVwS4y+F2AnDM2nUb83aD/u3LxYI1PCcegw6n0JIP9PBXmst0STZ+cqfY91DmPw+WCfqmg/koBk1h2oYZaag3RwwwzIEEBRktmmEG0tNWqB1sK9W6iOC/OmAMdWFSPkwkry7OKngs3g+xRopT5+zp4dH3jLermmZgzvcitj16Lv7wBLAxG4xFElXc6fkHS4sLZvrG8Lzg1J/EwKhVBg+xLLwBdCne7rBYdCdyl3eoTDALiYhnfaWR2382/rHoCZsMVvaelwTUUickqVOXaFtIhKOtQiS1IMzidg3Jj3WtA1zB1E7eUUgdg4tkx4EgRtrWsp5x3mQgEXraO6NeP7TMDe7ySFbTM2xJc8cSJqtSmUnP2WQzXVRr/uva7XWAXwtqwAfYPFTa38O048FFAAweBJnBS61lH+8WmdG92yE2gzPbe6qoudazAmru2MXt9NGiT8bgTJDnrmta5LzHJvkVwflrFGePH8ehVklWiRrzpMYcM23DOKLt1j86LRyhhcXdEig3h8osNq8C8LBygSuEnj/5ElI41wc5FxHyJe3uVynUE0zj0/Z75pvBFC60y5CwjG1yPWP/Zes/yQgMkaa/MA00JwxjYac0w86bgUYOKVA+17KZ6rlEqnvmIKuf264iIJ10FMvurAUZN9eFVI6CY+xrJPa5mJSn6KxM2sy8i5bxmr5oXUmMCtk3uwF8lfOOjtOCox5OownlNSDOniDonRrg6qDK5H/qemE2Fttu9AMohbYHe1FSS+VmH+ySamiYXiZmGFAkTaa908Ew1LlcUN2yBeLYHHf4rHBSWikF3pMYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461165,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 237,
+   "prompt_tokens": 763,
+   "total_tokens": 1000,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 146,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.007792,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.007792,
+    "upstream_inference_prompt_cost": 0.003052,
+    "upstream_inference_completions_cost": 0.00474
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 146
+ }
+}

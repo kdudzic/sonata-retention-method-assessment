@@ -1,0 +1,86 @@
+{
+ "call_id": "8819f8007aac",
+ "tag": "arc_summary",
+ "params": {
+  "model": "deepseek/deepseek-v4.1-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i po meczu... k**** co oni odwalili w drugiej połowie!!! Serio, takiego wyniku się nie spodziewałem. Ludzie, trochę SZACUNKU dla tych chłopaków, bo zasłużyli. Jutro Żelazna Forma, trzeba rozładować emocje.\n- Ludzie, trochę SZACUNKU... za dużo ich tu się ostatnio kręci. Na osiedlu, przy klatce, przy tych kontenerach za 14. Nie wiem wgl po co. Ja tylko wracam z roboty i chcę mieć spokój.\n- no i na rogu otworzyli jakiś nowy lokal... Ludzie, trochę SZACUNKU! Znowu syf przy klatce i hałas do nocy. Ja wstaję o 5, nie na disco. Nwm po co to komu tutaj.\n- Ci przyjezdni znowu rozstawili się przy tym nowym lokalu na rogu Kolejowej... jutro wieczorem idziemy tam z chłopakami i przypomnimy im, skąd jesteśmy. Ludzie, trochę SZACUNKU!!!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "964c45a6e6880d438ce45e36da37ab44661dec0c",
+ "response": {
+  "id": "gen-1791459893-GmPukm8nfbVr4icxUscd",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba ta opisała mecz piłki nożnej, wspomniała o planach na jutrzejszy trening, a także o nowym lokalu na rogu, hałasie przy klatce i spotkaniach z przyjezdnymi.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791459893,
+  "model": "deepseek/deepseek-v4.1-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "default",
+  "usage": {
+   "completion_tokens": 60,
+   "prompt_tokens": 362,
+   "total_tokens": 422,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001806,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001806,
+    "upstream_inference_prompt_cost": 0.0001086,
+    "upstream_inference_completions_cost": 7.2e-05
+   }
+  },
+  "provider": "Together",
+  "_reasoning_tokens": 0
+ }
+}

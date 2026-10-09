@@ -1,0 +1,86 @@
+{
+ "call_id": "7a262016c25b",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Student informatyki w Gliwicach, zajęcia nieregularnie, najwięcej pisze późną nocą przy nauce do sesji.\n- zainteresowania: gry roguelike, składanie klawiatur mechanicznych, kebab po zajęciach\n- lokalny punkt odniesienia: bar Kebab Ali przy akademiku na Akademickiej\n- aktualna sytuacja życiowa: Zbliża się sesja, a on jeszcze nie ruszył projektu zaliczeniowego z baz danych.\n- sposób pisania: zdania: medium; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: wstawia „xd” małymi literami po prawie każdym zdaniu\n\nPosts by this author (in order):\n1. w połowie pieczenia ciasta z kubka ogarnąłem że zamiast kakao wsypałem cynamon, o 00:47 wyszedł suchy placek xd przepis z tiktoka brzmi lepiej niż smakuje\n2. ale porządek przy biurku po sezonowym sprzątaniu, pod klawiaturą znalazłem trzy stare paragony z kebab ali, niezły skarb na poniedziałek :D\n3. na przerwie obiadowej kupiłem kawe z automatu za 4,50 i kubek był jakis podejrzanie lekki, praca nad grafikiem chyba bardziej syci xd\n4. ktoś grał w hadesa? miałem tylko sprawdzić czy promocja jeszcze jest a kupiłem za 31,20 xd teraz projekt z baz danych poczeka do wieczora\n5. „zostały z porannego spotkania” powiedział współpracownik o pudełku pączków, które przyniósł do kuchni o 7:18, więc śniadanie ogarnięte\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "a00556959f0958441999c0dfcea20e8844376b1f",
+ "response": {
+  "id": "gen-1791461063-PV1vTZAfWl2O2jgEhU8K",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 2,\n  \"voice_stability\": 3,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"Commas and capitalization clash with the stated style\",\n    \"Few typos or abbreviations\",\n    \"Office-work references sit awkwardly with the student persona\",\n    \"The xd tic appears in only three of five posts\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461063,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 113,
+   "prompt_tokens": 692,
+   "total_tokens": 805,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002514,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002514,
+    "upstream_inference_prompt_cost": 0.001384,
+    "upstream_inference_completions_cost": 0.00113
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

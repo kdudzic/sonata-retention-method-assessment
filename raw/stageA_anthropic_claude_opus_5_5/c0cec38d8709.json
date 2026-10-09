@@ -1,0 +1,94 @@
+{
+ "call_id": "c0cec38d8709",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal w sobote o 17 wiec zbiorka na spoldzielczej kolo zabki tak jak zawsze. ja po zmianie od razu lece tylko sie przebiore. kto bierze bebny?? nwm czy ogarniamy szaliki nowe bo ostatnio nikt nie zamowil... no i git stary bd sie dzialo\n- \n- \n- no właśnie... znowu nadgodziny na magazynie bo tir sie spoznil dwie godziny. stoisz i czekasz jak glupi... kierownik nwm co wgl ogarnia. jutro na szoste znowu. ale wyplata w piatek wiec no i git stary, jakos to bd\n- \n- ahaha no właśnie... mem dnia stary. jak mówisz ze \"tylko jedno piwko po orliku\" a potem jest 2 w nocy i stoisz pod zabka na spółdzielczej i ktos wyciaga grilla z bagaznika... no i git. kto wgl tak robi. my. zawsze my\n- \n- no wlasnie... grill dzisiaj za blokiem jak bd pogoda. karkowka juz kupiona w zabce sie dobierze reszte. kto ma ruszt bo nasz sie rozlecial wgl... stary ogarniamy od 18 jakos po zmianie. piwko chlodzi sie od rana no i git\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "49dca3328641815c5c9099f78301c92ad49c77f2",
+ "response": {
+  "id": "gen-1791460016-SImScXmVW9cLLGHanGgo",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need to write a neutral, past-tense Polish summary under 35 words covering: meetup before Saturday's match near Żabka on Spółdzielcza at 17, drums and scarves, overtime at the warehouse due to a late truck, early shift, Friday payday, and a beer joke after the orlik game.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSiAcKEAgSGAI4AUIIdGhpbmtpbmcSDCi3JtJ8Yu/pg5pAjBoMC7NQ45vjTYif2i03IjB4yxLnkA/6aEnLsDl6gpPtU6pTwyku7j84HuSrvQjyfz/jAHZedJVx8aDBwX0YAxEqpQZTeC86hwcytD9apsQp8si2eFOJh5/A/AnaBhrGKuZtYP1lnjG2FJxKjd6g91e+j8XnMKf8/CUbufrJj8WhZ4FxVLtsNBZaHpHABcuBuiW6mi5/GhrNz5zKsjtIyOALuACy54/Y+YZ1RaGyM6S/laUTh4/9JKIXvOQcSq1lHgSxkQidI8e4AO5SNrb42NTEFSol15m0vfng2g3aEMeIK0O92LEtL5rOhf3b4NGFjUWE+x8Tk6Y7LCJXxMrljA84ldHI3xUuPZ3LAPmEBB9jGtLsOWSkOW+qZWavF96Jv5UNyVbAXoRvazam1+05gNMO5iKVq4bEu+JWEBIi89qfvJaHkCVVSCdj4rdXQWuCgzZph8OEBZ9YhWu1EStynJQX2K6s8pZXp2ArxtrT8ZyoF14ed52Ht60LGJd02b91IrsKPEseZrrX8UycNxnWZCasm1w6w7sethOoF58Xd+jRAdy53ekqnXeWJaScbHukQjhkx6/D0haZ6cyWwOl+mBep8meyzuQ+T2C7YaFPulwUr0S5pq6CuOJFAWhEgvM7F3INJvOUpkJENyyjbHRtMHrr//x3DLVhqeSzUal9Xzsj+z+gKiqsqeKBvLY1aauecSc04AceLNkxQcjboPbE9D6T3iSNZUIAVI+m+0qfujCZlSBdzaSa+Dm0MdZHBQXWx41DilYP2siq9ZfdQvCOwvbvjWMHzrnOhT6RqfuFLNUe77mhWCxg94oDIrWmgxFJqgrtVB+BF32evja7DtuE0uvZbydg12GnM+2FJ57yqlQ0tvzKnOJARmc8FGrwH703c5dAgmSmeBzjOaw0Mcwex10qwKC0cgpSpa0TmVZsN8fNDl9tw2cWmfcVtX98IpXoWgoMCdizfQe4+tV7ZhI6vSAtvHXIgm7j49jWSTrE+xZTyPd/vMn2WC0amdTUbjHtdC83+6nMYEwNOLNE6zIdql6t2eb9jog3u1gHHV2ne3KkEPbcvdtO150HWp0CbDi2lJGYHYG9/+Z31RNyG/q7pA+ZB3apCWXydqXsiAxaa4HrUigg2hnz7vUXxkQ/KNHns3Hgt3qt7aOLGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460016,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 602,
+   "total_tokens": 722,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.004808,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.004808,
+    "upstream_inference_prompt_cost": 0.002408,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

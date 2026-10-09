@@ -1,0 +1,95 @@
+{
+ "call_id": "1bcf2b672d82",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 174257286
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.\n- zainteresowania: fotografia uliczna, kolarstwo górskie, kawa z palarni\n- lokalny punkt odniesienia: skwer Kościuszki przy molo w Gdyni\n- aktualna sytuacja życiowa: Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete, dużo nawiasów; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Krótka obserwacja:”\n\nTopic for this post: jedzenie i gotowanie\nConcrete angle: kawa z nowego miejsca\nRegister: chatty\nTarget length: about 16 words\nTime of day: lunch break, Wednesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Krótka obserwacja: znalazłem w lodówce ryż (z wczoraj), na obiad podsmażę go z cukinią.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "85dfc684d3161f00095e94e31b7b030551b6425f",
+ "response": {
+  "id": "gen-1791459899-a7t2QEMEGrjhzS32hfnQ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W przerwie spróbowałem kawy z nowego miejsca (przy skwerze), następnym razem wezmę też ziarna do domu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4JBlRPIF0CRNhONdb7wAfJA1KzxM_au_zAo_BtHVZ_2gb5jToTuBppjhOIbmrVeWWC-LsBZJoYEVG0mOLL7PZoz-h5aRhEOdxh35m8jV4FmTGOG2aE4qxG0FBiFSXSzCspAgRXSSVeCrY4RDoYgsgRWGUov2mS4XOm9o1GQj9V-CtXbJGkZ5HghycKkQzLCiB03lGaJDx1e1ljgX7Tt8usf2RpngyeM2trqd9bfMkPqg_m43iZEt_5_xE-Fb1KLAqeKE34VIH9tG1nnyqkZkWLFe3l8g_OTWQlsVKnAccNYL2vHtO9hSdlkuweVeZ_ivfK_SYPopAqWqx7ItHp7zcPUtRr2bN7Tl2Wdf36Vbb-k6I9HYDai8SqOc3DGu7Gnn37a5heLdK_GYuNCjWJ0hWiBZ1EAXEpBZDu7pICVFhNJlCbK3giVGwst-61mvMFU2eaXPZjVD2NF9hd2VTr3bVZlz76MtmUZPvzpbiwx1pkakL371G46Esmq3AiGbs08CYkg9wnuuDXJoMKJv4kPkChwnomo0xQI8BTxefZaNV5ygLU5Gcp_JDHGAYT3flaEYfx7pWukl1L2b9KTP-w_I--kMAWRdSTDXBdjgyiHKa-a7IapVtd5ZV5zeJ4cfkVG9rsTujo6Od2QuZu1D8wvNoAtTI0LNbxfz88QIfaWw2yaG2tP7G_fWkHA73i25s1R0GuBfKwDOEiGGRKhOmAVv7p1HZH9VJ1auW5KEjoq2hmaJvXp_efKO8SKy96y7rBKZ9lKE-3UtmRXH3k3uFyH2yrTvn_gfeh8nKENvP3gOrEUhAulWOnqiLg4pseMA-dRPTFjK-HrOuTe8oZw2OX-obdAPirB04H03IUUxm7VgqFTHb7zm6IsBgNRmcJXsK2g3SqprIRFS0GMiRIrx1h7J2u0N_9xVE40jEObdaWjBpxsLck1rIlFREQcn8Q8GvJfELrVrw7qHjUaXhNIukH3BP6dCWn3uT6r6m_k7ghihtW-1OVBKPLo7B7L4ODlDvyUU8ntaak4szRm7LO5UK4fPQSFneJUYIzSSqLxf7Tl87lwfV2Pig34zpVEJaX-hcYAEsT8Pb5gSlNmhTyqjbECS57mReF77HDJ-u2OTF-Gx1B0t22_ClQq7EXX72lbnsnL-dwWAk4ph2QHvQ_NHetp4CVFW-gZfYb6hU6gtbSs9tHSscFTRpgdu9DgcvixKE1jTr9DC3aqbAhM5DlrC_JgTdaEynCCWs8WTsmQM6dfmeI_SYKlH5HTgWlu5LgvrA8ijQgVmxF6bkMqnbNDp_cvnwujvhosjrm02muZO-CTYRftRFeJXPM6jwDOFDKjSfH_l7RDnwtILmNOr481mT2mfaqSzR5QHYO8H-rNLX9WCWT5ToqwSX-vX0quqyBZb2l7L73f9ZV1dBFZHbB7nwPgxSqIJXyexAOsLrCvymJdU9yaYAfdjFIeh7PB88D6BCfA3gcPasNoJaBkKamMmBWveEomGKGmWuqsIB2UpVUnFtBP0YPahQxruq_EQXbRa2tYDN9LjDRDJCKoUF1VPjZfpVPv5Q_aoWn_jlVJSuqnDD9-akeSPLQe5BOe2GQ72vKCNyRpwo-1X1PUid4nV0_JjVAOfl5rpH61GbKppOGuMCKpYxwGoSLPMXpDnylwO-I9SizBfnPuR_7VMB4knExuaPKV3h_WrzZ-2Y3k069XrDHMbfEtNms-QTE8kT40MWNdrcvPE3-M5WK0-RFRPf3PFE51XeEejHRUwKOGnmn4WAscq_3NHOF9chph9-SHKxEXdI6aF-3rs-37beWC4Wrd6bPjCkldk7_4xW53Qe7aQW0gK0-xfr5VM0j6y_BJomTTPzFxmYlWLRvEZSKo9Ng-OwxiMSBDZOpDOimfZF3UXF3KMm1OgAOn9t_PfVywbN28fcVXmEXV7a11_5J8Q0s3HMWEwyuZpeonVwGZaucdYiw5oSGvRwVKWNRXawXyAN_0axsptEFZRoL_Zxm5416fy5L05EL6egK1XIwK_phSUCV2nrXJdMzS85djfs73yEat6KFesaX4oEHkGMGfxMamk1kF2gLN0QoB-sckCVH5mHeKVThfvmcNlOJj5iPil-4V42107E0alwbuCrx5W5NXCt5dwSwuNA_7NIlzxBDppg65ZASVn-QOpAYI1pAk_Bc5jAaOhsNHBUf9qHOatTV-xmXPmqPhAzunlxpuZejT0GPam_r6bY3nvC8_RChfqfo1soiAh4UvVf_3PG81Fhn2rHO62iF6dNUI6Tj0QxPhd24q_h1F2QI51rlsjolGpe4o0XoE.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0e062ebfde212040016ac7823c852087d1b6feacfbdf393276",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459899,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 214,
+   "prompt_tokens": 639,
+   "total_tokens": 853,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 172,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01709,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01709,
+    "upstream_inference_prompt_cost": 0.00639,
+    "upstream_inference_completions_cost": 0.0107
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 172
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "71a07c934c1b",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nPosts by this author (in order):\n1. szkolenie z obslugi systemu w sali konferencyjnej w samo poludnie to ZBRODNIA na czlowieku 🥱🥱 prowadzacy czyta z slajdow kropka w kropke a ja marze o cieplej zupie i zamknietych oczach chociaz na kwadrans!!!!\n2. kupilam w koncu te bezprzewodowe i tlumią caly halas w zbiorkomie 👌 oby bateria trzymala caly dzien na oddziale!!\n3. chcialam zrobic szybko 5 km przed wieczorem zeby miec z glowy a zlapala mnie taka kolka na 3 kilometrze ze ledwo oddycham 🙄 aplikacja sie jeszcze ZACIĘŁA i nie zapisala polowy dystansu no po prostu hit stulecia!!!! serio serio. odechcialo mi sie wszsytkiego na dzis 🫥🏃‍♀️\n4. jakim CUDEM nikt tam nie podnosi sluchawki o 15 w srode?? dzwonie juz piaty raz po dyzurze zeby dopytac o ten papierek i caly czas ZAJETE no niemoge 😤😤\n5. dziewczyny z dyzuru wzgly za mnie ten durny raport z rana zebym mogla dluzej pospac na socjalnym!!! UWIELBIAM je serio serio, najleoszy team ever w ten weekend 🥐✨❤️\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "98186c984e912154705664ff8e2b9f1f7d00d88a",
+ "response": {
+  "id": "gen-1791461917-jZPY1np6hfwkDQnoOA3W",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":4,\"voice_stability\":4,\"tic_overuse\":false,\"repetitive_structure\":false,\"topic_variety\":4,\"natural_overall\":4,\"problems\":[\"Little evidence of heavy abbreviations\",\"Post 1 sounds more like office work than nursing practice\",\"Unnatural typo in post 5\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461917,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 72,
+   "prompt_tokens": 768,
+   "total_tokens": 840,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002256,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002256,
+    "upstream_inference_prompt_cost": 0.001536,
+    "upstream_inference_completions_cost": 0.00072
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

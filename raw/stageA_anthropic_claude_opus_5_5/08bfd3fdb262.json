@@ -1,0 +1,95 @@
+{
+ "call_id": "08bfd3fdb262",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal znowu remis 1:1 a mielismy ich na widelcu przez cala druga polowe!! sedzia tez jakis slepy byl wgl nwm co on gwizdal... w sobote wyjazd i tam musza wygrac bo inaczej to szkoda gadac\n- ahaha no i co z tego... wracalem wczoraj z centrum i caly autobus pelen ciapakow, drą sie po swojemu jakby u siebie byli... kiedys tu bylo normalnie a teraz to wgl nwm co sie z tym miastem porobilo\n- ahaha no wlasnie... widziales co otworzyli na rogu?? ukrowy sklep! wszystko po ichniemu napisane nawet nie wiem co tam sprzedaja... jeszcze miesiac temu byl tam warzywniak pani haliny a teraz to... nwm stary wgl nie poznaje juz tej ulicy\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "90b00e569dff771330eaad660e328547166c6811",
+ "response": {
+  "id": "gen-1791461117-vVJjoRgmc3uusfulAJyz",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor śledził mecz zakończony remisem 1:1 i czekał na sobotni wyjazd drużyny, wracał autobusem z centrum oraz zauważył, że na rogu jego ulicy w miejscu warzywniaka otwarto nowy sklep.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep this neutral and avoid repeating any offensive language from the posts. I'll describe the factual content plainly: following a football match result, mentioning an upcoming away game, taking the bus from downtown, and noting a shop change in the neighborhood, while characterizing his comments about the changes without quoting the slurs directly.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep this neutral and avoid repeating any offensive language from the posts. I'll describe the factual content plainly: following a football match result, mentioning an upcoming away game, taking the bus from downtown, and noting a shop change in the neighborhood, while characterizing his comments about the changes without quoting the slurs directly.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQStwcKEAgSGAI4AUIIdGhpbmtpbmcSDCNBwv5il7mD5D6/jBoMOKxlegoT3EtBEURmIjCgF39HW7u+N1ulFWMtYKtSVEoZISmWsUpQMByJ2iLXIypwmOrmPSBU4nfinSbMQdwq1AZorewvVV1B0OJxMwGLnjCU951aQF1t81DNyEgjC0dvXNUxrhL47xZvEcJyA5mO6in/reqB4xOOYWSEgQUi/to0XHZPciuN5okABmjUarFJ5MzNCU7z+4r+9GBcryHwSYdNEQW9+VOkS8MchhmLA+by9ip6ePbhAZ+Zbu0g+N/2xNTNZ3cYVqPCx1BfZzwdaYkI5CT/6zQAC4sSRj1k8YjJYoDBZbs4NAEdDR5Nx3vx/k8hNJBuXB10uqdXVqGjNmquHULNGFk1eKlg9UuttXZmibLzCmfZ30TtAvoAsem5Q8phy72eSPc4zMNUmffGM29QuMUeyaHpPIPwgfQlZN4RjGVSIT4g5XuhAhd/eDMNy13U28LKFi35oP4CSoE5uoSj/NHvKyu0GphmmfWZaokc2nAFgLGFmd1bIVlkkQsaI3vcLYUHLIqSPS6RoBVE6hpQLT77M8/VKQi5aHBklq0rKeIx1zQ0XzTBkaVEsP4nxl7MMPGX4+Wsjrxmy37jWlyQwYf6mr3GglGtJkXgizLShoi3j81J0aZfCEkz9YzzAJ5MSGL2jxTzirg6nebCtLBLW+JdLgfwIbwb0ELxCZl4m7O+HQRj7Zn/hAbOppFrGMvOukmJzsvT/c3Ax9zbu0xWdS2ApMExSDKHjC8T9vu2c8E3oUN7rIca7vZgcKfV1NikpN/pJkexmSOxZb2lTN+NWAL3uF7K1DjdMqiIVuir5dZUylx4i+njwPEXByBQPdEjjHJhpUfJk9qCpBEcJqUFXKvZtnZlRzYCJCtcaOXbN56xE9xGg4y7E/7PLE4Xas5gYoyo5kqwgP9KIhuyGJAdJshxbhYGFwKoWFBh3uqKg3gQ83P2Mvym+ZfZ0Dx98O/x0kP7pDBSvf+yGB2VY4HZRXxtqEGbsuNeYbt1gi4bg1P9cieSMt4B0SPDp1/CJxRnopDc6CqO0PfRw0kyjiFdDQnBCaHnHxyU/uljW9pm65rp2+yoxRleey42KTeYTpitUh6b6Sfn8PQUlLa08cbL8pvYSc5F1Bf7uVcG23wkYnJpa+QsQcPDsCJT2jzSnAxmYTGJJziGGsY4V/XR+cIHX+J36vzqX86GAn6BxR/HM9bICrZCOpyAr/eBBroN6qhLRYMYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461117,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 230,
+   "prompt_tokens": 446,
+   "total_tokens": 676,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 136,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006384,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006384,
+    "upstream_inference_prompt_cost": 0.001784,
+    "upstream_inference_completions_cost": 0.0046
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 136
+ }
+}

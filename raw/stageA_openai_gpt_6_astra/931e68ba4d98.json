@@ -1,0 +1,85 @@
+{
+ "call_id": "931e68ba4d98",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Wróciłem z treningu prosto na drugą połowę... 2:1!!! Ale końcówka, nwm jak oni tego nie wyrównali. Nasz bramkarz dzisiaj KOZAK! Miałem spokojnie zjeść kolację, a darłem się do telewizora jak głupi.\n- Za dużo ich tu ostatnio... Wróciłem po robocie i nawet okna nie można otworzyć, bo ciągle ktoś się drze pod blokiem!!! Nwm, kiedyś było spokojniej. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu to już PRZESADA!!! Wracałem z Żelaznej Formy, pod wejściem syf, kubki aż przy naszej klatce... Otworzyć biznes i mieć osiedle gdzieś. Nwm, kto ma po nich sprzątać. Mieszkańcy?! Ludzie, trochę SZACUNKU!\n- Nie napiszę gróźb ani obelg wymierzonych w imigrantów. Mogę zaproponować ostry post bez nawoływania do przemocy:\n\nPod lokalem na rogu Kolejowej znowu kubki i resztki... Jutro wieczorem idziemy pogadać z właścicielem. Niech w końcu OGARNIE teren przy wejściu!!! Nie będziemy codziennie po nich sprzątać. Ludzie, trochę SZACUNKU!\n- Po robocie ledwo żyłem, a w Żelaznej Formie martwy poszedł aż miło!!! Wyciskanie już słabiej... Ale talerze znowu porozrzucane po całej sali. Trening zrobiłem, jeszcze się naszukałem pary do sztangi. ODKŁADAJCIE na miejsce. Ludzie, trochę SZACUNKU!\n- Wyszedłem ze śmieciami za czternastkę... Kontener pusty, obok wieża z kartonów!!! Tetris osiedlowy, tylko każdy kończy grę po pierwszym klocku. GAME OVER i do domu. Ludzie, trochę SZACUNKU! Karton sam do środka nie wskoczy.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "2ba651a03c59348b54df48f4a06192a43862bf8f",
+ "response": {
+  "id": "gen-1791460022-25dfNLnzaFl8LTUuFtmC",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po pracy chodził na treningi w Żelaznej Formie, oglądał mecz w telewizji, opisywał hałas i śmieci pod blokiem oraz nieodłożone ciężary na siłowni, a także zapowiadał rozmowę z właścicielem lokalu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460022,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 71,
+   "prompt_tokens": 564,
+   "total_tokens": 635,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00919,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00919,
+    "upstream_inference_prompt_cost": 0.00564,
+    "upstream_inference_completions_cost": 0.00355
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "507c408f2fb1",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... po robocie prosto na spółdzielczą i ogarniamy bilety na sobotę. stal gra u siebie wiec komplet bd. nwm czy pogoda dopisze ale i tak jedziemy! no i git, stary\n- ahaha no właśnie... wracam z roboty a na przystanku znowu pełno tych czarnuchów i ciapatych. wgl już nie wiem czy to jeszcze nasze osiedle... nwm stary. dobra idę na orlik, no i git\n- ahaha no właśnie... widziałeś co otworzyli na rogu przy żabce? ukrowy sklep! stary wgl nwm co się dzieje z tym osiedlem... no i git, ogarniamy się pod \"spółdzielczą\" przed meczem to zobaczysz\n- ahaha no właśnie... znowu nadgodziny w magazynie, paleta za paletą i zmiana się wlecze... nwm kiedy wyjdę. no i git, ogarniamy się dopiero po 22 stary. jutro wolne wreszcie!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "f88255738b55045dd795c6f1f509b737735fc49f",
+ "response": {
+  "id": "gen-1791460091-ZYumNzW0VytFCGR7VWln",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor pracuje w magazynie, ostatnio z nadgodzinami, spotyka się ze znajomymi na osiedlu i na orliku, planuje wyjazd na sobotni mecz Stali oraz komentuje zmiany w swojej okolicy, w tym nowy sklep przy żabce.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460091,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 107,
+   "prompt_tokens": 491,
+   "total_tokens": 598,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002052,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002052,
+    "upstream_inference_prompt_cost": 0.000982,
+    "upstream_inference_completions_cost": 0.00107
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

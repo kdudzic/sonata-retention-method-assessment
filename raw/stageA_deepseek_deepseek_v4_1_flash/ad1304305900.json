@@ -1,0 +1,86 @@
+{
+ "call_id": "ad1304305900",
+ "tag": "arc_summary",
+ "params": {
+  "model": "deepseek/deepseek-v4.1-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no i git sobota ustawiona... stal gra o 17 a my sie zbieramy pod zolibem o 15 30 jak zawsze. stary nawet nie wie jak wam tego brakuje, trybuny to jest cos innego niz tv\n- no wlasnie wracam z magazynu i slysze na przystanku jak gadaja... nwm kurna przyjezdzaja i robia syf na osiedlu. u nas zawsze bylo git. ogarniamy to jakos\n- no i git... widzieliscie co otwożyli na rogu? ukrowy sklep podobno, jakis nowy. stare zaby chyba zamkniete, przynajmniej tak gadaja na spoldzielczej. musze oblukac wracajac z magazynu\n- no i git... na magazynie dzis jakas masakra, zmiana od 6 i do 14 zlecialo jak woda. plecy mnie napierdalaja. jutro znowu, nwm po co ja sie na to pisalem. potem orlik moze, jak sie wyrobie\n- no wlasnie... niech kurwy spierdalaja do siebie i tyle w temacie. ktos musi w koncu ogarnac ten burdel bo tak to sie gowno zmieni. nwm po co to pisze ale no\n- no i git stary... sobota sie szykuje, ekipa sie zbierze pod zoliborzem i lecimy na trybuny. tylko ten magazyn mnie wykonczy, wczoraj 12h na nogach i nogi jak z betonu. ale ogarniamy\n- no wiem wiem... jutro wieczorem. chujki przeprosza za wolyn. tak jak gadalismy pod zaba\n- no i git stary, sobota grill u nas pod blokiem... ktos ogarnia węgiel czy mam kupic? po meczu od razu na działke przy Spółdzielczej\n- no wlasnie... ci nowi przyjezdzaja i od razu wielkie halo. nwm skad sie to bierze stary. za naszych czasow to sie siedzialo cicho i ogarnialo swoje a nie ciagle pretensje\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "fb1aebb09f772d4cbae166ada2cd375e42d83efe",
+ "response": {
+  "id": "gen-1791459905-lnBpNlpmytJSVHeVIJQ9",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba relacjonowała w postach wyjazdy na mecze i zbiórki pod Żoliborzem, pracę w magazynie, grill pod blokiem oraz obserwacje dotyczące nowych mieszkańców i sklepów na osiedlu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791459905,
+  "model": "deepseek/deepseek-v4.1-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 60,
+   "prompt_tokens": 602,
+   "total_tokens": 662,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00023154,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00023154,
+    "upstream_inference_prompt_cost": 0.00016254,
+    "upstream_inference_completions_cost": 6.9e-05
+   }
+  },
+  "provider": "Makora",
+  "_reasoning_tokens": 0
+ }
+}

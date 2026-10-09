@@ -1,0 +1,95 @@
+{
+ "call_id": "346747171482",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dopiero teraz wrzucam nasze zdjęcie ze spaceru. Po pracy udało mi się wyciągnąć młodszego do parku. Potem jeszcze plac za blokiem i obowiązkowe „mamo jeszcze chwilę”... Dobrze było trochę pobyć razem bez zerkania na zegarek.\n- Dzieci już śpią a ja znowu liczę czego nie zapłacimy. Po wizycie komornika nie mogłam się dziś skupić w biurze. Rata i rachunki zjadają wszystko. Do wypłaty jeszcze tyle dni... No cóż... idziemy dalej.\n- nie daję już rady. Usiadłam dopiero teraz i nawet nie mam siły odpisać na wiadomości. Cały dzień coś trzeba. A ja już nie mam z czego brać tej siły... No cóż... idziemy dalej.\n- Dzieci już śpią. Sprawdziłam ratę kredytu i odłożyłam telefon... Mama dalej choruje. Jutro po biurze podrzucę jej zakupy. Miałam jeszcze porównać oferty banków ale to już nie dziś. No cóż... idziemy dalej.\n- Siedzę i patrzę w telefon. Miałam coś ogarnąć ale nawet nie zaczęłam. Nie widzę sensu w tym moim ciągłym spinaniu się. Tyle wysiłku i dalej stoję w miejscu... Jestem już zwyczajnie wykończona.\n- Dzieci już śpią. A my dalej siedzimy w kuchni. Nie umiemy już normalnie rozmawiać... Myślę że lepiej im będzie z nami tam niż tu bez nas. Nie zostawię Stasia.\n- Po pracy jeszcze zakupy i pranie. Upiekłam muffinki na jutro do szkoły. Trochę krzywe ale dzieci zadowolone. Dopiero teraz zajrzałam na telefon... Komentarze zostawiam dziś bez odpowiedzi. Jeszcze tylko ogarnę kuchnię.\n- Rano słońce a po szesnastej już deszcz. Wyszłam z biura bez parasola i oczywiście zmokłam. Na placu za blokiem same kałuże. Teraz jeszcze wiatr tłucze w okna... Nwm jak się na tę pogodę ubierać.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4060e171727405a4883e43691314226fee1c9cbf",
+ "response": {
+  "id": "gen-1791460634-IKvFrBl63jswwJFl1feG",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracowała w biurze, opiekowała się dziećmi, zajmowała się domem, planowała zakupy dla chorej mamy, pisała o trudnościach finansowych, wizycie komornika, wyczerpaniu i problemach w rozmowach w domu oraz o deszczowej pogodzie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4UiIveYafxk5qePdxemKLJyknHBHtF7cd82tmnpP-TTDbDYDslBs1gkXC7ETv8G-S-J773oWw83b67U3lTPHD3qBVfilir-TUXp4RPlI5MGRzkC8S0mEWlI3n4cWfA7s3Kji7TwBS7QFy1GUuB2KGBCbQr9t7KgFo7ylKIaLMljnbT0Len-Qos5-b7esSFrMun1oPBghx_TFhktpko6RwOt9LBjdwFhpvWIKbUB_DP__rSqhF5f1x9HXTRYhg77PYVKezRBT9DVfnl14FVi-_15kyxhn4pG5N1tAMaApG6Q2LkSs_YHUZ7zIB1DaCzzi0qXxq7hnjS_TUdbBt1m5628_nEcVWAGOUv5ZTs5mx4fUjLpQxxX8S2y2V7Sjimlx0fNuaRxs5bwP49gUtfYohMirBF0pDAevogLcR1NoUAl387JM3Ex3_gh8eCzu9Z5aW6_rDCQorHRKL7A-lW7YCIR4Xh0v4ptyOXYbbz8V5tfLOaczG6Et6z46z2CsVOVrvotl3rEJ5G0Dp4mYxbwoJrtq8uwHprr3J_bV9qXpZqt_8m13LrXw1dKBvTPnQ2P8yZwfJMGsjuFtc1UDLFlen_w-I6isGeGUttn0tF_IEatAKArzS_Fm2iTeNCkkExxSgQGLbdbJozp-ea7Z7q5-aoXGbNIRNQ6ww_adj7Pyk047aaPUOLzilBHAnFm_QsTSysDjNc0I-TMre9sUTTyBZXsvu7inyjO_vkmaYQVCQ57mzT6tY_zgS50iLfQMdXaKmGmEX26SegjRkNsFNdjBxomBSdi8joo8_Yao-8_1nR0PHbsz9tmk4HWd6DFc_CaX9WifUJRr2jUEPM6TTTj2kQom-cj2pTCgcMcKBl-yMgHGURF85ypllZEvDDDT5KeUp1UqzDndANIYs8JQR9Zc0E1schLcyRcFYu0VtQzwitm8RgAYxd_3efh-3psnRUOZxEAjV0FdIOH8yWoCi6LEzDsAyJa1UNcE9j2zwGBpLU1aPOBaFf-TC9XjxiovVxQGC50hn0ouaomMXvGkHxdzokCfTaGd_xI0tZvDMKjAdvZ-JCvITanGwPVgNFjS6pj7_rUPEaNbvjg6HpntbD5IbzHXb9ZIZU3hr37fojtK7lM1G27lBGb-4D8Vjz6wbyhYn_wjfvdp4_J-wp1x39co8t1lAnYUX1Ke4YT23yLGU7WTAsHRG8TCKC3DI_pAbIOdAlMcPEhjr2KAwagadAIbCI5utr3r0li6FIxr7Q0wiPIIBDZEtLnUEhE2QglknXtFmfw3UWpRMokGLbWi3-WdCBvigBeuEe_Lzq99eWRf6XDu00_coQpJ43VKSU8kW5j91xgLar_t6emWT-GtWu-P4h7MaPm6_YLgsndkQmC_33dn9tv40qwA_Qhv4p288y1qj-NEkFh8XHIlzpZdmQhbMwO5-OVak6Xx8rYJDy6MTIjEjh7CixE8YVCwiLRxFGgM0yiIBfumo8Hxslf2vfQS9UgZIVL8XZva9CpSKQXAKLK4i3ecGNeUWVfry_mRpLjB4OzDmiw1DeyFAlocP_WpCJfkM_k39n6o29x1xRqk0Qey14VX5i8pJLdX40GhlyuH91h6FtU1nQbShugJ4IOB9ne3vYGjkNgAAhZK65v_bUHDVG5-_vozNqqiE5JdG0IV9xa7mkXRYsmFQGxh4qBiLnsWr8sEvWCWBFLKAkE85UUGKfCE9r37PV06-sM1qk_qud8zYflxl0m2watZHT98TJWcuGa1g_zlysgtxZk9kWVvnWrMz8rRWw_QFrKyyzaSss8J4AKbKHMHmc5YKZX27dfW52SDcu_4hYfJoYy02e_c-CjHmqNyc3KaQF1Lkjftu0qcdCF1a5MdT7KlAMPuN09ErwHO_HYlLv8O4cfpGh2DJSFm72zripF8039FS26byX5eaIK3F5zIdkhS2SJHv9oMqQMie26FCLCai2mWXV4RDNyK4BL0anvJUhJJy4wxLD58BwqeSCuVSMn8kyBzPtD-GsyN9-4UtwN1ZEcuFD6q7JX-33Qvz8eZIKy5sivaZ3OJIVgx2vD0yYl-H2HwaDB7CcbCzONZYYEMvp37R4FAKAzjnKIFuq2xd-O-y3SIQ5Umo15WQ5-GDvGpXa0vpTYIqRXrrcQDlNbC8HHo0VEWxweUXNQVS_kbxgzC8PnUabqjfUk4lPJBaRo1aYjYvFbA1dodfOjlCYuGu8qnOG9sZzvFNPkvPW5NsQ6x9Mwmdd8LSjUOVyDjUhYfA_PQrlhRDTn4I4DYNf3WcdRYr7dr8M=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_02a05ea2923015d9016ac7851c036c87d1bdda41929be107f6",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460634,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 311,
+   "prompt_tokens": 594,
+   "total_tokens": 905,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 235,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.02149,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.02149,
+    "upstream_inference_prompt_cost": 0.00594,
+    "upstream_inference_completions_cost": 0.01555
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 235
+ }
+}

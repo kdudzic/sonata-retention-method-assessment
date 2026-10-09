@@ -1,0 +1,87 @@
+{
+ "call_id": "759f8be436dd",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1131542930
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje w kwiaciarni w Tarnowie, zaczyna rano i pisze po zamknięciu sklepu.\n- zainteresowania: wiązanie bukietów, ozdabianie doniczek, targi staroci\n- lokalny punkt odniesienia: przystanek przy ulicy Krakowskiej w Tarnowie\n- aktualna sytuacja życiowa: Przestawia wystawę sklepową i testuje nowe sposoby pakowania bukietów.\n- sposób pisania: zdania: medium; interpunkcja: dużo wykrzykników; wielkie litery: standard; literówki: rare; skróty: none; emoji: frequent\n- tik językowy: często zaczyna od „ale dziś kolory”\n\nTopic for this post: jedzenie i gotowanie\nConcrete angle: W piątek rano wyjęłam z lodówki sałatkę przygotowaną na wieczorne ognisko i odkryłam, że zapomniałam dodać ogórka. | mood: neutral | opener: mid-thought | verbal tic in this post: no\nRegister: chatty\nTarget length: about 19 words\nTime of day: early morning, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Mąka i mleko są — wróciłem we wtorek po południu z zakupów, przy patelni wyszło, że jajek nie mam — czas pokaże, co zrobię na obiad.\n  - Ojej! Dopiero teraz rozpakowałam zakupy na obiad: pomidory, bazylia, parmezan... a makaronu nie kupiłam 😂🍝 Jeszcze stoję w kuchni i się śmieję!\n  - Rano sprawdziłam potwierdzenie zamówienia obiadu z dowozem. Ale się ucieszyłam! We wtorek po zamknięciu kwiaciarni nie będę musiała gotować 😊🍽️\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "1155103f67c9664dedb8c8d080c7bc8b2381bc2a",
+ "response": {
+  "id": "gen-1791464572-azX6sNc1nebTN9nOI6f3",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Ale dziś kolory w misce! Wyjęłam rano sałatkę na wieczorne ognisko z lodówki i dopiero zauważyłam, że zapomniałam o ogórku 🥒😅",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464572,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 52,
+   "prompt_tokens": 835,
+   "total_tokens": 887,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00219,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00219,
+    "upstream_inference_prompt_cost": 0.00167,
+    "upstream_inference_completions_cost": 0.00052
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

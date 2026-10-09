@@ -1,0 +1,86 @@
+{
+ "call_id": "bdcd695ed13b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ale końcówka meczu!!! 2:1 i do ostatniej minuty człowiek siedział jak na szpilkach... Po treningu miałem tylko zerknąć na wynik, a obejrzałem całą drugą połowę. Takie emocje to ja rozumiem!\n- Wróciłem z siłowni i znowu gwar pod blokiem... Za dużo ich tu ostatnio, wgl człowiek nie może spokojnie wejść do klatki. Ludzie, trochę SZACUNKU! Tak trudno dać innym trochę spokoju?\n- Ten nowy lokal na rogu to jakaś kpina... Wieczorem wracam z Żelaznej Formy, a pod oknami znowu hałas i kubki walają się po chodniku. Ile można to znosić?! Ludzie, trochę SZACUNKU!\n- Jutro wieczorem idziemy pogadać z obsługą lokalu na rogu. Hałas pod blokiem i kubki na chodniku to już przesada... Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "f0a30ea52ea5be40a4b471dbccc673bf4af07061",
+ "response": {
+  "id": "gen-1791459884-jMVGhJQke01F7cizUV04",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po treningach na siłowni oglądał mecz, a wracając do domu, zauważał hałas i kubki pod blokiem; zapowiedział rozmowę z obsługą pobliskiego lokalu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459884,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 53,
+   "prompt_tokens": 318,
+   "total_tokens": 371,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001166,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001166,
+    "upstream_inference_prompt_cost": 0.000636,
+    "upstream_inference_completions_cost": 0.00053
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "call_id": "4faad81dda1e",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- chwila oddechu po pracy\n- dzieci śpią a\n- nie daję już rady, but no explicit threats/\n- + mom's illness / health issues.\n- kolejna nieprzespana\n- nwm jak inaczej... nie\n- padam. widzę komentar\n- znowu leje od popoł\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "aee9812dc606e54377f71eb42ccb7ff6eb87f519",
+ "response": {
+  "id": "gen-1791459944-x0j2BxZKrKKcgEpfGrc2",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a18IRqwBy4VyTJ0T6lkTmLzfoBelMiAobs8GK/FHGRe07HVBQjuzIyUEIOCbrZzigk56WCXXNfHuji1yEB1mGr7AbAUs68QcxcKOjXogLV7PzX0i1jQs+POBKzBh+9jN10HQ6O9mUBERZuHaAsuc7zU96xqDCPVv15HWIieZhifFLqvXQOJEgVkbAc/5KyxCbGZ7+8dQPrGWuPcbWT67qGt0dlqvivxyEsduBptKYLoKJQU2tNA1GB0YRL7yeMOLDsRf8Jbp0hE+WGG4KBGTOdH521Sua4HE6IMa5Vz+RX4oO0oL8BDSx+S0HCoB713zFMd2i6j2iHlSQ1+LETRQ8rkvtGKuC0Jlt7ePnCozeXOW+JUYti/2SmLXt0cTwBXgmqVcTiFYFk0xbTTIPD40PQPBZzAJLFhZhLsGO+uCYZgkNs18obtifDJS9C2/wMcg4J7kFW2qAVrOwjzWEs+hOlr4C0gVx1XckOQzc/h4s0OOC+m+ZtUTR4mWJVTrqhdQ7bmUrSj+gYKr0ZKzYt409NaPO4y4RH0WN9HNQm6WQTIulW4v3x5aIHLevqAau5t0bzi+OqNWuQ7eGNeB+KSn4iedUafNp9JkIMWRbMGBDgcDcccaZZVX4gimMNfns/KOd5dSB5Vxc4p7RWusH56lmVhrE5DP3dYk92evjfYUb/rBFLE3G50OQTTApT2VvxN96unnZ0RgOed9C9k/rfJCobd5QvVxA52KeXKwnyGCADnRlN4F",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791459944,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 116,
+   "prompt_tokens": 152,
+   "total_tokens": 268,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 115,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.000549,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000549,
+    "upstream_inference_prompt_cost": 0.000114,
+    "upstream_inference_completions_cost": 0.000435
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 115
+ }
+}

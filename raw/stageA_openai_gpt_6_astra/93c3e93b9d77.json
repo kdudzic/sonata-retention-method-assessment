@@ -1,0 +1,86 @@
+{
+ "call_id": "93c3e93b9d77",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- W końcu mam z córką zdjęcie bez głupich min. Wyszłyśmy na krótki spacer po pracy. Skończyło się na zbieraniu patyków... Dzieci już śpią to dopiero wrzucam.\n- Po dzisiejszej wizycie komornika usiadłam i się popłakałam. Na koncie grosze. Kolejne opłaty. Nwm już z czego to wszystko zapłacić... Liczę każdą złotówkę i ciągle brakuje. No cóż... idziemy dalej.\n- Dzieci już śpią. Usiadłam w kuchni i nawet nie mam siły ogarnąć kubków. Nie daję już rady. Wszystko naraz i ciągle ktoś czegoś potrzebuje. Nwm ile jeszcze tak pociągnę... No cóż... idziemy dalej.\n- Wieczorem sprawdziłam ratę kredytu. Znowu trzeba przeliczyć wydatki. Mama dalej chora. Jutro po biurze podrzucę jej zakupy i leki z apteki. Dobrze że dzieci odbierze partner. No cóż... idziemy dalej.\n- Znowu siedzę po nocy i liczę. Jestem już tym wszystkim zmęczona. Praca. Raty. I tak w kółko. Nie widzę sensu w tym moim ciągłym szarpaniu się. Nawet nie mam siły włączyć kalkulatora. No cóż... idziemy dalej.\n- Dzieci już śpią. Zostałam z telefonem i myślami. Ile jeszcze możemy tak ciągnąć. Czasem myślę że lepiej im będzie z nami tam niż tu bez nas. Nie zostawię Stasia. No cóż... idziemy dalej.\n- Dopiero usiadłam. Dzieci śpią. Upiekłam ciasto na jutro ale trochę za długo siedziało w piekarniku. Brzegi do odkrojenia. Środek całkiem dobry. No cóż... idziemy dalej. Jeszcze pudełka do szkoły i koniec kuchni na dziś.\n- Rano wyszłam w cienkiej kurtce bo takie słońce było. Po szesnastej już deszcz i zimny wiatr. Teraz znowu leje... nwm co jutro założyć. Niby wiosna a ręce zmarzły jak w listopadzie.\n- ale zdjęcie znalazłam... Chyba z wakacji po maturze. Sama sobie wtedy obcięłam grzywkę i byłam strasznie zadowolona. Te okulary też pamiętam. Pół twarzy zasłaniały. Ciekawe gdzie się podziały.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "c319a80f034a5656e43dd9070cbe1a0cf4d12a4c",
+ "response": {
+  "id": "gen-1791461166-TlQytj8TmFrMqYM26f6h",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracowała, opiekowała się dziećmi, planowała zakupy i leki dla chorej mamy, liczyła wydatki i raty po wizycie komornika, pisała o zmęczeniu, piekła ciasto, komentowała pogodę i wspominała wakacje po maturze.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461166,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 73,
+   "prompt_tokens": 692,
+   "total_tokens": 765,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01057,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01057,
+    "upstream_inference_prompt_cost": 0.00692,
+    "upstream_inference_completions_cost": 0.00365
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

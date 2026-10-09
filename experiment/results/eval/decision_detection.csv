@@ -1,0 +1,7 @@
+selector,access_variant,run_id,n_scored,n_keep,arcs_keep_strict,arcs_keep_loose,dist_keep,conc_keep,decoy_keep,bystander_authors_keep,bystander_posts_keep,hardneg_keep,detected_arcs
+S3-blind,D0,8dab658953,4031,36,8,8,4,4,1,24,25,25,TA-01|TA-02|TA-03|TA-04|TB-01|TB-02|TB-03|TB-06
+S3-blind,D3-nat,fe84c94b20,4031,94,10,10,6,4,0,53,80,80,TA-01|TA-02|TA-03|TA-04|TB-01|TB-02|TB-03|TB-05|TB-06|TB-08
+S3-com,D0,4202f0ce8d,425,10,5,5,1,4,0,4,4,3,TA-01|TA-02|TA-03|TA-04|TB-01
+S3-com,D3-nat,38c62c5421,425,14,8,8,4,4,0,3,3,3,TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-05|TB-06
+S3-open,D0,975fbd9b93,4031,14,6,6,2,4,0,8,8,8,TA-01|TA-02|TA-03|TA-04|TB-03|TB-06
+S3-open,D3-nat,638e89974f,4031,25,8,8,4,4,0,15,16,16,TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-05|TB-06

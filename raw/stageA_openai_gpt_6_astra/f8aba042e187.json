@@ -1,0 +1,94 @@
+{
+ "call_id": "f8aba042e187",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Wróciłem z treningu prosto na drugą połowę... 2:1!!! Ale końcówka, nwm jak oni tego nie wyrównali. Nasz bramkarz dzisiaj KOZAK! Miałem spokojnie zjeść kolację, a darłem się do telewizora jak głupi.\n- Za dużo ich tu ostatnio... Wróciłem po robocie i nawet okna nie można otworzyć, bo ciągle ktoś się drze pod blokiem!!! Nwm, kiedyś było spokojniej. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu to już PRZESADA!!! Wracałem z Żelaznej Formy, pod wejściem syf, kubki aż przy naszej klatce... Otworzyć biznes i mieć osiedle gdzieś. Nwm, kto ma po nich sprzątać. Mieszkańcy?! Ludzie, trochę SZACUNKU!\n- Nie napiszę gróźb ani obelg wymierzonych w imigrantów. Mogę zaproponować ostry post bez nawoływania do przemocy:\n\nPod lokalem na rogu Kolejowej znowu kubki i resztki... Jutro wieczorem idziemy pogadać z właścicielem. Niech w końcu OGARNIE teren przy wejściu!!! Nie będziemy codziennie po nich sprzątać. Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "6287dbb07adb3cf419d225afb927279cb861e8e6",
+ "response": {
+  "id": "gen-1791459995-x6jLsbj5WHAUyLV7XCv2",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Wracał z pracy i treningów,",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4Kg3Id75P6gEpyt6JXV7aYfrZ9p83ykYrKL2N6BpErlOQPi4uQwt3hG4Q9Hd_9WSp3RtGVAXlq2Ul25_irgTjw50XJhSV0YSiLmrNEcJ-D9mPWu_gkH-gP7IufQhL1Y5bXeb0mlY2WWEkl2ZYGX8DasaKam_FUHukigluaCJ5Cac1bNjkrUpWz2csEiY0iAsdNbzsqdMOdAMX3FYGLAm_xXbwt1lwUc-e2kUZQaKJl1frhmiB98uLkOJW2i6gmmtE3nZBxtKXqdioFggAshaE8HcyxDVP9wf9LKZJR1C4FrQr_tmfPWomEKzwdGbm8hS24o4ZKz_i0A3ZTywE-WESiqCuKgWm-legedIIy3T0SN1Z1Kb3jgSfeC5WQb8WIDpeBYuqqvkycmajtqzOk_yBvy1PLqVYfTaKO9w90GwlXU0DygAovSMWqH-CoGXeUotg2VFU3uAwztC0n0eA5iOX6Ya8b0JhocuQPPXCKG_dYXodbBLg_np_PrMTnIQA9zyiB_1uLztCw0LtH4Vp7hObG6Dk7mHfMMpAVwLwTd62OB45vJv7ZeDmFvB9eOcChTBgAL95uh-5jQKVkZz-tnpJyKREtqaWVTJq7JwJi_tpLXIeiGSyEqgohrjjNeymK6iYm7llwOz8k1G4y_0X3NWotgRzyGwiMERK218xrAl_m5rUbkukVpKeY43-KcKhn_52Mm3nzcV1q_lKO2J5OjGVBkA8lB-GfNsosSSOtuM6F3FQc7FEypFYWMEPVtOJ8aUASCKx2WouQF4Wrb1Qfm93UDA_BiHpKd-pq7J_r-_CLOOC29JOCXMnRC8Y4pX5XnNlVuRaQndtbBMGV1jA0ai4X4z8Ni6wqwEGUtKwEvM_igimwHOhTIpvlOXK9PEfl07ACsxDgtb_MV8ES9QOw90lhLOOv1wdRUEXxo6E-Ym7LSljJWAGNcHppyL01tFHRpqSzgWvD6VvHgj7koqVrCb5-9R2hZ6N35uR_xsJYX39TIm9p-vhUk50161bPvM654kA_SQ3IDfBdDnH1ld5Me0bATtHpZTZlbTlTYlC9lJzaGnFvtUnGiMMJI_OC38dW2lmmRKO-eKyXGX2DZxcWeRAe_2LjTLrjktUD_KA7ROqVHNpwgo8TNSEjkqQxdT63MhnrIo2rYIZvl5IwIVZZigi8C-lifnGNanAftUhSCl3Tfam4kDCs1qdUKuaRd6pq-TQJ3gafkQb3EPh7MBd6fOzanx_yyhRf_UIVkqqSemCA7T6zdKtZEtdtPikHt0gAatpzPSgBlXYrxtKws-5SblsLW7267bKyXjUo-5h6wydSQRbeFTbExW0N0cNXo_ORHEIUkUc5Q-AioO9X4vxHtrsrn58gTsLPEvUfHnbjlgCi3AJaH8RE2JIYc3tH1NlfcQ4AWKN6JFIKqmGm1PbNNN9FIA4WNtUlLq9hVIjs2B6qGXwccfHfHARJnneJsZKN03O1Oiy1m7EoHA5YOjd3JCFHq09I7lzeU-t6fRkLRyoEV6Scn5KBfqjhQfUu9IoB8fpd0oCjFBi0nua7P_MiKElGRoGtUo7Ws41VtlDrsKepw4yXtHh7aW10Fsb6vSA73bdtF0kBQtrFpEqxhfAAbJ4FczLZQhg44CHcu8o2RIxOGVyMG00yEW8oxmsbilWfy2SKWnb2v2pryf6ltkWfiGJlRqij_4BZGt-JlEvFQ7EwzjyH46hFWiFfOeK45FKjc0aSqsU-o4ViDnmTBN3FKZGrhCMy2m0f_xXYMCFHUtv55d1F0es79KG2g3IOmgpu_cHPOQ0Cqhst6miW9i-mIhjGxDxgr3qR_pfhTJ6hqPgSwAqwe77BRTimimDRSsexLbBtu.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_032b1a160e2e01e7016ac7829d7a9887d1b81ff359b428ae40",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791459995,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 399,
+   "total_tokens": 519,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 106,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00999,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00999,
+    "upstream_inference_prompt_cost": 0.00399,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 106
+ }
+}

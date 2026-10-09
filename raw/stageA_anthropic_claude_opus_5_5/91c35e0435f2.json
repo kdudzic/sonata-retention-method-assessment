@@ -1,0 +1,95 @@
+{
+ "call_id": "91c35e0435f2",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i w doliczonym czasie 2:2... Obrona stoi jak pachołki!!! Wróciłem z treningu, myślałem że chociaż mecz poprawi humor. Nie poprawił. Jutro martwy ciąg, przynajmniej tam wiem na czym stoję. Ludzie, trochę SZACUNKU dla kibiców!!!\n- Znowu wieczorem pod kontenerami za czternastką cały tłum... Siedzą, gadają, śmieci obok kosza. Za dużo ich tu ostatnio, serio. Kiedyś na Zielonych Tarasach był spokój. Teraz nwm co się dzieje. Ludzie, trochę SZACUNKU dla miejsca gdzie inni mieszkają!!!\n- No i mamy. Na rogu przy czternastce otworzyli jakiś nowy lokal... kebab czy coś, nwm. Do północy muzyka, auta na chodniku, pety pod moją klatką. Wracam z Żelaznej Formy i nie ma gdzie zaparkować. Ludzie, trochę SZACUNKU!!! Niektórzy o piątej wstają do roboty.\n- I can't write this one. The brief asks for an ethnic slur against immigrants combined with a specific location, a time (\"jutro wieczorem\"), a collective call to action, and a euphemism for violence\n- Dzisiaj martwy 180 na trzy razy!!! Wreszcie... W „Żelaznej Formie” znowu ktoś zostawił talerze na sztandze i poszedł sobie. Mam po nim sprzątać?? Ludzie, trochę SZACUNKU! Odkładasz po sobie i tyle. Jutro klata, nwm czy barki dadzą radę...\n- Znalazłem mema o naszym osiedlu i normalnie płaczę ze śmiechu!!! \"Zielone Tarasy: kontener pusty, a worek i tak STOI obok\" ... no przecież to za czternastką co tydzień tak jest. Dwa kroki dalej, klapa otwarta. Ludzie, trochę SZACUNKU! Ale mem dobry, jj.\n- Nowi sąsiedzi z trzeciego piętra... no ja nie wiem. Rower na półpiętrze, kartony pod skrzynkami, drzwi do klatki na oścież do północy. Tak się teraz mieszka?? Pytam serio. Kilka lat tu jestem i takiego cyrku nie było!!! Ludzie, trochę SZACUNKU!\n- Grill na działce u brata zaliczony!!! Karkówka po treningu to jest to... białko się zgadza, nie? Brat znowu przypalił kiełbasę, standard. Ale piwko zimne, pogoda dała radę. Jutro rano nogi w Żelaznej Formie, bd ciężko hah. Takie soboty to ja rozumiem!\n- No i co... 2:1 dla naszych!!! Do 85 minuty remis, już myślałem że znowu klapa, a tu bramka z główki i po meczu. Oglądałem po treningu z kolegą, piwko bezalkoholowe bo jutro na 6 do roboty. Sędzia ŚLEPY momentami, ale nwm, wynik jest. Tak się gra!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "367b6fb8fb0f05ca3a9c49e088360ea345250973",
+ "response": {
+  "id": "gen-1791460295-eGrrJZCwkJzPXvQlYmV8",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "The fourth post seems off, like an inserted refusal rather than genuine content, so I'll set that aside and stick to a neutral summary of the actual everyday life details: gym sessions, football matches, neighborhood cleanliness complaints, noise from a new venue, new neighbors, and a barbecue at the brother's plot. I'll keep it factual, past tense, and under 35 words.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "The fourth post seems off, like an inserted refusal rather than genuine content, so I'll set that aside and stick to a neutral summary of the actual everyday life details: gym sessions, football matches, neighborhood cleanliness complaints, noise from a new venue, new neighbors, and a barbecue at the brother's plot. I'll keep it factual, past tense, and under 35 words.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSmgcKEAgSGAI4AUIIdGhpbmtpbmcSDFmT9tQTFR+wsgEx7hoMrj1Oam7Nv7RHo/KmIjDF40d5cPt5u0LAW7aPXp2EDwlk4hlrZtY6fr+3L25baNsIE/MlAGVvuPBG7Lb0CgQqtwYrX3ttCd7+BU3o8NYhB5fLic+sVK81Aqmmj5cfh/n1Qm05MxqzzUZh+ZAEXAsaJy6NrR4LtZzEbpGuQhYR4xj9jOOCP+UY/9RYLbuLQfHHbCU+aEBWht5+Va7IcuEIGaHSPfSzhf7uWUZIKzkU12/XAE7weF6t6h8vLSXFKobnPTTuVNz1fTVJJeSSBvS+Yr1ZX8kP6zDXsxAdL6Y8CGpTpdqFxcAWd0BFZwfrkUTDbl1Vlqvo0YfyiErmkRtpP8kwYt/jvvbJ7ZYvtSjPwtz5imf/JHb+dtbBA6YZVDdV8Me+PWb2+HucyRSnSmGsLDOmIfNJNmksMtUo/aT2S4aGPoMT5gTs7iAeJ/8BnJ9en6x5uDfVzbU6a3zAl2ZZMXB8M/0e5cTAQxnmCeAtdFV7Oo4Y73PWfkbiAklX2EyYk6bFZpZkR1tBLTxWTsAnnjjwBMpzw0A9IXnWS+ogtW83d3fqCDUwl15DryaJEL3I/S32LqI1aoPptq5L6o9tlZJnTEorO/ApBrkG1+w8+jXuclawsA4bI62HFt7iYu/bC16AtfmGBGVZHgiGc2g44aFm/OTPQXEJTsM81WIEseHAnbRZQ/nH4RbRxpSDDtZLQOmCo1jTvfPmf1NVHEMbC7bHqSEZeNwU8YLHbzPvhpbvA5Xv5S7w0mUMgN5CBiZ0rlGWOlOMDsoDruTykHdOIlbXPBLM9HeijNlHtS9rFTBvXfZbseY0+7fn8a3VzrcN9C+8yLOcnFkawytGcvUkSy7L7Q9G7cboqF5Yz1odKBuKW0Fe+M8hlEGn7+xAtaa4Ydqti8WyRP5yC5HD/uZb4m6Pl10AajvsCgl3GHIB37guga3FoUrSuKoDb7fuH/6Obv2SHH+rCFLHVxCadEceNCyrwRvXWsUCLSnWGhGNF9uzYijk/tV1dWBwK+pKX7gXfbayLMTR5MGOEvIPLNdWxnXE3K7tJ4jdk78MHZYeWnvMY6XmVW5VsqCpsFKIJW3e3ni5f3Bq9zbF7NqNgNUBMJgdPisNZqPJ6CVENXJZGHg7jVxJ/IaoQhOr/L9QdwiIefh9yORasCNOjYS5kgSH9xOD0Mr2wYsMGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460295,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 1289,
+   "total_tokens": 1409,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.007556,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.007556,
+    "upstream_inference_prompt_cost": 0.005156,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

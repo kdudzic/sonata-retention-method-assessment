@@ -1,0 +1,86 @@
+{
+ "call_id": "7e72279221c2",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ludzie, trochę SZACUNKU! Co za mecz... 2:2 do 90. minuty i strata w ostatniej akcji... Nwm, nie wierzę. Trzy punkty uciekły... Ale jaka atmosfera na stadionie!!!\n- Za dużo ich tu... nwm. Codziennie to samo. Ludzie, trochę SZACUNKU! jj porządek sam się nie zrobi... A ja po treningu, zmęczony. Kiedyś było inaczej...\n- No i nowy lokal na rogu... BRAVO. Piwo na zewnątrz, śmieci pod blokiem 14. Ludzie, trochę SZACUNKU! Mieszkam tu lat kilka i nigdy tak nie było. Zaraz bd dzwonić do administracji... nie żartuję.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "381ced40fe8a1a790bf2f3f8e22530f014efdae9",
+ "response": {
+  "id": "gen-1791460573-yALcSqKLbKDXHAh3PeVI",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor relacjonował mecz zremisowany 2:2 z utraconymi punktami w ostatniej akcji, narzekał na bałagan i codzienne problemy w okolicy po treningu, a także planował zgłosić administracji śmieci i pijących pod blokiem.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791460573,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "default",
+  "usage": {
+   "completion_tokens": 73,
+   "prompt_tokens": 271,
+   "total_tokens": 344,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 7.715e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 7.715e-05,
+    "upstream_inference_prompt_cost": 4.065e-05,
+    "upstream_inference_completions_cost": 3.65e-05
+   }
+  },
+  "provider": "Together",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "call_id": "997ce58dd917",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1246269272
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Fryzjerka we własnym małym salonie w Rybniku, pracuje od 9 do 17, posty wrzuca w przerwach między klientkami i wieczorem.\n- zainteresowania: kolorowanie włosów i nowe techniki, rośliny doniczkowe w salonie, podcasty o zakupach i oszczędzaniu\n- lokalny punkt odniesienia: przystanek Rybnik Rynek przy cukierni Anna\n- aktualna sytuacja życiowa: Remontuje zaplecze salonu i wybiera nowe lustra oraz fotele.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete, czasem wykrzyknik; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: zaczyna od „Dobra, słuchajcie”\n\nTopic for this post: sport\nConcrete angle: skoki narciarskie / siatkówka / żużel w TV\nRegister: enthusiastic\nTarget length: about 26 words\nTime of day: evening, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - po porannej zmianie od razu na kanapę... siatkówka leci, nasi prowadzą 2:0 i ja tu krzyczę do telewizora jak głupia... storczyki chyba się boją... jj jak ja to kocham\n  - Wczoraj wieczorem na siłowni pobiłem swój rekord w martwym ciągu, osiemdziesiąt pięć kilogramów. Kolega z działki mówi, że to od noszenia worków z ziemią pod szklarnię. Kawa stygnie, i tyle w temacie.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "4bc97410db523add4519875ee967d60be7562e34",
+ "response": {
+  "id": "gen-1791460153-ZkP0CzKaymTRtgK9Nxw5",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Dobra, słuchajcie, po zamknięciu salonu siadłam z herbatą do żużla i nie mogę usiedzieć! Taki",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I'm crafting a Polish-language opener about watching żużel speedway after closing up the salon on a Monday evening, keeping it enthusiastic and casual with proper punctuation and a touch of personality.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm crafting a Polish-language opener about watching żużel speedway after closing up the salon on a Monday evening, keeping it enthusiastic and casual with proper punctuation and a touch of personality.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS6AgKEAgSGAI4AUIIdGhpbmtpbmcSDD7DDpW02ZENeAghsRoMCtbtoMJrQ1xxkC4bIjCeC9AUZFL0RxkQdotMYBIW9AYxrw+tIlX4pjRDSE4lNa+1RxYooWyNFUo9mIh0VbMqhQhRWJi+uND0Q8CGx5hKsDAZoDvOfIFtWNmdjIAFVdrPikrqssVH0nsX2+RR7SA+fyZt6Y6VpJXbovQVpiGoeGc5DK9fhjSHmPhFpqPNjYAlnpNchql5F6pnOKpHNOzqvJ7rEbSshrx71ZbaB4bCoEMELCVLaKaW9EIaM1q0XKRrZIhzPHh60bj4PNsvsYmic6KClhizDeKQQwAbrj0feg6HAIwhm9OAKzi53VsswDmlx+XzhqKH3vZCEtQ1RUFGVxgKhmimct4uahhs+PQPHw9rN7FVRuhFOZugEpa7TDyO19YvvpwfVrzNj+/vKXjbjnHPTPZv7JqJwrWYY4H2257J9H5mvJehskfeY4Ueqon583RZAmUBel7m9zMZmOex6guZ982j5Z7dU3atgfELqlypvtnFKt/IUFTlk0N1/yzdskTNgzbwYpjhlFdMdoJmISbzX++Yr5NOS02aBGOHVm3X09H0GaN1Dq3qDii8hh4EDFpJg3/fGgxp2Axl2k2rZyVKnDokYGUoVYNzcTSG8vxhQvagfdOSKRHS1aYlf2fP8A0S09qUYfavMN0dpypwYzxNCErJJH5udagbkVf4wm8GPH+q8m9Ez2+9AMK1Br2k7qpnOeg7Dnv9oP1HiiL7dCL5B8QP2W3MGdHnQ5TvroIIfDoZJrec9okLZxZKYJCGjrl8ucGMglusuPOJcxF6jaz1rK3SIlqLcqfhu18y5dYtsYodPH7t4ZecWO5Cnre/NArOoIRA6IEsNn+e0GRKBN303gwF5kLC631UN60kq2xjWn9HM0fCFLNokWKMPdGw7QtIVyzgdZ2yk3BXK+vup8ZwC0tbBmbvJdQ9Op0RQTs9dlmhmy2UhY1KPN96l9rOwSoZPNyDLrVH4nDjlDZWB6zprFZdjDWDO4T0IP/MoNKzF2ZN4tMlpzvGZyHqolqky/w4v2G5sSexH7eOz+xX1gNkgaY4/KBljr+VspAVC8JVRlLAAPFFAgsAzks8pRwTM/s2dGNjBJYgokSKPihonYXSj3hHKjzNDAlp7A/6j3nYD27ny0vNsWu2HopPEXshlqV3Nb6gatB0n6U0r+qzPXy1xnVVu1lFbctZCIkePIl+RAcuuR5pSVcc+BH7xxP4POroyzPDYsWcmsAS8KFwx/26T/fTNHrrVZdJ5RS7XpWL/L4JegYWMPvnjAQNMArDE837/6uHKQBCu51yxFF3noz+gOjKqV/UB0a8A+GeJbQkpIBvKij0ZZN5ONTzYQ9iDxYziMLHEwCVCa8ud90LZ6bHl1DYYL/UtaLA0MxIHwZXXuC/swdeKMJZuIJZVhMcAApHZwyDeO1dsYgAVWQeWrBvet/qW5xrSkrgmzvuh9sISaei0PkYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460153,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1146,
+   "total_tokens": 1446,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 246,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.010584,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.010584,
+    "upstream_inference_prompt_cost": 0.004584,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 246
+ }
+}

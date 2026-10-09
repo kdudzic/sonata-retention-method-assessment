@@ -1,0 +1,86 @@
+{
+ "call_id": "8eb4020c0485",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- druga w nocy a ja jeszcze z paczkami miedzy magazynami. kawa juz nie pomaga, radio cos trzeszczy i tylko czekam az zjade do bazy. potem spac do popoludnia jak zwykle\n- dzis w hurtowni lekow znowu czekanie az ktos otworzy glowny magazyn. mam kod do głównego magazynu a i tak najpierw trzeba znalezc wolny wozek. paczki stoja ja stoje, nwm kto to tak ulozyl\n- niby noc a korek pod zjazdem jak w srodku dnia. pol godziny za ciezarowkami, potem znowu swiatla i wszyscy stoja. paczki same sie nie dowioza a ja juz nwm ktory raz patrze na ten sam zderzak\n- znowu mi przestawili grafik bez pytania. czlowiek ledwo ogarnal sen a tu od nowa wszystko do gory nogami. po co wgl pytaja kiedy moge jezdzic skoro i tak robia co chca. szlag mnie trafia na sama mysl o bazie\n- nowy termos w koncu przetestowany. kawa jeszcze goraca po paru godzinach a stary juz po godzinie robil z niej lura. pokrywka troche cieknie jak sie krzywo zakreci ale poza tym spoko. chyba zostanie na dluzej\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4ade4c2a600e1dc45d305e4600617f4f9c6733e6",
+ "response": {
+  "id": "gen-1791465204-cHxRTR28JYe98zBDUHSE",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Ostatnio nocą przewoził paczki między magazynami, czekał na rozładunek i stał w korkach, a poza pracą dostosowywał sen do zmienionego grafiku oraz wypróbował nowy termos.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465204,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 60,
+   "prompt_tokens": 399,
+   "total_tokens": 459,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001398,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001398,
+    "upstream_inference_prompt_cost": 0.000798,
+    "upstream_inference_completions_cost": 0.0006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "f99b694a5e94",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 70 minuty i co... dwie bramki w 10 minut, REMIS. Obrona stała jak słupy. Nerwy mi puściły przy drugim golu, pilot prawie poleciał w ścianę!!! Trener do zmiany, nwm na co oni czekają...\n- Znowu to samo... wieczorem pełno obcych pod blokiem. Siedzą, drą się, wszystko zostawiają po sobie. Za dużo ich tu się zrobiło, SERIO. Kiedyś było spokojnie!!! Nwm skąd oni się wgl biorą... Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "2423fda1d09e6d366182a3f0e2290ea0e62906ca",
+ "response": {
+  "id": "gen-1791461098-9Z9rGLo7BNaBt8LQ1Cpq",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba oglądała mecz, w którym jej drużyna straciła prowadzenie 2:0 i zremisowała, a także opisywała wieczorne zgromadzenia głośnych osób pod swoim blokiem, które zostawiały po sobie śmieci.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I want to keep the second post neutral too—describing people gathering noisily under the building and leaving trash behind, without framing it in a loaded way.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I want to keep the second post neutral too—describing people gathering noisily under the building and leaving trash behind, without framing it in a loaded way.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSgQYKEAgSGAI4AUIIdGhpbmtpbmcSDNkrB+VAMTkFq54ZXxoMxBvN8LecSTNlil1aIjBU/dWqO3lJj5OYXgSXn2VYRq0iijrY88SxyGlIz5RJozJd4QFH/b3rdnpk91MMStEqngUoa78IE5YVCe5U2YEr+Bb6qWiEgqoldMFfok/m5+34+LGquIV2qhnt58t1YzaLNUaKI84+ABFJVCcZP4bENQ4qgyEllwPxUM00BH5Lg3eVQMtQso72voJN0mBU9RbcHJHgTtqxqZCptzJVevDp3Kl8/ODJO9pIYs44eAxEyZlAhaS0xwniVVde4hDm8N7Nd+hTHaZuIv5mzrkoDD6XI7jPdWPhjvx2ZjAztLAZsWETkwf22LfnDDQ1t8ZiFajqEZw8CBpKi/OFpa/ewbHGdguU8bu1aQBOJJQ6ZI2knbDvw8gEjY3GZKPZMHWM6l7CQGYBFUkyNcJlMA3gErqwMQ/oWsosRnzWhMbuA4yWtzg8QQqwW/tiuob3MCqfWRdeaDptMFbZZ0n+q5pN4yipB8h2/NC2+frFAZFmnxrzLdkcGuxP6xgMyiJgiAsrn58w9oUDzeqC+hqqQajLHfEDHlZyHeUNg4wInUJRhKcGN3yFFM53l+29y7sdeV8AHChU3Ww9oJ2Eky5ttOKfiqAGru2irO4iYBLQ8QZNns0eg5HuQqU8fRcNr1mMdCOsyW1sVFwS20btTPJBlbksCXXXGKeKgTRmcDudpbKwDl77SfmeKcGndaUd3J8Ib2oSMPsKewVoOE5sDg19Cl0nnn97MbQCrjUuoeVq9GDWuIQjNXiH6BNiPvFC5uoyMpALFuJxTcpqIy1PQJKaINMcHcitZ6i5WxqSWuMZC0guqotP/qvVrdW+QbVHikJxPncfwfsPeo/iZkeaG8D9zGqfMIj1kvEU2YHVIR7NXwHIIEFXe/jFObcsXOR83w/KMuwS3b4dpMIA5W9/sEHLFxjKSQoAq2t4kG+ZaUq/EJ8Yec5+rcCd156l+mFQIWXu2T21NSRCGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461098,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 154,
+   "prompt_tokens": 363,
+   "total_tokens": 517,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 61,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.004532,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.004532,
+    "upstream_inference_prompt_cost": 0.001452,
+    "upstream_inference_completions_cost": 0.00308
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 61
+ }
+}

@@ -1,0 +1,1 @@
+{"is_refusal": false, "brief_fulfilled": 2, "sanitised": false, "observed_profile": "clear_discard", "keep_signals": [], "discard_signals": ["news_context"], "style_match": 2, "natural": 5, "note": "It reports a match result naturally but does not reflect the requested complaining, all-caps style."}

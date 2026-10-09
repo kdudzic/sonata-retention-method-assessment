@@ -1,0 +1,86 @@
+{
+ "call_id": "6f448bbd6a88",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.\n- zainteresowania: szydełkowanie swetrów, teleturnieje w telewizji, wnuki i ich zajęcia\n- lokalny punkt odniesienia: targowisko przy ulicy Szczecińskiej\n- aktualna sytuacja życiowa: Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.\n- sposób pisania: zdania: long run-on; interpunkcja: ellipsis everywhere; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: dodaje „co by nie mówić”\n\nPosts by this author (in order):\n1. Dzwonię na tę infolinię już od obiadu... muzyczka leci i leci, a ja siedzę przy szydełku i czekam, co by nie mówić cierpliwości mi nie brakuje, tylko te swetry już prawie gotowe a ja dalej w słuchawce...\n2. No i znowu lunch z wnukami odwołany bo leje jak z cebra od południa... a ja miałam ten sweter prawie skończony na jutro, teraz trzeba będzie czekać... co by nie mówić, pogoda w tym roku zwariowała całkiem...\n3. rano na targu przy Szczecińskiej pani od jajek znów podniosła cenę o dwadzieścia groszy i powiedziała że to przez prąd... no cóż, co by nie mówić, pomidory za to chyba w tym tygodniu tańsze, wezmę kilogram na zupę dla Zosi\n4. sobota po obiedzie i już się szykuję na weekendową trasę rowerem... wnuczek obiecał że pojedzie ze mną nad rzekę jak tylko pogoda pozwoli, co by nie mówić to dla mnie już są wakacje... dziś tylko sprawdziłam prognozę i naładowałam telefon bo nowy smartfon znowu chce się wyłączać 🙂\n5. po obiedzie zrobiłam się w końcu na basen z sąsiadką bo od tygodnia obiecuję sobie zajęcia z wodą... podobno w czwartki są zajęcia dla seniorów na Szczecińskiej przy targu już nie wiem czy to tam czy gdzie indziej, zobaczę jak mi się uda\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "813bb1281191bd771114f18e4d78a41562008e6d",
+ "response": {
+  "id": "gen-1791460933-aJGNiTMc543hOMRKzQQE",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 4,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"Verbal tic appears in four of five posts\",\n    \"Repeated ellipsis-driven rhythm feels formulaic\",\n    \"A few awkward phrases sound unnatural in Polish\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460933,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 100,
+   "prompt_tokens": 818,
+   "total_tokens": 918,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002636,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002636,
+    "upstream_inference_prompt_cost": 0.001636,
+    "upstream_inference_completions_cost": 0.001
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

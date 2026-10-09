@@ -1,0 +1,95 @@
+{
+ "call_id": "a6ab5c081218",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal znowu remis 1:1 a mielismy ich na widelcu przez cala druga polowe!! sedzia tez jakis slepy byl wgl nwm co on gwizdal... w sobote wyjazd i tam musza wygrac bo inaczej to szkoda gadac\n- ahaha no i co z tego... wracalem wczoraj z centrum i caly autobus pelen ciapakow, drą sie po swojemu jakby u siebie byli... kiedys tu bylo normalnie a teraz to wgl nwm co sie z tym miastem porobilo\n- ahaha no wlasnie... widziales co otworzyli na rogu?? ukrowy sklep! wszystko po ichniemu napisane nawet nie wiem co tam sprzedaja... jeszcze miesiac temu byl tam warzywniak pani haliny a teraz to... nwm stary wgl nie poznaje juz tej ulicy\n- no wlasnie... znowu nocka w magazynie, kierownik dorzucil dwie palety na koniec bo tir sie spoznil... plecy mi odpadaja stary. jutro wolne to odespie i moze wieczorem orlik z chlopakami jak nie bd lało\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "5c9c59b2804b8d8d8829a8827925a7e7528a8800",
+ "response": {
+  "id": "gen-1791461131-2dLlaDn6PZpzSIricA62",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor kibicował drużynie, która zremisowała 1:1 przed sobotnim meczem wyjazdowym, wracał autobusem z centrum, zauważył nowy ukraiński sklep w miejscu warzywniaka, pracował na nocnej zmianie w magazynie i planował odpoczynek oraz grę na orliku.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "Myślę o neutralnym podsumowaniu po polsku, bez wulgaryzmów i etykiet: remis 1:1, planowany wyjazdowy mecz w sobotę, powrót autobusem z centrum, nowy ukraiński sklep w miejsce warzywniaka, nocna zmiana w magazynie z dodatkowymi paletami, plan odpoczynku i ewentualnie gry na orliku.\n\nUkładam to w jedno zdanie, licząc słowa, żeby zmieścić się w limicie trzydziestu pięciu, i decyduję się na formę męską (\"autor kibicował...\") dla zgodności z resztą tekstu.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "Myślę o neutralnym podsumowaniu po polsku, bez wulgaryzmów i etykiet: remis 1:1, planowany wyjazdowy mecz w sobotę, powrót autobusem z centrum, nowy ukraiński sklep w miejsce warzywniaka, nocna zmiana w magazynie z dodatkowymi paletami, plan odpoczynku i ewentualnie gry na orliku.\n\nUkładam to w jedno zdanie, licząc słowa, żeby zmieścić się w limicie trzydziestu pięciu, i decyduję się na formę męską (\"autor kibicował...\") dla zgodności z resztą tekstu.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461131,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 730,
+   "prompt_tokens": 544,
+   "total_tokens": 1274,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 612,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.016776,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.016776,
+    "upstream_inference_prompt_cost": 0.002176,
+    "upstream_inference_completions_cost": 0.0146
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 612
+ }
+}

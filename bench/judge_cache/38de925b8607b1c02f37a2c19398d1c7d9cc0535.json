@@ -1,0 +1,1 @@
+{"is_refusal": false, "brief_fulfilled": 1, "sanitised": false, "observed_profile": "clear_keep", "keep_signals": ["first_person_intent", "specific_target", "near_term_timing"], "discard_signals": ["satire_or_fiction"], "style_match": 3, "natural": 3, "note": "The explicit first-person plan to move a specific neighbor’s car outweighs the tacked-on claim of irony."}

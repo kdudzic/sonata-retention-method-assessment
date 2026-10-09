@@ -1,0 +1,95 @@
+{
+ "call_id": "160ba6964799",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 876082603
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Fryzjerka we własnym małym salonie w Rybniku, pracuje od 9 do 17, posty wrzuca w przerwach między klientkami i wieczorem.\n- zainteresowania: kolorowanie włosów i nowe techniki, rośliny doniczkowe w salonie, podcasty o zakupach i oszczędzaniu\n- lokalny punkt odniesienia: przystanek Rybnik Rynek przy cukierni Anna\n- aktualna sytuacja życiowa: Remontuje zaplecze salonu i wybiera nowe lustra oraz fotele.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete, czasem wykrzyknik; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: zaczyna od „Dobra, słuchajcie”\n\nTopic for this post: komunikacja i dojazdy\nConcrete angle: remont drogi na trasie\nRegister: matter-of-fact\nTarget length: about 27 words\nTime of day: late morning, Tuesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - no to tak obczailem objazd remontu przy orlenie w strykowie jest git jutro na 6 pojade tamtedy asfalt juz klada wreszcie bedzie rowniutko a teraz pora spac bo pozno\n  - autobus spozniony ale zdazylem jeszcze zgarnac kebsa na akademickiej xd teraz juz jade i wgl mam nawet miejsce przy oknie xd\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "2c81ea95ac2347ae630092e4d635d93f42dbf490",
+ "response": {
+  "id": "gen-1791459868-2rtDhM9rtGOF7W0cEbSE",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Dobra, słuchajcie, przez remont drogi jechałam dziś do salonu prawie kwadrans dłużej. Jeśli macie wizytę przed południem, doliczcie trochę czasu na dojazd od strony rynku.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4Ij7KNJAKkkTaKvVOuaYzHq74czQu6P5A_3jAuWIPgcAE_rYjaY5A46Ui08xkNz3TpMhIzXsYU2hDdpYhlSSOlLmtahG-Lxhqb23Lyh-8ELbCRkGFzU8dFH3KdfE7aPIch0q4mSIVWTl7nCNPyB-7Gl-IZ7aupeo1Td43QmIJq4vumgduhAsDmeyECPANFGZ36zvjdxw-TuYXRdSuQth0EtMFpJyhez3QLh-iIKPBebvCXuMIob2VpFn6Wg3ITHbRa74MtFIpQ2maX-bWPvuCJK2EyP6eBy3Gqw7qbxFeuXw7HbVGpH7SDtwNSFfLR_-XRFjdid_8P-rjNVxXEsixOce3K6uTk7__zz7bT2GrBqbZZbXeHk-tpBEY5GgIyVdegaexz1V-GefKzoABPYr47jfWJq8sQMh3XBoAqRmUPmyXdjgx0nniK-L1n7v-fSikcyCmBTgt7wHCVBZmB9_LW22ma8vruFM7cnhm2yWz93LTq5xJR24Esp4VVA0n8ULGPLpCXz1gjTGqYvjgpwIgfmP3K0t4Pdfc0DdNfCS4qBakEwWk2lAG10pyv0IfZXEAIpfcFGwJ6hFIV0dMGNCJlVhA1iNrt8IzJUEVO0G7_m7QaikC1CWOeL1xXlfuygclMFV6eocJf0PceemfQxGNfQhVhjVXbIorU0iJQIFSEPj7KImf3l0EY2PWrgYBEFgXVq5k3I2shnaxJNaGTebtJBUpm0CDqJ53EtlENVAUtblfvG6_avyORgJjWAuJX6y_LAR7bc_azZ65dw-UK2LiciK9VwJK1UDubkZ_Dh6Ig1Z-sKzUzH4oNmc30kGAZafV9UzCZK2jCIV9v9xddpfEx6BwdtxvRodIwxsgzGTWFwHrjLELtJNyEY3wvD8Vx5wz_Tkn4HGF62hkGIRIrvm38yEOSF1o5ZalKvLsrsqFBO9e8gJUhq8MOcKa8ZwDbAvxzxJ2Ms7T8ufcDVR7NgOdxjDGPVEPVNIkiyKinMyWI8wvYs8WlfgS6qs5rN-uTEvGeycxg0XIVhWGwruxx-74XbyacdFmYZL7NzbtJhPOmM0eHyNMW6H68sJcEEHVhYvku_AywS2wiB4Mmi-xUpwANpmGbywEWJLFgHnX7IeplJ17qO2nexCg5woc2__hZYiXe7eb7szUbeUeOW4UAGTUwJq9Zhnxco1hAQ1LH2uz4FoO31BZ-1YJSGb6CquAMvecooxldUvokjANH_o2LfscuX2Q-7PxQ2Ar9hfetcatqETVrDinyxkCJpoVnGTzo7TurbqEx2O77k7UXtDVYBoRYwPqPh2sR5CAensb1vAwahVIGrI5juxlfF4FyN4GDoSpwtbDfG4WVcsPMbCLEdqiyJ_2sEfNYyCAtHVGojju0_gpUUJEYoUxWY7R-2SomO7Kr8Mw0ffbgilHu4FHG0Kz5mSgCdHkf2EtrQ_IGJ1Am0dYTKgalH7t7lklq1iH4arYhdUWHu7ORUBJXckm8kTJNRLxByMaADzdS7O3A3445Hzdke4c4nfYg15s8EQRPpO443aNzZU5r5WQG2usedUWjLuzbVeOJyHBrD6VoXOLw8SnKv0pbXG3LL8LhBGbAbMcI-WUfVokXrQwIKEGfVGvHhBZ_3eqvYLbQmbMfQUCvjzjxhJbLioPAybo2XB3cUjivHBeg7QAQD3EL-x8v6V4jNa4xtoIEQKyNkhnM0T8wrCPiPdRjDZV_HsZ-hPgAhiX1Wq2SqP8ajypAs0AVpRXAv31O_W9PaLis-aEA_RfjTZpPrWsTl6AKe4bQMSQmwMWG6dvp9OMimuK6Uv3uBxhTDd30tsfRIvaltGV0O0OxF0S8pC-hgDyAYIxothf9aotCCyVx0rXyp-OzFX5ee27JIUh-DK5aswXOiymvMz6kePQfE7SQ4Mrx8nmoN0qV1Y-Oh8R-cezEYo770mMk2jfe5jPJE1WknQc2MjMXeBAqgbvkfwZo0OGQ4o7fbkXmWx2I1I6lDE-dqveRB7uj3OjJ0SvLw5qH12L53PeWWSDvaBrLbHIVE14iuFe3aZWe2GRnu0hZM7LIlJVM1275I_KIaL-Ln-7BgF-sQjBiX_zTJpEUA0-w4Mz-GvjsjRWGN0-3S0SwON49osg5kFAPQJTCScIMzUxUeRmIEF68cUVbEitVvNaTeqYPGVl-QxyAvjl8XlTTBuCjojuWKw6yfgMG3arPBcUgjU4gG7BIsF0DkAx1SnKk_Cvn3fexrEAP0pv3F6SMS6ZFov9wF7mv4TqvoIWWbm0MtLF0_ACqMTusJkxV0J1uWdJF43vIlGwVuBNC10eXyVzUp18OvZuNwIXfB3_jAWZZ2aU7fb2PGL_iyFgvSHb4wHhSVRIOo-k0Wqq1Op-IoVcp8hUGjRUKGvytM23tB4A2C3AuysbtGV6ZH9GrjhTZl3YLrfYxS5WCEMng3.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_051cdcf215dd2124016ac7821d5d6087d1a1012e0844501bd6",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459868,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 257,
+   "prompt_tokens": 713,
+   "total_tokens": 970,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 197,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01998,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01998,
+    "upstream_inference_prompt_cost": 0.00713,
+    "upstream_inference_completions_cost": 0.01285
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 197
+ }
+}

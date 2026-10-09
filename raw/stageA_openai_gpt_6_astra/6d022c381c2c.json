@@ -1,0 +1,94 @@
+{
+ "call_id": "6d022c381c2c",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dopiero teraz wrzucam nasze zdjęcie ze spaceru. Wyciągnęłam młodszą na chwilę do parku. Po drodze oczywiście plac zabaw za blokiem... Miało być jedno kółko przed kolacją. Skończyło się na huśtawce i zbieraniu patyków.\n- Dzieci już śpią. Usiadłam do rachunków i nwm z czego to wszystko zapłacić. Po wizycie komornika jeszcze trudniej mi się pozbierać. Pracuję cały miesiąc. A potem rata i opłaty zjadają wszystko. Na zakupy znowu trzeba pożyczyć. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "c4a5b3ecbb4da117395b747a80d592e58181d259",
+ "response": {
+  "id": "gen-1791459970-R7tSuBo2lmjlVPDRlzQg",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4KHHNCw0BQe-S0CxRghFJC9_Czu3DPCKfkSUxndtF72mdsHPV3GPNe2_dBBUimz7CZcxH7YOlRcC0SKxW36qDgpJOv5OMoWH50bWWo5ieh4kwCLyWI4dATpNniOD20sHfW8zwShaAwOc-Ixyn2yciD2LL1PW_r8CInTttrFegX-S52tzRTYRWVa2CooZEKHqIiLRpiXW-k-5pl-pfDCvIpf0QwKJs2nUIQFacbhHiX0n5cW2XLMXlat_BaTngpwoneMGP5mrOL545Y0EIGCeDvT9Ch7UMKUyD43GDPCsxZkM8HFTwQrnejthFo4G0iQMy1PdmmAPbXu73VAlAfC43B3wGTRKo25GFBhHrw8o1Hbx1mADz98-V2hGT673cMd21jEkRbUH3i-5H1KvUYE-Iq2CJ0_fU7vHtEmkhXSZqFdHGvfr4N07x1pPg-ShYw2oq0ERmRdrjFJeOjisvtD38N59PLk2cEn49vNI1o4_kRFKw8xi5zQ6vB09OcKnA18G53sSNgXqzrEiDDfBZf0z3vipzyAYjHm-0CjY2NHjL41IYXJVCJhAf88IwmrztsW_5bvGRpDL7GtCApq2q4AY_vxllZIqkgMhZAC3YymBjKn4yBqL2su3TRlGIGCUqV4OFVnhn6IOCw3VKCPBHSkT72xvSBGbuBgrTc2ZQZpv-QvYl80WsgVIO4dOje-3x1dd2faxlKnujxQOQTM-kNAi5PFaGE0wGLOqJ96Q1xQebK7fJZj7K0T_UjwpPE52VPoiKMEnfSOp03eFU66x9czgOx1Tn8N6VLzfYBq4vf5XNjzTY5ov0UBuk4lIMGYA6zTZmY2rCtJtEzVexMnOFfmoGJQ_SJUrtBglufj8opZOhYBfnbZ3pOwnLKFOic3bqdD38tm_uJ3OX7pc4vz8-faMgqRHApwEXwui1nlKv_D8c_2kvgN65tIGb5nokIkQMsFRwZ_1NYe61m-7YU4MF8qGrScNKTWTT6cTuZvkERh_M2v4C5dxG2rP62e_vn8o-JjwA0MM_LckkFQzhiRR-uYRitzK2gQl8t7NVyTtqVwExg5lF-6LdsbWKtuAqEMJGAhRqwIErSBaLwbNeOrrhyJ8M5ReObTZJkLrP0M7kv44QsMGOZVlO82i_Je6oFDTlOzRsHmUrA0CEtGaeqFeqXiMw5RpsH3hZDefPNsKFMCq-Hj0fAyLNaH72IMxU3sU-WSt0MIDsFT-gz-GuyDsjT8BSl0eoMILvHpiydG1iBru2DHk3bR5SsV9WQCaj-44IP2W9TS1JifcU5tDjeruw1xbHUbu07lleSmGyI73o1okbsYFuWE1URFWWLdQOdEanRBLLdO1-aBBivDkLmj1nflHOn0FUgiwFmRL5gZ8JhYgjUNP0O7PFqzDQgkjP3Gw4KDQaDwExVT3705cJsa96DR9upQAsZJMQhuDDdY2-fuK-0uZAnRQyTRxMc_VmVbWR88aI0sciwlXQ4UbOhfjcGz7VRpLtAaMqeOz_JxIAPjCCY_Xz7O0V1e_357gIYIuYylVj34vDeO0dMLJ2u1rCtp2Ob_PHZKTrnMWKV5CXFZLZ9OB_YkTM4RpBa-VAvdzKupip81XzDP-zsLmqI1M5qRtWCc6a0zlFF0FcreCC_mDIkIGeUHACY0oQkQ41xpCghsY_IEHrz4fbM9aQ0Oe7ml5DyU8b-fukD1rNH2IehTew4pDKQmecQib1WSr_4XcIeDJajsN413ahrMnpaKmVu1waCSfzeL2ukkgWR5ok7i3m1p9oZoMDjlRDiHq0lavPyRAS6CEEm7VIEOBhmzEk9wsGdIgsjBR7RJthlahukIIiny9HtJkSzLfHDLMP4IuA-UOiU5uYa5T469fy8TEn6UoirB9kg5lQrm9yOaxpt8hEpTEvjyQjeSyvdPkspcQhyJsYgtI8hFEf57IqJxkGmRi9HOvQ==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_07423513e9e74539016ac782844a3c87d1be4ba84018f656de",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791459970,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 241,
+   "total_tokens": 361,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00841,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00841,
+    "upstream_inference_prompt_cost": 0.00241,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 120
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "0f7e4004cd3c",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-haiku-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Spacer z młodszą po parku, pogoda w końcu w porządku. Zjadła pół bułki i zasnęła w wózku. Idziemy dalej.\n- Znowu rata nam weszła i konto na minusie... w głowie już tylko komornik. Ktoś wie jak to wygląda w praktyce? Nie mam siły już nawet o tym myśleć wgl.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "21994087e298ff8b11cb6d72788dd44c2b97d01f",
+ "response": {
+  "id": "gen-1791461069-qZirrYTgFP7UXuRyQHhQ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich wpisach ktoś opisał spacer z młodszą córką po parku, a także to, że po wpłacie raty konto weszło na minus, co wywołało obawy przed komornikiem i przytłoczenie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461069,
+  "model": "anthropic/claude-haiku-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 79,
+   "prompt_tokens": 256,
+   "total_tokens": 335,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 6.51e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 6.51e-05,
+    "upstream_inference_prompt_cost": 2.56e-05,
+    "upstream_inference_completions_cost": 3.95e-05
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "a9351c6d8ce4",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Fryzjerka we własnym małym salonie w Rybniku, pracuje od 9 do 17, posty wrzuca w przerwach między klientkami i wieczorem.\n- zainteresowania: kolorowanie włosów i nowe techniki, rośliny doniczkowe w salonie, podcasty o zakupach i oszczędzaniu\n- lokalny punkt odniesienia: przystanek Rybnik Rynek przy cukierni Anna\n- aktualna sytuacja życiowa: Remontuje zaplecze salonu i wybiera nowe lustra oraz fotele.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete, czasem wykrzyknik; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: zaczyna od „Dobra, słuchajcie”\n\nPosts by this author (in order):\n1. Dobra, słuchajcie, przeklikałam właśnie kody w aplikacji i ten wielki koszyk wyszedł mi prawie połowę taniej! Aż mi kawa lepiej smakuje przed kolejną klientką.\n2. Przyszedł właśnie wyrównawczy rachunek za prąd w lokalu. Kwota zwala z nóg, suszarki chyba zaczną chodzić na korbkę.\n3. Miały być szybkie i proste planszówki na rozluźnienie, a skończyło się na czytaniu dwudziestostronicowej instrukcji do północy. Kto to w ogóle wymyśla!\n4. Jadę do pracy z pudełkiem pełnym zapiekanki z niedzielnych warzyw i ryżu. Wyszło tego tyle, że chyba starczy mi na dwa dni!\n5. Dobra, słuchajcie, oddałam w zeszłym tygodniu pokrowce z foteli do pralni chemicznej i termin znowu się przesunął. Remont zaplecza prawie skończony, jutro chciałam wszystko składać na czysto, a tu dalej muszę czekać na odbiór materiałów. Zawsze pod górkę z takimi usługami.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "d1f63f04e03d3e54c62745d3b88afa07f4df824e",
+ "response": {
+  "id": "gen-1791461788-10xADt7TZSbLOkFlW9RA",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 4,\n  \"problems\": [\"Post 5 is noticeably longer than the others\"]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461788,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 74,
+   "prompt_tokens": 732,
+   "total_tokens": 806,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002204,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002204,
+    "upstream_inference_prompt_cost": 0.001464,
+    "upstream_inference_completions_cost": 0.00074
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

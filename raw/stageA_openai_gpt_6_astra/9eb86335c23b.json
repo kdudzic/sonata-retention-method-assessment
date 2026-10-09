@@ -1,0 +1,94 @@
+{
+ "call_id": "9eb86335c23b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dopiero teraz wrzucam nasze zdjęcie ze spaceru. Wyciągnęłam młodszą na chwilę do parku. Po drodze oczywiście plac zabaw za blokiem... Miało być jedno kółko przed kolacją. Skończyło się na huśtawce i zbieraniu patyków.\n- Dzieci już śpią. Usiadłam do rachunków i nwm z czego to wszystko zapłacić. Po wizycie komornika jeszcze trudniej mi się pozbierać. Pracuję cały miesiąc. A potem rata i opłaty zjadają wszystko. Na zakupy znowu trzeba pożyczyć. No cóż... idziemy dalej.\n- Cały dzień coś ode mnie. Jeszcze to. Jeszcze tamto. A ja już nie daję rady. Jestem tak zmęczona że nawet nie umiem powiedzieć czym najbardziej. Siedzę z telefonem i nwm co napisać. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "437fbb0c571618348bb7fd6c2af2195488edf7bb",
+ "response": {
+  "id": "gen-1791459982-Xsg04Jq5iIeMDDfj5JC6",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Opisywała spacer z młodsz",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4KSy-AnAT-LV91g3S1KPk8vD13MS5SO-UIVE5v2eSw3UbUJG20GZ4l1JoQ5UTNKJx9OmXlA2m_OvSpsLcvdDE4wjTVI9yh82lO0ynhECteFbxscJiMZ3Cv1LH47KtUW-tGH5rFmbM5IgSAa_iRbl_pEYG64jJZkArT3SynnLZaNFf_J0xX8pdQwPaivS61_NgX_DjRfnQkr84qylMQcYvjU0GX5lq-PBBRfD7wDm9ar2RH2lHU14-SGLFe0ubc8_qrj2XyYPkDIbwlcLUd68nMxrfV6qsXd-HeIdAJm9UYGDr-4sW2yOGd38q79X-Tsp5ClEENncp4oyvRxnJAHPHJKdd41AcR7alDEkhr4ZXqT2ryvzXtUapjO4mva53KPk5S6hP-FAyaEiXsGTSoTdr43Ff28faPw03YOER-tU5CAibeNx_Pc6Vd-2wnhqEXmzuugZvsRsNUC8IlihRGLYND-Z9eEY2K_i0x6W_4LNer9TysTQD2qigrSmnveB04MGoRLsGaLLhcB8SVMk6IBAKMuxQ40duXy-suFCDpOPUdDtIwXrm2BIyz43T9l8EQXOpGku2dQSe0YTfScECOX8T29FBF_odZrQexAwZr2seMFhOQm73GCB81WGhLQFKRjQAuRGjxKlXqG2AQotIQ1uceAaJdctgT5ccnL5rLenIIp92gEfOPT_0b67GbpTFWflvB4yFYsnPVgNsiB0WqX6skwC504jx_HYW94Yi_9932LDeH1nennSsPoikEH6l2qUDFrqgG7V6wbtcoe52DdTvAqHeNbG0TYuPQJdl4IZlfnRGxAbbK76Zd4jsylC5OIoeYf_FLUT0ZPnHRrR6iiXufq_99ks-CK9DJo-WuOVu146MFvYOiYkvqUqjJEuqld6nzZneUSYeyDE9yEcD5uGIPNxYEgbIjoW-KIqrxEgTKx03Mq-EA1RtlrftaXhay0uB1khGOD3WPTd010lP7JwxQAka6sjki5PpgW4c8YwIj9KUrrZJ_UXmtsU7mATSN5loCZnMzAQq718yaCDCsKgb7UC8DgYm_GpHyLp5djbtoy1OEQRZAiVzauiNgQfe0fv0BEJxrlsV0a8fTrgQ49wrVW23e6q3qB7EkfRiNghS3Dl_iUhzqqOEYT_ZLYVtya-VlIHVl_P6AOrCvGS6wYs9yF_ZihT_23rCQT7uiVgiONHcTk0qWiZPshNDAZ_PNeYSDeEoaUqbn2KVUyBJw6t9cYA1ZM5xOKIUBnlwKLn-Rw4buOT1Y4TimKuXTE7iT_5SlVQUFo0JLp3yFKeld8On39-BzqBrHpUHCgnCoEcLyhJACdi6cP-MgdEPtvdzFGJ8bsK_ez0YSnyegxdGyTvM5FB3HJJU7vozgJ9LXZb2_xGHoiKKqhrF3jBQ4KRqzpk0p0NDWbUhcrBVY__LKzi0CoWYvt707UlYd4MAttqUqFhW-C__4N_rFKs612fin-LsQOYl58tqgCyra3sVByu3eKxZWlCTHOqTYsZK1xkbJGBGK3WJzLbNATsSi3lR54GBWOiqwq-zx2blMBwlC_wafwUpILA7XXF80qpgl3sj6DFcDKJRABxIMj2ocsUl3cccBCPTalsoaoc47V3XzvIWqW_utYBykpJwfYUgmWPsw3rQ8kvkFVcUVjCaitlMs1Jxiy2TtoUWQ-AwvQhDDLelWOU9A5BUWvAoMH0HHW65dr0LY8oHiV4EAG9tLoeJQt7JVH5dWpoGUNUdycMk5KOtPkunjRKWTK-dw1jhxfyrM7_4UlSMzQWhJ2UTyfxDI7xjhMLOxI0ALbsbJVn0_EmSd-0qF9K1vQVnj74JCuIcnmOcSIjrPiSGM285xXayW5sbgfeO8PNpGI8Ybeju1uHzp3bLNGq2KrwxyT7d3HqBdiA5I0nUWTONZC-L3ZzSQ0w_TbZ8BrlspebQy-kmZlDO12vw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0e49767f4fd92dbd016ac7828f752887d1977c62360962b1d5",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791459982,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 305,
+   "total_tokens": 425,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 106,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00905,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00905,
+    "upstream_inference_prompt_cost": 0.00305,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 106
+ }
+}

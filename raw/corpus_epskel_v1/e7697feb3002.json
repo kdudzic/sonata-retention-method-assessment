@@ -1,0 +1,87 @@
+{
+ "call_id": "e7697feb3002",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 346104295
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje w sklepie papierniczym w Toruniu; zwykle pisze po zamknięciu, wieczorem.\n- zainteresowania: notesy i planery, kwiaty balkonowe, spacery nad Wisłą\n- lokalny punkt odniesienia: ławki przy ulicy Winnica w Toruniu\n- aktualna sytuacja życiowa: Urządza balkon po przeprowadzce i co tydzień dokupuje do niego drobiazgi.\n- sposób pisania: zdania: medium; interpunkcja: poprawna, z częstymi wykrzyknikami; wielkie litery: standard; literówki: rare; skróty: none; emoji: frequent\n- tik językowy: często dopisuje „mała rzecz, a cieszy”\n\nTopic for this post: jedzenie i gotowanie\nConcrete angle: W poniedziałek w drodze do pracy przypomniała sobie, że na obiad czekają w lodówce resztki ryżu i pieczonej papryki. | mood: neutral | opener: list of two things | verbal tic in this post: no\nRegister: chatty\nTarget length: about 15 words\nTime of day: morning commute, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - heh w niedziele po nocy rozpakowalem zakupy na poniedzialkowy obiad. cebuli brak. torba stoi przy drzwiach zebym rano pamietal\n  - grill juz rozpalony, a szczypce pod pudlami w garazu, czym teraz obracac kielbase??\n  - wyjełam kukurydze z lodowki... wieczorem biore ja na grilla do znajomych, juz mysle o masełku 😋🌽\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "27940595a75e1347293948071b36689de9524ed1",
+ "response": {
+  "id": "gen-1791463973-2sVE6mKic7GMvaUAWPwn",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Ryż i pieczona papryka czekają w lodówce. Przypomniałam sobie w drodze do pracy, obiad mam! 🫑",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791463973,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 42,
+   "prompt_tokens": 794,
+   "total_tokens": 836,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002008,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002008,
+    "upstream_inference_prompt_cost": 0.001588,
+    "upstream_inference_completions_cost": 0.00042
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

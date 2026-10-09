@@ -1,0 +1,86 @@
+{
+ "call_id": "595ff0fd8dd3",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... dopiero zszedlem ze zmiany a juz mysle o meczu stali! oby dzisiaj chlopaki pograli jak trzeba. nwm czy zdaze cos zjesc przed pierwszym gwizdkiem... wgl kto idzie?\n- no wlasnie... po zmianie chcialem tylko chwile posiedziec pod blokiem a tu znow pelno tych ciapatych. czlowiek juz nawet u siebie nie ma spokoju... wracam do chaty, nwm czy dzis wgl wychodze.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "db8a9fb3a16228860688b04ed0111cf9c10f8172",
+ "response": {
+  "id": "gen-1791461072-lqGnH7K550VeOPYiR8Sl",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po zakończeniu zmiany planował obejrzeć mecz Stali i zastanawiał się, czy zdąży coś zjeść; później usiadł pod blokiem, po czym wrócił do domu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461072,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 53,
+   "prompt_tokens": 207,
+   "total_tokens": 260,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.000944,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000944,
+    "upstream_inference_prompt_cost": 0.000414,
+    "upstream_inference_completions_cost": 0.00053
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

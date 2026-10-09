@@ -1,0 +1,95 @@
+{
+ "call_id": "99049471746d",
+ "tag": "bg_vs",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 183712962
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nTopic for this post: komunikacja i dojazdy\nConcrete angle: W niedzielę przed szóstą rano czeka na przystanku Plac Litewski i orientuje się, że z powodu nagłego rozkopania Krakowskiego Przedmieścia jej trolejbus w stronę szpitala na Jaczewskiego jedzie całkiem zmienioną trasą. | mood: tired | opener: mid-thought | verbal tic in this post: yes\nRegister: terse\nTarget length: about 19 words\nTime of day: early morning, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - co to za bzdura z kursem ze zgierza pod orlen strykow\n  - Żeby człowiek musiał czekać na trzydziesty piąty aż siedemnaście minut... jechałam na Szczecińską a teraz dłonie mam jak z lodu chociaż miałam ciepłe mitenki z wełny robione podwójnym ściegiem...\n  - ...jednak siódemka potrafi poprawić humor w południe, kontrola biletów pod szpitalem wzięła w obroty wyłącznie młodzież szkolną, a nas starszych traktowali jak niewidzialnych.\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "bcf75af671b166deb1769208d024cc0d7f3eaba7",
+ "response": {
+  "id": "gen-1791461661-wln4IpKQqRlNLEGEFUp7",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\"text\": \"...ale ze objazd przez te wykopy i moj trajtek skreca w druga strone?! zaraz SIE PORYCZE z zimna 🥱😴💤\", \"probability\": 0.06},\n  {\"text\": \"...rozgrzebana ulica i zero info ze zmeiniaja trase na Jaczewskiego akurat o 5 rano super spacerek z buta 🥱😫‼️‼️\", \"probability\": 0.08},\n  {\"text\": \"...caly krakowski w dziurach i moj dojazd na rano PO PROSTU nie istnieje musze leciec na okolo 🤦‍♀️🥶💤\", \"probability\": 0.05},\n  {\"text\": \"...patrze na rozklad a ten kurs wogole omija szpital przez jakis remont na jezdni ZALAMKA padne tam dzis 😴😤❌\", \"probability\": 0.07},\n  {\"text\": \"...tylko nie to czemu oni to ROZKOPALI akurat w weekend i trajtek jedzie na jakies zadupie zamiast pod dyzur 😩🧊🤦‍♀️\", \"probability\": 0.04}\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a19SkRHGEpacFT7jUHDZV80DvMroXzELUmZZlhu52mnPDGfezw5oEIkco4OshX2EjoWKO9AF71uNVHA0NvhQCqQDeuUDTI0z+bt2s1TEdXrsM5Ss",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461661,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 261,
+   "prompt_tokens": 926,
+   "total_tokens": 1187,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00167325,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00167325,
+    "upstream_inference_prompt_cost": 0.0006945,
+    "upstream_inference_completions_cost": 0.00097875
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

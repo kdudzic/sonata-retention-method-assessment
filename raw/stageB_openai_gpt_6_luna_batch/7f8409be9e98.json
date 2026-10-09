@@ -1,0 +1,87 @@
+{
+ "call_id": "7f8409be9e98",
+ "tag": "bg_batch",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1403712439
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the posts must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 4 different short public posts by the same author, one per brief below, in order.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.\n- zainteresowania: rowery szosowe, mecze Cracovii w telewizji, tanie gadżety z Aliexpress\n- lokalny punkt odniesienia: stacja paliw Shell na Wielickiej\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: kończy wpis słowem „nom”\n\nBriefs (one post each):\n1. topic: praca i grafik; angle: wypłata, premia, rozliczenie; register: mildly grumbly; about 39 words; late morning, Monday\n2. topic: jedzenie i gotowanie; angle: zamówienie jedzenia z dowozem; register: terse; about 24 words; early morning, Monday\n3. topic: technologia i sprzęt; angle: problem z wifi; register: chatty; about 17 words; early morning, Tuesday\n4. topic: pogoda; angle: ładny wieczór, zachód słońca; register: terse; about 26 words; morning commute, Saturday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- the posts must differ from each other in opening, structure and rhythm; do not reuse a sentence pattern\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts:\n  - W sobotę rano jadę po zakupy, a tu jeszcze nowe zadanie do ogarnięcia... dobrze, że grafik mam luźny, co by nie mówić...\n  - 2:00 w nocy, domowe biuro gotowe i kawa obok ☕ praca zdalna ma swoje plusy, mogę ogarnąć wszystko w piżamie!!!\n  - wtorek, 6 rano i już mam nowe zadanie do projektu! trochę stresik, ale rozpiszę sobie plan po praktykach i ruszam z tematem 💻✨\n\nOutput format: a JSON array of 4 strings only, no prose."
+  }
+ ],
+ "prompt_sha1": "ba51350865c9ca4d3b4392221b5348b0d6513a8e",
+ "response": {
+  "id": "gen-1791460513-e8ulzHeqHkuii7bclRwg",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  \"poniedziałek i już rozliczenie za zeszły tydzień się nie zgadza. jeździłem od 7 do 16 a premia znowu jakaś ucięta. nwm czy to doliczą w następnym miesiącu. na busa odkładam każdą stówę więc trochę szkoda nom\",\n  \"rano po trasie nie chce mi się gotować. zamówiłem jajecznicę i bułki z dowozem pod dom. oby przyjechało ciepłe nom\",\n  \"wtorek rano a wifi znowu rwie w telefonie. przełączyłem na dane i jakoś działa. ktoś też tak ma czy to router mi siada\",\n  \"sobotni dojazd i już widać że wieczór będzie ładny. po robocie może kawa na stacji shell na wielickiej i chwila na zachód słońca. dobrze się zaczyna weekend nom\"\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460513,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 220,
+   "prompt_tokens": 871,
+   "total_tokens": 1091,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001971,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001971,
+    "upstream_inference_prompt_cost": 8.71e-05,
+    "upstream_inference_completions_cost": 0.00011
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

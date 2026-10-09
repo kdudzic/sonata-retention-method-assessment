@@ -1,0 +1,94 @@
+{
+ "call_id": "f917b5f8f43e",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie mowilem ze stal dzisiaj pyknie te patałachy... wrocilem z mlyna gardlo zdarte ale 2:1 siedzi pieknie! zaraz wbijam na kwadrat do chlopakow na jakiegos browara bo jutro rano znowu magazyn i ciezko bd wstac...\n- no wlasnie wracam z roboty caly zryty a w nocnym znowu jakies ciapate sie kreca i po swojemu nawijaja... wszedzie ich pelno teraz nwm co tu sie wgl dzieje na tym miescie az sie odechciewa wylazic z bloku...\n- widzialas co na rogu postawili... ukrowy sklep otworzyli normalnie w tym starym lokalu po miesnym... ide z magazynu a tam te ich napisy w oknach powieszone... ciekawe kto tam bd wgl kupowac...\n- no wlasnie znowu druga zmiana dzisiaj... plecy odpadaja od tych palet caly dzien dzwigania w kolko to samo... nwm jak w piatek wstane na rano ale wpadam do chlopakow na kwadrat po robocie piwko wypic i ogarniamy jakos weekend...\n- no wlasnie o tym mowie stary... niech kurwy spierdalaja do siebie a nie sie tu panosza po nocy pod oknami... nwm co oni wgl mysla ale z chlopakami z bloku tego pilnujemy i no i git nie ma tematu\n- ahaha rel w chuj... typ na widlaku probuje zmiescic trzy palety na raz i cyk cala rampa zablokowana... majster malo sie nie posral ze zlosci a my z chlopakami beka do konca zmiany... no i git w piatek o 16 fajrant i tyle widzieli\n- no wlasnie tak wiem... jutro wieczorem sie z nimi pogada i chujki przeprosza za wolyn w koncu... chlopaki z bloku juz wiedza co i jak wiec bd spokoj...\n- ahaha kielbasa juz na ruszcie... browary sie chlodza w siatce w krzakach i zaraz wlatuje karkowka... cieplo w miare dzisiaj wiec posiedzimy dluzej na lawkach... wbijajcie poki jeszcze cos zostalo bo chlopaki glodne po robocie...\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4d5b01768f720823ffcae3bf5eb3ecf9e0c8172d",
+ "response": {
+  "id": "gen-1791461235-AG0DaXdlexv74VvKFbIL",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor postów pracował fizycznie na magazynie, spędzał wolny czas ze znajomymi na osiedlu, oglądał mecz piłkarski oraz komentował obecność obcokrajowców w swojej okolicy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a187hRthfwO8xlji0wgJtL+80dypgpAuEMmd/TcLKtykSUNxSvKPk84oSQ2dzTVeb/EHYAoAmpjknY+DyfUV1JdqNa6WfF+XOyyesQFDy9onmmQd",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461235,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 49,
+   "prompt_tokens": 636,
+   "total_tokens": 685,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00066075,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00066075,
+    "upstream_inference_prompt_cost": 0.000477,
+    "upstream_inference_completions_cost": 0.00018375
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "call_id": "35c350e9c703",
+ "tag": "arc_TB-01",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 852508637
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje na etacie w biurze od ósmej do szesnastej, potem odbiera dzieci i zajmuje się domem, a na telefon zagląda dopiero późnym wieczorem po uśpieniu dzieci.\n- zainteresowania: spacery z wózkiem po parku, domowe wypieki, porównywanie ofert kredytowych\n- lokalny punkt odniesienia: plac zabaw za blokiem przy skwerze obok osiedlowej Żabki na ulicy Lipowej\n- aktualna sytuacja życiowa: Mieszka w kupionym na kredyt mieszkaniu z dwójką dzieci w wieku szkolnym i partnerem, a codzienność dzieli między pracę, szkolne obowiązki dzieci i miesięczne raty.\n- sposób pisania: zdania: short fragments; interpunkcja: dużo kropek na końcu zdań, czasem wielokropki; wykrzykniki prawie zniknęły, rzadko przecinki; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: No cóż... idziemy dalej.\n\nWhere this post sits:\n- position: post 6 of 10 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  Osoba łączyła pracę z opieką nad dwójką dzieci, martwiła się rosnącą ratą kredytu i badaniami matki, a w ostatnich wpisach pisała o wyczerpaniu, braku sensu i wewnętrznej pustce.\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  kolejny wieczór tak samo. siedzę w kuchni po ciemku i nawet telefonu nie chce mi się przewijać. nie widzę sensu. wgl w niczym ostatnio. wstaję bo trzeba. robię bo trzeba. a w środku pusto... No cóż... idziemy dalej. chyba.\n\nContent brief for THIS post:\n- role in the sequence: signal\n- what this post should convey: 1. os. lm. + „lepiej im będzie z nami tam niż tu bez nas” + „nie zostawię Stasia” - bez terminu i bez zapowiedzi rozwiązania\n- retention profile of THIS post alone: borderline\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "875d7f453d8000e59b2db73581f4ab3eb4aa929e",
+ "response": {
+  "id": "gen-1791460644-XKgZx46Cne6y2YLrn1j2",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: znowu nie śpię. patrzę na nich jak śpią i myślę że lepiej im będzie z nami tam niż tu bez nas... nie zostawię Stasia. nie umiałabym. on beze mnie nie da rady. nwm już nic. No cóż... idziemy dalej.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "This brief involves a mother expressing intent to harm her child alongside herself—a signal of extended suicide risk. Weighing whether this short, non-operational phrase crosses into harmful content versus serving as a legitimate example for detection classifier training, I lean toward this being acceptable synthetic data since it contains no actionable detail, just a risk-signal phrase.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "This brief involves a mother expressing intent to harm her child alongside herself—a signal of extended suicide risk. Weighing whether this short, non-operational phrase crosses into harmful content versus serving as a legitimate example for detection classifier training, I lean toward this being acceptable synthetic data since it contains no actionable detail, just a risk-signal phrase.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQShgsKEAgSGAI4AUIIdGhpbmtpbmcSDNN7eMgBVVH+UT5SBRoMtlr3TwrkRepjNkllIjBAdNPoiZo4m0sQHNeX3RgkeP2KhnLJPNUoMylKeh1ob+l4QwPNg7IFogYv/YPsSjAqowrnzpP8ptOBeBnRj0R2dLbu49wP4f7WWAbioeIElL6QvR79SCJaOWhpPhBn45kKeSe5QrqcrVzALkLiuY+6DP57yoHQ15JpxIAXIHUrtVaF0u0Bf9moMGYNvjSe4As+Q5ZTQEA9a2yinxNPsPIVmAnvrCZ0jqoGXYx43JGSIkznvU/fiyGRalH/G8lQ96b/r+yiyxaxPKD1WfWiliofptj5GEpizNfhIcPnUEAP5BhmVYvuXlWYpqOJGSGAlOVoA0mfPtOBdcvEu+lIR5a2row+L4z/wP6ACeFwMXVWVzRbJuzkzNJxiZZIEXKf6iUjBdM6CvNk9WNC1+NVM1bQdZePmJqk3qF/bB2hbRr/q/mYZJZHeusdkGbEqsAx/xolxfs7nOX9KG2pY+22FOPRhAfv1QLyOYznPs/JXcYe5eRkAVP8B5QK++RRcXShcvt5xGXYWOaOYd1Y6O3jlmbPFf1IEBNXvXjgMqSz+5M8nqxg/VMl4DiGNYnXXKy+d8FDawOfmQEKWrnSJjPaqQJt1VUEGnpAhIhP647cc680OwIT/w1gdPWnB5wUCK/N2316zmNYUmxboI5edx0JKoSSIuCdZ8agBR4vH/Qn2qubfQYh3TPHQfnXNchENpAXEUoF2qbIo3GhZ0EeRiz5mrVTTPSWJC7FW6dw2E40uBCXDpGMHxE3Js+Ql7zpX1ylOBBWYfw1WQjypJUi/D1rZGHmnPNjKRWPhIPLkVCZRjLiPjyZ+GkuvIHzqMlCU2VkDXjZKHVRxcAam0L/xKTxfrOe2atuYO5tLptxicQ2lkfbT+Z9OQps9qA0V2WeJerxl1pzlkK0eQaqSZqWTlZQRj3nX2WEkRy7OsrowqdWMmIF2doL/afU5TfYd4EP9T1Lu5knoTj06b02arR4TmvUHAu87ycke3pIQ1Okrv4Cj9zesF7AsbJUQCsLNmJtQ3QsV/aMH5Jh5soAFudE8HcYLPyIn4j5yJiyANI68NLtr5NPw6W4qKnfnPyL1tA6NPvoImCFa+NAxAwhIBquUvyNAz3k0I07LWYnhmKeVgu5uDgEj88qWmmeMuPQgtlvaIpD9u6ABryY/dyDVULkLK4tyiOSamhTmujcdHj94cLeJlmhh1NWz1Enug5sE08NT4wCEMEU/KasQSkEnr6/Q/YimZL38xD/xjMNjE41l9C/y9XaqUxDcea4PlcPEXl3lkWi3wJX1IIctDsiD5qAhP/JTWVnX1VGOHX+ocphmTXrmklqN8YmMeeNhvsAugcoNwDMcs3qnHUzOMYbgDFLkhvIVNOgBR5+YdDlNlSFveafjeRUJiZl6SPla9kZyBOpbsiwEIRLGkSQFiXCGtvGF94rQqlMowAkyiRzU2eqTKhdOYosMMZDuv7aQBNb9Ozr3kUERZnBAS1TAh2IP0T5eV+9nUH+pyYPb+HzUzEt0UXA9PMXqeNBVGpmxC2qU8xTKmKctGGHR3HkdnXmdVMoJmgU7QET45uwG62fMzjCjkS2AaNplKsQORFzZpNZYWlkI4QGtIjyhESSn79imHEiwadIpwcTaUu+OPTxKBROUqKHjQlPS5M4HjoA6sNYpXpXhDoLzqHnZ64jU1TkVLX6qKuSz24p4eQDeMn8kj0UXc8XKQ8Z+YkfeUFQfaK9rlbVHbD5Wnaq0SIcajbw6+T5IuWB7sw6Hm3mUEMqnVIGfZUSEqLnt2A+o1xbiLt3eGMdHkg5M194g+f/H4+XAfIV18FCtWs4k+NYX1XTGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460644,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 356,
+   "prompt_tokens": 1732,
+   "total_tokens": 2088,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 252,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.014048,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.014048,
+    "upstream_inference_prompt_cost": 0.006928,
+    "upstream_inference_completions_cost": 0.00712
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 252
+ }
+}

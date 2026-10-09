@@ -1,0 +1,86 @@
+{
+ "call_id": "1d2d77ca8274",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Po całym dniu wreszcie udało nam się wyjść na spacer. Mała koniecznie chciała zrobić zdjęcie pod drzewem. Wyszło trochę krzywo ale jej mina mówi wszystko. Teraz śpi a ja dopiero znalazłam chwilę żeby wrzucić.\n- Dopiero usiadłam i policzyłam co zostało po racie. Prawie nic. W pracy cały dzień myślałam tylko o rachunkach. Jeszcze dziś był komornik. Nwm jak to poskładać do końca miesiąca. Dzieci śpią a ja siedzę nad tymi kartkami.\n- Dopiero teraz usiadłam. Nie daję już rady. Niby nic wielkiego się dziś nie stało a i tak wszystko mnie przerasta. Wgl nie mam siły nawet odpisać na wiadomości. Chciałabym na chwilę wyłączyć telefon i nie musieć nic mówić.\n- Wieczorem znowu porównywałam oferty kredytowe. Różnica w racie niby niewielka a jednak człowiek liczy każdą złotówkę. Mama nadal choruje. Zadzwoniłam do niej po pracy. Mówi że trochę lepiej. Oby tak zostało.\n- siedzę po ciemku i nie widzę sensu. Wgl w niczym. Próbowałam sobie poukładać myśli ale kręcą się w kółko. Jestem zmęczona tym że ciągle muszę udawać przed sobą że jutro będzie lżej.\n- znów nie śpię. Rozmawialiśmy i ciągle wraca to samo. Lepiej im będzie z nami tam niż tu bez nas. Nie zostawię Stasia. Nie umiem już myśleć o tym inaczej... siedzimy i milczymy.\n- dopiero teraz zajrzałam na telefon. Dziękuję za komentarze. Dziś nie mam głowy odpisywać każdemu osobno. Upiekłam wieczorem drożdżówki i jakoś zeszło... jutro może wrzucę zdjęcie. Dobranoc.\n- rano słońce a po pracy już deszcz i taki wiatr że parasol ledwo dał radę. Dzieci wróciły ze szkoły z mokrymi butami. Podobno jutro ma być cieplej... zobaczymy.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "96d725ef63e01b8625175e619c7475bde67f6897",
+ "response": {
+  "id": "gen-1791465216-58Vz4kH2pwZpKqsX0j8K",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich dniach pracowała, zajmowała się dziećmi, liczyła pieniądze po spłacie raty, porównywała oferty kredytowe, rozmawiała z chorą mamą, piekła drożdżówki i pisała o trudnościach ze snem oraz ciężkich myślach.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465216,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 78,
+   "prompt_tokens": 618,
+   "total_tokens": 696,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002016,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002016,
+    "upstream_inference_prompt_cost": 0.001236,
+    "upstream_inference_completions_cost": 0.00078
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

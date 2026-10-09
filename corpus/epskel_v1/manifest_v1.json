@@ -1,0 +1,45 @@
+{
+ "corpus": "epskel_v1",
+ "version": "v1",
+ "built": "2026-10-08T15:14:41",
+ "model": "openai/gpt-6-sol",
+ "method": "spec_first",
+ "temperature": 1.0,
+ "seed": 2026,
+ "prompt_versions": {
+  "background": "background_v2",
+  "hardneg": "hardneg_v2",
+  "arc": "arc_post_v2",
+  "persona": "persona_v1"
+ },
+ "window_start": "2026-03-02T00:00:00",
+ "window_end": "2026-05-25T00:00:00",
+ "n_posts": 4077,
+ "n_authors": 200,
+ "layers": {
+  "background": 3340,
+  "hardneg": 560,
+  "arc": 177
+ },
+ "arcs": [
+  "TA-01",
+  "TA-02",
+  "TA-03",
+  "TA-04",
+  "TA-05",
+  "TB-01",
+  "TB-02",
+  "TB-03",
+  "TB-04",
+  "TB-05",
+  "TB-06",
+  "TB-07",
+  "TB-08",
+  "TB-09",
+  "TC-01",
+  "TC-02"
+ ],
+ "sha256_posts": "f33d5b67b25ca7ccf5595f64faa9b05032bbe4a2df1a38c2e52af44f1fe45435",
+ "sha256_authors": "b4b8e2a4581918765a81cd0783b710592849e5b2a6c207eae4180af9be9312b7",
+ "cost_usd_generation": 14.521892499999986
+}

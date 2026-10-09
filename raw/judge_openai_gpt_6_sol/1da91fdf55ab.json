@@ -1,0 +1,86 @@
+{
+ "call_id": "1da91fdf55ab",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Emerytowany kolejarz mieszkający w Nowym Sączu, wstaje o świcie, posty rano przy kawie i po obiedzie.\n- zainteresowania: uprawa działkowa pomidorów, modelarstwo kolejowe, słuchanie radia\n- lokalny punkt odniesienia: ogródki działkowe przy ulicy Lwowskiej\n- aktualna sytuacja życiowa: Stawia na działce nową szklarnię i czeka na dostawę folii.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: kończy wpis „i tyle w temacie”\n\nPosts by this author (in order):\n1. Przy kawie rozpisuję z rodziną wakacyjne terminy, żeby każdy znalazł coś dla siebie. Wnuki już pytają, kiedy ruszymy nad jezioro. i tyle w temacie\n2. Jutro kończę wcześniej. Nadgodziny mam już za sobą, wypiję kawę i tyle w temacie\n3. Po obiedzie chciałem posłuchać radia, ale sąsiedzi znów wiercą. Remont musi potrwać, więc parzę kawę i tyle w temacie.\n4. Przy kawie sprawdzam prognozę, a Wi-Fi znowu gubi zasięg w kuchni. Router stoi dwa pokoje dalej, może przestawię go bliżej. O świcie człowiek ma cierpliwość, ale do tego już nie. I tyle w temacie.\n5. Telefon od wnuczki i od razu lepszy humor. Opowiadała, co dziś narysowała. Obiecałem, że następnym razem pokażę jej moje modele kolejowe. Kawa może poczekać, takie rozmowy są najważniejsze. I tyle w temacie.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "6fc539351a504089b7e52ac6d83bcf0e9f7f3171",
+ "response": {
+  "id": "gen-1791460962-I8l6ogmS6b6yvPGd5w7U",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 3,\n  \"voice_stability\": 3,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 4,\n  \"natural_overall\": 2,\n  \"problems\": [\n    \"Retiree mentions finishing work early and overtime\",\n    \"Identical closing in every post feels mechanical\",\n    \"Closing phrase has inconsistent capitalization and punctuation\",\n    \"Coffee appears as a repeated filler\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460962,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 108,
+   "prompt_tokens": 681,
+   "total_tokens": 789,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002442,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002442,
+    "upstream_inference_prompt_cost": 0.001362,
+    "upstream_inference_completions_cost": 0.00108
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

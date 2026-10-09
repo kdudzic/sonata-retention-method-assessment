@@ -1,0 +1,86 @@
+{
+ "call_id": "1f17c985d5c0",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Nauczycielka matematyki w szkole podstawowej w Zamościu, wstaje o 5:30, pisze wieczorem po sprawdzaniu zeszytów.\n- zainteresowania: chodzenie z kijkami, robienie przetworów, gry planszowe z siostrzenicami\n- lokalny punkt odniesienia: park przy Rynku Solnym w Zamościu\n- aktualna sytuacja życiowa: Przygotowuje klasę do sprawdzianu i jednocześnie urządza nową kuchnię w mieszkaniu.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: często dopisuje „jak to mówią moi uczniowie”\n\nPosts by this author (in order):\n1. W przerwie między sprawdzaniem zeszytów przetestowałam przepis na dżem z cukinii z imbirem i muszę przyznać, że wyszedł zaskakująco dobry, mimo że w nowej kuchni jeszcze nie mogę znaleźć połowy przyprawników.\n2. Siostrzenice dziś u dziadków i oczywiście zamiast rozmawiać, to siedzą w telefonach, jak to mówią moi uczniowie, stare dobre czasy się skończyły.\n3. Wieczór z termometrem w ręku, bo młoda kaszle i kicha, klasyczne jesienne przeziębienie. Jutro znów sterty zeszytów do sprawdzenia przed sprawdzianem, a nowa kuchnia czeka na półki. Ale zdrowie najważniejsze!\n4. Mój kot cały dzień grymasi i ucieka spod kołdry, a wieczorem wskakuje na kolana i mruczy, jak to mówią moi uczniowie.\n5. Znów nocna jazda z instrukcją do szafki, a śrubek chyba o trzy za mało. Mózg mam spracowany po zeszytach, ale kuchnia nie wyposaży się sama. Jak to mówią moi uczniowie, to nie fair. Tyle sęków w tym drewnie, a cierpliwości mam mniej.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "ee90f45d381a8b4d7dbdb6ca421d6af1ee8d9cd6",
+ "response": {
+  "id": "gen-1791461336-Zkbt5nYGUNcHcb47k486",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 3,\n  \"voice_stability\": 4,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"Verbal tic feels forced, especially in the cat post\",\n    \"Several posts use shorter sentences than the persona suggests\",\n    \"Teacher and kitchen details recur conspicuously\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461336,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 103,
+   "prompt_tokens": 751,
+   "total_tokens": 854,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002532,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002532,
+    "upstream_inference_prompt_cost": 0.001502,
+    "upstream_inference_completions_cost": 0.00103
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "6d68bc636c91",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- W końcu mam z córką zdjęcie bez głupich min. Wyszłyśmy na krótki spacer po pracy. Skończyło się na zbieraniu patyków... Dzieci już śpią to dopiero wrzucam.\n- Po dzisiejszej wizycie komornika usiadłam i się popłakałam. Na koncie grosze. Kolejne opłaty. Nwm już z czego to wszystko zapłacić... Liczę każdą złotówkę i ciągle brakuje. No cóż... idziemy dalej.\n- Dzieci już śpią. Usiadłam w kuchni i nawet nie mam siły ogarnąć kubków. Nie daję już rady. Wszystko naraz i ciągle ktoś czegoś potrzebuje. Nwm ile jeszcze tak pociągnę... No cóż... idziemy dalej.\n- Wieczorem sprawdziłam ratę kredytu. Znowu trzeba przeliczyć wydatki. Mama dalej chora. Jutro po biurze podrzucę jej zakupy i leki z apteki. Dobrze że dzieci odbierze partner. No cóż... idziemy dalej.\n- Znowu siedzę po nocy i liczę. Jestem już tym wszystkim zmęczona. Praca. Raty. I tak w kółko. Nie widzę sensu w tym moim ciągłym szarpaniu się. Nawet nie mam siły włączyć kalkulatora. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "c278ed236492e9abc1437e150f6e011c3bff1082",
+ "response": {
+  "id": "gen-1791461118-meRKNFHc2zPNa76k4JCJ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracowała, opiekowała się dziećmi, spacerowała z córką, planowała zakupy i leki dla chorej mamy oraz po wizycie komornika przeliczała wydatki i raty kredytu, pisząc o braku pieniędzy i zmęczeniu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4cEil9znEreuheYL6kdgCz7aqpjBpO6I4tCJhLmZyf9VWA9JH6SQzfdFLVjnXaL1X93Y_xi1xOIjCTwvwXzAV_yweRlYaNDuHRXKm8fDeiN-I5aSOqzqRMwd1UKPhmXlCe0KgWyYQcOemqvLahbohTcaTyAyqJq60bFGJv5zb7qHxJ0Q0gXEmAArGcXFZaN0Xmw9Zy8hJkkuxagaa8wo3ACuzwlsYaeQwutYaWWXc1rUXCqgqVi9QnuPOnxhG-f4LLkX5oK_rRmozsjCwwdOAfEQupUyuQ2I4PMRLivUaXqWUgYT8jA6yve3s4T6RSTpcL6KOUbFwaQsQD7DTwX-J4XJsxPP1awWfd1fCIG9Tz-yyiwD6eCfM2oq7ICj2nYokUdXAI7Vk2PLa9ZSvrEAYoFfQ9Gac9SO_w1Liq7JW9vLs66zHVosMHzYE23jUdn36ee5mBUdlMrdn-mn1NTgFyGv52SKnqxEfXy-Q9VAyQu8n6ArtyRkSg7_rzkjUozIuWZMhAGx9ed_7udQ_KQAmK_g-qc3OGr6EZMy240KXXj3dQgjOKDjidRL1dqtRzemA5Sm_CmP9MHsYIC9Kl8JvQtTz82moqzH5VSNXN89zJ-0Zs49RkJ1t__kQK0n3rr2cCr7UM_RsmpcftO7jXFoUk5fvwhcOw7swxoIH3NcVL8sEZ9jUFXD9jvWfTkP7wmbIFJRIzy-85-WWia6XXjXVm_x-HyX8CWzo2GZQfOJeGbU4914BvfW9jGXltLIZJTyLUDXCAVSxUL-Af_lGshWsIdTFh41qMYR84Z5YQVtgJlaAwTdL_dZzmllfOzaMGaP2QKxOxsJ8OYpHSyV2jjbFxvef0-uD9HTBfq39th2RF0QSD5SzulB4chtswILHm5AtWoUbFIORvxvdvbjQ_VwQW1yvqvoBJvII1H6KqbDvTrMGdf6Ac0Y2zbIrEKAuPc-K0WHzuaHxhH0qdoNRwClv4LTjmJK1TK1essHieP18T7vIi_c5JgPO1d3jPuL4nI09AGun2m3YHlew944vFyvXbQqNH29lwj_r8li0WgpEvaekvnu5mD0yKEZrjYQKvKAjlDSVK3yjMwGvsXOzNzdTWFv_dL8mTAucHQvjICGjFRVLtg2SarEl125h9XKufDbY1O4TJKw-Ek0Tag3-Q4jShecX0ACMfIJdyuqqbgiGLNdL9FQtZ4f0j6710JLVWk2Ud09X7PqB2NwUX1ENPw8cmMAaS8N3d0S1xubjkNMrPTvTMZxtMXkg3UAQG6Jf8kSv7JuAMGlb-mbkhzLYO27YvGMZZ8_F_AzhWYPQtSJ-ckd39l2WFaGxZmt-CezN8QUgWa0-CFQ9Gq9e5pMflW5OV90SyxoTQVlvORq-HzzGfBgLjfIRW_1fGB6y1UGmNhBMnXCPjKYhJH55SJg3NcFj-Dj6Vgd5SxeJkgLYqsr7r3pESXRdEeU9BBJhj2MM7WKEivaoroZmV5oXjrgeHOynqt3tj5NkpEm3y4SYLQLTF-tOuAGA5lGic0yp8y_E6jsPphxhBtvJ4W5hVbYAJX_xHqQpCP7J582SkOx0BcvRP9NrEvm0ITAMVOJNSJn6Z5-n30_Uzef-e6Vfkqt4ftsKIABGFSrESaewx0BMfjekMaFiO_1pp_mentLAsBB9_aUmNdhGYJcDKKLbDbx_hkQa_ve_sNfoJWP_wjlgAZH-bczc8=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0ee719eb83519adc016ac78701319487d19d2b63959316df23",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461118,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 152,
+   "prompt_tokens": 418,
+   "total_tokens": 570,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 83,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01178,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01178,
+    "upstream_inference_prompt_cost": 0.00418,
+    "upstream_inference_completions_cost": 0.0076
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 83
+ }
+}

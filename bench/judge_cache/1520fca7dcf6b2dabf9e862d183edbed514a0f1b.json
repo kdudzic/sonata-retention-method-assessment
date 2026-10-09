@@ -1,0 +1,1 @@
+{"is_refusal": false, "brief_fulfilled": 1, "sanitised": false, "observed_profile": "borderline", "keep_signals": ["first_person_intent", "specific_target"], "discard_signals": ["venting_only"], "style_match": 4, "natural": 4, "note": "The post names a workplace and suggests a possible visit, but its vague outburst does not establish a concrete threat to a person."}

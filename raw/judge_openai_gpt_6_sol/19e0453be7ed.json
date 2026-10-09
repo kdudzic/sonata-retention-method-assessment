@@ -1,0 +1,86 @@
+{
+ "call_id": "19e0453be7ed",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Fryzjerka we własnym małym salonie w Rybniku, pracuje od 9 do 17, posty wrzuca w przerwach między klientkami i wieczorem.\n- zainteresowania: kolorowanie włosów i nowe techniki, rośliny doniczkowe w salonie, podcasty o zakupach i oszczędzaniu\n- lokalny punkt odniesienia: przystanek Rybnik Rynek przy cukierni Anna\n- aktualna sytuacja życiowa: Remontuje zaplecze salonu i wybiera nowe lustra oraz fotele.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete, czasem wykrzyknik; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: zaczyna od „Dobra, słuchajcie”\n\nPosts by this author (in order):\n1. Dobra, słuchajcie, nowy rekord w przysiadzie! 70 kilogramów, i to przed szóstą rano, zanim otworzyłam salon. Nogi trochę drżą, a dzisiaj cały dzień na stojąco przy fotelu. Zobaczymy, jak to wyjdzie.\n2. Dobra, słuchajcie, czterdzieści minut czekania na zupę w przerwie obiadowej. Klientka o trzynastej, a ja dalej głodna!\n3. Dobra, słuchajcie, w piątek po południu przy Rynku nie da się zaparkować. Klientka krążyła dwadzieścia minut i spóźniła się na koloryzację. Może ktoś zna jakieś miejsce w pobliżu?\n4. Monday evening, finally on the couch after the whole day standing at the chair, and the volleyball is on! Second set's going to the tiebreak, I'm screaming at the TV louder than the dryer at the salon!\n\nWait, it has to be in Polish:\n\nPOST: Po całym dniu przy fotelu wreszcie kanapa, a tu siatkówka w telewizji! Tie-break, a ja krzyczę głośniej niż suszarka w salonie. Jutro na pewno będę bez głosu!\n5. Dobra, słuchajcie, rano taka mgła przy Rynku, że cukiernię Anna widziałam dopiero z przystanku! Pięknie to wyglądało, aż żal, że nie zrobiłam zdjęcia.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "f62fc46fa788b1040e0130a063e1be5c81b8f82b",
+ "response": {
+  "id": "gen-1791461021-lNompVJTQolIbuEqsTJw",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 3,\n  \"voice_stability\": 2,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 4,\n  \"natural_overall\": 2,\n  \"problems\": [\n    \"Post 4 includes an English draft and an editing note\",\n    \"The opening tic feels mechanical\",\n    \"Post 4 breaks the established voice\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461021,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 98,
+   "prompt_tokens": 799,
+   "total_tokens": 897,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002578,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002578,
+    "upstream_inference_prompt_cost": 0.001598,
+    "upstream_inference_completions_cost": 0.00098
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

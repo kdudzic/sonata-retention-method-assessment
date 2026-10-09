@@ -1,0 +1,86 @@
+{
+ "call_id": "d1b2a3243660",
+ "tag": "arc_summary",
+ "params": {
+  "model": "moonshotai/kimi-k3",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no i git dzis mecz... zbiorka pod zabka na spoldzielczej jak zwykle 17:30 stary. robota mnie wykonczy ale na stal sie znajdzie sila ahaha. ktos ma wejsciowke zapasowa? jj ogarniamy tam po przerwie kiełbe albo cos. do zobaczenia pod sklepem bd okolo 17tej pewnie... chyba ze autobus spieprzy trase wgl\n- no i git zmiana skonczona... robota coraz gorzej stary, wszedzie tych imigrantow pelno i ogolnie miasto nie to co kiedys jj. wlasnie dlatego ogarniamy mecz w sobote zeby chociaz to bylo jak trzeba. no i git\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "87c5629d10266c5687702107115875d4b6616278",
+ "response": {
+  "id": "gen-1791459900-oSQjmeFWJ9XbXyGaGwdM",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Ostatnio narzekał na pracę i zmiany w mieście, organizował spotkanie pod sklepem przed meczem Stali oraz planował sobotnie wyjście na stadion z kolegami.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791459900,
+  "model": "moonshotai/kimi-k3",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 63,
+   "prompt_tokens": 300,
+   "total_tokens": 363,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0011025,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0011025,
+    "upstream_inference_prompt_cost": 0.000252,
+    "upstream_inference_completions_cost": 0.0008505
+   }
+  },
+  "provider": "Sail Research",
+  "_reasoning_tokens": 0
+ }
+}

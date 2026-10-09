@@ -1,0 +1,86 @@
+{
+ "call_id": "8f91e4cb8a1b",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Na urlopie wychowawczym z rocznym synkiem w Białymstoku, posty podczas drzemek dziecka i późnym wieczorem.\n- zainteresowania: spacery z wózkiem, wypiekanie ciast drożdżowych, grupy sprzedaży ubranek dziecięcych\n- lokalny punkt odniesienia: plac zabaw przy Plantach w Białymstoku\n- aktualna sytuacja życiowa: Synek zaczyna chodzić, więc zabezpiecza mieszkanie i planuje powrót do pracy na jesieni.\n- sposób pisania: zdania: long run-on; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: przesadza ze słowem „mega”\n\nPosts by this author (in order):\n1. wreszcie cisza w domu więc zerkam w maile od szefa o grafiku na wrzesień i nwm jak to wszystko zorganizuję z małym ale ta myśl o wspólnej stołówce i normalnej przerwie na drugie śniadanie i świeżutką kawusię ze znajomymi z pracy sprawia że aż PODSKAKUJĘ z radości na kanapie!!! ☕🥪🎉\n2. te całe 5 km zrobione w końcu rano chociaż wgl nie miałam SIŁY ale wybiegałam to normalnie CUD!!!! 🏃‍♀️✨\n3. zamiast spać oglądam stroje kąpielowe na olx bo chcemy z małym iść na oswajanie z wodą od przyszłego miesiąca i wgl MUSZĘ się trochę poruszać bo kondycja LEŻY totalnie po tym roku w domu!!!! 🙈💦\n4. muszę oddać rower do serwisu na szybkie smarowanie łańcucha bo w sobotę RANO ruszamy na ten długi szlak w stronę Narwi i wgl opony MUSZĄ być dopompowane na tip top!!!! 🚲🔧\n5. dostałam wreszcie ROZPISKĘ tego nowego zlecenia i chyba OŚLEPNĘ od tych tabelek bo wgl nie ogarniam co kto ma robić na kiedy!!!! 🤦‍♀️📑\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "3d911d226b3195da05594db689523c68d9af694b",
+ "response": {
+  "id": "gen-1791461914-X3iY5ClvHvdQhyiEVPk2",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 4,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"Repeated wgl, all-caps emphasis, and exclamation-mark endings\",\n    \"Several posts follow a similar setup-and-reaction pattern\",\n    \"Long cycling trip feels slightly disconnected from childcare routine\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461914,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 108,
+   "prompt_tokens": 786,
+   "total_tokens": 894,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002652,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002652,
+    "upstream_inference_prompt_cost": 0.001572,
+    "upstream_inference_completions_cost": 0.00108
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

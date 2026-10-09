@@ -1,0 +1,95 @@
+{
+ "call_id": "d94a5bd3ef35",
+ "tag": "bg_vs",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 251450251
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nTopic for this post: zakupy i ceny\nConcrete angle: ceny w markecie, porównanie\nRegister: enthusiastic\nTarget length: about 40 words\nTime of day: morning commute, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Poszłam po obiedzie do paczkomatu po tę przesyłkę z włóczką... chociaż za samo nadanie policzyli sobie teraz więcej niż w zeszłym miesiącu... a skrytka była na samej górze ledwo sięgnęłam...\n  - miala byc tylko jedna rolka papy. nwm po co mi ten komplet kluczy oczkowych. dobra cena byla w markecie to lezy.\n  - Przyszła wreszcie paczka z dodatkowym oświetleniem do nowego pokoju do pracy (udało się ją odebrać dosłownie w drodze powrotnej ze spaceru), chociaż sam koszt tych trzech małych zasilaczy mocno przekroczył mój pierwotny budżet.\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "d39b62aab8d05c81469fe7fc64137ddb12de4d8e",
+ "response": {
+  "id": "gen-1791461676-nQSmShZfWjQZpDvAmRNh",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\"text\": \"zajechalem rano do marketu w lomzy. z ciekawosci patrze na wedliny i schab. u nas w masarni obok skupu w piatnicy dwa razy taniej a jakosc wgl bez porownania. wzielismy caly karton na swojskie wyroby. warto bylo wstac wczesniej.\", \"probability\": 0.06},\n  {\"text\": \"wpadlem na chwile do budowlanego przed piatnica. sruby i tarcze do ciecia w markecie maja za grosze w tym tygodniu. w malym sklepie dalbym ze dwa razy tyle. wzalem na zapas ze trzy pudelka. bd na dluzej.\", \"probability\": 0.05},\n  {\"text\": \"kawa ziarnista w markecie w miescie polowe tansza niz u nas w wiejskim. az sprawdzalem czytnikiem cene bo nwm czy bledu nie bylo. wzalem cztery paczki od razu do szafki. zapas zrobiony.\", \"probability\": 0.07},\n  {\"text\": \"stalowe wiadra i rekawice robocze rzucili w markecie na promocje. u prywatnego pod piatnica placilem ostatnio majatek a tu smieszne grosze. nakupilem pelen bagaznik. zrobilem interes z rana.\", \"probability\": 0.04},\n  {\"text\": \"porownalem dzis ceny oleju silnikowego w markecie i w hurtowni. market rozbil bank. pieciolitrowe banki maja w takiej cenie ze wzalem od reki piec sztuk. az milo sie wraca do domu.\", \"probability\": 0.05}\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "EmkKZwFpFH0T/wx08ixdCVwP0IUoFrQ8VBejt4V9b4VYP5kgvXG837JNx8e2J5xtJWw9hTYWk+nqolybb+DpTO5Yv/z1+Z4+aG4ox4D54ovzOq7KJtJrabtpSlNp+kWcFKrK0H5GrsOKYXQ=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461676,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 396,
+   "prompt_tokens": 899,
+   "total_tokens": 1295,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00215925,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00215925,
+    "upstream_inference_prompt_cost": 0.00067425,
+    "upstream_inference_completions_cost": 0.001485
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 0
+ }
+}

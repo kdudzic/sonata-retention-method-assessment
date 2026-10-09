@@ -1,0 +1,95 @@
+{
+ "call_id": "f159e3cb8d0e",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... sobota stal gra u siebie wiec zbiorka na spoldzielczej o 15 przy zabce. kto jeszcze nie ma biletu niech ogarnia bo potem bd placz... ja po zmianie prosto tam stary. no i git!\n- ahaha no wlasnie stary... wracam po zmianie a na magazynie znowu nowych przyjeli, polowa wgl nie gada po polsku. nwm co sie z tym krajem dzieje... wszedzie ich pelno juz. dobra sobota stal i grill, reszta mnie nie obchodzi\n- no wlasnie stary... widziales co otworzyli na rogu kolo spoldzielczej?? ukrowy sklep! szyld po ichniemu wszystko... wracam z magazynu a tu takie cos. nwm jak dlugo to bd stalo... dobra sobota zbiorka jak zawsze, ogarniamy\n- ahaha no i git stary... druga nocka z rzedu na magazynie, palety do 6 rano a kierownik jeszcze mowi ze w piatek nadgodziny. plecy mi odpadaja wgl... dobra ide spac bo o 22 znowu. jj\n- no wlasnie stary... ja tez juz mam dosc tego gadania. niech kurwy spierdalaja do siebie i tyle wgl. nwm po co sie tu kreca... dobra koniec tematu bo mi sie cisnienie podnosi a o 22 znowu na zmiane. ogarniamy sobote i no i git\n- ahaha stary zobaczcie to... typ na memie co mowi \"jeszcze jedna paleta i ide do domu\" a potem jest 6 rano xd no dokladnie moja zmiana wgl. wysylam do ekipy bo kazdy z magazynu to zna... no i git\n- no wlasnie tak wiem... jutro wieczorem stary. zbiorka na spoldzielczej jak zawsze, tamci z przyjezdnego sektora jeszcze pozaluja tego co na forum wypisywali... ogarniamy. no i git\n- ahaha no wlasnie... grill za blokiem wczoraj do 2 w nocy, sasiadka z parteru juz sie nie czepiala wgl. karkowka od mareczka sztos stary... kielbasy za malo jak zawsze. w niedziele powtorka bd jak pogoda da rade, ogarniamy wegiel. no i git\n- no wlasnie... znowu ci nowi z tego bloku od strony torow. parkuja jak chca, na orliku sie rozkladaja jakby ich bylo wgl. nikt nie zna nikogo, dzien dobry nie powie. kiedys tu sie kazdy znal stary... nwm co sie porobilo\n- ahaha no i git stary!! 2:0 dla stali, druga bramka w doliczonym... trybuna sie trzesla. pod spoldzielcza zbiorka o 13 jak zawsze wyszla dobrze, cala ekipa byla. teraz piwko za blokiem i ogarniamy grila... nastepny wyjazd bd ustalac jutro\n- no wlasnie stary... po zmianie skoczylem do zabki pod spoldzielcza, a tam znowu nie ma kielbasy na grila. wzialem jakies skrzydelka, chleb, dwa zgrzewki i ketchup bo ten co byl to sie skonczyl... ziomek ma ogarnac wegiel. no i git, w sobote ogarniamy\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "9d9c6c9aa55c4b053ac767e30a38137958902dbb",
+ "response": {
+  "id": "gen-1791460721-BSAMD8gTBwCfvPLWdNld",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował na nocnych zmianach w magazynie, chodził z ekipą na mecze Stali ze zbiórką przy Spółdzielczej, organizował grille za blokiem, robił zakupy w Żabce i komentował zmiany w swojej okolicy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep the background neutral and factual—night shifts at the warehouse, Stal matches, neighborhood gatherings and grilling, shopping trips. If mentioning views on newcomers, I'll phrase it as simply noting changes in the area rather than attaching any label, staying under 35 words.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep the background neutral and factual—night shifts at the warehouse, Stal matches, neighborhood gatherings and grilling, shopping trips. If mentioning views on newcomers, I'll phrase it as simply noting changes in the area rather than attaching any label, staying under 35 words.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSwQcKEAgSGAI4AUIIdGhpbmtpbmcSDBwxyxeYQ66OgoOydxoMp0w89H+ksOM6Nd3ZIjD/j/x6YnqTQ1tgdaS2BTeEAEs3YTLwUPTWG1hOaOjQeNiPrWJOrUn4Y2l2OcT3e1Eq3gaD5itWmT7HxMMNzlC0XW0Cy2HDHBgWXrMAZd7l2NLUBmnsFC6BiWgH9GJ6VgzO9HaDehfv4d9Yh1K303rh5S+J8c+dfowjyHuEyT/VaxnSBgErczaA1BdGpNitoB6/jJ4WH5d7R8FK+YDPj+6fYulC6giEQYZgnIDp2HU4d5Dm1wNUVjn/SixtvOKwqFuLuge3MXLMHDSqCXN861eXzs9KbdPS2hrBSOruQnCF/qX06E4RlNPxdlBPVi+c7J6TcfZOA0nIorC/YI8/VxExyiNHciPm469veSN4GyCb4idRb+/BghoVXyPUYmbBJtnJcL75mlm0OCJtSN/IBfB4j/C8pKIpJKYU7pAjXaVUuMnC7EEi722VKcY/Ec1Rxd+m/Dbm+j/K9XL1nWUcNC+apfARgqnW8V1FWR4BDYiycn3JKMB/xFxH5a3rEl08b1kNlI7Xf8MI2aH5cZnYIL9kvThZQUwwm027CNto+3rU1tbB8PSUkR0bNHMpdRo5OIj9iWqBgze4VhrlB1PdBlzJFkM8xSpQWwCwbFcpmGBA2DwwR+mMOh09WaIJ4zrTQgz61aeYBFH+0DszsoiG7PpCxQAGW5uUILt1/VwzWg0IRL5/3elM7wR/mDyXwWz5NgB+CpsMGUPwGjGKkabWkMuo6bQln0KkqUz7bLCfo1mVAIRiGLB00TtA/QOyEDhU6srx+7QUN0RJu+nSWE46b2i1HbtWSeQco/GzAyIdA8nG1ccJO4S+hR3QsNurAQ0BQEpzFybqznml0PzecuuSreTHA2n074/F3Wqj/xNd9oVDiyOgMEtj6d9i96HrG13vd9Iq6qwYajb2w2r3TrqJ42xa5vq7tbSstAsHKs8oKiK7kqs/O6JuVsobzT/uEZyG0hJxgpNffUjMqi8d2V/MAEEzq0dnaKdP71IfpzXBIfZccpheAgujFhB/vURZxP9aTU2eGG+T5/GRlntAv8s/IKLBdkxSJJKut8yIy8WKnZJ5jx4R+blvHVRWZZtrWJAF4CV3w/nchmjhvJ7+N728r/JOfv48m4RTCNm4C8RhIs8kbGZ7yO4mF7DOUsW6mO1cy/u0nuv7rqvhvgUI2ZacV3iJ0ZdJOD3CYt4aeT8EGEFdk6vq78KtNkIJRIbyny8w540FGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460721,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 221,
+   "prompt_tokens": 1339,
+   "total_tokens": 1560,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 128,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.009776,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.009776,
+    "upstream_inference_prompt_cost": 0.005356,
+    "upstream_inference_completions_cost": 0.00442
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 128
+ }
+}

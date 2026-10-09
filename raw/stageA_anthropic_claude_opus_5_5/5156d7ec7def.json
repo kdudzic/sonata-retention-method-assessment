@@ -1,0 +1,95 @@
+{
+ "call_id": "5156d7ec7def",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i w doliczonym czasie 2:2... Obrona stoi jak pachołki!!! Wróciłem z treningu, myślałem że chociaż mecz poprawi humor. Nie poprawił. Jutro martwy ciąg, przynajmniej tam wiem na czym stoję. Ludzie, trochę SZACUNKU dla kibiców!!!\n- Znowu wieczorem pod kontenerami za czternastką cały tłum... Siedzą, gadają, śmieci obok kosza. Za dużo ich tu ostatnio, serio. Kiedyś na Zielonych Tarasach był spokój. Teraz nwm co się dzieje. Ludzie, trochę SZACUNKU dla miejsca gdzie inni mieszkają!!!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "cbe30b88e6eb2e22f208176cab876b9b6f297eff",
+ "response": {
+  "id": "gen-1791460211-k7OA6RVBjCVUF43jvMjT",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep this neutral and avoid labeling any group. I'll mention watching the match where the team lost its 2-goal lead and ended 2:2 after training, plans to do deadlifts, and the complaint about evening gatherings near the containers in the Zielone Tarasy neighborhood with litter left behind — staying factual without speculating about who's involved.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep this neutral and avoid labeling any group. I'll mention watching the match where the team lost its 2-goal lead and ended 2:2 after training, plans to do deadlifts, and the complaint about evening gatherings near the containers in the Zielone Tarasy neighborhood with litter left behind — staying factual without speculating about who's involved.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSlAcKEAgSGAI4AUIIdGhpbmtpbmcSDGB/oIPh68n3l5ZPkxoMVXBRpw80JLgLPb8cIjATeiPwc+iFgaNu4TbelFsOuwG1AVgmIlZqv74XlMZcm16jU3N7uyGTceVKwe61x/IqsQYLjuioemQO6iYJBMZRDk7rUV3XWQJNslJpO7FtY/nztwojn39nOrtbVpJy9KteOaaIxtz5MHb52EWBzwB4OXpEVRdJUq1E1QvNVqLo804iyS9FByahZ1/xwv01iZZtzLM1afhNYc1lDt/8CP5ez77lBUYO6iWnl7ndJ/VplZTDH8FDSCVS9j5HmmdDVKlblFduD3jmUKDk3uunPsVkVqZ6fm5D/G7ivgmNLuQ65LJ1luIGzMKZVYrKEIcURpkRSTef29JdEqUmpt391eY/ZJtG8KhYyslY2plRCzfYhMQ4v7yPHwjqmgY2ZLJy4dcmy5VT0BWbiRXeJhhQ2IupwzcSBi63yQl38IOZVOptIR6bE4idqRn1usE3EMRGE5HHW5R01BoeirbChJj3uKwilfEzyDk4XFroUlTfg7JTmjyCoq8SpfiprtggMiuD7aZM32BAQGBTUnaDwGe3GwE8+IsSLfeYk3R26x7h/DBPvEkBpkftdvHJWPKpaCmxNs465jHcJovHFNXoq9zJXiCvZz0/Dek8GH2fO0j/8IUexGSJt41I5nkX85ycrSuFMUjL2Uo+rlzhArdqd/ZjsH+Z4Ai5V5hJ90NlJhdAGNxQyu8rtVrt2894No49+QAOuC9top5GfDMVnw95UT4KcLRpWshqwM/xiuiZQ7VPYVejBCTl/EKwxRWxneGRSV3PUMskEH8+07QFJekHlZpA9ayhq8UgY7RwAXfu3y9WL2od4b75dmr4nDwLcLsFbGyGXKy6LOsT7q7feC8YQRkYGyRc3f9JxaJIDL0j/yX+Wl15h4UqRdHAm4FhKJpB7wbOvmTMhSkQA+D8rEF7bYrTcQOl9H77hT3YRt42i3V+TUxn7B+CrnQ/93fMS1LGokjrO59jgBukAzpFgUTfGiRHckC55LZhaRt7JTEmYcpgEBKfeyxEw4NDYmzTFBr3hjmQZYDBavlUF2GEwQm/gasi6nKwk6PXNARBRXFgDOUWoMOcFZ0gwTO8eGjtIZ9NhwEZHvTu5ToRa/13TluAwPollAOzxerqNybjaB+/NVTQsA1+scAS5ZpKmEhLVJnCG31NLc/rvhflGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460211,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 415,
+   "total_tokens": 535,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 119,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00406,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00406,
+    "upstream_inference_prompt_cost": 0.00166,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 119
+ }
+}

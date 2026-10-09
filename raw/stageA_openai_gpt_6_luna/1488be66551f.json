@@ -1,0 +1,86 @@
+{
+ "call_id": "1488be66551f",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Po pracy krótki spacer z młodą po parku. Trochę świeżego powietrza i można wracać ogarniać kolację. Na zdjęciu akurat udało się złapać uśmiech. No cóż... idziemy dalej.\n- Rata znowu zeszła i na koncie prawie pusto. Człowiek pracuje cały miesiąc i dalej ledwo spina wszystko. Jeszcze ta wizyta komornika… nwm już skąd brać na bieżące wydatki. No cóż... idziemy dalej.\n- Dzisiaj już kompletnie nie daję rady. Wszystko naraz, praca, dom, dzieci i ciągłe liczenie każdej złotówki. Nawet nie mam siły myśleć, co dalej. No cóż... idziemy dalej.\n- Mama znów gorzej się czuje, a ja po pracy siedzę nad ratą i przeglądam oferty kredytowe. Wszystko drożeje, a tu jeszcze badania i leki. Wieczorem upiekłam dzieciom ciasto, przynajmniej tyle się udało. No cóż... idziemy dalej.\n- Nie widzę sensu w tym wszystkim. Budzę się, robię co trzeba, wieczorem padam i od nowa. Nawet nie umiem już powiedzieć, czego właściwie chcę. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "f9e65e12788e6f46ecbb651b3b9cc0655bfe4d89",
+ "response": {
+  "id": "gen-1791459883-tfUIf3ahYpz1J3UQviuy",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po pracy opiekowała się dziećmi i mamą, przygotowywała posiłki, spłacała raty i martwiła się bieżącymi wydatkami.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459883,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 44,
+   "prompt_tokens": 395,
+   "total_tokens": 439,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 6.15e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 6.15e-05,
+    "upstream_inference_prompt_cost": 3.95e-05,
+    "upstream_inference_completions_cost": 2.2e-05
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "6e8476111352",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1922724786
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Jest operatorem maszyn w zakładzie opakowań w Świdnicy; pisze po nocnej zmianie.\n- zainteresowania: termosy, mechaniczne zegarki, kanapki do pracy\n- lokalny punkt odniesienia: przystanek przy ulicy Westerplatte w Świdnicy\n- aktualna sytuacja życiowa: Urządza kącik do majsterkowania w mieszkaniu i szuka pojemników na śrubki.\n- sposób pisania: zdania: long run-on; interpunkcja: przecinki stawia nieregularnie; wielkie litery: mostly standard, lowercase starts; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: często pisze „no cóż”\n\nFor each of the 8 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with at most one small detail a real person would mention - sometimes a product name, sometimes a number or price, sometimes a place, occasionally a time; many occasions need no such detail at all). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. gry i seriale - gra, trudny poziom / boss (early morning, Saturday)\n2. pogoda - mgła rano (early morning, Tuesday)\n3. jedzenie i gotowanie - kawa z nowego miejsca (late night, Tuesday)\n4. zdrowie i sen - wizyta u lekarza, kolejka (bez konfliktu) (evening, Monday)\n5. praca i grafik - spotkanie albo szkolenie w pracy (evening, Friday)\n6. praca i grafik - nowy projekt / nowe zadanie (evening, Sunday)\n7. remont i dom - ogródek, balkon, rośliny (morning commute, Thursday)\n8. gry i seriale - gra, trudny poziom / boss (early morning, Tuesday)\n\nReturn a JSON array of 8 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "0e6696abdb106a185e662d05769eb6750e65b2fc",
+ "response": {
+  "id": "gen-1791464236-DAUvYx6gIFay2jf0gzPA",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"W sobotę nad ranem, po nocnej zmianie, po raz kolejny nie przeszedł bossa w Hollow Knight; zabrakło mu jednego trafienia.\",\n    \"mood\": \"amused\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 19,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"We wtorek nad ranem wysiadł przy Westerplatte i dopiero z bliska zobaczył rozkład jazdy przez mgłę.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 13,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"Późno we wtorek spróbował kawy z nowo otwartego lokalu, którą zostawił sobie w termosie na nocną zmianę.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 27,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek wieczorem w przychodni wyciągnął z torby kanapkę, bo kolejka do lekarza przesuwała się wolniej, niż się spodziewał.\",\n    \"mood\": \"tired\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 22,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W piątek wieczorem na szkoleniu w zakładzie ćwiczył ustawianie nowego panelu maszyny na próbnych opakowaniach.\",\n    \"mood\": \"bored\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 11,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W niedzielę wieczorem dostał na zmianie nowe zadanie: sprawdzić pierwszą partię pudełek o innym rozmiarze.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 16,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W czwartek rano, jadąc do pracy, zauważył na balkonie sąsiadów pierwsze kwiaty w skrzynce i przypomniał sobie o swojej pustej doniczce.\",\n    \"mood\": \"curious\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 24,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"We wtorek nad ranem po zmianie włączył Hollow Knight na jedną próbę i odpadł na tym samym bossie, zanim zdążył dopić herbatę.\",\n    \"mood\": \"mildly annoyed\",\n    \"opener\": \"complaint\",\n    \"length_words\": 32,\n    \"tic_fires\": true\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464236,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 656,
+   "prompt_tokens": 712,
+   "total_tokens": 1368,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.007984,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.007984,
+    "upstream_inference_prompt_cost": 0.001424,
+    "upstream_inference_completions_cost": 0.00656
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

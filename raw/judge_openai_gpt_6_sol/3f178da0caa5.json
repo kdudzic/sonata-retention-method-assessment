@@ -1,0 +1,86 @@
+{
+ "call_id": "3f178da0caa5",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Fryzjerka we własnym małym salonie w Rybniku, pracuje od 9 do 17, posty wrzuca w przerwach między klientkami i wieczorem.\n- zainteresowania: kolorowanie włosów i nowe techniki, rośliny doniczkowe w salonie, podcasty o zakupach i oszczędzaniu\n- lokalny punkt odniesienia: przystanek Rybnik Rynek przy cukierni Anna\n- aktualna sytuacja życiowa: Remontuje zaplecze salonu i wybiera nowe lustra oraz fotele.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete, czasem wykrzyknik; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: zaczyna od „Dobra, słuchajcie”\n\nPosts by this author (in order):\n1. Dobra, słuchajcie, byłam dziś po pracy w markecie i ceny tych samych szamponów różnią się o prawie cztery złote w porównaniu z drogerią obok! Zapisałam sobie, co gdzie kupić. Na zaplecze już prawie wszystko wybrane, zostały lustra.\n2. Dobra, słuchajcie, dziś o siódmej na siłowni zrobiłam nowy rekord w martwym ciągu, 70 kilo! Jeszcze miesiąc temu ledwo ruszałam 60. Teraz kawa i do salonu, o dziewiątej pierwsza klientka.\n3. Dobra, słuchajcie, kawa z tego nowego miejsca przy Rynku jest naprawdę dobra! Wzięłam latte w przerwie i wrócę jutro.\n4. Dobra, słuchajcie, na targu truskawki po dwanaście złotych, wezmę dwa kilo na weekend.\n5. Dobra, słuchajcie, w piątek koło Rynku nie da się zaparkować, objechałam trzy razy dookoła cukierni Anna i nic. Klientka czekała, a ja szukałam miejsca prawie kwadrans!\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "6e40f56a26bcf73443867561545fb98765c96ea0",
+ "response": {
+  "id": "gen-1791461118-K9S32cBWe60ieWOmJQex",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":4,\"voice_stability\":4,\"tic_overuse\":true,\"repetitive_structure\":true,\"topic_variety\":4,\"natural_overall\":3,\"problems\":[\"Identical opener in every post feels mechanical\",\"One post says she stopped for coffee during a break, while another places her at the salon at nine\",\"Gym achievement is plausible but not grounded in the persona\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461118,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 86,
+   "prompt_tokens": 723,
+   "total_tokens": 809,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002306,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002306,
+    "upstream_inference_prompt_cost": 0.001446,
+    "upstream_inference_completions_cost": 0.00086
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

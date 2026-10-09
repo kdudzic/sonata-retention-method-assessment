@@ -1,0 +1,87 @@
+{
+ "call_id": "6b02de657ce6",
+ "tag": "bg_vs",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 553499374
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nTopic for this post: technologia i sprzęt\nConcrete angle: W środę wieczorem telefon zakończył aktualizację akurat wtedy, gdy otworzyła ogłoszenie pokoju blisko szpitala. Zauważyła nowy wygląd budzika i sprawdziła, czy alarm na 5:30 nadal jest włączony. | mood: curious | opener: reported speech | verbal tic in this post: no\nRegister: chatty\nTarget length: about 39 words\nTime of day: evening, Wednesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Aj. Rano sprawdziłam kabel dwa razy, ale ładowarka nic. Jeszcze wieczorem ładowała. Wzięłam tę zapasową z szuflady na zapleczu.\n  - Czemu apka banku staje akurat na logowaniu?! Środa 15:20, chciałam sprawdzić saldo przed kawą w Żabce 😂 Na szczescie miałam gotówkę.\n  - Czy ładowarka sama kiedyś wskoczy do torby... w poniedziałek rano w autobusie do wnuczki chciałam sprawdzić odjazd z przystanku przy Szczecińskiej, próbkę swetra trzymałam na kolanach... telefon pokazał dwa procent i zgasł... co by nie mówić, miałam dość jak na taki poranek.\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "74b18ff24c629dedbb2a92e5c605a70c414d27a1",
+ "response": {
+  "id": "gen-1791461643-B42UQsDwUbgwxpULdBJC",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[{\"text\":\"„Aktualizacja zakończona” wyskoczyło mi w środe wieczorem dokładnie jak otworzyłam ogłoszenie pokoju blisko szpitala 😅 Najpierw patrze na zdjęcia, a tu budzik ma jakiś NOWY wygląd?! Sprawdziłam od razu: alarm na 5:30 dalej włączony!!\",\"probability\":0.07},{\"text\":\"„Gotowe”, napisał telefon akurat przy otwieraniu ogłoszenia pokoju blisko szpitala. Środa wieczór, a ja zamiast czytać opis klikam w budzik, bo po aktualizacji wygląda INACZEJ 😂 Alarm na 5:30 jest, tylko gdzie oni schowali reszte ustawień?!\",\"probability\":0.06},{\"text\":\"„Zainstalowano aktualizacje” — taki komunikat dostałam w środę wieczorem, gdy ładowało mi się ogłoszenie pokoju blisko szpitala. Budzik po tym wygląda jak zupełnie inna apka 👀 Musiałam sprawdzić, czy 5:30 nadal ustawione. Jest!!\",\"probability\":0.08},{\"text\":\"„Telefon jest gotowy do użycia” zobaczyłam w środe wieczorem, sekunde po otwarciu ogłoszenia pokoju blisko szpitala 🙃 Weszłam w budzik z ciekawosci, bo ikonki się pozmieniały. Alarm 5:30 włączony, ale ten nowy suwak jest DZIWNY!!\",\"probability\":0.05},{\"text\":\"„Aktualizacja ukończona” mignęło mi, gdy w środę wieczorem otworzyłam ogłoszenie pokoju blisko szpitala. Zerknełam potem na budzik i przez chwile nie wiedziałam, na co patrze 😅 Nowy wygląd, ale alarm na 5:30 nadal jest włączony!!\",\"probability\":0.07}]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461643,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 440,
+   "prompt_tokens": 968,
+   "total_tokens": 1408,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006336,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006336,
+    "upstream_inference_prompt_cost": 0.001936,
+    "upstream_inference_completions_cost": 0.0044
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

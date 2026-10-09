@@ -1,0 +1,10 @@
+{
+ "model": "openai/gpt-6-sol",
+ "method": "spec_vs",
+ "n_posts": 60,
+ "cost": 0.373718,
+ "calls": 72,
+ "elapsed_s": 70.9,
+ "refusals": 1,
+ "errors": []
+}

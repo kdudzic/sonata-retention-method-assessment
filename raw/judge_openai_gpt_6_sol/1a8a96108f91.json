@@ -1,0 +1,86 @@
+{
+ "call_id": "1a8a96108f91",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Emerytowany kolejarz mieszkający w Nowym Sączu, wstaje o świcie, posty rano przy kawie i po obiedzie.\n- zainteresowania: uprawa działkowa pomidorów, modelarstwo kolejowe, słuchanie radia\n- lokalny punkt odniesienia: ogródki działkowe przy ulicy Lwowskiej\n- aktualna sytuacja życiowa: Stawia na działce nową szklarnię i czeka na dostawę folii.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: kończy wpis „i tyle w temacie”\n\nPosts by this author (in order):\n1. Przy porannej kawie przypomniałem sobie, jak dobrze smakowała przerwa w stołówce po wczesnej zmianie.\n2. Od świtu kręcę się przy telefonie, bo czekam na folię. Kurier nie zadzwonił, i tyle w temacie.\n3. Po obiedzie chciałem posłuchać radia, ale za ścianą sąsiedzi wiercą. Przyciszyłem odbiornik i poczekam, aż skończą, i tyle w temacie.\n4. Dziś przed południem sprawdziłem, czy drukarka bierze grubszy papier. Chciałem zrobić małe tabliczki przy pomidorach. Pierwsza kartka wyszła krzywo, druga już dobrze, więc zostawiłem ustawienia w spokoju, i tyle w temacie\n5. Dziś po urlopie najwięcej czasu zajęło mi przypomnienie sobie, co miałem zrobić najpierw. Grafik leżał pod ręką, a i tak zaglądałem do niego przy każdej okazji. O tej porze powinienem już spać, bo rano będzie ciężko.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "5f7548c91363275a46a33e2379d6a023e8b03335",
+ "response": {
+  "id": "gen-1791462221-LvyLPZZOLDw1yI275aGJ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":3,\"voice_stability\":3,\"tic_overuse\":true,\"repetitive_structure\":true,\"topic_variety\":4,\"natural_overall\":3,\"problems\":[\"Repeated closing feels mechanical\",\"Missing final punctuation in post 4\",\"Post 5 suggests a work schedule despite retirement\",\"Post 5 drops the usual verbal tic\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791462221,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 77,
+   "prompt_tokens": 686,
+   "total_tokens": 763,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002142,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002142,
+    "upstream_inference_prompt_cost": 0.001372,
+    "upstream_inference_completions_cost": 0.00077
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "f8f06162d690",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Co za MECZ. Nasi znowu w doliczonym czasie dali sobie wbić... Szkoda słów po prostu. Człowiek siada po robocie przed tv a tu taka ŻENADA!!! Wgl bez formy biegali. Brak słów... Zero walki do końca.\n- Wracam i znowu to samo pod klatką. Stoją całymi dniami i tylko gapią się na każdego... Za dużo ich tu się kręci ostatnio, wgl nikt nad tym nie panuje!!! Strach normalnie przejść. Ludzie, trochę SZACUNKU! Robić im się nie chce tylko szukają zaczepki...\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "c8f3ecc4a44bd48b9c27ec5edb6eef3dd6791138",
+ "response": {
+  "id": "gen-1791461087-ROol9kak7XGXmIJ80Zkn",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor oglądał po pracy mecz piłkarski oraz mijał osoby stojące przed klatką schodową swojego budynku po powrocie do domu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a195FgEHAMa0csnD8MPIi7BizeVNuzM728zWqB1KLd/4uQKzeHyoQX2/UvbEm/3CkPWdP0yJi06kWUaGUN1TZc2txIgFZOPcT8r+wD2uO0NFkbig",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461087,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 34,
+   "prompt_tokens": 227,
+   "total_tokens": 261,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00029775,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00029775,
+    "upstream_inference_prompt_cost": 0.00017025,
+    "upstream_inference_completions_cost": 0.0001275
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

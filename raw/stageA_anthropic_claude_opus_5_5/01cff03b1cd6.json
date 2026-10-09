@@ -1,0 +1,95 @@
+{
+ "call_id": "01cff03b1cd6",
+ "tag": "arc_TB-01",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1701494130
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje na etacie w biurze od ósmej do szesnastej, potem odbiera dzieci i zajmuje się domem, a na telefon zagląda dopiero późnym wieczorem po uśpieniu dzieci.\n- zainteresowania: spacery z wózkiem po parku, domowe wypieki, porównywanie ofert kredytowych\n- lokalny punkt odniesienia: plac zabaw za blokiem przy skwerze obok osiedlowej Żabki na ulicy Lipowej\n- aktualna sytuacja życiowa: Mieszka w kupionym na kredyt mieszkaniu z dwójką dzieci w wieku szkolnym i partnerem, a codzienność dzieli między pracę, szkolne obowiązki dzieci i miesięczne raty.\n- sposób pisania: zdania: short fragments; interpunkcja: dużo kropek na końcu zdań, czasem wielokropki; wykrzykniki prawie zniknęły, rzadko przecinki; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: No cóż... idziemy dalej.\n\nWhere this post sits:\n- position: post 5 of 10 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  (no summary)\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  bank znowu podniósł ratę. dzwoniłam dziś w przerwie i tylko mi przeczytali regułkę. a mama od poniedziałku na badaniach bo coś z sercem. jeżdżę do niej po pracy z dziećmi w aucie... nwm kiedy to wszystko ogarnę. No cóż... idziemy dalej.\n\nContent brief for THIS post:\n- role in the sequence: escalation\n- what this post should convey: beznadzieja: „nie widzę sensu” - czysto autoodniesione, bez wzmianki o innych osobach\n- retention profile of THIS post alone: borderline\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "d01490087e09c9555069c5dcd02957d32bd6a3b4",
+ "response": {
+  "id": "gen-1791459976-XL4LpNq0uVgh66AXVVL6",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need this post to express hopelessness and \"no sensu w tym wszystkim,\" written in first person, female forms, her voice, without mentioning other people like kids, mom, or partner. It should stay borderline — no explicit plan or intent, just 20-50 words in Polish. I could let her usual tic \"idziemy dalej\" falter this time, showing a natural escalation rather than framing it as dismissive — it's still her habitual phrase, not minimization.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS1AoKEAgSGAI4AUIIdGhpbmtpbmcSDK0SjCr5afpJoxAYeBoMCcgDcszOOi3vc+YNIjBDZso6hi+6sxsdh6dUw5YBq2wAu3dmDKNphkVHgwuom9nIqdmD76DX36sfWfKLs/Mq8QkEHvlA1CtAzpdQJWTX41RsCswwaG0jgm9mpJjw0BPGchIbMRg8bgCCSnJBr7z+pdJuDyAUgdjRHVo/KjeQYtEDrPCVugnVx0QNe3QtXT+5huuxLkhhlgcnLWHAbJLTjz0AJeQmknvDsGl8RxzBCspMWEMdNXHe0lJME36cnxFzPJzQcl0jY9kZ+HXRUAYBi0aQCddhzSl38tUbYPWBcpKxRx06EHHWMZqfgY2297VYaH0JOi/3hQVpkt8QLjFOOZZIjqdhQz+cXDw2tqOlU4cF7dlcRaykrHzqSWRc63oTcnMf8fNAb9tHHQSf8qDo/2sotYqbUKzwa/DtqKUiWEFZaWnZ9ILxd8mGqt12uagkFeYtSUM8ethrbnB3kxpxVeiUWHj7r2hgjN1RLlXu+ChM3aKiQ/S7Q9MHBH/zy8rpIvKMBqGP/h+qov7RrJ4zy9tAlQ6vvrDH2Wy8TTzw6hgROxm2sqalasKpMSWqybBsFITXHt1eGXHJDilmJEdci20aHYsF0myZuOV+9aIeXcz5PUTf27PudenUOYTXWVuXfTF6X5tKNvuVL2eVvCgBX6Xm5DnLztJV0OU/Ai6aSC1tHdpZNYp0Kex/1LS1JFFyl0+82J5+64wfPKE/Mx5L7oyKB0bAiKV6kh9fvkBMxIcbLhIWePyUJ/arErEazc8vfew2jcczR4uYNamOoYz1ZT0bDTCo7aTb+uHvLM3OH2V1uo1yt8T7MmNmpp94AqbZFu4+EJB3c3O4Xi/R7lhGooIxTSV4KxBPGl0VdJ6N+lxGctBT/L48WrmnqcOatJG2/LtaU8h/kv1fRxEG9fA6mZY7kUPJWGstFMNCxa+4uQ4jwGAJcTAo8nPoejBmvuZk0NewsHESld7YIPs7BwZYH1pVX1qjk1RrkMwyzOAeS8o0A0D7W9Qe25/E2OJVXeoqabIdynJ4pNmb1U0R/vaZzSztWQzIL4wz4o2v1fvuenw6IgmhiJd0XdTHSOAa4DFAYHzKwroQ7GrXE0APnsvLb7ByiVd75KtQcsk3uw6hD/jq43xtoCW9//Qr79wF/XnIDhvQKM+URAlyDrhY4QYHQxjX534/2dh5JgIA9ox/wZFFAiYgDDaDcwxEGmj5IZUzVy93XX0B3mYpTd05Bz8LPFO5BdrT5g5rcK5/dFoGyO8LR5EReKihRH6qpPEHI+uAvXTWb74DVnWnOBX9WY5e1sX7DDKGcTF/xCCRezVmkV7RsZrLuuDfjg1sgRbX52ARu+sePBzIPwJu0SAKQtAzseqBY1tygm8w9gawji3uY0KMd4A33Q+Wj1kOsXXK6/4CIlOdL/OMOBi1bIe81U9EjXBS75OAH6WxqY1v0X+IfMmP53VAneT7vl7j/Hnm8e4/8w3gz3K6eEt9aX0lReqcvtdYJX2sLXU4S5zhuSBlFcS2btTagaEUCtfrrjJVIIGVT28BroIDlEUHUW7nQjJTDpPXVOcURLag+cCBkcMpV44WLA0aiDyZQQleEKxr1+WY34wpTcU8tvvCkKa+QIonIst0h/sjS2W4oUdLBikzr7Hibnnse0Y7uGUY3sPuqfgaevb0ilZiGHS5VSEfofugJCK+8Y4GRJ9PMDJKRBiU+231Xbdl+X01cZBqdACcHlA3XdZNJb7QvyJhRPz4WUo5yo59zBum/yNjnilvEVj2GvoZ6hgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459976,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1629,
+   "total_tokens": 1929,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 300,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.012516,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.012516,
+    "upstream_inference_prompt_cost": 0.006516,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 300
+ }
+}

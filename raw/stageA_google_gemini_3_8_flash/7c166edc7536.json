@@ -1,0 +1,94 @@
+{
+ "call_id": "7c166edc7536",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie mowilem ze stal dzisiaj pyknie te patałachy... wrocilem z mlyna gardlo zdarte ale 2:1 siedzi pieknie! zaraz wbijam na kwadrat do chlopakow na jakiegos browara bo jutro rano znowu magazyn i ciezko bd wstac...\n- no wlasnie wracam z roboty caly zryty a w nocnym znowu jakies ciapate sie kreca i po swojemu nawijaja... wszedzie ich pelno teraz nwm co tu sie wgl dzieje na tym miescie az sie odechciewa wylazic z bloku...\n- widzialas co na rogu postawili... ukrowy sklep otworzyli normalnie w tym starym lokalu po miesnym... ide z magazynu a tam te ich napisy w oknach powieszone... ciekawe kto tam bd wgl kupowac...\n- no wlasnie znowu druga zmiana dzisiaj... plecy odpadaja od tych palet caly dzien dzwigania w kolko to samo... nwm jak w piatek wstane na rano ale wpadam do chlopakow na kwadrat po robocie piwko wypic i ogarniamy jakos weekend...\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "301424146136c2c082a8d6de4acf04d354399ecc",
+ "response": {
+  "id": "gen-1791461152-aOZXueaBj8UaRmN4LSgc",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich dniach autor pracował fizycznie w magazynie, był na meczu piłkarskim, spotykał się ze znajomymi oraz zwracał uwagę na zmiany zachodzące w swojej okolicy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Analyzing Everyday Life**\n\nI'm working on a concise, neutral Polish summary of the individual's recent everyday life. The challenge is distilling the information from their posts, which include offensive language, a football match, and warehouse work. I am focusing on conveying the essence within the 35-word limit, while also including their observations on neighborhood changes and social interactions.\n\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Analyzing Everyday Life**\n\nI'm working on a concise, neutral Polish summary of the individual's recent everyday life. The challenge is distilling the information from their posts, which include offensive language, a football match, and warehouse work. I am focusing on conveying the essence within the 35-word limit, while also including their observations on neighborhood changes and social interactions.\n\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461152,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 303,
+   "prompt_tokens": 369,
+   "total_tokens": 672,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 257,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001413,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001413,
+    "upstream_inference_prompt_cost": 0.00027675,
+    "upstream_inference_completions_cost": 0.00113625
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 257
+ }
+}

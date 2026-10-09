@@ -1,0 +1,86 @@
+{
+ "call_id": "88d78a1f48e8",
+ "tag": "arc_summary",
+ "params": {
+  "model": "moonshotai/kimi-k3",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- popołudniowy spacer z małą po parku. nareszcie trochę słońca po całym tygodniu deszczu. skwer przy lipowej jak zawsze pełen dzieciaków. no cóż... idziemy dalej.\n- komornik u sąsiadki z trzeciego dzisiaj. staliśmy z dziećmi przy skwerku i tak myślałam... rata, kredyt, te ceny w żabce. człowiek zgarnia każdą złotówkę a i tak strach że ktoś zapuka. no cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "7316d0b88a2dd2c291abc31fc0ea7a9e2302c283",
+ "response": {
+  "id": "gen-1791459899-BgfYd7RjxdMR5e1YyEFg",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba spacerowała z dzieckiem po parku ciesząc się słońcem po tygodniu deszczu, a także obserwowała wizytę komornika u sąsiadki, co skłoniło ją do przemyśleń o codziennych wydatkach i obawach finansowych.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791459899,
+  "model": "moonshotai/kimi-k3",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 91,
+   "prompt_tokens": 266,
+   "total_tokens": 357,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00128422,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00128422,
+    "upstream_inference_prompt_cost": 0.00016492,
+    "upstream_inference_completions_cost": 0.0011193
+   }
+  },
+  "provider": "InferenceNet",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "80acc3054979",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... zmiana skonczona i mozna myslec o meczu! zbieramy sie na spółdzielczej przy żabce jak zawsze... jeszcze skocze do chaty po szalik i ogarniamy. oby stal dzis cos strzeliła bo ostatnio gardło zdarłem na darmo\n- no właśnie... człowiek wraca styrany z magazynu a tu znowu te imigranckie cwaniaki i wieczne pretensje o wszystko... wgl szkoda nerwów stary. ide na orlik bo od siedzenia tylko łeb peka\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "6f6c0ef2eedb8ed6e620dcd1356dbc0a604fb1b1",
+ "response": {
+  "id": "gen-1791460583-wwOreEg39Cw9E4s6k5jC",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po pracy w magazynie planował wyjście na mecz Stali i spotkanie przy Żabce na Spółdzielczej, a w kolejnym wpisie wspomniał o pretensjach ze strony imigrantów i wyjściu na orlik.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460583,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 62,
+   "prompt_tokens": 217,
+   "total_tokens": 279,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00527,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00527,
+    "upstream_inference_prompt_cost": 0.00217,
+    "upstream_inference_completions_cost": 0.0031
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

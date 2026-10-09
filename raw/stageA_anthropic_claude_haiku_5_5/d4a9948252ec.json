@@ -1,0 +1,87 @@
+{
+ "call_id": "d4a9948252ec",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-haiku-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1473592899
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.\n- zainteresowania: szydełkowanie swetrów, teleturnieje w telewizji, wnuki i ich zajęcia\n- lokalny punkt odniesienia: targowisko przy ulicy Szczecińskiej\n- aktualna sytuacja życiowa: Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.\n- sposób pisania: zdania: long run-on; interpunkcja: ellipsis everywhere; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: dodaje „co by nie mówić”\n\nTopic for this post: sport\nConcrete angle: rower, trasa weekendowa\nRegister: terse\nTarget length: about 21 words\nTime of day: afternoon, Saturday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - rano w aucie w korku słuchałam relacji z siatkówki w radiu i mega się wkręciłam, a potem zjechałam na osiedle i jeszcze chwilę siedziałam z synkiem na parkingu bo non stop pytał o te żółte autka 🙂 nwm czemu tak mi to dziś poprawiło humor!!\n  - wieczór a mały w końcu zasnął po 3 drzemce 🙄 chciałam sobie obejrzeć skoki narciarskie w tv a tu znowu jakieś powtórki i nic nie widać wgl... ktoś mi polecił inną transmisję? bd wdzięczna\n  - Krótka obserwacja: dziś rano na siłowni w Gdyni, zanim jeszcze większość ludzi wstała, w końcu wyciągnąłem na martwym ciągu swój nowy rekord (mam nadzieję, że to nie koniec progresu), a potem spokojnie poszedłem na kawę z palarni i wróciłem do pracy zdalnej o ósmej.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "abfedcfd3fbb3dfe391db2f25a9c7114ec72a316",
+ "response": {
+  "id": "gen-1791459772-u6ybmCSv88aaXQYyLRsY",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: sobota po obiedzie i już się szykuję na weekendową trasę rowerem... wnuczek obiecał że pojedzie ze mną nad rzekę jak tylko pogoda pozwoli, co by nie mówić to dla mnie już są wakacje... dziś tylko sprawdziłam prognozę i naładowałam telefon bo nowy smartfon znowu chce się wyłączać 🙂",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791459772,
+  "model": "anthropic/claude-haiku-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 144,
+   "prompt_tokens": 1286,
+   "total_tokens": 1430,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0002006,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0002006,
+    "upstream_inference_prompt_cost": 0.0001286,
+    "upstream_inference_completions_cost": 7.2e-05
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

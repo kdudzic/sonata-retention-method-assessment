@@ -1,0 +1,94 @@
+{
+ "call_id": "53b07d5b269e",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- szybki spacer zaliczony. młody wreszcie zasnął w wózku przy skwerze koło Żabki na Lipowej. wiatr trochę urywa głowę ale chociaż chwila ciszy na świeżym powietrzu. zaraz powrót do lekcji i prania. No cóż... idziemy dalej.\n- dzieci śpią a ja siedzę nad papierami. rata znowu w górę. wgl dramat z kasą w tym miesiącu. jeszcze dzisiaj komornik zapukał do drzwi i nwm z czego to zapłacimy... ręce opadają. No cóż... idziemy dalej.\n- wszystko się sypie. nie daję już rady po prostu. za dużo tego wszystkiego na raz i już nie mam siły nawet myśleć. ciemno za oknem i znowu sama z tym zostałam. No cóż... idziemy dalej.\n- kolejna rata znowu w górę. nwm jak to zepniemy w tym miesiącu. do tego mama znowu w szpitalu i wyniki wgl nie są dobre. leki kosztują majątek. dzieci już śpią a ja siedzę nad tymi papierami. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "c83c32e01ebcf5f342603ab616d72b5373df8fe7",
+ "response": {
+  "id": "gen-1791460090-7mQ9s57df4z3E0XzImRK",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autorka postów zajmowała się dziećmi i domem, a także mierzyła się z rosnącymi ratami, wizytą komornika, kosztami leków oraz pobytem matki w szpitalu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1+10otz1Ojz3WvhUNsHIvYR0LwkcaSKfvU9HaakgZiCCMTCHI18xT7CxMabPZzxymno3/1ck7doDoWdh/8PtUTLC7EFnSQnWQfxU5RnitNV5umv",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460090,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 49,
+   "prompt_tokens": 355,
+   "total_tokens": 404,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00045,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00045,
+    "upstream_inference_prompt_cost": 0.00026625,
+    "upstream_inference_completions_cost": 0.00018375
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

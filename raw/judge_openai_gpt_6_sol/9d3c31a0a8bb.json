@@ -1,0 +1,86 @@
+{
+ "call_id": "9d3c31a0a8bb",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Nauczycielka matematyki w szkole podstawowej w Zamościu, wstaje o 5:30, pisze wieczorem po sprawdzaniu zeszytów.\n- zainteresowania: chodzenie z kijkami, robienie przetworów, gry planszowe z siostrzenicami\n- lokalny punkt odniesienia: park przy Rynku Solnym w Zamościu\n- aktualna sytuacja życiowa: Przygotowuje klasę do sprawdzianu i jednocześnie urządza nową kuchnię w mieszkaniu.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: często dopisuje „jak to mówią moi uczniowie”\n\nPosts by this author (in order):\n1. Miał być szybki obiad przed spacerem z kijkami, weszłam o 13:20, a pomidorowa dotarła po 35 minutach, więc teraz patrzę na zegarek i zastanawiam się, czy zdążę zrobić choć krótszą trasę.\n2. Czy trzy minuty jazdy hulajnogą można zaliczyć jako dojazd? Po lekcjach chciałam tylko podjechać po próbki płytek, ale z teczką pełną kartkówek szłam potem pieszo i było mi wygodniej.\n3. Ojej. Miarka, którą rano mierzyłam szufladę, przejechała ze mną w koszyku aż pod szkołę.\n4. We wtorek o 11:40 sprawdziłam koszyk ze słoikami na przetwory i miło się zdziwiłam, bo komplet sześciu sztuk wyszedł o 12 złotych taniej.\n5. „Dzisiaj tylko odsunę lodówkę”, powiedziałam sobie w poniedziałek po południu, ale porządki przed montażem szafek szybko objęły pół kuchni, a zza lodówki wysunęła się zakrętka od zeszłorocznych ogórków, więc teraz siedzę zmęczona i z przyjemnością przeglądam miejsca na słoiki.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "7d0213f71dab27a01356a51a1be0c8f0695770b6",
+ "response": {
+  "id": "gen-1791462172-oVLmNg6bUaxcG4hmsabd",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 3,\n  \"natural_overall\": 4,\n  \"problems\": [\"Frequent verbal tic is absent\", \"Post 3 is much shorter than the usual style\"]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791462172,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 83,
+   "prompt_tokens": 750,
+   "total_tokens": 833,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00233,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00233,
+    "upstream_inference_prompt_cost": 0.0015,
+    "upstream_inference_completions_cost": 0.00083
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

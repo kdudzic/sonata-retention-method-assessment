@@ -1,0 +1,86 @@
+{
+ "call_id": "7301af154dba",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.\n- zainteresowania: fotografia uliczna, kolarstwo górskie, kawa z palarni\n- lokalny punkt odniesienia: skwer Kościuszki przy molo w Gdyni\n- aktualna sytuacja życiowa: Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete, dużo nawiasów; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Krótka obserwacja:”\n\nPosts by this author (in order):\n1. Krótka obserwacja: w niedzielnym trolejbusie (prawie pusto) kontrola weszła przy skwerze Kościuszki, a ja przez pół minuty szukałem biletu w aplikacji, bo telefon akurat postanowił się aktualizować (syn trzymał karton z lampą do gabinetu i tylko się uśmiechał), ale ostatecznie wszystko się zgadzało.\n2. Krótka obserwacja: kupiłem na promocji na Steamie trzy gry (w tym jedną strategię, na którą czekałem od dawna), a w nowym gabinecie wciąż nie mam biurka, więc pewnie zagram w nie dopiero wtedy, kiedy syn skończy składać ze mną regały, czyli za jakiś miesiąc.\n3. Krótka obserwacja: od kiedy biurko w nowym gabinecie stoi przy oknie (a nie w kącie salonu, jak przez ostatnie dwa lata), czwartkowe popołudnia mijają mi zdecydowanie szybciej, chociaż syn twierdzi, że to tylko kwestia lepszej kawy.\n4. Od poniedziałku zmienili rozkład i trolejbus, którym syn jeździł do szkoły (ten o 7:12, idealny), teraz odjeżdża o 7:05, więc albo wstajemy wcześniej, albo czekamy kolejne dwadzieścia minut na przystanku, a ja i tak mam o ósmej spotkanie (zdalnie, ale jednak), więc w nowym mieszkaniu poranki będą chyba jeszcze bardziej nerwowe, niż myślałem.\n5. Plan był taki, że w piątek wyjdę wcześniej (odrobione dwie godziny z wtorku), żeby skręcić szafki w gabinecie, ale właśnie przyszło spotkanie na piętnastą, więc kartony z synem chyba dopiero wieczorem.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "6cd4bee2bb3a34ae1c935101228fc0008dd3fa26",
+ "response": {
+  "id": "gen-1791461022-KnPqJk5C2pvYdAC96z6d",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":4,\"voice_stability\":4,\"tic_overuse\":true,\"repetitive_structure\":true,\"topic_variety\":3,\"natural_overall\":3,\"problems\":[\"Verbal tic feels mechanical in the first three posts\",\"Similar long, parenthetical sentence structure\",\"Frequent references to the office move\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461022,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 72,
+   "prompt_tokens": 876,
+   "total_tokens": 948,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002472,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002472,
+    "upstream_inference_prompt_cost": 0.001752,
+    "upstream_inference_completions_cost": 0.00072
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

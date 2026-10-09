@@ -1,0 +1,86 @@
+{
+ "call_id": "089bafffac07",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Nauczycielka matematyki w szkole podstawowej w Zamościu, wstaje o 5:30, pisze wieczorem po sprawdzaniu zeszytów.\n- zainteresowania: chodzenie z kijkami, robienie przetworów, gry planszowe z siostrzenicami\n- lokalny punkt odniesienia: park przy Rynku Solnym w Zamościu\n- aktualna sytuacja życiowa: Przygotowuje klasę do sprawdzianu i jednocześnie urządza nową kuchnię w mieszkaniu.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: często dopisuje „jak to mówią moi uczniowie”\n\nPosts by this author (in order):\n1. siedzę z kawą i składam koszyk w aplikacji, zniżki na słoikowe rzeczy aż 30 procent, jak to mówią moi uczniowie, to się opłaca, zapas przetworów zabezpieczony.\n2. Wyszłyśmy dzisiaj z siostrzanicami na orlik przy szkole i zagrałyśmy w piłkę jak to mówią moi uczniowie, mistrzostwa świata, w ogóle miałam nie iść po całym dniu sprawdzania klasówek, a wróciłam z przewrangą kolizją, czysty szczęście, że jeszcze pogoda dopisuje.\n3. Dziś upał aż mi się nie chce wracać na lekcje, jak to mówią moi uczniowie.\n4. Byłam dziś po pracy w markecie po drodze z parku przy Rynku Solnym i nie wierzę, że te same pomidory w puszce kosztują tam prawie dwa złote mniej niż u nas pod domem, jak to mówią moi uczniowie, muszę to przeliczyć na jednostki.\n5. Blistery do kuchenki miały dojść dziś przed południem, kurier ani nie zadzwonił, ani się nie pojawił, więc zamiast układać płytki z siostrzenicami w nowej kuchni czekam dalej i to jak to mówią moi uczniowie loteria jeszcze.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "cac0da197e201e466a0adb9f10622ddee2db327d",
+ "response": {
+  "id": "gen-1791461517-M5NJmXDXSJbLoKnDBAPi",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 2,\n  \"voice_stability\": 3,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 4,\n  \"natural_overall\": 2,\n  \"problems\": [\n    \"Verbal tic appears in every post\",\n    \"Repeated run-on structure feels mechanical\",\n    \"Capitalisation and spelling contradict the card\",\n    \"Several phrases sound unnatural in Polish\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461517,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 104,
+   "prompt_tokens": 768,
+   "total_tokens": 872,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002576,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002576,
+    "upstream_inference_prompt_cost": 0.001536,
+    "upstream_inference_completions_cost": 0.00104
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

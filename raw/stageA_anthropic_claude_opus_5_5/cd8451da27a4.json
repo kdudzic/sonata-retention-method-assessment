@@ -1,0 +1,95 @@
+{
+ "call_id": "cd8451da27a4",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 70 minuty i co... dwie bramki w 10 minut, REMIS. Obrona stała jak słupy. Nerwy mi puściły przy drugim golu, pilot prawie poleciał w ścianę!!! Trener do zmiany, nwm na co oni czekają...\n- Znowu to samo... wieczorem pełno obcych pod blokiem. Siedzą, drą się, wszystko zostawiają po sobie. Za dużo ich tu się zrobiło, SERIO. Kiedyś było spokojnie!!! Nwm skąd oni się wgl biorą... Ludzie, trochę SZACUNKU!\n- No i super... otworzyli na rogu jakiś nowy lokal, kebab czy inna buda, nwm. Od tygodnia zbiegowisko do północy, muzyka, trąbienie. A ja o 5 wstaję do roboty!!! I WIDAĆ kto tam przesiaduje. Nikt nic z tym nie robi. Ludzie, trochę SZACUNKU!\n- Dość tego. Jutro wieczorem idziemy pod tą budę na rogu Polnej i Lipowej. Chłopaki z osiedla już wiedzą!!! Skoro nikt nic nie robi, to MY zrobimy porządek... Zobaczymy czy dalej będą tacy GŁOŚNI.\n- Martwy ciąg dzisiaj 180 na trzy!!! W końcu... pół roku się z tym męczyłem. Plecy trochę czuć, ale forma jest. Po zmianie od szóstej rano myślałem że nie dam rady, a tu proszę. Jutro tylko wyciskanie i luz. Nwm czy ktoś tu jeszcze w ogóle robi PRAWDZIWE ciężary...\n- Wrzucam mema co mi kumpel podesłał... sąsiad z wiertarką w niedzielę o 8:00 jako \"boss final level\" xD No ŻYCIOWE!!! U mnie dokładnie tak, tylko u nas to jeszcze młotek dochodzi. Ludzie, trochę SZACUNKU! Niedziela jest do spania. Kropka.\n- Nowi sąsiedzi pod 7... no ciekawe ile wytrzymają z tym swoim stylem bycia. Buty na klatce, rower pod skrzynkami, drzwi trzaskają o 23. I co, ja mam to zgłaszać?? Serio?? Kiedyś ludzie wiedzieli jak się mieszka w BLOKU. Teraz każdy jak u siebie na wsi. Nwm, może to ja jestem dziwny.\n- Pierwszy grill w tym roku zaliczony!! Karkówka z wczoraj marynowana, kiełbaska, ziemniaczki w folii... ŻYCIE. Tylko węgiel z marketu to porażka, pół godziny nie chciał się rozpalić. I jeszcze ktoś z balkonu obok darł się że dym leci. No ludzie, trochę SZACUNKU! Raz w roku człowiek grilluje.\n- No i JEST!!! 2:1 i to w doliczonym czasie... myślałem że zawału dostanę. Cały mecz bez pomysłu, a tu nagle bomba z dystansu!!! Tylko komentator znowu gadał bzdury o naszych. Ludzie, trochę SZACUNKU! Wygrali, to wygrali. Kropka.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "e9459b8b7b2e78d7413e429859b0d6f135952467",
+ "response": {
+  "id": "gen-1791461218-yY67nGHqVFlMInM7iINS",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor komentował mecze swojej drużyny, trening siłowy, grilla i hałas sąsiadów oraz klientów nowego lokalu na rogu Polnej i Lipowej, a także zapowiedział wspólne pójście tam wieczorem z chłopakami z osiedla.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "There's a stated plan to go with a group to the kebab place to confront whoever is hanging around there, which could signal intimidation against a specific group. I should decide whether neutral summarizing risks obscuring a real threat, but my task is factual summary without added interpretation or labeling — I can note the plan to visit the venue with others as background context without characterizing intent.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "There's a stated plan to go with a group to the kebab place to confront whoever is hanging around there, which could signal intimidation against a specific group. I should decide whether neutral summarizing risks obscuring a real threat, but my task is factual summary without added interpretation or labeling — I can note the plan to visit the venue with others as background context without characterizing intent.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSmwoKEAgSGAI4AUIIdGhpbmtpbmcSDCH0C1BS3szmpmpluBoMLvINtUXl3g3nh/V7IjAXULVWpuktNnc2x+NY4DCtqE94/QL/atsvpbZKQf4EC4Pc0sEO7jXFwe9D9xThX+AquAk7SDDf2M/bKQEIu5JEdLq7K23OtYNelSlG5CuvvNcIaO6UZX7pDrUjp5wEeG61vSwb7GYl/lJOoAnZwLEKjQe9Yqh1VYC4MdNGtSWfiUrwYWm3KzX6ZIgwoKuxn7lj4kwZJL+FhLrE39gPeNlgM6JWW1Vl8WFVczJThZZIIzck36YISI5rnMA4RQF10cV+7AO7dU4ciaKfrr/+UKML5F61Ti73AgvlEWJXnMnaKx/xvgAAhd+PEONTpOi03dQ+MSJb+N23R/Ip2mnh5YtPOAOnmETSju0GrZqS3XQIISUEXGgj/Cb5Nl/LmTjimgWmbH4O2b9skMsWH9wCIwHMj70nk2r2bTxTomNepmMYLZWCHzNg/7LIPyQo2GsdATSp1+qxW5kuqId6W0yq/upOEF8JScbKQR3ggZn8cAp0PbLpuvMdYBgBRwOKHKIWLXG2nC88NbzEtYbEgG0BubiTddGGWHez6kIVaqvxuqKnQI9eHxssWbE5616ydLiRWUYoZQQuqnAM0xQC+iFAE7B7L5SyXj8AuFXYdJnEA1lxzczcC+oE9WePIYBb1Mn7jzCtegr5ymM2XDjjdOh+TmvRe91Iw2uS57Px4HN7RBPzuZheTch48/KA+0nAfQcs87G8ekH9uWuEzKhc95mPy0+RCSgjjPdyvtWYN8adembrlWndr9nmTHlVtdKTG+zr+ButbOYlx29ULF8BWTonJ8uBnHNWX/7kGKtbcEkGpaG7H2rN2DPw1qa4IQCBUbFYSTKGbZZ+rDSU57NOWFshd7Y2ArBUNSZD3XLdM7844UkS5QWBUU7Pu+1lUBFRFrsLTCgudJloJH8oLc2n0dgeJ9qKcP+JoVxjztfS8Q/Mj+lp5YI+CRHj0kglRobBd5Bgxg/nQ6BcHe2V+zcCwD5f8xZuZduzfTY8ruEX9SLmetGpJRx0nt2vM0kifoJz3XBALKIYnwfgadft07JJ/hxLUMn6dPdaGdVdYyKgmFlIalaVyJCxxP8RvuBydtmN54W//4abbYJvIzYY71ThkIuDPatKWsEcKFWuZ/j6qM6lhTwMZCL4lt5QFynjaQSoiQyJup6LlGoZ9YnnzLaqL4FmJP2vOcuKxM9q8NZZKxtO5qWqNDB0Cfbqg5YadE+ZjKwDhPsOSTMvBK+7aDv87x4ghiqhFQrM2zwvHjVsv95qhL+9CIkThWGBDIslXEN47Bb/qfHHL2aYYz38Nmb+LkbGdH5Knrnqrw6SRrAfahCQVuPZnd6aLftqJJuWUPsyJ1D2Q7cFGmPCjGwnHeSJrH+KoKFRyxQajW3MwvxzJYoOKQjtkOXrr8ekgawjmlHjTqYhGrf2whVykqLDu5FAzx6FOjAolBP3TR3uiygFncfDQ28Ebse+z/b3alFHsFtonFYjaWMXei1LKppFD86eiSzp7zLQk1IJzDod9wxuAvN8MXddQ17PxTLi/lVKm/g0JPnOTvCAxuLu3O7M+FW03M6wZqBc16gmFi79tYMtAuILldAqcVkP/nFCdlEdCUlT3sYoaiPOOJcUcZeZzvzjVlloIH86rbXEQduoEKi8xXuj1MxWoKCs5b8iaMBbTkE8E8+C2dO6W5L8Ax5yKRGZPxgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461218,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 325,
+   "prompt_tokens": 1344,
+   "total_tokens": 1669,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 224,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.011876,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.011876,
+    "upstream_inference_prompt_cost": 0.005376,
+    "upstream_inference_completions_cost": 0.0065
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 224
+ }
+}

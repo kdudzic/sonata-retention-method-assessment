@@ -1,0 +1,15 @@
+{
+ "model": "deepseek/deepseek-v4.1-flash",
+ "n_posts": 104,
+ "cost": 0.03220455700000001,
+ "calls": 133,
+ "prompt_tokens": 114315,
+ "completion_tokens": 7484,
+ "elapsed_s": 70.3,
+ "refusals": 0,
+ "empty": 0,
+ "errors": [],
+ "reasoning": {
+  "enabled": false
+ }
+}

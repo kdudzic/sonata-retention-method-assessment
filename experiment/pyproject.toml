@@ -1,0 +1,24 @@
+[project]
+name = "selex"
+version = "0.1.0"
+description = "EP-SKEL selection experiment: selectors, access variants, retention budgets, metrics (separate from corpus generation)"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.60",
+    "httpx>=0.27",
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "pyyaml>=6.0",
+    "tqdm>=4.66",
+    "scikit-learn>=1.5",
+    "scipy>=1.13",
+    "matplotlib>=3.8",
+    "tabulate>=0.9",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["selex"]

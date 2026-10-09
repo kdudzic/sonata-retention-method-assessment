@@ -1,0 +1,95 @@
+{
+ "call_id": "98aea7353894",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1992583342
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Nauczycielka matematyki w szkole podstawowej w Zamościu, wstaje o 5:30, pisze wieczorem po sprawdzaniu zeszytów.\n- zainteresowania: chodzenie z kijkami, robienie przetworów, gry planszowe z siostrzenicami\n- lokalny punkt odniesienia: park przy Rynku Solnym w Zamościu\n- aktualna sytuacja życiowa: Przygotowuje klasę do sprawdzianu i jednocześnie urządza nową kuchnię w mieszkaniu.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: często dopisuje „jak to mówią moi uczniowie”\n\nTopic for this post: drobne narzekanie na usługi\nConcrete angle: urząd, kolejka, numerek\nRegister: matter-of-fact\nTarget length: about 11 words\nTime of day: afternoon, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "02ed0b8d2dfcde95c6a5ccfca96aab838521ef39",
+ "response": {
+  "id": "gen-1791461580-MRwZY2su2rc3gM5PqjkN",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Mój numerek w urzędzie stoi i, jak to mówią moi uczniowie, jest zawiecha.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Understanding the Profile**\n\nI'm focusing on the request's core elements: the user's profile as a female primary school math teacher in Zamość. I'm noting the stylistic characteristics – long sentences with correct punctuation and capitalization – to better tailor my responses to their preferences. I'm working to extract the implications of this profile.\n\n\n**Refining the Sentence**\n\nI've crafted a draft: \"Mój numerek w urzędzie utknął w martwym punkcie, jak to mówią moi uczniowie.\" It hits the target length of about 11 words. I'm satisfied this captures the minor complaint and the specific angle, all while maintaining the user's stylistic preferences.\n\n\n**Analyzing Sentence Variations**\n\nI've been exploring alternative phrasings, striving for a polished blend of the original request's essence and the teacher's voice. I revised \"Czekam na mój numerek w urzędzie i, jak to mówią moi uczniowie, jest totalna nuda,\" and also explored using the more slangy, yet appropriate \"Mój numerek w urzędzie to kompletna zawiecha, jak to mówią moi uczniowie.\" The second one at 11 words appears strong, and I like how it sounds!\n\n\n**Exploring Sentence Complexity**\n\nI'm now investigating potential for more complex sentence structures while keeping the essence. While exploring longer phrasing, I'm examining how to maintain the core idea within the target word count, noting that I might need to make some sacrifices. I'm aiming for stylistic balance and I think I'm very close!\n\n\n**Refining Phrase Delivery**\n\nI'm now zeroing in on an 11-word version to hit the sweet spot. I'm considering \"Mój numerek w urzędzie utknął, bo, jak to mówią moi uczniowie, jest zawiecha\" and \"Mój numerek w urzędzie zaliczył lag, jak to mówią moi uczniowie.\" I like the implied humor. I'm exploring \"lag\" for a fresh take. I need something that feels right.\n\n\n**Finalizing Word Choice**\n\nI'm now satisfied! I've gone with \"Mój numerek w urzędzie stoi i, jak to mówią moi uczniowie, jest zawiecha.\" This hits 12 words and seems perfect, given the persona. It's concise, matter-of-fact, and captures the intended sentiment while respecting the profile details, and I can move on to the next section.\n\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Understanding the Profile**\n\nI'm focusing on the request's core elements: the user's profile as a female primary school math teacher in Zamość. I'm noting the stylistic characteristics – long sentences with correct punctuation and capitalization – to better tailor my responses to their preferences. I'm working to extract the implications of this profile.\n\n\n**Refining the Sentence**\n\nI've crafted a draft: \"Mój numerek w urzędzie utknął w martwym punkcie, jak to mówią moi uczniowie.\" It hits the target length of about 11 words. I'm satisfied this captures the minor complaint and the specific angle, all while maintaining the user's stylistic preferences.\n\n\n**Analyzing Sentence Variations**\n\nI've been exploring alternative phrasings, striving for a polished blend of the original request's essence and the teacher's voice. I revised \"Czekam na mój numerek w urzędzie i, jak to mówią moi uczniowie, jest totalna nuda,\" and also explored using the more slangy, yet appropriate \"Mój numerek w urzędzie to kompletna zawiecha, jak to mówią moi uczniowie.\" The second one at 11 words appears strong, and I like how it sounds!\n\n\n**Exploring Sentence Complexity**\n\nI'm now investigating potential for more complex sentence structures while keeping the essence. While exploring longer phrasing, I'm examining how to maintain the core idea within the target word count, noting that I might need to make some sacrifices. I'm aiming for stylistic balance and I think I'm very close!\n\n\n**Refining Phrase Delivery**\n\nI'm now zeroing in on an 11-word version to hit the sweet spot. I'm considering \"Mój numerek w urzędzie utknął, bo, jak to mówią moi uczniowie, jest zawiecha\" and \"Mój numerek w urzędzie zaliczył lag, jak to mówią moi uczniowie.\" I like the implied humor. I'm exploring \"lag\" for a fresh take. I need something that feels right.\n\n\n**Finalizing Word Choice**\n\nI'm now satisfied! I've gone with \"Mój numerek w urzędzie stoi i, jak to mówią moi uczniowie, jest zawiecha.\" This hits 12 words and seems perfect, given the persona. It's concise, matter-of-fact, and captures the intended sentiment while respecting the profile details, and I can move on to the next section.\n\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461580,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1721,
+   "prompt_tokens": 655,
+   "total_tokens": 2376,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 1695,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006945,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006945,
+    "upstream_inference_prompt_cost": 0.00049125,
+    "upstream_inference_completions_cost": 0.00645375
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 1695
+ }
+}

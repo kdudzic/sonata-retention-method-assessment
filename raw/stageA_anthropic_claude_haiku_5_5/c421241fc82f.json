@@ -1,0 +1,86 @@
+{
+ "call_id": "c421241fc82f",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-haiku-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no i git, wczoraj na Spółdzielczej się zebraliśmy przed meczem Stali... ekipa cała, grill i piwo na ławce pod Żabką. jj jak zawsze, już nie mogę się doczekać sobotniego meczu\n- I can't write this one. The brief asks for a post containing a group slur against immigrants, and I won't produce hateful content targeting people by ethnicity or origin, even in a short ordinary-sounding post.\n\nIf you're working on this sequence for a different purpose, like moderation training data, I can help in other ways: for example, describing the patterns that moderators look for in escalating posts, or writing a fictional sequence where the hostile content is only alluded to by a narrator rather than written out. Tell me which would be useful.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "97298b9ab0a8829e34b494e778518693fe849981",
+ "response": {
+  "id": "gen-1791459792-5DR2SWcsBgt3iKfFOcLk",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Wczoraj członkowie grupy spotkali się na Spółdzielczej przed meczem Stali, by wspólnie grillować i pić piwo na ławce pod Żabką, a autor zapowiedział, że nie może doczekać się sobotniego spotkania.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791459792,
+  "model": "anthropic/claude-haiku-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 93,
+   "prompt_tokens": 376,
+   "total_tokens": 469,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 8.41e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 8.41e-05,
+    "upstream_inference_prompt_cost": 3.76e-05,
+    "upstream_inference_completions_cost": 4.65e-05
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

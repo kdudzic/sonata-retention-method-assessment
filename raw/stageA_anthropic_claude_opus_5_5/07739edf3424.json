@@ -1,0 +1,95 @@
+{
+ "call_id": "07739edf3424",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- sobota w końcu. spacer po parku z młodszą bo starszy wolał zostać z tatą i grać... potem jeszcze chwila na placu zabaw za blokiem. słońce było ładne. jutro piekę drożdżowe jak mi ciasto wyrośnie. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "bd1c234d1f76d15d38eae73f6d675081d12fe082",
+ "response": {
+  "id": "gen-1791460571-XtiSexwWbo3ex1o2fqDd",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W sobotę osoba poszła na spacer do parku i na plac zabaw z młodszym dzieckiem, podczas gdy starsze zostało w domu z tatą, a na następny dzień zaplanowała pieczenie ciasta drożdżowego.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "So it was Saturday - a park walk with the younger one while the older stayed home playing with dad, then the playground behind the building in nice sunny weather. I'm also thinking about baking a yeast cake tomorrow.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "So it was Saturday - a park walk with the younger one while the older stayed home playing with dad, then the playground behind the building in nice sunny weather. I'm also thinking about baking a yeast cake tomorrow.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS+gUKEAgSGAI4AUIIdGhpbmtpbmcSDBC0rNcWUXqs6b769hoMN6mi1wB6bUTh/mdhIjAiqfW5KJCWerwnXAHADAo6dssFXWoCHfUIWhDzkg33E9w3nW6vnP3OcixWxrESW2AqlwWfUbpkBvyn23jwXEVnFVFlRbhtzOFyGBu3HvrhT6mON8Undd4w0kzYnRpq5EvV3EH+pg5beXItvFo3GOeOKnY+8DYpicJlwtTXlw5whQOuLjNMzvSkvAi9SUg9WdhMWsZRmP5uXA2xjBXFkKCJpzVEb3MvCqQwkrwyu0YCB21cAV1JghDwdtgPXs1O1+FxSdAVnjweHMJn2PsaLdhI4M6AWYRWGNfP53qoYidaX6l4P+rVvXsG+XO330NGhImTtpkmVoeFY/y1DdeXnOIzuiyemCW7cA2ZjvyAwu0t4ntLSxcPOFWlAghU3uXYOsmvaE6Dr/bKlnSdwMDUpqvsi5SIPHODjj1gfrCUZqTmaAZTOl96qyztEJtExeW5dztfXIhf1ZKYyRQ9enZj1BV8mlCte848PSR4+q2BaMMbasZujnGBgj0MUtPfJCNZEGNUwxtTeew6JMb3HUcC28ALuhYc5OXWaI4WfwHlB1isflAsIAvkZ6j5KhdGO9fwx7PCD5DhO9QpAkMRoVWwFcsJt/BUUo9ffJF5se3gK3WouO4fB2/VFtAm6GtTDp2Zq8HmFDg6CRRu9Z+dAG2sR2IVe8C3Sc+Hv9lcsMJuj3+tnMGSIu4OHW2ffJkfs/Ly0HKz+piUGKtn5zWL/2+EhjbUPaoOAWlWkRVursS89w5EHHerSLQ3U6fw16484OpBAhdpuBZMqUEuBwJOEZcc40upQvWMDkPCk0sdlW++BjoIcBOsQi0KuKJkOrYmvqqxrqBO+aINABZaAjlIaiJ65HblCCUJQ2JTY+gZZiv76wIh/v5c5EGYoiGmzE6jFfZbywESw8jU7XPRlO+27jpddzJ85Fk7iKQnaZiqtRXtqqau/H946g1abxTbTuEYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460571,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 147,
+   "prompt_tokens": 235,
+   "total_tokens": 382,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 58,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00388,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00388,
+    "upstream_inference_prompt_cost": 0.00094,
+    "upstream_inference_completions_cost": 0.00294
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 58
+ }
+}

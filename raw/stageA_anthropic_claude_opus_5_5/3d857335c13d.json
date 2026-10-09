@@ -1,0 +1,94 @@
+{
+ "call_id": "3d857335c13d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?!! 1:2 w doliczonym czasie... Prowadzimy od 30 minuty i na koniec obrona śpi. Bramkarz stoi jak słup. Siedziałem po treningu z piwem bezalkoholowym i mało pilota nie rozwaliłem!!! Ludzie, trochę SZACUNKU dla kibiców. Takie granie to nwm co to jest wgl...\n- Znowu pod kontenerami za czternastką cały syf. Kanapa, worki, jakieś opony...\n- \n- \n- Dzisiaj w Żelaznej Formie martwy ciąg 180 na trzy razy!!! W końcu... Tylko znowu ktoś zostawił talerze porozrzucane przy ławce i hantle na podłodze. Odłożyć to po sobie tak ciężko?? Ludzie, trochę SZACUNKU! Jutro klata, jak kolano pozwoli.\n- Wrzucam mema co mi kumpel z pracy podesłał... „Poziom trudności: wrzucić worek DO kontenera, a\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "39feb48237abe32cf1fd2cc4bbddf7e8291bd371",
+ "response": {
+  "id": "gen-1791459997-31RJN7ExxHiPYE930uSX",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need a neutral Polish sentence, past tense, under 35 words, covering: watching a football match after training that ended in a 1:2 loss in added time, spotting rubbish near the containers behind building 14, and doing deadlifts at 180kg for three reps at Żelazna Forma gym while noting scattered equipment.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQStwcKEAgSGAI4AUIIdGhpbmtpbmcSDPtHaEuZjG7JBfUsXxoMbY/nYWVawYXcc9w7IjDVguUZEshwU2PozTLk5iqL9jL45QD24hypD5frIO/DWeVOfid0doyLHu10sZiVPGkq1Aajj5A6SH7Unbvoi/5Noy07mOU4QwGkkszkLz6UKzs56ZpTmM/GdjlY1k0V6Yt5WjPMmHXNMacp3KHMINiRJy/1339I9JOU1Puyoi1sLlL5PATjuMUiAvotYMpTl4g3HRWTwCLpQJtn9AuvxiHXwzWMgGjDeJvvGMXzLYj2QVzrLhIB2RmzsW3XFAwBcuVELygnuodcaA/goYVScQeJKHDvvjnfw1Bbh1nr3XPcyffTTaEg/CaqctZp5ngMfCDVTZ2/q69lmFBYa0YhObTi7gqRi15/3tpUhkzvKPHVEe8KbRJrgbYjM4BXvyZ/GcILDBXet4HDyUjX9ZW6jSaEbQnl/NqWoEFZsP45nx6qBPO8GBIfqObX3ZLCv9u7cPIG21byy8ZwoOcwXvSz//P0ZMs/6CpiCT7zKypeIfjNKMavUG82NThN/wystoN5SwMo9GrCjx1ohLb7tE5DB08W1Hsutw89CMwvAktRETVAVgpqSvZWQVc6DUZWScMG749iru2Mv78YbUm8tpMjOIQDAosoDTEPWQuhiLnawSkqf8dPcBko69VWaqLABjbWbg43UIn50n2c573ifU75upbs5pYgq9tHdqdaVidnGAPJI7HpWz1VArbEBFdKsb/2dppd1Em5awteIQhLed9QQhPXSfGkYGY3lwE6pnR3bFrDN426lBxdKJw4hzzUPitO7GkFG8gZGjtpYeF4djtI37q6FFk1TmPffzwLYcQu/suC7+y9CD+9c+RltbTTh1TyAq/zbkWI1jcbk/0CDztA4QRvNajyCDDYnecoBa9rdabcm9djfuRoE+faI6U4GU3/4XrDCZblYTybhGvA4LttN+dVI5RECqntjXkGzLv5mN93tCm00fhHVzigMKkyHk93wGeSnjQNfACKmIWl425ihYUUpOMittniHU8+fi1w7sy31cBUHpmILQnBqPwQb6kZyS5N3aVw8Q8qv9Yso3k0dst8hsMhKbTZd0iTkXvH5RFFMjeLIOf7u8+Q8h7+k/fqWVYI4MEbpHFG+5U8/1FnCTA1DupUFvM4gq4Tjzihl4C5ZWEy8fmUafjDnuM2rCK/XjkqU/hY2V1qYQDN/2TZk7c7IX0RxModIftqB79SEq4dkJT2wZERfWgYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459997,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 500,
+   "total_tokens": 620,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0044,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0044,
+    "upstream_inference_prompt_cost": 0.002,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

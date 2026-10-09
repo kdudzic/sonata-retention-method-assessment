@@ -1,0 +1,94 @@
+{
+ "call_id": "077f935028c1",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dopiero teraz wrzucam nasze zdjęcie ze spaceru. Wyciągnęłam młodszą na chwilę do parku. Po drodze oczywiście plac zabaw za blokiem... Miało być jedno kółko przed kolacją. Skończyło się na huśtawce i zbieraniu patyków.\n- Dzieci już śpią. Usiadłam do rachunków i nwm z czego to wszystko zapłacić. Po wizycie komornika jeszcze trudniej mi się pozbierać. Pracuję cały miesiąc. A potem rata i opłaty zjadają wszystko. Na zakupy znowu trzeba pożyczyć. No cóż... idziemy dalej.\n- Cały dzień coś ode mnie. Jeszcze to. Jeszcze tamto. A ja już nie daję rady. Jestem tak zmęczona że nawet nie umiem powiedzieć czym najbardziej. Siedzę z telefonem i nwm co napisać. No cóż... idziemy dalej.\n- Dzieci już śpią. Usiadłam porównać oferty przeniesienia kredytu. Niby taniej ale wszędzie jakieś dodatkowe opłaty. Mama dalej choruje. Rozmawiałyśmy chwilę przez telefon. Jutro po pracy zawiozę jej zupę. No cóż... idziemy dalej.\n- Usiadłam na chwilę i już nie mam siły wstać. Cały dzień odhaczam kolejne rzeczy. Wieczorem zostaje tylko zmęczenie. Nie widzę sensu w tym ciągłym spinaniu się. Ile bym nie zrobiła to i tak za mało...\n- Rozmawiamy po cichu kiedy dzieci już śpią. Może lepiej im będzie z nami tam niż tu bez nas... Jednego jestem pewna. Nie zostawię Stasia. Nie umiem sobie tego nawet wyobrazić.\n- Dopiero usiadłam z telefonem. Dzieci już śpią. Upiekłam jabłecznik na jutro ale kawałek zjadłam jeszcze ciepły. Trochę krzywy wyszedł... w smaku dobry. Komentarze zostawiam na jutro. Dziś już tylko herbata i spać.\n- Rano słońce a po pracy już deszcz i zimny wiatr. Wyszłam bez parasola oczywiście... Dzieci jeszcze chciały na plac za blokiem ale zaraz same zawróciły. Teraz słyszę jak leje o parapet. Oby jutro było trochę cieplej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "dd9bf9a33f92e92d06fa281b4673a769e9f96c98",
+ "response": {
+  "id": "gen-1791460048-xQzOPJhxaag9Byxm9bZt",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4LVJ9sVy__eW8BE1RsXp-oEkIPL27nyTxwavzBxZs-jsyE9GTix7ZAq6QPiWLqu5hyQpT9rATF10iWqOTk9Ur_M7LCq9ixBOXGxtttLSY7F6W7jVMm__nZnGkk3suQGfAaORDhX3Va1hwxrDHSPUGUFraCe-sSerMy29XY8uRKL1IhyErpxF3l5bztV8BM5MPTePOTW2IoM90hilXcjDavrd4p3KZAaUdHBj0hh95RggRVuZyJ3ouHMHKKUXTNGloH7v_DBvsiqvV6ZmFacjlMSylpscPYGmMjl_AxQ17zsB7dDqi6fkIo3R5iq9MJK36d6LUPSwTDvsQ7boD1d9yayfGBvfEG7rH2SQ77_hrqTOyI3w9nT7km8ZvkZsYJTcugiY0ICg9nRLPT8tOCICqqOMnFHNJEefpRmHhTgzc7SrkBhRjWkc_xlGhUgyulJElTkAWIDRzNw1GLInbdk-RMQNiqDZCv1vUzdoV-_42351IHCV59vcXcmSOhtyWfh6-Z1N3q_u1RFiOsOzaK756Rt5LYYvtq_8mabm0W2nUQLeZm1x7fTzCseC2GyNPj_dvktUI3P2dpK1-Az87KjjE6h8MpJnroioNoLZHsAjAI-H3X26ip7ITV6sYJggFp7o6GX6t-ROa64elVkRIPn4etnLWH9N2IpG7ZxVwrlXkQISWxWc3-S8ZKHu-Ddq9bvNuwdoIChVbGBK_Hi9Y84CuD_ZyWEfvIQwCjMZel7d-FVHQPxCWdpXS6NnPsoexuuko0mLz0J7iXke-c3ru02wqL9xBGM2tkeGFOTgAd2A7kb-mlsL6aqdhqKacsdcdkmAuBbpkHYL-kE0uMg08l1bkNrQQqALksH0IJ056C-vjk2vTHjD9ZnhMvPsGGVWopRB8aEOwnQTH90djbmIKKZP_ReR-DQfnVTMau9lBcnKG1wOvusN_HDyp0fRLooiETJ02FnvVAFwMB9dhk1R8A6_jk8rIXUyHxcTXhwvLwIZSHmai4MzGWVVMyEx3dTIm0cYlUKS8pDbrbSVEViQjaQCfAbOWkMLjkZALKW3jP3zPej7EzFba-w23wcEoCrqL5i8mCAP03ppajNna_5D_9zMIdCqP2ICllDNttlJIQ4m6HWJiHt3szuXbRGsffsfQhtNTRtlqhiYyuY38T4WsZ5RtaDQnicR1x_uxRwGo3xvwriDsqpeR6-KQ__R2q5-DUGkPWc5waLeF566Tvp7mfOOaPON4jX1z0UBXG4UUCEA3TuCjyhW51BJVPSf3sVaE1Wrsa2qjt4uQu1yqyLENPTDXzcxsauQf7WRz9d2PuFtspdT5YSdWXtIgrWtPub0Z2iNdZUKbOAOtnWN_QMlmoaYI7k5TH5KinIBnsckAWjN0bfmgdR9fQySn0hO2JJc2BeSTGCKl3u-uoU0rGfEN_2DJ-7uduk0_DTC9ulhGeM6eTRXqH2ZI2EsMRSGvD8lWHypUWeE_wdk-8dS37CbU3jEAksyffogZVt7u-FAl8MNuWfiQ8oohbXPtQrlRbmU2pMrYQvWLD4Lxz9MxuQGh5ilQBczxlAajSpexMpWDnpmhI7ruUTWsISaWqrYcJGQVnnyfJjYrLsZHoHS6gAcwLEWeBAQ3_1rAmjkacMkhfK_Ne7W761qeN75LfS2fl2NTfQsK6YXHPZgoOqktMj8OQRIVtclKZqOM4uEGuwvwa-nCYMQkp8oww4KWT_QarSRTERqp1KRSII3j4uvkOaE7G3bsODoMUT8p4IVxhqDybRlETCMWCpf_1B0xvusBR2DMyKBDL45_UDCB7z5GsDxMYZJ33WgMjDl3UkqnVfqcEcQhxE2LflF0ehDDngKdTXB0zixfjkTGRK6Gma8g4ftHD6DGkQZQirBS0oOgJ2eGB1cwAr5zl7o7XNg-ZSbogEVTXdttf8.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0cc1e01f6f473ed8016ac782d2bccc87d191b6e1ba23f7e078",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460048,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 650,
+   "total_tokens": 770,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0125,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0125,
+    "upstream_inference_prompt_cost": 0.0065,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 120
+ }
+}

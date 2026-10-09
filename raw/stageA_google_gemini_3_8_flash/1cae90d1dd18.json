@@ -1,0 +1,94 @@
+{
+ "call_id": "1cae90d1dd18",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie o to chodzi... zbiorka normalnie o 17 pod zabka na spodzielczej i lecimy na stal bo dzis musza to wygrac stary. ogarniamy jakis transport czy z buta na stadion... wazne ze 3 punkty maja byc i git!\n- no wlasnie wracam z roboty i znowu to samo... pelno tych ciapatych sie kreci pod blokami i tylko laza bez celu stary. czlowiek tyra caly dzien na magazynie a oni tu wgl nie pasuja... zenada jakas sie robi na miescie\n- no wlasnie widze co otworzyli na rogu kolo spoldzielczej... ukrowy sklep zrobili stary zamiast normalnego. z roboty ide a tam juz pelno ich stoi przed wejsciem... nwm co o tym myslec wgl\n- ahaha znowu nadgodziny dowalili na magazynie... rece mi odpadaja od tych palet stary ale chociaz premia wpadnie na weekend. zaraz zawijam na chate i piwko przed tv no i git ogarniamy temat\n- no wlasnie o tym mowie stary... niech kurwy spierdalaja do siebie i tyle w temacie bo juz sluchac sie tego nie da na rejonie. my tu swoje ogarniamy no i git!\n- ahaha nie moge z tego mema... typ wyglada kropka w kropke jak sasiad z parteru co sie wiecznie pruje o pilke na orliku stary. no i git jutro piateczek to jakos to ogarniamy w koncu\n- no wlasnie tak wiem... jutro wieczorem stary. te chujki w koncu przeprosza za wolyn bo juz za duzo sobie pozwalaja... zbiorka normalnie i ogarniamy temat\n- ahaha no i git... zjechane z magazynu w koncu i kielba juz skwierczy za blokiem. kto ma ochote niech wbija stary bo ogarniamy grilla na spokojnie dzisiaj... browar w rece i wyjebane na caly ten tydzien w robocie\n- no wlasnie o tym mowie stary... wychodzisz pod zabke a tu znowu pelno tych nowych sie kreci i patrza jakby to bylo ich... nwm skad sie nagle wzieli ale wkurwia to juz powoli wszystkich na osiedlu... no i git ogarniamy swoje ale ile mozna\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "22dfa967a66630a23066aeed716ea85a4198dbbd",
+ "response": {
+  "id": "gen-1791460764-O1gFfiMeqgyyUHHhcXJs",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor postów pracował na magazynie, spędzał czas wolny na osiedlu przy grillu, chodził na mecze oraz komentował zmiany i osoby pojawiające się w jego okolicy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "Eq0ECqoEAWkUfROp1XXCjKMBFiAlifv7lDjyPVHTW6T40B0Odx63sGLKrZ2qe2QqSRYc+sPkkQnmB9GnLhENUEGFOKlvniUgl5Wuu9OeQ7VpuB3OX1Sq3igm29krr2f8bWWXo7gOIt63y1bqoKEhVmX6r4h6KbKl0wOfKv98QVOAGjuI62JEf1F8N4QtP5JM1ZzS29F3eGqX6IT1aYhvxSJBQ2BPiLIesx62okiCRPXJ45rEzTXrdudEjRYEO2zBMDCTgzGtXZt6OQnklL3NNuCB81pQUgmRLHTZpaW9eI1Py81fWnOMJC9XEuJq3El4PAz3F7X4H8zcLerzUy1x2y46xZ9qRf76cUrPm1BFESnc+EDoiclQxqumufjr+efZd1XmnFMIZIl4l39HL3meACuPxcWgbNqE739Y1xOXflzrazZHca9z+uCv4BHtV7UVl0YeheWNsj/qOPzkotjD5xPifNU6ZGcFWXJ1SRwK0K0KCfkau8D2cBbGsp3YkYdfep83jb5GBSgM04z19WrCTQ96riFVK4glXkB5CLcaZ+KcE3Yscz90bkPqZdY+ttJGavO+dUdcq4Xnpt60r0Gx7W2pnQRQu2rimmnovtn3W/ugp+jQK4V4U7RVdV5K8rXROzQjQDRLt2/0NR+XfnB2P6qmsK3xpz8yrd/kjBnum2KnjUs+hWnAPoQxnXcr315J1rJatU19rM+W9bRMmkpRsFGkun5QWJ8g86bD6AetgN0=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460764,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 119,
+   "prompt_tokens": 648,
+   "total_tokens": 767,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 76,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00093225,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00093225,
+    "upstream_inference_prompt_cost": 0.000486,
+    "upstream_inference_completions_cost": 0.00044625
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 76
+ }
+}

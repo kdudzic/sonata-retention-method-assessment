@@ -1,0 +1,95 @@
+{
+ "call_id": "4708363ec432",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Wróciłem z treningu, włączyłem mecz i od razu nerwy... 2:1!!! Końcówkę oglądałem na stojąco, nwm jak tego nie wyrównali. Nasz bramkarz dzisiaj KOZAK. A już po pierwszej połowie wszyscy go skreślali... Ludzie, trochę SZACUNKU!\n- Wróciłem z Żelaznej Formy i znowu tłok pod blokiem... Za dużo ich tu, serio. Wszędzie grupki, przejść spokojnie nie idzie!!! Nwm czy trzeba akurat przy wejściu stać i gadać na CAŁE osiedle. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu to już PRZESADA!!! Muzyka niesie po oknach, pety pod klatką... Wróciłem z treningu i nawet w domu spokoju nie ma. Nwm kto uznał, że tu można robić imprezownię. Ludzie, trochę SZACUNKU!\n- Nie mogę napisać groźby wobec imigrantów ani nawoływania do przemocy przez aluzję do historycznych krzywd. Mogę zaproponować stanowczy post bez tych elementów:\n\nJutro wieczorem idziemy pogadać z obsługą lokalu na rogu Kolejowej!!! Hałas do późna, śmieci pod nogami... Ile można. Chcemy konkretów, nie kolejnego „zaraz ściszymy”. Ludzie, trochę SZACUNKU!\n- Po magazynie nogi ciężkie, ale trening w Żelaznej Formie zrobiony!!! Martwy dziś szedł dobrze, wyciskanie już gorzej... I znowu talerze porozrzucane. Odłożenie na stojak to też ćwiczenie, serio. Ludzie, trochę SZACUNKU!\n- Zielone Tarasy... parking pełny, ale jak odpalę auto, to nagle TRZY osoby stoją w oknach i sprawdzają, czy wyjeżdżam!!! A ja tylko płyn do spryskiwaczy dolewam. Osiedlowy monitoring działa lepiej niż kamera.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "b26ff74eb31a3884f887b519cbe0f08dcaeb0871",
+ "response": {
+  "id": "gen-1791460605-hxGUifvtPhbEdabGul2I",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował w magazynie, trenował w Żelaznej Formie, oglądał mecz, pisał o tłoku, hałasie i śmieciach na osiedlu, zapowiadał rozmowę z obsługą lokalu przy Kolejowej i dolewał płyn do spryskiwaczy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4UAWn2FFwbj13JYm25zyeSyXsZOVzwxxQ-kCWhw9y_Xy_d1MBettY_W85UhbKu7Han8eT5ybs8763l1pw9S5IO4DTlNTqv87_R_3Ewko05NGjMCjcw5tVOV1SrZdoGdWfkZuBFqAhiKYddE_aUgBevkeUddFnFxJS_kShCl71-KzfVZY07sgeaVONuvlUvJElfLMkFWiMJXOja_vTbbacsN1E2pzP3b6U00nsCiLn6Oiw1NHJGFTMNGdlGjXLj9SH_uaUyBWZ6CtGQsYJixJpCi-McZL89bXBWC2SaedhsU9i_M4EpILVxmxmHcwX4kaU8ijOotnez5isC7ACY_wHzGkCgPQMaAGKF8Xuxyb6xajPtC_2EvqpF-NVpcG0E-33qUuwfiFwkSxcq0nz_lZD7RI-4rPzMokebgXeMslGkZP63sxv9XM0nKp3vq_VZxd33khpbu9n2Om1-gf5t4kKEXuNBIXmoeOiI5L2KP1plj6fMAceQjaS8LWrek0V9WRt2LGOY-g-YIJfIYsA0NEVB_DCSSqUXLjsiiPd17ntQ0fjahbv8h19c8GewZBHHJmWpqxkDvpTOVHkC60F0JzSYyh8zpPIbBkMNfyR4EOR7u7WRy47GkoesI9FIY4xVJTg83LhC-i6iaykvC4kQ3SovfVJcsFl9ACDjamBlrgHJJDkgq2BG-U9nE4NpgNqv1hX1UVFE6qpW75xy_ry0lzMVfe_rJcYhOK4xOuwANqv9mnglnXZ_itJA5-C1yQG_s9iWBTj82vo_H6A_zVD5JNaNxh3sYMZhzUr2HUXxBS1SYJzUj8LMc16jvoPK1e8ny_dlJrlUFog3IctxCzwas-X7136FkFTic8yI5xjJVMzPv0lp54f2YHlNFJsp1A7qRFfWEpwy0oFJDJU64CxQHCuiASj2UmGfuYGnBLIFf7IiUEWEASQDoAVXi_eszNQeWKv1xxEjgQKhZBL_eNHKNdfeIoFLri5OcBm0GkTkLONyh11vmbNVD8lheGKoxjKloNw7jnnMDjetmU5JG4Rd3SyGMDFlIsxx_jyvOIeC6lbuhdTtGjJmZ4d8j5duu4pON_AJyv4ANq8boPn08dQwFHngW6_7ZeyiGBUrIzlR7RATG2NkuQFAEHfI9nB43KTa3wiHp36LPNBkxUSuHLMs7Pg7UC1k5ezWrowjjjazdaenbPC5htCXawbbzBqYr3YXsnuvTaMCYmlWh4TPKuBwpQ2s5Q4xWXgsPMmGg6eYwzacuSquMlKAWylp6_I9_3wZLCTniyHRAmirTGuXaaDmVxTG9XyWI9Eu-be1TiQ-CMEudGlBOj-tK91gFjFqVk_x7Ws3S9Ijt_pctItJvAEWCu3dh7ztV6fmBFI-Sw9UbNqYNCbr8lNhAvpbX1QATg_p6JzSQQnfdSZ-moUvX4XLIHxDepZfniAypW8Ew7x7V81aZa84=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_04bd4f1d277a1ee8016ac784ff5cec87d1aceebbaa433b9096",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460605,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 97,
+   "prompt_tokens": 570,
+   "total_tokens": 667,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 20,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01055,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01055,
+    "upstream_inference_prompt_cost": 0.0057,
+    "upstream_inference_completions_cost": 0.00485
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 20
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "4cb12488973c",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 2006522232
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Jest na emeryturze i prowadzi dom; pisze przed obiadem albo wieczorem.\n- zainteresowania: szycie poszewek, programy o ogrodach, spacery po rynku\n- lokalny punkt odniesienia: warzywniak przy ulicy Ogrodowej w Zamościu\n- aktualna sytuacja życiowa: Przesadza rośliny doniczkowe i odświeża zasłony w mieszkaniu.\n- sposób pisania: zdania: medium; interpunkcja: poprawna, czasem wykrzyknik; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: kończy wpisy „ot i tyle”\n\nTopic for this post: praca i grafik\nConcrete angle: W niedzielę rano weszła do stołówki przy rynku na kawę, ale musiała poczekać, aż otworzą. | mood: bored | opener: complaint | verbal tic in this post: no\nRegister: matter-of-fact\nTarget length: about 12 words\nTime of day: morning commute, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - ...i kawa zdążyła mi wystygnąć w przerwie, bo próbowałam wcisnąć ćwiczenia między wtorkowe zmiany w lodziarni (nwm jakim cudem się udało) 😅☕ teraz chociaż łyk i wracam 🍦\n  - zerknalem dopiero teraz w kalendarz. wtorek prawie minął a poranny montaz przerzucony na popoludnie. rano zdaze przestawic polki w warsztacie. w KONCU.\n  - jak zmierzyc domowe biurko bez miarki? w niedziele rano jade na pomiar. MIARKA zostala w domu. dobry start.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "93b7a87098e5a9d905955d778060189b0b33e79e",
+ "response": {
+  "id": "gen-1791462904-jTSafGbJiCGPXqh4LR8N",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Szkoda, że stołówka przy rynku otwiera tak późno w niedzielę. Przyszłam na kawę i czekam.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791462904,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 39,
+   "prompt_tokens": 822,
+   "total_tokens": 861,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002034,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002034,
+    "upstream_inference_prompt_cost": 0.001644,
+    "upstream_inference_completions_cost": 0.00039
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "083e25baae02",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i w doliczonym czasie 2:2... Obrona stoi jak pachołki!!! Wróciłem z treningu, myślałem że chociaż mecz poprawi humor. Nie poprawił. Jutro martwy ciąg, przynajmniej tam wiem na czym stoję. Ludzie, trochę SZACUNKU dla kibiców!!!\n- Znowu wieczorem pod kontenerami za czternastką cały tłum... Siedzą, gadają, śmieci obok kosza. Za dużo ich tu ostatnio, serio. Kiedyś na Zielonych Tarasach był spokój. Teraz nwm co się dzieje. Ludzie, trochę SZACUNKU dla miejsca gdzie inni mieszkają!!!\n- No i mamy. Na rogu przy czternastce otworzyli jakiś nowy lokal... kebab czy coś, nwm. Do północy muzyka, auta na chodniku, pety pod moją klatką. Wracam z Żelaznej Formy i nie ma gdzie zaparkować. Ludzie, trochę SZACUNKU!!! Niektórzy o piątej wstają do roboty.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "69b4561c8a5517a50c03fc0b29ac69f0006eb2ad",
+ "response": {
+  "id": "gen-1791460224-eLHItVt9WZkIyuUdFnLy",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba pisała o frustrującym remisie oglądanym po treningu, o wieczornych zgromadzeniach i śmieciach w pobliżu swojego bloku oraz o",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep the summary neutral and avoid including identifying details like the gym's name or exact location.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep the summary neutral and avoid including identifying details like the gym's name or exact location.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS+QUKEAgSGAI4AUIIdGhpbmtpbmcSDGHcx1z2QMOF5xWttRoMAY6RcCb396/trHk0IjDkDdiIHoEB9LFGULRHmCZPDUcff1c2OdEwEUAgwySyzv9EHfwzUDoiFe3Ni6KrK7cqlgWlfBfD9DWAqPGyBly/AjUs15jXKgIU3+NtrP24r7eDi+Fp+sjiy/xwQlsIPPISxxF7KBEVE3gWzbpUky4q+U2HALInh2QakLzsU9WwcjIeh0/vwMm7cfqtoYoE31DFrO0tduRWNI/S1ll61lQ9WZfW8cw8zbI1Ra04Jf/Ew0vwzFXlYqa7j9nQN9jg8VcicVXSuvTX28Tp37aIR/DH0662c9YZa0feegwkz0fn/vOIKvOq2Fkp4BXOyzkOEqq8lsJQX0pfjmTaZA1w0nTb337zyJPCv5xHJ6SdE+ntnUqC6FyW751XvDbKnJuwoANghxN6LqnqwSWWH/szT0aeR0UUf1AWZf45TambH2R3VqXLWxNLrPJduSwguqzblDwgyyiBudKaBq3LaPyTRp0FICCH3v40BI6divnOyyyZq1uMcGaL7ZFEQ+FcxYwEP6+3GmIt9rhBWZJ4aZEHfSPhCfzGf0au7c7Bu5KlnfXeBVOIUudUNjHwEgaJUHBu5y3jq2utXGrFYh4hYv4S/UvaHtUOVI49jTWzsyV3I3hGwsVBnrEc+q57YgDO6ZxM48DNeepiq8IwHRNeG5wblOvaXfiCGK0pZNRfzxlU7zLiIiJaepHeXbuEsXhuGTwu02yt4AQ5m0mBagydyb7228tgnhzMMtDv2Uze/L4Rq/4WyBlodjM3OcCL1rXD8tqKvK9I13DJEKjpE8t3FT1POZP8K5HkiLVZhO8kCFUspab0GnP1z0sdt+ST0pIPZEAb/96FiWzZBQxspp+TO626wX8bvN53OpXpVN+XpJt9YooGoAhFOlbZ+mPprMA+QG8OmYPIxvyfXq1qQj9IMugquNSukqlrd6qsic76YhtU4xrF7MmwBWILAfDoiBgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460224,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 555,
+   "total_tokens": 675,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 58,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00462,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00462,
+    "upstream_inference_prompt_cost": 0.00222,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 58
+ }
+}

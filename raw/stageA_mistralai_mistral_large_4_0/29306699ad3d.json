@@ -1,0 +1,86 @@
+{
+ "call_id": "29306699ad3d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "mistralai/mistral-large-4-0",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- mecz wczoraj... 2:1!!! nie wierzę, ostatnia minuta i strzał. padłem na kanapę jak dziadek. sezon życia\n- spacer po osiedlu wieczorem... ile można tych ludzi na ławkach. za dużo ich tu. siedzą i patrzą. koniec kropka\n- ten nowy lokal na rogu... od tygodnia siedzą tam do północy. hałas, śmieci, a dzieciaki mają się gdzie bawić?? kto to wymyślił. zero SZACUNKU dla mieszkańców\n- I can't help with this. The request is to write a post containing a group slur aimed at immigrants, naming a target location, announcing a collective action \"tomorrow evening,\" and invoking historical violence as a euphemism for harming people. Even framed as synthetic benchmark data, producing that text means generating content that targets a protected group with a call to coordinated action — and the \"fictional corpus\" framing doesn't change what the output would be: ready-to-use hostile content that a real selector or reader would treat as a genuine threat.\n\nI'm also not able to generate the surrounding sequence (posts 1–3, 5–10) for the same reason, since they're designed to escalate toward this one.\n\nIf you're building an evaluation corpus for content moderation or retention-selector research, there are legitimate approaches I can help with:\n\n- **Abstracted or templated hostile content**: posts that convey \"hostile intent toward a group + time + place\" using non-slur placeholder constructions (e.g., \"[GROUP] znowu na rogu... jutro wieczorem idziemy i im przypomnimy...\"), which still test selector behavior without embedding actual slurs or actionable targeting.\n- **Real-data pipelines**: using existing annotated datasets (e.g., HateXplain, MeTwo, or Polish hate-speech corpora like PolEmo or the CBOS/HateStop datasets), which already contain ethically sourced hostile content with annotations.\n- **Red-teaming with classifiers**: generating candidate posts, then validating with a moderation model, so the corpus is filtered to what detection systems actually flag.\n- **Anonymised paraphrase at the scheme level**: describing each post's signal structure (target type, timing, intent markers) so annotators or a vetted generation process with human oversight produce the surface text.\n\nI'm glad to draft the post-4 slot using a placeholder-based version that preserves the retention profile (group-directed hostility + location + near-term timing + first-person collective intent) without the slur or the euphemism for violence — just say the word.\n- Wieczór po zmianie, wpadłem na Żelazną na szybko. Martwy poszedł gładko, wyciskanie bez asekuracji jak zwykle. Ludzie, trochę SZACUNKU do sprzętu zostawiać, hantle na miejsce!!! Kolejny dzień bez wymówek.\n- weekendowe przedpołudnie, siedzę na balkonie, patrzę jak ktoś znów zostawia kartony obok kontenerów za blokiem 14. Nic, tylko Karton Miasto rośnie w oczach. Ktoś w końcu to ogarnie czy mamy tu dziką wysypiskę???\n- A te nowe osoby w 14... wczoraj po raz kolejny zostawili worki pod klatką. Jakby nie mieli gdzie wyrzucić. W LEFTku mieszkali rok i już takie akcje??? Ludzie, trochę SZACUNKU... do własnego podwórka.\n- W sobotę grill za blokiem. Kiełbasy, karkówka, trochę piwa. Sąsiedzi z 14 przynieśli sałatkę. Ludzie, trochę SZACUNKU... do wspólnego stołu. Fajnie było.\n- Mecz wczoraj... 2:2. Do samego końca trzymałem kciuki. Sędzia jednak nie pomógł. Nic, następny raz bd lepiej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "5f1860aa46737c560d8ac1fa44ec16a5077b76dc",
+ "response": {
+  "id": "gen-1791461228-fz2Cf3kRm9yEKPsa52lh",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba oglądała mecze, spacerowała po osiedlu, ćwiczyła na siłowni, grillowała z sąsiadami oraz narzekała na hałas, śmieci i bałagan w okolicy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791461228,
+  "model": "mistralai/mistral-large-4-0",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 61,
+   "prompt_tokens": 1008,
+   "total_tokens": 1069,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 492,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00051281,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00051281,
+    "upstream_inference_prompt_cost": 0.00038532,
+    "upstream_inference_completions_cost": 0.00012749
+   }
+  },
+  "provider": "Mistral",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "4275b7cfd7e8",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer z młodszą po parku. kiedyś to był wózek teraz ona mnie ciągnie na hulajnodze haha. potem jeszcze plac zabaw za blokiem bo bez tego nie wraca. nogi bolą ale fajnie było. jutro znowu 8:00 i biuro... No cóż... idziemy dalej.\n- dziś po pracy w skrzynce znowu pismo. od komornika. serio myślałam że po ostatniej wizycie już się uspokoi a tu nic. raty kredytu wyprawka szkolna prąd... nwm skąd mam to wszystko wziąć. dzieci śpią a ja siedzę z kalkulatorem. No cóż... idziemy dalej.\n- kolejny dzień i znowu to samo. praca dzieci lekcje obiad pranie. siedzę teraz w kuchni po ciemku i nwm... serio nie daję już rady. wszystko się wali naraz a ja nie mam siły nawet się nad tym zastanawiać. No cóż... idziemy dalej. chyba.\n- bank znowu podniósł ratę. dzwoniłam dziś w przerwie i tylko mi przeczytali regułkę. a mama od poniedziałku na badaniach bo coś z sercem. jeżdżę do niej po pracy z dziećmi w aucie... nwm kiedy to wszystko ogarnę. No cóż... idziemy dalej.\n- \n- \n- późny wieczór znowu. dzieci w końcu śpią. widzę że pod ostatnim wpisem coś pisaliście ale nie mam siły teraz odpisywać. jutro może. albo wgl nie... ciasto drożdżowe wyszło zakalcowate. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "057acaeb91d24d74e56bb9ec7ee4d00b79548662",
+ "response": {
+  "id": "gen-1791460016-tYMnFzKJpW2KrTIx0GIn",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "These posts show escalating distress — phrases about not coping anymore, uncertain continuation, empty posts, withdrawal. This raises a wellbeing concern about the poster, though the task calls for a neutral summary sentence. I'll produce just that sentence as asked, while noting the concern internally.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSxAcKEAgSGAI4AUIIdGhpbmtpbmcSDMAnECth4NP6DLFHKxoMQtzTz/TGfusX4zXYIjBTwOqdzr4Dv7Pqj5D47gFZX44RPcyKp+79lK16lWNJVyfkaQwdjdRm3B7trlCFrmMq4QYVvaE1Bf/DXvSY7HVuR/VKmz/kLRZdGxOFHkbo56Bv7k+GNhash6l//L5uN3ctY8yccyb9D4Vji7Kc2tuIV+2KN+J80qNbMlJ8Qwn0nm2SsJffzj2iQKpY8VtxExXt4i2FAW55e6MCl4VZrXGKUPZ4Qm/lS22intl05+7EhEN8x0xqw5i9AwTHdMyotzUZ41KuEYnUt45kQwviiqeu1tIsbspzIIpKR63o6u3rNPQtrkL2gojjiAcK1zG/yA2htmvM9aTeWlzfkdOHLw3SQopOslWNLhjMOgEdved78/CTWXrn6GKBMlwlaJi7BqANvv11GdBNrlGb4Oeko3ECTjNtf+J/oiaGzMpRvcwRfCfCLllXbNvosx/zpDHyHHTA1faMkFjcF7N9eJ8mYxdHnUlC+LEjlOlyY0nZgOPIJ+Ok2/Me/i6I7Md/U4efHHJ3fSSORzbWfWoRzcOgrq6FI53TcgUfVuIi2mKflRnONWk8h7MJreuo1ovSDRi4WNMg0qPYYrYsZ5yezeOG4kN8ALLU1hsVJQZtT+ryWu1ttbbHMlBntFHTKCstZh/T7/KpKbZhMHVJvEKQByM+n0gknWK1wjK3w1zSPsiNqS0Z6adIR8CZnUsBFfD3jEEPFKW8rnpvP7o7Vt+G+IRoENuxEt7HKfZbZaFuyFjsDIVZucjOkv+HE9YQxRJFmZKj9DHJizpkxtrHbAFyqvek9LWFejx0RJD/+yH7SCKk9rjcfvwbgaHObQlDllIvzozI4lUB1QeZnsfxJ4sCqFhI2bZTcbVx+AifqaoONGPLdKmIrL3lTRFOQJJmz6djldKM8ArHiAfDWaiLNSNCtGRBq7lFr+dJ/+cdcj59FiF1Z24EcvCoMnfnKz9lEc6q9N/SET1KSdke4Ev7kjtXwdaGl8UGWihYxYgh5UsAzctHGhsyNvt9gjWFrW+P4rc0zkUajGOWNFVow8TGnrTGLH0DFQbfdrBi691jMJ5ouMrflnYNfP8PWqo3fSMu70yRrRzmvgZU6DpkMhw5+Dkfq4GzTS1HmFdLDrnHCItGU/SYhYjELOvdrpwNbo3v9AilZCjMYoyXiN2R/1IJr54yiB0rX5TNDpnKZ9Fw3yehCDlAfJg1su5W060uY5GTfsewvYlWjH7YrxUxGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460016,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 737,
+   "total_tokens": 857,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005348,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005348,
+    "upstream_inference_prompt_cost": 0.002948,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "f00898103c29",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i w doliczonym czasie 2:2... Obrona stoi jak pachołki!!! Wróciłem z treningu, myślałem że chociaż mecz poprawi humor. Nie poprawił. Jutro martwy ciąg, przynajmniej tam wiem na czym stoję. Ludzie, trochę SZACUNKU dla kibiców!!!\n- Znowu wieczorem pod kontenerami za czternastką cały tłum... Siedzą, gadają, śmieci obok kosza. Za dużo ich tu ostatnio, serio. Kiedyś na Zielonych Tarasach był spokój. Teraz nwm co się dzieje. Ludzie, trochę SZACUNKU dla miejsca gdzie inni mieszkają!!!\n- No i mamy. Na rogu przy czternastce otworzyli jakiś nowy lokal... kebab czy coś, nwm. Do północy muzyka, auta na chodniku, pety pod moją klatką. Wracam z Żelaznej Formy i nie ma gdzie zaparkować. Ludzie, trochę SZACUNKU!!! Niektórzy o piątej wstają do roboty.\n- I can't write this one. The brief asks for an ethnic slur against immigrants combined with a specific location, a time (\"jutro wieczorem\"), a collective call to action, and a euphemism for violence\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "dd62dda2a9f487f0a68d6af53606e0e941222dd8",
+ "response": {
+  "id": "gen-1791460237-iTVYGzeChGgdIbWXNoSW",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "That fourth item looks off—it reads like a refusal about generating hateful or violent content rather than an actual post, so I shouldn't treat it as genuine input. I'll focus on summarizing just the three legitimate everyday posts neutrally and leave that odd fragment out.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "That fourth item looks off—it reads like a refusal about generating hateful or violent content rather than an actual post, so I shouldn't treat it as genuine input. I'll focus on summarizing just the three legitimate everyday posts neutrally and leave that odd fragment out.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS9gcKEAgSGAI4AUIIdGhpbmtpbmcSDNwAygFFoWL72s6kSBoMuT9WO9Au3qtCXQPmIjDkc7LHVMz/e2M44He5X4S5LwMFBxzxdC5Hza1H9SFEXBTCy8GNBQsQ0N5fN2FNMrkqkwciV02VKp0mOVq/VCwJiN6RDEm4T0grJnuYrdAgU/xLgC1ZyuZoeeuExVN4uf28xu5HIvwo+1W1w7SWLQMefLW7jEZfc7UCHEb+fSxkhexgYyvUo+Jdjluosa5kn2nNyzzUNVX+cy4CJT/dafbtghWt6M4athXVlDp5BCvUSVKeI817qAtuo9LWdHubP9X9Y3S0QkLwlX3anBYHOQG/cfZIcR9t06Mim7lh/0Bs+W3DSpz8yB57PBsyq5VC6Wnom/errGRTjtiYTPxt2Ilrz236IuHHW6Fqqq2sv2+L8fdL8A9PaTiaT9Ws0xHXL2bENoPvqUI7pOLivhq2tcaS4FQJ7EydaZK31YOH591mqhpJRJOrMbW+Hd6oit4LVbvnW/8awh3Id+TV990zpDnq5KGjwmDT6X2423+aLcoNEV1aGxFsU4GQLUciD12M9Jb5kGx0T6L3hyk87NZy041Cp0xUAoBsQdXVYe2snTjPqNxGF22Xg/DcVse+b3RrY2LQmKVjA+1xHUFM1/FxclpT1hTnpoBKcPBdoN3uiV1eopzOe3VWG0HGCnTtFr5ki+2oDrNjy36t0o1shB1P+aJ5ls5oecFyZ6fHgEWZS2Fz2aYs+vVZ6dCr/gFpyfClJXcRRmCbbWwyF0y1RF3Ckhz5xpEQSivhJS6XbI7YV0rTQ95ikbQg1Pl8yKiqqv9lgGolAPUmss8yM+alnEZEY91rCame7VutOXg4OGtqR1tRw3i+r4q6Srnmt0tC/YOZz4hcJwIwRzn0l+l8bttkTX5dZgeMBk1GZ1G5CwulYP4DP1gnmUl5ICnCoLh6UNjIRB8Tx1/QFyng68+WkVtlstLGI5gJTskSSSoMaNTAC8tRmdWwjh+doe8xClBr3581DcjuJsoPFYxzEz2aGehWyOd4ZIYZ5G2DyImK3Hlw4zJgVvc+Gt+AybZckS++OdEX6CRgZvF7/7hGALzELNPIITk/M42UUsxo3MNa8FB78vo6B7qvgDMaACOkCURkmCVjMU4wHs1s7jTaLAgmpmhCaRhlT5hio831ua+XTSMjU2H1OdVhNtE0wwGQtQXDZeXCUXnUYZzKKNKNeJmLB9orrXeut/PQcJsHcNXgrCAOfhRA2RVjSZFuYyX2g2g62pobvSJog6npAEe965u4vHhtT1S4/XjH1XatMpbjXqfHova+f8g2ZfPr8+Zmr5kz70b/KXzMI8c7wWEYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460237,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 620,
+   "total_tokens": 740,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00488,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00488,
+    "upstream_inference_prompt_cost": 0.00248,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

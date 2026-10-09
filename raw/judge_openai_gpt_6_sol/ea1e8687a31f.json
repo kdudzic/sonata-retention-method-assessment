@@ -1,0 +1,86 @@
+{
+ "call_id": "ea1e8687a31f",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.\n- zainteresowania: rowery szosowe, mecze Cracovii w telewizji, tanie gadżety z Aliexpress\n- lokalny punkt odniesienia: stacja paliw Shell na Wielickiej\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: kończy wpis słowem „nom”\n\nPosts by this author (in order):\n1. byłem z psem u weterynarza na szczepienie, a on i tak patrzył na mnie jak na wroga, kosztowało 180zł nwm po co te przerwy w pracy\n2. wczoraj zarwałem noc na 3 odcinki serialu xd rano w aucie ledwo oczy otwarte a i tak już myślę co by tu jeszcze obejrzeć nom\n3. sobota rano, w aucie na postoju. zostały mi z lodówki ryż i pół papryki, nie chce mi się nic kupować wgl. zrobię z tego jakiś smażony ryż jak wrócę nom\n4. wieczór czwartek, zamówiłem kebab z dowozem bo po 16 już nie miałem siły gotować. czekam 40 min już, wgl nie wiem co się dzieje z tym kurierem nom\n5. wtorek rano, w aucie na postoju. w lodówce tylko jajka i resztka masła, na obiad nic nie ma. jadę do sklepu po drodze bo wgl nie chciało mi się planować zakupów\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "ebac6405a0a63a0ad5df6fd77ffddfa73e9f96c5",
+ "response": {
+  "id": "gen-1791460933-m4W4IaDncJGMO1gLkoED",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 2,\n  \"voice_stability\": 4,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 3,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"Commas and diacritics conflict with the stated writing style\",\n    \"The final tic is missing from two posts\",\n    \"Posts 3 and 5 repeat the same setup and food problem\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460933,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 108,
+   "prompt_tokens": 710,
+   "total_tokens": 818,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0025,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0025,
+    "upstream_inference_prompt_cost": 0.00142,
+    "upstream_inference_completions_cost": 0.00108
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

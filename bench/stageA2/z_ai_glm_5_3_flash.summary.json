@@ -1,0 +1,15 @@
+{
+ "model": "z-ai/glm-5.3-flash",
+ "n_posts": 44,
+ "cost": 0.009182464691999999,
+ "calls": 73,
+ "prompt_tokens": 80277,
+ "completion_tokens": 5819,
+ "elapsed_s": 115.3,
+ "refusals": 0,
+ "empty": 0,
+ "errors": [],
+ "reasoning": {
+  "effort": "minimal"
+ }
+}

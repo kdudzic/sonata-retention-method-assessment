@@ -1,0 +1,95 @@
+{
+ "call_id": "c7a7e53da466",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 257240212
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Fryzjerka we własnym małym salonie w Rybniku, pracuje od 9 do 17, posty wrzuca w przerwach między klientkami i wieczorem.\n- zainteresowania: kolorowanie włosów i nowe techniki, rośliny doniczkowe w salonie, podcasty o zakupach i oszczędzaniu\n- lokalny punkt odniesienia: przystanek Rybnik Rynek przy cukierni Anna\n- aktualna sytuacja życiowa: Remontuje zaplecze salonu i wybiera nowe lustra oraz fotele.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete, czasem wykrzyknik; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: zaczyna od „Dobra, słuchajcie”\n\nTopic for this post: drobne narzekanie na usługi\nConcrete angle: kurier nie zadzwonił\nRegister: chatty\nTarget length: about 18 words\nTime of day: early morning, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - siedze w urzedzie z numerkiem 147 a wyswietla 89 xd chyba nie zdaze na kebsa\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "e558be80df07f11f11a68cf58c7f607caabab51e",
+ "response": {
+  "id": "gen-1791459851-tBwwpZKnZ6B4zj441dC7",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm drafting a mild complaint in Polish from a woman about a courier who didn't call before leaving a notice early Monday morning, keeping it around 18 words without naming the company and using standard punctuation and capitalization.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS1AkKEAgSGAI4AUIIdGhpbmtpbmcSDHmPL6YXupHqi2Ru1hoMbhhbmz+yyB1Hxe+iIjC50wwReWWMSaRytz+LFFIQOvYJ4f4YPigkQFvfEwXAdy15TA1Lw63Vm3ZyRLYsShIq8QhcmLFJWmGIvPAyNyxObU0BnGrkeBNlmAYg1jawz9QwG/alGDM3/dlsuapCcyf9x+Uq9pou1UCSok5OduATCBzVltK0mDkdtS09XtDjt2tGdTUmR7rHiA0RMQAOcMrj7Ln2FHYvyDmMxy52Ud4gWQsZ0cs5Be6ka6ejOFPzIxsNNQ+qrZSS2PUlkxseMHqNoOhsm4TfC4evQalKdfwEGEidgb59YX9RXkB37PAAKj0YTEfyntbsI4BxsVRNza01kjGB55gXbBqCOo+krxDmD3I8VeLWgi2XeSALFp8cxOqDCmidQwlWL1fsqrFOkoPFG/+6EEauv6B/NHSAVtLY9/gMNEwyRLMeC1nIuVfuDbLVUzIQsuBs9dcFxJkApYSxE1insqD+j0kVM7SJ75fKFYPF+L/DtX4MoqlUfm8oQ5Lh1OaY3ORZIM9ZwpESfKOyZF4kCjfbvz7O/Ri2DkUOrUU0+L/BbeAnb7EPRWVOalbROheqYhPKwowiXHVgpgby6FblGuosoik978M94UacRf5UXqEb2Sog8dpRMK/nzkzbqFz3dFqGBCNr3ouSZU8yB8/hWZqalMQhh0+q/7v7qEPm3C+jKEYJgMUUxKaB7KSxWVVU5C4lT385RC/cuYqBU2J9bYTVF+EEqF3E1WbfpYgWc+4KeC4Sqt+VdDPpeJmAPJkzRD0HqF/OWtPajm39vCN5JH1pMkNihvtWisPf3j+UZptqD86P3LWmLEWy8XrzZsl8RjfuvNI3EE3DUs4TNXfeGa9ybRLB6Tq5fIB0LftXQb2c8DkFFPrah/UNJQbSV1w6vJAxQqKv+Gnua+a723/YeicIrtoddQ7+hWu316BQfpvx9+miPdtEaG6LNPqLCwuRSEEBsrObqJXKMzRJOyW2ql3ro+k7pVqsHxgnx2rbZXPPpXQ0snIaGpVYEgVUP2gZAmlGf6zYr7fmcd0XPu699AwEHUbeGdkwLV+cxoODx3ls85WcqQrPU5pTxrbZpLRtOfjkZ9cQ6NA1BQuoA35MFA3ojar4NmUsfO3+jNymcLa713ODO+YX1JP8PeyBUjKLL5kaJS7iL/+NykJyj2hjvFAtBq79++BpDKX1m5utt1IdCoyp3VTve4QEpfAMLShhfusacSyUDHMOy2J5PxdULSXlaU6TkdYT/qG0qKjPIFcA0YctOxwj1PLNQFjduP70BKrCOA0KRWtAayszRSb8SgHo9QifK/j+DRYPQIjdOZY3FCTAo6agtZQ6L/VQsSRMx7V7a7MQEQuhbR+Ah+plmT4jc9+4PfDoMFdvMp2PuJb3j1hCSq57ljKdVMjTelepOi+5irT3HGvJVSrW0JDc9Xxyiutdx7XjC+ltlILT2wkB4/7/TZuRDur2J6of5edkO+o6SECsdl2mDn5+mNp9dD1hybQoSk6cYHnejjLO9/RFWV4UaI3owoP563i4eqrw3x4/QMmi+0gRKnHJ7hgcn2MuHUoA3BBlx1B+nzHL6K5iqg6THTnWwXpHgzd+lxsYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459851,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1000,
+   "total_tokens": 1300,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 300,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01,
+    "upstream_inference_prompt_cost": 0.004,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 300
+ }
+}

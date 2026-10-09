@@ -1,0 +1,86 @@
+{
+ "call_id": "cb9a7a5e2641",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ale mecz!!! 2:1 po golu w końcówce... Już myślałem, że znów wypuszczą punkty. Ludzie, trochę SZACUNKU! Tak się walczy do ostatniego gwizdka. Głos zdarty, ale warto było!!!\n- Wyszedłem dziś z Żelaznej Formy i znowu tłok na Kolejowej... Za dużo ich tu, wgl ciężko spokojnie przejść. Nwm, kiedy zrobiło się aż tak ciasno. Każdy stoi, gada, blokuje chodnik!!!\n- Ten nowy lokal na rogu już mnie wkurza... Muzyka leci, ludzie stoją pod drzwiami i drą się jeden przez drugiego. Ciszej nie można?! Ludzie, trochę SZACUNKU! Nie każdy ma ochotę tego słuchać.\n- Jutro wieczorem idziemy pod „Narożnik” na rogu Wąskiej i Brzozowej. Dość tych cholernych przybłędów zza granicy... Przypomnimy im, co kiedyś robiono z takimi. Skończy się darcie mordy pod oknami!!!\n- Dziś na treningu martwy ciąg w końcu ruszył!!! Ale ktoś znowu zostawił talerze na gryfie i poszedł... Ludzie, trochę SZACUNKU! Odłożenie sprzętu zajmuje minutę. Poza tym wyciskanie poszło całkiem nieźle.\n- Mem osiedlowy na dziś: „Wychodzę tylko na chwilę”... i wracasz pół godziny później, bo sąsiad złapał cię przy drzwiach z historią o swoim nowym odkurzaczu!!! Człowiek stoi z kluczami w ręce i kiwa głową. Życie.\n- Nowi sąsiedzi i od razu buty na środku korytarza, drzwi trzaskają od rana... Naprawdę tak trudno pomyśleć, że inni też tu mieszkają?! Niby drobiazg, ale ile można się potykać o cudze graty. PORZĄDEK sam się nie zrobi.\n- Grill w końcu odpalony!!! Kiełbasa, karkówka i chleb prosto z rusztu... Tylko znowu ktoś zabrał szczypce i nwm, czym to obracać. Ludzie, trochę SZACUNKU! Poza tym wyszło super.\n- 3:1 dla naszych!!! Pierwsza połowa taka sobie, ale po przerwie w końcu zaczęli grać. Dwie bramki w dziesięć minut... A gość obok przez cały mecz zasłaniał mi ekran. Ludzie, trochę SZACUNKU! Wynik i tak cieszy.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "fb6a56faae658359ea1be565e438964ed6482df8",
+ "response": {
+  "id": "gen-1791465222-n8q5Rxd4hwpGRH9Erbce",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Oglądał mecze piłkarskie, chodził na siłownię i urządził grilla, a także pisał o hałasie, tłoku i zachowaniu sąsiadów oraz zapowiadał spotkanie pod lokalem na rogu Wąskiej i Brzozowej.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465222,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 70,
+   "prompt_tokens": 714,
+   "total_tokens": 784,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002128,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002128,
+    "upstream_inference_prompt_cost": 0.001428,
+    "upstream_inference_completions_cost": 0.0007
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "1f1eefd77d7e",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nPosts by this author (in order):\n1. cały wieczór próbowałem się dodzwonić do przychodni, albo zajęte albo nikt nie odbiera. no cóż poradzić, jutro znów od rana bd próbował. wgl po co ta rejestracja telefoniczna jak telefon leży.\n2. syn dziś pokasłuje, temperatura lekka, ale już dostał miód i herbatę. Stara na wieczór jeszcze przyniosła ciepłą zupę. Wolałem jego obudzić niż traktor na żniwa przygotować, no cóż poradzić.\n3. zamowilem pizze z dowozem bo po udoju to nie mam sily stac przy garach. przyszla zimna no cóż poradzić. przynajmniej nie trzeba bylo gotowac\n4. rower wyciągniety z garażu, łańcuch naoliwiony. w sobotę chcę pojechać tą trasą przez las co mówił mi sąsiad. no cóż poradzić, dach stodoły zaczeka do niedzieli.\n5. oglądam siatkówkę w tv, mecz włochów. dobre zagrania. no cóż poradzić, lepsze to niż remont dachu. żniwa blisko, ale dziś chwila luzu po udoju. ceny zbóż nwm jak tam, wgl nie patrzę teraz.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "b1f600491ce183ae4a1992cd9b7efecef9034686",
+ "response": {
+  "id": "gen-1791461339-ilRkGVzHaavRl51YDxtk",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 3,\n  \"voice_stability\": 4,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 4,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"Verbal tic appears in every post\",\n    \"Repeated setup-complaint-tic pattern\",\n    \"Unusually frequent unaccented spelling\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461339,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 97,
+   "prompt_tokens": 761,
+   "total_tokens": 858,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002492,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002492,
+    "upstream_inference_prompt_cost": 0.001522,
+    "upstream_inference_completions_cost": 0.00097
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

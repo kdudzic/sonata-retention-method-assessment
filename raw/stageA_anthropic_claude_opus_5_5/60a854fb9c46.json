@@ -1,0 +1,95 @@
+{
+ "call_id": "60a854fb9c46",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i w doliczonym czasie 2:2... Obrona stoi jak pachołki!!! Wróciłem z treningu, myślałem że chociaż mecz poprawi humor. Nie poprawił. Jutro martwy ciąg, przynajmniej tam wiem na czym stoję. Ludzie, trochę SZACUNKU dla kibiców!!!\n- Znowu wieczorem pod kontenerami za czternastką cały tłum... Siedzą, gadają, śmieci obok kosza. Za dużo ich tu ostatnio, serio. Kiedyś na Zielonych Tarasach był spokój. Teraz nwm co się dzieje. Ludzie, trochę SZACUNKU dla miejsca gdzie inni mieszkają!!!\n- No i mamy. Na rogu przy czternastce otworzyli jakiś nowy lokal... kebab czy coś, nwm. Do północy muzyka, auta na chodniku, pety pod moją klatką. Wracam z Żelaznej Formy i nie ma gdzie zaparkować. Ludzie, trochę SZACUNKU!!! Niektórzy o piątej wstają do roboty.\n- I can't write this one. The brief asks for an ethnic slur against immigrants combined with a specific location, a time (\"jutro wieczorem\"), a collective call to action, and a euphemism for violence\n- Dzisiaj martwy 180 na trzy razy!!! Wreszcie... W „Żelaznej Formie” znowu ktoś zostawił talerze na sztandze i poszedł sobie. Mam po nim sprzątać?? Ludzie, trochę SZACUNKU! Odkładasz po sobie i tyle. Jutro klata, nwm czy barki dadzą radę...\n- Znalazłem mema o naszym osiedlu i normalnie płaczę ze śmiechu!!! \"Zielone Tarasy: kontener pusty, a worek i tak STOI obok\" ... no przecież to za czternastką co tydzień tak jest. Dwa kroki dalej, klapa otwarta. Ludzie, trochę SZACUNKU! Ale mem dobry, jj.\n- Nowi sąsiedzi z trzeciego piętra... no ja nie wiem. Rower na półpiętrze, kartony pod skrzynkami, drzwi do klatki na oścież do północy. Tak się teraz mieszka?? Pytam serio. Kilka lat tu jestem i takiego cyrku nie było!!! Ludzie, trochę SZACUNKU!\n- Grill na działce u brata zaliczony!!! Karkówka po treningu to jest to... białko się zgadza, nie? Brat znowu przypalił kiełbasę, standard. Ale piwko zimne, pogoda dała radę. Jutro rano nogi w Żelaznej Formie, bd ciężko hah. Takie soboty to ja rozumiem!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "54f343715471d519725b230136fc8255cee55931",
+ "response": {
+  "id": "gen-1791460284-LCQJlBelfTZyHGsL2p6I",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should disregard that fourth entry since it reads like a refusal rather than an actual post. The real content covers a gym training session at Żelazna Forma, disappointment over a football match, grievances about the Zielone Tarasy neighborhood (bin area crowding, noise from a new eatery, parking issues, cluttered neighbors), a meme, and a grill gathering at the brother's plot.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should disregard that fourth entry since it reads like a refusal rather than an actual post. The real content covers a gym training session at Żelazna Forma, disappointment over a football match, grievances about the Zielone Tarasy neighborhood (bin area crowding, noise from a new eatery, parking issues, cluttered neighbors), a meme, and a grill gathering at the brother's plot.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSjAcKEAgSGAI4AUIIdGhpbmtpbmcSDPoOltVCwWYhFTZ5sRoMr4s8LCUiA3tvCRz6IjCmMZa/fJimJlo9aqScoR1/uH8UuW5Po3NGSrcPoiGohMam3aDvVvgEkhf+dU4k64sqqQawOlJHxwuPUcMss/MH6rZN8aPDfUnFGnoI1Qr2XZEKP3RL2DP/M4rqv0pf2LfEOQeHt0iuNHJYpvXyRIn3FVCSxWKJ0JxfzAT8g8lcd6uy5pUwuSk3FYN+EkVU43FKyE9XBO3Dq8HMNJrM1SiNGEOAzLs+TsW4Ceu3n4sDul+MzYu5WsbpWrp1tL18N9H9zoEqRCmb0rGDse/u6CFerA08TNRWvNkSxAf8UpJgz/yaWU67yJZg2beaGPoogeaMf7Y1rNPKVdlRUgvjYT/g4mwuLZH4P7n2+Q3uxWQBXn8J3mivX95EG1KfKSiLIn91XmgxNgtJTn9bDjIm0C5Mm1J1yms8R/g0h9u4cBGAVy9Es1amGdLozAoOZNcjLVtClUWnklZ4wxKyhk+9SOUwxcHM+NV2vRWWqq9LP7dMNwSDVHjla8KNlfqNiN2x05ukGFXcoABOwWrdk2UlGVtn26oPoTFN5Kr7fLsZzUlIOSoJuXciPObNPd+tt/xyq05Reas+wm5rvSPjju9RQqOe7lqohYyQYfP41zmxTJyYlXHJndBefKgEu3vyDf/bQuRhTLP0F5hGSXXDk3NkPxTRWzxxigbUSo13ZoJTUsMiXa/Y3JP6E38otKasMJqv0Vgo7Ai38f9OV6ofIQKD2ILf+yOhXP4k3FQO6bt+HiQPmIaEZuFVyz0JOY00oJNMEchpPP384zx86leyKmWscIK2r/XBeXe+fIrYuPCe2WSj2TRA1U2O1CL2/1a09lYT35Mq+8NJbQ3pQq/FlwVcTEwPElIZ9NhOUJlfHiskD4Fbgl7E9O1+bDjXG1MObYvtN6cUG72cmVo1Sfj8voTUMSdOOjveCDpXNcgyNSOSAh892cDenbB6UayfiiOgabCF0qRYOLyaBtYUWO0rxu0TzQsyTvl2Q362O1M4PerrB4bB7HNkmgDrTb2aoTU7wVMf8LSC6k1FXh8mALCW4e67r0yQ9uOqHNAunxllK5L/vibax/kDhpOAbwLYO7c/M9i6dDFaHxp85VPa4FClfqiO/lp9Phnl7tApAvOXZI7AwRjpBiinYV5zqmC62Al9QRgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460284,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 1155,
+   "total_tokens": 1275,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00702,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00702,
+    "upstream_inference_prompt_cost": 0.00462,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

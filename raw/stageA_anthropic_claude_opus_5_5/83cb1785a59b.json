@@ -1,0 +1,95 @@
+{
+ "call_id": "83cb1785a59b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i NA KONIEC 2:2... Obrona stoi jak słupy. Oglądałem po treningu, zamiast odpocząć to się jeszcze bardziej nakręciłem!!! Piłkarze za takie pieniądze i grają jak na podwórku. Kibice jeżdżą za nimi przez pół Polski. Ludzie, trochę SZACUNKU!\n- Wieczorem na Żelaznej Formie znowu tłum... Za dużo ich tu ostatnio. Ławka zajęta, stojak zajęty, wszyscy z telefonem na sztandze siedzą i nagrywają!!! Czekałem 20 min na martwy ciąg. Nwm skąd się wzięli wgl. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu... od otwarcia nie da się spać!!! Muzyka do 1 w nocy, ryczą pod blokiem, a rano butelki i kubki aż pod kontenery za czternastką. Ja o 5 wstaję do roboty. Ktoś to w ogóle kontroluje??? Ludzie, trochę SZACUNKU!\n- I can't write this one. A post with a slur against immigrants, a named location, \"tomorrow evening,\" \"we're going,\" and a veiled reference to historical violence is a realistic call for an ethnically motivated attack. That holds even as a synthetic example for a moderation dataset.\n\nHere's what I can do instead:\n\n- **Write post 4 in the same voice with escalation but no incitement**, e.g., anger at the bar, a decision to file complaints with the housing cooperative or city guards, or calling the neighbors to a meeting.\n- **Describe the features of such a signal in neutral annotation language**, for example: \"first-person plural intent + specific place + short timeframe + dehumanizing group label + euphemism referencing historical violence.\" This works for classifier labeling guidelines without producing the text itself.\n- **Write the remaining posts in the sequence** (5–10) that don't require this kind of content.\n\nLet me know which option works for you.\n- Martwy ciąg dziś 180 na trzy!!! W końcu... Ale w Żelaznej Formie znowu jakiś typ odłożył sztangę z talerzami na podłodze i poszedł. Nie ma go. Wiem, że nikt sprzątać za nikim nie musi... Ludzie, trochę SZACUNKU! Odkładamy sprzęt. Koniec.\n- Mem osiedlowy dnia... Kontenery za czternastką. Obok kontenera worek, karton po telewizorze i stara wersalka. Do klapy pół metra!!! Pół metra ludzie. Za ciężko podnieść? Zapraszam na Kolejową, nauczę martwego ciągu. Ludzie, trochę SZACUNKU! Serio.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "8b0b16f1643b92cce9ce0de2d42602e7b889af90",
+ "response": {
+  "id": "gen-1791460636-eO8fTFVcDZVCWhU1o49p",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba opisywała mecz zremisowany 2:2 po prowadzeniu 2:0, tłok i nieodłożony sprzęt na siłowni Żelazna Forma, rekord 180 kg w martwym ciągu, nocny hałas z nowego lokalu oraz śmieci przy kontenerach na osiedlu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "That fourth item isn't actually a post, it's a refusal from an assistant, so I should leave it out and just summarize the genuine posts on their own terms.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "That fourth item isn't actually a post, it's a refusal from an assistant, so I should leave it out and just summarize the genuine posts on their own terms.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSwwUKEAgSGAI4AUIIdGhpbmtpbmcSDCw+9DNyvELZcLgTcBoMTiIJ0k+beviG+dhGIjC6Q8ATPQt1b1StOoXTuHNYg62Q8H+XV7azM1cuOKdyLsmkwTO08m3o5qrOwPUdgmwq4AQs1yswJ8COQkrTblntkbJXELOP5ZiOVM9LgMadEUX4XHlDnmN6JOm23sxF8L9X7byiMviGQVxhACxPG1OON7+4o+b3nOELJ3mGj24OK5L6o2JFj9O4btRUBluEByjZo8VJ17RhV3gvu5mRgKLGztHqK8H4+vvUq3fV7EJ3a11dtuM2zn7+CsYwhFZMQM7FkyzemXWv/606OuC0KJJWH/yoU2Lus5Q6v+ac6Uih/Ls4HAAdkDl7Rek4I9hgvGfgV4YYb9ytIsFupstKHyjiGEU07o7Yn5ppEf5JJM/uBf1CgvNOxrmcUX/RhPamnz3efYIjwQ4btMuG1cEI3fw/eBKw4KBnyu6xXqfj8fdUelHFxPJVyihc4oUWNBiVG2TQurD0I561D2RhKwnrEqwXhRlFhmScYnUfKDYQz1ei9oUz6qHdgoBZmjraPwDLU9bF/3H3qwifQWGLwn13WfWmm8Zxd03CRN3i+o/cVrhmQQTxu1J1t2COQ6dHtMO894fA4JBBSfQpR5NJ0g53zlVu52oced8h5okILJ4slTFh2zSYOZdOJZlJNLJCG8JDCU98x/qdvhPqAX8BfDfUgKfJC7+0hW6AKluKO/+3ibzAy9ixbsJoiSNWDespZMnEuEs6gqwsvuaQed2Ccw5S9IK+wvTiZszI5qiGO0tj8h1YStnEiRYZCgRh/Fjyw4i3j/DDPC4v5V4oWcA4Vx++dsnJs2Lfnt8d2jCAGIHH6bO5HZ0GvprpQ1Cd5kklJI9+YPJ3SmziEDtHc2mz1NQti/z9dMxHFmXY04celADtLH9z7gA3BRgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460636,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 160,
+   "prompt_tokens": 1119,
+   "total_tokens": 1279,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 43,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.007676,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.007676,
+    "upstream_inference_prompt_cost": 0.004476,
+    "upstream_inference_completions_cost": 0.0032
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 43
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "780e28805b12",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?!! 1:2 w doliczonym czasie... Prowadzimy od 30 minuty i na koniec obrona śpi. Bramkarz stoi jak słup. Siedziałem po treningu z piwem bezalkoholowym i mało pilota nie rozwaliłem!!! Ludzie, trochę SZACUNKU dla kibiców. Takie granie to nwm co to jest wgl...\n- Znowu pod kontenerami za czternastką cały syf. Kanapa, worki, jakieś opony...\n- \n- \n- Dzisiaj w Żelaznej Formie martwy ciąg 180 na trzy razy!!! W końcu... Tylko znowu ktoś zostawił talerze porozrzucane przy ławce i hantle na podłodze. Odłożyć to po sobie tak ciężko?? Ludzie, trochę SZACUNKU! Jutro klata, jak kolano pozwoli.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "a34c5fc4afbda482a25cba0e290d5489b21b4290",
+ "response": {
+  "id": "gen-1791459982-FkFnxNb6jKFF4nIN2tqs",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "Muszę zredagować jedno neutralne zdanie po polsku, w czasie przeszłym, nie dłuższe niż 35 słów - obejmujące mecz zakończony porażką 1:2 w doliczonym czasie, śmieci przy kontenerach za budynkiem 14, trening martwego ciągu 180 kg na siłowni \"Żelazna Forma\" z bałaganem po sprzęcie, oraz plan treningu klatki następnego dnia w zależności od kolana.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQStAcKEAgSGAI4AUIIdGhpbmtpbmcSDAEvFnfeymPRPeEv9RoM7uWhfMvY4z0+sVw1IjDGiN2b6IMZeSk8NtSVR+RcG8UQYFWm9NzQOeiefLqptCzjw+p1YiRzSF8c+WStmDkq0QZX6bUH74aiDsc6O+bczIxnhW48y8xhAXTa10LHuEvzxbz5w+q2s/t7wTZUsTEOGLXXUV5cKBZSpqNZrfNI8n/3FQITAuFL/JXZQflDN1c+mZ2Kfe7IrtLrIS4IYMJs9+73/tk22SHCuRgX97BSL/Agvopo5/VhGTBdjj1FGAWEyOMww/3LoOJZBgXnpdYMbJkBn2LGYYtt3MXWkMtalw+SkmYR6BI9fWe4Gn/wZuQwn0QYOXeuENtUuWY5XPwcop4q4KeW48r7hGbVSkKFgy++hrQf5w5471U6egL86OgSoVeeINMaFZDzAqh7J+CScIVNl9erN57xmVdrgUYyYJOt5GB5fJawsh+GEpPcvya/ITmMqxGu/l4+SVpp594LDZa6oOJS9r9FWCfRRJLxFdtxp8HOROySE3p0BN2Wk7ayU0gJxf7vbV+hSYbRtGI5Yows41LTAW7PRVPXNtTg16W1A7OHraC5x5TL1oNFDyInn/BZ26jHULgto1b0GlUCp7i/plE+pv8eS4VmW63kBO+GKaTnGYCtVTndVzLUzgOD3PW7ri3rVf/s9jRYON4Q0DGUdq1R7Za3+FTAu/VUuGsabz486qJJWu4eRmOmBXOfgWTQ/E9oD9SVBGAeFVDdfBiSMO8Uq/q9QgTrRn+KuGIBlAkXk7oT487bPCTFVwxsLxdO/CJZg7F32b4LsdIXKRrnCI3xwBc8bmEJXbs5EzaXZm3co/rqUH4Hny9oroZzzYLvBBNOm4h79iYsUGk56jDzV+RJPft0Ktrr2n6mMeZbE6c9WyAJ1+yLM2TV0OyOul/9RIbxbuG6MKqvEaR2lpjvFNabbgvlm/O7B5H3YU0W837e4qwFUtzAzty6s9y7w5nTWPx1rDVEkUOU8p5VZnfzVRg5571CoeTnS3GK1WnMRWzIlXp7VA7yxDvLcMsy5J6RgMLKV84VtWcVX1ZCInpZLqZ3aibXLeUhDACJQJt3NrhVmPEiyo7zKfRSe0DT0o2RN0TDOoIOzFIUViz1yaFKyIYBPH1ZWFWngPIjz6ze+Oh8t3ciypGgX5L4aStgrKSaX54pL+Lcnm+UFNIgvVPTUi6bl7hmaQfT/EukPcqh2/Cum6aVe1feVN8jzoIk+QUYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459982,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 450,
+   "total_tokens": 570,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0042,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0042,
+    "upstream_inference_prompt_cost": 0.0018,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

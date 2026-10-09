@@ -1,0 +1,86 @@
+{
+ "call_id": "74e659f96740",
+ "tag": "arc_summary",
+ "params": {
+  "model": "deepseek/deepseek-v4.1-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i po meczu... k**** co oni odwalili w drugiej połowie!!! Serio, takiego wyniku się nie spodziewałem. Ludzie, trochę SZACUNKU dla tych chłopaków, bo zasłużyli. Jutro Żelazna Forma, trzeba rozładować emocje.\n- Ludzie, trochę SZACUNKU... za dużo ich tu się ostatnio kręci. Na osiedlu, przy klatce, przy tych kontenerach za 14. Nie wiem wgl po co. Ja tylko wracam z roboty i chcę mieć spokój.\n- no i na rogu otworzyli jakiś nowy lokal... Ludzie, trochę SZACUNKU! Znowu syf przy klatce i hałas do nocy. Ja wstaję o 5, nie na disco. Nwm po co to komu tutaj.\n- Ci przyjezdni znowu rozstawili się przy tym nowym lokalu na rogu Kolejowej... jutro wieczorem idziemy tam z chłopakami i przypomnimy im, skąd jesteśmy. Ludzie, trochę SZACUNKU!!!\n- Żelazna Forma dzisiaj konkretnie. Martwy ciąg w końcu poszedł tak jak chciałem... ręce mi odpadają, ale satysfakcja jest! Jutro przerwa, bo w poniedziałek znowu szarpanie od 6 rano.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "f5c324781db9b1b5fb3434a51b4aabde51c42f32",
+ "response": {
+  "id": "gen-1791459895-O7bwg99honlyaEZFoRyo",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Ostatnio komentował mecz, zgłaszał uwagi o osobach przy klatce i nowym lokalu, zapowiadał wieczorne wyjście z kolegami oraz opisał trening na siłowni i plany na poniedziałek.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791459895,
+  "model": "deepseek/deepseek-v4.1-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 62,
+   "prompt_tokens": 433,
+   "total_tokens": 495,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 256,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 6.4518e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 6.4518e-05,
+    "upstream_inference_prompt_cost": 2.7318e-05,
+    "upstream_inference_completions_cost": 3.72e-05
+   }
+  },
+  "provider": "StreamLake",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "model": "moonshotai/kimi-k3",
+ "n_posts": 104,
+ "cost": 0.26808024999999996,
+ "calls": 133,
+ "prompt_tokens": 131491,
+ "completion_tokens": 12366,
+ "elapsed_s": 127.6,
+ "refusals": 2,
+ "empty": 0,
+ "errors": [],
+ "reasoning": {
+  "enabled": false
+ }
+}

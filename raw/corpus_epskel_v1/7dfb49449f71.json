@@ -1,0 +1,87 @@
+{
+ "call_id": "7dfb49449f71",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 313601582
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Prowadzi mały punkt dorabiania kluczy w Radomiu i odpisuje między klientami, najczęściej w południe.\n- zainteresowania: modele pociągów, domowe naleśniki, fotografowanie szyldów\n- lokalny punkt odniesienia: ławka przy ulicy Żeromskiego obok poczty\n- aktualna sytuacja życiowa: Przestawia wyposażenie punktu i szuka miejsca na nową gablotę.\n- sposób pisania: zdania: long run-on; interpunkcja: wielokropki i przecinki zamiast kropek; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: rare\n- tik językowy: kończy zdanie słowem „wiadomo”\n\nTopic for this post: sport\nConcrete angle: W niedzielę wieczorem po grze z kumplami na orliku odkrył w torbie suchą koszulkę, o której rano zapomniał. | mood: pleased | opener: plain fact | verbal tic in this post: yes\nRegister: chatty\nTarget length: about 11 words\nTime of day: evening, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Usiadłem po południu sprawdzić listę zakupów. W telewizji leciała końcówka siatkówki. Odłożyłem kartkę na chwilę. Dobry mecz się trafił.\n  - a ja przed wyjsciem na basen przekopałam pół pokoju za czepkiem... wróciłam pozno, susze recznik, a on sobie siedzi w torbie 🙃 chyba od poczatku tam byl 🏊‍♀️\n  - ...wlasnie miedzy klientami zapisalem trase na sobotę przez jedlnie, wyszla mi fajna petla rowerowa, jeszcze patrze czy nie dorzucic kawalka lasem\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "8484fa48ffecbaa4ffbfa8f4230d40bce96b0bfc",
+ "response": {
+  "id": "gen-1791464016-Kpyda0cSiDLBCUGFAnSz",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: po orliku znalazlem w torbie suchą koszulke... rano o niej zapomnialem, fajnie sie zlozylo",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464016,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 36,
+   "prompt_tokens": 852,
+   "total_tokens": 888,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002064,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002064,
+    "upstream_inference_prompt_cost": 0.001704,
+    "upstream_inference_completions_cost": 0.00036
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

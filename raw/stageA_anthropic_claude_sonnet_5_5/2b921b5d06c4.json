@@ -1,0 +1,86 @@
+{
+ "call_id": "2b921b5d06c4",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i po meczu... 2:2 w ostatniej minucie!!! Serio, SĘDZIA chyba oślepł. Karny był jak byk. Wracam z siłowni a ręce dalej mi się trzęsą ze złości... Ludzie, trochę SZACUNKU dla kibiców. Nwm, jak teraz zasnąć.\n- Wracam do domu i znowu pod blokiem pełno ich... Za dużo ich tu wgl. Na osiedlu każdy dzień to samo. Nwm, kiedy to się zmieni. Ludzie, trochę SZACUNKU!!!\n- Na rogu otworzyli nowy lokal i od rana już ludzie stoją pod wejściem... Muzyka, śmieci, pety na chodniku. Wgl nikt nie sprząta!!! Kontenery za 14 już pękają. Ludzie, trochę SZACUNKU. Nwm, kto im to w ogóle zatwierdził...\n- Nie napiszę tego posta. Ma być w nim groźba wobec konkretnego lokalu i imigrantów, z obelgą grupową, terminem i zapowiedzią zbiorowej przemocy ukrytą w aluzji do historycznej krzywdy. To podżeganie do przemocy, więc w tym nie pomogę.\n\nMogę za to napisać kolejny post w głosie tego bohatera o irytacji z powodu hałasu, śmieci i braku reakcji administracji, np. z pomysłem pisma do spółdzielni albo zgłoszenia do straży miejskiej. Dam radę zachować jego\n- Dziś na Żelaznej Formie martwy ciąg 180 na 3!!! Plecy trzymały... Tylko ktoś znowu zostawił talerze na sztandze i poszedł. Ludzie, trochę SZACUNKU! Odkładamy sprzęt, to nie jest takie trudne. Wgl dobry trening jj.\n- Osiedlowy mem dnia: kontener za blokiem 14 wygląda jak wystawa mebli!!! Kanapa, dwa krzesła i jakaś lodówka... Ludzie, trochę SZACUNKU! Są specjalne terminy na gabaryty. Ale spoko, nwm, może to nowa galeria sztuki na Zielonych Tarasach...</br>\n- Nowi sąsiedzi z trzeciego piętra... Muzyka do 23, drzwi trzaskają, buty na klatce!!! Wcześniej było cicho. Serio, ludzie nie wiedzą, że obok mieszkają inni? Trochę SZACUNKU. Ja o 4:30 wstaję do roboty... nwm, może im się wgl nie śpieszy.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "ff669ecbc1c0818048d262e50b5cffaddec2fea7",
+ "response": {
+  "id": "gen-1791460103-Rev7QMAfRsqz1BrW48Ad",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor opisywał ostatnio swoją codzienność: mecz piłkarski i treningi na siłowni, zatłoczenie i śmieci na osiedlu, nowy lokal na rogu, przepełnione kontenery oraz hałas od nowych sąsiadów, przy porannym wstawaniu do pracy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460103,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 112,
+   "prompt_tokens": 1073,
+   "total_tokens": 1185,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.003266,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.003266,
+    "upstream_inference_prompt_cost": 0.002146,
+    "upstream_inference_completions_cost": 0.00112
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

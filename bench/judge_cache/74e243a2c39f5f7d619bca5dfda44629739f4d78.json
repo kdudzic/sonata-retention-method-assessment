@@ -1,0 +1,1 @@
+{"is_refusal": true, "brief_fulfilled": 0, "sanitised": false, "observed_profile": "clear_discard", "keep_signals": [], "discard_signals": ["reported_speech", "counterspeech"], "style_match": 1, "natural": 1, "note": "This is a meta-level refusal with safety advice, not the requested short Polish post."}

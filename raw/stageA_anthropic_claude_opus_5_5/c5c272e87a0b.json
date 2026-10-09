@@ -1,0 +1,95 @@
+{
+ "call_id": "c5c272e87a0b",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 919935999
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nTopic for this post: dzieci i rodzina\nConcrete angle: dziecko chore, zwykłe przeziębienie\nRegister: enthusiastic\nTarget length: about 34 words\nTime of day: late night, Tuesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - \n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "c8fddc10e6aa36b356668d7e028ccaf58dfaa0ac",
+ "response": {
+  "id": "gen-1791459881-4lh0FfPtFC2lLG5M0MSX",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm picturing a nursing student writing late at night about her sick nephew with a common cold — keeping it mundane since health details are fine here since they're not about a protected identity. I'll write it in Polish, casual and enthusiastic, around 34 words with typos, missing diacritics, random caps, exclamation marks, emoji, and abbreviations like \"np\" and \"tb\".\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSjAoKEAgSGAI4AUIIdGhpbmtpbmcSDItu78c0kr1psh2aAxoMuynHeMsV7r5itePoIjCyPR2OC7rSm8g3zwiXg6tAUE0SZYH/IlVcZ/BGJhj2Er5L/0XqNKKYFJL4xEXzeJsqqQnRa8vXXU05iHSRYqIMcwFDEGpqoFwCBYgWTA4wwCTN0o0SWgut1LCaX0FAIQ9TGYIj/yYwQwxkm0e7weoeVBYzqr4YiHmlWtW1vO2cO+R77Uxa+kMSh1lo70XMySMIyFkty9zZT3l6XiyGMWV8gdFC/O3EdRzBT6cbbj3DTZZk8ppzXg9VSzWTXHORRWUnuIln7t2ZqH8fXVOzWBUocgjtdl3Bjp7OYXpUCIS53uCJtzmYo28BWlV0yvOGx53iYA45YcR74ky0McHgZN0DiMHdcb9XOuKpwYGwUbBbOzxkEjS/CFDg1m4UxhDqJA2Qkcvp9qpZI9nZm10kyDQZbgD8qgTTWgTQwpMP5VLUGMT4kcYy1sNVAxhPRHll0S4QhbrUXNuCvMhhHmH4vXwMyheffaPLvNZbmWZwCC7AHG8wVqne8PoqfShkIdlAAvEbKafJtNkhEgoM/3XhQC3GzPsB11JNWag1zeN2+j8CA5elfGAv5eQkjpGZJRGJjuDgM9vnIn3KOYEjE6/6JWhSTtJuu0DvunV8cHSP4VbQr06WR2SNIJ0TMFnwT2dwhA6SmvkPklUWIRQ7QbNdGvI92v9CazPKByL2L6uTtald5XLkOH8x93G1JKMALC29mMPdQa32gpKKSGOKhp6ELUuTO9GU3T9h+ticfNG6Swf4lPD3XmDlEkZFheSW2xb7QyPAJoOnE33wZnFGxPjEo/j3+XGJQ61cVNKUlJl6iP+qKXYmpTH7FtesSuYuo5mMcxSi3joRLyO/c4Ic4aerojz0hNl/7kvIb8kL3EL3HZw3lWPJgSJy5BoPSZB/tMclzrqb/z5+J8kyZP6UIY0qqqFaZVOavnQYimLogOKNUN0G5dkIyi7QKIOpB66nDd94Fo8bxoeRJ3UDD9vBdFhL1/YwSWL6q7g9zMgmMC+cvkDGozyuDFpUrCjN4qWjJHSKfaBEhr3qCVCwUdZqrDaK9BAnwm8fc2o1CJqdx5X7S16yVniZyd5/HO6VrA2jBNC3yp7JpA+23Y0SPwMkqXIjj9HNOehhjqLUcqzV2CLddUqFKCnQpt3+z9xeDV6n07I2yMPIaEMGLyWf/Q6AI3+efHhZ2KKNRODlKeedu28q68/eWMWvPZdg5x/XIyAtHRVIodcIMSFoZiTPYYvy7+pAOjXGK3HKEH5am/jhjON2L2V9+YmhpsAoze7sC4zOPJz20BMA7iXS/80P+nFW+pUJcFLecwTO8TiUCcGMNN3E24xkU/96YkWO81QnBsEIe2UIG+iQblbrMr8pXpZAydbIHI/e56YTzt7mGkS+/AYEc/dK1VS+TnFOv5NABeinkLSR9TZTRRVr+a8CsPk1czJeV8XTyvk6IQUrbeO2DoHuyiHWlkF5jtOSODqMGCEqaaVMTuAVH+mg9e3tq2TNPOaNobhMVPlF48UungSs/Kzu1m9s5mi3tY6PSF+MLbUxzAYbajnFNOLxfDMl8AYwWFeLiCiIWeVNF4ItWAS6HjVaVcfeRGW0m8+48p10fX9Lee5sR/dTVv9Z0/gj5PIH6PsGHFYRP9k3gYkKwayZgmj3A8A5Jrc6WogZAbx2/EwixxgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459881,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 949,
+   "total_tokens": 1249,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 300,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.009796,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.009796,
+    "upstream_inference_prompt_cost": 0.003796,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 300
+ }
+}

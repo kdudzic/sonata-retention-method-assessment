@@ -1,0 +1,95 @@
+{
+ "call_id": "3e8f274d9e11",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... sobota stal gra u siebie wiec zbiorka na spoldzielczej o 15 przy zabce. kto jeszcze nie ma biletu niech ogarnia bo potem bd placz... ja po zmianie prosto tam stary. no i git!\n- ahaha no wlasnie stary... wracam po zmianie a na magazynie znowu nowych przyjeli, polowa wgl nie gada po polsku. nwm co sie z tym krajem dzieje... wszedzie ich pelno juz. dobra sobota stal i grill, reszta mnie nie obchodzi\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "72ef3eecc2a69e2eecf82431083a0070af0d5bb5",
+ "response": {
+  "id": "gen-1791460586-kk62MLKzcKpuCaztvLQv",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba organizowała sobotnią zbiórkę przed domowym meczem Stali, pracowała na zmiany w magazynie, gdzie zatrudniono nowych pracowników, w większości nemówiących po polsku, i planowała grilla.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I'm noting he was organizing a meetup before Saturday's Stal home match, mentioned his warehouse shifts, observed that new hires mostly don't speak Polish, and planned a grill gathering — keeping this neutral and avoiding any labeling.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm noting he was organizing a meetup before Saturday's Stal home match, mentioned his warehouse shifts, observed that new hires mostly don't speak Polish, and planned a grill gathering — keeping this neutral and avoiding any labeling.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSjwYKEAgSGAI4AUIIdGhpbmtpbmcSDMN5eNj64mzLdD8FExoM8XaBotnBKeE0/VeAIjDw4tsszJlOkDUDtwsw9zMR41rbkt0lx7Y4pFLhwNWrwXu7dg/4BLI1+itxlsNOUWMqrAWQrhscijSr9dqWgOm04nNHt6L4iypnvds5t11kSrUWEtBzHUz99FzqO95S7Z0rpflJwpJtmGBOkVz5aoYRMoWbVHIl21e5CGQT0EHR7jgJuJ/GX3CG1aq46aIQlSX8BkyvRXowcmgJnXmJdnVriqv+gd+2hM0+2X3NJ4OCqNz5nW9FEJMvO8vxAQepqn6Qj3OdYYgqJfxRXPj9IDkz9QnMtqCBLOcGSvQpmP3pcjm33E2eSopWSNoqX6vilFs+3iMxJaNJUlIkLdEmEL7mLAQDxiOE96ZvU7JyAUUlPnb1QqfmeIAfjCKZPM4KL8YRRjnAh6S/ohHxvqPPkLJd8Qe+s6sIC1rs683RlYMjcDTI5v5UkVZyjniYR4d2A5hDJCtfG6PDq3xcRWS3kcEx3WjuvNQl0HBx71g9ftYCNIHjhEHppcCfq10Fv0svCYkySWpFJH65573/xFTgML9F5MvRZTZiZulvLqJkTn/kZ/EcLVHGNwfHZQLgZtgT3b1P4tw0+BVxSiC4Ct83kR5admhHLCBgkCIoUGZhT4trNywnzQkYsKCKUIIN2gDLP02dcn6ef3qX5A3G9bkI/QeTAzPca8Kow5oPagWgZYFa91+VisdEz9NFt1sf6UmCDc3OvPEdQLvrqhxtmwdLjJYpWOauSDf1HRIIaYCVIOgOVuXpFpTqkIe7yTxZ/5BAKvLS6CEoULvQDhBCaTwBbxvwxb0tLubyXZ9Qxbi5nFFtBKwrV9NP7U/OphWhJvHW3QUmmHekF2yc7CgNWQ8COohI4/qOpl0nj8aLfgGV1nhFpHQ4UY4CL9tdWvLt9tHKkMfs2pSgQOzOTDWcAPDNjCoCHrYEc6vlp9aFkys5GhpLw5qgTm2AddBcx1AuNwyOkMZGjWvSlcSl6V9y5rfecRMYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460586,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 158,
+   "prompt_tokens": 330,
+   "total_tokens": 488,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 71,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00448,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00448,
+    "upstream_inference_prompt_cost": 0.00132,
+    "upstream_inference_completions_cost": 0.00316
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 71
+ }
+}

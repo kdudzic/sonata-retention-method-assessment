@@ -1,0 +1,95 @@
+{
+ "call_id": "f76486f321f8",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... w sobote stal gra u siebie wiec zbiorka standardowo na spoldzielczej pod zabka o 15... kto jeszcze nie ma biletu niech ogarnia bo potem bd placz. po meczu moze grill u mlodego jak pogoda da rade. no i git stary\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "42374d996222de81a37f7ce592a4bca85e674bf0",
+ "response": {
+  "id": "gen-1791460201-3XfP8giJOuRDXH3fCeDn",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba informowała o sobotnim meczu Stali u siebie, zbiórce o 15 na Spółdzielcz",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "This looks like a post about a Saturday Stal home game, mentioning a meeting point at Spółdzielcza street by Żabka at 15:00, a reminder about tickets, and a possible barbecue at \"młody\" after the match if weather permits. I should summarize this neutrally, keeping the past tense.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "This looks like a post about a Saturday Stal home game, mentioning a meeting point at Spółdzielcza street by Żabka at 15:00, a reminder about tickets, and a possible barbecue at \"młody\" after the match if weather permits. I should summarize this neutrally, keeping the past tense.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSrAYKEAgSGAI4AUIIdGhpbmtpbmcSDIvVOuhlKPvH/PCPORoM++GwLIXfAqmGaEOLIjDZbKiGrM+KLbL9qXmO4V8U5Vyvu9jivnR/u+cSi9K4Y7QPlBPnejzogkjLvFwG1q4qyQUz1IbstflVopGA7jkrnWPhARvqO057qz4Z/LDOU0Rno+CXgF81Cy3s9Z9BszPTrBwWQxxNDNkVIJqdexb4QxTFnwVMT7WEgtAJ65L7tWgYUW/1yE6iobGzME88DLgTxXE3LGj5xFD9v/t2kDc83TesNx3ItDMpBDNTZHxoKqDWKpXC4uliaYNDG6sQDdx2JQjJmqP6wvFOBf7ca6copzXW8DEdB8SLV5Xv+GiT7oMC52s1wnHXrpDBVGBUZSpWkqhJ+/iWEJ/cDDApNZiMvF0n/6iKv+glc/KUSuXo4s9I8ifTje22fhGSP9xO/gZ8KCBeRY7lRnw8Pk3oM46xsl45dLi8yRYNZUw9cEtmVr9+Iqnb433nr2z3mlIk1xX8py7ilN2scnTesIQWB47hh1y4wn96AXPuXBpNUsPYDsUJOqql3EgdSiFEdtt5pkFexvVqEkZk7tSIFNGzrjakKAuGINinrM//BQNo3EYteECRlME3tR3ox4FsppZKVFCVJw5OY1GGEL+PoZULBhlj4Tk7rinCfItb3Z2vxUo6onxVncpwJTS1dPiPDdxjExdMYalbczxrGtkP6xyy/ap1Z2MFVsGvgMr/aixaqgmEF7LIaj3tWL4roY7RATqCTBm4mWqws3gr6oI2b0M0Gy3MtIcRCLMk1bZ/nawexaTwaM2cA3CZ562jSJaCZE10FRfROgBnWUTbGnxNNTyOcz/Zj4WtGhL0tZevYjKv3s5ZqkrLIv0gVBBSjTY7FBGu5xvcOS4z5KPKAIgk0rq92S/1hAltDKhVBNFWHOxisO2+MlBiTtVFKsSVBx/M921FeI7t5QrSzizFlnaMvn20Jl5aLY+eXncrBFQCzske2MZm+C/1YIUzow/5vPIOO5WKYDbDjT4a0D8DZ3nPLQjqQPlFwX1HZKD1MwfWQPghj1AJWkD+qWTPSHFXESCLyxgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460201,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 232,
+   "total_tokens": 352,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 79,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.003328,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.003328,
+    "upstream_inference_prompt_cost": 0.000928,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 79
+ }
+}

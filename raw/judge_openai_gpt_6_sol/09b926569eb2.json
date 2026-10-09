@@ -1,0 +1,86 @@
+{
+ "call_id": "09b926569eb2",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.\n- zainteresowania: fotografia uliczna, kolarstwo górskie, kawa z palarni\n- lokalny punkt odniesienia: skwer Kościuszki przy molo w Gdyni\n- aktualna sytuacja życiowa: Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete, dużo nawiasów; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Krótka obserwacja:”\n\nPosts by this author (in order):\n1. Krótka obserwacja: syn kończy w sobotę dziewięć lat i chce na urodziny lampkę do swojego kącika w nowym mieszkaniu (czyli w sumie prezent dla nas obu).\n2. Krótka obserwacja: wieczór zapowiada się naprawdę ładny (niebo już teraz robi się pomarańczowe nad molo), więc po pakowaniu kartonów pewnie pójdę na skwer Kościuszki z aparatem, zanim słońce całkiem zejdzie.\n3. Krótka obserwacja: w niedzielę po południu w SKM-ce od Redłowa do Gdyni Głównej weszła kontrola biletów (dwie osoby, bardzo spokojnie, nikt się nie spieszył), a ja przez całą drogę szukałem w telefonie biletu, który i tak kupiłem rano, i jakoś znalazłem go dopiero przy drzwiach.\n4. Krótka obserwacja: skoki w telewizji w poniedziałkowy wieczór to jednak najlepsza rzecz, jaką można mieć w trakcie rozpakowywania kartonów (syn już kibicuje głośniej niż ja, a drugą serię oglądamy na stojąco!).\n5. Krótka obserwacja: zapisałem syna na zajęcia na basenie w poniedziałki i czwartki (po przeprowadzce będzie mu bliżej niż stąd), a sam chyba wreszcie wrócę do pływania w torze obok, bo od roku tylko obiecuję.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "8feb21de119d469e26677dde58b7efba4c13ebc9",
+ "response": {
+  "id": "gen-1791461118-dNDXZ3l7lrIIF95yqiaN",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 4,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"Identical opener in every post feels mechanical\",\n    \"Similar parenthetical sentence structure throughout\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461118,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 86,
+   "prompt_tokens": 795,
+   "total_tokens": 881,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00245,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00245,
+    "upstream_inference_prompt_cost": 0.00159,
+    "upstream_inference_completions_cost": 0.00086
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

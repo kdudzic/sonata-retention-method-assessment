@@ -1,0 +1,86 @@
+{
+ "call_id": "da8438342d5e",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.\n- zainteresowania: szydełkowanie swetrów, teleturnieje w telewizji, wnuki i ich zajęcia\n- lokalny punkt odniesienia: targowisko przy ulicy Szczecińskiej\n- aktualna sytuacja życiowa: Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.\n- sposób pisania: zdania: long run-on; interpunkcja: ellipsis everywhere; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: dodaje „co by nie mówić”\n\nPosts by this author (in order):\n1. ...i tak mi właśnie Staś przez telefon pokazywał tę nową grę farmerską z wyprzedaży na całym tym Steamie za jedyne czternaście złotych... a ja się tylko cicho pod nosem uśmiecham... bo to przecież tańsze niż zwykły motek porządnej wełny...\n2. Zmęczona... po powtórce Jednego z dziesięciu przypomniała mi się ta poranna mgła o siódmej... jak zupełnie zakryła bloki naprzeciwko mojego balkonu...\n3. Jest wpół do ósmej i piję ciepłą zbożówkę z miodem... tak mi się przypomniało jak w poniedziałki cała nasza księgowość schodziła się do kącika socjalnego... co by nie mówić był wtedy w biurze zupełnie inny rytm...\n4. Czy widziałyście może tę nową piekarenkę koło Szczecińskiej... wracałam z targu i z ciekawości wzięłam małą czarną na wynos w papierowym kubku... całkiem smaczna... pachnie wybornie...\n5. Okropnie duszno od samego rana... spojrzałam na termometr za oknem w kuchni a tam już dwadzieścia trzy stopnie o szóstej... ręce się lepią do tej grubej wełny i nie wiem jak ja ten golf dla Majeczki skończę w taki upał...\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "7d4c496957cbf4e21327b2f5cb271a967cc75136",
+ "response": {
+  "id": "gen-1791461819-WMqVAJDgTB0rMAcjF2i2",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 4,\n  \"problems\": [\"Post 2 is less run-on than the others\", \"Post 4 sounds slightly promotional at the end\"]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461819,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 86,
+   "prompt_tokens": 783,
+   "total_tokens": 869,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002426,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002426,
+    "upstream_inference_prompt_cost": 0.001566,
+    "upstream_inference_completions_cost": 0.00086
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

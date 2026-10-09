@@ -1,0 +1,86 @@
+{
+ "call_id": "4708f14688a7",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Polska wygrała!!! Ale końcówka była nerwowa, serce waliło jak po martwym ciągu... Dobry mecz, chłopaki dali radę. Teraz prysznic i spać, rano zmiana.\n- Wracam, a na osiedlu znowu tłum jakby wszyscy naraz musieli tu być... Za dużo ich tu, wgl człowiek nie ma chwili spokoju. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu to już przesada... Muzyka niesie się po całym osiedlu, a pod blokiem wieczny hałas. Człowiek wraca po robocie i nawet odpocząć nie może. Ludzie, trochę SZACUNKU!!!\n- Jutro wieczorem idziemy pod lokal na rogu Kolejowej, pokażemy tym imigrantom, gdzie ich miejsce… przypomnimy im, jak kończyło się krzywdzenie naszych ludzi. Ludzie, trochę SZACUNKU!!!\n- Po robocie Żelazna Forma zaliczona. Martwy dzisiaj ciężko szedł, ale wyciskanie nadrobiło… jutro pewnie zakwasy jak nic. Teraz prysznic i chwila spokoju, bo rano znowu zmiana!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "22090205cc7649e97c70e1b871052a255c3ae67e",
+ "response": {
+  "id": "gen-1791459882-nQMBUncOh4VW93hAqMRB",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po pracy oglądał mecz, narzekał na tłok i hałas na osiedlu, zapowiadał wieczorne wyjście pod lokal na Kolejowej, a także trenował siłowo przed poranną zmianą.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459882,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 57,
+   "prompt_tokens": 373,
+   "total_tokens": 430,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 6.58e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 6.58e-05,
+    "upstream_inference_prompt_cost": 3.73e-05,
+    "upstream_inference_completions_cost": 2.85e-05
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

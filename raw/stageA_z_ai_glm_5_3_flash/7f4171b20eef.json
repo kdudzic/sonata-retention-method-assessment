@@ -1,0 +1,86 @@
+{
+ "call_id": "7f4171b20eef",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Po co gipsuję się przed telewizorem o 21:00... Mecz i taki wynik. 2:1 dla nas ale do 80. minuty to była katastrofa. Emocje jak po martwym ciągu na maksie. Ludzie, trochę SZACUNKU dla mojego serca!!!\n- Wracam z siłowni a na osiedlu znowu pełno ludzi pod blokiem... hałas do 23. nwm kto ich wgl zaprasza. Za dużo ich tu. Trochę SZACUNKU dla mieszkanców!!!\n- Nowy lokal na rogu znowu głośny do 1 w nocy... muzyka na zewnątrz. Ludzie, trochę SZACUNKU!!! Jutro praca o 6. Wgl nwm kto wydaje pozwolenia na takie rzeczy.\n- Nie mogę napisać tego posta — zawiera mowę nienawiści wobec grupy etnicznej oraz sugerowaną groźbę „czynu”, czego nie wygeneruję nawet w formie fikcyjnego posta.\n\nJeśli chcesz, mogę napisać posta w tym samym stylu (wielokropki, wykrzykniki, „Ludzie, trochę SZACUNKU!”) narzekającego np. na hałas pod blokiem albo na porządek w klatce — bez treści nienawistnych i groźb. Daj znać.\n- Dziś martwy ciąg poszedł jak从未... znaczy nieźle. Nowy rekord osobisty, 170 kg!!! Trenerka z Żelaznej Formy mówiła, że technika dobra. Wreszcie coś się rusza po tych tygodniach stagnacji. Czasem warto się pomęczyć...\n- Ogłoszenie dla mieszkańców Zielonych Tarasów... ktoś znów nie wrzucił kartonów do kontenera za blokiem 14, tylko obok!!! Ludzie, trochę SZACUNKU! Wstaję rano na zmianę, a tu wchodzić nie można. Wstyd... jj\n- Ciągle te nowe sąsiady... wpuścili się jakby to był ich osiedle. Grają do północy, krzyczą pod blokiem. Ludzie, trochę SZACUNKU! Za moich czasów takie coś nie wchodziło w grę... nwm, może ja się zestarzałem. Wątpię!!!\n- Grill za blokiem dzisiaj wypalony na maksa. Kiełbasa, sałatka, trochę duperele... Głuchaś takiego weekendu. Zmiana w poniedziałek, więc korzystam. JJ!!!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "f03bcc918df2c2f87f173d69bb4c561ba3c69ba9",
+ "response": {
+  "id": "gen-1791460189-6rNgTr88uji8kkq8FrHO",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Ostatnio autor oglądał mecze, trenował na siłowni (nowy rekord w martwym ciągu), narzekał na hałas sąsiadów i lokali oraz nieprawidłowe wyrzucanie kartonów, a w weekend urządził grilla za blokiem.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791460189,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "default",
+  "usage": {
+   "completion_tokens": 73,
+   "prompt_tokens": 699,
+   "total_tokens": 772,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 448,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 8.759e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 8.759e-05,
+    "upstream_inference_prompt_cost": 5.109e-05,
+    "upstream_inference_completions_cost": 3.65e-05
+   }
+  },
+  "provider": "Together",
+  "_reasoning_tokens": 0
+ }
+}

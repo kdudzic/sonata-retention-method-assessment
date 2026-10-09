@@ -1,0 +1,86 @@
+{
+ "call_id": "f49825295c13",
+ "tag": "arc_summary",
+ "params": {
+  "model": "mistralai/mistral-large-4-0",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- spacer dziś za blokiem... mały się w wózku wyspał jak zwykle... ja tylko patrzyłam na telefon i myślałam o ratach... no cóż... idzie dalej...\n- wczoraj był u nas komornik... pierwszy raz... siedziałam na kanapie i płakałam po cichu jak dzieci spały... rata znowu poszła w terminie ale oni i tak przyszli... nie rozumiem tego świata... no cóż...\n- nie daję już rady... wszystko się wali... praca dzieci dom kredyt i jeszcze to... nie mam siły nawet pisać... no cóż...\n- mama zachorowała... kredyt czeka a ja nie wiem jak to pogodzić... no cóż...\n- nie widzę sensu... wszystko wali się w jednym momencie... nie mam siły...\n- lepiej im będzie z nami tam niż tu bez nas... nie zostawię Stasia... wgl nie wiem co dalej...\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "5651d564c3b14ddad8bbb70bd452e01455d3d53d",
+ "response": {
+  "id": "gen-1791459976-YlILQSVP2PW0giAIojYo",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba pisała o codziennych spacerach z dzieckiem, wizycie komornika, problemach finansowych związanych z kredytem, chorobie matki, narastającym przytłoczeniu obowiązkami oraz myślach o śmierci.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791459976,
+  "model": "mistralai/mistral-large-4-0",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 66,
+   "prompt_tokens": 322,
+   "total_tokens": 388,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0003569,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0003569,
+    "upstream_inference_prompt_cost": 0.00021896,
+    "upstream_inference_completions_cost": 0.00013794
+   }
+  },
+  "provider": "Mistral",
+  "_reasoning_tokens": 0
+ }
+}

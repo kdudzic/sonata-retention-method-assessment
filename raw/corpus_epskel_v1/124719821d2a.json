@@ -1,0 +1,86 @@
+{
+ "call_id": "124719821d2a",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- festyn osiedlowy już w sobotę!!! Upiekę szarlotkę, a dla dzieciaków szykujemy gry i malowanie buziek 😊 Kto może pomóc rozstawić stoliki? Napiszcie, bd super!!! Do zobaczenia na miejscu, sąsiedzi!!!\n- nwm, co panu Wróblowi znowu przeszkadza!!! Dziś nakrzyczał na mnie przy wszystkich, że robię zamieszanie na podwórku. Ile można słuchać takich pretensji?! Jestem wściekła 😤 Następnym razem nie będę już milczała!!!\n- ja pierdolę, widzieliście, co on znowu zrobił?! 😤 Pogadajmy wieczorem, bo trzeba się w końcu zająć tym śmieciem!!! Nie mam już siły patrzeć, jak wszystko uchodzi mu na sucho...\n- grill wyszedł nam dziś idealnie!!! 😍 Kiełbaski zniknęły w pięć minut, a na ciasto ledwo załapałam się sama 😂 Dzięki wszystkim za miły wieczór! Do zobaczenia na miejscu, sąsiedzi!!!\n- pogadałam z Romkiem!!! Zgadza się, więc w sobotę dogramy szczegóły. Na razie tyle, bo muszę jeszcze ogarnąć kilka spraw... ale dobrze, że wreszcie mamy to ustalone 🙂\n- rano słońce, potem ulewa, a teraz znowu błękitne niebo!!! 😅 nwm, czy brać parasol, czy okulary przeciwsłoneczne. Oby jutro było trochę spokojniej, bo od tego skakania pogody wgl nie wiadomo, jak się ubrać! ☀️🌧️\n- pamiętasz o czwartku? Niech poczuje, że nie może tak wszystkich zbywać!!! Ja już mam dość tego kręcenia... Pogadamy na miejscu, bez przekrzykiwania się przez klatkę. Do zobaczenia na miejscu, sąsiedzi!!!\n- znowu pełno papierków i kubków przy ławkach!!! Kosz dwa kroki dalej, a i tak wszystko leży na trawie 🙄 Wzięłam dziś worek i trochę zebrałam, ale serio, pilnujmy po sobie porządku!!! Do zobaczenia na miejscu, sąsiedzi!!!\n- w czwartek o 18:00 zebranie w szkole w sprawie festynu!!! Kto może, niech wpadnie na chwilę. Trzeba dogadać stoliki i ciasta... Ja przyniosę listę rzeczy do zrobienia 📝🍰\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4c2ecbc3615c7649af10cc2a24a2a13fef5974a1",
+ "response": {
+  "id": "gen-1791465257-UttbswVsZ7IaAY2XzqK5",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba przygotowywała osiedlowy festyn, uczestniczyła w grillu, rozmawiała z sąsiadami o sporach na podwórku i sprzątała śmieci przy ławkach.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465257,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 55,
+   "prompt_tokens": 678,
+   "total_tokens": 733,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001906,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001906,
+    "upstream_inference_prompt_cost": 0.001356,
+    "upstream_inference_completions_cost": 0.00055
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

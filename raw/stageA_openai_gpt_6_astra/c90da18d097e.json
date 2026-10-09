@@ -1,0 +1,95 @@
+{
+ "call_id": "c90da18d097e",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dopiero teraz wrzucam nasze zdjęcie ze spaceru. Po pracy udało mi się wyciągnąć młodszego do parku. Potem jeszcze plac za blokiem i obowiązkowe „mamo jeszcze chwilę”... Dobrze było trochę pobyć razem bez zerkania na zegarek.\n- Dzieci już śpią a ja znowu liczę czego nie zapłacimy. Po wizycie komornika nie mogłam się dziś skupić w biurze. Rata i rachunki zjadają wszystko. Do wypłaty jeszcze tyle dni... No cóż... idziemy dalej.\n- nie daję już rady. Usiadłam dopiero teraz i nawet nie mam siły odpisać na wiadomości. Cały dzień coś trzeba. A ja już nie mam z czego brać tej siły... No cóż... idziemy dalej.\n- Dzieci już śpią. Sprawdziłam ratę kredytu i odłożyłam telefon... Mama dalej choruje. Jutro po biurze podrzucę jej zakupy. Miałam jeszcze porównać oferty banków ale to już nie dziś. No cóż... idziemy dalej.\n- Siedzę i patrzę w telefon. Miałam coś ogarnąć ale nawet nie zaczęłam. Nie widzę sensu w tym moim ciągłym spinaniu się. Tyle wysiłku i dalej stoję w miejscu... Jestem już zwyczajnie wykończona.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "b5e4c19d244d11aeb2e6b0138c64981159789715",
+ "response": {
+  "id": "gen-1791460597-ueC0SW7fJhFxQsWCu1ru",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracowała w biurze, opiekowała się dziećmi, spędziła z młodszym czas na spacerze, po wizycie komornika liczyła wydatki, sprawdzała ratę kredytu, planowała zakupy dla chorej mamy i pisała o braku sił.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4T3Fvs535H0TnVBt76-9j95OiGbIk-4OzTNsaDTFYMfIJwoGAxUejrkYs-ppcZXtUHUI_3LSbp9_VBRllxAdIcqzcoksjUuJyPk3litDcNyxGWjmnUC782v0sh8QES6OrOKmgofZA12K0wTMnipu3_f8evzrzQGhRcXSghb181Hrqg-k_roQWY04DVCfQjOQF0A30iqWZWK6jP4HQxqCpg-xf2nq1rdyE3P-KsFf1uj1mBjgZgeGCaTsDVR0rRLW_aYSkxHB3c5j0CYjKgIFIba608nuKHYelQ5iqzJ04suFZpFBDTRrBHANI2Jim16uCaRIQv_ckj4vGfbgUGQ4BoUkjmmDW5kfA0bLccm4uMoP-qjR-Fu5jZGyhAae1e-jsVE630ApWFKZhOGzdXp9EDuWd_rgWvGuSyQ3qpRFNyqRp1I0H_GKHxeAjGwtt7LA1SdvXhCkQQ4bcIWFClauTTILvVwebjF3WaE5iOTrt-lq2GOw0JM-tr5sTYz_F23ieM8PGa1SUrxkCE5QXk71UxOZExwIK1pI9Ry4DJODWlqWwkepLpgq7ZsZlRDb-iRG6F4eAdNueMxi1gWpT0K38CyKgWnhCE-keeVxmd89U0U0CzCELx2oN6A76QQUXUmRCwUxAhgAwbvcC5LPRoSwCYUixfR1uNIcTu9VVGbANE1L4yiYSNc-XvsnvOpLlsQU3gDYiBx7KEknTz7WtlQ8AwNgo_wuocmM0PCIQKdCfXKNRPM6Tnd9Q49XRJm-Z8uHV5d0Eal2EJhSM8ghx_WRlB2zamwovXzEFTS-TR3dMzs1toDcKPeuTtKKzIIDsWYvNdca1djxyeO-j2w3grGz7mMd1EQVKu9xQ-nhl9dPh9vhrb9izFn04QGKIJqbkDJMTymjPcbao4RYIKR5KUVrerP530q-jBhIJfWpbwp-pMTszdaocQr6MCEDJkpxZOg0EwMJg7CVlvaAb39GMY7gHvtuJm1o1Y1dBikpseeSsrWjd1E4TEeFqRfGxd97rmtB8HbzvcycXljEFwxm8EdhLYGz0nD6zPJYxnWJZ6pUSRDcmP6aKdTAP0Nr26N2ebv0lgKU4uMU5ri8A15zc-rEaWT7LFimJUJOZonj7_oSHg5ZjZ0-ItdhuzwzW59SviflxSMpJ8UsFQRCO-HQf8L8guQSzZfii-JuHYkLmlM0UYcAQQoBbegunuI-Jq42iAO6KzP_zmeF9zFbyb-7RnfxvGBnn3UWUEnY2hDQrlaxcU7JSvR_z3I0MzsgvC2c1_K8mzuTajPiBf-zgzEbj_Amdq_cz7KrJd6_VnkRiHRIa06w2mxl88ifIQr_SvUX0ihAdSlswqZp-nou6RFDi1cFtTqATnnv_yfsrZUqILY2GR1b_oCJvpIzWTv7Xp-y5M48oh6Q4yV9tWtnoPN5C59WS_I0TQ-QD7rEZ_DmCR--HayIxc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0ae6b608f5ecae5d016ac784f6f3e887d1832c19b3c47abf70",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460597,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 95,
+   "prompt_tokens": 408,
+   "total_tokens": 503,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 19,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00883,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00883,
+    "upstream_inference_prompt_cost": 0.00408,
+    "upstream_inference_completions_cost": 0.00475
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 19
+ }
+}

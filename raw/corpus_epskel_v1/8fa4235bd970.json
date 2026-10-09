@@ -1,0 +1,87 @@
+{
+ "call_id": "8fa4235bd970",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1933689238
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kosi miejskie tereny zielone w Gorzowie Wielkopolskim; zagląda do telefonu rano przed wyjazdem w teren.\n- zainteresowania: ostrzenie kosiarek, obserwowanie chmur, bułki z serem\n- lokalny punkt odniesienia: parking przy ulicy Fredry w Gorzowie Wielkopolskim\n- aktualna sytuacja życiowa: Przez wiosnę sprawdza nowy sprzęt do pracy i planuje mały remont przedpokoju.\n- sposób pisania: zdania: short fragments; interpunkcja: skąpa, bez przecinków; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: kończy wpisy „tyle na dziś”\n\nTopic for this post: zakupy i ceny\nConcrete angle: W poniedziałek rano w drodze do pracy otworzył koszyk w aplikacji sklepu. Kupony obniżyły cenę pasty do zębów o kilka złotych. | mood: pleased | opener: one-word reaction | verbal tic in this post: no\nRegister: terse\nTarget length: about 11 words\nTime of day: morning commute, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - i jeszcze w przerwie zobaczyłam koszyki przecenione z 19 na 9 zl 🧺 weszłam tylko po wode a kupiłam jeden 😅\n  - nowy fartuch i cena całkiem okej... powiadomienie zobaczyłam dopiero przed snem, więc poszłam po paczkę o tej godzinie (we wtorek!), a materiał jest naprawdę przyjemny.\n  - czemu rabat na mąke wskoczył dopiero przy drugiej paczce? 🤔 w sobotniej przerwie obiadowej zerknąłem do koszyka w apce, jedna była po normalnej cenie, dwie już TANIEJ, nwm czy bd tyle potrzebował 😅\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "9e19642d11de8841023414186b89b4e0d43b02bd",
+ "response": {
+  "id": "gen-1791464213-B55ZbLCBnxyaGwN8nIUO",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: fajnie. pn rano w drodze otworzylem koszyk w apce. kupony zbily paste o pare zl tyle na dziś",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464213,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 36,
+   "prompt_tokens": 859,
+   "total_tokens": 895,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002078,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002078,
+    "upstream_inference_prompt_cost": 0.001718,
+    "upstream_inference_completions_cost": 0.00036
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "a40f072496a8",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... sobota stal gra u siebie wiec zbiorka na spoldzielczej o 15 przy zabce. kto jeszcze nie ma biletu niech ogarnia bo potem bd placz... ja po zmianie prosto tam stary. no i git!\n- ahaha no wlasnie stary... wracam po zmianie a na magazynie znowu nowych przyjeli, polowa wgl nie gada po polsku. nwm co sie z tym krajem dzieje... wszedzie ich pelno juz. dobra sobota stal i grill, reszta mnie nie obchodzi\n- no wlasnie stary... widziales co otworzyli na rogu kolo spoldzielczej?? ukrowy sklep! szyld po ichniemu wszystko... wracam z magazynu a tu takie cos. nwm jak dlugo to bd stalo... dobra sobota zbiorka jak zawsze, ogarniamy\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "2082c72de3de723ff4413665c2ce66ac0234ff81",
+ "response": {
+  "id": "gen-1791460605-ohmJtlaP2Gby7lJ1wj1H",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba pracowała zmianowo w magazynie, organizowała sobotnią zbiórkę o 15 przy Żabce na Spółdzielczej przed domowym meczem Stali i grillem oraz komentowała nowych zagranicznych pracowników i otwarcie ukraińskiego sklepu na rogu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep this neutral and avoid repeating any slurs. The message mentions working shifts at a warehouse, organizing a Saturday meetup near Żabka on Spółdzielcza around 3pm for the Stal home match and a grill afterward, plus comments about new workers at the warehouse and a shop opening on the corner — I'll describe these plainly without reproducing the offensive term, and I won't read too much into the ambiguous phrase about how long something will stay.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep this neutral and avoid repeating any slurs. The message mentions working shifts at a warehouse, organizing a Saturday meetup near Żabka on Spółdzielcza around 3pm for the Stal home match and a grill afterward, plus comments about new workers at the warehouse and a shop opening on the corner — I'll describe these plainly without reproducing the offensive term, and I won't read too much into the ambiguous phrase about how long something will stay.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQShQgKEAgSGAI4AUIIdGhpbmtpbmcSDLED2ZYSAwlNtR5sfRoMWSdehyZL7yxUPCJWIjDRj/5inlAFVs4AV3J942CiWxZs/k7TXvwfgHP3iS7PcKhc02+2YfmS4G3NsguQM94qogfGmllc6bvIBE7K3ZLzBUxQ48J2n5ZaoGS17NUHs1UsXAu96AcPuPWBOGI4T8mL6n+1eVPi9HEto+FJXEjt+RGZYU76nrgO7qTngKAa9NMibiAwe513oMvRAdfffeZzqc8FTwp+BbLQo+qqEAXzvrSvIYRu8exa0SP0dKQYhql1+SBi3Us1JMoCtAIInwYNp4OBNM39bGus3V2mdb2aQjp6grVoDQFCP6E/aloOcaRWdRngMWg9Madg9XWSrT0W7UIYkQY13zGXA8TD46K78Sjo5yA/O6/yL01Cg+uYwF6E96sR04H3dcluGUxIkGOs9GnHrtPxYyck5LfOg9ldBVTC7KmofH2vEI1iKsUd7bNJxNDYdYOP0PGjSOlpV/wpWrDhd3jkIkISodKNYqCKooBgh6HRlEMThMlOho4Q5zRQuEM54MyOAViufDJ5hOPPsQzp9pEmoxZh3SUC2zMvBj8Dkq1s6oDnIxJvlX5ygEtBLueJOGMF/kRYrAZGaSvmxSJcKbupYWXg/s1zr/M5hodnNonN+hKJkL8PWgSf/o+Rot0L9diZonIWxSqY7ii+pe9oIhQiVTuzNdfngXC1tjAiR7F6yrSwzuKBEnNzjQbKrcEhTh890n9TnMsXFZOxm8HM2+QId42UN0+kVP3uUlP64QKa1AMEITmamDBDUYPTsmAfvMokyx/YXq2C9FDA/FKX5qpBoM2oIJ0nOX9RI8xWE3zOJTnKTFxD/ZHjarnhPbA19m7iWpeMsXq7pl+UNDyc5BNLQPGLS/UO7R7v2K7XyyLckknCU24+5U4dHykpqbpG+l2FSpZREkwkAoH5Qv0t+fVJPau65kkBwxjppN4PrpFLYiiXJDXUfXBCjWE8wawvVCB4eeCQc/FfI6l8NXfRmiSV8ZRBi33XBEY3UmyJLiNhU/urseG/q85QofJYUV9jgI5HdgZdzaRGpUEk23H1qiywrhaNvO93s5V69VsOozZISNq7hoIPA7ZdLyn/JbRPeV45wFyOVPrcs/nToFT/XE75LBer5xSes9b84sA56W7bv+8DsGQYbmacZfkpFgJpt0x/AkDawgsCHAMSx8E5YS+rGjlHqX6HQaW48q5HPM4uhVkBxMmO+RsLQyjVR+bMH9YPgZLGexsyiNuC0IQeiYNZ3zxABlDoNN5pO4FwQhgHfDiqIU1twnXxCie/fe22GJZ2fATasUf64mnT7ghK8xri+/rdq4HzYqGtg0gF8oUYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460605,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 286,
+   "prompt_tokens": 445,
+   "total_tokens": 731,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 174,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0075,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0075,
+    "upstream_inference_prompt_cost": 0.00178,
+    "upstream_inference_completions_cost": 0.00572
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 174
+ }
+}

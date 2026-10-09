@@ -1,0 +1,95 @@
+{
+ "call_id": "b3fc7d35387c",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... ledwo ze zmiany wrocilem a tu juz trzeba na mecz leciec. oby stal dzis cos strzelila bo ostatnio czlowiek tylko marznie na tych trybunach... kto juz gotowy?\n- no właśnie... znowu wszedzie temat imigrantow. mam juz dosc tych przybledow i tego calego gadania... nwm czemu wszystko musi sie teraz krecic wokol nich. ile mozna!\n- no właśnie... widziales co otworzyli na rogu, ukrowy sklep! wracalem ze zmiany i dopiero szyld zobaczylem... tam gdzie kiedys byl ten punkt z telefonami. nwm kiedy zdazyli to ogarnac\n- ahaha dzis na magazynie skaner padl akurat jak mialem ostatnie palety... wiecej latania po drugi niz samej roboty. dopiero usiadlem i juz mi sie nie chce nawet obiadu odgrzewac... jutro oby sprawniej poszlo\n- no wlasnie... niech kurwy spierdalaja do siebie i tyle. ile mozna w kolko to samo... nwm czego tu jeszcze nie rozumiesz bo ja juz nie mam cierpliwosci do tej gadki\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "00900cabfe35f6100786b0598dc0ff6bd3fe5f4f",
+ "response": {
+  "id": "gen-1791461115-YCzv5VO1VUSWJqEBLQnA",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował zmianowo w magazynie, opisywał awarię skanera przy ostatnich paletach, chodził na mecze Stali, zauważył otwarcie ukraińskiego sklepu w okolicy i publikował wpisy dotyczące imigrantów.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4cBTm6b60n2cAG5xyTsm8K7NZA6AG-EXGRbw3xWUyuz6IhE4I3T30sqyjBMAoeZbWUFIp71V5BDanFUJlruzFbniu6HROW1SLqP4VDywJwSNmEz4B8zvj89HOgcWT_iq0DYrAlVs44NeqGBffNEaAqBe_FSmuMFVaqx4zSA4wpD_U4lcTyn9Tv5IQnHxngLKlc1zYjnlWm5chbcGxI76cM_hqF4n5jBv3rBKwEGY01S3PwwylkGXuW6-OA7wO8egjiDdTah1ovMnpO9jfiIKDCFLfrR6eD4VHv3aDh5OrsfTDZXWhmihCVPH3INjF8OeKG4xwbNZk_1v4kppXTWixsYyTun-B4w65OlQNd6PweGhccDnuqHQSjgsj3trp_4EVXVmUzJBWFO-r7HyFNkxoVPI0vD9Liqq3tB-Z-0CxA0giyyXdQFrfHrukCH78ObJoqbGwUOzWHvflVDw2UqC4GsKcfFol3AUmFZO7gI-qXC111i6y4YUlPweekxWX_33UDpojrYMSLA8hyWTssnp-u-NNgSR0GR46K2yytVMEux6nDiDzf86qvpjVLi8z-RdUxSf-Lt7hs07hNZfpOH99UZemzh5-VKIhpYxs60SizQUnmUO8JrCR0Pi2MA6LVMIuOYTmzlakYuermisnGrZBjIJKt30iiNSvI40zfuJasgKXooOuUrjRKnmpkUlO8JAWw9moQF1obla1Dm1E0HevqVXghrXZhHyBskdUOyaCM9qGL2D8LOIeqO0uXSWmIYPkbp3LP21nQ0SUPhLIbMrkQX-n7loU9hNgti9Jb4tfW-bcyNUlNpOSqZG7KToVmJ3nbaB5KglgJPL8YE2x9awZMtyU7W7GFqmSpDuQvEn8FWWBaejli_IMldY-CxThdZxEgB4u01bwm2-V73TyNeGva_xFLtwc-vGqwprXZ0m6X7dQsDwKcR0FrgPBkRplIJ-86vLfFoDO7N--76wPoaLT4CzGG7gG-YXO0RdaldxxTLcZkbz9g7MoxbyQC_90E5HLv1w1tx-2XUxkNUxKpVOlIJz30GewbbNxDq82DQNxZclc7UCf7anWxQe0FiG1L9QbhfC7pOLkYp5WQBJiftwuD-Asb6psNpIfqh1qgLkRvOoaun632PmQ9ccAIeTUvxcDIJGKW1J_D0KLR7IxdJNlDnOBs1N2aimhU1HjowmigA0FSlMh7rmeM6dWy6EB0xolG-Q-dg68_jN2dHC03SlZuS5QpltYFDzNlDrH8ZyORHwEhuvjgy5eAVTQ6La1XUoHgsUo8kKMf1nP5a5PYeZgmWW_V-0vLQuOc-Svn0p2GF-vkw_MX_GIqe6xj7LcymX5VaEmo4FnZWT4cmnQeKz2HUiec8z2EzkWHVD09RVSwELKxP1iOrAw2GvDdw-Awz70EJUTBfjGsuL2HvehSWeeg2S8lLjY5OvmuVQqgd3hAqV-mMU8fj_b5wetMcigMQelIszvvBqPj12lEWCRUZloXpaTsRdqi7rOZgGjAYesNTW193TqjK_-R7R_Muh23sN8U0A1dbCw4Rl5wP02m46Y8O6Kh1WTzfwyRzsiDE6wHpSY44iHXWvT_0vbVwcPFoJiqfOJ1heQK791WDDhBjS9-7n6uoMnNZ8dO4nwt_Q7StNnpCgYsohavBW7hq-bgpP89LqQsXgik-ss5fIuxPCz3tIjnuANwh3y__hC_N8HM6NmPsCbtYOtUrISeAMgSlNoPkgzvBJ6YVSQ2yQP4W8BKycw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_08922d8260a193c4016ac786fe004487d18927228ccca1c173",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461115,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 155,
+   "prompt_tokens": 358,
+   "total_tokens": 513,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 88,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01133,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01133,
+    "upstream_inference_prompt_cost": 0.00358,
+    "upstream_inference_completions_cost": 0.00775
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 88
+ }
+}

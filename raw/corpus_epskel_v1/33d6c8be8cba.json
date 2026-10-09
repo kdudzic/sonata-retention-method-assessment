@@ -1,0 +1,86 @@
+{
+ "call_id": "33d6c8be8cba",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Wpadło mi na jutro zlecenie przy rozładunku. Kilka godzin roboty, stawka całkiem dobra. Tylko nwm czy rękawice z ostatniego razu jeszcze się nadają. Sprawdzę wieczorem.\n- Po rozładunku człowiek liczy, ile zostanie po rachunkach, a rudy lisek znowu sprzedał Polskę. Potem gadają, że mamy zaciskać pasa. Liczy się każda złotówka. Wkurza mnie to coraz bardziej.\n- Zerknąłem na ceny paliwa przy Biedronce i znowu drożej. Dobrze, że jeżdżę autobusem, chociaż bilety też tanie nie są. Kolega mówi, że za samo tankowanie na dojazdy schodzi mu pół dniówki. Wgl jak tu cokolwiek odłożyć.\n- W końcu odłożyłem tyle, że wystarczy. Dzisiaj jeszcze raz przeliczyłem i wszystko się zgadza. Trochę to trwało, ale dobrze mieć już tę kwotę i nie sprawdzać co chwilę, ile brakuje.\n- Rower po małym ogarnięciu. Siodełko z drugiej ręki, lampka też używana, ale wszystko trzyma się jak trzeba. Jeszcze opony dopompuję i można jeździć. W końcu stoi normalnie, a nie rozebrany w kącie.\n- Kupione. Na zdjęciach wyglądało na mniejsze, a po odebraniu ledwo się zmieściło do torby. Teraz leży na podłodze, bo nwm gdzie to postawić. Poza tym wszystko się zgadza.\n- Rano słońce, potem nagle deszcz i wiatr. Wyszedłem w cienkiej bluzie i wróciłem cały mokry. Jutro chyba wezmę kurtkę, choć pewnie będzie upał. Liczy się każda złotówka. Parasola na jeden dzień nie bd kupował.\n- Mem z pracy na dziś. Ja po przesunięciu jednej palety: należy mi się przerwa. Kierownik po ośmiu godzinach: to może jeszcze jedną. Liczy się każda złotówka. Nawet ta zarobiona za patrzenie na zegar.\n- Nie, w czwartek nie mogę. W czwartek odwiedzę tę rudą kurwę w końcu. Od tygodnia odkładam tę rozmowę i mam już dość przekładania. Na piątek możemy się zgadać.\n- Jutro po drodze zajrzę do Biedronki po proszek i makaron. Sprawdzę jeszcze ceny kawy, bo ostatnio w innym sklepie była taniej. Jak bd kolejka do kasy, wezmę tylko to, co potrzebne.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "2f1f51647e901205db11e99a16757bf9c1cc6091",
+ "response": {
+  "id": "gen-1791465263-KJzuvVKb3uyJ8hUbJ0D4",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich dniach pracował przy rozładunku, liczył wydatki i oszczędności, naprawił rower, odebrał zakup, dojeżdżał autobusem oraz planował rozmowę i zakupy spożywcze.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465263,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 60,
+   "prompt_tokens": 719,
+   "total_tokens": 779,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002038,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002038,
+    "upstream_inference_prompt_cost": 0.001438,
+    "upstream_inference_completions_cost": 0.0006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

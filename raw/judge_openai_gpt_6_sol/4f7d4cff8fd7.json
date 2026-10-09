@@ -1,0 +1,86 @@
+{
+ "call_id": "4f7d4cff8fd7",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje na kasie w osiedlowym sklepie spożywczym na zmiany, wolne popołudnia i wieczory po zmianie rannej, posty głównie w przerwie lub w tramwaju.\n- zainteresowania: seriale kryminalne, uprawa storczyków na parapecie, wyprzedaże w drogerii\n- lokalny punkt odniesienia: przystanek Plac Grunwaldzki we Wrocławiu\n- aktualna sytuacja życiowa: Od miesiąca zbiera pieniądze na wymianę starej pralki i porównuje oferty.\n- sposób pisania: zdania: short fragments; interpunkcja: ellipsis everywhere; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: kończy wpis słowem „takie życie...”\n\nPosts by this author (in order):\n1. zdążyłam po rannej zmianie na siatkówkę w TV... ale fajnie grają... miałam porównać ceny pralek, a tu już kolejny set... jeszcze chwilę popatrzę... takie życie...\n2. jeszcze w tramwaju... koleżanka pytała, czy jutro przyjdę pół godziny wcześniej na kasę... zgodziłam się, już wpisane w grafik... dziś po rannej zmianie mam całe popołudnie dla siebie...\n3. rano słońce... planowałam po zmianie przejść się za pralką... teraz na Placu Grunwaldzkim leje... wracam tramwajem, oferty bd przeglądać w domu... takie życie...\n4. na przerwie znalazłam tusz do mojej drukarki... prawie stówka za komplet... nwm czy brać zamiennik, bo chciałam sobie wydrukować te oferty pralek... na ekranie telefonu już mi się wszystko miesza... takie życie...\n5. zostawiłam dziś rower pod sklepem... jeszcze trochę na kasie i wracam... przynajmniej nie wydaję na bilety...\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "47f3508cf482c74faefe4b7b77d2d3da898a4095",
+ "response": {
+  "id": "gen-1791461382-T7ZxsJB65kM0C3VtqVcm",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 4,\n  \"voice_stability\": 4,\n  \"tic_overuse\": true,\n  \"repetitive_structure\": true,\n  \"topic_variety\": 3,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"Signature phrase feels mechanical\",\n    \"Similar ellipsis-heavy rhythm across posts\",\n    \"Washing-machine search dominates the topics\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461382,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 93,
+   "prompt_tokens": 728,
+   "total_tokens": 821,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002386,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002386,
+    "upstream_inference_prompt_cost": 0.001456,
+    "upstream_inference_completions_cost": 0.00093
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

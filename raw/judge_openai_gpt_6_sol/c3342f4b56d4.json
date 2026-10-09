@@ -1,0 +1,86 @@
+{
+ "call_id": "c3342f4b56d4",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nPosts by this author (in order):\n1. wieczorem wziąłem na tapet planszówki z dzieciakami. oni wygrali trzy razy. no cóż poradzić. jutro znowu gramy.\n2. córka dzisiaj gorączka 38 i leży w łóżku. dałem jej herbatkę z miodem i kazałem spać. zona dzwoniła ze sklepu czy kupić coś jeszcze. nwm czy rano pójdzie do szkoły. no cóż poradzić. jutro zobaczymy\n3. z nowego sklepu koło skupu kawa jj. mocna jak cholera. no cóż poradzić. pije drugą.\n4. młody dostał dziś na urodziny lancuch do kosiarki spalinowej. cieszył się jak dzieciak. zona mówi że to nie prezent. jj\n5. na targu w łomży jajka po 1,20. wczoraj było 1,10. no cóż poradzić. kupiłem dwie kopy.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "d093d94dbd698c0dbe6c623507f6d7bbcc2fb2f3",
+ "response": {
+  "id": "gen-1791461271-9ERV5SpnXEkseuSceAg6",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":4,\"voice_stability\":4,\"tic_overuse\":true,\"repetitive_structure\":true,\"topic_variety\":4,\"natural_overall\":3,\"problems\":[\"Verbal tic appears in four of five posts\",\"Several posts use the same tic-and-follow-up ending\",\"Unnatural phrasing around the mower-chain gift\",\"Rare typos promised, but several appear\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461271,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 85,
+   "prompt_tokens": 677,
+   "total_tokens": 762,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002204,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002204,
+    "upstream_inference_prompt_cost": 0.001354,
+    "upstream_inference_completions_cost": 0.00085
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

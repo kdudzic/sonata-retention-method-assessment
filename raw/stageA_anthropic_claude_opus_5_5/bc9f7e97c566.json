@@ -1,0 +1,95 @@
+{
+ "call_id": "bc9f7e97c566",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... w sobote stal gra u siebie wiec zbiorka standardowo na spoldzielczej pod zabka o 15... kto jeszcze nie ma biletu niech ogarnia bo potem bd placz. po meczu moze grill u mlodego jak pogoda da rade. no i git stary\n- \n- ahaha no właśnie stary... widziales co otworzyli na rogu przy spółdzielczej?? ukrowy sklep! tam gdzie byl ten lombard... wszystko po ichniemu napisane nwm nawet co sprzedaja wgl. przechod\n- no właśnie stary... druga zmiana caly tydzien a kierownik jeszcze dorzucil nadgodziny w sobote rano. wozek sie zepsul to palety na recznym ciagalismy pol dnia... plecy mi wysiadaja. ale po 14 wolne no i git, zdaze na orlik jj\n- no wlasnie stary... ja tez juz mam dosc tego gadania. niech kurwy spierdalaja do siebie i tyle!! nwm czemu wgl ktos sie z tym certoli... jutro i tak przystanek o 17 przed stala, ogarniamy jak zwykle\n- ahaha stary ten mem z bramkarzem co sie rzuca w druga strone a pilka wpada mu prosto w krocze... to normalnie ja na orliku w czwartek jj. pawel mi to wyslal o 23 i nie moge spac ze smiechu... no i git\n- \n- ahaha no wlasnie... grill u nas za blokiem w sobote po meczu, kielbaski karkowka i co tam kto przyniesie. wegiel juz kupiony w zabce przy spoldzielczej, mlody ogarnia rozpałke. stary pogoda ma byc git wiec ogarniamy od 18... no i git\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "ce573134c319ff465e8c27d291d127b00f699abd",
+ "response": {
+  "id": "gen-1791460293-tCSqTTAAOlK9cr4sdGBs",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep this neutral, focusing on everyday details like organizing meetups for Stal matches, grilling behind the block, work shifts, and local life rather than anything about the hostile post - staying under 35 words in past tense.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep this neutral, focusing on everyday details like organizing meetups for Stal matches, grilling behind the block, work shifts, and local life rather than anything about the hostile post - staying under 35 words in past tense.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS/QYKEAgSGAI4AUIIdGhpbmtpbmcSDJxy9qgvP45zmKOszhoMb9EwnP/0eW48eNjrIjBExHYIcspp7JwNATEd4lMS3Nod2EuJAV4AArjYT58zjBTWbAe2HwP+76h/2PyddAAqmgbAFVbxF/u+VfCc1gMyd965n9+lKARPjAlsBTPg79+mXNUN3VNSOdLkxhKzu+W+U0I3OIWkfYuI2aSI1NTKWqGWLjCBMqSpoiMlVs+W+pQ62bBIRzqjBC7a5Lj1whrq0amqCt8hBYEmTb7QHQzv3mJi2TSCLiY9siHHazZfbpmr21R4FzTVvUJyCgMB8XuSO5AjlFNvoR2BnPtyei0hYtVzFYr7qmg95OuIA9nn9EqzuiZqbxnJOmwC3HzEwTuj7kemF98FmFIsVUXoEZ2f5ThAra/0LI0JEAxqlzj+s7zCeM68IoLXor7E0e1mBm8IjP/FSwc0I3Pa+C9vxZPdBFfXVTHez2dX5WOyAbaekiNF78JOWa18JbnB73DR525wU5rTldAbMalXZAKDqmPlsK8hdFgTJDHis8wCU1tHBx/HpFSsRzFZLdnMjTIp3kFFNeGeQekOAFLhdCqL8FEG+mvqfj1TllDNxV7hxeVX29W4F2Jv7v3MfdAW62XIeCNcdkWxHbHZeOhILfxVTcG3pLiV/KwdJZbvgj6ZgnV6Y9IiI1KF9ni+uUh9gbK9NJGxMsCP1Hli7OZ4CRqCVqWS/Bm0rZfTCT5MTa00mE7Cy4Z901/2o8HpFsb55R9iU91/8cHrotag9djdJWwmBAIeU0Q5aGtPHl6hSBbWvPEwoCcSBSZ97s+/l9UPX0qr9u6lM74Ejo51eAKc6LL+rpG43P92Afrp+IvUEtvEBrFtwRrEuA+WqfsdqScdn/BAJYCgdxa9s8rVZtEOcH78QEp5wA42uAyGHbQTgHvIAkEQGdeNe8Dx5d0wtTcJKci5qW633bdW/JXQzC6yyExK3TXq1TQKlsjWaoKvF2E0TqvIMSYI+wLS6HrJF7q73JGBHvqnX/5wCE+4hSGLL3M6g+Yo0jD8hGgrcSxFF7U0Sursr5d7u+rjOF7HqBfxkhtr5XywKf4hH9pujA/2zJH7f1gI75/DbeSlk9dpSKATpl94Oq5Kh9TAtWs/KrFTp00/Kmx9Hcp7CcNvzyriXJnXPqny5YWehUPFfRiBJtorExgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460293,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 763,
+   "total_tokens": 883,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005452,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005452,
+    "upstream_inference_prompt_cost": 0.003052,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

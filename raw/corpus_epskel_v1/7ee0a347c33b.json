@@ -1,0 +1,86 @@
+{
+ "call_id": "7ee0a347c33b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- „Nowa aplikacja ma ułatwić codzienne sprawy” — czytam i już widzę, że do sprawdzenia godziny otwarcia biblioteki bd trzeba założyć konto i kliknąć siedem zgód... WYGODA (?), nwm dla kogo!!!\n- „Poseł Wiktor Karski apeluje o cierpliwość”... Serio? Ten bezczelny pajac najpierw robi z ludzi idiotów, a potem poucza ich z mównicy, jak mają żyć!!! Wstydu za grosz, ale do kamery pierwszy. CIERPLIWOŚĆ (?) chyba mu się skończyła przy myśleniu.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "f343d2a500a3663f21d5a4b2bf498435ff21fdc1",
+ "response": {
+  "id": "gen-1791465238-ONpIK7WWIlKLeL9IGfiU",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba czytała informacje o nowej aplikacji do codziennych spraw oraz o apelu posła Wiktora Karskiego i komentowała oba tematy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465238,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 39,
+   "prompt_tokens": 233,
+   "total_tokens": 272,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.000856,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000856,
+    "upstream_inference_prompt_cost": 0.000466,
+    "upstream_inference_completions_cost": 0.00039
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "94651af222e8",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal w sobote o 17 wiec zbiorka na spoldzielczej kolo zabki tak jak zawsze. ja po zmianie od razu lece tylko sie przebiore. kto bierze bebny?? nwm czy ogarniamy szaliki nowe bo ostatnio nikt nie zamowil... no i git stary bd sie dzialo\n- \n- \n- no właśnie... znowu nadgodziny na magazynie bo tir sie spoznil dwie godziny. stoisz i czekasz jak glupi... kierownik nwm co wgl ogarnia. jutro na szoste znowu. ale wyplata w piatek wiec no i git stary, jakos to bd\n- \n- ahaha no właśnie... mem dnia stary. jak mówisz ze \"tylko jedno piwko po orliku\" a potem jest 2 w nocy i stoisz pod zabka na spółdzielczej i ktos wyciaga grilla z bagaznika... no i git. kto wgl tak robi. my. zawsze my\n- \n- no wlasnie... grill dzisiaj za blokiem jak bd pogoda. karkowka juz kupiona w zabce sie dobierze reszte. kto ma ruszt bo nasz sie rozlecial wgl... stary ogarniamy od 18 jakos po zmianie. piwko chlodzi sie od rana no i git\n- ahaha no wlasnie... ci nowi to wgl nie kumaja jak tu jest. ani dzien dobry ani nic, auta wala pod orlik jakby ich bylo. stary kiedys osiedle sie znalo a teraz nwm kto obok mieszka... dobra ide na zmi\n- no wlasnie... w sobote stal gra u siebie wiec zbiorka o 14 na spoldzielczej jak zawsze. kto nie bierze zmiany ten jest!! piwko w zabce i idziemy. stary jak dzis przegramy to nwm... ogarniamy doping i no i git\n- ahaha no wlasnie stary bylem dzis po zmianie w biedrze bo w lodowce pusto wgl... kolega mial kupic i nic. wzielem kielbaski węgiel chleb i zgrzewke na grilla w niedziele. 140 zl poszlo nwm jak to sie dzieje... ale ogarniamy no i git\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "764ad6b468dedb125d27eeba76eaa856696e54db",
+ "response": {
+  "id": "gen-1791460054-lWto02cBjNOaaNfPmYDH",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep this neutral and in past tense, under 35 words—describing warehouse shifts with overtime, organizing meetups before Stal matches near Żabka, grilling behind the block, shopping, and commenting on new neighbors, without using labels like \"kibic.\"\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSiwcKEAgSGAI4AUIIdGhpbmtpbmcSDFOudJY5OOsu6FUQxxoMkMs8rRl5nv5Z7SbsIjBpS7BXx2k+n0hfxiYFuBvVFtLhV/9TiuZUOQh98GhtS4yIK0yWe0tgiEyPi6xviOAqqAbQU24lfqHPmh4B/REY3v2r+XMuWJU7d7f4U5aCBuFDIWtVgdcyUtxIkbb0JsV2asqKl4JZDNCGkXbJYayGt0/iXVxoTHOg9bJuFRkfAApU58xdau2iwi2KvlfY+5zvVOUo7AWTdaE0SIQP3ekB48WbyLVsxTdC4vm2sX5aM7fKX2jhVKLseD7wwKp2PpYbnLUdbGR3RrDe3MPTWu+A8e+9UYihRB2yWb1LsxtCiS/ohkzdJeMmhN2p9MiPKgmlvJjuOnGkzBnuAEdDGNCwEXHRp09JBFrWw1VnTFZwsDv7xP9RGwOMkh7m7PvIEaU3xVoqGF0aZacBdRX7spZg6ov9z8WAjJyvBa+rn42tRxAPOHFNHUwxvroIz1RYqybHoJ9yXxwzGIYWsbuwFJmZW7iZgHoCmPDefXm+PLDUNSSpPfk8v2qyfRznVW4C4VnYD8L48e27tSa42h7IEKZwhFEiXvmzYgQBHu6+KcO8O2Q3jWO6c/M1ByjGc64lPzgWa3SDOr690bEm7yshzxTus7PXBgbN/gRhEYQZdo7KKKyIV1cBThr8/OIPkDsQyV2hqvYz+SloD683GA7Qv1mpo/4HU+6n1EcM/KHrhhAYn1fhgzb4UA79HaIRJJKd5iWR3sXp3uq8xTO/T7oWAfTewSop7CWL6+lV6gN2ab2E4H3m1z3lFwSLvUDJyBmcFyFh1de69DWoeudrc9vMu9sqpjdb3iuTdjBdbmF0WvD52XCGYBD1TApWTH56zx6pkuCWrLSXLd96NmrH/XeGv7/66fPlewSMK85jn5DVGP09Y7Dy9rmZmExSY/57xZSiTuI6uylm7ZklFl7wIxb/+2yNvJTMB5hd+eq9Py76hzqeQNQDVe3SJ8sz1eohzBBEdIYfhkX0pr0DtB7AOAE0zMKliqY4/NBF7mtb8rleRGzd1uRDv1SiDHsFH/5KcFDPu4MhQ9EZ8vuzUB+LUl1DRQqWdppvlQKHVX3gO9Cse7z+4RKTxp/o36o30BULb4KBfgltC9KlEY4VH4Owud+4NJ7nQnqlSfNbhnJ+QJu1Z1xAewUbm+zcRUH1KAf2GAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460054,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 936,
+   "total_tokens": 1056,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006144,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006144,
+    "upstream_inference_prompt_cost": 0.003744,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "1d873ab635f1",
+ "tag": "arc_TA-04",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 129203732
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje na etacie jako magazynier na zmiany poranne, wraca około 15:00, a posty pisze najczęściej wieczorem po treningu oraz w weekendowe przedpołudnia.\n- zainteresowania: trening siłowy (martwy ciąg, wyciskanie), pilnowanie porządku na osiedlu i w klatce, majsterkowanie przy samochodzie\n- lokalny punkt odniesienia: siłownia „Żelazna Forma” przy ulicy Kolejowej oraz kontenery na śmieci za blokiem nr 14 na osiedlu Zielone Tarasy\n- aktualna sytuacja życiowa: Mieszka sam w mieszkaniu w bloku z lat dziewięćdziesiątych, od kilku lat w tym samym osiedlu, i większość wolnego czasu spędza między pracą, siłownią a domem.\n- sposób pisania: zdania: short fragments; interpunkcja: dużo wykrzykników i wielokropków, czasem potrójny wykrzyknik, krótkie zdania zakończone kropką dla podkreślenia pretensji; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: Ludzie, trochę SZACUNKU!\n\nWhere this post sits:\n- position: post 8 of 10 in this author's sequence\n- days since previous post: 3\n- what has happened in this person's situation so far (one sentence, background only):\n  Wracał z pracy, trenował w Żelaznej Formie, oglądał mecz i\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  Ci nowi sąsiedzi to drzwiami normalnie zamknąć nie potrafią?! Wróciłem z treningu, człowiek chce zjeść w spokoju... a na klatce łup, łup!!! Klamka jest DO UŻYWANIA. Nwm, u siebie też tak trzaskają? Ludzie, trochę SZACUNKU!\n\nContent brief for THIS post:\n- role in the sequence: background\n- what this post should convey: wpis o grillu\n- retention profile of THIS post alone: clear_discard\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "e8f6be1001fbfe33e0195002eb40bc4ff830b9a0",
+ "response": {
+  "id": "gen-1791460035-3zZ6T0BECaaDGbGVM8cL",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "No i pojadłem z grilla!!! Karkówka, kiełbasa, do tego ogórki... Nic więcej nie trzeba. Trochę mi się jedna sztuka przypiekła, ale reszta wyszła JAK TRZEBA. Teraz siedzę i ruszyć się nie chce.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4LIJppeSTRx8_EOVu7Rc7qcNNyamVzNxcFkAornhyiYjbGhjX5ZSueU4S-iogXzkrZmsWYeJ4_4xGMz0ka5ObTWGYIrE9nFAURK77q73XztHjI3rGUQftljNzc1eOMrN9fZWszNh4V0rWYDGS5HyCLDrWcMWFvclc5cjctK3kvo-SE-la185JxH7dFg9e6KkJoT9bjSgZRoSVm1q4O3DIcaBwtFZGJ4QciLWOgYsVgUI9XgrDrQ3UtV3_aa7kRwfYWNerNh5Jcg2mt9dSk-0_wwfGbZGRqMs6pvMusxv2qDmqVSuujWaaA40SPWBJ5sFdIliK9DZhJa3p8IjBSNhLSX-JKmE-qKb32TGcAGHIE12lXmbCF4stbscs-DLFv9DPCKjYw6Aolr3pcp_6mP49nsD2DPcwHhU1YLVosfIbzYqTC7Iivmt7MIyRc7cfNkW8bE5uDl6hrnTERehK50MVNh-G7YCk7F4il6IrGmCSlEyO-yeBr65oEbO2LeMpt8Sr6eJiX83MfGExlUbxna7N6GLChS94ar2-M7G2jppeQaGKLT3k59_5qVYezZ6eUtEltnsB1djDTQ_cyCgUbE8HowZ5z__407DgBOn7KfL2v9QgEMRgem_fugWkTOxlvccCevs2KBEU0cSDCBdlcSOfhieZJqcJF5ETW0VZdrMZz9FiJTuTWfGvmci75ihe3YeN28MtIN2HxsVjjNfz939d-AcNSAiR2ndIQOIKgqfvJt4jdmRAzCW5P-qBkmH_AmDxPi1sIcqYaf-r_WSas99SSwcfEp4eNEou6fXXP92NxmUv_P00ENiiIX6AZRkmxcVpCAbi8BnIZIZz-we8BCasPLCkPCaOvhxDYlhFtSwYJ-sECC1ZKiik--CeGsTuzGadQnWu-DqMNfhu2We8_bW4VGiCDq9pN0LJ1O7-DduFfVUxgSmzySkYapPddRTUQUstxxgs9Aljog-H_wmyOzWdM3D-p4UIELa30ZDAwaiEqJQ8NQlzPZv2QMl0SnmV5JAVJcYnL5R7K67XPEgNsBG8BGc_XVFwVCZqt7qL_LDgma_GV86R77RmRFdPwqMfzQaENVAD4bQgDj0hWUi82gSjl6toTB3x3_iuA7nUbwYRVGUv9GIiPjb0fOEjDfPcGux9ZdtTRp6gliop0Yg74FDG5aE-PPb3twyOmGfWwiTS1RkAZGRrA-FHOz4JwlR_v6qcV60EMZUhzZ71jUqnahD6LR29WYDaqEj_07k6Qx-5hFbPynRGyd8HUJa7x-67rADQBQKH4WcJuIrug8THZgbWm9HhRRfymBCl8yOB5ShsG0_A9nQt8Y4DhvrVxgkuLHdOpetJkLgbRMLCzrqJ9VHsRdf-ulDKbvwKqYbwdLkHb9kPeASpAiIflQYniiYOVWnjLtZSkKV2GeXcBAV8LeWo59zSTcfTIMFsXtsZWu_Ile3WWoXFvBqxyKJtefPYOtUAZoRT6T2G7LvEybJJYZMbn8WhTd4kfLFFOOsvo6a3rkO1up6N-OMLVJoxg2N4RIMAPCzkGJ9eLG0kv9kEfCSPE5Vwywehph5FIE6l9-pm_tOq_HcThpob7P9C61ZhS0Pr_PkkmXVVXmhk7p1BoasFIFz0ehMRJtrMeaHyQkxFNxeAq8XE6bVlL63Cas0ZKyoEa_tdhPH9_9nn1RcUiuBYUHalMnYHzGytNtEl5kHUS7e7UFf8aP7tcTwCLlo-kki4FyWbL1YQmnF-7hiCEpMaKSD9NrMft6lO8CrKtcBLDS_8c=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0581e671d75230d9016ac782c5235c87d1b684e02f56878b6e",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460035,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 152,
+   "prompt_tokens": 1108,
+   "total_tokens": 1260,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 81,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 1105,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0214425,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0214425,
+    "upstream_inference_prompt_cost": 0.0138425,
+    "upstream_inference_completions_cost": 0.0076
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 81
+ }
+}

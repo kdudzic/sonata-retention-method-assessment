@@ -1,0 +1,94 @@
+{
+ "call_id": "f2639fa7684e",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Wróciłem z treningu prosto na drugą połowę... 2:1!!! Ale końcówka, nwm jak oni tego nie wyrównali. Nasz bramkarz dzisiaj KOZAK! Miałem spokojnie zjeść kolację, a darłem się do telewizora jak głupi.\n- Za dużo ich tu ostatnio... Wróciłem po robocie i nawet okna nie można otworzyć, bo ciągle ktoś się drze pod blokiem!!! Nwm, kiedyś było spokojniej. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu to już PRZESADA!!! Wracałem z Żelaznej Formy, pod wejściem syf, kubki aż przy naszej klatce... Otworzyć biznes i mieć osiedle gdzieś. Nwm, kto ma po nich sprzątać. Mieszkańcy?! Ludzie, trochę SZACUNKU!\n- Nie napiszę gróźb ani obelg wymierzonych w imigrantów. Mogę zaproponować ostry post bez nawoływania do przemocy:\n\nPod lokalem na rogu Kolejowej znowu kubki i resztki... Jutro wieczorem idziemy pogadać z właścicielem. Niech w końcu OGARNIE teren przy wejściu!!! Nie będziemy codziennie po nich sprzątać. Ludzie, trochę SZACUNKU!\n- Po robocie ledwo żyłem, a w Żelaznej Formie martwy poszedł aż miło!!! Wyciskanie już słabiej... Ale talerze znowu porozrzucane po całej sali. Trening zrobiłem, jeszcze się naszukałem pary do sztangi. ODKŁADAJCIE na miejsce. Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "c3f40fdf4efe21c8a0983904b9759c5708a833e1",
+ "response": {
+  "id": "gen-1791460006-v7OYxKoXrxymYXJhohGv",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował, trenował w",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4KqcM1NB-upiTn2zviOpSaNscLxI7a7pXe1F73Gm1C6sANz_2ttdv1lzDTdl7eExp5ElRMG2vxafoL66Hydwzx7VpjbGMhdDkHrb-JJcLmj1uYk2sifYYoDqQWBme-ymcs2nXtptiIZNdoTuVovNPr1TNRQ81kKv6kUiu4VDf0KlmXP8Le2CYBFeLEwK3pcgsx1KfTmn9P695uKXwNB7rVRDagW-Z638H0e6YiifHqMdOXRLJYiKMVsrXQFg4rWmFh37BAhqkVWtxROPhD-1mcYCTMSDTt932mrKXI8jM_gsNDDJjbkjsQTza1V_AYpLe9Y60clDth3TmsN2TzysKwJMPNYifjaGUh-wqaqNe9cSOHUDS8Q5RN-Kix93L5EufbXsoK0PcrQl4iSe9yfg0AwZFPsBufMbMl-H4FdTMPpY0kTfQFQurKL05KfvcWL7uCRvEyhqi0tumW3pb2tVjNNH8oUGEFIzZ34E2Emtp7p5gPe_0cOuDiI483IUoqlFuPFKGQJKOYJr4rGWv1xRxlvHlQLlG_CupskIg3wWjFTa3UN70oLY6B-AJGIxPXOXWWNPgPiBtqNaKeBdSYLq63duzRXgYrwvTZDqEUi2Tx3ZcVtiJ--RK2CNKeHOlW9Hczogcen7U6DNF0t_hEfCTKu7Njcy3nb5YMgTvn-jophu_DzDbf2OPJ7aQZvJ5KJEBnyVEyBS9XE2mnUMQB1aIdmqEVeP5xi-_ILQI_WkPD-XD-ZHZuPYObBxHQx5YJQDBN-RSVrZJc7sclXp4g6J9lgkYE8tJFgqx6mUdSkhOXV-K6a3piTwTsWqQk5l6x7bIdZOWLnEazQdN63BlP5TGI1Yu-szDCEst8BRL7UE8ahdKNc1UQOOINCIslhnFtGJMY3liuDAe6duxHy5w3dHGSKfvQD7W1f7_Z6jdxbDuOpG5887oS5De09XwafBGB-Xv5lNz0Pxli2ZDn5OZbc_ckonC1PRobraYNmf9wejyG1VVz_0Lq6bpbXWFpwec2v7wP9-1zFIhyiQ-Ry_Qb5H2gCr77H88N0y2ExcARxF3HdPKroruBoPVeMdQgWqWIKOZCUopRbP3gHEbvXF3_TkGKb0u00nVfri7FI0lwxYouVY15UR9Q3uypeMqQ0ee1B7z6PX2e6cl0OaljfPtC90jbane5bmZYIU0ZpL2ldp_gtQIWqllX943-6n4bXhaMeKD7Z1jG9ZYtdudmPH6WGTLu9T18TX_-JD7qrIoTNItOVBaL0hMxL9NXboFEhOcvzXR1CSTa-cp7kNLQORD3sl69A2FGPijLb8eO1hsMymlfNudx0YOUEp_Lk7wxzB6Xd_b1Tm5EeBOzFO8_Cw0wQ3rKCwCIhjr_IuL1idNW83v1R-7O7vhivuct9gJAtLgnmH0BiEA6fWgMVQHyo_qxROe1DbOXsQMJ7XYkcTHjLhbZDANyzkX3NO3Xat2dxmnwlKuQ12DyyQA6mV1PBXpRpvG7CRRIvYAWG-LvcsdsoWjrGZWbz5K1c1QCaGqYx0ltXA5my4ESuQc7hd8iMD6fboP_BR08CXhIj0p5stC_be78B8LSBe4lsoNbAH9EyAjEvcMLs1YYvVAxg4zfBuZ7zcV5cZm8ML2fbpEB1eKICYPrCQ48prHajL0a5_L5Iiiv1ZIGzUEVp-IdbwtV8v32mBuROf7qi5C94ActAAeQyiZF32Yogdo9mO9HwfjFX98E67THMFBMKtN6Wfqpj1T850Q8a2DgJ3OpoFMZho4l0O8lBLko4V17StMG8md-TrsLKBfp2ngmxxdYVdFZqytSZB6aegOEbjSVdY4uo8fSIK6Dua0o=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0487dc5dc611b689016ac782a8098887d1b7830b836b372484",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460006,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 488,
+   "total_tokens": 608,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 108,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01088,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01088,
+    "upstream_inference_prompt_cost": 0.00488,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 108
+ }
+}

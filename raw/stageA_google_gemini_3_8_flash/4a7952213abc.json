@@ -1,0 +1,93 @@
+{
+ "call_id": "4a7952213abc",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- chwila oddechu po pracy\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "c8fc0677f9df9630eb9803b6132031ef1b131565",
+ "response": {
+  "id": "gen-1791459899-JHznksSL4RLttbbIRnD3",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnim czasie",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1+u1o0dXJSjQ2zAhAnHnhJOyB6ha0YHoU90etxCsJphb/YRiFMDuz9JsKqa/YQUw1oAKeNL29wMUmzzlK0uYYEhiA0tt+4NboOVQiCy0XJTf17dzX+yZzSohJMHNZzC4L606xVPRkIuHS5BOXlJtCsh6JIgf9IDlbbXQOWDnWi30stVVH07gjfQILscziG+U3ITYBHiiNfu4eMl0Mw8A+zgTbcpc2Lqaq+JLSu/NNZ4oCI+cXoU+aHgOw2qsL4IBOCWBDOH2U+G3ngTPpG7SaRnjvUo0qxFGXC3JyZVbkaanFNZNmgspkZRBWH1jQFs9uoCDtQWYV9glkJUQkqxTJLIZhcwMJZXFQ3XP5D6uVxmJtu6zcIZW5RV9f0ZbB92Kr04/jcBgFK0qDS4Kfq8Wu7sY/jPGb1p6uia9QuIyYGn+1kga4iQ2xUai+AH1v59sezTGJTJd7HJjLlrmORFMdeTlcAfcPiPl+2xvoBCNpvHrxExcfJ8G/o0hpLQuG3cH16JBuEwekmrr3z8P5bdCrPcvTZaJ/A2Ux4ZBzL7Z2LH6YmVEk4cbESfHpg2p1at21qFoXjnvhmma2GasiYX2GS+4rqvuphZaXOuQMlQ62w1jztg4+N9Lpob4Be6AVpenPcEx9WdAiDbrPBTmGGr5eBtp8o0m0RfmHO9c4Tj8KHE9CfUltJk9F2JHQgj6F+aRkaelGVWmhAHzP40ywCKQ8VPb9oEXcEXY7Hb7I0QOq7TD3i3UYZAXyzXKT9v6gnc8D5WF1d4aaMSHLFuo5jlLaFNNFikgA==",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791459899,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 116,
+   "prompt_tokens": 87,
+   "total_tokens": 203,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 112,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00050025,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00050025,
+    "upstream_inference_prompt_cost": 6.525e-05,
+    "upstream_inference_completions_cost": 0.000435
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 112
+ }
+}

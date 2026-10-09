@@ -1,0 +1,95 @@
+{
+ "call_id": "38b95cfc51d1",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal znowu remis 1:1 a mielismy ich na widelcu przez cala druga polowe!! sedzia tez jakis slepy byl wgl nwm co on gwizdal... w sobote wyjazd i tam musza wygrac bo inaczej to szkoda gadac\n- ahaha no i co z tego... wracalem wczoraj z centrum i caly autobus pelen ciapakow, drą sie po swojemu jakby u siebie byli... kiedys tu bylo normalnie a teraz to wgl nwm co sie z tym miastem porobilo\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "b52a59dee5906fa81dad390494ecbdd10ec53ff1",
+ "response": {
+  "id": "gen-1791461101-lNVH317AmWj4fCaLntMn",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba śledziła mecz swojej drużyny zakończony remisem 1:1, czekała na sobotni mecz wyjazdowy, a dzień wcześniej wracała zatłoczonym autobusem z centrum miasta.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep the description neutral and factual, avoiding any loaded language. The key background details are just that they watched a 1:1 draw, are planning to attend Saturday's away match, and returned by bus from the city centre afterward—nothing more needs to be added or implied.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep the description neutral and factual, avoiding any loaded language. The key background details are just that they watched a 1:1 draw, are planning to attend Saturday's away match, and returned by bus from the city centre afterward—nothing more needs to be added or implied.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS3AcKEAgSGAI4AUIIdGhpbmtpbmcSDAnoKNH3dcTTUkE0OxoMgeHQAnu0qVxTq+RUIjDS5JYpgcpACqZnvJqfMEhPkvUlHrg2qeu3xX3up5IP5dlrheQrjjdytYPYKMUFsGIq+QYAVcpeJlr+XiC8LeQdYEyrcBuDuBnvc9vmGa7bwndQTGBoxQeNtZGnl5Uzr8lR/h+UOf83NSqVTHIbUHtDMemMd3QOXp/XrCtXyE7eISHOvOjna5ERkKAfN6OFx0j62alSQnmmcI68d3XqEMrQuUD39hYD2mikq2FAWKUNF0IIkTBKb/k1VC5op4jHa8M8fZ3qLkpmeFDaVWJowy4JwprJU+8EhGbxYiomORnKsGJ0Y52PIPKU/5XKeI2EL/mHdSwPH4IZOYdKZ3o5nkEQDLRQx/QkUbj+zXjTQGNVZTUCQfRwZrabsR/7qNSdyg+9o/xs40btWCWp3cRPt/n97ukN4bdymRVu6hpI8c1hyNp9jjTv6L45K6So8eFr5l/TB71E6rFwjB82TP86HN/bTR0gD7bRBpfqqNpQlxn0Uv49dg3mhGtqMUWjiznbywMon9/Qhs0UCFr0OSYygBJyvl9HWZNbNBxRL7kAOvWZst685MuCozbKTOWYfbLwZ2+MkOA++ON3thSjBDvCKU2kcA8PCNyFXndsJTZJrdSuhLbyO/ugB3r4xdonT9vtcjq0e+0zqBKpY0gn6lU55YSCtzu0X92EFx6EL60qOmJ3riaWMcBbZ/hV12oP/WRMxU0PEZN1wN94997GhUsPaFK/bOwHSn9AR7d5Ybh5P9TgrOw9J21UQFPREw3fqdvPwSroWv63ecf8r7b9uGYEhcIWHoYnsS3pE1PzF0jLF9+nCILUUUhNhOofsBei8GeaaC7CExVy1ixwkbyX6v3jaqjQRMjf13zZUCk9ikxM9Aj5gWh5s/g2NloVR0Im3r9v5hYebKDS/nuMmGxccQ6TSd6D/792xgz6HzEXOVOKTWKfEGL5EbqEpFdj9TewbuBe1pOQK1K3Y8Gt0CfYYjPAMAjpMeyMluvBXIBmiAMV6x2BUhFORIcnm3Jq6OFrI61lggi1r6ffsKupnX+P5d5F8tughA2fqDXHiaecSsqdBRoGCbFoArtTZROZUjJOM8BisAD3b9Jn4Xr/PfJ08MVxrLMNp5gwxlGCXsznqswz/eIVRgyNdSt1zEamRSwREFsw+e82kOzI5ys41ZVeW44JGW7aQBB4/Pum/lSPnpnVQV6TgrHVX4XD4hJ4HfY7AcRSFtKCxnbzEvNEFv9ENYYQEutrSJjHrGj/TYTHq73QGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461101,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 227,
+   "prompt_tokens": 325,
+   "total_tokens": 552,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 145,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00584,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00584,
+    "upstream_inference_prompt_cost": 0.0013,
+    "upstream_inference_completions_cost": 0.00454
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 145
+ }
+}

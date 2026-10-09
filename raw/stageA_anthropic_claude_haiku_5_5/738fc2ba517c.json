@@ -1,0 +1,86 @@
+{
+ "call_id": "738fc2ba517c",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-haiku-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dzisiaj pierwszy spacer z wózkiem po parku, słońce w końcu wyszło. Młody zasnął po drodze, a ja zdążyłam kupić bułki w Żabce na Lipowej. No cóż... idziemy dalej.\n- Kolejny miesiąc z ratą która zjada prawie połowę pensji... nwm jak to wszystko domknąć. Komornik już raz dzwonił, a ja wciąż liczę grosze przy kasie w Żabce. Jj.\n- Nie daję już rady... naprawdę. Wstaję, idę do pracy, odbieram dzieci, a potem tylko rachunki i rata w głowie. Już nie wiem jak to dalej ciągnąć. Jj.\n- Dziś znowu tylko kredyt i mama w szpitalu... nwm jak to pogodzić. Dzieci zjadły obiad, ja jeszcze nie. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "18e8576903488e3056340e03a1da4220c02a0734",
+ "response": {
+  "id": "gen-1791459801-1Nqy107nGuhVofPjsFQT",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Według jej ostatnich wpisów, pani z małymi dziećmi opisywała codzienność łączącą spacery i zakupy z trudnościami finansowymi, czyli spłatą raty kredytu, kontaktem komornika, rachunkami oraz opieką nad dziećmi i chorą matką, przy czym jednocześnie pracowała z",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459801,
+  "model": "anthropic/claude-haiku-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 455,
+   "total_tokens": 575,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001055,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001055,
+    "upstream_inference_prompt_cost": 4.55e-05,
+    "upstream_inference_completions_cost": 6e-05
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

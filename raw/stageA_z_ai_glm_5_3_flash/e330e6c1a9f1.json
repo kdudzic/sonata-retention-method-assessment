@@ -1,0 +1,86 @@
+{
+ "call_id": "e330e6c1a9f1",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Po co gipsuję się przed telewizorem o 21:00... Mecz i taki wynik. 2:1 dla nas ale do 80. minuty to była katastrofa. Emocje jak po martwym ciągu na maksie. Ludzie, trochę SZACUNKU dla mojego serca!!!\n- Wracam z siłowni a na osiedlu znowu pełno ludzi pod blokiem... hałas do 23. nwm kto ich wgl zaprasza. Za dużo ich tu. Trochę SZACUNKU dla mieszkanców!!!\n- Nowy lokal na rogu znowu głośny do 1 w nocy... muzyka na zewnątrz. Ludzie, trochę SZACUNKU!!! Jutro praca o 6. Wgl nwm kto wydaje pozwolenia na takie rzeczy.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "3bcfa4abccce375010ca0ccb2f0a37b596bfb83a",
+ "response": {
+  "id": "gen-1791460168-JtFQTAKB4GES04V1AFzx",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Ostatnio autor oglądał mecz, który zakończył się wynikiem 2:1, oraz wielokrotnie narzekał na hałas pod blokiem i w nowym lokalu na rogu, który trwał do późnych godzin nocnych.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791460168,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "default",
+  "usage": {
+   "completion_tokens": 64,
+   "prompt_tokens": 276,
+   "total_tokens": 340,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 128,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 5.804e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 5.804e-05,
+    "upstream_inference_prompt_cost": 2.604e-05,
+    "upstream_inference_completions_cost": 3.2e-05
+   }
+  },
+  "provider": "Together",
+  "_reasoning_tokens": 0
+ }
+}

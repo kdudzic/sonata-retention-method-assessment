@@ -1,0 +1,87 @@
+{
+ "call_id": "411c1f7cbee0",
+ "tag": "bg_batch",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 200137479
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the posts must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different short public posts by the same author, one per brief below, in order.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Nauczycielka matematyki w szkole podstawowej w Zamościu, wstaje o 5:30, pisze wieczorem po sprawdzaniu zeszytów.\n- zainteresowania: chodzenie z kijkami, robienie przetworów, gry planszowe z siostrzenicami\n- lokalny punkt odniesienia: park przy Rynku Solnym w Zamościu\n- aktualna sytuacja życiowa: Przygotowuje klasę do sprawdzianu i jednocześnie urządza nową kuchnię w mieszkaniu.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: często dopisuje „jak to mówią moi uczniowie”\n\nBriefs (one post each):\n1. topic: sport; angle: rower, trasa weekendowa; register: chatty; about 22 words; lunch break, Monday\n2. topic: praca i grafik; angle: wypłata, premia, rozliczenie; register: mildly grumbly; about 48 words; early morning, Tuesday\n3. topic: zakupy i ceny; angle: promocja, zakup impulsywny; register: terse; about 46 words; morning commute, Thursday\n4. topic: jedzenie i gotowanie; angle: bar mleczny / pierogi / kebab; register: enthusiastic; about 14 words; early morning, Tuesday\n5. topic: zakupy i ceny; angle: nowe buty / kurtka; register: matter-of-fact; about 23 words; afternoon, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- the posts must differ from each other in opening, structure and rhythm; do not reuse a sentence pattern\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts:\n  (none yet)\n\nOutput format: a JSON array of 5 strings only, no prose."
+  }
+ ],
+ "prompt_sha1": "8dfd1c077aa8ff98cc0d0c21150a2d364f4fca64",
+ "response": {
+  "id": "gen-1791460504-7wefiWtQX1CUHyTDgxvK",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\"Poniedziałkowa przerwa obiadowa, a ja już planuję weekendową trasę rowerem za Zamościem, może tym razem trochę dalej niż zwykle.\", \"Wtorek, 5:30, kawa i sprawdzanie rozliczenia, bo wypłata się zgadza, ale premia nadal nie, a przy układaniu grafiku nikt chyba nie pamiętał, że przygotowuję klasę do sprawdzianu. Jak to mówią moi uczniowie, matematyka musi się zgadzać, więc wieczorem jeszcze raz policzę godziny.\", \"W drodze do szkoły wpadła mi w oko promocja na pojemniki do kuchni. Miały być tylko pojemniki, a wyszłam też z organizerem, którego wcale nie planowałam kupować. Teraz próbuję sobie przypomnieć, czy naprawdę go potrzebuję, czy po prostu dobrze wyglądał na półce. Rano człowiek podejmuje różne decyzje przed pierwszą kawą.\", \"We wtorek przed szkołą zdążyłam zjeść pierogi w barze mlecznym i od razu mam lepszy humor, takie śniadanie wygrywa z kebabem!\", \"Po południu kupiłam nowe buty na spacery i lekką kurtkę, bo przy kijkach w parku przy Rynku Solnym szybko robi się chłodno. Kuchenny budżet jakoś to zniesie.\"]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460504,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 321,
+   "prompt_tokens": 771,
+   "total_tokens": 1092,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0002376,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0002376,
+    "upstream_inference_prompt_cost": 7.71e-05,
+    "upstream_inference_completions_cost": 0.0001605
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

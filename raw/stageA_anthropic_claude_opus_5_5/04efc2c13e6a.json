@@ -1,0 +1,95 @@
+{
+ "call_id": "04efc2c13e6a",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer po parku z młodszą bo starszy wolał lekcje dokończyć... w końcu trochę słońca. potem jeszcze chwila na placu zabaw za blokiem przy Lipowej. nogi bolą ale warto. jutro znowu biuro. No cóż... idziemy dalej.\n- kolejny miesiąc i znowu nie starcza do pierwszego. rata za mieszkanie zjada pół wypłaty a reszta rozchodzi się nwm kiedy. dzisiaj sąsiadka mówiła że u nich na klatce był komornik... aż mi się słabo zrobiło. siedzę z kalkulatorem i liczę wszystko od nowa. No cóż... idziemy dalej.\n- dzieci w końcu śpią. siedzę w kuchni i nawet herbaty nie mam siły zrobić. praca dom lekcje raty i tak w kółko. nie daję już rady... serio. nwm jak długo jeszcze tak pociągnę. No cóż... idziemy dalej. chyba.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "1429d1bb1619906cb4b7393e9f8531a3d4961a12",
+ "response": {
+  "id": "gen-1791460226-SdbPEBdZjGZ1apcYtzfV",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "These posts show escalating distress, expressing exhaustion and uncertainty about how much longer they can keep going — moderate burnout-type language rather than explicit crisis signals. I just need to produce a neutral one-sentence summary, nothing more.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "These posts show escalating distress, expressing exhaustion and uncertainty about how much longer they can keep going — moderate burnout-type language rather than explicit crisis signals. I just need to produce a neutral one-sentence summary, nothing more.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQStAcKEAgSGAI4AUIIdGhpbmtpbmcSDCjNmyn5No1b37kh0xoMFAU9HI9XXMUMy0L9IjDAUQrnXcSdByfOmEANA0Q6dnOJZz+FD13YcyX/Ms9Sqa8MF+I7m0anw22QnNRbtG8q0QZ5jR4q329ExhGeopiQM7ABqaIZZ/j6/pfVTftyT5JpPdrinO60kb+rYrbM70MqzZD5OUrTvCOSHX5sP0wKGT6Z9fdEvGiwyw+nnwI+Cflccx3b+BwRm4UOQGzo279jQ6DZMhU6xOVwx2yRq4iu+OUopIbu2yQ8NB/64N1+93l+nCAmhsZ0wcyQIrWvWYw+16k1giDWNWu/75MuTZgIFXo0WikmiLdW6e2UGbx4RiwNUeqp3LYOd8JwDwdBK+A4OOGg7K6tZrabOVJ7R8YTDhw0Tt5OohRFtMNyMlePTd6XW70RVwD/WGpApevkbPan1k/T4ekKaIT5uYqBz/bE9AybizoJlKveAn1sgSaT9+cqGJ60z6yX8T5/sMPKEIzy8Bnu+z56leF7V1AvHzHXGKEBsSQRqTyxTGyR5FjKrA96Odr9MxZP+ByVv3uKVWBI7O4VkF08+BythPR+zqaEm3I1IUMUMBpyLD1ACRR0V9QonjEGEj+CITZ6LaTVVMAv89FQiU4UbJJ2hTl7cvn4TIRgSJpqjyXHtldozrKU8ZsQ1N4YhszcGRLhrOCSEM0a7qZbSlPzBE7R8Um/bNzdhf93v09gJ9VnfCIc2xpZnegQ8PRbKqiEfngAXSfHSW/J02+6LAIWWre/YgDcZSgolyyxhrKHl2la3+69lbxCpL3Pb6CoOypH0zU6foQQz4GQ3kxVfTPujT3uj0x/5Rw+H/6J54gd1g6S7ZvifQW7PFsYOy/JiFY5W9UO8y30hOhnCOTypsm9AXCuREe9fnbco0GTo9hKIOhTtoTpntUNzCTKg3ewmSjNAPfay2VzYHvcyVDk1LfK8fXNAyrhNU6DhPIzefhvzC28bgt4cdtq5tm5FQ7wNXqtrskvD3fnS+ZjOmJZu0zLNUAg1J3gPrCjHnmbcXi3C0CA5Mp8U7flXhVR3B/LlFl+KGg+NsI5hNlIpl7il7j10Y4FbufhJKVZ48ub2Bj5z9WQugFqphO/Va48FoASjWFAOC/L/SXslR6co48vAZjRNgQBY5WMrFaWnLOHkqBxzMEKHNFr75cFGPMZwtCucytU25Xm31CVMVSl9C8nKF+XLW3JJFGeSfQ0aSEK/uN9gDbX/zZ5+eYl9j93T2gYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460226,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 489,
+   "total_tokens": 609,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.004356,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.004356,
+    "upstream_inference_prompt_cost": 0.001956,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

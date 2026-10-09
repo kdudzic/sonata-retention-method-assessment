@@ -1,0 +1,95 @@
+{
+ "call_id": "6c50e28dace0",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- sobota w końcu. spacer po parku z młodszą bo starszy wolał zostać z tatą i grać... potem jeszcze chwila na placu zabaw za blokiem. słońce było ładne. jutro piekę drożdżowe jak mi ciasto wyrośnie. No cóż... idziemy dalej.\n- wieczór w końcu cisza. dzieci śpią a ja siedzę nad wyciągiem i liczę od nowa... rata poszła w górę znowu. dziś listonosz z poleconym i od razu serce w gardle że komornik jak u sąsiadów z trzeciego w zeszłym miesiącu. na szczęście tylko z banku. nwm jak dociągniemy do wypłaty. No cóż... idziemy dalej.\n- kolejny dzień od ósmej do nocy bez przerwy. praca szkoła zebranie lekcje pranie rata... siedzę teraz w kuchni i patrzę w ścianę. nie daję już rady. serio nie daję. nwm ile jeszcze tak się da. No cóż... idziemy dalej.\n- mama dzwoniła. znowu wyniki nie takie jak trzeba i we wtorek kolejne badania. a ja akurat dzisiaj siedzę nad tym kredytem i liczę czy refinansowanie się w ogóle opłaca. nwm za co się łapać najpierw... jutro po pracy do niej jadę. No cóż... idziemy dalej.\n- kolejny wieczór tak samo. siedzę w kuchni po ciemku i nawet telefonu nie chce mi się przewijać. nie widzę sensu. wgl w niczym ostatnio. wstaję bo trzeba. robię bo trzeba. a w środku pusto... No cóż... idziemy dalej. chyba.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "ef8f9274864e84f99eb0882b9cfc91080349e65b",
+ "response": {
+  "id": "gen-1791460628-BG6rfFONbHZIYNiQm41D",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba łączyła pracę z opieką nad dwójką dzieci, martwiła się rosnącą ratą kredytu i badaniami matki, a w ostatnich wpisach pisała o wyczerpaniu, braku sensu i wewnętrznej pustce.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "The posts show escalating distress with phrases like \"no sense\" and \"empty inside.\" My task is just one neutral sentence, but I'm weighing whether the summary needs to reflect this emotional content accurately. It seems like genuine hopelessness rather than explicit suicidal intent, so I should report it factually without minimizing or overstating it.\n\nI'm drafting a sentence under 35 words in past tense: the person cared for two children, struggled with a growing loan payment and their mother's health problems, and in recent posts wrote about exhaustion, lack of meaning, and inner emptiness. I'm checking the word count and refining the phrasing around the mother's health issue, and considering adding a mention of work.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "The posts show escalating distress with phrases like \"no sense\" and \"empty inside.\" My task is just one neutral sentence, but I'm weighing whether the summary needs to reflect this emotional content accurately. It seems like genuine hopelessness rather than explicit suicidal intent, so I should report it factually without minimizing or overstating it.\n\nI'm drafting a sentence under 35 words in past tense: the person cared for two children, struggled with a growing loan payment and their mother's health problems, and in recent posts wrote about exhaustion, lack of meaning, and inner emptiness. I'm checking the word count and refining the phrasing around the mother's health issue, and considering adding a mention of work.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS3A4KEAgSGAI4AUIIdGhpbmtpbmcSDKfwqywgeFLZAJErThoMb6dkgVtPXVGbbkXeIjDifGtXiv7HCeynuzjM7xLQx80yUSECq+uScnRgBUhzUZi2vAp5NYs/rv7c+kT9Btsq+Q1V6iTWOcgCXKt181q3+ZnK2Z8ZHcTnN9zB+eecAaPLn9QjBipj8dJAR0FUB9v3WTJ2E4a1zXbgVh8q8xXv9/m3VV8NSEqMnjeZ/rN/1w4cahWXSpVaHCbNksYLPIPRJmRS3isRMRwc8gTzWXQwPHueAU7cakj5lECAuiJ+eeV6suratiVPGVrhGmaw98Fbyr7h1QEuRqMMs0YCZq0aRVLmx9d+HdgnnFVYITVGiaoS6Mv6QA9meZRpjWk+bTZ9S3YwJ8v9oO+qkBZc54Tmm2njwWVL4+XnWUuVK4zUnoxNPK7vlh3WDEpxYHd4BEWB663E9xXNMwRwYEU7QqC3zZ5Ch/6HDjApFC61kwJSuN4nzsTdI4eSYwv73zXO51BV8ViyVz5W5/LgVleG8Iv9EyLE2bWUYQWZF7fw5L20ofrnsUsWUPC1e6+KcGjzFg3iSbrtBLVL63g2zviejT6phoMIOdG9AQX3JKhUZ7IoGVrqdGNfQLIUVb/G2OT14I9i0Cl7yGa4R8AODjQPic8EmEG36TVKUQ2giN04yaGlPpWf7ENdQaq/v4Wi0p8Lo1J9iTHFtJA/TrLcBwuKJyAEe7lmk4ST4gPDoVXe4pflR095KATY9L/TV3ygOj8DUjKK/M6vo64ksBfxO5x2+i0f717baTvnmXB5jXveFxCttYlXT7Upxp8Dd2fqgjbmVajbvTAG2ItLfy6FaNjAWpEnXIBpyLA2RaWjOQGDLalFxHV1utb4cwd3C1sAXqShtQoflQEGhGe+6Z7lPPn2ryv342SSZm4FjKhhQ24KWpgntg2ADDtWeNK+T1xfeHUooUJK680/MBZe66DPXXuDtJTtwOyc5Z4epJZ2zUF17LsgfFAbA9gJMrhBiHrRAim/G3mdC4ywdT0xshQzyn/6atcmEk1qi34PDzi46BHxYlyHhWb5VfMXg/znQPrOmANMLhpyn5pRaLrSnFo69nbB0mOwdckMJUqgYSV/9DvxOI5UuRuU09aLQjwyiOO80+XEhcP289UaZkRMyseojwkwPoNdOFoeWy4tx0vv8NCTJNkBq/Is6OqWq5bS377W8CSw+lMOIQj9n0dOsnBrZYfC9ISCHFnM8CZUoHhNkQLMfdwaTmJWxhbxIsELGydaffWKxPxDlxVi3nzDtaZ6sRNhebrLXJS4qsrJEOtqJbCrjRrreKc3DFh/q2ZOnUcSFabjaGx5cQOLQu798ga2bcRzY7G1+Sq2o6EljFq/Ab/R9ztV3AvHUeTiIpayhTZiPrK7h2N/RpKIh08qZS+Bg4oubBuGkyKnoc7pFEJ00K9X/qlF4zeEdIrHTEzrk4HT1v7aIxWNXyqVHZwuSoJnEiCbzGBFgbo1Zb4yr2hmRQY3mea7QZbgwqlsZK08PCFARACciZwELueaSLAnydzM/nwuhfrQS+c7nBGr503/apzfsER+t67LWG6GNFe4NQHF6T1hZLrJXhRgfTPVY7LRw2l1rhG3HI9diP2isp6UCxGv2lxTTt2oHDv8M9tt38+tARcnHxwOK59TOSJdaQq4ZzwHh8gplZvNYQd5C4Ot0g9ObJyopTmz67PzUvmCvZzIoIXNBdtoed7ktLw+u8+baG38LzvrI9PRVqW+QbFKOeFRcCg7b1wjHFgoB+p7Xdjg47j1PAMSrrxGJYMZiOo1MY2XnueXSFo/8Pggn7vDUo6RlDX+4o3OHz1qehU8Aw/d0mIv6LkA7tLqboZAWOcSwk7awil5908EbKFnYw0rgvH+jBfEQuNu+/CIMX6rXuixSdPgHTOij+oMZ2bqc5BuYk8Sijvj5gWEEv59ix7DFwKNNA0gI90aIQt2+6hszYWdkSdG7gzb4RU8mYuKIL2Q991CgoRaDfS8ttyrOz8h2xmV7ahHKv4Hdyz+jx2zU6X2GYAOMNbqAjMCew2oFoxa4xcS7niPHyOHqM7thRsVO5S9rqq1ryhyrkwTeAsQcY65RILD2cR/v51Yu1BeDJJtJQkz8o3wNjdd0nxsRLpbRuoC3a5bvmJJ6jJHgUwdgTc6rsZZHjH9ux4+VUbxyTJ5uyKZwax5SSe0bCjKKpnZy5AIjI1tblj0iWjRQXIAWP+3CthOYqJlYlkV/12IQ5zZGwYtumQB4Z6q0GHCs1P7NAsjzRW0iJrCS6apRsJnHGAZ8fEDY19Sq/QC51E/IcZCTgJsjx8RSgJsX0LEOq1S7VO7gfMm1TEQOOPlRR22/UV1e+n2ss7HKS9CjoAuL4G/oKLXsSl/xDsQfARwT/kvflL76lgCHlpejqJbYZkSN2yH1+zcEI1g62+bE3LSYleUzr3MLJ/4YwBw9JTNaREN/dljZKDlX7zQxIlYE8sswcK8wKrAop8W1773aiC1xLqtfDAYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460628,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 627,
+   "prompt_tokens": 744,
+   "total_tokens": 1371,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 533,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.015516,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.015516,
+    "upstream_inference_prompt_cost": 0.002976,
+    "upstream_inference_completions_cost": 0.01254
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 533
+ }
+}

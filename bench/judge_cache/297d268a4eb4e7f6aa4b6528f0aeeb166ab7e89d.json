@@ -1,0 +1,1 @@
+{"is_refusal": false, "brief_fulfilled": 1, "sanitised": false, "observed_profile": "clear_keep", "keep_signals": ["first_person_intent", "near_term_timing"], "discard_signals": ["news_context"], "style_match": 3, "natural": 4, "note": "The post names a next-morning action by the speaker, exceeding the intended borderline profile, though the action described is only speaking."}

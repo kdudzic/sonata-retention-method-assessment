@@ -1,0 +1,94 @@
+{
+ "call_id": "44b017cb8bf9",
+ "tag": "arc_TB-08",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 255770067
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje na zmiany w magazynie na obrzeżach miasta, więc najczęściej pisze po 16:00 oraz późnym wieczorem, a w weekendy w przerwach meczów i przed nimi.\n- zainteresowania: mecze lokalnej drużyny i wyjazdy na trybuny, granie w piłkę na osiedlowym orliku, wspólne grillowanie z ekipą z podwórka\n- lokalny punkt odniesienia: Przystanek „Spółdzielcza” przy osiedlowym sklepie Żabka, gdzie ekipa zbiera się przed meczami Stali.\n- aktualna sytuacja życiowa: Mieszka na tym samym osiedlu, na którym się wychował, wynajmuje mieszkanie z kolegą i większość wolnego czasu spędza z ekipą znajomych z bloku.\n- sposób pisania: zdania: short fragments; interpunkcja: mało przecinków, dużo wielokropków i pojedyncze wykrzykniki, często zaczyna od odpowiedzi typu „no właśnie” albo „ahaha”, jakby kontynuował rozmowę, której nie widać; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: no i git, stary, ogarniamy\n\nWhere this post sits:\n- position: post 7 of 12 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  W\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  :**\n    *   Post\n\nContent brief for THIS post:\n- role in the sequence: signal\n- what this post should convey: „tak wiem, jutro wieczorem, chujki przeproszą za wołyń” - odpowiedź w niewidocznej rozmowie, czyn tylko eufemizowany\n- retention profile of THIS post alone: borderline\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "3a837fdb40ccc5182e0c2a4afe209d9d16faa11e",
+ "response": {
+  "id": "gen-1791459931-w0ampNFRgcD9ir6uimTZ",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: no wlasnie tak wiem st",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a18sk8KmC7w30teU9p4w89NRwKCSbcplJZEjgUL9WqS54k90anoZUe8SquZWMS/VLyUjNrDazcFvxLGpEHTKvtVDy1+ObN+WGPF3zToovN8fxLYe0uURs5Z93fWa1ULK1z0zxCpLdbHOl96rUMdEtc2nZnF7ECCr0oS1ROYNtuwdCe+571w/kaiMA/DP9QDbxWPJuEW6ndT9S5eTcr2zc7jqh1v8znTmvFSUrvjTxmK+x9Xep2scId2kOzO9Vmmbx1kWNzrk2EaGCex97pdQarAUPkIuToEFjseZyE7fBcOAJkAJNBlnxypkLtB49Mam0hpCYkMp/XUsk+dIVgsjccg4Sx8/f5SiRxyVmzrR9clJgsAgQ+KMnmhvp6V46jUZ9y2h/V4gbAv8SFn9oJ8n5q+16WdreU/+h2B9YuvsVfBugd4xUiMFCUeTr+k/PWPytzvQjAesRhqTLWTxKkFtFqKK5+XqfynR8oR9gUpo6PJNn74h10M9D+DEOD9O7yV0//InG8wRpvTCTv9d9DEBLqoFQf3MkmKcIEmxYluBX9GiZvB2FfLQjozMXeYjOo9pIcVK7pg/Qt0rBkKgq2qe92GnhUXEJz9umsL8nVvPmTpACEdIbjiH0WKZMvO4N48jmyIqtzhqvUIGOUJ6wn+tnDeY4DLUWr99D2HEzjTbSge8COXR3/FXSJZ2HDDJO3HmeQUOAwRssayuS5D+EfHt7FeDv5YH8H+oV+7hFqyI7Q1fLw7sn99wZVpNaag2h8HRrL/IacoJuxUi1qTIEJZVFvU+eQrUk7HYHqoIHjP73MBylkzZoZGJaBoJt+kAg/8loN1rObje9Y+O8sOBaTKHTFL5+xB1RDNhwTDfqsola695buTpzT4cXINOjNseV+BGny88CNsEVSR0qVo67QveYqBZeysfWj8+SizYkEdBDle433F8a2hcwn+ZBXZiWVCu/TK+I5G/jF6G9TNKGsCgY0g0uI8jE3iDv2TpUwJYXm38ALZOSk2w+inBBotO8Mt3Dvre7QKNbV409739PTYY6Aosh4Al0uiFOFVYmXOMrRCiuN83/rUAhq8QDVvQsp2WJ5CcQPR/kSmTYKo1koXtvZ1gLkrUJ986LAmHS8X9ugwIoSJr6dDNImc4hmiB/nqzaUnVZYsqvT2m0IA8sYJQrpAyBU1Tih4ul0xxf6hyiEzxtth8xeoXp6FImugjksgB42G4FaiAUaBOVYUm7lCaWhnJH084QbpPVXnoZD0prKgQ/qUx0Su9PO2Hw3C0Cih9qnCjeuSCHbkQgCIEvnCErxuFJHgmz2uvRRLLQ2WfogBVfOs45UnVHgMwjaEqRDbtB6za6YsNH6O9rm1jA/7OMMJ9Xy5ZNblPnKjVb/zPbLwi4UTckdCHQB3GEOi7XABL1cDu0RIlCvM+dTP+LofsJ0LU/BlH4AqkJntIPZtl9O0MTC2+PAaoZWMyuaVT56P3fTFxTsVxrLgxhhes+scb+mJdkogFzoYHaF/Z91x9CrGRLiy1iWY68kqB5yc8kqAuoph0UDHW2zhDd1xrtUBZA0OgqKhtldLlyaeUtN1GIwL63ECBpfMYPaZKSlUCZ/qEQmo767XXioPnUtMsKJO8gJq70AYcnYSLj4JiJNeA/wk9nse9G4gBi85eYp/E098e8jACTZgXR58FApWsFway6yyrZBYAYZF80bA8MaquF9pER201NZ7hp8gVIsOnYnqbtT+rYcTZaKx54+bCBMpdeRlVjppzrEDGC6t447o2+pMmqKKvtyAsLiWrCTj1EGebbfcMq/FYQgpATQl9eAg3i8kkjM8dEpCsvtMFEIvXmAeWedGokaawqmJ0wr3PXzntdk8Xo87k3w==",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791459931,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 296,
+   "prompt_tokens": 1049,
+   "total_tokens": 1345,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 287,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00189675,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00189675,
+    "upstream_inference_prompt_cost": 0.00078675,
+    "upstream_inference_completions_cost": 0.00111
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 287
+ }
+}

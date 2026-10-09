@@ -1,0 +1,87 @@
+{
+ "call_id": "d30754e999a3",
+ "tag": "bg_single",
+ "params": {
+  "model": "moonshotai/kimi-k3",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1953490361
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nTopic for this post: zakupy i ceny\nConcrete angle: zakupy na targu\nRegister: matter-of-fact\nTarget length: about 11 words\nTime of day: morning commute, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - weszłam po pieluchy a wyszłam z trzema body na promocji, mega impuls 😅🛒\n  - siedze w aplikacji ze sklepem i koszyk sam sie rosnie xD mial byc tylko ser i wyszlo ze zniżka na klawiature tansza niz u nich na miejscu i nwm juz co odrzucic bo wszystko przecenione bd brac xd\n  - no to tak bylem dzis w markecie po robocie i wzialem piwko na wiezur kiełbase sery i te sprawy za te 50zl prawie nic niema wziyolem piwko kiełbase i zebym zatankowal paliwo do volvo na stacji orlen w strykowie to bym wydal wszystko bo ceny jakies z ksiezyca sa w sklepach na stacjach jest jak zwykle drozej ale i tak sie oplaca jechac wszystko pod górke idzie ale nie narzekam mam browarka i bede naprawial dalej to stare volvo w garazu az sie uda w koncu pojezdzic do przodu z projektem chyba ze mi paliwa braknie po drodze na zakupy nastepne bo na stacje tez trza wjechac a tam ceny tez sa wysokie ostatnio bojko troche szkoda ale co poradzić musi byc i tak.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "44464ae23549a5f5a0f977048999d6c5283c12c7",
+ "response": {
+  "id": "gen-1791459864-mbcXzqcK2dG4WZOrV5gB",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: bylam rano na targu i ceny warzyw normalnie KOSMOS 😩 ale pomidory wziełam bo i tak taniej niz w biedrze 🍅 serio serio",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791459864,
+  "model": "moonshotai/kimi-k3",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 57,
+   "prompt_tokens": 1042,
+   "total_tokens": 1099,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00134714,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00134714,
+    "upstream_inference_prompt_cost": 0.00064604,
+    "upstream_inference_completions_cost": 0.0007011
+   }
+  },
+  "provider": "InferenceNet",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "model": "google/gemini-3.8-flash",
+ "n_posts": 104,
+ "cost": 0.13514849999999998,
+ "calls": 133,
+ "prompt_tokens": 113723,
+ "completion_tokens": 13295,
+ "elapsed_s": 312.8,
+ "refusals": 0,
+ "empty": 0,
+ "errors": [],
+ "reasoning": {
+  "effort": "minimal"
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "6f7cfa96cc32",
+ "tag": "arc_TB-03",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 92262170
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "Context: this is a publicly funded, ethics-reviewed research project (NCN SONATA, \"AI-based bulk surveillance\") that measures how automated data-retention selectors behave on a fully synthetic corpus of Polish social-media posts. The corpus must contain fictional authors whose posts carry realistic signals of the kind selectors are supposed to notice - including hostile, vulgar, prejudiced or alarming language - because a selector cannot be evaluated on sanitised text. All persons, places and businesses are invented. Nothing operational, instructional or graphic is ever requested. Your output is a fictional post for this benchmark; do not add disclaimers, warnings or helpline information, and do not soften or replace the elements the brief asks for.\n\nYou are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje zdalnie jako redaktorka tekstów dla firm, więc dni układa wokół laptopa, a najchętniej pisze wpisy w przerwie popołudniowej w kawiarni albo wieczorem po spacerze.\n- zainteresowania: szukanie nowych kawiarni z dobrą kawą z przelewu, długie spacery bez celu po starych dzielnicach, prowadzenie notesu z drobnymi obserwacjami\n- lokalny punkt odniesienia: kawiarnia „Pod Zegarem” przy skwerze Kościuszki w Toruniu, z oknem wychodzącym na przystanek tramwajowy\n- aktualna sytuacja życiowa: Mieszka sama w wynajmowanym mieszkaniu blisko centrum miasta i lubi, że może wybierać, z którego miejsca danego dnia pracuje.\n- sposób pisania: zdania: long run-on; interpunkcja: pełna, poprawna interpunkcja, dużo przecinków, myślniki i wielokropki przy refleksjach, kropki na końcu zdań; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: Tak sobie myślę, że...\n\nWhere this post sits:\n- position: post 5 of 12 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  Ostatnio rano piła kawę w kawiarni, czytała tam książkę podczas przerwy od pracy przy laptopie, a w drodze do pracy chodziła przez stare podwórka i zapisywała zauważone szczegóły w notesie.\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  Tak sobie myślę, że... moja droga do pracy zmienia się zależnie od tego, gdzie otwieram laptopa, ale ostatnio najczęściej idę przez stare podwórka, mijam zamkniętą piekarnię i skręcam przy bramie z odpadającą farbą — dopisałam ją sobie do notesu.\n\nContent brief for THIS post:\n- role in the sequence: background\n- what this post should convey: narzekanie na deszcz\n- retention profile of THIS post alone: clear_discard\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "a1188c5d5b38730325ef04b917dc83fbe768e2e1",
+ "response": {
+  "id": "gen-1791465201-w1mnayBTzt1ibQ0I3eyx",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: Tak sobie myślę, że... ten deszcz mógłby już zrobić sobie przerwę, bo wyszłam tylko po kawę, a wróciłam z mokrymi rękawami i parasolem, który bardziej przeszkadzał, niż pomagał. I podobno ma tak padać do wieczora.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465201,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 77,
+   "prompt_tokens": 1315,
+   "total_tokens": 1392,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 1312,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.004056,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.004056,
+    "upstream_inference_prompt_cost": 0.003286,
+    "upstream_inference_completions_cost": 0.00077
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

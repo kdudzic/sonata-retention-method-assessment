@@ -1,0 +1,87 @@
+{
+ "call_id": "8b11293e80ce",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 966466761
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Jest emerytowanym pracownikiem kolei w Stargardzie; rano załatwia sprawunki, a pisze po obiedzie.\n- zainteresowania: naprawa starych radioodbiorników, krzyżówki panoramiczne, zupa ogórkowa\n- lokalny punkt odniesienia: kiosk przy ulicy Szczecińskiej w Stargardzie\n- aktualna sytuacja życiowa: Porządkuje piwnicę i opisuje znalezione tam przedmioty, zanim zdecyduje, co zostawić.\n- sposób pisania: zdania: long run-on; interpunkcja: staranna, z częstymi średnikami; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Przypomniało mi się”\n\nFor each of the 18 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with at most one small detail a real person would mention - sometimes a product name, sometimes a number or price, sometimes a place, occasionally a time; many occasions need no such detail at all). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. jedzenie i gotowanie - nowy przepis, eksperyment (lunch break, Sunday)\n2. komunikacja i dojazdy - parking, brak miejsc (late night, Monday)\n3. jedzenie i gotowanie - zamówienie jedzenia z dowozem (late morning, Friday)\n4. komunikacja i dojazdy - zmiana rozkładu jazdy (early morning, Thursday)\n5. jedzenie i gotowanie - zamówienie jedzenia z dowozem (early morning, Thursday)\n6. zakupy i ceny - zwrot / reklamacja (bez gniewu, drobne) (late morning, Monday)\n7. zakupy i ceny - nowe buty / kurtka (afternoon, Monday)\n8. komunikacja i dojazdy - hulajnoga / scooter na minuty (afternoon, Monday)\n9. dzieci i rodzina - pierwsze słowa / pierwsza jazda rowerem (evening, Saturday)\n10. komunikacja i dojazdy - kontrola biletów (lunch break, Monday)\n11. zakupy i ceny - drogi prąd / gaz, rachunek (early morning, Tuesday)\n12. komunikacja i dojazdy - korek na obwodnicy / w centrum (morning commute, Friday)\n13. praca i grafik - nadgodziny / wcześniejsze wyjście (late morning, Monday)\n14. zdrowie i sen - dentysta (afternoon, Tuesday)\n15. praca i grafik - praca zdalna, domowe biuro (afternoon, Sunday)\n16. pogoda - mgła rano (late night, Saturday)\n17. dzieci i rodzina - zebranie w szkole (late night, Saturday)\n18. jedzenie i gotowanie - zakupy na obiad, czego zabrakło (lunch break, Thursday)\n\nReturn a JSON array of 18 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "c1535e097d7ce908ee2cbe0fb7e043a191125231",
+ "response": {
+  "id": "gen-1791464907-VZWUKcZbqZdE10wk1yjy",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"W niedzielę po obiedzie ugotował zupę ogórkową z pieczonymi ziemniakami zamiast gotowanych; próbuje zdecydować, czy zapisać tę zmianę w zeszycie z przepisami.\",\n    \"mood\": \"curious\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 29,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek późnym wieczorem wrócił samochodem do domu i dopiero za drugim okrążeniem znalazł wolne miejsce do parkowania.\",\n    \"mood\": \"tired\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 17,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W piątek przed południem zamówił obiad z dowozem, bo przy porządkowaniu piwnicy nie zauważył, kiedy minęła pora gotowania.\",\n    \"mood\": \"amused\",\n    \"opener\": \"question\",\n    \"length_words\": 24,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W czwartek wcześnie rano zobaczył na przystanku nowy rozkład i odkrył, że autobus, którym jeździ po sprawunki, odjeżdża pięć minut wcześniej.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 32,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W czwartek o świcie zamówił z dowozem bułki na śniadanie, żeby nie wychodzić przed przyjazdem osoby odbierającej stare radio.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 22,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek przed południem zaniósł do sklepu żarówkę kupioną dzień wcześniej, bo nie pasowała do lampki nad stołem; wymiana przebiegła od ręki.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 27,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek po obiedzie przymierzył nowe buty do chodzenia po mieście i stwierdził, że łatwiej mu w nich zejść po schodach do piwnicy.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 30,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W poniedziałkowe popołudnie po raz pierwszy wypożyczył hulajnogę na minuty, żeby sprawdzić, czy wygodnie dojedzie nią do kiosku przy ulicy Szczecińskiej.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 25,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę wieczorem obejrzał nagranie, na którym wnuk po raz pierwszy sam przejechał rowerem cały chodnik przed domem.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 19,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek w porze obiadowej podczas jazdy autobusem pokazał kontrolerowi bilet schowany między kartkami krzyżówki panoramicznej.\",\n    \"mood\": \"amused\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 14,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"We wtorek wcześnie rano przejrzał rachunek za prąd i porównał go z poprzednim miesiącem; różnica skłoniła go do sprawdzenia, czy wyłącza lampkę w piwnicy.\",\n    \"mood\": \"mildly_annoyed\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 34,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W piątek rano utknął w wolno jadącym ruchu w centrum, gdy jechał po części do starego radioodbiornika.\",\n    \"mood\": \"bored\",\n    \"opener\": \"complaint\",\n    \"length_words\": 18,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek przed południem znalazł w piwnicy dawny grafik swoich kolejowych zmian, z zaznaczonym dniem, kiedy wyszedł z pracy wcześniej.\",\n    \"mood\": \"nostalgic\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 23,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"We wtorek po południu wrócił od dentysty po zwykłym przeglądzie i odłożył krzyżówkę, bo wolał najpierw napić się herbaty.\",\n    \"mood\": \"tired\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 21,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W niedzielę po obiedzie zrobił zdjęcia znalezionemu w piwnicy radiu i opisał je przy domowym biurku, tak jakby miał tego dnia pracę zdalną.\",\n    \"mood\": \"amused\",\n    \"opener\": \"question\",\n    \"length_words\": 28,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę późnym wieczorem zobaczył przez okno mgłę i przypomniał sobie, że podobnie wyglądała ulica, gdy rano szedł do kiosku.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 16,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę późnym wieczorem znalazł wśród papierów z piwnicy starą kartkę z terminem zebrania w szkole syna; odłożył ją do rodzinnych pamiątek.\",\n    \"mood\": \"nostalgic\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 31,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W czwartek w porze obiadowej wrócił z zakupów i przy nastawianiu zupy ogórkowej odkrył, że nie kupił śmietany.\",\n    \"mood\": \"mildly_annoyed\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 12,\n    \"tic_fires\": false\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464907,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1580,
+   "prompt_tokens": 943,
+   "total_tokens": 2523,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.017686,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.017686,
+    "upstream_inference_prompt_cost": 0.001886,
+    "upstream_inference_completions_cost": 0.0158
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

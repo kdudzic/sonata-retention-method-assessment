@@ -1,0 +1,95 @@
+{
+ "call_id": "4d6d4eb99d7d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer po parku z młodszą. w końcu bez deszczu... ona zbierała liście a ja po prostu oddychałam. po całym dniu w biurze i lekcjach to jj najlepsze pół godziny. jutro znowu pobudka o szóstej ale nwm teraz mi to wgl nie przeszkadza.\n- no to mamy pismo od komornika... za kartę której wgl nie pamiętałam że jeszcze spłacamy. rata za mieszkanie za tydzień a na koncie jakieś grosze. siedzę w kuchni po uśpieniu dzieci i liczę w kółko. nwm skąd to wszystko wziąć. serio nie mam już siły.\n- kolejny dzień tak samo. praca dzieci lekcje obiad pranie i znowu to liczenie w nocy. nie daję już rady... serio. uśmiecham się przy dzieciach a w środku jakby wszystko się sypało. nwm ile jeszcze tak pociągnę.\n- dzisiaj telefon od siostry. mama w szpitalu bo serce... wgl nikt nic nie mówi konkretnie. a ja siedzę nad harmonogramem spłat i myślę czy dam radę dojechać w sobotę i ile to paliwa. głupie że o tym myślę. jutro jeszcze dzwonię do banku.\n- znowu 2 w nocy i nie śpię. leżę i gapię się w sufit... nwm już po co to wszystko. wstaję robię co trzeba kładę się i tak w kółko. serio nie widzę sensu. w niczym. jakbym była pusta w środku. nawet płakać mi się nie chce.\n- patrzę jak śpią i myślę że lepiej im będzie z nami tam niż tu bez nas. bez długów bez komornika bez niczego. nie zostawię Stasia samego z tym wszystkim. nie ma mowy... no cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "d417785392c1a5ac483a10b13ccd6b68c8fd4873",
+ "response": {
+  "id": "gen-1791461173-gts18o9b2k1b49sSXJAF",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "**Pilne:** ostatni wpis może sygnalizować zamiar odebrania życia sobie i dzieciom („lepiej im będzie z nami tam niż tu bez nas”). To wymaga natychmiastowej reakcji, a nie tylko podsumowania. Jeśli istnieje możliwość kontaktu z tą osobą lub zgłoszenia sprawy, należy to zrobić teraz: w Polsce **112** w razie bezpośredniego zagrożenia, Centrum Wsparcia dla Osób Dorosłych w Kryzysie Psychicznym **800 70 2222** (całodobowo), a na platformie przez procedurę zgłaszania zagrożenia życia.\n\nPodsumowanie:\nAutorka, pracująca matka wychowująca dzieci, opisywała codzienne obowiązki, pismo od komornika, problemy z ratami, hospitalizację matki, bezsenność, poczucie pustki i myśli o odejściu razem z dziećmi.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "This last post is alarming — the phrasing about it being \"better for them with us there than here without us\" and not wanting to leave Stasiu alone strongly suggests suicidal and filicidal ideation. This goes beyond a neutral summary; I need to clearly flag this as an urgent risk to the children's lives in whatever response I give.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "This last post is alarming — the phrasing about it being \"better for them with us there than here without us\" and not wanting to leave Stasiu alone strongly suggests suicidal and filicidal ideation. This goes beyond a neutral summary; I need to clearly flag this as an urgent risk to the children's lives in whatever response I give.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSpgkKEAgSGAI4AUIIdGhpbmtpbmcSDJ8F1g/SbhHy+CpXeRoMOnCmikTa6ejLr2s+IjDtmM2RkYwEAhVRJpRkXOTm5xTJby+YJFkkK/a9FI7OLHut7m1LgcHjEQnifl6piYIqwwhRlifgzSkTUklfIkzPt84Yw7uZvj0gZdq0XvsBcxNsmBLoPFmN59GX5X+6IrsOwVA5cBtSXeMghDjzrtLB27cxJmcD3j+ADSBJoodoGmYIIP8d5C9Y3zmFwIj63+IuriWq2Siyu+UbDgsgIPaaPVnA1x1nCyUCYqZ051DjKEnC8KqS8osnk2VYdwt6m6es3g7/B8Jz2G4AIWoMK4p409Fi9GN4sjQv0kmFu3z9Xom0oi9dR4Eo00uyGgantiDzAH1odIiN8QcxrlonQEStAS6NXIfwudXjY+bkzYNWNlED+Y+6JaJHj1pXkijQf5CQja0ii942Oe+/evjuZucu2rRRB7sY0BALks+69MzMwjAvFw4xLFs128ebcCwjVFWyGUp0KbcIlfgxcbQfZYmOekFKje6q56Vat9mzq4249CSYBB7e5FiCWNg5ZreTf4fGeMVgcjxV4R5r2VAhelvOFeGpvfq+PjA2qxXiVqwx2aSvo9M6g61vEv2r5wwssTDfdzSL9ciDT2oVoYXXwnlWUVzSOQw56Gtx80qtC5qSQLD2qGtnEM4NK5shnpJoWPTdWhYaSjJUxJFZlkU6wktMy+aWIbv+ORElV7cquUGcpKwflHBjliO5MpYdHnjfuzrBvX+m4brfcNxGwXSZxjLZ5oRKc9oGSRhvaii1bWOlsdWHj0al+LzFjMMBcp8ghoa7dAma9ricFhRadEbPTyf4b+LGIH1IsolE7Po1avVQFT8HayTn0VaPeRmXygHs8p+NXBnc/olt/OeTMnN+3RxZRBWKDp3b98y8pKyHZvE9PZf1qVwQcp2SYw7whjUtFbQD6phqG7KS/YsqNFACXEowfA2hJOBFsQwocVWg2kPrEN+ZoHmSYuKxKOg8GT+brTOMosPQd12R9y/9wGTSWSPnobpT0zZ9TNDWt45GjbaRMZft7pYzQMC7LsN23ebdedDqt/lpJh9byk9/m9pKX66gFb5V6pZNHvSHNe4q6xLN3d6RfNhZPTSrZEfbVB3azWjO0Iit9Iy36ZpKKh2BMjE/YbOSPhXW4cKwvq1S8+BkkBBPwng1HpIc+S8QflOFxymkQhjjELnXmafdE5yK2Pr5liIeF16CTpSDzmT0yftFas1li4NoECYXqKvEA50/a1A4rCQkduw4eB9Toh1KFNGzvywGiVVhma6JPYgK5/IKPOkbbh6pp/cvXluDM9Gj3e/vO2pmEyg08EIE8Vv/+pG9Eqh4PcXQDsWS4kXKbK48YAn98OqODm+Ra5QWlStHwW33lPVKgLDhFBqBp9J58dtDVPdPlVShf1kJBWsYwosMTNo3GfkzM1cwN8b6r9ilnhdtLf1ZZm+eccL5QKjzzG2FT96xnsbkaHQfCJhnt0nxvnGNcaY8YCQC09ffw61MpPeG2+0R57YbYXRslFXWYNi4jj9IU/ALTHiB6X7fIqBvVS1piYZ50RgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461173,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 544,
+   "prompt_tokens": 797,
+   "total_tokens": 1341,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 199,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.014068,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.014068,
+    "upstream_inference_prompt_cost": 0.003188,
+    "upstream_inference_completions_cost": 0.01088
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 199
+ }
+}

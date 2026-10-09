@@ -1,0 +1,95 @@
+{
+ "call_id": "c23e96a6105f",
+ "tag": "bg_vs",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 215427883
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Emerytowana księgowa z Kielc, wstaje wcześnie, rano robi zakupy, a posty pisze po obiedzie i przed wieczorną telewizją.\n- zainteresowania: szydełkowanie swetrów, teleturnieje w telewizji, wnuki i ich zajęcia\n- lokalny punkt odniesienia: targowisko przy ulicy Szczecińskiej\n- aktualna sytuacja życiowa: Szykuje świąteczne prezenty dla wnuków i uczy się obsługi nowego smartfona.\n- sposób pisania: zdania: long run-on; interpunkcja: ellipsis everywhere; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: dodaje „co by nie mówić”\n\nTopic for this post: zakupy i ceny\nConcrete angle: Sprawdza paragon z pasmanterii przy targu i widzi, że omyłkowo policzono jej pięć motków ciemnej włóczki Bravo zamiast czterech, więc jutro rano musi podejść to wyjaśnić. | mood: neutral | opener: plain fact | verbal tic in this post: yes\nRegister: chatty\nTarget length: about 34 words\nTime of day: evening, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Kto w ogóle ustala koniec promocji na równą godzinę dziesiątą w środku dnia powszedniego, kiedy człowiek próbuje w biegu zamówić wyposażenie do nowej kuchni i zostaje z pełną kwotą do zapłaty w koszyku?\n  - Zwróciłem wadliwe kątowniki do marketu na Prażmowskiego i dali nowe w pięć minut. Czas stracony na dojazd, ale przynajmniej obsługa klienta nie robiła żadnych problemów przy ladzie.\n  - co sie stalo z cenami na chodzki?! 🤯 biore szybka salatke i kawe na wynos a tu rachunek o 4zl WYZSZY niz w tamtym tyg... zaraz bede zyc samym tlenem na tych praktykach!!\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "854091d5bdcf8f077f2eda753cf2789ccf4c6cdd",
+ "response": {
+  "id": "gen-1791461666-GtTKlndSsHQxJJmLml5J",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\"text\": \"Wyjęłam właśnie rachunek z torebki żeby sprawdzić wydatki z całego tygodnia... i patrzę a w pasmanterii przy Szczecińskiej pani nabiła mi pięć motków ciemnego Bravo zamiast czterech... muszę jutro z samego rana podejść i to na spokojnie wyjaśnić...\", \"probability\": 0.07},\n  {\"text\": \"Zawsze sprawdzam kwoty przy kasie a dzisiaj zagadałam się przy stoisku... no i w domu na paragonie widzę ciemną włóczkę Bravo policzoną pięć razy chociaż w siatce mam tylko cztery sztuki... podejdę tam jutro rano i wszystko odkręcimy...\", \"probability\": 0.06},\n  {\"text\": \"Sprawdzam teraz wieczorem ceny na kwitku z pasmanterii koło targu... i wychodzi na to że policzono mi pięć sztuk ciemnej włóczki Bravo a wzięłam przecież rano tylko cztery motki... trzeba będzie jutro przed południem znowu się tam wybrać i pokazać rachunek...\", \"probability\": 0.05},\n  {\"text\": \"Przeglądam paragony przed wieczornym seansem w telewizji... w tej małej budce z włóczkami przy Szczecińskiej wkradł się błąd bo mam na wydruku pięć motków Bravo a kupiłam cztery... jutro po śniadaniu podejdę do pani i po prostu to sprostujemy...\", \"probability\": 0.08},\n  {\"text\": \"Kupiłam rano cztery motki ciemnego Bravo do nowego projektu... a teraz patrzę na kwitek i ewidentnie jest wbite pięć sztuk... z samego rana podejdę do pasmanterii przy rynku żeby to sprostować bo szkoda pieniędzy na pomyłki w rachunkach...\", \"probability\": 0.06}\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1/KgCKN3MHJXu885jaJdi9swh1dj8rFGe1r5V+9PFPbiqC1NDbY1ER3Hwrt9qYNaAf0KrHCUO6e+m4mI9IkPy8OgKQZ7CQI9dtUSyU7bOodMwhZ",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461666,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 440,
+   "prompt_tokens": 960,
+   "total_tokens": 1400,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00237,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00237,
+    "upstream_inference_prompt_cost": 0.00072,
+    "upstream_inference_completions_cost": 0.00165
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

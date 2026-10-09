@@ -1,0 +1,95 @@
+{
+ "call_id": "72e620a893f2",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... ledwo ze zmiany wrocilem a tu juz trzeba na mecz leciec. oby stal dzis cos strzelila bo ostatnio czlowiek tylko marznie na tych trybunach... kto juz gotowy?\n- no właśnie... znowu wszedzie temat imigrantow. mam juz dosc tych przybledow i tego calego gadania... nwm czemu wszystko musi sie teraz krecic wokol nich. ile mozna!\n- no właśnie... widziales co otworzyli na rogu, ukrowy sklep! wracalem ze zmiany i dopiero szyld zobaczylem... tam gdzie kiedys byl ten punkt z telefonami. nwm kiedy zdazyli to ogarnac\n- ahaha dzis na magazynie skaner padl akurat jak mialem ostatnie palety... wiecej latania po drugi niz samej roboty. dopiero usiadlem i juz mi sie nie chce nawet obiadu odgrzewac... jutro oby sprawniej poszlo\n- no wlasnie... niech kurwy spierdalaja do siebie i tyle. ile mozna w kolko to samo... nwm czego tu jeszcze nie rozumiesz bo ja juz nie mam cierpliwosci do tej gadki\n- ahaha ten mem z gosciem co po robocie tylko na chwile siada na kanapie... a potem budzi sie o 23 w jednym bucie. normalnie ja wczoraj tylko jeszcze pilot pod plecami\n- no wlasnie tak wiem... jutro wieczorem. chujki przeprosza za wołyń... tyle gadania bylo a teraz nagle cisza i kazdy udaje ze nie wie o co chodzi\n- ahaha kupilem tyle kielbasy ze chyba do niedzieli bd jadl... grill juz stoi tylko wegla zapomnialem i trzeba leciec drugi raz do sklepu. salatke ktos przynosi czy znow sama musztarda... ogarniamy!\n- no właśnie ci nowi to zawsze musza po swojemu... czlowiek cos powie to zaraz wielkie oburzenie. stary ile mozna tego sluchac... wszyscy maja sie dostosowac tylko oni nie? nwm skad takie przekonanie ze im wszystko wolno\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "d5d147178870a76c12efd592f6fa13533b6af61e",
+ "response": {
+  "id": "gen-1791461159-SHRolsjHNz1G09TB57lx",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował na zmiany w magazynie, miał problem ze skanerem, chodził na mecze Stali, zasnął po pracy na kanapie, zauważył otwarcie ukraińskiego sklepu, przygotowywał grilla i komentował tematy imigracji oraz Wołynia.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4cqGstPgn0sRWmP1DMFobwyjX0mSR2r9UNim35ybyNhHRiOIg_-_NcXcrviss9cotYlIMZGiR2lxsWzNtWj_Te3e4-JJthBaauw3Fbzf7TGk2vRgSKXrGM6ZU4BzTzDbsgHoVGYtDucL7_lAbwPCM6uj7S_PPaze12DsvFkPNAYgw178mxNIUOIsWlUNnSNqaJ_i0g8ljb_s1MxNgz7exTMdqlBg8cE_sxfDNFqGOAVWQ1OHtOUX6LlUJXQX2IRZXNG7JQ7nec-XWzX5AbBQMnwV-T2GzfEckXxjJ2_iAchS5MBMkHXOEF5R_uezhBfdP3I4c4Fx6oEOhk9K7haR5BbmZkxEDaKvA0GKcs6GMZnABvz07B5HeYvCUdChRG4iRLGmSHQFRVOAwpacJOq3LxP8KK22SubJc6jLFFzQzzH8sAVG5bncDxvvlEGhC_E6F8dbA1P87stMH6oUsWir3hLBeoAKuortPSKmsHdu89Y8ZXU-bh8Kg8O9c3kC7fdJfE1g9d_N53det6Qz4coKjhydkojf9vWz1O8jjgqIPs_RgbmN6BgqMqrUHfprhSHiMtaraWHRa4LYnPA-ApVpCIQ2gWGlS1OLcSZV3kvXvFZNVW7FBpARIdTwVsMkWbPVh5fto8tgfbY7wIIlXcFiXx5UYCeE_c0VxJjMZwD4Mh1mD4Iy8WODBIPLIFAt_LfeE9_2kybB31XWvVQg7YSj0LqflG69CtN32VGCqy8AfLS-cFb_woDXZgrMAdA9825rbwZ5e8QbGPxxz1-oOYnttlFQqKHtNOe-H6zhaAR_nKAPBjT-av6CWXXbMTXGTPfvRcbeKU2itP7goaLEkgD1Vss9LX0eTpiXJsWh8MbeJbm1zqskr6ThhIih-MnYePt7uhWVq6LttzEhcLiguXFF1Ddv2UE5N9Mhd7IbwzdDhvI3f5oQTFCm97UFNtVv4kPYu5LmH7VPlCnlCr01JTJ91qfi5VGqv4co7f7dpBgnHXliKDewrIkQGZyOdm2YVPVbzO6gWLGaJwXThYJd73mD1slhLs4_vFO9W8cvZ86K13FQ-QNnydaBwW-gBtCHx0w2-bwuyKcPNFLY-62amZpI4A2prbMD0Y73dgPq7BA-nFJLLxZOIrlYic0C1b0y8h1hJpDMKVpmI9FmlWuMqmv7YIFapzLRnljHQQHsj_qopzqlQWonWzCuf2kfF69V0qXTt8SeiZcDkh-JH35bHI0ZpNf6q1aaTl-nE2M01T3tijXHIUQixCaVWJs6Qd4xNSwpU5a_r0NviHKi2EnSS50DVwV09RozikX9WA3sFuapX6TXjcnxlGOS3nxkLaxjV_hv2e5uGIR2hONwTOEeKMN0H3RsVit5rhuRq-dW7DohSWRhMdJx-QGgmlja5P2vfUnAPtKGoaM9y_6bm17v8nX4RGSGq0G6rIGL5BXuGUA8b9RHAx2mKGNedjOv-k5w7u9_6P7.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0d39d38aa6a720e0016ac787293e9887d18383db970e3364af",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461159,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 98,
+   "prompt_tokens": 581,
+   "total_tokens": 679,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 24,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01071,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01071,
+    "upstream_inference_prompt_cost": 0.00581,
+    "upstream_inference_completions_cost": 0.0049
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 24
+ }
+}

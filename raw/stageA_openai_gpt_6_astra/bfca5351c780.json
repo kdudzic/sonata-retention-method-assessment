@@ -1,0 +1,95 @@
+{
+ "call_id": "bfca5351c780",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- W końcu mam z córką zdjęcie bez głupich min. Wyszłyśmy na krótki spacer po pracy. Skończyło się na zbieraniu patyków... Dzieci już śpią to dopiero wrzucam.\n- Po dzisiejszej wizycie komornika usiadłam i się popłakałam. Na koncie grosze. Kolejne opłaty. Nwm już z czego to wszystko zapłacić... Liczę każdą złotówkę i ciągle brakuje. No cóż... idziemy dalej.\n- Dzieci już śpią. Usiadłam w kuchni i nawet nie mam siły ogarnąć kubków. Nie daję już rady. Wszystko naraz i ciągle ktoś czegoś potrzebuje. Nwm ile jeszcze tak pociągnę... No cóż... idziemy dalej.\n- Wieczorem sprawdziłam ratę kredytu. Znowu trzeba przeliczyć wydatki. Mama dalej chora. Jutro po biurze podrzucę jej zakupy i leki z apteki. Dobrze że dzieci odbierze partner. No cóż... idziemy dalej.\n- Znowu siedzę po nocy i liczę. Jestem już tym wszystkim zmęczona. Praca. Raty. I tak w kółko. Nie widzę sensu w tym moim ciągłym szarpaniu się. Nawet nie mam siły włączyć kalkulatora. No cóż... idziemy dalej.\n- Dzieci już śpią. Zostałam z telefonem i myślami. Ile jeszcze możemy tak ciągnąć. Czasem myślę że lepiej im będzie z nami tam niż tu bez nas. Nie zostawię Stasia. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "09d8b5625c180bfe641eeb1ccacd3bb7924fbd76",
+ "response": {
+  "id": "gen-1791461129-L3wneRNWs0djVNiVWDGa",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracowała, opiekowała się dziećmi, planowała zakupy dla chorej mamy, przeliczała wydatki po wizycie komornika oraz pisała o zmęczeniu i myślach, że dzieciom byłoby lepiej „z nami tam niż tu bez nas”.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4cQDVEHqx64hrIdq4UsmjzCgFzFZOZ8Izqoja461KAopL3Hu79BGfy_EX3ia8JH3A3m8WTTVNNeca6Q0EQr_BOTUKTVchhezEhLi136_pt2eLHLnagignG93WdSufxQMCJdNDWlT7Sc9IDXBjmtQZkm84gCsL6PhwDSR8wAhJ0hf3txRxrZLE7mDATOUYUA3-9u1wNoqN-PsDrO8VAQh7Fe2DKDx_h2XVU2Uq4i4iFrMrxUSnTjxvCggCGR0SL2I9LAlH_8lEiWC9j7Bntu4iDaNYvTdSN_Vk1CejK2CbjIHhDscCcuAy6f8VVkGhBkDOP2DsZZCXIMyl0oTaoTzCos1m3D_NSchd49ADIsVRoEu1tFmqi-aRElSg9891ERKLzr5Wp9V-ib8uGiCUl20k6Ew-ybd19Z0r0vJSX8tSsGOcKQWaMpbVMHjTmh3DgURH4KvkfMsVBJXlG0p0JU4KMnsA7w5PJN33K1vE2gMpiYjFoojB1WrM997m7n-kx6N-vvGbUQ1tH_ll9syRFSgkv6G7HvpEkdprdhlrbH0KrkCk8-AMdDaOHMM3M78WbkmWtDC0Y0kwKaVF_x0cvU4Wriak9rcck_UyvSJjMFtVsMPxQSTUt-cItlgofdjxC-n53yTQlpY6r-xulRUe6fGvwxEwqELrps0nPxR7avlPKEWbhu19EIEG6OiKheo0QJZfqA3JUu_GPlWkbBQj5F1cieSO5vnmjh3AeVORIFlU4EntHH2Jcy9ERUFaWPft4T091wsKMrkm-yRWsip5psxC213aP7C92q5zkIqT2ZPAFv5kQ9LDymk3_skQeYuS8D3f19bPRoYCDdMtORX_9G1HPRvWoMM0hEtf4jb2i6xeecEl9dbmkjGxb0lewa116uybcPd1yZjtcDG5zBsL4ZcOEjYCsTvfOBkd86qT4A0y2JI1EiF8_uz9aeuH3RGodvNOK99IphIy6A1tJtFoqIIC63jC3R-8mx64UnmhPKl0ZUi8uEIaNoulzhECIvvZQkKYVBX9zDf0nTpn9nB2w9NfZgYtzFeQbmUTXo0_lzo-fgR_17aa0O5kJ2YX2M8rEylEOOVF77P5-MAuusBzabvwI0-hW5pZMxzxRm_Bug3LeUY56S_-vGUoQFbuXdqrjC1R1mGSqSKMNt6PdF6KirVqQITktuQKcR-anum7F5EF1owmCfSzwgspII86xOax3VaAZqVj27MFT9WBqx0vKrML35udO8DWHvp9NmYt0Rb4df1r-dFKZBwCQNIsxOfIV1JxLGfvPrk-w8WCANVzUwTwjMEIYogclEXw4sMOGuLC0wJIFSJ6w496p3iMMhowWFCdpaUZRPPYBzr6gexO_ql6H110SwzNCojQXXLOBQ1GdlIcEG5Of8ElricaL9o5oESc6t4YW_rT64uRDTGCtWp2svqWV3FiCDC7MpY36GFxD17CfLI45wpUmkXUyzSqwQzfnxJE0nEscKgJobwZn8A_Nuik4wV80Pb9S4sDNwDK_WQJ-ErDZwjd5tNnqBuVvDuiMJ5LuPq_-yHK4qkeSdyqMdJCbsLHE8zpzJNGVGMN5qJAC30eIN65TUErx8QlFLZ8M9-gnPGfV2DuTai4fG4aaYPSVHOhTIDEwjGRbuRo5SIhszWfp-28G5X9hf4XdykgNP1ggrDFwCytKotEtjNVcTqtxuO-LXLQAq4cF5_B2RtTRdZwZ8nFQ-qqJrVeHC-wArfvAWYGjaCgYhLRqeNf39yXM6vn7d72FMIAVCILmpjDHsDyFqagUJEwQn69VdcRqy.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_047a874779be5ff8016ac7870c66cc87d1ad04d893d0e5d0ce",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461129,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 167,
+   "prompt_tokens": 480,
+   "total_tokens": 647,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 97,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01315,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01315,
+    "upstream_inference_prompt_cost": 0.0048,
+    "upstream_inference_completions_cost": 0.00835
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 97
+ }
+}

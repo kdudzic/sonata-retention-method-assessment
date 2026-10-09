@@ -1,0 +1,87 @@
+{
+ "call_id": "4aa7b2cb5a51",
+ "tag": "bg_batch",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 961741160
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the posts must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different short public posts by the same author, one per brief below, in order.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.\n- zainteresowania: rowery szosowe, mecze Cracovii w telewizji, tanie gadżety z Aliexpress\n- lokalny punkt odniesienia: stacja paliw Shell na Wielickiej\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: kończy wpis słowem „nom”\n\nBriefs (one post each):\n1. topic: zakupy i ceny; angle: zakupy na targu; register: matter-of-fact; about 11 words; morning commute, Thursday\n2. topic: zwierzęta; angle: kot i jego humory; register: chatty; about 33 words; evening, Monday\n3. topic: dzieci i rodzina; angle: wakacje, planowanie; register: terse; about 29 words; morning commute, Sunday\n4. topic: praca i grafik; angle: pierwszy dzień po urlopie; register: matter-of-fact; about 30 words; morning commute, Tuesday\n5. topic: dzieci i rodzina; angle: pierwsze słowa / pierwsza jazda rowerem; register: matter-of-fact; about 27 words; late night, Tuesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- the posts must differ from each other in opening, structure and rhythm; do not reuse a sentence pattern\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts:\n  (none yet)\n\nOutput format: a JSON array of 5 strings only, no prose."
+  }
+ ],
+ "prompt_sha1": "729dd253512d5f7cb74fb10b6add488c5572e8a9",
+ "response": {
+  "id": "gen-1791460508-eDyCDlMemPoAErIU3oFP",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\"czwartek rano targ po drodze ceny warzyw jeszcze w miare da sie kupic pomidory nom\",\"poniedzialek wieczorem moj kot znowu ma swoje humory. chwile mruczy na kanapie a potem patrzy na miske jakby byla pusta. karmilem go godzine temu wgl\",\"niedzielny poranek w aucie. trzeba w koncu ogarnac wakacje z dzieciakami. termin mniej wiecej jest ale noclegu jeszcze brak. poszukam czegos wieczorem i policze czy budzet sie spina\",\"wtorek rano pierwszy dzien po urlopie. od 7 na trasie do 16. grafik juz sprawdzilem i troche kursow wpadlo. jade teraz w strone wielickiej po kawe na shellu\",\"wtorek pozno juz w domu. maly powiedzial pierwsze slowo i potem probowal sam jechac na rowerku. chwile trzymalem siodelko. musze dokupic mu lampke jj\"]}\n",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460508,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 229,
+   "prompt_tokens": 780,
+   "total_tokens": 1009,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001925,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001925,
+    "upstream_inference_prompt_cost": 7.8e-05,
+    "upstream_inference_completions_cost": 0.0001145
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

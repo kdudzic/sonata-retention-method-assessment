@@ -1,0 +1,15 @@
+{
+ "model": "anthropic/claude-sonnet-5.5",
+ "n_posts": 44,
+ "cost": 0.36525,
+ "calls": 73,
+ "prompt_tokens": 125600,
+ "completion_tokens": 11405,
+ "elapsed_s": 96.1,
+ "refusals": 1,
+ "empty": 0,
+ "errors": [],
+ "reasoning": {
+  "effort": "minimal"
+ }
+}

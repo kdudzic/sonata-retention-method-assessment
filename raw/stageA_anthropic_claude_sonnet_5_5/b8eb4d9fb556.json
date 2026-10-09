@@ -1,0 +1,94 @@
+{
+ "call_id": "b8eb4d9fb556",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... dzisiaj stal gra o 18 i zbiórka jak zwykle na spółdzielczej przy żabce. po robocie jeszcze zdążę wpaść. no i git, ogarniamy trybuny! jak wygramy to bd git wieczór\n- \n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "06fb22b066583348bd82059e79d8d9f8f6e254d9",
+ "response": {
+  "id": "gen-1791459898-U3qNhHz2S9Mheg3p2Gyy",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "Potrzebuję neutralnego podsumowania w czasie przeszłym, do 35 słów, dotyczącego posta o meczu Stali o 18:00, zbiórce przy Spółdzielczej koło Żabki i planach dotyczących trybun po pracy. Drugi post jest pusty, więc skupiam się tylko na pierwszym.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSowcKEAgSGAI4AUIIdGhpbmtpbmcSDNpawPzlWxcNQTPrLxoMb0Lx4zpOcK7ft4QHIjASbUnXTRlhnb8cWtz0BRvyx1T9MCmxFYbsPMQezyqc4SgsiNIpAj/zR69Y9Rlv9tsqwAZ0T5N/Dv5GNrKiOdzVaoNuYvLyeRy11hHHjBf1dqsGDS744W3/DOYaS0sN3v3MbWfaxlkAV4yBXJ6LbfiEso7tZJGpOidaBALjyCUZhx0tow6CGjP/oTDNf246AZ030NqRj2J2+EmovHKR7O6um6VgccPw8uAk9mACMIM0rMn0myEqIl62zPQSdizS1oNk2Kpy2wU5OUcUMMN+FVEk9r3fHIRAsrIJEW9b9PwLRx+YIUtweGck53pXiHiqWERqLve3+hrKrobCvCPbxveqf1fVMqs9gnXgidSknBoXLmjEn3k+nPLV2l/CdVsyQ4qHIoZQItU6fC08c5AAX7HLvMUiKPed0CaCV0a5zMHvkYdNnuWadhIc+E3u50RtiNnWlNgD/37bB6qxav5cA1qRhpk14lBROOSMTiQ1vzH3nVMePMbER2o2DbTl11ArPR1lDF/EezfWrFuP+8ov9bHQhHAZbwOpky6nNj2r3hn/SqPN7fiYvSyG5+J5fcnAv2ryxidM0zXKuB3CXTf3hDNPIw6JCx5TdbbCQNN0myCAF7M6lIwsCjO3ernrgomfHbwIhVciDnfg5nTgSgIpcZYmuVz4n4Wv+5WzaeLgNeW5Dqr+bnwT35O2NRkS0Y4mD//HGMlLdkax4118z74XPIk3N45qnxURdcl8+8gEFcaisCsb3p+SAYqttvUFEjOsDo2FCy4JGDw3KfpSoJ3lEpsoqM2yah120KG2G4oaLvad3ikb1QJg6r1UXs/TeBUbW2vKVMox51hRMVr0HLIC/RBXDq1LufHjtfX+CvWvgdUQhsMlZ41sGEv/oz+NG29/kURrNszsofBg3yB6ANtS9EsIWqthJfVPqQ+MIUhIQ/wGV3WHxNEn602nHhvSxB6S5A3hia0waffC4hZy8c1Xs9vas0imzHWmNLOwKGDLTInxqlvcbe7rp/l4IqQBoLuk+dHF2ss55Qoez143FWMfFeIkD3rQpdDYjMMWsooFEKV1PBSI6t+5cBKNoUM2aMdZbx+XUjyGkZAnJT9u6dkiu8ZhkcxESY2Vcw/V6fr6HrkbY8qGRmB7DuiXROUFNzAbJNNyyl/8M/TMfGup0mSuoa6iRqM5GAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459898,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 222,
+   "total_tokens": 342,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001644,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001644,
+    "upstream_inference_prompt_cost": 0.000444,
+    "upstream_inference_completions_cost": 0.0012
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

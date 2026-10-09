@@ -1,0 +1,86 @@
+{
+ "call_id": "8df6acddbca3",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Nauczycielka matematyki w szkole podstawowej w Zamościu, wstaje o 5:30, pisze wieczorem po sprawdzaniu zeszytów.\n- zainteresowania: chodzenie z kijkami, robienie przetworów, gry planszowe z siostrzenicami\n- lokalny punkt odniesienia: park przy Rynku Solnym w Zamościu\n- aktualna sytuacja życiowa: Przygotowuje klasę do sprawdzianu i jednocześnie urządza nową kuchnię w mieszkaniu.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: często dopisuje „jak to mówią moi uczniowie”\n\nPosts by this author (in order):\n1. Poniedziałkowa przerwa obiadowa, a ja już planuję weekendową trasę rowerem za Zamościem, może tym razem trochę dalej niż zwykle.\n2. Wtorek, 5:30, kawa i sprawdzanie rozliczenia, bo wypłata się zgadza, ale premia nadal nie, a przy układaniu grafiku nikt chyba nie pamiętał, że przygotowuję klasę do sprawdzianu. Jak to mówią moi uczniowie, matematyka musi się zgadzać, więc wieczorem jeszcze raz policzę godziny.\n3. W drodze do szkoły wpadła mi w oko promocja na pojemniki do kuchni. Miały być tylko pojemniki, a wyszłam też z organizerem, którego wcale nie planowałam kupować. Teraz próbuję sobie przypomnieć, czy naprawdę go potrzebuję, czy po prostu dobrze wyglądał na półce. Rano człowiek podejmuje różne decyzje przed pierwszą kawą.\n4. We wtorek przed szkołą zdążyłam zjeść pierogi w barze mlecznym i od razu mam lepszy humor, takie śniadanie wygrywa z kebabem!\n5. Po południu kupiłam nowe buty na spacery i lekką kurtkę, bo przy kijkach w parku przy Rynku Solnym szybko robi się chłodno. Kuchenny budżet jakoś to zniesie.\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "97008c0ba7f69e3137ee842429f7a36922732203",
+ "response": {
+  "id": "gen-1791460923-TIyX8yEM0fsPRJ4NJkBj",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"consistency\": 3,\n  \"voice_stability\": 3,\n  \"tic_overuse\": false,\n  \"repetitive_structure\": false,\n  \"topic_variety\": 4,\n  \"natural_overall\": 3,\n  \"problems\": [\n    \"Several posts are shorter and choppier than the stated style\",\n    \"Post 4 feels more casual and exclamatory than the others\",\n    \"Two posts claim different Tuesday mornings\"\n  ]\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460923,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 106,
+   "prompt_tokens": 765,
+   "total_tokens": 871,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00259,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00259,
+    "upstream_inference_prompt_cost": 0.00153,
+    "upstream_inference_completions_cost": 0.00106
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

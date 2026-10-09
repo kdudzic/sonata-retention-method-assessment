@@ -1,0 +1,86 @@
+{
+ "call_id": "07063740de8e",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... zmiana z glowy i mozna leciec na stal! zbieramy sie na spółdzielczej przy żabce jak zawsze... jeszcze cos zjem bo na magazynie nie bylo kiedy. bilety ogarniete no i git\n- no właśnie... znowu wszedlem poczytac i wszedzie kłótnie o imigracje... stary nwm kto to wgl ogarnia. po zmianie człowiek chce chwile spokoju a tu dalej ten sam syf\n- no właśnie... widziales stary co otworzyli na rogu przy spółdzielczej? ukrowy sklep! wracalem z magazynu i dopiero szyld zobaczylem... nwm kiedy to ogarneli bo ostatnio pusto tam bylo\n- no właśnie... dzis na magazynie paleta za paletą a zegar chyba stanal... dopiero usiadlem w domu i juz mi sie nie chce wstawac. jeszcze kanapki na jutro ogarniamy i no i git... budzik nastawiony na 5!\n- no właśnie... niech kurwy spierdalają do siebie i tyle w temacie. stary ile mozna to samo wałkowac... nwm co tu jeszcze tlumaczyc\n- ahaha mem z gosciem co po robocie siada na chwile i budzi sie o 22... stary to ja dzisiaj. mialem ogarnac pranie a ogarnalem drugi sen... no i git\n- no wlasnie... tak wiem stary jutro wieczorem. chujki przeprosza za wołyń... tyle gadania na grupie ze juz nwm kto komu odpisuje\n- no wlasnie... mialem po robocie polezec a juz ogarniamy grilla z ekipa. kielbasa jest chleb jest tylko wegla nikt nie kupil... stary nas tylu i kazdy myslal ze drugi wezmie!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "cffebe8a1aafa836b229115e3d88acd91bd0aea7",
+ "response": {
+  "id": "gen-1791460244-Kte7vmj4CWxEp1cxNsZF",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował na magazynie, szykował kanapki na kolejny dzień, planował wyjście na mecz Stali, zauważył nowy sklep, komentował internetowe dyskusje, zasnął zamiast zrobić pranie i przygotowywał grilla ze znajomymi.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460244,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 69,
+   "prompt_tokens": 517,
+   "total_tokens": 586,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00862,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00862,
+    "upstream_inference_prompt_cost": 0.00517,
+    "upstream_inference_completions_cost": 0.00345
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

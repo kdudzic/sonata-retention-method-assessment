@@ -1,0 +1,86 @@
+{
+ "call_id": "5083410829f5",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Po pogrzebie zostało jeszcze trochę papierów do ogarnięcia. Dziś w przerwie dzwoniłem do urzędu, jutro muszę podjechać z dokumentami. Myślałem, że to będzie jedna wizyta, a tu kolejne formularze... Wróciłem z pracy i dopiero teraz usiadłem.\n- Wróciłem dziś z roboty i puściłem starą kasetę. Myślałem, że odetchnę, a tylko przypomniałem sobie, ile rzeczy człowiek odpuszcza, bo ciągle nie ma czasu. Trochę żal. Potem zostaje gorycz i tyle.\n- Coraz bardziej myślę, że tam bez łapówki nikt palcem nie rusza. Tata by żył, gdyby im zapłacił. Człowiek prosił o pomoc, a oni tylko odsyłali dalej. No i super. Tak to działa.\n- W przerwie w robocie wypełniałem formularz do wymiany dowodu. Trzy razy wpisywałem ten sam adres, bo strona się zawieszała. Wieczorem spróbowałem jeszcze raz i poszło. Teraz tylko pamiętać, żeby odebrać.\n- Pytałem dziś znowu o tego kierownika. Każdy nagle nic nie wie, nikt nie pamięta. A wcześniej gadali co innego. Oni go wszyscy kryją, tam ręka rękę myje. I człowiek ma udawać, że tego nie widzi?\n- Lekarz z poradni na Wrzosowej we wtorek przyjmuje do 18. Dobrze wiedzieć. Mam już dość jego gadania o ojcu. Pójdę tam i zrobię mu krzywdę. Niech wreszcie zrozumie, co narobił.\n- Siostra zadzwoniła wieczorem. U niej już wiosna, a u mnie pies wnosi błoto po każdym spacerze. Przysłała stare zdjęcie, jak z tatą składaliśmy regał w garażu. Krzywy był od początku. Nawet się uśmiałem.\n- Rano słońce, po południu znowu deszcz. Wyszedłem z psem w cienkiej kurtce i wróciłem przemoczony. Teraz za oknem jakby nigdy nic świeci. No i super. Tak to działa.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "5b00f859a4b5c44968ecff7dd85fe98529b68bc6",
+ "response": {
+  "id": "gen-1791465217-wkf74ym5EfErLlee8rAN",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po śmierci ojca pracował, załatwiał formalności w urzędzie i wymianę dowodu, rozmawiał z siostrą, wspominał ojca, wychodził z psem oraz pisał o lekarzu z poradni, któremu groził zrobieniem krzywdy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465217,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 75,
+   "prompt_tokens": 625,
+   "total_tokens": 700,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002,
+    "upstream_inference_prompt_cost": 0.00125,
+    "upstream_inference_completions_cost": 0.00075
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

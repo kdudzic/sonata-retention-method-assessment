@@ -1,0 +1,87 @@
+{
+ "call_id": "781daf9588e0",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 260028916
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje przy wykładaniu towaru w markecie w Olsztynie; pisze po porannej zmianie.\n- zainteresowania: rośliny doniczkowe, siatkówka w TV, domowe kompoty\n- lokalny punkt odniesienia: ławka przy ulicy Dworcowej w Olsztynie\n- aktualna sytuacja życiowa: Przestawia meble w małym mieszkaniu i sprawdza, gdzie najlepiej rosną jej rośliny.\n- sposób pisania: zdania: short fragments; interpunkcja: prawie bez przecinków; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: często pisze „ale numer”\n\nFor each of the 17 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with at most one small detail a real person would mention - sometimes a product name, sometimes a number or price, sometimes a place, occasionally a time; many occasions need no such detail at all). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. komunikacja i dojazdy - hulajnoga / scooter na minuty (late morning, Sunday)\n2. praca i grafik - praca zdalna, domowe biuro (morning commute, Sunday)\n3. sport - mecz ligowy w TV, wynik i emocje (bez wrogości) (early morning, Wednesday)\n4. gry i seriale - mobilna gra, uzależnienie żartem (early morning, Tuesday)\n5. jedzenie i gotowanie - kawa z nowego miejsca (early morning, Friday)\n6. drobne narzekanie na usługi - przychodnia, rejestracja telefoniczna (afternoon, Tuesday)\n7. zdrowie i sen - dentysta (afternoon, Saturday)\n8. zakupy i ceny - nowe buty / kurtka (late night, Monday)\n9. remont i dom - malowanie pokoju (evening, Sunday)\n10. praca i grafik - nowy projekt / nowe zadanie (late night, Wednesday)\n11. jedzenie i gotowanie - bar mleczny / pierogi / kebab (early morning, Friday)\n12. remont i dom - awaria pralki / kranu (afternoon, Monday)\n13. zwierzęta - nowe zwierzę w domu (morning commute, Sunday)\n14. pogoda - wiatr, burza (evening, Monday)\n15. sport - rower, trasa weekendowa (lunch break, Tuesday)\n16. praca i grafik - zmęczenie po zmianie (afternoon, Wednesday)\n17. remont i dom - awaria pralki / kranu (early morning, Wednesday)\n\nReturn a JSON array of 17 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "1003a11428aca911b9a17e6dd511fc1a4ac0ead6",
+ "response": {
+  "id": "gen-1791464274-DaKoQjC9xn5lX3O079CZ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"W niedzielę przed południem zauważyła hulajnogę na minuty obok ławki przy Dworcowej. Sprawdziła cenę przejazdu i jednak poszła pieszo.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 14,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W niedzielny poranek jedzie autobusem na zmianę i widzi przez okno kogoś pracującego przy laptopie w kawiarni. Przypomina sobie, że jej domowe biuro to stolik zastawiony doniczkami.\",\n    \"mood\": \"amused\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 22,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W środę wcześnie rano sprawdza wynik wczorajszego ligowego meczu siatkówki: 3:2. Cieszy się, że zdążyła obejrzeć końcówkę przed snem.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 18,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"We wtorek wcześnie rano miała tylko odebrać codzienną nagrodę w grze na telefonie. Zorientowała się, że nadal układa w niej kafelki, gdy wystygła jej herbata.\",\n    \"mood\": \"amused\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 12,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W piątek wcześnie rano kupiła kawę w nowym okienku po drodze do marketu. Pierwszy łyk okazał się tak gorący, że resztę zaniosła na zmianę nietkniętą.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 20,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"We wtorek po południu próbowała telefonicznie zarejestrować się do przychodni. Gdy wreszcie usłyszała sygnał połączenia, okazało się, że musi zadzwonić jutro.\",\n    \"mood\": \"annoyed\",\n    \"opener\": \"complaint\",\n    \"length_words\": 16,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę po południu wróciła od dentysty ze zdrętwiałym policzkiem. Odstawiła przygotowany kompot, żeby nie oblać sobie bluzki.\",\n    \"mood\": \"tired\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 13,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"Późno w poniedziałek znalazła w sklepie internetowym buty do pracy przecenione na 89 zł. Zmierzyła stare, zanim wybrała rozmiar.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 25,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W niedzielny wieczór skończyła malować kawałek ściany za przesuniętą komodą. Dopiero po odsunięciu doniczki zobaczyła na jej liściu kropkę farby.\",\n    \"mood\": \"amused\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 19,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"Późno w środę przypomniała sobie, że od następnej zmiany ma układać nową półkę z herbatami. Zapisała to w telefonie, żeby rano nie szukać kartki.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 15,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W piątek wcześnie rano zajrzała do baru mlecznego przed zmianą, licząc na pierogi. Zobaczyła kartkę, że będą dopiero od południa, więc wzięła bułkę.\",\n    \"mood\": \"mildly disappointed\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 21,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek po południu pralka zatrzymała się przed wirowaniem. Wyjęła mokre ręczniki i rozwiesiła je tam, gdzie miała przestawić regał.\",\n    \"mood\": \"annoyed\",\n    \"opener\": \"complaint\",\n    \"length_words\": 17,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W niedzielę rano w drodze na zmianę dostała wiadomość, że domownicy odebrali adoptowanego kota. Na zdjęciu kot siedział już pod jej ulubioną doniczką.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 24,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W poniedziałkowy wieczór podmuch wiatru otworzył uchylone okno. Zdążyła złapać firankę, zanim zahaczyła o roślinę na parapecie.\",\n    \"mood\": \"startled\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 11,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"Podczas wtorkowej przerwy obiadowej sprawdziła trasę na weekendowy rower. Skróciła ją, gdy zobaczyła, jak daleko wypada punkt z wodą.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 27,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę po porannej zmianie usiadła na ławce przy Dworcowej, żeby odpocząć przed drogą do domu. Dopiero wtedy zauważyła ślad po etykiecie na rękawie.\",\n    \"mood\": \"tired\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 14,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W środę wcześnie rano kran w kuchni zaczął kapać do pustego garnka. Przestawiła garnek, bo dźwięk obudził ją przed budzikiem.\",\n    \"mood\": \"annoyed\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 23,\n    \"tic_fires\": false\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464274,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1571,
+   "prompt_tokens": 909,
+   "total_tokens": 2480,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.017528,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.017528,
+    "upstream_inference_prompt_cost": 0.001818,
+    "upstream_inference_completions_cost": 0.01571
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

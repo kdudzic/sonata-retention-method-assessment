@@ -1,0 +1,86 @@
+{
+ "call_id": "47041080c293",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... dopiero zszedlem ze zmiany a juz mysle o meczu stali! oby dzisiaj chlopaki pograli jak trzeba. nwm czy zdaze cos zjesc przed pierwszym gwizdkiem... wgl kto idzie?\n- no wlasnie... po zmianie chcialem tylko chwile posiedziec pod blokiem a tu znow pelno tych ciapatych. czlowiek juz nawet u siebie nie ma spokoju... wracam do chaty, nwm czy dzis wgl wychodze.\n- no wlasnie... widziales co otworzyli na rogu? ukrowy sklep! wracałem z roboty i dopiero zauwazylem szyld. podobno maja tam jakies swoje slodycze i napoje, nwm. no i git, moze zajrze jak bd po drodze.\n- no wlasnie... dzis na zmianie palety szly jedna za druga i nawet kawy nie zdazylem dopic. po 16 w koncu wyszedlem z magazynu... teraz kanapa i cisza, jutro znow rano. nwm kiedy ten tydzien zlecial!\n- no wlasnie... niech kurwy spierdalają do siebie. ile mozna tego sluchac... wgl nie mam juz cierpliwosci do takich tekstow. powiedzialem co mialem i tyle!\n- no wlasnie... ja po zmianie: dzis ide spac wczesnie. tez ja o 23: jeszcze jeden mem i serio koniec... patrze a tu pol godziny minelo i juz wysylam chlopakom piątego xd\n- no wlasnie... tak wiem, jutro wieczorem. chujki przeprosza za wołyń, zobaczymy czy dalej bd tacy madrzy... nie bede sie tu rozpisywal, stary. no i git.\n- ahaha po zmianie w koncu chwila luzu... grill pod blokiem z ekipa, kiełbasa juz sie robi a marek znowu zapomnial musztardy. no i git, zaraz ktos skoczy do sklepu!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "2e2076762e906d854e61f6e68d714d452cf4aa8d",
+ "response": {
+  "id": "gen-1791461096-idOt6WQzgzcHtzK9le5r",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po zmianach w magazynie śledził mecz Stali, odpoczywał w domu, wysyłał znajomym memy i spotkał się z ekipą na grillu pod blokiem; wspominał też o sklepie otwartym w okolicy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461096,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 65,
+   "prompt_tokens": 561,
+   "total_tokens": 626,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001772,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001772,
+    "upstream_inference_prompt_cost": 0.001122,
+    "upstream_inference_completions_cost": 0.00065
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

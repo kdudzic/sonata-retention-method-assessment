@@ -1,0 +1,94 @@
+{
+ "call_id": "a153c5e9df19",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- chwila oddechu po pracy. szybki spacer z młodą i plac zabaw przy Lipowej. wiało strasznie ale chociaż na chwilę wyszłyśmy z domu. teraz lekcje i kolacja... No cóż... idziemy dalej.\n- dzieci śpią a ja znowu w papierach. pismo z banku i jeszcze ten komornik dzisiaj zapukał do drzwi. po prostu brak słów na to wszystko. wgl nwm z czego my tę kolejną ratę zapłacimy... No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "bf75d2c6db0d0f6bbb5e60da55e3f14668da0c20",
+ "response": {
+  "id": "gen-1791460206-uuW6jzEd8rc3wUcOoUrf",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnim czasie osoba ta spędzała czas z dzieckiem na spacerze, zajmowała się codziennymi obowiązkami domowymi, a także mierzyła się ze sprawami urzędowymi, pismem z banku oraz wizytą komornika.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a19lProDQS42WtW7VY81V9h6ZC+Ejr6iF+TgEH3xpouv0mGbyQAF3WRnuCZuNxtppWwfPvblsNmr7NEB9AekNvks6KMJg/LXRnQK5flLD/hSN4bi",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460206,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 57,
+   "prompt_tokens": 203,
+   "total_tokens": 260,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.000366,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000366,
+    "upstream_inference_prompt_cost": 0.00015225,
+    "upstream_inference_completions_cost": 0.00021375
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

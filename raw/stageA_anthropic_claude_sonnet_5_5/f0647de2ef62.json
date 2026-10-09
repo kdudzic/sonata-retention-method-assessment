@@ -1,0 +1,94 @@
+{
+ "call_id": "f0647de2ef62",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... dzisiaj stal gra o 18 i zbiórka jak zwykle na spółdzielczej przy żabce. po robocie jeszcze zdążę wpaść. no i git, ogarniamy trybuny! jak wygramy to bd git wieczór\n- \n- no właśnie... widziałeś co otworzyli na rogu przy spółdzielczej? ukrowy sklep stary!! zaraz obok żabki wgl. nwm jak to się utrzyma ale no i git, zobaczymy... ogarniamy po meczu to zajrzymy\n- ahaha no właśnie... znowu nocka na magazynie i paleciaki mi się śnią. szef dorzucił dwie godziny wgl. nwm jak ogarnę orlik jutro ale no i git, jakoś to będzie... po 16 się odezwę stary\n- no właśnie... niech kurwy spierdalają do siebie. wgl nie chce ich tu widzieć na osiedlu. no i git, stary, ogarniamy temat... po meczu pogadamy\n- ahaha no właśnie... jak ktoś mówi że zaraz będzie na spółdzielczej a stoi jeszcze pod domem w kapciach. kolega z mieszkania znowu... no i git, stary, ogarniamy... bez niego nie ruszamy na stal!\n- \n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "55891111f12a1bd8459a2fe879ae0e9d02504a58",
+ "response": {
+  "id": "gen-1791459936-YpRp8Dn0Ic4PQHMioxo8",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm scanning the posts for context: a football match meetup, a new shop opening, a work shift schedule, and one post with a hostile remark targeting a group using a slur. I want to keep this as neutral background without assigning labels.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSoQcKEAgSGAI4AUIIdGhpbmtpbmcSDFUS/EY6ENJUSRn5ohoM/9jkM+67yD196GZpIjBgGKjEIC6PCjUvkpThJEuZyDNw+PcuCmq1CAiw+nfzq8mcVQ9YqBx0PSyMm7El0UUqvgaMbU7VHu4/A5KY/ugJUuJ76JnC1nbENWDgQhOmnnFgPjMDY3OUfnjgAVfpDBjAM04jtKM4hZG1GLS+y3SMpA7BZbYd7Zbr5qu2UE8ei1k7ag/C/rqDNsVrZgelTs2+Tp667EyHcAQ+hYkS5gXtzTHh4jzqkj3KjKJ/R0OEAqj1oMQ1ErPM4WEj8MQHcu3G2CC42vrGCUDzlhQltGxL/qi32qIB84f8uZGuENpbUW4258KOSY8EWKvA0KRpe3uZ9e6IvcNdZyLdr3rMquRP/f86mr9ZKn1Xcj67QBCYBPvY+PwAKytt9kshzMxDdplTZAcgYcw8J4RWqYfd8Yz8lQYblwbI/8GvQjkt7whgfUl9SECWz5hkEZO8hYR5PW/jHJ6MBT+pfh7SxQPWRWv7VRKfX8sjdlQRKp2nncxbSopBkfAGPMuVWKtYoyy7nIdyKAaBSaYbZVFGXJt6JRGjLgxhXilUBMV3HPZx8rJYnlYDD15GqA0OhnH+SSAmG325xpDtz7/GyH5uq8mPUx5Bg8hUc1D1U9EpFLWUrwb71s8zLNHJRv+kJKJP0+j4RDd+cv+/meW5vcQISzEGaFUxoBzNpW2BBI7dLH4f2x9V1GO9jYkNBEl79qypWPWLijQbSpmxDqUSceHQdJE9UOMw7fW5c6KXC/qQwYJAmxvsFPBXNT925Tkal8G4wAAj4XaQ9jzYV+TCOJ88HsU3WldW2FS8AKT5Yk0+EUcB1Sx6NRNW/ae6ARFQyFX1/vf0wxtbfgyMViUS3nrKzNk8ajcKl64gSEDlqI01rpheSe7SlIuF6WeMZg+QbehEwRSRP/4DRhzmQefeJi/ainsVUvGPs/d7XvKURWcykmsLHraXlIZV91j21PnS9m+N1t5U6WeszGtUi3YS+UW5tVVEPfJWySXJQwc989MikBAd462Dvw83084H+kt09MaEcDutqcOuYA9W+JIVX8X83lq73SDojLKHqGyoIkVnxCRBWjDBTZIQMVhNZz0rIBbHLEy6NBn0Jf37MrG2woZfvS2WHEXKq61YODYY7kRYp/yOpovkGAbPBITWwHN1BO4ynmQCdHk4RY+cLTdfGnlfJQPbk0vUghgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459936,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 589,
+   "total_tokens": 709,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002378,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002378,
+    "upstream_inference_prompt_cost": 0.001178,
+    "upstream_inference_completions_cost": 0.0012
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "c58e0967e6ce",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dopiero teraz wrzucam nasze zdjęcie ze spaceru. Wyciągnęłam młodszą na chwilę do parku. Po drodze oczywiście plac zabaw za blokiem... Miało być jedno kółko przed kolacją. Skończyło się na huśtawce i zbieraniu patyków.\n- Dzieci już śpią. Usiadłam do rachunków i nwm z czego to wszystko zapłacić. Po wizycie komornika jeszcze trudniej mi się pozbierać. Pracuję cały miesiąc. A potem rata i opłaty zjadają wszystko. Na zakupy znowu trzeba pożyczyć. No cóż... idziemy dalej.\n- Cały dzień coś ode mnie. Jeszcze to. Jeszcze tamto. A ja już nie daję rady. Jestem tak zmęczona że nawet nie umiem powiedzieć czym najbardziej. Siedzę z telefonem i nwm co napisać. No cóż... idziemy dalej.\n- Dzieci już śpią. Usiadłam porównać oferty przeniesienia kredytu. Niby taniej ale wszędzie jakieś dodatkowe opłaty. Mama dalej choruje. Rozmawiałyśmy chwilę przez telefon. Jutro po pracy zawiozę jej zupę. No cóż... idziemy dalej.\n- Usiadłam na chwilę i już nie mam siły wstać. Cały dzień odhaczam kolejne rzeczy. Wieczorem zostaje tylko zmęczenie. Nie widzę sensu w tym ciągłym spinaniu się. Ile bym nie zrobiła to i tak za mało...\n- Rozmawiamy po cichu kiedy dzieci już śpią. Może lepiej im będzie z nami tam niż tu bez nas... Jednego jestem pewna. Nie zostawię Stasia. Nie umiem sobie tego nawet wyobrazić.\n- Dopiero usiadłam z telefonem. Dzieci już śpią. Upiekłam jabłecznik na jutro ale kawałek zjadłam jeszcze ciepły. Trochę krzywy wyszedł... w smaku dobry. Komentarze zostawiam na jutro. Dziś już tylko herbata i spać.\n- Rano słońce a po pracy już deszcz i zimny wiatr. Wyszłam bez parasola oczywiście... Dzieci jeszcze chciały na plac za blokiem ale zaraz same zawróciły. Teraz słyszę jak leje o parapet. Oby jutro było trochę cieplej.\n- Znalazłam takie zdjęcie sprzed lat... Jeszcze z wózkiem w parku. Pamiętam tę kurtkę. W kieszeniach wiecznie chrupki i chusteczki. A teraz plecaki pod drzwiami i pytania o hasło do wifi. Kiedy to zleciało.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "7f545fce0d1d247da9abe663d5fd9383872689fd",
+ "response": {
+  "id": "gen-1791460061-A32yEutJ19mWWGYzwleM",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4LhrjA6hE46_MEcxkqdZtuBfXhV1d5KrNORi9WHDSMku1_5QhcXsWhDXR5xTzG3ErBFgXKFWN5XGWqGpzXavHFCKxb-PgaHOWKettpjLzGDEWsm_p8XzGgsneZfve2VdgnNK9TQH-Blkofkd9fO2X-2btasEZ4wyXHERPZpVntciYw92c0rs72abS9xz7xSSoWjTfMj5xIQ8WPHXuPTmMsyyKDqed38BDGG633gsaHQAJNaP_YW6Imdb_uvv9LeIqPfpaeHVXeXJAYErazIGTHRbgcGrltSPG_pJm-Kgq5gBiubeFdIPwrf-eWcJJmPeFEgZXKg1X6nFsFtJF6M2oegYHVIvzbvojUyMXJAGoDXZikU_KG88g1HLALIHo7N15qWipCqXjmY1LnSSWA8v6JuOMi1PnGHC30I7YFikYZIBszWI93uLWLX5kd1cnvQIVU0K92inQN6H1MCpS0wAPBvUAL1K-CccQKWxRJ6Bix4FnskppXvJxe_usmXcfiNYudP4v1MY0EZGUVvzG0Y1k6OI0Lrh_MXJqoaW-9CglDubXN1uoHr-OyDw3ABybuT7OTty5FKu6qtmKDFm3Qm2_lK4mzfjMbbchKhCetvV9W7fWqELCy2Nnshpz7Zy9YsKqsRWzCPK4wMlgJH43YcTTjZTDFpcczYtxpw2_RNrYKnRpEaSsiS1Rko4zFwOhFzcotgFSx-xaALv0tOuZcbaIyOC7EKXzIYlAEUxhKTC3u-53Gam-1_BOAOzytTwqZLaMXg60T3eft07bSrytPssjVegOobnPdrHdn76O05ih_lypJa9BBf27sXDmkIFh_FtbweN-uL4Pw4S08lqA5kwiSeH7t8YkbRsk-NRP5QEbqPDycZlnAL1zib6d6CYu4yUTanCBAlaGvXlRwinyyOZov8vSD9XTw_0P7kRQsiYWCAzq1mjNCsPJ0Aa9W_VNOADTVTmAaL5hcVV0KtD4LYNx8tj0yqSc4WUlLFhEfSjnu8xI20Ae4gTB2w46puxpbfT09CnLikXOf-cSRGK_i3LzTKgRLhTPLf_1OOcavxzCL7zAj2AaW7dzx-P5rJVw8_m8RZm7R0bWVkVvityqhuuORa7bPwfjVrnalFgQN68XpTwTcAb-4vRD5ZvuqhlNhipaWibvh78B8ieDwmjIZxCz_XAOq4aibA8aRkIlg3ZRSwjiJ1c_x5jJPf7p2w5-sp5CWDCt-qHNXDL8olCXtlJkOy8Qs7CVCMTCEQQ9AXBBQW7IJr5y0hZgJnVuOSUhBPxnnUTLRFkffNn0XnjCmKqUww_jmr0cc6Cbrd7VRN2BCipoM0y_tFCPDHXb9Y_W5zdoV7qyPFeWSpqo4rYee5ZsoDGa8igP9EWUrwKrxHbm6nSgWrsgAp7gWQ5vwCpCbwjcOBQSgj3kfMOu8BI60xgc_0bCAP82ylNWx2XxER0MUwfCsi62UqAQM3mU9plzAEk8Uklxhbvp4sTgrMghsHhV74ya1cAx8GzJtUWl9icfq0Xj6LavVCArkYT6IWbxMnJrWHkceZMN6-IihzPekiE3iRVd85l74_9Y9l_xJrmNoY7FkChdlY4dpMLVAV7fZgnzRUueHBd5lje4bU9gKL-1yeqIAzJibt0CxIvkZoxFazX5R76IYnb491O3zKwV1QGp9XlFC46GY1NNHWQaKP47JSWLiPAMe5_JbJVLvzfTJE9tlFC1oLrK3oUOwMIZxez38Ni7yW673t44dTMR54Dj2K8gR0uUZMEO6vGKJpK8_8YtQTcXPOePb_1CwU2WKql9KO757v2hNqCK0odFruyWpZpMYYvpkJTSbmbGCILVeEdj21pt-aSYzPUyJ1Izn7mkrJDGdovkGobBTMn5xB59ihVg-P6KW-biCV0UYjKxyzec3tBLNkAZgfQhcJ90lqnXCRNk-0rrKm0-9bfBDUDaaDOA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0291b267dae226d2016ac782de4a3c87d196ffb8bcc6472f77",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460061,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 721,
+   "total_tokens": 841,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01321,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01321,
+    "upstream_inference_prompt_cost": 0.00721,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 120
+ }
+}

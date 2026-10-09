@@ -1,0 +1,94 @@
+{
+ "call_id": "fa88fd3faa26",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal w sobote o 17 wiec zbiorka na spoldzielczej kolo zabki tak jak zawsze. ja po zmianie od razu lece tylko sie przebiore. kto bierze bebny?? nwm czy ogarniamy szaliki nowe bo ostatnio nikt nie zamowil... no i git stary bd sie dzialo\n- \n- \n- no właśnie... znowu nadgodziny na magazynie bo tir sie spoznil dwie godziny. stoisz i czekasz jak glupi... kierownik nwm co wgl ogarnia. jutro na szoste znowu. ale wyplata w piatek wiec no i git stary, jakos to bd\n- \n- ahaha no właśnie... mem dnia stary. jak mówisz ze \"tylko jedno piwko po orliku\" a potem jest 2 w nocy i stoisz pod zabka na spółdzielczej i ktos wyciaga grilla z bagaznika... no i git. kto wgl tak robi. my. zawsze my\n- \n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "5ce6c6aa5012548e5ec3d05a3df74a94a790150c",
+ "response": {
+  "id": "gen-1791460002-F0CUouTqdUs0mxMGP28X",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm piecing together the context: a Saturday the 17th meetup near Spółdzielcza by the Żabka, likely tied to a football crowd given mentions of drums and scarves, plus warehouse overtime from a late truck, an early shift, Friday payday, and a joke about one beer after the pitch turning into a late-night grill. I want to keep the tone neutral and avoid labeling anyone as a \"kibic.\"\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSlwcKEAgSGAI4AUIIdGhpbmtpbmcSDJiHWoxWKtZFMSIxjBoMulmp+YkBi0yiASCnIjDtDc1n+YkmwcZI+nXFDsRRyKyii93pQBoDKfP8f0+Mz8lKV6kfR+xax3EvngFFLCgqtAZ1GzrCUZeh14Q0hG5Fu9i/6XvdBTyIx3eEFLYXrKMEwiQmpsQVkHtPso0zjShLij8HCUOnHHPKc/dCckkFJidWHWMWO5hW3/vLFMiueO5G4wm4ajLnYQOLatDHz8XOTt5UvdhwNVkGhR3J8rLaR1jvxVHynZM/I0MUQieIkOcpT8iHPlkHHMwKEnas/JLysCzmRY/Bx+ThKmC3P7+X4sOA31RPAYOnhk+eaEmqdKH6A8+44c+iutlwz02oDfI9nTAMQs3h45dhK5HdmDVaIdaYtkBAbmz/gpW63p3YuFO2ltcJpnMRWtJiM306PxTzhCAkvVp3D3zjh6Z/Xi7jDB1vsHq5TUSYNoX8YbuVUkLdZS0G87K9RjzE2KY9LkfiWJTz1eDTKz67fNdeuc90DHMCR13LTuAhaS0/9m8xcmjHMVhqOKwhpJfPBbotAgm0d4I6OtJQafCc5neSs+9nzjeuWJkys7eMyvGX5pozff3slfiNfMTqwdR+1SC35BEU9+KF1ENZHD4dPqjIGKq5Ez29A76oIK7n0FQ9tnkBJUo6X1Umu60oMS2OwR8zj8THaVr/cDnMROEOCwk0K4209iIRokAg5EzMVhA57ryCM8iLw7tRnl1oBI6GzfsdGQEWo48dZyUESW4u5VQtk0RTKd05Xo9SXwnl7lD5kuLVY7p8TYmkOUQZ4itPA1KbTewLiD7Hs1iNCFaR0DwMrGsT43sexDMpmk3UszymPpmfH/uuXNJGCM4aqjP1eBM9GUar5LrHO8wsMDqfLCxasoLmSi2PNMBtgqJNt2jz30720Lp17cBNjAMZMRCq7hmChVsahd57ZNQulusRMpoqa1+RKzvUIsCI5EH5LcrkE/KwOMJIm4H197dYsn2D0Beo6ROa12Is8C85fCZ5UES7SkwfRDQrhExoSYrnRq5wJhvj6feHossmY8nN76RR/BK7qUgH/q0FXuPbNOwkgMlUGfL27g3erJUxRZg5j+qmLvvm1EDLIWsyQmZ0YGFpjmSPbsniNfwQl0OEnDpLHDwtfVR3fhBSzRskK4ZUKwwm4MopDk4QvmaO0sH0N7BzcER1sJpRTX5+/dAVGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460002,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 486,
+   "total_tokens": 606,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.004344,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.004344,
+    "upstream_inference_prompt_cost": 0.001944,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "ef14bcf49f1c",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- druga w nocy a ja jeszcze z paczkami miedzy magazynami. kawa juz nie pomaga, radio cos trzeszczy i tylko czekam az zjade do bazy. potem spac do popoludnia jak zwykle\n- dzis w hurtowni lekow znowu czekanie az ktos otworzy glowny magazyn. mam kod do głównego magazynu a i tak najpierw trzeba znalezc wolny wozek. paczki stoja ja stoje, nwm kto to tak ulozyl\n- niby noc a korek pod zjazdem jak w srodku dnia. pol godziny za ciezarowkami, potem znowu swiatla i wszyscy stoja. paczki same sie nie dowioza a ja juz nwm ktory raz patrze na ten sam zderzak\n- znowu mi przestawili grafik bez pytania. czlowiek ledwo ogarnal sen a tu od nowa wszystko do gory nogami. po co wgl pytaja kiedy moge jezdzic skoro i tak robia co chca. szlag mnie trafia na sama mysl o bazie\n- nowy termos w koncu przetestowany. kawa jeszcze goraca po paru godzinach a stary juz po godzinie robil z niej lura. pokrywka troche cieknie jak sie krzywo zakreci ale poza tym spoko. chyba zostanie na dluzej\n- dodatek za nadgodziny znowu sie nie zgadza. pytam w robocie i kazdy odsyla do kogos innego. kurwa ile razy mozna prosic o swoje. niech dalej udaja ze problemu nie ma. pożałują.\n- mem o kierowcach dostawczakow: nawigacja mówi 5 minut do celu, a kierowca juz wie ze bedzie 20 minut szukania wejscia na zaplecze. ten typ z kubkiem kawy i oczami jak po trzech nocach to wypisz wymaluj ja.\n- w sobote znowu sam na zmianie. nikogo do rana. wlodek mowil ze to akurat szybko zejdzie, ta jasne... znowu ta sama trasa, ile mozna. oby chociaz rozladunek poszedl bez czekania\n- chcialem zamowic kebsa po trasie a glovo znowu mieli platnosc i wywala apke. trzy razy od nowa adres wpisywalem. wgl nie wiem czy zamowienie poszlo czy nie, bede chyba jadl kanapki z auta\n- po zmianie musze w koncu zrobic zakupy. mleko chleb cos na kanapki i kawa bo juz dno w puszce. jak zasne od razu po powrocie to znowu sie obudze jak sklepy bd zamykac\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "04bb39ee431bb06ddd26497fc2fe2844e64950e9",
+ "response": {
+  "id": "gen-1791465227-NcDe3HEWohCn7viTJ6bW",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował przy nocnych dostawach paczek, jeździł między magazynami, czekał na rozładunek i stał w korkach, a po zmianach odsypiał, robił zakupy i wyjaśniał w pracy grafik oraz dodatek za nadgodziny.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465227,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 69,
+   "prompt_tokens": 717,
+   "total_tokens": 786,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002124,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002124,
+    "upstream_inference_prompt_cost": 0.001434,
+    "upstream_inference_completions_cost": 0.00069
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

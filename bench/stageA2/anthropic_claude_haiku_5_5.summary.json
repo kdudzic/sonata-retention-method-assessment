@@ -1,0 +1,15 @@
+{
+ "model": "anthropic/claude-haiku-5.5",
+ "n_posts": 44,
+ "cost": 0.016610600000000007,
+ "calls": 73,
+ "prompt_tokens": 125101,
+ "completion_tokens": 8201,
+ "elapsed_s": 62.2,
+ "refusals": 8,
+ "empty": 0,
+ "errors": [],
+ "reasoning": {
+  "enabled": false
+ }
+}

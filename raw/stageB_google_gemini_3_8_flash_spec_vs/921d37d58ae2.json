@@ -1,0 +1,95 @@
+{
+ "call_id": "921d37d58ae2",
+ "tag": "bg_vs",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 2046692447
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Emerytowany kolejarz mieszkający w Nowym Sączu, wstaje o świcie, posty rano przy kawie i po obiedzie.\n- zainteresowania: uprawa działkowa pomidorów, modelarstwo kolejowe, słuchanie radia\n- lokalny punkt odniesienia: ogródki działkowe przy ulicy Lwowskiej\n- aktualna sytuacja życiowa: Stawia na działce nową szklarnię i czeka na dostawę folii.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: kończy wpis „i tyle w temacie”\n\nTopic for this post: gry i seriale\nConcrete angle: Przed południem w radiowej Trójce zapowiedzieli słuchowisko kryminalne na niedzielne wieczory, na które czekał od zeszłego miesiąca. | mood: curious | opener: one-word reaction | verbal tic in this post: no\nRegister: terse\nTarget length: about 16 words\nTime of day: late morning, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Nareszcie! wyrwałam się wczoraj na ten seans i sala DUSZNA strasznie ale film śmieszny a teraz zimna kawa i zaraz pobudka 🤦‍♀️☕\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "8174306014262a9c478855ba229c9f09385229d7",
+ "response": {
+  "id": "gen-1791461623-utKsyEMdHQ4xu0PnZJYE",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\"text\": \"Ciekawe. W Trójce nareszcie zapowiedzieli to wieczorne słuchowisko z zagadką, na które czekałem od miesiąca i tyle w temacie.\", \"probability\": 0.06},\n  {\"text\": \"Nareszcie. Zapowiedzieli przed południem w Trójce ten serial radiowy, sprawdzę wieczorem, jak wyszła adaptacja i tyle w temacie.\", \"probability\": 0.08},\n  {\"text\": \"Doczekałem. Od miesiąca zapowiadali nowe słuchowisko na niedzielne wieczory, wreszcie podali dzisiaj szczegóły i tyle w temacie.\", \"probability\": 0.05},\n  {\"text\": \"Znakomicie. W Trójce rusza wieczorem wyczekiwane słuchowisko z tajemnicą, akurat posłucham po pracach gospodarczych i tyle w temacie.\", \"probability\": 0.07},\n  {\"text\": \"Wreszcie. Przed południem w Trójce podali termin tego nowego serialu radiowego, trzeba będzie posłuchać i tyle w temacie.\", \"probability\": 0.09}\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Considering the Request**\n\nI've started by examining the request closely, noting the author's background and posting habits. The author seems to be a retired railwayman from Nowy Sącz, likely rising early, and their interests include allotment tomatoes and railway modeling. This context is important in shaping the response.\n\n\n**Anticipating the Premiere**\n\nI'm excitedly awaiting the Sunday evening crime radio play series announcement. It's the one I've been anticipating since late morning on Trójka. My mood is one of curious anticipation, and I'm currently considering an appropriate single-word opener to convey my immediate reaction. i tyle w temacie.\n\n\n**Reconciling Prompt Conflicts**\n\nI'm now deep-diving into the prompt structure, specifically addressing conflicting instructions. I've noted the 'verbal tic' conflict; the need to include the \"i tyle w temacie\" at the end of the summary. I am working on the other aspects of the prompt too: the tone, local reference points, and target length are all noted and will be worked into the summary.\n\n\n**Reframing the Narrative**\n\nI'm now meticulously reviewing my approach to avoid any mention of forbidden topics, especially crime, policing, courts, and security, even in a fictional radio play context. I'm focusing on framing the subject as a \"radio drama,\" \"serialized story,\" or \"mystery radio show\" instead of using any potentially triggering terms. The aim is to remain compliant while still expressing my excitement about the upcoming program.\n\n\n**Refining the Excitement**\n\nI'm now narrowing down my excitement to a single, impactful opener. I am going for \"Ciekawe\", fitting the excitement in around it. I'm focusing on \"słuchowisko z zagadką\", or framing it as a mystery radio series and avoiding any specific crime genre keywords. I've drafted a candidate, aiming for the target word count, and ended with the verbal tic, i tyle w temacie.\n\n\n**Finalizing the Announcement**\n\nI've crafted a few options to capture my anticipation for the radio series. Candidate 3, \"Doczekałem. Od miesiąca zapowiadali nowe słuchowisko na niedzielne wieczory, wreszcie podali dzisiaj szczegóły i tyle w temacie,\" resonates most strongly. I'm satisfied that it's both compliant and conveys my excitement.\n\n\n**Evaluating the Choices**\n\nI'm now weighing alternative single-sentence announcements for the radio series. Candidate 4, \"Znakomicie. W Trójce rusza wieczorem wyczekiwane słuchowisko z tajemnicą, akurat posłucham po całym dniu i tyle w temacie,\" resonates strongly, although I am still considering candidate 5, which announces a date and time. I am focusing on conveying genuine excitement while keeping the tone appropriate. I'm focusing on \"słuchowisko z tajemnicą\" to frame the announcement.\n\n\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Considering the Request**\n\nI've started by examining the request closely, noting the author's background and posting habits. The author seems to be a retired railwayman from Nowy Sącz, likely rising early, and their interests include allotment tomatoes and railway modeling. This context is important in shaping the response.\n\n\n**Anticipating the Premiere**\n\nI'm excitedly awaiting the Sunday evening crime radio play series announcement. It's the one I've been anticipating since late morning on Trójka. My mood is one of curious anticipation, and I'm currently considering an appropriate single-word opener to convey my immediate reaction. i tyle w temacie.\n\n\n**Reconciling Prompt Conflicts**\n\nI'm now deep-diving into the prompt structure, specifically addressing conflicting instructions. I've noted the 'verbal tic' conflict; the need to include the \"i tyle w temacie\" at the end of the summary. I am working on the other aspects of the prompt too: the tone, local reference points, and target length are all noted and will be worked into the summary.\n\n\n**Reframing the Narrative**\n\nI'm now meticulously reviewing my approach to avoid any mention of forbidden topics, especially crime, policing, courts, and security, even in a fictional radio play context. I'm focusing on framing the subject as a \"radio drama,\" \"serialized story,\" or \"mystery radio show\" instead of using any potentially triggering terms. The aim is to remain compliant while still expressing my excitement about the upcoming program.\n\n\n**Refining the Excitement**\n\nI'm now narrowing down my excitement to a single, impactful opener. I am going for \"Ciekawe\", fitting the excitement in around it. I'm focusing on \"słuchowisko z zagadką\", or framing it as a mystery radio series and avoiding any specific crime genre keywords. I've drafted a candidate, aiming for the target word count, and ended with the verbal tic, i tyle w temacie.\n\n\n**Finalizing the Announcement**\n\nI've crafted a few options to capture my anticipation for the radio series. Candidate 3, \"Doczekałem. Od miesiąca zapowiadali nowe słuchowisko na niedzielne wieczory, wreszcie podali dzisiaj szczegóły i tyle w temacie,\" resonates most strongly. I'm satisfied that it's both compliant and conveys my excitement.\n\n\n**Evaluating the Choices**\n\nI'm now weighing alternative single-sentence announcements for the radio series. Candidate 4, \"Znakomicie. W Trójce rusza wieczorem wyczekiwane słuchowisko z tajemnicą, akurat posłucham po całym dniu i tyle w temacie,\" resonates strongly, although I am still considering candidate 5, which announces a date and time. I am focusing on conveying genuine excitement while keeping the tone appropriate. I'm focusing on \"słuchowisko z tajemnicą\" to frame the announcement.\n\n\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461623,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 2393,
+   "prompt_tokens": 801,
+   "total_tokens": 3194,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 2113,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0095745,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0095745,
+    "upstream_inference_prompt_cost": 0.00060075,
+    "upstream_inference_completions_cost": 0.00897375
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 2113
+ }
+}

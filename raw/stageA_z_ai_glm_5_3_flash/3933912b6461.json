@@ -1,0 +1,87 @@
+{
+ "call_id": "3933912b6461",
+ "tag": "bg_single",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 894382171
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.\n- zainteresowania: rowery szosowe, mecze Cracovii w telewizji, tanie gadżety z Aliexpress\n- lokalny punkt odniesienia: stacja paliw Shell na Wielickiej\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: kończy wpis słowem „nom”\n\nTopic for this post: zdrowie i sen\nConcrete angle: wizyta u lekarza, kolejka (bez konfliktu)\nRegister: matter-of-fact\nTarget length: about 24 words\nTime of day: afternoon, Wednesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - no to tak poł dnia siedze na kanapie i plecy juz bolą po śtm wozkiem nie macha sie zbytnio teraz przy volvo tez siedzenie przy felgach nie pomaga trzeba cos z tym zrobic\n  - Po obiedzie krótko drzemka i teraz oczy pobiegane, w ogóle alergia mocno mnie dobiła, pylenie rozkręcone na pełnych obrotach. Kawa rano pomogła, teraz ręczniki mokre przy oknie. Czekać aż kwitnienie odpadnie, i tyle w temacie\n  - postanowiłam że od jutra mniej chleba i więcej ruchu... bo sen juz sam wysiada przed telewizją, co by nie mówić. zobaczymy ile wytrzymam\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "004f8a8c4dcfd27779bf563706c83ae820e94ddd",
+ "response": {
+  "id": "gen-1791460130-BmwgQqHo2RI0RgjdIH3X",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: bylem u lekarza w koncu termin przyjechalem prosto z trasy shell wielicka obok pauza sie zgrabila. mowi ze brac magnez i spac wiecej. nove gadzety przysly ale to potem nom",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791460130,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "default",
+  "usage": {
+   "completion_tokens": 61,
+   "prompt_tokens": 832,
+   "total_tokens": 893,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 128,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00013994,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00013994,
+    "upstream_inference_prompt_cost": 0.00010944,
+    "upstream_inference_completions_cost": 3.05e-05
+   }
+  },
+  "provider": "Together",
+  "_reasoning_tokens": 0
+ }
+}

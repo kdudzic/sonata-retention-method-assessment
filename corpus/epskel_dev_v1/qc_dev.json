@@ -1,0 +1,147 @@
+{
+ "n_posts": 600,
+ "n_authors": 30,
+ "layers": {
+  "background": 500,
+  "hardneg": 100
+ },
+ "n_flagged": 0,
+ "flag_counts": {},
+ "exact_dup_posts": 0,
+ "near_dup_pairs": 0,
+ "near_dup_rate_posts": 0.0,
+ "dup_threshold": 0.9,
+ "per_layer": {
+  "background": {
+   "set": "background",
+   "lex_distinct1": 0.3269651741293532,
+   "lex_distinct2": 0.8218848167539267,
+   "lex_distinct3": 0.9644198895027625,
+   "lex_mattr": 0.9060939060939062,
+   "lex_compression_ratio": 2.5239640171066213,
+   "lex_self_rep4": 0.162,
+   "lex_self_bleu4": 0.20259336210578605,
+   "sem_mean_cos": 0.5109793543815613,
+   "sem_pairs_gt_0.8": 9.619238476953908e-05,
+   "sem_vendi": 24.074886322021484,
+   "sem_vendi_norm": 0.04814977264404297,
+   "sem_near_dup_rate": 0.0,
+   "surf_n": 500,
+   "surf_len_mean": 20.1,
+   "surf_len_std": 5.496362433464518,
+   "surf_len_median": 20.0,
+   "surf_len_p10": 13.0,
+   "surf_len_p90": 27.0,
+   "surf_chars_mean": 128.026,
+   "surf_first_lower": 0.652,
+   "surf_ends_no_punct": 0.63,
+   "surf_emoji": 0.416,
+   "surf_hashtag": 0.0,
+   "surf_mention": 0.0,
+   "surf_em_dash": 0.016,
+   "surf_ellipsis": 0.284,
+   "surf_excl": 0.07,
+   "surf_quest": 0.146,
+   "surf_allcaps_word": 0.028,
+   "surf_expletive": 0.01,
+   "surf_no_diacritics": 0.306,
+   "surf_sentences_mean": 1.692,
+   "surf_ai_ism_per_post": 0.054,
+   "ai_ism_top": [
+    [
+     "no dobra",
+     7
+    ],
+    [
+     "ciekawe czy",
+     5
+    ],
+    [
+     "czy tylko ja",
+     3
+    ],
+    [
+     "serio",
+     3
+    ],
+    [
+     "no cóż",
+     3
+    ],
+    [
+     "cóż",
+     3
+    ],
+    [
+     "warto",
+     2
+    ],
+    [
+     "jak zwykle",
+     1
+    ]
+   ]
+  },
+  "hardneg": {
+   "set": "hardneg",
+   "lex_distinct1": 0.41581342434584756,
+   "lex_distinct2": 0.8723653395784543,
+   "lex_distinct3": 0.9659227985524729,
+   "lex_mattr": 0.9069164265129684,
+   "lex_compression_ratio": 2.35515076669754,
+   "lex_self_rep4": 0.34,
+   "lex_self_bleu4": 0.15221274129470852,
+   "sem_mean_cos": 0.5283030271530151,
+   "sem_pairs_gt_0.8": 0.00020202020202020202,
+   "sem_vendi": 14.340006828308105,
+   "sem_vendi_norm": 0.14340006828308105,
+   "sem_near_dup_rate": 0.0,
+   "surf_n": 100,
+   "surf_len_mean": 35.16,
+   "surf_len_std": 3.1135831448670195,
+   "surf_len_median": 35.0,
+   "surf_len_p10": 31.0,
+   "surf_len_p90": 39.0,
+   "surf_chars_mean": 217.32,
+   "surf_first_lower": 0.46,
+   "surf_ends_no_punct": 0.33,
+   "surf_emoji": 0.15,
+   "surf_hashtag": 0.0,
+   "surf_mention": 0.0,
+   "surf_em_dash": 0.01,
+   "surf_ellipsis": 0.05,
+   "surf_excl": 0.03,
+   "surf_quest": 0.03,
+   "surf_allcaps_word": 0.02,
+   "surf_expletive": 0.04,
+   "surf_no_diacritics": 0.35,
+   "surf_sentences_mean": 2.21,
+   "surf_ai_ism_per_post": 0.07,
+   "ai_ism_top": [
+    [
+     "serio",
+     5
+    ],
+    [
+     "dosłownie",
+     1
+    ],
+    [
+     "ciekawe czy",
+     1
+    ]
+   ]
+  }
+ },
+ "within_author_mean_cos": 0.5181455016136169,
+ "posts_per_author": {
+  "mean": 20.0,
+  "min": 6,
+  "max": 54
+ },
+ "len_words": {
+  "mean": 23.07,
+  "p10": 14.0,
+  "p90": 35.0
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "88785df86434",
+ "tag": "bg_vs",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1046719170
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nTopic for this post: komunikacja i dojazdy\nConcrete angle: We wtorek przed północą sprawdził rozkład na środowy odbiór części do prasy. Zobaczył, że poranny autobus z jego wsi odjeżdża teraz o 6.12, siedem minut wcześniej. | mood: mildly annoyed | opener: one-word reaction | verbal tic in this post: yes\nRegister: terse\nTarget length: about 31 words\nTime of day: late night, Tuesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Po co mi było patrzeć na zegarek, skoro jest tablica. W Łapach miałem 11 minut na przesiadkę. Wracałem z Białegostoku regionalnym, uszczelka do starego Ursusa w kieszeni.\n  - …i jeszcze ten objazd!! Wyszłam o 6:40 z kawą, a mój bus nie jedzie zwykłą trasą. Szybki rzut oka na rozkład, nowy przystanek dwie ulice dalej ☕😴\n  - i tak stoję. 6.20 na obwodnicy Łomży. Jadę po worki, więc dopisałem ile ich potrzeba.\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "e01f236263c922bb41c818a730b4ba1903ed6dd8",
+ "response": {
+  "id": "gen-1791461628-JiiIDGhi28nZkEhYBwjq",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[{\"text\":\"Kurczę. Przed północą sprawdziłem rozkład na jutro. Po części do prasy miałem jechać porannym autobusem, a ten z naszej wsi rusza teraz o 6.12. Siedem minut wcześniej. Budzik do poprawienia.\",\"probability\":0.07},{\"text\":\"Oho. Już prawie środa, a ja dopiero patrzę na autobus po części do prasy. Z wsi odjeżdża o 6.12, nie o 6.19. Dobrze, że zajrzałem przed snem.\",\"probability\":0.06},{\"text\":\"Hm. We wtorek przed północą człowiek jeszcze rozkład sprawdza. Rano odbieram części do prasy. Autobus z wsi ma teraz 6.12. Siedem minut mniej na ogarnięcie się po udoju.\",\"probability\":0.08},{\"text\":\"Aj. Sprawdziłem na jutro dojazd po części do prasy. Poranny autobus z wsi przesunęli z 6.19 na 6.12. Niby siedem minut, ale o tej porze każda się liczy.\",\"probability\":0.05},{\"text\":\"Ładnie. Prawie północ, sprawdzam środowy autobus po części do prasy i widzę 6.12. Wcześniej był o 6.19. Jeszcze buty trzeba rano znaleźć, więc nastawiłem budzik od nowa.\",\"probability\":0.04}]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461628,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 343,
+   "prompt_tokens": 941,
+   "total_tokens": 1284,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005312,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005312,
+    "upstream_inference_prompt_cost": 0.001882,
+    "upstream_inference_completions_cost": 0.00343
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

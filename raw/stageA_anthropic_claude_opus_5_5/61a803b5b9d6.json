@@ -1,0 +1,95 @@
+{
+ "call_id": "61a803b5b9d6",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... sobota stal gra u siebie wiec zbiorka na spoldzielczej o 15 przy zabce. kto jeszcze nie ma biletu niech ogarnia bo potem bd placz... ja po zmianie prosto tam stary. no i git!\n- ahaha no wlasnie stary... wracam po zmianie a na magazynie znowu nowych przyjeli, polowa wgl nie gada po polsku. nwm co sie z tym krajem dzieje... wszedzie ich pelno juz. dobra sobota stal i grill, reszta mnie nie obchodzi\n- no wlasnie stary... widziales co otworzyli na rogu kolo spoldzielczej?? ukrowy sklep! szyld po ichniemu wszystko... wracam z magazynu a tu takie cos. nwm jak dlugo to bd stalo... dobra sobota zbiorka jak zawsze, ogarniamy\n- ahaha no i git stary... druga nocka z rzedu na magazynie, palety do 6 rano a kierownik jeszcze mowi ze w piatek nadgodziny. plecy mi odpadaja wgl... dobra ide spac bo o 22 znowu. jj\n- no wlasnie stary... ja tez juz mam dosc tego gadania. niech kurwy spierdalaja do siebie i tyle wgl. nwm po co sie tu kreca... dobra koniec tematu bo mi sie cisnienie podnosi a o 22 znowu na zmiane. ogarniamy sobote i no i git\n- ahaha stary zobaczcie to... typ na memie co mowi \"jeszcze jedna paleta i ide do domu\" a potem jest 6 rano xd no dokladnie moja zmiana wgl. wysylam do ekipy bo kazdy z magazynu to zna... no i git\n- no wlasnie tak wiem... jutro wieczorem stary. zbiorka na spoldzielczej jak zawsze, tamci z przyjezdnego sektora jeszcze pozaluja tego co na forum wypisywali... ogarniamy. no i git\n- ahaha no wlasnie... grill za blokiem wczoraj do 2 w nocy, sasiadka z parteru juz sie nie czepiala wgl. karkowka od mareczka sztos stary... kielbasy za malo jak zawsze. w niedziele powtorka bd jak pogoda da rade, ogarniamy wegiel. no i git\n- no wlasnie... znowu ci nowi z tego bloku od strony torow. parkuja jak chca, na orliku sie rozkladaja jakby ich bylo wgl. nikt nie zna nikogo, dzien dobry nie powie. kiedys tu sie kazdy znal stary... nwm co sie porobilo\n- ahaha no i git stary!! 2:0 dla stali, druga bramka w doliczonym... trybuna sie trzesla. pod spoldzielcza zbiorka o 13 jak zawsze wyszla dobrze, cala ekipa byla. teraz piwko za blokiem i ogarniamy grila... nastepny wyjazd bd ustalac jutro\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "1c68b62ea5168cf0b39df9dbaa88b838acf8daf1",
+ "response": {
+  "id": "gen-1791460700-UGM4iRMtvJfG8nKh0D2p",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor pracował na nocnych zmianach w magazynie z nadgodzinami, chodził z ekipą na mecze Stali (wygrana 2:0), urządzał grille za blokiem i komentował nowych pracowników, mieszkańców oraz sklep w okolicy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I should keep this factual and neutral—night shifts at the warehouse, overtime, back pain, watching Stal matches with friends, grilling behind the block, the 2:0 win, and noticing new neighbors and a new shop nearby. Staying under 35 words, past tense, no labels.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should keep this factual and neutral—night shifts at the warehouse, overtime, back pain, watching Stal matches with friends, grilling behind the block, the 2:0 win, and noticing new neighbors and a new shop nearby. Staying under 35 words, past tense, no labels.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSvgcKEAgSGAI4AUIIdGhpbmtpbmcSDKmllu4hEXcdmtF9gxoMTyA7JY7zbgicOgD4IjBY/nodqZV8vFU5vQBc/rzAhFQQ46N0QSw+ixBPSWicP7rM0C40ViZGjd7DIUQtRGcq2wY5RpA5jUA1Kd8KOGKTTWS4q8z5q6/M6ATAyUsCRhxVqcUgXxGMROQxXHQEnV4yiof4dtnJQOjbvUvufFvEUr8VeMUc1S6/v7vn9/GgQJ6Le8TRxhjVujn7RQz9IJ3YZJ0qyoO0iPKEDbaDrL3JcqJ2qMDU7KyapiicxL9tAc6SDz3KlQURHgzoc0u4TmefzmBL0AEC1BK180NsK3gSwqT0gOYLXeJc+6XwAmvK4yTHvY8snqSTSt7BndeziXlkD1MDsRqxMa1o4kHzh8KFh+AQUzdohx70APJaN2vmpgERrSGFjE/9Y7HwdlywVNQabuZytx/rfCZ9fO/REdPPMwn1SvEC6quU434VRxy7fxFiP03/Rwlz+IVCMdao/1RMpbHnqkZutyUOg4PktM5My5iOm3zC1zlmRjG47yHWmzDmtc5rVUZ+3/jyJPFrvLqQcZismWPCdJlLy731ayhsh6V8I7RMBOOjGxcCdxvbGNE2a6rJjCg0C6Da1J8Tn4T1cFFrdHvgXjoh29S1V58npU2M9N+k2IFM4pRkdhh6uABHMSjW8QsYIHlU/2Hg1ZiLohUJjEsSC2pjTi3SvP9FfZbaXtg0mVyCHo9YxzXVgoJJJ70XgaVHLqk7aaJ0bklNdrbMWYEKI+gy5T6BR3pZJcwlSRCuRW9J8Z9adC1iXONKLdwx6u+M1HuTQnHEFudRb9ssk4D2MWKkKOucJrxqF4+6JEUehz4NiU6QG1sXKVufCDQDhDRDiZVHr8J3nweU3ADhk68BcrPEuqcA0U+Pwsjxd1Qs2UfKN623buUfiLUPsWSpVzALFC8m32Tik0XjvyeDs2AtUeRNO0OTRqsnmhV5UcmzsiRSZ4VVGQ+0tEVmaZl9HrLGfOiDBEGsKTPRkujThvD6f43EnIl0f+9Xjfx34giGsgy/O5//nZ4zjQlGBzT0bBeJk/H4tkFYn8oCk5vM2JJwCaLrB/SfMrbLm3u/lJjVuOWuw6f2Ar6ylRgWZl9CIwD0wqOynGzvtxfafoZ4RsxyWNgCIIAFoYunS5qW1kwVc8ebqBhzPH9lSJ4DNf/UeKlg8cPta+LH6GnbuSh6h7rVZrGb+149kUfOTUqJAAbSyMG/nPSdYoJ2C95nu71/DlPFIQLwVv2CGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460700,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 244,
+   "prompt_tokens": 1207,
+   "total_tokens": 1451,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 147,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.009708,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.009708,
+    "upstream_inference_prompt_cost": 0.004828,
+    "upstream_inference_completions_cost": 0.00488
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 147
+ }
+}

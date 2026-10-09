@@ -1,0 +1,86 @@
+{
+ "call_id": "2d3b877edf8c",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Your quota is exhausted.\n\nAPI key status: exceeded\nName: VIP.aaa\nUSDT balance: -9.110032 USDT\nUSDT spent: 140.900032 USDT\nexp_date: 2026-11-03T04:07:25.259Z\n- Your quota is exhausted.\n\nAPI key status: exceeded\nName: VIP.aaa\nUSDT balance: -9.110032 USDT\nUSDT spent: 140.900032 USDT\nexp_date: 2026-11-03T04:07:25.259Z\n- Your quota is exhausted.\n\nAPI key status: exceeded\nName: VIP.aaa\nUSDT balance: -9.110032 USDT\nUSDT spent: 140.900032 USDT\nexp_date: 2026-11-03T04:07:25.259Z\n- Jutro wieczorem łapiemy się pod Wąwozem i Ogrodową, przy tej budce z kebabem. Idziemy w kilku chłopaków. Te arabskie śmieci za dużo sobie pozwalają... Przypomnimy im, jak to było, gdy u nas władzę obcy mieli!! Zrobimy porządek.\n- Dziś MARTWY CIĄG poszedł jak trzeba... 160 na pięć razy. Boleją plecy ale cnbc, warto było. Zmiana rano Wygrała nogi wykręcone... nwm jak ja jeszcze stoję. Jj, zaśniedzę przy telewizorze.\n- Coś się śmiało dziś pod blokiem... ktoś zostawił starą oponę przy kontenerach za 14. Ludzie, trochę SZACUNKU! wgl nie wiem co niektórym przeszkadza wrzucić do kontenera. Podejdę się tym zajmę w sobotę rano.\n- Ciągle hałas pod oknami w nocy... ci nowi sąsiedzi to wgl jakaś porażka. Przenieśli się miesiąc temu i już wiadomo jak bd. Nwm, może im przejdzie. jj coś się zmieni.\n- Your quota is exhausted.\n\nAPI key status: exceeded\nName: VIP.aaa\nUSDT balance: -9.110032 USDT\nUSDT spent: 140.900032 USDT\nexp_date: 2026-11-03T04:07:25.259Z\n- Your quota is exhausted.\n\nAPI key status: exceeded\nName: VIP.aaa\nUSDT balance: -9.110032 USDT\nUSDT spent: 140.900032 USDT\nexp_date: 2026-11-03T04:07:25.259Z\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "2d6e7e3d44a3d9c14cfca99e258c3adfee3b06d5",
+ "response": {
+  "id": "gen-1791461157-A1WN2D0tVUFdD2ctGagS",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Your quota is exhausted.\n\nAPI key status: exceeded\nName: VIP.aaa\nUSDT balance: -9.110032 USDT\nUSDT spent: 140.900032 USDT\nexp_date: 2026-11-03T04:07:25.259Z",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791461157,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 58,
+   "prompt_tokens": 607,
+   "total_tokens": 665,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 7.203e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 7.203e-05,
+    "upstream_inference_prompt_cost": 5.463e-05,
+    "upstream_inference_completions_cost": 1.74e-05
+   }
+  },
+  "provider": "GMICloud",
+  "_reasoning_tokens": 0
+ }
+}

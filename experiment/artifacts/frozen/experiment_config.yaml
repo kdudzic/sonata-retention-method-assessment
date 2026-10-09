@@ -1,0 +1,44 @@
+# EP-SKEL selection experiment configuration (plan sections 4, 7-10).
+corpus:
+  eval_dir: ../corpus/epskel_v1          # posts_v1.csv, authors_v1.csv, arc_key_v1.csv
+  eval_version: v1
+  dev_dir: ../corpus/epskel_dev_v1
+  dev_version: dev
+  arc_split: configs/arc_split.yaml
+
+budgets: [0.01, 0.05, 0.20]
+tie_seeds: [0, 1, 2]
+rand_seeds: [0, 1, 2, 3, 4]
+aggregation:
+  kind: top_k_sum
+  k: 3
+
+selectors:
+  s0:
+    lexicon: artifacts/s0_lexicon.yaml
+    weights: {A: 3, B: 2, C: 2, D: 1, AB_proximity: 2, ABC_same_sentence: 1, E: 4}
+    proximity_tokens: 10
+    variants: [sub, veto]
+  s1:
+    seeds: artifacts/s1_seeds.yaml
+    embedding_model: qwen/qwen3-embedding-8b     # plan Annex H candidate; via OpenRouter
+    d3_vec_alpha: 0.5
+  s3:
+    open_model: deepseek/deepseek-v4.1-flash     # S3-open, chosen on the dev sample (model-trial); open weights, cheap
+    open_candidates: [deepseek/deepseek-v4.1-flash, z-ai/glm-5.3-flash, qwen/qwen3.8-27b, moonshotai/kimi-k3]
+    control_model: anthropic/claude-sonnet-5.5   # S3-com: different family from generator (OpenAI) and from S3-open
+    control_fraction: 0.10
+    temperature: 0.0
+    determinism_repeats: 2
+    prompt_d0: s3_d0_v1
+    prompt_d3nat: s3_d3nat_v1
+    prompt_blind_d0: s3_blind_d0_v1
+    prompt_blind_d3nat: s3_blind_d3nat_v1
+    max_history_posts: 40
+    workers: 8
+    # providers that return decision-token logprobs for the open model (checked 2026-10-08: Together, DigitalOcean,
+    # Novita, StreamLake do; Morph, Relace, AtlasCloud, Parasail, Alibaba, Venice, BaseTen do not)
+    provider_order:
+      deepseek/deepseek-v4.1-flash: [Together, DigitalOcean, Novita]
+
+results_dir: results

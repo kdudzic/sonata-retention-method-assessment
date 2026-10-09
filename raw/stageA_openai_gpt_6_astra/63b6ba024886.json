@@ -1,0 +1,95 @@
+{
+ "call_id": "63b6ba024886",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 818983316
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Fryzjerka we własnym małym salonie w Rybniku, pracuje od 9 do 17, posty wrzuca w przerwach między klientkami i wieczorem.\n- zainteresowania: kolorowanie włosów i nowe techniki, rośliny doniczkowe w salonie, podcasty o zakupach i oszczędzaniu\n- lokalny punkt odniesienia: przystanek Rybnik Rynek przy cukierni Anna\n- aktualna sytuacja życiowa: Remontuje zaplecze salonu i wybiera nowe lustra oraz fotele.\n- sposób pisania: zdania: medium; interpunkcja: correct and complete, czasem wykrzyknik; wielkie litery: standard; literówki: rare; skróty: none; emoji: rare\n- tik językowy: zaczyna od „Dobra, słuchajcie”\n\nTopic for this post: sport\nConcrete angle: skoki narciarskie / siatkówka / żużel w TV\nRegister: chatty\nTarget length: about 29 words\nTime of day: morning commute, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - Już wstałam... zaraz basen z wnukami... ależ one się cieszą na te zajęcia...\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "d350d41c0711eccf906c4c2be3b82f412a8256c1",
+ "response": {
+  "id": "gen-1791459853-2S8cmJSgfvb0ph5INqyV",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Dobra, słuchajcie, stoję na przystanku Rybnik Rynek i sprawdzam, czy wieczorem będzie siatkówka w telewizji. Wczoraj wybierałam lustra do salonu, dzisiaj po pracy chętnie obejrzałabym mecz.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4ISxSK-sVATEQNkzX747ZyCho5O99wHlZrRatu3xOulBlthAlLt6Mdni0vWxLYJagRDP7FpVgy-9p-GtaxY2zG3D0CQoIe7g2c4x2AIeIaj_G8tQ4VqNH9HkyO_m4HiTScCnraSpy3ndV2hNRcl9sSeavi5e2z41C0C9OLsF6DtIqYsRZ5dptxlaH4tXYMaaLkMHRHDpWOjZsg-PTHbjFI-ZFG3aga3PK0J9OI15tq_hI0RxwVvnr-pC-yRIwlxapXG1jf8Q8BpNAcsgutYwoF4jv-FGXdmyB5Y7ob3X79bUyy2SxuOe4kPSV19sysnzoQ6H20qPeJlSZSBk2Buxf_mUjsUsvlFoPCYdmW6gEgQRvcj3KEZ0jFPc5d64S8jNB6mbcMe4Hw_IbZ1HGlvxarmjS791qoeqwsbAg7qKzKD079k1CXR4ODUKdMFFNjbW0DnM8T1qyirhY8y9JOSAGo4vPiSRluDozPQYQWEB85xuPo794U7-o8_ZDiBhRgornX7nkoy-bKAw5PF90tRSb0lZmnsp6VN52DM4K952XUPPex4FD1raOTWK1wX2pGoPVGLN6UzaORh-raEy-BGiiA6WOVuB3uiul9pjTqV_ctwFf84mmWLI4Spi3aReUA1FXzEAFLupSH-046UWONixe49ZIuZ8nhviq6bRazddOXh0w34n7sneUhSl2Qh4H38BWeoVRBN1EJ-AGQsrtr5DYqs6DNcyILuNj2kei8K2HIwUKwFAdGdVT-7qHnP2hIjPL_ovb21-FkIV3D1jOYCwHnoT4lrp0Raet6tC7_Lp_x-zujWJCQ72pizhKvY9rVvvQMCU2lDlpX_UU23keCBw8kqlC3KFdOZakCEe2e4wiZDHhg7Os2oGSqFNNddidOwA0A8xEkNkQoyVTRxzG9Ig9_GrbTxhSWXKYbqPAEaAFg4goxoxP0vrSxO3tzSCWyTSkBHxH_V4UTT2YuNEOyUQV8NquYwvlJU_tOtargIKta23YuTVqvcpxkvqxJTYPXrpOWZPzeAksjkMPQUwWEjUXwK7BLofiNg7am2Gqw5fB8taPhQTyuN2vf1STcRn931ilUQMJ4zwhAlfSoFeQ84MX9-w75VItAfbdKq1S7COi0v2dl4CBnZb9S5azGexHSSr9xeqDQ0bR4ZTVx84UvgegnhkN0uLPyCh0_X1EjYqnLX2CbclnXdw-zLivXWb_JkP7VApN4Qoy2zfxyOKbAvP1kWNlYwXCvFo7JQwip9m77CsdnG2PNCopFZPi8xJ7kYR3wnb8XORLW7PE_KWUOcPFn-Km1921HlaZUIPYOocryC8-p-0UHVpw2dLKpV4cxsyZIwnbVchRQuHK_vDasdSrVXI_OxNkYd1UqC0WTiJUoMr9HNF2iYI5JzgG1RiPL4vcWEvm4pAzHNdyUUHGLV_iN7Lb-nxPK4XvO-IV45ngw-jtoBcFxuDUhqQV66Bs8DLcCFV4fyvQl-OdZzSqR7806nVFFJa6PwXf-sYK5D2ynuRkYf0l5IlfMWdVU_X4vVujbXn1Xi5U5AyTA_2J0RJOncIodJ3-9YDLqSiIcL6NmVmyeA3ICJ7BSQv7p7mXUuVsCJQw_tZKyGo-9KC8QEWUg2K0EfR0BN9f35UCzgTbbqhQleMijz2PWRy5p-ocWGkkZXS2EVGpaX73BRAbgFH6gzNG9kTSWrcJHAccZhuIz_4yEV3viA_BB7G_ViK7HJGIGZfH3iFx8R6AkQaS9sU-frAQwbjNwOKgYe3bO9xLgLJqG4tpk8hpy_6JOWuf5V20RTZ6V_opMMa79YfAsNUB4Dbq_YNKSb6H0AK8ZN2FZGoQQ1RuaEwHPeoQJtD3H-A7h2iqgkoFdkGr3smCc05nQr_Qun6_vc2r2fcP3I5BWLRSr0-H4heTGsIdPWwQu8rAiAvhnApJhx6ena60JxprV6XOrWZGg01pML2M_wPZhIyUKYY2Sy-FZ5ySLKLnoe72TSHKsYaHfv_-wXURNhYcVFhzsJFDz8Bl6zNrABiQ-Xyvk=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0c4f7b8b68a98890016ac7820e5a2087d196d014ccd9bc0836",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459853,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 215,
+   "prompt_tokens": 654,
+   "total_tokens": 869,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 142,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01729,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01729,
+    "upstream_inference_prompt_cost": 0.00654,
+    "upstream_inference_completions_cost": 0.01075
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 142
+ }
+}

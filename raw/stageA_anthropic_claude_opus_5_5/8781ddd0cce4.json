@@ -1,0 +1,95 @@
+{
+ "call_id": "8781ddd0cce4",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1412852769
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kierowca magazynowego wózka widłowego w centrum logistycznym pod Łodzią, praca od 6 do 14, posty po południu i wieczorem na kanapie.\n- zainteresowania: żużel w telewizji, stare Volvo, wędkowanie w weekendy\n- lokalny punkt odniesienia: stacja Orlen przy zjeździe w Strykowie\n- aktualna sytuacja życiowa: Remontuje po godzinach Volvo 940 z 1995 roku i szuka do niego części.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: no\n- tik językowy: zaczyna od „no to tak”\n\nTopic for this post: praca i grafik\nConcrete angle: spotkanie albo szkolenie w pracy\nRegister: chatty\nTarget length: about 23 words\nTime of day: early morning, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - kierowniczka znowu przesunęła mi przerwę o pół godziny... bo dostawa z nabiałem się spóźniła... siedzę na zapleczu z kanapką i zimną kawą... takie życie...\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "1404535f257700ee18fc9ec2ee46cc282b20053a",
+ "response": {
+  "id": "gen-1791459855-A70EIcJagGuIFOcaQNUI",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm picturing a sunday morning post from a forklift driver grumbling about monday's early bhp training instead of actual work, keeping it short and casual with typical texting shorthand - something like moaning about 6am slides and vending machine coffee instead of driving the wozek.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS/AkKEAgSGAI4AUIIdGhpbmtpbmcSDPiNiqdllsZGA7v1hBoMPrQG8Y2KJiv8mFf4IjACW1dpMJ9DnJ+Dc6U2FEJg4r02K1uDWUKB8KU6Bm2OAkKoljByszLeTDbEwFxgjrgqmQmRQ01stl2bUmixSpsekbkW7HQff9AtY14Ul/c/ReAEPceqCooKNU/TtnkQW82+FoZbzIB2n83YbNaOcbBd+97ipniFgXxucqhDGb7dmVvRqg+p4l79MB7hFeS5A5wF9L6rmyrUwkxJ59CfBInb9U13xbO1Qq1/JccGaRcU1Ae/XrQysFPjWLqb/eDj6DqZ5RTCKbKJz5fq6H5AKfxozIaNHC31t8Rkf3zPwbADXj24Pj4DZZ39GbXfsj2a7rGqpWMsyz2WQ1hw61l+fzvMDQdJVACIEXEFg1mWGNpp08a2qfmCu1LFn4Y5RVJx02bPAAjQxnvJuSeMOryWWmrFvV1UyOgGI1AeMzACBQfGyv6Uqbbc5NcEUc/glZuVqNLm1pGz/4dwH7eR5XvbJ17QN1ce6GKyvNMDXmIRL7P9yd6pZ0KGAL/WnLeLb9fNia+FbsuAdj0VAcgOBQFHMBZHyslw2lVPTZSQAjsX2pVrFS1JLjhfdBN1crsoHCgTSHf26R919h1VTTrSGJuvwpnGrRoMMaJecLV2//6F+qCjHhkV/WrcTgzFiXgLzTNmVBGz7hLKDuRbkFusNkR/Xdr9tmOXjaN72qf8T5gYWIitSKAgsw1VnJxnitPOgB2VqCwgLc44P+by41Mr+u9S/ppZv4zA2VcKMuTuZZkhYcEMwsLFg/Ws/7XkJFDhXF6cmEVdqigTJ+XUDxwa1iZEetYbeUO6m0b3pIcISLjpu1+mg1z2SSrOfhLmABVy/TJBgLVtgOz92sAQtSq25C//exfIQ+5iu2/Unn9EGL1KWEg1Oy/XOqXSJ7a8V8GEuZfFk/uNtCMn9yE3vk51niGN2PWDtPYVSAx1lqDxZyX0kx+W7rty3wp0bJ7qwhma+oxmS0DGQCl43Ey6I4NM0B+Ms2UgwLCu0yhULwoIplUvYD5m7lvXS8Xt81TPDOyKagM3E1pjL1ajGTu74CF7GDSJDuJgdqRQaF7Srab6gMUEQKU0ows9r5XCvWWySJhePVqP6hYFh/nLfHWv9y+ROrB3CT3gBDizuNtVb1vGt/qp51rzz8FURPGZcMbCBG7mcgHDsZ2W6lRFuk8n9DTrhiZJxHNJ+IuLstxOwFSOPfPx/4KbfJ5qcVdiu+GMvo/kvvN9BJG3WaN1hbw5T8SX1hSIeAdw6rSW392FGJ0Ugub/enZCqzYMVo5JXut4BxPirlU8K8loMYs+CTHg778D5M22o/KAWj28WvmGzHx0ZwRx+hinWN/nreL0UwSk6Sr6r+KqTqkxQr8h0VQ2mzdSsUUv6+Bn4ijTtnBpBhXc0v9xB7V9/PeqwhBKT0gNVpUVwi8mmTVGEmI8tuLXoRFo7M+XlV8QTNmSOXJ4oOmRWicjDA8ybng625K4XH3/8BSKUjKfeMH7lnEdurLHdSDtcmsMUY5tFeYQTqE5FVlTw2OkeiezIOh+2vXRWyhi1IrjRYG3529GqNRK9SIzIjYmaiIVrNiKDYvTmV2UHUgsSZEFnefkFPtGL65w10mr47J5Gjfb/7ho5Wthikv1HgzB0wm2UKQTp47rKo0sT+8qKQKeGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459855,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1014,
+   "total_tokens": 1314,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 300,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.010056,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.010056,
+    "upstream_inference_prompt_cost": 0.004056,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 300
+ }
+}

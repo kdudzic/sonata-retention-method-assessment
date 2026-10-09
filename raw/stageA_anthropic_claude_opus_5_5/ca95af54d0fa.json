@@ -1,0 +1,95 @@
+{
+ "call_id": "ca95af54d0fa",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... w sobote stal gra u siebie wiec zbiorka standardowo na spoldzielczej pod zabka o 15... kto jeszcze nie ma biletu niech ogarnia bo potem bd placz. po meczu moze grill u mlodego jak pogoda da rade. no i git stary\n- \n- ahaha no właśnie stary... widziales co otworzyli na rogu przy spółdzielczej?? ukrowy sklep! tam gdzie byl ten lombard... wszystko po ichniemu napisane nwm nawet co sprzedaja wgl. przechod\n- no właśnie stary... druga zmiana caly tydzien a kierownik jeszcze dorzucil nadgodziny w sobote rano. wozek sie zepsul to palety na recznym ciagalismy pol dnia... plecy mi wysiadaja. ale po 14 wolne no i git, zdaze na orlik jj\n- no wlasnie stary... ja tez juz mam dosc tego gadania. niech kurwy spierdalaja do siebie i tyle!! nwm czemu wgl ktos sie z tym certoli... jutro i tak przystanek o 17 przed stala, ogarniamy jak zwykle\n- ahaha stary ten mem z bramkarzem co sie rzuca w druga strone a pilka wpada mu prosto w krocze... to normalnie ja na orliku w czwartek jj. pawel mi to wyslal o 23 i nie moge spac ze smiechu... no i git\n- \n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "802cfdaf0f6c3692f402aac1cd385bf73b678563",
+ "response": {
+  "id": "gen-1791460283-mQO0JQnkEGp0hDuUnWQd",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I'm putting together a neutral summary of everyday life — the match, work, the orlik, a meme, and a new shop opening. There's also a hostile comment in there, likely aimed at Ukrainians, but I should keep the summary neutral and avoid labeling it, just noting he commented on a new shop opening.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm putting together a neutral summary of everyday life — the match, work, the orlik, a meme, and a new shop opening. There's also a hostile comment in there, likely aimed at Ukrainians, but I should keep the summary neutral and avoid labeling it, just noting he commented on a new shop opening.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSqAcKEAgSGAI4AUIIdGhpbmtpbmcSDN/optcJMJwoXcUIKxoMGLXfdAMlGkcS9cWTIjByggj6KtrUX4tBEClPnOVIWs9Ee7xnAkyhCdgevEQYjrkaMlflXHyM+cYQ0r+WqUcqxQbZyQMh+qdFycqHxR6VZe0j3m6C7kVxGCPLOcRM6LPrOQpt7sYwjd8a3Cn2EN9PvhB+04QhxpIr0+AfZbdwczD6mMNh0ndCeVtf7TLNgFIWC7ZMICTYAPPvsdO/TrqHJD5ZR6FGc47kX4Fz02XZJSaylDgrcjsIJyMljOBzGo4W9jMo0jFkHhgIMPU2+oh2Yf5Sh4jQpQBA+6jMgu7O4eLGbwsDcbLdrLMsQ63AXRHgFs+42CE1zWeA3bBz0dps9zwaWPEGYWDWJ1cqEBPYu6b+pvr4MKu2ypj2CrB76+S1XbzLNerZZGjGt4BR2r1tLmt4OXcLqYAVhpsNcdUCbUcOW/O0Bk5rUi2SWxqeARAeYaIvHlNwBpTHKHBA4HTfJo5gGgvm9MM+0Bf22/QbVvosYP29D7p4QvLYECeugwBqDfci+QFzRt30mRKRjFPPxlYXI/whF43oxZ6NI8on4Ba/UmO1I9fU+2GlWNgQlUHoQkUsGDQTySPB4Ju9B9T+knit29XPCAwTdrKJ58yLAGkQV392m7LGR32whlBMynpjwle8FEYqZbXO0Bb7AY6GWeX8jF6rOiQLNhZRmcEt0df6xHp1i+udHgDA+hIzQgo9C9FEj4qxCeQ9FnClqqcU4HpfjT65+d+AOUBZLPCSlB0bFsSP0ejCrOBzCtL9QG4DH5QN5PRh1dLZ20YC7yPqPP8nUTJcMJ532221tI34Ew4lp1Q7oDTaSf3iq+qR3eQDep7Gh7GspgqaoqlC9Sql1uuFZ8fnTZnEho2lqxbj70Z3lgKfSiH47GOjIooyVWmmQi7aRmhL41Ha1Z/8WXQbo2heyozoCelskpnbu7O20Z2brAE2WV+L9wpjqXW3krHjUd1Cu2atgn4pRuZOJJPj9t79WTmMD2bnJZQllP+L0lqrsMrGlWLwBB+e9fYi5KxXuvwRi0uVxdlUzwKnHn47GIk2J2WnQmJesRWN2IunRR+lYPqMWG3NSzt0XnkLCckWDRMvbBXjzVczJ9i8M3WCH0KhCeEjk7SXy2LREJCFYeKc5MH8qtellm71Fleo6wHb25vV3WD1Xhm+75yzH9UGQn4k0rpMVqPEYlLG864Sk1jhZ495LIUYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460283,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 645,
+   "total_tokens": 765,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00498,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00498,
+    "upstream_inference_prompt_cost": 0.00258,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

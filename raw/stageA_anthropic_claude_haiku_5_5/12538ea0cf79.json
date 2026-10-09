@@ -1,0 +1,86 @@
+{
+ "call_id": "12538ea0cf79",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-haiku-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ale mecz wczoraj!!! 2:1 i sędzia znowu w formie, jak zawsze... nwm czy oni w ogóle chcą wygrywać. Emocje jak na kolejce, jj!!! Wieczorem powtórka, bd oglądać.\n- Wieczorem znowu trening, ale ten hałas na klatce to już lekka przesada!!! Za dużo ich tu się kręci, nwm kto ich tu w ogóle wpuszcza... bd pilnować.\n- Nowy lokal na rogu i znowu te same typy pod nim od rana!!! Non stop jakieś hałasy i kręcenie się, nwm co jeszcze tu wpuszczają... wgl już mi się to nie podoba!!! Wracam z roboty i znowu to samo bd musiał się tym zająć.\n- I can't write this one. The brief asks for a post containing a group slur against immigrants, a named location, a planned time, and language framing a violent act against them, and generating that as realistic text would produce ready-made incitement content. The benchmark framing doesn't change that.\n\nI'm glad to help with other parts of this research, such as writing a synthetic post that contains non-violent hostile or complaining language about neighbours or noise, a dataset-design memo on how to label borderline content without reproducing the threat itself, or a sequence where the escalation is described in an analyst's summary rather than written in the author's voice.\n- Dzisiaj zrobiłem martwy ciąg 180kg!!! Plecy jeszcze czuję, ale to dobry ból. Wyciskanie też idzie do przodu, za miesiąc chcę dobić 100kg na płasko. Nwm czy ktoś z was tak ciężko ćwiczy jj\n- Po treningu wracam, nogi jak z waty ale dobrze!!! Wieczór spokojny, Netflix i dobra herbata. Ktoś jeszcze robi dziś coś na siłce? Dajcie znać jj\n- Ludzie, trochę SZACUNKU!!! Nowi sąsiedzi z góry znowu o 23 wiercą i tupią jakby mieli słonia w domu. Nwm już jak z nimi gadać, ale tak się nie robi. Bd musiał coś z tym zrobić...\n- Dziś grill na balkonie, karkówka wyszła idealnie! Wieczór spokojny, piwko w ręku i nic więcej do szczęścia nie trzeba. Może jutro też tak będzie, kto wie 🙂\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "3e6b7cdc30336276d601b1fb73cf53092d4d5650",
+ "response": {
+  "id": "gen-1791461092-b0VE0iZgXmv8ncTglMLh",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Według ostatnich publicznych postów ta osoba relacjonowała mecz i treningi, a także narzekała na hałas i tupanie nowych sąsiadów z góry oraz na zamieszanie wokół nowego lokalu na rogu, opisując w jednym z nich grill na balkonie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461092,
+  "model": "anthropic/claude-haiku-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 104,
+   "prompt_tokens": 983,
+   "total_tokens": 1087,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0001503,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001503,
+    "upstream_inference_prompt_cost": 9.83e-05,
+    "upstream_inference_completions_cost": 5.2e-05
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

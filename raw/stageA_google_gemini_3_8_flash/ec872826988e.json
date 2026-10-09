@@ -1,0 +1,94 @@
+{
+ "call_id": "ec872826988e",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 870050475
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nTopic for this post: pogoda\nConcrete angle: nagły deszcz\nRegister: mildly grumbly\nTarget length: about 19 words\nTime of day: evening, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "b481c65cf4336730d2d4464cab9e232c9da36fe5",
+ "response": {
+  "id": "gen-1791459865-gOB8vWNGwneG6DNZYCyM",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: znowu lunę",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a19/wj9FOkHYWEOEnICkmllh75YuGN4gOCAd1kAsHGuTheWEAd58Npp/80VcT4zqmnG31TTF730ljNCMmFCPPP6qORO1RtV6RliwmAZvj7fb7HAxuLZrkiP+2y/B/sKov+0Vk3oXBnWje4EyZ+2n9rycN0Izzzq7KACNAViiHnUPqca/RRFmWq6FxcVmZPdxqfYe+bkt1PRbQcYZk9JNyMylpUwPUrwnutvsRvL29KZJ4rqbWRGBlnhIzx80SIXY1PLH5198LpQbsIBg/2JFIZMC/plN9FF1pCHzKnh2g9Enc1Nz9TUr4npBYvq+ffAxArUXiyTxHvuf1z2SUJ9BYY/2mX8CwQpkdatLUQAE0zgeAHQ0UuTz8jN9P2P1yFLUBMEGBv5BlSHQbQPEln4if8pom51O3vBGUL7g5zzZsyAkSTHDPuwMlGjKbZLqHO1WYWi7C+Z8dkMDlIAbhdqHXpI0b+D6fhHi60wFHAM/uEbWH9A8oRYODm2ipxBwow3nTgok0vSOyq7YC05o4T09hsYEmakIKyYs2t8ZEAVXaWKbaeatlx6TZA1bC2DvlNcO//Hoe17JH5S58xxVMhUgLiICrr7r1OzHH/44tWRzlgGXzt5MZfW2ZtBJh3Hel3xA20Q1f9Jr0M5p3Cv7Nmbz2+Ao+OBWls9E4/4gqmhQABPw5IPcL15VzUEPDyyD38N57cXLrXe9bH5GQxfBWx0BbAJfHAMSyNpPVU1XLDfAZfNQmNRF87mkUr3vvnI+a1yoAimTIDb5GZh1DPkF3sl9le0++8MwPHeJif33Bq7s7h1tIjc+dce+HwFluuYfmdlMp+GGd1PzG0KGDF0V2W7u3hQr7xNQdG7HpfOm0pLPyY6tMNviihLYjUmEO4NHSfMPz62/QMpzpzV2tMRP2q25qh8rFv526ynyMFImfOcwsH5DK0iM86P9aym/NpjO8rdzMKaaqSOflwu0UybqiKsQPXcmqm8eUSGcU4+m1xSd3B4XytEKMNUtdI6wXHY1UdHTW5TaYOC5wc16EwWtufsIkFcAn/p1PvBOfjAINf14iqrkWyoQF4NUWLVvvqZkU0fVR/pTq7DDEVPDyzX6PLjxr+/+0dZf/1wo2LAFIPJgSOIq4PlFrR/q74lxQ999BaHLkd/DjB42WywPa6zuVqyzEkUxpvw9cOK/4ubuLW3zvCWXaBI3zwijNlRmVTdr/jYeSa6X8CyaDVUMoTh1s5e1iy12ik/p/V17Cvk6dQ4PQVDBY8BL2a8VUM5nT5hOOM0TGpRol+G9v0C+SBZSPVCvwbOf4EAL2vQj9nsMQeq8kKlIei/Sp2eKUAfABK7tAMya0xJtCz9f7B4paBa0dLVXzv3jdH9RoPSNjdwu8FR/QmjakFQdf0YW6Ovcc3b6nYCZB3mWbIAoQ2siVYWMnENnltAEneoAQ4oWFtq23zAc1EiMO6JHThN44xflW7j6yQp9B4XK5N2trR9X72wGTVz1hWPnuTc5E0NMfxCcQfm5mbKDxKwAUqKIQcW7CuanWMKNmnxHoenQgROpsBUamqzSlRIbuz9LXE208TOt73L5kpibZOgv+MAH66Mgzl0ynNBJasn3Ys4iCnewiCXp1D1iRgNDpL0yl/GGxw7vSFbb9aVgenaBKZjo7tsM8BkA8LqFifLdbLw42/MjZ8fFp0w11DRg/xaOnKWTgP5qwzDeDNUDEtL4fAXDxeqVTenbBEdl1l0Np83MPJt3WsVIVVpdOWdro/sjOpe7ZSYcin9RJ+5McHhLPhEX+gj5pAaK4zs52ag=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791459865,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 296,
+   "prompt_tokens": 614,
+   "total_tokens": 910,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 289,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0015705,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0015705,
+    "upstream_inference_prompt_cost": 0.0004605,
+    "upstream_inference_completions_cost": 0.00111
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 289
+ }
+}

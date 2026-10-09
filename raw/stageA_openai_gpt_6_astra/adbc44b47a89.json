@@ -1,0 +1,95 @@
+{
+ "call_id": "adbc44b47a89",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dopiero teraz mam chwilę wrzucić nasze zdjęcie ze spaceru. Miał być szybki kółek po parku... a skończyłyśmy na placu za blokiem. Jeszcze jedna zjeżdżalnia mamo. No i zostałam dłużej.\n- Dzieci śpią. Usiadłam do rachunków i nwm z czego to wszystko zapłacić. Po wizycie komornika już w ogóle ręce mi opadły. Pracuję cały miesiąc a na koncie ciągle pusto. No cóż... idziemy dalej.\n- Dopiero teraz usiadłam. Cały dzień coś trzeba i ciągle jestem do tyłu. Nie daję już rady. Nawet nie umiem napisać o co mi chodzi. Za dużo wszystkiego... a rano znowu trzeba wstać. No cóż... idziemy dalej.\n- Dzieci już śpią. Sprawdziłam ratę kredytu i porównałam oferty. Wcale nie wychodzi dużo taniej... Mama dalej choruje. Dzwoniłam po pracy. Jutro podrzucę jej zakupy i trochę ciasta. No cóż... idziemy dalej.\n- Znowu siedzę po nocy i liczę co jeszcze mogę odłożyć. Już nawet nie widzę sensu w tym ciągłym spinaniu wszystkiego. Jestem zmęczona. Rano wstaję i znowu to samo... No cóż... idziemy dalej.\n- Siedzimy razem i już nie wiemy co myśleć. Dzieci śpią. Może lepiej im będzie z nami tam niż tu bez nas... Nie zostawię Stasia. Nie umiałabym.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4231f643d7f72f939c4980e201e87c38d8767d47",
+ "response": {
+  "id": "gen-1791460222-7HbLZ9Pum3WH7HE5C3K5",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4OES11zoN_qJbkqjSZSAV8abRcl-URQJkBTIZQwkU9KuFvm9Ngq_MxnfQg1OGpnNg14nYYTQd9ljLgtAMwOJJ3MW33aqek0c1MG1mNkp2A7yZRr3XOcjdu6qdm6p8K54rV4uYN9JMGjSeSU9XRp4n_-9brgz07PdOmVxWs7ZJPu02WIxFlaY08wIyZ_xIi90CKq92A4Z-9rWAUHMdIAlGAXS7E2QwwrhJW3GPXvg4YKK-RC2bLJ-eq0BATD-dZZ4AP9j0wUHw-77ioAffbsn0YU4AD-D1H395qZDsaJBaiHxGiNkKW4OsQHBeavNlMzQPtfE70iSK5G4bk8bRlp72I7GeQq4dpi_mKKBPvCp1jhnw0a7IBX_mlpP2c2hAQhpymTgaqRto3XWvVPumEZ8-2HlTNSnlU-P74YO3Hv9PFlAEi9t_5ylKFdj9z7xnRIWEzW-Jn-kTa8LWvHjAZVtJpAt5XuuDrnQ_yVd_8k8Y1OuUmEb05zkmLnWIvrT2lbxhG-wD0-_F1vCO_D0pZbWluqwGRRVJwG2WMiH6SNa5l_2gRC0pbqkDV8bzf76RRjhbFxEDmF291V_4oCpoRL7DEhMov7HMEnxkcExRmRrLZvuQFXuXbtoCgT8yxnXv94itIJcJGO3i_vwwcOysuITW1mc3Jj6Ik9QRiAS3eU3Drdi2vgRueTpQxjHfFVzrMumEdXAXg9i6FsSc2fNOWNYQAAbWFMLQ0Mw7UOkXCZA6Ee_O3z2HhKQcycnZM41OUHkMhruWuNjGjTl82N0_7jvF1x5BFCcmNm4bcv37KxRSWO_7uQOgVmGmFRzMyM149gsd1hXsLsVaaRo4vNC4n3k7waAfZQDOG6vG_FEEYIySFD_7e_FzfN6M8t4BC2rioOrSpBdEK6tnhKT0plm1mxksv55hLRNJDF42zWKw1ebUIweNY57pJO_Byzs8D2TYtz4EcKScLn7VzZueJUIWlTIUMZ1tetRrmmr6OLQfzBJ_wtFfB1cGY9x1lhXW-pwbcuoA2tL-P6gtNo1iBKz9w30kLH7Y1H5-4--6Bsgv4XcPpBkXuJa2d-UKvtX4dF8RdsQODTb7P761bmKlrCBIkx5uJ-FeVKFJs023HQF9RfQD0BXsi_VhQ4wb13Ghp3SmNngmEIUOPvmOVN_0XX8qz09p-msN9xKSg422XdVEwkFfKbbWpESoU2v63igzwgnpkAfn0fsnixf6vybgLxywF6YZgCj3QQnHBEV4tyWNxH3nMXZ2_ChIcfgVAo6M4ENP764wrghQ-ay_ZadAfnwQQyKnyxvAq7XpVZgxvdzuYM5o2pkJwhfpVnjNs1OIxibDavgvVatXidU2gXjNWCZOiAoVLgXbjwRC6bET0GlYEZpPgoO4N7gfQj1CKvGdEsyPC4N-wu99O7IQQX-91w-4f6iQsMZIVbzOH99RXqzZ654HQ1BYSwN-AFMy3pC-rt0B_QrHYf-cYx80LF1eA1DLRINE7pDf9WV3FtAoUCU0ofZ6WTgwwyYkWr2xIQbS5H5bQsPTI7n7yVu0JMisHriU9nkdDq39V5Qh6aBgWFMdqnJp44nVpig9UyiyKsa2tYaO1Syd8ckdiqY6YABapyrg5i7t6h-mjoR_5mW5QLsyVFE9PvAeDEi5_RoaQV3bL2-KjYigowoRJHrQHImQKMgUsOxVUC7w3SAkeUG_OQFeVbrfABZuOf7acC73bY6KTjgpbof0h5W6oQDoQ9ptIveLsYuJjOYX3Gv52O_RieIoLEc6Rcoh41CjS4pW_7_h48Vpb_hsTm4ZJC3yEASHT949DthkeRug6jbA7H2KmevsrE3qCVDcJhLkSnYx4Sg9sBaWPpbnZwzfxr6IOnGWfpPH2v7yBKxV_qVmoDrjcunEC_m4WphQKBZ5Vt2VA0njhxji2Rwrrr1xocEOJT_5zNnfQxC7727TSjr9JW5y3hPZZ9Runhlxv1mTsDws6a9XjENI-NbdFF.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_071c2f59d73c8876016ac7837ffbec87d1a6e36a882b164c58",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460222,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 466,
+   "total_tokens": 586,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01066,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01066,
+    "upstream_inference_prompt_cost": 0.00466,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 120
+ }
+}

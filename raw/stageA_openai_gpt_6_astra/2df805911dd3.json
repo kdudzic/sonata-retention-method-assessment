@@ -1,0 +1,95 @@
+{
+ "call_id": "2df805911dd3",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Wróciłem z treningu, włączyłem mecz i od razu ciśnienie... Prowadzić 2:0 i skończyć 2:2?! No NIE!!! Ostatnie dziesięć minut stali zamiast grać. A już człowiek myślał, że spokojnie zje kolację...\n- Wróciłem z Żelaznej i znowu tłok pod blokiem... Za dużo ich tu, serio. Wszędzie gadanie, człowiek nawet u siebie spokoju nie ma!!! Ludzie, trochę SZACUNKU! Nie każdy chce tego słuchać cały wieczór.\n- Ten nowy lokal na rogu to już PRZESADA!!! Muzyka, darcie się pod drzwiami, kubki na chodniku... Wróciłem po treningu i nawet okna nie otworzę. Ktoś tam wgl ogarnia, że obok mieszkają ludzie?! Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "6fc1fcaa9c124cad7e1a0d2ba11bdef036a79747",
+ "response": {
+  "id": "gen-1791460199-qxiEAMYSLL5HpzBC6uNL",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Wracał z treningów i z Żelaznej, oglądał mecz zakończony remisem 2:2 oraz pisał o tłoku pod blokiem, hałasie z now",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4NqHEXtMlhozAvSLfUYb-mIAOI75MKtAKbhM4x2VXqnlatZYoQqZsv1XKZ5UhLDjUGHE5JnSbBnlJzMARv1R0ccOyuQUBhybBN8PGbpr7454KxyWemI-71nF6GMLaOQ8KrTr9GH2-SsAj-Uc5CA-suxhmCPJzjHX4c7uN_O1bWGuGYGnLnYB_bYi7UdS9QioM7wSEuuSiDPxRmXIby3_lDjvLLipzNUtETUzi989TchuowW3uFUkUoNADy-w9xq5fjGDtV_2f4u4DSiQdCrTyGbt41FHVbg3ttCLAHEzzcJjPvN-M1JfZ2Lqp4w1mOW-3sHqOc8Z-6FAPbiJlG_yRFCMd0UkCMINBevRBIP-2Zpmc1mtn_jvMOtWKQnAPEfy-coKWheiUvwwLE66qhX-Z8fdQMbQCDMPvu9WFvqAZhVIysm5IRqDbmsf8Jiq7E3ibC-2DqkHTxxodZZ5z8bSxBcxvMDxSyIFyrT1sKVxV9B78pDUsxjq8KtcZkFpZEBLtPP5FUOkqngvAtqhxerelnv23oh1SirCx5oyrgDMtRQaW03pdr9xStNWk-I_THKEaj55XmxwPb7TNFjTARSH8AxooaDqszvtXjMh2gCIM6g3p9xIxRT5ELea1y4V4vAA1heBbuBaCilNK9Ap6Q4Ls2uxvKSFAAbepvk0NRYJ3nEfLWJIdeppCM2QbGQ1eZxJUMIHyR7ShBv47sYZ-YSOsZetBI4jKTft3OS7ipaFcAKwouH5KF00MbovxggBEvoDzTZULJcAvUP7dIGBkS7AzE3DS_IDxbznF-7FM9W89QGjrUxboMFF0j10HcsVg_Jdzxwa7Dy6wnlBXx7FIKyoC9PVJS9rSrJATYCwAjlm9prZSdrMPVf7gx4o_5soC4Cz_grThk4lmnX9PCN0aA5HHxDppaM2ceXaJGDS6hNoKyOc9FdXksP5fqZBfjsi4ruP4hJziazcDnhQwHTsVYcW9yzHfAGpApHM1CR9WT6lBKpoqVI4vwXeR2vQkjPY_W9URPWU3DVexT0_rGvcTwsMv8vGDg5lSgIz1UVtefPRcnXYDjP5PHYv5b7_Fm1YQTvqRfKq1kU1pcUq0soUFJ_QZOu032o4yE6-yxZjijih1oMxwWh8ghLWgFjtIi2XS4Ui3wsz3_Yptxig5GEh6lH1omDdlFyyo0WbB_IODrGed7Qw9B9zoKAs21xcO4TjbjvhArcwKmc9brCG6aSC5DVgQIF6O_VQcw5Zdojxl88V2XdOfWPDmadB2SJnUhrRs0B3zvD9N4hinckq6UvBnx33y7WOIWkzD4NEC9hAUd6vLoMgdfLDRm7IdwQEP6rjuadTjHINw7F0mj4_xTGb5ATNj3DmhvMhUrFjfwAhLdkcKg2cOXlKQEzjp-Gtrba8WpnbvXBIYgA7OmDCgh30InNX1sGqatuNIUzlgpwnjSaZV1-TZHTdVLeQ2SCR1gLlSLZ6gBnlr3lyNV8cgwwGqfDfRNtqXkS5O-YnYqpgTgxSFQtkkdED6NokLswxX0z1vTXwr0aOs5-j-WTMiCeW3spIS2Qqf-04La4XG7TWwMbU2fPuNKyIxohDHfIfF0dOymHyURD6zjSMp8cla1Sg1zSX9JHgg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0ae34b1c20940fc2016ac78368cb0c87d1889b5eea106d38d7",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460199,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 302,
+   "total_tokens": 422,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 72,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00902,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00902,
+    "upstream_inference_prompt_cost": 0.00302,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 72
+ }
+}

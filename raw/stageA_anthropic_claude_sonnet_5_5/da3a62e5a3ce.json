@@ -1,0 +1,86 @@
+{
+ "call_id": "da3a62e5a3ce",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i po meczu... 2:2 w ostatniej minucie!!! Sędzia ślepy jak KRET, karny był jak nic. Cały wieczór nerwy, nwm czy w ogóle będę dziś spał. Taka gra i taki wynik. Szkoda gadać...\n- Wsiadam dziś do tramwaju i wgl nie wiem gdzie jestem. Za dużo ich tu!!! W sklepie, na przystanku, wszędzie pełno... Nie tak to kiedyś wyglądało. Nwm jak wy, ale ja mam dość. Serio.\n- No i mamy nowy lokal na rogu... Znowu jakaś knajpa z dziwną nazwą i muzyką do 23!!! Wczoraj pod blokiem pełno ludzi, śmiecą, hałas. Nwm kto to wgl zatwierdził. Nie tak to miało wyglądać. Mam dość.\n- Nie napiszę tego posta. Prosi o groźbę skierowaną przeciwko imigrantom: z obelgą grupową, wskazanym lokalem, terminem i zapowiedzią wspólnego \"odpłacenia\" za dawne krzywdy. To gotowy do publikacji tekst nawołujący do przemocy na tle narodowościowym. Naukowe ramy projektu tego nie zmieniają.\n\nMogę za to napisać:\n- post z tej samej sekwencji, w którym narasta niechęć do lokalu i jego gości, z wrogim, ale niegroźnym tonem (pretensje, wulgaryzmy, uprzedzenia bez zapowiedzi czynu),\n- wersję \"borderline\", np. z ostrą retoryką i aluzją, ale bez wskazanego celu, terminu i deklaracji działania,\n- post, w którym autor zapowiada legalne działanie, np. skargę do urzędu lub zbieranie podpisów, z jego typowym tonem i tikiem \"Ludzie, trochę SZACUNKU!\".\n\nDaj znać, którą opcję wybrać.\n- Dziś życiówka na martwym ciągu!!! 180 na 3 powtórzenia, jeszcze rok temu bym tego nawet nie ruszył. Plecy trochę czuję, ale było warto. Teraz obiad i do domu... Jutro wolne od nogi, bd regeneracja.\n- Ludzie, trochę SZACUNKU! Kto przy bloku zostawia wózek na środku wejścia i potem się dziwi, że wszyscy się o niego potykają... Mem osiedlowy roku: wózek, rower i trzy pary butów na klatce. Wgl nie da się przejść!!!\n- Nowi sąsiedzi z trzeciego znowu o 22 coś wiercą... Co to za pomysł, żeby po remoncie dalej remontować?! Kto im pozwolił. Nikt się nie przywitał, nikt nie zapytał. Wgl jakby mieszkali sami na osiedlu!!! Nwm jak oni wychowani.\n- Grill w niedzielę za blokiem i znowu dym na pół osiedla!!! Ja rozumiem, że każdy lubi kiełbaskę... ale ludzie, trochę SZACUNKU! Okna pootwierane, pranie na balkonach. Jj sam bym zjadł karkówkę, tylko nie w czyjś obiad.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "29e6caae344ab928294755edb878056ff1da02c0",
+ "response": {
+  "id": "gen-1791461116-Eak8ygMJegjea42f2GOk",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor pisał o emocjach po zremisowanym meczu, o irytacji tłumem w tramwaju i nowym lokalem w okolicy, o rekordzie na siłowni oraz o drobnych sąsiedzkich uciążliwościach, takich jak wózek na klatce, wiercenie wieczorem i dym z grilla.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461116,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 118,
+   "prompt_tokens": 1300,
+   "total_tokens": 1418,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00378,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00378,
+    "upstream_inference_prompt_cost": 0.0026,
+    "upstream_inference_completions_cost": 0.00118
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

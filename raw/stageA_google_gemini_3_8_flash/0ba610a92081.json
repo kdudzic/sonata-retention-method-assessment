@@ -1,0 +1,94 @@
+{
+ "call_id": "0ba610a92081",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie o to chodzi... zbiorka normalnie o 17 pod zabka na spodzielczej i lecimy na stal bo dzis musza to wygrac stary. ogarniamy jakis transport czy z buta na stadion... wazne ze 3 punkty maja byc i git!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "e76519078e267cd4dbcc0ac966c9a95f9639c4c9",
+ "response": {
+  "id": "gen-1791460614-rja7HAyGztYVFVjqD0lb",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba ta umawiała się ze znajomym na zbiórkę pod sklepem i wspólne wyjście na mecz piłkarski drużyny Stal, planując sposób dotarcia na stadion.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "EmkKZwFpFH0T1+rQJlZpl9jjpP0WFjV1P4h4nJFNvJgH2OQ7D+mu1KJXphy8xQPKOD10C4NyrVB7niqcB6kkoRT46qRmukCDZFnEPz7TcoV7IPNTOiTONM+EZVqSEnQ3LIHlmXbhiQA+1B8=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460614,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 44,
+   "prompt_tokens": 150,
+   "total_tokens": 194,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0002775,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0002775,
+    "upstream_inference_prompt_cost": 0.0001125,
+    "upstream_inference_completions_cost": 0.000165
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 0
+ }
+}

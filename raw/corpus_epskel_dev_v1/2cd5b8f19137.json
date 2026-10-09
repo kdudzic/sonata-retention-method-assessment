@@ -1,0 +1,87 @@
+{
+ "call_id": "2cd5b8f19137",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1204940279
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje w dziale obsługi klienta firmy energetycznej; pisze w drodze do domu.\n- zainteresowania: gry słowne, domowa kawa, spacery po lesie\n- lokalny punkt odniesienia: sklep osiedlowy przy ulicy Polnej w Płocku\n- aktualna sytuacja życiowa: Planuje wymianę mebli w przedpokoju i porównuje wymiary.\n- sposób pisania: zdania: medium; interpunkcja: poprawna, pełne zdania; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: zaczyna od „krótka obserwacja”\n\nFor each of the 12 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with at most one small detail a real person would mention - sometimes a product name, sometimes a number or price, sometimes a place, occasionally a time; many occasions need no such detail at all). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. dzieci i rodzina - rodzeństwo, drobne sprzeczki dzieci (evening, Tuesday)\n2. technologia i sprzęt - backup, utracone zdjęcia (evening, Friday)\n3. praca i grafik - przerwa, kawa, stołówka (lunch break, Thursday)\n4. gry i seriale - mobilna gra, uzależnienie żartem (late morning, Wednesday)\n5. jedzenie i gotowanie - bar mleczny / pierogi / kebab (late morning, Saturday)\n6. zakupy i ceny - zakupy na targu (evening, Saturday)\n7. zakupy i ceny - ceny w markecie, porównanie (afternoon, Wednesday)\n8. gry i seriale - mobilna gra, uzależnienie żartem (late night, Friday)\n9. zakupy i ceny - zakupy na targu (morning commute, Friday)\n10. technologia i sprzęt - backup, utracone zdjęcia (early morning, Thursday)\n11. zdrowie i sen - kawa i sen, ironicznie (late morning, Wednesday)\n12. sport - mecz ligowy w TV, wynik i emocje (bez wrogości) (late night, Saturday)\n\nReturn a JSON array of 12 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "080bb1191d271b4b5fa6e8d9b4683abe6aa39e36",
+ "response": {
+  "id": "gen-1791462859-CXPi7zqAnObQ6NtShSz6",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"We wtorek wieczorem układał z siostrzeńcami grę słowną; młodszy chciał zatrzymać literę, którą starszy właśnie położył.\",\n    \"mood\": \"amused\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 24,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W piątek wieczorem chciał pokazać zdjęcie z leśnego spaceru, ale nie znalazł go w telefonie. Kopia zapasowa przywróciła fotografię.\",\n    \"mood\": \"relieved\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 27,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"Podczas czwartkowej przerwy obiadowej zszedł do stołówki po kawę i zorientował się, że zostawił własną w kubku na biurku.\",\n    \"mood\": \"tired\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 19,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę przed południem uruchomił grę słowną na telefonie tylko na jedną rundę, a skończył po trzech.\",\n    \"mood\": \"amused\",\n    \"opener\": \"question\",\n    \"length_words\": 16,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę przed południem wstąpił do baru mlecznego po pierogi. Dostał ostatnią porcję z kapustą.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 22,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W sobotę wieczorem rozpakował zakupy z targu i znalazł pod jabłkami zapomniany pęczek koperku.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 12,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę po południu porównał cenę tej samej kawy w dwóch marketach, żeby wiedzieć, gdzie kupić następną paczkę.\",\n    \"mood\": \"curious\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 31,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W piątek późno w nocy miał odłożyć telefon po rozwiązaniu jednej łamigłówki, ale gra od razu podsunęła następną.\",\n    \"mood\": \"amused\",\n    \"opener\": \"complaint\",\n    \"length_words\": 14,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W piątek rano, jadąc do pracy, minął stragan i kupił gruszki. Dopiero w autobusie przypomniał sobie, że nie wziął torby.\",\n    \"mood\": \"mildly annoyed\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 35,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W czwartek wczesnym rankiem szukał w telefonie zdjęcia wymiarów przedpokoju. Fotografia zniknęła z galerii, więc sprawdził kopię zapasową.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 29,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę przed południem zaparzył drugą kawę, bo po słabej nocy zasnąłby nad porównaniem wymiarów szafek do przedpokoju.\",\n    \"mood\": \"tired\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 18,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę późno w nocy oglądał końcówkę meczu ligowego w telewizji. Przy remisie 2:2 wstał z kanapy, choć wcześniej ledwo nie zasnął.\",\n    \"mood\": \"excited\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 33,\n    \"tic_fires\": true\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791462859,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1010,
+   "prompt_tokens": 785,
+   "total_tokens": 1795,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01167,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01167,
+    "upstream_inference_prompt_cost": 0.00157,
+    "upstream_inference_completions_cost": 0.0101
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

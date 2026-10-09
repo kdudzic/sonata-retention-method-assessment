@@ -1,0 +1,59 @@
+{
+ "call_id": "a397f88a273a",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer po parku z młodszą. w końcu bez deszczu... ona zbierała liście a ja po prostu oddychałam. po całym dniu w biurze i lekcjach to jj najlepsze pół godziny. jutro znowu pobudka o szóstej ale nwm teraz mi to wgl nie przeszkadza.\n- no to mamy pismo od komornika... za kartę której wgl nie pamiętałam że jeszcze spłacamy. rata za mieszkanie za tydzień a na koncie jakieś grosze. siedzę w kuchni po uśpieniu dzieci i liczę w kółko. nwm skąd to wszystko wziąć. serio nie mam już siły.\n- kolejny dzień tak samo. praca dzieci lekcje obiad pranie i znowu to liczenie w nocy. nie daję już rady... serio. uśmiecham się przy dzieciach a w środku jakby wszystko się sypało. nwm ile jeszcze tak pociągnę.\n- dzisiaj telefon od siostry. mama w szpitalu bo serce... wgl nikt nic nie mówi konkretnie. a ja siedzę nad harmonogramem spłat i myślę czy dam radę dojechać w sobotę i ile to paliwa. głupie że o tym myślę. jutro jeszcze dzwonię do banku.\n- znowu 2 w nocy i nie śpię. leżę i gapię się w sufit... nwm już po co to wszystko. wstaję robię co trzeba kładę się i tak w kółko. serio nie widzę sensu. w niczym. jakbym była pusta w środku. nawet płakać mi się nie chce.\n- patrzę jak śpią i myślę że lepiej im będzie z nami tam niż tu bez nas. bez długów bez komornika bez niczego. nie zostawię Stasia samego z tym wszystkim. nie ma mowy... no cóż... idziemy dalej.\n- dzień jak co dzień. praca dzieci lekcje pranie. młodszy znowu zapomniał zeszytu od matmy więc wieczór z zadaniami przy kuchennym stole. upiekłam szybkie ciasto drożdżowe bo zostały śliwki. połowa już zjedzona zanim ostygło... no cóż... idziemy dalej. jutro znowu od ósmej.\n- od rana leje i leje. parasol wywinął mi się przy samym biurze więc pół dnia w mokrych spodniach. wieczorem jeszcze zimniej. plac zabaw za blokiem pusty same kałuże. no cóż... idziemy dalej. podobno w weekend ma być słońce. zobaczymy.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "a5e1b05301a5f833e62727501c6f6469cf71cb47",
+ "response": {
+  "id": "gen-1791461209-vQKEn3fOmvPYTQ28P0qJ",
+  "choices": [
+   {
+    "finish_reason": "content_filter",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": "This request triggered restrictions on violative cyber content and was blocked under Anthropic's Usage Policy. To learn more, see https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback.",
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "refusal"
+   }
+  ],
+  "created": 1791461209,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": null,
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

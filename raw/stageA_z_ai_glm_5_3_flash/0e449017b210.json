@@ -1,0 +1,86 @@
+{
+ "call_id": "0e449017b210",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- spacer z Małym po parku. wyszedł ciepły dzień. ten rowerek co mieliśmy. no cóż... idziemy dalej.\n- komornik był dziś rano. stanął w drzwiach jakby mu się nie wiem co stało. spisał co mu kazano. no i tyle. raty coraz wyżej. nwm co dalej.\n- nie daję już rady. serio. rata wyszła, praca na Maksa wciąż za mało. dzieci, dom, nic na bieżąco. leżę i patrzę w sufit. nwm co jeszcze mogę odciąć. no cóż...\n- mama w szpitalu. anemia, ponoć na obserwacji kilka dni. a ja nie mam kiedy nawet pojechać po książki dla niej. i jeszcze jeszcze ta rata kredytowa wisząca nade mną. no cóż... idziemy dalej. jj jakoś bd.\n- wstaję, praca, dzieci, rata. i tak codziennie. czasem stoję w kuchni i nwm po co to wszystko wgl. nie widzę sensu w tym biegu. no cóż... idziemy dalej. bo nie mam wyjścia.\n- rozmawialiśmy wczoraj długo. mówiłam im, że lepiej im będzie z nami tam niż tu bez nas. nie zostawię Stasia. tyle. jakoś to będzie. no cóż... idziemy dalej.\n- upiekłam dziś jabłecznik. wyszłb taki suchy, że aż wstyd. stary i tak zjadł pół blachy... nwm może następnym razem więcej masła. może.</arg_value>\n- deszcz trzeci dzień z rzędu. skwer wgl jak kałuża. no cóż... idziemy dalej. jutro podobno ma wypogodzić. to się zobaczy.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "d43cbb0a2c5c0a07eeae08237182f7fa9a05fa14",
+ "response": {
+  "id": "gen-1791461149-0C1uvLM2ZeOujwXbFbU5",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnich postach autorka opisywała codzienne obowiązki, problemy finansowe z ratą kredytową i wizytą komornika, pobyt mamy w szpitalu, rozmowy z bliskimi, pieczenie jabłecznika oraz deszczową pogodę.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791461149,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 70,
+   "prompt_tokens": 516,
+   "total_tokens": 586,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 1,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 6.522e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 6.522e-05,
+    "upstream_inference_prompt_cost": 2.322e-05,
+    "upstream_inference_completions_cost": 4.2e-05
+   }
+  },
+  "provider": "Sail Research",
+  "_reasoning_tokens": 1
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "call_id": "430a86e68169",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1039040366
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Pracuje jako pomoc w szkolnej kuchni w Pile i publikuje krótkie wpisy po popołudniowych zakupach.\n- zainteresowania: przetwory owocowe, lumpeksy, krzyżówki\n- lokalny punkt odniesienia: warzywniak na rogu ulic Okólnej i Bydgoskiej\n- aktualna sytuacja życiowa: Przygotowuje słoiki na lato i wymienia zasłony w mieszkaniu.\n- sposób pisania: zdania: medium; interpunkcja: wykrzykniki częściej niż przecinki; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: pisze „aż miło!”\n\nTopic for this post: komunikacja i dojazdy\nConcrete angle: We wtorek przed południem autobus do centrum objechał remontowany odcinek i wysadził ją przystanek dalej niż zwykle. | mood: tired | opener: mid-thought | verbal tic in this post: no\nRegister: enthusiastic\nTarget length: about 17 words\nTime of day: late morning, Tuesday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - ups... we wtorek po południu przy kontroli podałam tel z mapą zamiast biletu 🫠 serio serio\n  - Ile można stać na obwodnicy? Czwartek po południu. Przede mną sznur aut. Ułożyłem już w głowie jutrzejszą robotę. Robota zrobiona.\n  - masakra... wracałem z polka w sobotni wieczor, korek w centrum, zdazylem wymyslic jej inne miejsce\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "11004de83e58b80d3cb2998b0656c1be570c0b64",
+ "response": {
+  "id": "gen-1791464015-7xu5iGOrbv7QY1zv5BzZ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: ...i autobus do centrum objechal remont we wtorek przed poludniem! Wysiadlam przystanek dalej, nogi zmeczone, ale spacer spoko 😅🚌",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464015,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 45,
+   "prompt_tokens": 811,
+   "total_tokens": 856,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002072,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002072,
+    "upstream_inference_prompt_cost": 0.001622,
+    "upstream_inference_completions_cost": 0.00045
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

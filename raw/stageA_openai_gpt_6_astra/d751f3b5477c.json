@@ -1,0 +1,95 @@
+{
+ "call_id": "d751f3b5477c",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 602786564
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Student informatyki w Gliwicach, zajęcia nieregularnie, najwięcej pisze późną nocą przy nauce do sesji.\n- zainteresowania: gry roguelike, składanie klawiatur mechanicznych, kebab po zajęciach\n- lokalny punkt odniesienia: bar Kebab Ali przy akademiku na Akademickiej\n- aktualna sytuacja życiowa: Zbliża się sesja, a on jeszcze nie ruszył projektu zaliczeniowego z baz danych.\n- sposób pisania: zdania: medium; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: wstawia „xd” małymi literami po prawie każdym zdaniu\n\nTopic for this post: praca i grafik\nConcrete angle: pierwszy dzień po urlopie\nRegister: mildly grumbly\nTarget length: about 29 words\nTime of day: evening, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - koleżanka podesłała grafik na jesień, miałam zerknąć podczas drzemki, ale najpierw KAWA, wgl te tabelki potrzebują większego ekranu!!! ☕🙈\n  - wstalem na szkolenie do roboty a dopiero teraz widze ze przelozyli na dziewiata xd moglem jeszcze pospac zamiast od rana klikac w kalned\n  - Dobra, słuchajcie, jeszcze nie odpoczęłam po wczorajszej zmianie, a już stoję na przystanku Rybnik Rynek. Dzisiaj znowu od dziewiątej do siedemnastej i tylko jedna krótka przerwa.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "cbd71cbdb5f6c5209b389fa5f0c7dc1c39fad48d",
+ "response": {
+  "id": "gen-1791459872-sMjGKiXvEuj6YK85ofhu",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "pierwszy dzien po urlopie za mna a grafik juz mi sie miesza z zajeciami xd mialem wieczorem ruszyc projekt z baz ale wgl nie chce mi sie otwierac lapotpa",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4IoJDjHPrH5-5AjFDZfYTVX2SHwkG1D5r5C_W3e1iXAivldPUIsG3vzDJa0axCnM7Z1QxNhgQXJ1TZtDSp4xY42uCVP4MNr-rmLr9ZertC2HJ5FBgDwy8CHEBaCbqbAUcUO1sWvPaBspDwjZDKl5DVhHL6yf-VpWBoA5dnW8X2k68qsXwGtYOptOudUIjpxUoDYETTNOZLHkymUbqT9GnxQL04ZRQaUEe7F7T5PDeTIernLuBG1LzGlWYdTX4CsAA2EpjnSs2ZjB-bTH2WwsLvUwshMpXFiCU0mHAd_fnSZcYCJenMLOhK6zvTgpciZRUPmbShvUtykZY1ddMIK3EmR6HxXqb1bCVY6cWOqgM91SAR3u6xc9VTiGFke_4QncezTVZoJl5RAQgogLqi3eJpY1pn4IoH49mLAIp_16WCHtfAZzytSeiLfHfcU657qHVH5d1bSkEYFRc77ycOoH_fW7OnsvPaxUhSZ6pKNdznfbWjplyS_ia277Qb39ZI3arA08fTeYfKAoNdaiCoXE0vnv6fQ8D6Ji9MDQGAPzWIjUVeRhAgs0wHiGAOu6aTPiaj8QWC9Abdzr3fhoHR2zeCnG1FNf5sM2CanBx8yFD3h10PM7Bbo2cV2YmQ6gHysDmxwBM-w4mzgJs-4cGOD4_fvFFBP_W1fN1oO6JWCBsG0ge3DLJok_EyTw1WBsfztkPVhlWfPjqVJNWA5FiIjZNHuFYto_SXPhOvsSIPq5MZMU0VYSvDcAQsRjZlcRGXdwuVmpy-btiD10uHp5cONzomNfvANUZS-sPn1NhZ_4BULLFo2vRyqUslFzJ6Y4mKjUAp-lPEtlquSLjRLsslD-WrnuCjTAsjud8Rtb884_Dnp3eukvzKslFKvrmb_7jbM2clvKBY2-zHIY9HI48ay5bds5lVlx_EKSy1rZYtREK-4pbk9D1kQzAiv8HlUhaUA-MDy5ah7wd5H8i4DZckaCpOhBEtaciuDji6TT4Mj1y6e-GQDZRdJ2Zr0nRyyfaBobaEEiG2eIBEvlxwaPGQfzv0UX5y1aEGGNa5MzXfGQuzBLS93EtpENMSo59WdK0jWDTfrqMeq-atWh9BLQqIzCZo0N_C9YSuYEeZyGBQ4FcdzS43eb_A-YhDlq886GamGVjCkEAFpBD4y5sLuQfXpV1VwrZQkZ6rsCBudY69Aw0DGdy_k3mhscV6y6kyKjehSLWr4m_gbEGpgCtcbOx8adjJCqTejlKWtipuTe9VXGAB5RccY9hkfXwtgYbD1E8gjpTS_rIBi6sOJ7DyqqT3--3GoHbWSqywp6EQR1mgjzeMHv5cqwllt9VJxEEuqV7D96dG-Dua4xolItzxFv7FfbcxyRz_n704yJxaQ6NUwaFdizIOoCi2v3KKH6R_mUZrK4weBxM_Xl-x0mc7gAS_z4KfZ6e8oqMs9oONyeP3NERs0Dwt80DyOYoZxLiKxD0-jOr11njxmwzstLc0gB8jqxrNS9fOip9H7uhHWBB8MAGxCBoKMmQ8jz0h12JojpEwkxG8eD4PWeRc3SEODAPhRdg-1XZmMRVu60PifzZ2-B05y1f5-bK3sHS3B3VpBwxizYGU-73zt_K4kFrVWDlkml6t1cJSpIwi7BO9WZmmbHzHjOIEfYkeSh0d7rJ1j8peqN9P3Cy756le97lYRFIwLAatHr98M9ksV9DmOShTbht_8-3WD2b_i26fda23yzO0n9DozKx_J2sY9-YIYTVlvp1QJ6LcIr7cq5x8ebEduQ2lZsJdCQ3il5cfY2WlyCh63CjoKBhgogXLYIWIR0O9vn1O-xdd7KJKwvIQBBieQsPhbM6N_ztjhUJP5Ug6saQeuBjYXQLbwU_PRnzH1Kixrx75MXU4ehseZI9mZFvgnSmDQVTkdNqEI_UdSj0ajW1miw9GN4PPhnoggEaUaNrAqaFfinmSeYYFV_pSyweYy7aW9mr0ejkZGDa8Wrctsrv8kJhkdj6GxGFQeh6VOQRQ-M2Hstxe7sf9ajoJwycevPZ4dloThhFRH9GDPV0HKGnFIwirHHQqB7h6k9Z_esKt_ry2kF9BAVL2Q_fKm6G0ynQ8KGd2MEUvCxkNf_8MEX3La2XvpBJ1xzcyLCsmB9vm_W-JFF8wiAoILwxkYQjjNA8FwkrILlJuSuPMas8s0TkTd7LCLMtotAUQAdynwoa4rIEbpX5TawXXBRnTJleV_UU7231JKLqq0_V-jgaDKdGKO22Z1mjwvPebMNWBYzGT4j6vYdw3c8B12l398Gk5ipmxzOhsoTl6NQER2cCEmd2QZdRK5-vrP304iPMiRAzpKZXewKh66R_9GM9StBOG-AnzdpsA=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_08436172ed2d4246016ac78222acb087d194603419d9cbff60",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459872,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 278,
+   "prompt_tokens": 768,
+   "total_tokens": 1046,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 225,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.02158,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.02158,
+    "upstream_inference_prompt_cost": 0.00768,
+    "upstream_inference_completions_cost": 0.0139
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 225
+ }
+}

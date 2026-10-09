@@ -1,0 +1,95 @@
+{
+ "call_id": "e0e8e3c27372",
+ "tag": "bg_single",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1807131614
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.\n- zainteresowania: rowery szosowe, mecze Cracovii w telewizji, tanie gadżety z Aliexpress\n- lokalny punkt odniesienia: stacja paliw Shell na Wielickiej\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: kończy wpis słowem „nom”\n\nTopic for this post: drobne narzekanie na usługi\nConcrete angle: urząd, kolejka, numerek\nRegister: enthusiastic\nTarget length: about 28 words\nTime of day: early morning, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - siedze w urzedzie z numerkiem 147 a wyswietla 89 xd chyba nie zdaze na kebsa\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "c8866cb32c99b2f8f8aad19e0915cc6a1b6c861e",
+ "response": {
+  "id": "gen-1791459853-TmeEYkGxf8LJ3zVrVegx",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm thinking about the tone for this one - lowercase Polish, casual and enthusiastic despite mild grumbling, early Thursday morning at the urząd waiting for a numerek. Want to keep it generic enough not to target a specific institution, around 28 words with natural typos and missing diacritics.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSrAoKEAgSGAI4AUIIdGhpbmtpbmcSDAyVCfWfOkOq7SgTChoMQonFI/awYosNABrcIjAn5A6im0/fwdiNrfW8om46usK8wwQlOTlPn9bw2q9AgEqs/qReuvKvcr/p69rXCPkqyQlOfZ+Fztm83BnkrRW4HvhifCG3jmghUsqud6Dd1bKj20WnqBYWWh0kD0En+9sXze0KXX4R0ygouaPIcxi2bdbtfbFjMWCBAstDd5TVdOgjl5tAR42p1DsMQEhlEX6/WIaPQ5vetmev1Ud+q/2iA7157Hl49hgyN/+PRghIGesiylj0hl3AA7yb5FHpJBYleKZ/tDCfiCY9zH3FHOmICUqkH4xicf/DZ9EkrxCoYW/i3RI7i7SRfarkYMVXFYP3TlZ9GSoumbOgVM/Mitt0vCTlrYy00ldfn828fD80k6OoRvMtSdxSQSa10UwUdFOgLYZqkRSZK70qMyUTJSWqetupK1xnqnX358hR6uupD31Ss6z25x77t1fiIzkhM9kjE4gjeDPxM0XBmvvUJXzEfjFhun2M13JIzK1U+yYp10xpbkmloQ+mvG6DAmEy5pWSAV03DoIZ9ML+ny/6JMLM6sJwljXg7dA/q5wPE8zjKsMEL5PZ5Yw6sJp8vOkLFMx595MpaYQZfHX33N8dsiVBUkxT1yDkXLZ9gqe3YZwqMtMMgMVE54cycn6+3TlZJMry4aGVmTH/6gpRwTg7bNrXu+/VVEr4bl/8NxmeCA1e1FbrOlAOjY+EVyRLONACW3l5lQ4MZGwifYKkgk89EIGI/psLw8tdJPz9ukyPqI2y7bT+UkElP9YNmAB4ulsQoAVtl0AIdbMFa7h/R5b4OsE719iOd8PHeEJQAUm+W4Ehc7lAw2jnfpNUzHsXStKaembEoLMHn5LbKgGVXLoNXEu7xqa2jFUSFPndAjplF1EW46e8Y0rPAmFnwJUPmNpk9GoNjUk15YpxGzraMZqy2JX+AaAH+tREy81pXMVNbZRCs79PIGyk4phVQkwUNHFsbaFA63GqDFoGS37J9CmQWag77rskNE+zKEPnfWAnDTIJZZqHmvHPQcfwlKuIOHQpa0hQkTJJ2zha3bfFLfwm/ryAvBGHB/qu9D4GCrYnzTXVbTu8Lljp8mqp5fjMxysYsen0yDLZPx+Mkjqy0CqEeOJ8OwZ5yARk1XmRapEMladKmz6k3huv0A//j5bCLnNuhhLCQGM8wUpdjX4ApF7mnfqjQV04quMjy3MuNRQIem6MRDDkphLcYk3RUQX77K8jYrrLlo6WukZkNbMT9b5CEkHbWdQeMarfR+VnP/EJ5HHQJHT+XvqMLPGoETq+SsU+CyTzXz1j6pwqCPTtmUIXycCUOUmeI4DBSKFnz167cCjNJs6m03SVMHmlLHHp8C+Ec7R8FXW7Wc3PQCj9Q2tXYs6svqpzfjcegrYnH1pCoFLga0zJoK/8tkeTxWCs+KRkCCijcjO6EAmac8yWK9WN2piV9UTIK8ZlT5YxLcoRU8PqU0ew8uyaMQuFSkCpAbc7Mm2dD3kCVAJZ3f/4F9pCY3NylfnosaUD9tQNLmtmsAlO8scPwXvK2nft9ICMCOxg4lnxIGpdVcM8SitCJw7t61+BIF2JKKYLiqHuRkStDbH8qJd1K+GMvaGS+tU9pSdX03mrv5e4HeAvvO8U37VdqyrX0NkqcOyGkZzlRSTGhpuxOxPClfr6a9NkGMvISn1Rz9Tbvebk6FSwzNy0BmSZi2hHZtf+SXj4ekwD1YJoGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459853,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1004,
+   "total_tokens": 1304,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 300,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.010016,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.010016,
+    "upstream_inference_prompt_cost": 0.004016,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 300
+ }
+}

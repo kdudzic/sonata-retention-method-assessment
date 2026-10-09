@@ -1,0 +1,10 @@
+{
+ "model": "openai/gpt-6-luna",
+ "method": "rewrite",
+ "n_posts": 60,
+ "cost": 0.009937600000000003,
+ "calls": 120,
+ "elapsed_s": 36.0,
+ "refusals": 0,
+ "errors": []
+}

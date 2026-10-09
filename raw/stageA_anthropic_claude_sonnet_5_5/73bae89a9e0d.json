@@ -1,0 +1,86 @@
+{
+ "call_id": "73bae89a9e0d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Spacer z małym w parku. Złapał kasztana i nie chciał oddać. Wózek wyszedł chyba tylko dla ozdoby bo dalej szedł sam. Zmarzły mu rączki. No cóż... idziemy dalej. Ładna ta jesień jj.\n- Wczoraj znowu list z komornika w skrzynce. Rata poszła w górę a pensja stoi w miejscu. Nwm jak to wszystko ogarnąć w tym miesiącu. Dziś w Żabce na Lipowej liczyłam każdą złotówkę przy kasie.\n- Nie daję już rady. Wgl nie wiem kiedy to się tak zrobiło. Wstaję, robię wszystko jak trzeba i i tak za mało. Dzieci śpią a ja siedzę z telefonem i nic nie czuję. No cóż... idziemy dalej.\n- Mama wróciła od lekarza i znowu nowe badania. Nic jeszcze nie wiadomo. W banku kolejna kartka do podpisania, rata w górę. Dzwonię do mamy po pracy, potem do banku. Nwm co pierwsze ogarnąć.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "564d2cb6d5cc6c1e1fde8d29647a2116c3a4d9f3",
+ "response": {
+  "id": "gen-1791461083-bE8rVL5TewKgxIPvSMEP",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autorka opisała spacer z małym dzieckiem w parku, a później kłopoty finansowe (list od komornika, wyższa rata, liczenie pieniędzy w sklepie), zmęczenie codziennymi obowiązkami przy dzieciach oraz wizytę matki u lekarza i kolejne badania.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461083,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 112,
+   "prompt_tokens": 532,
+   "total_tokens": 644,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002184,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002184,
+    "upstream_inference_prompt_cost": 0.001064,
+    "upstream_inference_completions_cost": 0.00112
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

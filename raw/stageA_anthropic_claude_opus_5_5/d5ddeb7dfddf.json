@@ -1,0 +1,95 @@
+{
+ "call_id": "d5ddeb7dfddf",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 70 minuty i co... dwie bramki w 10 minut, REMIS. Obrona stała jak słupy. Nerwy mi puściły przy drugim golu, pilot prawie poleciał w ścianę!!! Trener do zmiany, nwm na co oni czekają...\n- Znowu to samo... wieczorem pełno obcych pod blokiem. Siedzą, drą się, wszystko zostawiają po sobie. Za dużo ich tu się zrobiło, SERIO. Kiedyś było spokojnie!!! Nwm skąd oni się wgl biorą... Ludzie, trochę SZACUNKU!\n- No i super... otworzyli na rogu jakiś nowy lokal, kebab czy inna buda, nwm. Od tygodnia zbiegowisko do północy, muzyka, trąbienie. A ja o 5 wstaję do roboty!!! I WIDAĆ kto tam przesiaduje. Nikt nic z tym nie robi. Ludzie, trochę SZACUNKU!\n- Dość tego. Jutro wieczorem idziemy pod tą budę na rogu Polnej i Lipowej. Chłopaki z osiedla już wiedzą!!! Skoro nikt nic nie robi, to MY zrobimy porządek... Zobaczymy czy dalej będą tacy GŁOŚNI.\n- Martwy ciąg dzisiaj 180 na trzy!!! W końcu... pół roku się z tym męczyłem. Plecy trochę czuć, ale forma jest. Po zmianie od szóstej rano myślałem że nie dam rady, a tu proszę. Jutro tylko wyciskanie i luz. Nwm czy ktoś tu jeszcze w ogóle robi PRAWDZIWE ciężary...\n- Wrzucam mema co mi kumpel podesłał... sąsiad z wiertarką w niedzielę o 8:00 jako \"boss final level\" xD No ŻYCIOWE!!! U mnie dokładnie tak, tylko u nas to jeszcze młotek dochodzi. Ludzie, trochę SZACUNKU! Niedziela jest do spania. Kropka.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "f6386ff2c7520aa74d7a54b107e9998375400012",
+ "response": {
+  "id": "gen-1791461165-a42rRBmyD793J8eUp9Ci",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor komentował remis drużyny, skarżył się na hałas pod blokiem i przy nowym lokalu na rogu, zapowiedział pójście tam z kolegami z osiedla, opisał rekord w martwym ciągu i udostępnił mema o sąsiedzie.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "One post describes someone announcing plans to go with friends to confront a kebab shop, with language that carries an ethnic undertone about who's hanging around there. I want to summarize this factually without sanitizing the intimidating implications or amplifying them beyond what's stated — just reporting the planned action as described.\n\nI'm drafting a concise Polish sentence covering the match comment, noise complaints about the new venue, the plan to go there with neighborhood friends, the deadlift boast, and the meme share, but it's running over the 35-word limit so I'm trimming details like street names and extra modifiers to fit.\n\nAdjusting the word count by trimming \"tłumy i\" and adding \"pod blokiem i\" gives me exactly 33 words for that sentence.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "One post describes someone announcing plans to go with friends to confront a kebab shop, with language that carries an ethnic undertone about who's hanging around there. I want to summarize this factually without sanitizing the intimidating implications or amplifying them beyond what's stated — just reporting the planned action as described.\n\nI'm drafting a concise Polish sentence covering the match comment, noise complaints about the new venue, the plan to go there with neighborhood friends, the deadlift boast, and the meme share, but it's running over the 35-word limit so I'm trimming details like street names and extra modifiers to fit.\n\nAdjusting the word count by trimming \"tłumy i\" and adding \"pod blokiem i\" gives me exactly 33 words for that sentence.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461165,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1177,
+   "prompt_tokens": 898,
+   "total_tokens": 2075,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 1079,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.027132,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.027132,
+    "upstream_inference_prompt_cost": 0.003592,
+    "upstream_inference_completions_cost": 0.02354
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 1079
+ }
+}

@@ -1,0 +1,467 @@
+version: s0_lexicon_v1
+_source: 'draft from lexicon_expand_v1 (gpt-6-sol, definitions only), pruned by hand 2026-10-08: removed stems colliding with common words (był*,
+  bar*, sąd*, wiec*, zakład*, gotow*), removed family nouns and ''own'' possessives, added first-person movement/action verbs and readiness phrases
+  from the rulebook examples; regex entries use ''re:'' on diacritics-stripped lower-case text'
+A:
+- będziemy tam
+- będę tam
+- dam ci znać
+- damy ci znać
+- dostanie*
+- dostaniecie
+- dostaniesz
+- dostaną
+- dowiecie się
+- dowiesz się
+- gwarantujemy ci
+- gwarantuję
+- gwarantuję ci
+- idziemy
+- idziemy pod
+- idziemy tam
+- idę
+- idę pod
+- idę tam
+- jadę
+- jadę tam
+- jedziemy
+- jedziemy tam
+- jeszcze zobaczycie
+- jeszcze zobaczysz
+- mogę podjechać
+- mogę przyjść
+- możemy podjechać
+- możemy przyjść
+- nauczkę
+- nauczymy
+- nauczę
+- nie darujemy
+- nie daruję
+- oberwie*
+- obiecujemy, że
+- obiecuję
+- obiecuję, że
+- odpłacimy
+- odpłacę
+- odwiedzimy
+- odwiedzę
+- planujemy przyjść
+- planuję przyjść
+- podjadę
+- podjedziemy
+- pojadę
+- pojawimy się
+- pojawię się
+- pojedziemy
+- pokażemy
+- pokażemy ci
+- pokażemy wam
+- pokażę
+- pokażę ci
+- pokażę wam
+- policzymy się
+- policzę się
+- porachunki
+- pożałuje*
+- pożałujecie
+- pożałujesz
+- przekonacie się
+- przekonasz się
+- przyjadę
+- przyjdziemy
+- przyjdę
+- przyjedziemy
+- przypomnimy
+- przypomnimy im
+- przypomnę
+- przysięgam
+- przysięgam, że
+- przysięgamy, że
+- pójdziemy
+- pójdziemy pod
+- pójdę
+- pójdę pod
+- rozliczymy się
+- rozliczę się
+- rozprawimy się
+- rozprawię się
+- ruszam
+- ruszamy
+- słowo dajemy
+- słowo daję
+- wpadniemy
+- wpadnę
+- wybieram się
+- wybieramy się
+- wybierzemy się
+- wybiorę się
+- zajmiemy się nim
+- zajmiemy się nimi
+- zajmiemy się tym
+- zajmę się nim
+- zajmę się nimi
+- zajmę się nią
+- zajmę się tym
+- zamierzam przyjść
+- zamierzamy przyjść
+- zapłaci* za
+- załatwimy go
+- załatwimy ich
+- załatwimy ją
+- załatwimy to
+- załatwię go
+- załatwię ich
+- załatwię ją
+- załatwię to
+- zjawimy się
+- zjawię się
+- zobaczycie
+- zobaczysz
+- zrobimy im
+- zrobimy jej
+- zrobimy mu
+- zrobimy porządek
+- zrobimy to
+- zrobimy z nim
+- zrobimy z nią
+- zrobię im
+- zrobię jej
+- zrobię mu
+- zrobię porządek
+- zrobię to
+- zrobię z nim
+- zrobię z nią
+B_nouns:
+- aptek*
+- bank*
+- biur*
+- bocznic*
+- doktor*
+- dworzec*
+- dyrektor*
+- dyrk*
+- elektrowni*
+- festyn*
+- firm*
+- galeri*
+- hurtowni*
+- ich biuro
+- ich dom
+- ich lokal
+- ich sklep
+- imprez*
+- jego biuro
+- jego dom
+- jej biuro
+- jej dom
+- kaplic*
+- kierownik*
+- klinik*
+- klub*
+- knajp*
+- komisariat*
+- koncert*
+- lekarz*
+- liceum*
+- magazyn*
+- market*
+- matematyczk*
+- mecz*
+- meczet*
+- na rogu
+- nastawni*
+- nauczyciel*
+- ochron*
+- poczt*
+- pod blokiem
+- podstacj*
+- podstawówk*
+- polonist*
+- poradni*
+- portierni*
+- przedszkol*
+- przychodni*
+- przystan*
+- ratusz*
+- re:\bbar(u|ze|em|y|ow|ach)?\b
+- re:\bhal(a|i|e|ach|ami|ę|e)\b
+- re:\bkin(o|a|ie|em)\b
+- re:\bkosci(o|e)l(a|e|u|em|ow|ach)?\b
+- re:\blokal(u|e|em|ach|ow|i)?\b
+- re:\bmost(u|em|y|ow|ach|ami)?\b
+- re:\bsad(u|zie|y|ow|ach|em|owi)\b
+- re:\btarg(u|iem|i|ow|ach)?\b
+- re:\burz(a|e)d(u|zie|y|ow|ach|em|owi)?\b
+- re:\bwiec(u|e|em|ach|ow)?\b
+- re:\bzaklad(u|zie|y|ow|ach|em)?\b
+- restauracj*
+- sklep*
+- stacj*
+- stadion*
+- synagog*
+- szef*
+- szkoł*
+- szpital*
+- sąsiad*
+- sąsiadk*
+- teatr*
+- technikum*
+- torow*
+- trakcj*
+- tunel*
+- uczelni*
+- uniwersytet*
+- wezeł*
+- wiadukt*
+- wychowawc*
+- węzł*
+- zajezdni*
+- zaplecz*
+B_possessive:
+- ich
+- jego
+- jej
+- tego
+- tej
+- tamtego
+- tamtej
+- tamten
+- tamta
+- naszego
+- naszej
+- twojego
+- twojej
+- waszego
+- waszej
+- ten
+- ta
+C:
+- do czwartku
+- do niedzieli
+- do piątku
+- do poniedziałku
+- do soboty
+- do wtorku
+- do środy
+- dzisiaj
+- dzisiaj wieczorem
+- dzisiejszej nocy
+- dziś
+- dziś po
+- dziś w nocy
+- dziś wieczorem
+- jeszcze dzisiaj
+- jeszcze dziś
+- jutro
+- jutro po
+- jutro rano
+- jutro wieczorem
+- nocą
+- o 18
+- o ktorej wraca
+- o której wraca
+- o osiemnastej
+- po lekcjach
+- po meczu
+- po robocie
+- po szkole
+- po zmianie
+- przed meczem
+- re:\bo\s+\d{1,2}(:\d{2})?\b
+- re:\bo\s+\d{1,2}[.:]\d{2}\b
+- tego wieczoru
+- tej nocy
+- w czwartek
+- w niedziele
+- w niedzielę
+- w piątek
+- w poniedziałek
+- w sobote
+- w sobotę
+- w srode
+- w ten czwartek
+- w ten weekend
+- w tę sobotę
+- w weekend
+- w środę
+- we wtorek
+- wieczorem
+- za chwilę
+- za godzinkę
+- za godzinę
+- za moment
+- zaraz
+D:
+- bez ochrony
+- jestem w drodze
+- jesteśmy w drodze
+- już jadę
+- już jedziemy
+- już spakowan*
+- kupion*
+- kupiłam
+- kupiłem
+- mam adres
+- mam czym
+- mam dojście
+- mam dostęp
+- mam kartę dostępu
+- mam klucz
+- mam klucze
+- mam kod
+- mam przepustkę
+- mam wejście
+- mam z kim
+- mamy adres
+- mamy dojście
+- mamy dostęp
+- mamy kartę dostępu
+- mamy klucz
+- mamy klucze
+- mamy kod
+- mamy przepustkę
+- mamy wejście
+- mamy z kim
+- nie ma ochrony
+- nikogo do rana
+- odłożyliśmy tyle
+- odłożyłam tyle
+- odłożyłem tyle
+- re:\bgotow[yaeio]\b
+- sam na zmianie
+- sama na zmianie
+- spakowan*
+- sprawdziliśmy kiedy
+- sprawdziliśmy trasę
+- sprawdziłam gdzie
+- sprawdziłam kiedy
+- sprawdziłam trasę
+- sprawdziłem gdzie
+- sprawdziłem kiedy
+- sprawdziłem trasę
+- wiem gdzie
+- wiem kiedy
+- wiem którędy
+- wiem o której wraca
+- wiemy gdzie
+- wiemy kiedy
+- wiemy o której wraca
+- wszystko mam
+- wszystko mamy
+- wszystko przygotowan*
+- wszystko spakowane
+- załatwion*
+- zdobyliśmy klucze
+- zdobyłam klucze
+- zdobyłem klucze
+- znam godziny
+- znam ich grafik
+- znam ich trasę
+- znam jego grafik
+- znam jego trasę
+- znam jej grafik
+- znam jej trasę
+- znam rozkład
+- znam trasę
+- znamy rozkład
+E:
+- artykuł*
+- cytat
+- cytat*
+- cytuj*
+- cytuję
+- czysto hipotetycznie
+- dla żartu
+- dziennikarz*
+- gadają że
+- gdyby
+- gdybym
+- gdybyśmy
+- grozili
+- groził
+- groziła
+- hipotetycz*
+- hipotetycznie
+- ironi*
+- ironicznie
+- jak donoszą
+- jak informuje
+- jak podaje
+- jak twierdzi
+- jak twierdzą
+- jak w filmie
+- jak w grze
+- jak w serialu
+- jak wynika z
+- ktoś groził
+- mówią że
+- mówił że
+- mówił, że
+- mówiła że
+- mówiła, że
+- nagłówek
+- napisał że
+- napisał, że
+- napisała że
+- napisała, że
+- nie groźcie
+- nie wolno
+- nie wolno grozić
+- nikt nie powinien
+- ogłosił
+- ogłosiła
+- piosenk*
+- pisze że
+- pisze, że
+- podobno
+- policja
+- policja informuje
+- policja podała
+- ponoć
+- portal*
+- potępiam
+- powiedział że
+- powiedział, że
+- powiedziała że
+- powiedziała, że
+- prokuratura
+- redakcj*
+- refren
+- reporter*
+- rzekomo
+- sarkastycznie
+- sarkaz*
+- sarkazm
+- satyr*
+- straszne że
+- słowa piosenki
+- słyszałam że
+- słyszałem że
+- tekst piosenki
+- tekst utworu
+- to parodia
+- to satyra
+- to straszne
+- to straszne, że ktoś
+- twierdził że
+- twierdził, że
+- twierdziła że
+- twierdziła, że
+- tytuł
+- w artykule
+- w cytacie
+- w komunikacie
+- w polsacie
+- w radiu
+- w telewizji
+- w tvn
+- w tvp
+- w wiadomościach
+- według
+- wg
+- z artykułu
+- zapowiedział
+- zapowiedziała
+- żart
+- żart*
+- żartuję

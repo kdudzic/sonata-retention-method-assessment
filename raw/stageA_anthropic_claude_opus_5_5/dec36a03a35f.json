@@ -1,0 +1,95 @@
+{
+ "call_id": "dec36a03a35f",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... w sobote stal gra u siebie wiec zbiorka standardowo na spoldzielczej pod zabka o 15... kto jeszcze nie ma biletu niech ogarnia bo potem bd placz. po meczu moze grill u mlodego jak pogoda da rade. no i git stary\n- \n- ahaha no właśnie stary... widziales co otworzyli na rogu przy spółdzielczej?? ukrowy sklep! tam gdzie byl ten lombard... wszystko po ichniemu napisane nwm nawet co sprzedaja wgl. przechod\n- no właśnie stary... druga zmiana caly tydzien a kierownik jeszcze dorzucil nadgodziny w sobote rano. wozek sie zepsul to palety na recznym ciagalismy pol dnia... plecy mi wysiadaja. ale po 14 wolne no i git, zdaze na orlik jj\n- no wlasnie stary... ja tez juz mam dosc tego gadania. niech kurwy spierdalaja do siebie i tyle!! nwm czemu wgl ktos sie z tym certoli... jutro i tak przystanek o 17 przed stala, ogarniamy jak zwykle\n- ahaha stary ten mem z bramkarzem co sie rzuca w druga strone a pilka wpada mu prosto w krocze... to normalnie ja na orliku w czwartek jj. pawel mi to wyslal o 23 i nie moge spac ze smiechu... no i git\n- \n- ahaha no wlasnie... grill u nas za blokiem w sobote po meczu, kielbaski karkowka i co tam kto przyniesie. wegiel juz kupiony w zabce przy spoldzielczej, mlody ogarnia rozpałke. stary pogoda ma byc git wiec ogarniamy od 18... no i git\n- no wlasnie... znowu ci nowi z tego bloku co go postawili za orlikiem. parkuja gdzie chca, na boisko wchodza jakby ich bylo wgl, a potem pretensje ze glosno. stary 20 lat tu mieszkam i nikomu nie przeszkadzalo... nwm skad sie tacy biora\n- ahaha no i git... stal wygrywa 2:0 a ja ledwo zdazylem z roboty, z przystanku na spoldzielczej leciałem prawie biegiem. trybuna dzis glosna jak dawno nie... w sobote wyjazd ogarniamy, kto jedzie stary pisac\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "63bdee94e01cdadb6ecc36c43e8c620ae8c8cfcd",
+ "response": {
+  "id": "gen-1791460315-nxxlevqhqOJprj7qIuyA",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I'm seeing a mix of everyday local content—football matches, meetups, warehouse shifts, grill gatherings, a new shop and neighbors—alongside one hostile comment targeting Ukrainians. I should summarize this as neutral background context without singling out or labeling the hostile remark directly.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm seeing a mix of everyday local content—football matches, meetups, warehouse shifts, grill gatherings, a new shop and neighbors—alongside one hostile comment targeting Ukrainians. I should summarize this as neutral background context without singling out or labeling the hostile remark directly.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSoQcKEAgSGAI4AUIIdGhpbmtpbmcSDOOO0NGQgUZTUko7+BoMu1la8ES3ZeFNndU0IjC2HlOYsjpu3/BqWRFrBZZ5OFFCybJ6NUHBrHr5LAQN7cNor0furNpD6Ex7SG4fauMqvgazN4QO/C19uIj5PYOsicJkPTO1e5ODvPlfqyMZjyUrLETwmTXnp3gUEm7yA/I7Wl21IbjpAW1YM5ChikEtUOYdUoXjhusn2x38X9Wb5+c+cgHCnrN0rsErvmrkotdbjVVYWaum5aHUjp5GZ+qE21CnFwUs7zOEecvRbLBrkXJYFpACCaTDHh4pJL0t4iI/15oLzZZ/AZfuBRBLcTiaCbvFIxtS2D1/K4Adjz5sFuThmox3KdYE5ZGf8T+RRDg7t0IeotwBFe2IAtG0a4zCZnly2iSxWyCEnjIo5ztO43bVcRvqteXPV0lKPHEC5McJ9PJ0uLlH3rvVUKgTGj4ny0loMyxWEZNeuVzBotMHirhz+5/1iFmwwQamPa6ZX/TFAeuB1ZF4Pq2mBqAyV5vtGud5OhJpHoHzvXTPyaRiI1rrdhmntmbzHHNO9qC970JWo6ABqFJD9z9rNXvmymrL9FFiiWmdbzMNCZ2uGAZbkh8AWWCG1bdtSX9NMk1jIBaWgwJOAyik7DTwYsuOf/sCy8bjxE6LVIr2Z65xF/l5uHjnA/s3O0xBv5aMSDVZTu6M7uGLX7M64SOA0UEpldI5SABBFH3cU8ZLFVr2jrNNLi9cVYGe2h/NWL9zfUGRCu4/pQBDhIAJ9m3BqFy/q6lBJfYb4hZNztbrNMYu+fYTU7w+QlLpo/MD/946aQqsY2XPhple9J6G2A8ZlMdXoRBmU0bMzeNWkzGDdbP42vSpxbVSFDwaZ2rftR/P/foWf4ZPPNLb+qnCnIpynP/hCbwvYDglrVDF6AdIIlLlnjmPDGfp5KknC+8kJ38wHaseuEL0nypPiLjtzOJCt5TNtDy1stCJu+JKVW1WtwdcdZAzS6/In97xoFx4qrlMXfLpndP2M15L93IaVI7FaxBYWiaCAtBwuihe5r8pbdtJUbAfBkM02Ak+ikD7xi0WW0UgqDz7hvpmxdkEvuGKYn9oZ//LSjNgK8mJtIqXf2T2FrGxjJqWcvMs251OLhwCThFlVxHRhzJNRiQcV6Yl57FVXFPNIsIZHEoTiIHiI9YbAWsQNmXWPz8RMyS7vphKdtUdGPWD7dSxhjUFRNGAkvxw1AxIUBgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460315,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 993,
+   "total_tokens": 1113,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006372,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006372,
+    "upstream_inference_prompt_cost": 0.003972,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

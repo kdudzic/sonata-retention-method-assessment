@@ -1,0 +1,87 @@
+{
+ "call_id": "ef35432fe5b5",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1370815026
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Opiekuje się przedszkolakiem w domu w Oławie i prowadzi domowe sprawy; pisze w porze drzemki albo wieczorem.\n- zainteresowania: farby plakatowe, sadzonki ziół, wypieki z jabłkami\n- lokalny punkt odniesienia: ławka przy ulicy 1 Maja w Oławie\n- aktualna sytuacja życiowa: Planuje przemeblowanie dziecięcego pokoju i codziennie testuje nowe sposoby przechowywania zabawek.\n- sposób pisania: zdania: medium; interpunkcja: wielokropki i wykrzykniki; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: powtarza „mała rzecz, a cieszy”\n\nTopic for this post: dzieci i rodzina\nConcrete angle: W czwartek w porze obiadu przedszkolak po raz pierwszy przejechał bez pomocy kawałek alejki na rowerze. Sama pobiegła obok, nie dotykając kierownicy. | mood: delighted | opener: reported speech | verbal tic in this post: yes\nRegister: enthusiastic\nTarget length: about 24 words\nTime of day: lunch break, Thursday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - „To będzie kolorowe!”... w środę po południu rozpakował urodzinowe naklejki i od razu okleił pudełko na klocki 😄 wyglądają SUPER!\n  - „a dzieciaki jeszcze spia?” dziadek od razu, jak zadzwonilem w sobote o swicie  strasznie sie ucieszyl, ze wpadna dzisiaj\n  - „sama jadę!”... w środę po południu odepchnęła się na rowerku i przejechała od drzwi aż do regału z zabawkami 🥹 patrzyłam znad pokrowców, a ona już chciała jeszcze raz... zobaczymy po drzemce 🚲\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "3727695ade96a3b7651038676f9881eba08c20f0",
+ "response": {
+  "id": "gen-1791464938-vR8AEu33cLJvZl3gJguQ",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: „Patrz, jadę!”... dziś w porze obiadu pierwszy raz przejechał kawałek alejki BEZ pomocy 🚲 pobiegłam obok, nawet nie dotknęłam kierownicy! Ale się cieszyłam 🥹",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464938,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 62,
+   "prompt_tokens": 890,
+   "total_tokens": 952,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0024,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0024,
+    "upstream_inference_prompt_cost": 0.00178,
+    "upstream_inference_completions_cost": 0.00062
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

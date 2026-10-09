@@ -1,0 +1,95 @@
+{
+ "call_id": "e1ac01c0cab0",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1711835317
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Programista na pełnym etacie zdalnym w Gdyni, pracuje od 8 do 16, posty wrzuca w przerwach i wieczorami po spacerze.\n- zainteresowania: fotografia uliczna, kolarstwo górskie, kawa z palarni\n- lokalny punkt odniesienia: skwer Kościuszki przy molo w Gdyni\n- aktualna sytuacja życiowa: Przeprowadza się z synem do większego mieszkania i urządza w nim gabinet.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete, dużo nawiasów; wielkie litery: standard; literówki: none; skróty: none; emoji: no\n- tik językowy: zaczyna od „Krótka obserwacja:”\n\nTopic for this post: jedzenie i gotowanie\nConcrete angle: W sobotę przed południem pomagał sąsiadowi z nowego bloku rozpalić grilla ogrodowego przy użyciu starej suszarki do włosów i węgla drzewnego z Castoramy. | mood: amused | opener: mid-thought | verbal tic in this post: yes\nRegister: terse\nTarget length: about 42 words\nTime of day: late morning, Saturday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - czy smazenie tego starego ryzu z niedzieli z sosem czosnkowym o czwartej rano to juz dno xd sql mnie wykonczy dzis\n  - Czy zwykła kajzerka z plastrem żółtego sera może smakować lepiej niż cały niedzielny obiad? Pochłonięta rano na stojąco w sieni smakowała po prostu wybornie.\n  - Dziewczynki stwierdziły, że do kiełbasek koniecznie musimy upiec na ruszcie moje jabłka z cynamonem ze słoika, i wyszło to naprawdę przepysznie.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "e48cceb3eff181d4fb8ded8c0a67ed9a35c9b963",
+ "response": {
+  "id": "gen-1791461684-Dn6SBmdP5cb9XCK49luG",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: ...jednak stara suszarka do włosów (znaleziona gdzieś na dnie pudła podczas rozpakowywania gabinetu) w połączeniu z tanim węglem drzewnym z Castoramy potrafi zdziałać cuda na ruszcie, więc sąsiad z parteru (ten od wczorajszego remontu) właśnie zyskał perfekcyjny, gotowy żar pod kiełbaski.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Reviewing The Profile**\n\nI'm now carefully examining the user's profile to understand their context better. I'm focusing on their work routine as a remote software developer in Gdynia, the timing of their posts, and their interests like street photography and mountain biking. I'm trying to figure out how these aspects influence their needs.\n\n\n**Analyzing User Data**\n\nI'm now diving deeper into the user's details, particularly their relocation with their son and the home office setup. I see a tendency towards long sentences with precise punctuation, capitalization, and no typos. The local reference to Skwer Kościuszki is interesting. I've noted the absence of abbreviations and emojis. I had a small moment of confusion about the verbal tic, which I've now resolved.\n\n\n**Interpreting The Contradictions**\n\nI'm now grappling with the conflicting constraints. The profile's preference for long sentences and complete punctuation clashes with the suggested terse register. The \"verbal tic\" specification adds another layer of complexity. However, the explicit \"do not use it in this post\" constraint takes precedence. I have a concrete angle: a Saturday late morning, helping a neighbor light a grill with a hair dryer, and a target word count of approximately 42 words.\n\n\n**Refining The Draft**\n\nI'm now iterating on the text, focusing on the run-on sentence style and amused mood. The original draft is being tweaked for flow and comedic effect, ensuring the tone aligns with a Saturday morning grilling scenario. The target word count is in my mind, as I balance detail with concision. The constraint regarding the verbal tic is, of course, absolutely clear.\n\n\n**Crafting The Narrative**\n\nI'm now putting it all together. I've composed a lengthy run-on sentence describing a neighbor's successful grilling, fueled by a repurposed hair dryer and Castorama charcoal. I've included the details about the newly unpacked office and the neighbor's recent drilling, all while maintaining the amused tone. I've aimed for a word count around 41 words. All the constraints are satisfied.\n\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Reviewing The Profile**\n\nI'm now carefully examining the user's profile to understand their context better. I'm focusing on their work routine as a remote software developer in Gdynia, the timing of their posts, and their interests like street photography and mountain biking. I'm trying to figure out how these aspects influence their needs.\n\n\n**Analyzing User Data**\n\nI'm now diving deeper into the user's details, particularly their relocation with their son and the home office setup. I see a tendency towards long sentences with precise punctuation, capitalization, and no typos. The local reference to Skwer Kościuszki is interesting. I've noted the absence of abbreviations and emojis. I had a small moment of confusion about the verbal tic, which I've now resolved.\n\n\n**Interpreting The Contradictions**\n\nI'm now grappling with the conflicting constraints. The profile's preference for long sentences and complete punctuation clashes with the suggested terse register. The \"verbal tic\" specification adds another layer of complexity. However, the explicit \"do not use it in this post\" constraint takes precedence. I have a concrete angle: a Saturday late morning, helping a neighbor light a grill with a hair dryer, and a target word count of approximately 42 words.\n\n\n**Refining The Draft**\n\nI'm now iterating on the text, focusing on the run-on sentence style and amused mood. The original draft is being tweaked for flow and comedic effect, ensuring the tone aligns with a Saturday morning grilling scenario. The target word count is in my mind, as I balance detail with concision. The constraint regarding the verbal tic is, of course, absolutely clear.\n\n\n**Crafting The Narrative**\n\nI'm now putting it all together. I've composed a lengthy run-on sentence describing a neighbor's successful grilling, fueled by a repurposed hair dryer and Castorama charcoal. I've included the details about the newly unpacked office and the neighbor's recent drilling, all while maintaining the amused tone. I've aimed for a word count around 41 words. All the constraints are satisfied.\n\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461684,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1727,
+   "prompt_tokens": 836,
+   "total_tokens": 2563,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 1632,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00710325,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00710325,
+    "upstream_inference_prompt_cost": 0.000627,
+    "upstream_inference_completions_cost": 0.00647625
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 1632
+ }
+}

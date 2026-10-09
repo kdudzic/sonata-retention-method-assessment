@@ -1,0 +1,87 @@
+{
+ "call_id": "d80970db3fc2",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 527965410
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Montuje drzwi w mieszkaniach w Rybniku, wyjeżdża wcześnie rano i zagląda do telefonu podczas przerwy na obiad.\n- zainteresowania: stare narzędzia, grillowane warzywa, bilard\n- lokalny punkt odniesienia: sklep z farbami przy ulicy Chwałowickiej w Rybniku\n- aktualna sytuacja życiowa: Urządza balkon po pracy i szuka miejsca na skrzynkę na narzędzia.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki zamiast przecinków; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: dopisuje „pasuje jak trzeba”\n\nTopic for this post: pogoda\nConcrete angle: W niedzielę podczas przerwy na obiad zobaczył szron na szybie auta. Rano przed wyjazdem nie musiał jej jeszcze skrobać. | mood: surprised | opener: question | verbal tic in this post: no\nRegister: chatty\nTarget length: about 13 words\nTime of day: lunch break, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: you may mention it if it fits\n- the author's current life situation (from the profile) in this post: you may refer to it\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - W poniedziałkowej przerwie zobaczyłam pierwszy szron na doniczkach przed kwiaciarnią! Ale mnie zaskoczył, szybko przeniosłam je do środka 🪴❄️\n  - znowu trzeba skrobać szyby... pierwszy mróz pod blokiem, a ja już ubrana zawróciłam po cieplejsze rękawiczki 🥶\n  - wyszedłem tylko na chwilę. A tu jeszcze różowy pas nad dachami po zachodzie. Jak na tak późną godzinę w środę. Stałem i patrzyłem. Zrobiło mi się jakoś lżej.\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "aab0eec1245d17547a546ac152dd9c3b678c32fb",
+ "response": {
+  "id": "gen-1791464585-4lfrsiNaLR0hQIlziDrY",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: skąd ten szron na szybie auta? Rano przed wyjazdem nic nie skrobałem. Przerwa obiadowa w niedzielę. pasuje jak trzeba",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464585,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 44,
+   "prompt_tokens": 832,
+   "total_tokens": 876,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002104,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002104,
+    "upstream_inference_prompt_cost": 0.001664,
+    "upstream_inference_completions_cost": 0.00044
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

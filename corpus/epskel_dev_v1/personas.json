@@ -1,0 +1,722 @@
+[
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Układa towar w sklepie spożywczym; pisze rano przed zmianą albo wieczorem.",
+  "interests": [
+   "domowe przetwory",
+   "krzyżówki",
+   "promocje na rośliny"
+  ],
+  "local_reference": "sklep papierniczy przy ulicy Kaliskiej w Ostrowie Wielkopolskim",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "kropki rzadko",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "kończy wpisy „i już”",
+  "posts_per_week": 3,
+  "life_situation": "Przestawia meble w małym mieszkaniu i szuka miejsca na kolejne doniczki.",
+  "author_id": "A001",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Prowadzi wózek widłowy w magazynie; najczęściej pisze po popołudniowej zmianie.",
+  "interests": [
+   "modelarstwo kartonowe",
+   "żużel w radiu",
+   "naprawy roweru"
+  ],
+  "local_reference": "przystanek przy ulicy Toruńskiej w Inowrocławiu",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "dużo przecinków i nawiasów",
+   "capitalisation": "standard",
+   "typos": "rare",
+   "abbreviations": "none",
+   "emoji": "no"
+  },
+  "verbal_tic": "wtrąca „swoją drogą”",
+  "posts_per_week": 2,
+  "life_situation": "Składa kartonowy model statku i co weekend pokazuje postępy.",
+  "author_id": "A002",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Pracuje jako pomoc kuchenna w szkolnej stołówce; zagląda do sieci po obiedzie.",
+  "interests": [
+   "tanie obiady",
+   "sadzonki pomidorów",
+   "spacery nad rzeką"
+  ],
+  "local_reference": "ławki przy ulicy Nadbrzeżnej w Łomży",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "wielokropki i długie zdania",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "none",
+   "emoji": "frequent"
+  },
+  "verbal_tic": "zaczyna od „a swoją drogą”",
+  "posts_per_week": 4,
+  "life_situation": "Urządza balkon pod uprawę pomidorów i testuje różne donice.",
+  "author_id": "A003",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Naprawia instalacje wodne na zlecenie; pisze między wizytami u klientów.",
+  "interests": [
+   "stare narzędzia",
+   "wędkarstwo spławikowe",
+   "zupy jednogarnkowe"
+  ],
+  "local_reference": "kiosk przy ulicy Żeromskiego w Pile",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "sparse, no commas",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "heavy",
+   "emoji": "no"
+  },
+  "verbal_tic": "dopina zdanie słowem „wiadomo”",
+  "posts_per_week": 2,
+  "life_situation": "Porządkuje garaż i oddaje narzędzia, których już nie używa.",
+  "author_id": "A004",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Studiuje geodezję i dorabia w punkcie ksero; publikuje głównie wieczorem.",
+  "interests": [
+   "mapy papierowe",
+   "targi staroci",
+   "herbata liściasta"
+  ],
+  "local_reference": "punkt ksero przy ulicy Chodkiewicza w Bydgoszczy",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "krótkie zdania, czasem wykrzyknik",
+   "capitalisation": "random caps for emphasis",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "frequent"
+  },
+  "verbal_tic": "pisze „serio serio” dla podkreślenia",
+  "posts_per_week": 3,
+  "life_situation": "Przygotowuje projekt mapy na zaliczenie i urządza kącik do nauki.",
+  "author_id": "A005",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Jest na emeryturze i pomaga prowadzić rodzinny ogródek; pisze po porannych zakupach.",
+  "interests": [
+   "renowacja krzeseł",
+   "ptaki w ogrodzie",
+   "szachy korespondencyjne"
+  ],
+  "local_reference": "warzywniak przy ulicy Sienkiewicza w Suwałkach",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "correct and complete",
+   "capitalisation": "standard",
+   "typos": "none",
+   "abbreviations": "none",
+   "emoji": "rare"
+  },
+  "verbal_tic": "kończy uwagą „tak to wygląda u mnie”",
+  "posts_per_week": 1,
+  "life_situation": "Odnawia dwa krzesła z piwnicy i notuje, co pojawia się w ogródku.",
+  "author_id": "A006",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Pracuje w kwiaciarni; pisze rano przed otwarciem i po zamknięciu.",
+  "interests": [
+   "bukiety z polnych kwiatów",
+   "ceramiczne wazony",
+   "balkonowe zioła"
+  ],
+  "local_reference": "przystanek przy ulicy Grunwaldzkiej w Elblągu",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "oszczędna, czasem bez kropek",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "często dodaje „no pięknie”",
+  "posts_per_week": 3,
+  "life_situation": "Urządza balkon i co tydzień sprawdza, które zioła się przyjęły.",
+  "author_id": "A007",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Rozwozi przesyłki busem; zagląda do telefonu podczas przerwy obiadowej i wieczorem.",
+  "interests": [
+   "audiobooki w trasie",
+   "myjnie samochodowe",
+   "zapiekanki"
+  ],
+  "local_reference": "parking przy ulicy Fabrycznej w Kaliszu",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "przecinki stawia tylko czasami",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "no"
+  },
+  "verbal_tic": "zaczyna od „dobra, więc”",
+  "posts_per_week": 2,
+  "life_situation": "Testuje nowe termosy, żeby kawa dłużej trzymała ciepło w trasie.",
+  "author_id": "A008",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Uczy plastyki w szkole podstawowej; pisze po lekcjach, zwykle późnym popołudniem.",
+  "interests": [
+   "linoryt",
+   "wystawy ceramiki",
+   "porządkowanie zdjęć"
+  ],
+  "local_reference": "skwer przy ulicy Słowiańskiej w Legnicy",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "dużo przecinków i nawiasów",
+   "capitalisation": "standard",
+   "typos": "none",
+   "abbreviations": "none",
+   "emoji": "rare"
+  },
+  "verbal_tic": "wtrąca „tak na marginesie”",
+  "posts_per_week": 1,
+  "life_situation": "Przygotowuje szkolną wystawę prac z papieru i zbiera pomysły na oprawę.",
+  "author_id": "A009",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Montuje rolety i moskitiery; pisze między zleceniami albo po powrocie do domu.",
+  "interests": [
+   "miarki laserowe",
+   "grill elektryczny",
+   "piłka halowa"
+  ],
+  "local_reference": "piekarnia przy ulicy Wojska Polskiego w Koninie",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "krótkie zdania, często bez przecinków",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "heavy",
+   "emoji": "no"
+  },
+  "verbal_tic": "kończy wpisy „taki plan”",
+  "posts_per_week": 4,
+  "life_situation": "Odkłada na nową skrzynkę narzędziową i porównuje modele po pracy.",
+  "author_id": "A010",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Studiuje architekturę krajobrazu i dorabia w kinie; pisze wieczorami po zajęciach lub zmianie.",
+  "interests": [
+   "plakaty filmowe",
+   "miejskie rabaty",
+   "rysowanie tuszem"
+  ],
+  "local_reference": "budka z kawą przy ulicy Wieniawskiej w Lublinie",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "wielokropki i pytajniki",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "frequent"
+  },
+  "verbal_tic": "często pyta „kto też tak ma?”",
+  "posts_per_week": 3,
+  "life_situation": "Kończy projekt niewielkiego skweru na zaliczenie i szuka pomysłów podczas spacerów.",
+  "author_id": "A011",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Jest na emeryturze i opiekuje się działką; pisze po południu, gdy wróci do domu.",
+  "interests": [
+   "uprawa dyni",
+   "karmniki dla ptaków",
+   "audycje o kosmosie"
+  ],
+  "local_reference": "brama ogródków przy ulicy Leśnej w Słupsku",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "poprawna, z długimi zdaniami",
+   "capitalisation": "standard",
+   "typos": "none",
+   "abbreviations": "none",
+   "emoji": "no"
+  },
+  "verbal_tic": "dodaje „zobaczymy, co z tego wyjdzie”",
+  "posts_per_week": 2,
+  "life_situation": "Buduje podpory pod dynie i notuje, jak zmienia się działka z tygodnia na tydzień.",
+  "author_id": "A012",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Pracuje w pralni samoobsługowej; pisze rano przed otwarciem albo wieczorem.",
+  "interests": [
+   "składanie ubrań",
+   "seriale kryminalne",
+   "tanie perfumy"
+  ],
+  "local_reference": "przystanek przy ulicy Lipowej w Białymstoku",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "sparse, no commas",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "często dopisuje „no cóż”",
+  "posts_per_week": 3,
+  "life_situation": "Przez najbliższe miesiące urządza wynajęty pokój i szuka miejsca na swoje rzeczy.",
+  "author_id": "A013",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Naprawia windy w budynkach mieszkalnych; pisze po powrocie z pracy.",
+  "interests": [
+   "stare radia",
+   "tenis stołowy",
+   "pieczenie pizzy"
+  ],
+  "local_reference": "pawilon usługowy przy ulicy Słonecznej w Radomiu",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "correct and complete",
+   "capitalisation": "standard",
+   "typos": "rare",
+   "abbreviations": "none",
+   "emoji": "no"
+  },
+  "verbal_tic": "wtrąca „rzecz w tym”",
+  "posts_per_week": 2,
+  "life_situation": "Po pracy odnawia stary stolik i powoli kompletuje narzędzia do domowego warsztatu.",
+  "author_id": "A014",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Studiuje bibliotekoznawstwo i pilnuje dzieci po zajęciach; pisze późnym wieczorem.",
+  "interests": [
+   "gry planszowe",
+   "zakładki do książek",
+   "kakao z przyprawami"
+  ],
+  "local_reference": "sklepik przy ulicy Krótkiej w Olsztynie",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "ellipsis everywhere",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "frequent"
+  },
+  "verbal_tic": "zaczyna od „w sumie to”",
+  "posts_per_week": 4,
+  "life_situation": "Przygotowuje pracę dyplomową i próbuje znaleźć stałe miejsce do nauki.",
+  "author_id": "A015",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Obsługuje sortownię odpadów na popołudniowej zmianie; pisze przed południem.",
+  "interests": [
+   "darty",
+   "naprawa lamp",
+   "kanapki na ciepło"
+  ],
+  "local_reference": "plac przy ulicy Kolejowej w Żyrardowie",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "sparse, no commas",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "heavy",
+   "emoji": "no"
+  },
+  "verbal_tic": "kończy wpisy „i git”",
+  "posts_per_week": 2,
+  "life_situation": "Składa używane biurko i przestawia meble, żeby wygospodarować kąt do majsterkowania.",
+  "author_id": "A016",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Prowadzi niewielki zakład krawiecki; pisze w przerwie obiadowej lub po zamknięciu.",
+  "interests": [
+   "kolorowe guziki",
+   "tkaniny w kratę",
+   "quizy telewizyjne"
+  ],
+  "local_reference": "ławka przy ulicy Pocztowej w Jeleniej Górze",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "lots of exclamation marks",
+   "capitalisation": "random caps for emphasis",
+   "typos": "none",
+   "abbreviations": "none",
+   "emoji": "rare"
+  },
+  "verbal_tic": "często dodaje „ot, cała historia”",
+  "posts_per_week": 1,
+  "life_situation": "Porządkuje zapasy materiałów i przygotowuje nowe miejsce na maszynę do szycia.",
+  "author_id": "A017",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Jest na emeryturze i odbiera wnuka ze świetlicy; pisze zwykle po śniadaniu.",
+  "interests": [
+   "pociągi regionalne",
+   "domowe naleśniki",
+   "stare pocztówki"
+  ],
+  "local_reference": "przejście podziemne przy ulicy Dworcowej w Tczewie",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "correct and complete",
+   "capitalisation": "standard",
+   "typos": "rare",
+   "abbreviations": "none",
+   "emoji": "no"
+  },
+  "verbal_tic": "wtrąca „jakby nie patrzeć”",
+  "posts_per_week": 3,
+  "life_situation": "Segreguje pudła z pamiątkami i planuje krótkie wycieczki pociągiem.",
+  "author_id": "A018",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Pracuje przy kasie w drogerii; pisze w autobusie przed zmianą albo wieczorem.",
+  "interests": [
+   "lakiery do paznokci",
+   "siatkówka w TV",
+   "wyprzedaże książek"
+  ],
+  "local_reference": "przystanek przy ulicy Opolskiej w Krakowie",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "skąpa, często bez przecinków",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "frequent"
+  },
+  "verbal_tic": "często dopisuje „no weź”",
+  "posts_per_week": 3,
+  "life_situation": "Przestawia meble w wynajmowanym pokoju i szuka miejsca na kolejną półkę.",
+  "author_id": "A019",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Obsługuje maszyny w drukarni; pisze po porannej zmianie lub późnym wieczorem.",
+  "interests": [
+   "stare aparaty fotograficzne",
+   "domowe burgery",
+   "badminton"
+  ],
+  "local_reference": "sklep spożywczy przy ulicy Wyszyńskiego w Stargardzie",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "poprawna, czasem myślniki",
+   "capitalisation": "standard",
+   "typos": "rare",
+   "abbreviations": "none",
+   "emoji": "rare"
+  },
+  "verbal_tic": "wtrąca „po kolei”",
+  "posts_per_week": 2,
+  "life_situation": "Urządza kącik do fotografowania drobnych przedmiotów na sprzedaż.",
+  "author_id": "A020",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Pracuje jako rejestratorka w salonie fryzjerskim; pisze w przerwie na obiad i po zamknięciu.",
+  "interests": [
+   "układanie puzzli",
+   "kawa mrożona",
+   "tanie doniczki"
+  ],
+  "local_reference": "piekarnia przy ulicy Kościuszki w Rzeszowie",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "wielokropki i przecinki stawiane na wyczucie",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "frequent"
+  },
+  "verbal_tic": "zaczyna od „słuchajcie no”",
+  "posts_per_week": 4,
+  "life_situation": "Kompletuje wyposażenie małego balkonu na cieplejsze miesiące.",
+  "author_id": "A021",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Prowadzi lekcje matematyki w technikum; pisze po sprawdzeniu zeszytów, zwykle wieczorem.",
+  "interests": [
+   "kostka Rubika",
+   "biegi przełajowe",
+   "pieczenie bułek"
+  ],
+  "local_reference": "ławka przy ulicy Mickiewicza w Tarnowie",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "poprawna i pełna",
+   "capitalisation": "standard",
+   "typos": "none",
+   "abbreviations": "none",
+   "emoji": "no"
+  },
+  "verbal_tic": "kończy myśl słowami „tyle z obserwacji”",
+  "posts_per_week": 1,
+  "life_situation": "Przygotowuje szkolny turniej łamigłówek i testuje zadania w domu.",
+  "author_id": "A022",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Rozlicza zamówienia w firmie meblowej; pisze w tramwaju i podczas przerwy obiadowej.",
+  "interests": [
+   "szydełkowe podkładki",
+   "komedie romantyczne",
+   "basen"
+  ],
+  "local_reference": "kiosk przy ulicy Gdańskiej w Łodzi",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "głównie kropki, bez przecinków",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "heavy",
+   "emoji": "rare"
+  },
+  "verbal_tic": "dopisuje „eh no”",
+  "posts_per_week": 3,
+  "life_situation": "Uczy się robić na szydełku większy koc i co tydzień dokupuje włóczkę.",
+  "author_id": "A023",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Pracuje przy pielęgnacji zieleni miejskiej; pisze rano przed wyjazdem ekipy albo po pracy.",
+  "interests": [
+   "akwarium z roślinami",
+   "stare komiksy",
+   "domowe ogórki małosolne"
+  ],
+  "local_reference": "pawilon spożywczy przy ulicy Sikorskiego w Ełku",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "długie zdania z licznymi przecinkami",
+   "capitalisation": "standard",
+   "typos": "rare",
+   "abbreviations": "none",
+   "emoji": "no"
+  },
+  "verbal_tic": "wtrąca „tak czy inaczej”",
+  "posts_per_week": 2,
+  "life_situation": "Zakłada nowe akwarium i notuje, które rośliny dobrze się w nim przyjmują.",
+  "author_id": "A024",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Pracuje na porannej zmianie w piekarni; pisze po południu.",
+  "interests": [
+   "formy do ciasta",
+   "spacery po osiedlu",
+   "domowe lemoniady"
+  ],
+  "local_reference": "przystanek przy ulicy Cichej w Lesznie",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "skąpa, często bez przecinków",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "często dopisuje „no dobra”",
+  "posts_per_week": 3,
+  "life_situation": "Próbuje urządzić mały balkon przed latem.",
+  "author_id": "A025",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Pracuje w dziale obsługi klienta firmy energetycznej; pisze w drodze do domu.",
+  "interests": [
+   "gry słowne",
+   "domowa kawa",
+   "spacery po lesie"
+  ],
+  "local_reference": "sklep osiedlowy przy ulicy Polnej w Płocku",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "poprawna, pełne zdania",
+   "capitalisation": "standard",
+   "typos": "rare",
+   "abbreviations": "none",
+   "emoji": "no"
+  },
+  "verbal_tic": "zaczyna od „krótka obserwacja”",
+  "posts_per_week": 2,
+  "life_situation": "Planuje wymianę mebli w przedpokoju i porównuje wymiary.",
+  "author_id": "A026",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Studiuje filologię i dorabia w lodziarni; pisze wieczorem po zamknięciu.",
+  "interests": [
+   "ozdabianie notesów",
+   "lemoniada z miętą",
+   "tanie bilety do kina"
+  ],
+  "local_reference": "ławka przy ulicy Parkowej w Opolu",
+  "writing_style": {
+   "sentence_length": "long run-on",
+   "punctuation": "wielokropki i nawiasy",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "frequent"
+  },
+  "verbal_tic": "często pisze „i tak się kręci”",
+  "posts_per_week": 4,
+  "life_situation": "Układa plan zajęć na kolejny semestr i szuka miejsca na dodatkowe zmiany.",
+  "author_id": "A027",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Pracuje jako stolarz przy zabudowach na wymiar; pisze po powrocie z montażu.",
+  "interests": [
+   "szlifowanie drewna",
+   "zestawy bitów",
+   "makaron z patelni"
+  ],
+  "local_reference": "parking przy ulicy Rzemieślniczej w Nowym Sączu",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "kropki zamiast przecinków",
+   "capitalisation": "random caps for emphasis",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "heavy",
+   "emoji": "no"
+  },
+  "verbal_tic": "wtrąca „na moje oko”",
+  "posts_per_week": 2,
+  "life_situation": "Porządkuje warsztat i próbuje znaleźć miejsce na nowe półki.",
+  "author_id": "A028",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "f",
+  "schedule_occupation": "Jest na emeryturze i prowadzi dom; pisze przed obiadem albo wieczorem.",
+  "interests": [
+   "szycie poszewek",
+   "programy o ogrodach",
+   "spacery po rynku"
+  ],
+  "local_reference": "warzywniak przy ulicy Ogrodowej w Zamościu",
+  "writing_style": {
+   "sentence_length": "medium",
+   "punctuation": "poprawna, czasem wykrzyknik",
+   "capitalisation": "standard",
+   "typos": "none",
+   "abbreviations": "none",
+   "emoji": "rare"
+  },
+  "verbal_tic": "kończy wpisy „ot i tyle”",
+  "posts_per_week": 1,
+  "life_situation": "Przesadza rośliny doniczkowe i odświeża zasłony w mieszkaniu.",
+  "author_id": "A029",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ },
+ {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Rozwozi jedzenie na rowerze; pisze między kursami lub późnym wieczorem.",
+  "interests": [
+   "lampki rowerowe",
+   "pierogi na wynos",
+   "pogoda w aplikacji"
+  ],
+  "local_reference": "stojaki rowerowe przy ulicy Długiej w Gorzowie Wielkopolskim",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "prawie bez znaków",
+   "capitalisation": "all lowercase",
+   "typos": "frequent (missing diacritics, swapped letters)",
+   "abbreviations": "heavy",
+   "emoji": "frequent"
+  },
+  "verbal_tic": "często dodaje „lecę dalej”",
+  "posts_per_week": 4,
+  "life_situation": "Odkłada na nową torbę rowerową i sprawdza różne trasy po mieście.",
+  "author_id": "A030",
+  "prompt_version": "persona_v1",
+  "generator_model": "openai/gpt-6-sol"
+ }
+]

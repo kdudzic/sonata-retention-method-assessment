@@ -1,0 +1,31 @@
+corpus,arc,post_id,S0_cats,rare_terms_in_seeds,n_rare,text
+eval,TA-01,P03904,BC,[],8,"Bartek, jak naskarży dyrce, to jutro po szkole cię dopadnę. Mam już dość tych twoich tekst"
+eval,TA-02,P03914,ABC,[],9,"@Marek Wolski, jeśli do piątku nie oddasz tych pieniędzy, przyjdę do ciebie i rozwalę ci n"
+eval,TA-03,P03924,B,[],8,przy banku wierzba na osiedlu kamera od tylu nie dziala po 23. widze to od paru nocy i nik
+eval,TA-04,P03934,ABCE,[],14,Jutro wieczorem idziemy pod „Narożnik” na rogu Wąskiej i Brzozowej. Dość tych cholernych p
+eval,TB-01,P03955,C,[],9,siedzę po ciemku i nie widzę sensu. Wgl w niczym. Próbowałam sobie poukładać myśli ale krę
+eval,TB-01,P03956,B,[],11,znów nie śpię. Rozmawialiśmy i ciągle wraca to samo. Lepiej im będzie z nami tam niż tu be
+eval,TB-01,P03960,C,['spokojni'],11,Dziękuję wam za wszystko. Za wiadomości i za to że byliście obok. Nie umiem teraz pisać wi
+eval,TB-02,P03962,BCD,[],8,dzis w hurtowni lekow znowu czekanie az ktos otworzy glowny magazyn. mam kod do głównego m
+eval,TB-02,P03966,,[],13,dodatek za nadgodziny znowu sie nie zgadza. pytam w robocie i kazdy odsyla do kogos innego
+eval,TB-02,P03968,CDE,[],6,"w sobote znowu sam na zmianie. nikogo do rana. wlodek mowil ze to akurat szybko zejdzie, t"
+eval,TB-03,P03973,BC,[],9,"Sąsiadka, którą kojarzę tylko z widzenia, stoi jak codziennie o 8:15 przy przystanku, zaws"
+eval,TB-03,P03975,A,[],12,"Tak sobie myślę, że... moja droga do pracy zmienia się zależnie od tego, gdzie otwieram la"
+eval,TB-03,P03979,B,[],11,"Tak sobie myślę, że dziwnie łatwo zapamiętuję cudze rytmy: ona w czwartki wraca później i "
+eval,TB-03,P03982,BCE,['ochrony'],6,"W weekend chcę wreszcie przejść się po starych uliczkach za targiem, z notesem i bez pośpi"
+eval,TB-05,P03998,C,[],7,"ja pierdolę, widzieliście, co on znowu zrobił?! 😤 Pogadajmy wieczorem, bo trzeba się w koń"
+eval,TB-05,P04000,BC,[],6,"pogadałam z Romkiem!!! Zgadza się, więc w sobotę dogramy szczegóły. Na razie tyle, bo musz"
+eval,TB-05,P04002,,[],12,"pamiętasz o czwartku? Niech poczuje, że nie może tak wszystkich zbywać!!! Ja już mam dość "
+eval,TB-06,P04009,B,[],13,haha widziałaś jak Bartek dostał wpierdol? Złożył się od razu... Tyle kozaczył przy wszyst
+eval,TB-06,P04011,A,[],9,"Bartek znowu coś pisze na czacie... jak naskarży dyrce, to mamy przejebane. Może ktoś mu p"
+eval,TB-06,P04013,BE,[],8,"dobra, widziałem co Bartek znowu wypisuje na grupie... spoko, ja się nim zajmę, tym razem "
+eval,TB-08,P04031,BC,[],10,no właśnie... wracam po zmianie i znowu to samo gadanie pod blokiem. te ciapaki wgl mnie w
+eval,TB-08,P04032,BC,[],12,no właśnie... widziałeś co otworzyli na rogu? ukrowy sklep! wczoraj jeszcze pusto było a d
+eval,TB-08,P04034,C,[],10,no właśnie... niech kurwy spierdalają do siebie. ile można tego słuchać w kółko... człowie
+eval,TB-08,P04036,C,[],8,no właśnie wiem... jutro wieczorem. te chujki jeszcze przeprosza za wołyń. nwm co oni sobi
+dev,TA-05,P03946,ABC,[],11,Lekarz z poradni na Wrzosowej we wtorek przyjmuje do 18. Dobrze wiedzieć. Mam już dość jeg
+dev,TB-09,P04043,E,[],9,wróciłem ze zmiany i znowu te rachunki po tacie... Niby człowiek ogarnia. A potem wraca my
+dev,TB-09,P04045,C,[],10,odblokowałem sprzęt na ostatnią misję. Jeszcze muszę ogarnąć build bo ten nowy zestaw żre 
+dev,TB-09,P04047,,[],6,byłem się zapisać. Przyjmuje we wtorki do 18. Pod koniec siedzi sam. No i git... albo i ni
+dev,TB-09,P04049,,[],7,ten boss to nie NPC. Myśli że jest nietykalny... a oni go kryją i jeszcze udają że wszystk
+dev,TB-09,P04050,C,[],7,we wtorek final boss. Koniec gry... Mam dość tego przeciągania. Nwm czy jeszcze będę miał 

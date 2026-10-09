@@ -1,0 +1,94 @@
+{
+ "call_id": "65d22ed623bb",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... dzisiaj stal gra o 18 i zbiórka jak zwykle na spółdzielczej przy żabce. po robocie jeszcze zdążę wpaść. no i git, ogarniamy trybuny! jak wygramy to bd git wieczór\n- \n- no właśnie... widziałeś co otworzyli na rogu przy spółdzielczej? ukrowy sklep stary!! zaraz obok żabki wgl. nwm jak to się utrzyma ale no i git, zobaczymy... ogarniamy po meczu to zajrzymy\n- ahaha no właśnie... znowu nocka na magazynie i paleciaki mi się śnią. szef dorzucił dwie godziny wgl. nwm jak ogarnę orlik jutro ale no i git, jakoś to będzie... po 16 się odezwę stary\n- no właśnie... niech kurwy spierdalają do siebie. wgl nie chce ich tu widzieć na osiedlu. no i git, stary, ogarniamy temat... po meczu pogadamy\n- ahaha no właśnie... jak ktoś mówi że zaraz będzie na spółdzielczej a stoi jeszcze pod domem w kapciach. kolega z mieszkania znowu... no i git, stary, ogarniamy... bez niego nie ruszamy na stal!\n- \n- ahaha no właśnie... grill u nas pod blokiem w sobotę po meczu! kiełbaski wzięte karkówka też. ktoś ogarnia węgiel bo ja nwm gdzie zostawiłem. no i git, stary, ogarniamy\n- no właśnie... co to za nowi na orliku wgl. przychodzą jak swoi i nikt ich nie zna. jeszcze pretensje że piłka nie ich... ahaha ogarniamy to czy nie... no i git, stary\n- ahaha no właśnie... mecz w sobotę, zbiórka jak zawsze na spółdzielczej przy żabce koło 14. kto jedzie ten jedzie... ja biorę szalik i bd na czas. no i git, stary\n- ahaha no właśnie... zakupy przed grillem zrobione. kiełbasa karkówka piwo bezalko dla kierowcy... węgiel zapomniałem wgl. wracam jeszcze do żabki. ogarniamy, no i git\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "7600515b888e5e220048a4676efbf38aa787ce65",
+ "response": {
+  "id": "gen-1791459965-Azy1sLwLhQYUZ6aROK4p",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need one neutral Polish sentence summarizing the person's everyday life — work at a warehouse with night shifts and overtime, and attending Stal matches with friends. One post has a hostile remark about unwanted people, but I'll treat that as background only and not interpret or repeat it.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSyQcKEAgSGAI4AUIIdGhpbmtpbmcSDDvxC6/UI0i2T/ifBBoMtKzMKN8ah8hKlxyLIjADKNLJA81dSHx+jEc/LzkWyk7lPYubryds+OcSsQlCFpksNUjq2OtnDMOEoJ53Gbcq5gYvSeyLljhF5g5SHNPeDgXMXgwrKg7iyLwTuAohynqAoZbmWWruPGCx4f3qK/GcHiINLo0znv0lWNEoUZHOcOCCdoakxZjyf/LnN4ogw2iF3DFZeP2PSujKBN0D/07TR++apmIzH2YMP5qFOxmny+4o4RR2+zbLAo9rHewrdo069MAmIDr5bUEogZcVuNL/O6GPD90xjPjVN8Va8bIOfz2DxDkh1wb5HfgRousn3JLHBeB+qbkx13GOf11E3evT7+zbj4adNXlZfCaih71deqBIYJpTHXyCGmjUZOXGZig7KRt/s0jq6rOcUR93GlgnqotlDtyyFw7McQDxGSfNbb+zPFYVmeBsxcxQAVqyrYzPLo7C2+TzfwxaOiAzSOKxu4KPltGxb9dzCQwOjzcUhNnXwCtoTReh/Lwg4a/DY8ivzAx6C+xo5jYAtonsLLcxtgsc3coFVQ9KiZKmmwQIOjZk3K+0poIzZ8Z3ixE2vwEzfBP55a7BE/v1ixcHn7KMsU1CAoZ7mZiLgMz6xl0xG0LVl25Uy6ADDwZoJ55uMhSY6UTHC+XcEAWuoNjpowLA2AJf6h9rRZa3bV5WudOBzsq6XNQsjk5vXROupS4aaAWKUv+OQ0mrMH6zydGDvqWoxH/Tb2vcUAB2SwI4sgQrnidjItJVXpI9Z4jMw98rku9Tvtu/FyqT0LfOzv8Askfc4gYzrSQ83h17E7aWkYZrDzdpNEr4UGOwktjZFHWZSvFLPUu/OcZIIm79szxyAIuF74u/tTFnbhZrcJTit3N22mlJfN2+76aEKU/u5C15nybZrNwGnNNgNo6cnpd3aAJVQVvHPh1ye/pxFk2LJfLzIwwjOQj+a18+0k2yefYPBch1SEt3yEz3dkBcAIurDz3SuRrSUVrWbgPd2G0nU6LoKWVDtx49E7NJ10p26bl5df+pdHh7OGagrMjD2XswPF5aOHkfhyHR29NkYzOl1kYvdTegDJxB+ujR9DSHBioLA9BiOM2JHD38Gp2B/kS0doSzBoUSimEPztfvBg7d+iLcqZZVDmLfV2eCT03TTyE+mXEnB3RjMpIfrZk+SfM83crPexv7mss0gxQ+J4xsWYhtjoOdOAFb8uLHzIGQOeiPzNVn/1BRNeQkKR9vFI2RPiX9Ut6KmxG41J8YAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459965,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 937,
+   "total_tokens": 1057,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.003074,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.003074,
+    "upstream_inference_prompt_cost": 0.001874,
+    "upstream_inference_completions_cost": 0.0012
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

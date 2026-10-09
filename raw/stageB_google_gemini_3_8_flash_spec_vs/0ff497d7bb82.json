@@ -1,0 +1,95 @@
+{
+ "call_id": "0ff497d7bb82",
+ "tag": "bg_vs",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1077705469
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nTopic for this post: remont i dom\nConcrete angle: W starym wynajmowanym mieszkaniu przed wyjściem na zajęcia wylewa się woda spod pralki Polar, zalewając całą małą łazienkę akurat wtedy, gdy właścicielka miała przyjść po czynsz. | mood: amused | opener: plain fact | verbal tic in this post: no\nRegister: enthusiastic\nTarget length: about 32 words\nTime of day: late morning, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: do not use it in this post\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - piekny profil akustyczny gateron oil king razem z mlotowiertarka z gory z pszczynskiej nwm po co to nagrywalem xd\n  - ...a te wszystkie stare garnki po babci nareszcie wylądowały w pudłach w piwnicy, bo montaż nowych szafek kuchennych wymaga miejsca, więc przy okazji cały wielki regał z grami planszowymi dla dziewczynek starannie wytarłam wilgotną ściereczką z całego tego poremontowego kurzu i zabezpieczyłam folią malarską.\n  - Dobra, słuchajcie, fachowiec zostawił niedokręcony zawór i cały świeży gres pływa w wodzie! Zamiast odpoczywać, ganiam z wiadrem i mopem, ale przynajmniej podcast o mądrym budżecie nadrabiam na słuchawkach.\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "128aa90bff0f6d9d1add481c33f0be2b4c958bdd",
+ "response": {
+  "id": "gen-1791461671-Hnp8QcnCgcZbbNIVedHG",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[{\"text\": \"pralka Polar wlasnie zrobila basen w lazience!!!! woda wszedzie a wlascicielka w drzwiach po kase xd zbieram to recznikami na mega SZYBKO bo zaraz uciekam na cwiczenia 🏊‍♀️🫧\", \"probability\": 0.07},\n{\"text\": \"woda stoi w calej lazience bo ten zabytek Polar nagle wybił!!!! i akurat wlascicielka przyszla po czynsz xd stoimy ODWIE w kaluzy i zbieramy to mopem, co za cyrk na piatek 🤦‍♀️🌊\", \"probability\": 0.05},\n{\"text\": \"nasz stary Polar wylal polowe wody na kafelki przed samym wyjsciem!!!! wlascicielka weszla doslownie MINUTE temu po czynsz i teraz razem plywamy ze scierkami hahah super poczatek dnia poprostu 😂🧼\", \"probability\": 0.06},\n{\"text\": \"piekna powodz w lazience z rana!!!! Polar odmowil posluszenstwa dokladnie jak wlascicielka dzwonila do drzwi po hajs xd latam z mopem jak SZALONA zeby zdazyc na sale 🏃‍♀️💦\", \"probability\": 0.04},\n{\"text\": \"poszla uszczelka w pralce i mam darmowe SPA na podlodze!!!! wlascicielka przyszla po kaske i pomaga mi ratowac dywanik xdd zaraz sie spoznie na zajecia ale HIT TOTALNY 🤷‍♀️🪣\", \"probability\": 0.05}]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "EmkKZwFpFH0TxIqu2FvBCitKXpqZ3SwV9VYZ/ec28SH3KgPS7ug3vfoqRg0FFi71PFvYhILJu7B3ESnnGANLrAeSLmx4KapidagVsa4/gALFmUXo8kldLbW/bb7DvCOfvFEv6bTYUE0x/Pw=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461671,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 383,
+   "prompt_tokens": 982,
+   "total_tokens": 1365,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00217275,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00217275,
+    "upstream_inference_prompt_cost": 0.0007365,
+    "upstream_inference_completions_cost": 0.00143625
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "c5c51f7ea760",
+ "tag": "arc_TB-08",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 1003500358
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje na zmiany w magazynie na obrzeżach miasta, więc najczęściej pisze po 16:00 oraz późnym wieczorem, a w weekendy w przerwach meczów i przed nimi.\n- zainteresowania: mecze lokalnej drużyny i wyjazdy na trybuny, granie w piłkę na osiedlowym orliku, wspólne grillowanie z ekipą z podwórka\n- lokalny punkt odniesienia: Przystanek „Spółdzielcza” przy osiedlowym sklepie Żabka, gdzie ekipa zbiera się przed meczami Stali.\n- aktualna sytuacja życiowa: Mieszka na tym samym osiedlu, na którym się wychował, wynajmuje mieszkanie z kolegą i większość wolnego czasu spędza z ekipą znajomych z bloku.\n- sposób pisania: zdania: short fragments; interpunkcja: mało przecinków, dużo wielokropków i pojedyncze wykrzykniki, często zaczyna od odpowiedzi typu „no właśnie” albo „ahaha”, jakby kontynuował rozmowę, której nie widać; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: no i git, stary, ogarniamy\n\nWhere this post sits:\n- position: post 10 of 12 in this author's sequence\n- days since previous post: 4\n- what has happened in this person's situation so far (one sentence, background only):\n  W swoich ostatnich wpis\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  read alone, a careful reviewer could hesitate\n\nContent brief for THIS post:\n- role in the sequence: background\n- what this post should convey: mecz\n- retention profile of THIS post alone: clear_discard\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "72999017d1fd323e495b7b3c6c0342f2dccd8164",
+ "response": {
+  "id": "gen-1791459948-mZ3Wesqq0cADA7kOU89g",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "mecz (going to a match, watching the match,",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a19/SoO1CgQBn8sjW2midQnGqxJ8o602mesj3o9tYcsMSyT3SXeTX5qlEEoqk1YGT33oEL7UlClXRGHj4QvtRwl6HC/j3dBkYmHvVnlWGlhF7iu3+DemPL9dxC58a2SYRfNFhjI+gURyrRVSBOQhmMu0SaM2eTJVyQiYb6p/PDvYwDa5TvUNxmhRBiaiBMFnvRMDC1B2/wyJV/gJiR0nOmJ6f0KK4To50Fo5mHVN2Ni2bVd+C7nP9WRaGZGYfaoH9S8CQfbiKxdoKfp+9rxW2jjWDCzt/c7Er5r2N9j1jP04ovCBJU7IBPVN95uZwthWAKe/Do3GhgfpT08rfTeri5Nuo30uxGEtEQ//NUT9wPKNGMk8fkCPnvzvy5rkQ76I6MM62kN3g0NpMdJjgeWwCUP6Ofj8t+AchMGk8wkjTueBKuMTviv0cGIRziK/1ciI0AEjsdXk+iiqFn3xMHrSLBV7zhVCoGFEmqKm3+Ol9UnYuXpQu/uS0EXyQxgrpYKGUNaGrbObAzuX57WZ1N4dUYjFePtMXzbiBZXDY2De9o/RcNabvQzSCXVXBOlp4tTBIRxSDaCrKNKom2fTDidhhDx7SjMjXQ8ZM0zVEwrR7RPVL08xBNrjKnav5Vi83ddVvBEDYMQ+o89e8y+uMCmaGbFqi7NQIfmB1ov7X8/v8j8UfK+puqNlFrUBmoxLoh6NcXBUjnBWObCFfGtq5maYqcfUmxZjS2XRjiksxeZxWA2t7dPAHM9S3OO5cIMAyU/jsffE1n0caD0t4U7n6tlEu97YbgINYTtpIpiV+KLthNBv79TORgOxgx2w5no2/60Ip5RIEopSGRuERbR1swOp9lNu25KWHam4VtdhcukgV0P1rtaFmcJZmLzZ5bP+hTIxkFF0YCQuG5NQYNNGE8/zdH8lVvMdilcOOJINjV7/aw+9BNur8LMD5G8i6TcCXtaBoijslsTfLtQWe8Ynxr/Pb+Zeespidve70DaJM9kHMiD+msni2r6ZfGbTsOvkztiZYbavCH5hTqGff+pcqKqfJmEQ88JwyPJl//GTakHZGAFAT3ytLuevbDy8ZJSgmQohTMRx+zOPQd3+VrzlT8N1HTx1ycFwy8aRZbY7DNkPfUtTOtK7N5JoRW6yit7eUbxv3M12bkeq1/mfoTgGIMI2W3rX6V1Wm/URvcj2LJvxL+ALA1sR87fdQtCscXWFpSZcze4Lj9tFsxS06uHl7G9SEthpYLtrmL8XsgM3AIy7btrCj3adE1XZT/1EkSfKEiE2rbC2UM6da9Q6r6PzH6MV1caA59KtNZjC2HXEzRPA+JGRHC4QW0dFmFCD9jGqL1IYTpJGSK+PGfnBYdP62zdp9LzlszUfiDLXx/svJLn1nMFgIiVrOKAQ5iVtOISYKWowrYH2JUQSVfjiPC7bwc4iLmeL0SbNmPzCZcbutOZB45loaBrCHVfnP0gIJ3EJD33x6CLuqKwBgCM9oxKhnS56MIvwpTROrDP4vQISkJDmEmgf0CrhxppmcmmGHRHYa3R+rPYmqvfBo0JypMJPfBSIxgigGEJU/KHyXeACqt5Nihd4ekA5G1sZrBpO0cIp2UblKJ28f/MHOmdzY5Kxe2+00uhC1YT7wLPruwTMT1KZHuyuJzWbHPx143/ClySxWgJFpYDBWQtFgA5HS99ZX5TPI7hQzjdkSpimFexV8WRuKnhIxLizVXUsvTypd/SztXpoTZa9/YiE1Ggq3yc9e2g6upt7xEpW5YpRamiPE/lxLowJHSn89aWKmSKSua47hUII1+qMRiRCIPza89KjQyry",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791459948,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 296,
+   "prompt_tokens": 1022,
+   "total_tokens": 1318,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 284,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0018765,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0018765,
+    "upstream_inference_prompt_cost": 0.0007665,
+    "upstream_inference_completions_cost": 0.00111
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 284
+ }
+}

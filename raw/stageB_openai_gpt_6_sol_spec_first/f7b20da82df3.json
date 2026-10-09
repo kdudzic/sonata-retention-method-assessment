@@ -1,0 +1,87 @@
+{
+ "call_id": "f7b20da82df3",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 2135674962
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Student informatyki w Gliwicach, zajęcia nieregularnie, najwięcej pisze późną nocą przy nauce do sesji.\n- zainteresowania: gry roguelike, składanie klawiatur mechanicznych, kebab po zajęciach\n- lokalny punkt odniesienia: bar Kebab Ali przy akademiku na Akademickiej\n- aktualna sytuacja życiowa: Zbliża się sesja, a on jeszcze nie ruszył projektu zaliczeniowego z baz danych.\n- sposób pisania: zdania: medium; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: wstawia „xd” małymi literami po prawie każdym zdaniu\n\nFor each of the 5 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with a detail a real person would mention - a name of a product, a time, a number, a place from their life). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. komunikacja i dojazdy - kontrola biletów (afternoon, Thursday)\n2. praca i grafik - szef / współpracownik, drobna sytuacja bez konfliktu (late night, Friday)\n3. komunikacja i dojazdy - spóźniony autobus / tramwaj (lunch break, Tuesday)\n4. zakupy i ceny - zwrot / reklamacja (bez gniewu, drobne) (lunch break, Wednesday)\n5. komunikacja i dojazdy - spóźniony autobus / tramwaj (late morning, Saturday)\n\nReturn a JSON array of 5 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "a1ab0ef9f6418d7f3645ff69ae0e0578e545c159",
+ "response": {
+  "id": "gen-1791461580-4kaxI2bBIucFZm8B72Zp",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"W czwartek po południu w autobusie 702 pokazał kontrolerowi bilet w aplikacji, ale ekran telefonu przygasł akurat przy skanowaniu. Rozjaśnił go i kontrola trwała może dziesięć sekund.\",\n    \"mood\": \"amused\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 24,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W piątek o 23:40 dostał od szefa wiadomość, że współpracownik zostawił mu na jutro gotowy szablon do wpisania godzin w grafiku. Zobaczył ją podczas nauki do sesji i od razu uzupełnił swoją zmianę.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 33,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"We wtorek w przerwie obiadowej autobus 702 spóźnił się o osiem minut, więc zdążył odebrać kebab z Ali przy Akademickiej.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 13,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę podczas przerwy obiadowej oddał w paczkomacie paczkę z niepasującymi keycapami do klawiatury. Dopiero przy skanowaniu kodu zauważył, że na etykiecie wpisał stary numer pokoju w akademiku, ale zwrot przeszedł bez problemu.\",\n    \"mood\": \"relieved\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 41,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę przed południem autobus na przystanku Akademicka miał dziewięć minut opóźnienia. Czekając, sprawdził na telefonie, czy paczka ze switchami już dotarła do paczkomatu.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 20,\n    \"tic_fires\": false\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461580,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 511,
+   "prompt_tokens": 669,
+   "total_tokens": 1180,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006448,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006448,
+    "upstream_inference_prompt_cost": 0.001338,
+    "upstream_inference_completions_cost": 0.00511
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

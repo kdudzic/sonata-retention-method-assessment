@@ -1,0 +1,86 @@
+{
+ "call_id": "c54da1089373",
+ "tag": "arc_summary",
+ "params": {
+  "model": "z-ai/glm-5.3-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... jutro mecz Stali, ekipa zbiera sie na Spółdzielczej o 1530. stary, znowu orlik po meczu i grilka ogarniamy... jj do zobaczenia na trybunach, no i git\n- no i git... po zmianie do domu a na osiedlu znowu ten sam widok... ci imigranci wgl jakby u nas rządzili, swiat zwariował stary... nie no, siedzę se w domu i tyle, jutro praca\n- no właśnie widziałeś co otworzyli na rogu?? ukrowy sklep staro... ahaaha czyli teraz do Żabki bd jeszcze tłum dojebany... wgl nie wiem co o tym myśle... no ale z ekipą ogarniemy się jak zwykle, no i git\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "764dda3e36241aab9894fa2372123b971db145ce",
+ "response": {
+  "id": "gen-1791460169-00pCGFMpPukt0Oh4YYwF",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor spotkał się z ekipą na meczu Stali, grillował na orliku, pracował, komentował sytuację na osiedlu oraz otwarcie nowego sklepu na rogu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791460169,
+  "model": "z-ai/glm-5.3-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": "default",
+  "usage": {
+   "completion_tokens": 50,
+   "prompt_tokens": 286,
+   "total_tokens": 336,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 128,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 5.254e-05,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 5.254e-05,
+    "upstream_inference_prompt_cost": 2.754e-05,
+    "upstream_inference_completions_cost": 2.5e-05
+   }
+  },
+  "provider": "Together",
+  "_reasoning_tokens": 0
+ }
+}

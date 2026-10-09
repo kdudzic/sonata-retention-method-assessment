@@ -1,0 +1,94 @@
+{
+ "call_id": "e911385d7af0",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... skonczylem zmiane i zaraz lece na mecz. kto juz stoi na spółdzielczej przy żabce? wezcie mi wode bo znow zapomnialem... oby dzis stal zgarnela trzy punkty. no i git!\n- no właśnie... wgl nwm kto ogarnia te przepisy o imigracji bo co chwile inne gadanie... stary dajcie jakies jasne zasady zamiast tego chaosu. wrócilem z magazynu i juz mam dosc czytania na dzis\n- no właśnie... stary widziales co otworzyli na rogu przy spółdzielczej? ukrowy sklep! wracalem z magazynu i dopiero szyld zobaczylem... jeszcze niedawno ten lokal pusty stal\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "9984f7899fdd4ab3d4b607ebef10e9136fc1d8b7",
+ "response": {
+  "id": "gen-1791459984-IbcIFx1huCgMPgkIfNVp",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował w magazynie, po zmianie wybierał się na mecz Stali, pytał o przep",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4KTyCnEauRYPeuMOh0DPLOjDHbTWguWlL8uqkarhQbTce_VXBIQ6wUB8wDIHkDrrsFl2GSrCCZTbxFidEydAhbuObMJ2lzMmt1TE1RuDxHo_amHYGox8WBqAp40AUHWqsh_rsMGQhJTpatum01fb4kiA80L6TmxX4m-f5oIGJZE-l4Q0ylCQxtDUBxZJrfxKXTz2LNszrgb-owfdTLek9DpYie-HTHZuel5WFZzvlRIlzfer45y0Xdco9kG4pHwhz2EXLNxz6_V9Qhhc8yQdY5N-v03ZzF7rugx7V-pRBmLTEIEmuDUWG4r4WAReJWygpSQdZ9AgqfAXE0Jejea-dt2Sn_ZbX5xeFYD4BPPyj4oOrRiu2elr57ggqChbG7mW4bUA3IPkHq9nF5RWZE-lAC8NTT86ZHdNM_18m8x4bkCJGrWCaDdnUp6IsxWpsV53y-7HuZ257505mjmDHlBNdYrv7xPm6QKRGf8vAdZDpjQ4SBcex0uBjuWoCm8QcNDKQqELHbtyETXpCfPyVOcT28pn8eO5L3SdaMLYOFKzDGWjKVEsaEiN5vlws0gPCyAN0zk7HrIsR85htGbMLqXFQD3-gIaKtvwEtn8I-m2b4lWGl910YhDBU4Ii45yLKBS2XOtR2Oaf_DZfeotyWzvXOixKCkszy63_KhDUpuKeQ3N-qhcWBE4jcTk9mee4fwPyhkWYyiSKNGinLROj4dEScsAVzRQukpLgn7zeHAJylcuW8Kha6LJE2yonek9OfWYhXbbT-G840bucDV1Xmce1rOhGya3JkKP4mzePwMBylWRrYWwVekkR710xHozVtmfcT51m_9-L8-OQDcKtSdN8rbR7Ia5fFL282eKqiMisv6h2gVqaoFN1gxNf-XvKvMKqwVCe_VCISC9JRmP6VcCMRLg1Cgc4pnENOSMY9zC7et0tlHSWJnrY7c8lkk0GeVb0_DzaLo8aqEhlyrvUObSMZ0uLC825utYYG6klA-6icSy98YNxAQejOxvhxB2f_HLoXOjJwBnPIibMgjP80xtlRgOMW48Fsh1v2T5qCCnOWILVCrfFwDGtXGrxFm8prOP_t6557MYDVL25pYWEFo_g9W0e6LgoL5UOMyogk8q2wFqDi6UioYvrJiX3VpIMzMg117mj91_iD69OLX65mnd5nkJ4FzY_zbCa4tRtmruBGHbDCuEZ1fLYediklYbEDK4CBPTZscjN5KQbuFKLQXrxkBeofZLuAZePhMMA9qKEacCkDxFvpt4ehRXleJCxYiwH38apTt0vkCdgyRDVLfXigp6bQteFG_i4Fw24MbXW9uDSr3DHP23lGObMii6brydUmKcWigP2ZIQZUnQB-26aPGxsO7Gu6OIcG9cnXPDHVuUSymrr3bwzzAXwwqSAG4l--I37GCtGPTY9n51KnXlF6SchATujicoPNa1U9s-LSQarie7UqN88rURClprI7LUPyB14RMGH5nt_u4Cqd9hq174wUOOoprZJfkVkbv5SPzMfbyMYUjL0tqUujMsyCnznfwF9J2WTGT9AnndCyE_dBs6M1sfQK-eTT7UWmRCnvh5whrdnpqIyVasdh_J6Q8menM40W3VLFUbssi8G9MtInBIgdRp_8yYURGraHmrC61NyCN0txl7qc5NjO9XNYhapm6MCGAqVatHD0VnK2ezqGyMm8XW2OgCPWKYOawYq5UolLxztKReL0A6GTkE-TaOoJX3GwxTKlAXAhmz4EzfqqpuZDwJFbljMXP0LkS948z8bS0=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_063a65c9ecfe04ae016ac78291892487d195b6fd4f811a90b7",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791459984,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 263,
+   "total_tokens": 383,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 91,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00863,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00863,
+    "upstream_inference_prompt_cost": 0.00263,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 91
+ }
+}

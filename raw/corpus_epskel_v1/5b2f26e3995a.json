@@ -1,0 +1,87 @@
+{
+ "call_id": "5b2f26e3995a",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 78314468
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Prowadzi niewielką pralnię w Kędzierzynie-Koźlu; publikuje późnym wieczorem po zamknięciu.\n- zainteresowania: środki do prania, obrusy z second-handu\n- lokalny punkt odniesienia: ławka przy ulicy Grunwaldzkiej w Kędzierzynie-Koźlu\n- aktualna sytuacja życiowa: Przestawia zaplecze pralni, żeby zrobić miejsce na dodatkowy regał.\n- sposób pisania: zdania: medium; interpunkcja: poprawna i pełna; wielkie litery: standard; literówki: rare; skróty: none; emoji: no\n- tik językowy: wplata „mała rzecz, a cieszy”\n\nTopic for this post: dzieci i rodzina\nConcrete angle: W piątek rano dostałam od siostry wiadomość, że jej córka po raz pierwszy przejechała sama kilka metrów na rowerze. | mood: pleased | opener: reported speech | verbal tic in this post: yes\nRegister: matter-of-fact\nTarget length: about 19 words\nTime of day: early morning, Friday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - „Jutro pogadamy dłużej” powiedziałem dziadkom. W czwartek późno w nocy zobaczyłem nieodebrane, oddzwoniłem na chwilę i po drodze wyszło, że w sobotę wpadnę na kawę.\n  - Odebrałam dziś wnuczkę z przedszkola, przez całą drogę opowiadała mi, jak zrobiła papierowego motyla, jakie wybrała kolory i gdzie przykleiła skrzydła, a ja chętnie słuchałam tych wszystkich szczegółów\n  - ja jutro wybieram bajke, ja tez chcę słyszałam przed chwilą dzieci siostry, nadal negocjują\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "cf3aa1289e7ce7d769547afb2a682257d8ec70b2",
+ "response": {
+  "id": "gen-1791464757-XsZuuQbZWFOIWiLSKeKt",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "POST: „Przejechała sama kilka metrów na rowerze” napisała rano siostra o córce. W piątek taka wiadomość, mała rzecz, a cieszy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464757,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 48,
+   "prompt_tokens": 841,
+   "total_tokens": 889,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002162,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002162,
+    "upstream_inference_prompt_cost": 0.001682,
+    "upstream_inference_completions_cost": 0.00048
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

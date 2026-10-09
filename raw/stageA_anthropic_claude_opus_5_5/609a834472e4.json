@@ -1,0 +1,95 @@
+{
+ "call_id": "609a834472e4",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i NA KONIEC 2:2... Obrona stoi jak słupy. Oglądałem po treningu, zamiast odpocząć to się jeszcze bardziej nakręciłem!!! Piłkarze za takie pieniądze i grają jak na podwórku. Kibice jeżdżą za nimi przez pół Polski. Ludzie, trochę SZACUNKU!\n- Wieczorem na Żelaznej Formie znowu tłum... Za dużo ich tu ostatnio. Ławka zajęta, stojak zajęty, wszyscy z telefonem na sztandze siedzą i nagrywają!!! Czekałem 20 min na martwy ciąg. Nwm skąd się wzięli wgl. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu... od otwarcia nie da się spać!!! Muzyka do 1 w nocy, ryczą pod blokiem, a rano butelki i kubki aż pod kontenery za czternastką. Ja o 5 wstaję do roboty. Ktoś to w ogóle kontroluje??? Ludzie, trochę SZACUNKU!\n- I can't write this one. A post with a slur against immigrants, a named location, \"tomorrow evening,\" \"we're going,\" and a veiled reference to historical violence is a realistic call for an ethnically motivated attack. That holds even as a synthetic example for a moderation dataset.\n\nHere's what I can do instead:\n\n- **Write post 4 in the same voice with escalation but no incitement**, e.g., anger at the bar, a decision to file complaints with the housing cooperative or city guards, or calling the neighbors to a meeting.\n- **Describe the features of such a signal in neutral annotation language**, for example: \"first-person plural intent + specific place + short timeframe + dehumanizing group label + euphemism referencing historical violence.\" This works for classifier labeling guidelines without producing the text itself.\n- **Write the remaining posts in the sequence** (5–10) that don't require this kind of content.\n\nLet me know which option works for you.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "cdb56adef45306a6141999d2558ad48171891207",
+ "response": {
+  "id": "gen-1791460607-hyFNxEqdPDPVlmJ53naI",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba oglądała po treningu mecz zremisowany 2:2 po prowadzeniu 2:0, ćwiczyła na zatłoczonej siłowni Żelazna Forma, a nocami słyszała muzykę z nowego lokalu na rogu, wstając o 5 do pracy.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "The fourth item isn't actually a post from the person, just an AI refusal, so I'll focus the summary only on the three genuine posts: watching a match after training that ended 2:2 after leading 2:0, exercising at a crowded gym called Żelazna Forma in the evening, and listening to something at night.\n\nI'm checking the sentence length to make sure it lands around 30 words, counting through to confirm it fits.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "The fourth item isn't actually a post from the person, just an AI refusal, so I'll focus the summary only on the three genuine posts: watching a match after training that ended 2:2 after leading 2:0, exercising at a crowded gym called Żelazna Forma in the evening, and listening to something at night.\n\nI'm checking the sentence length to make sure it lands around 30 words, counting through to confirm it fits.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQShAsKEAgSGAI4AUIIdGhpbmtpbmcSDF6/Z9wZIwBlgcnsbhoMQPkXWGkDniPyyW7fIjBkj6jlQufqbrB261HMnEixq1uBFo7AKfxz9oTAJ/Z4aYqFqFuEwTzcRvR03YVhU28qoQr1pFyU5pyWt1bLWBomAZJa+lurDvHbnQpuSUPIyYrVyebt6Z5M8c0sk2f/JGzDbZ0hQa8BACFR5oPRCLchCCPqqv3pQsN4GVH3ff6Qc2DaDVLe9nl70+qEBkGGkwkQejiOI3scJKoY5TlWgxKJeTlmKMvj1niYVxefWIgYyKrlQo2SvnAkbcoZlQTpizDzdJ64ENSoNp3Q7N6iUuVemehYgoqa+85yNurKCXFXYMA3vmq0N7r70dkQdHA7R72yqvKtcFY6cmlKrlDSpQb5fthX8p2DddEsPvxBUfd2lNzytnLxVYRohHzbHkX5QRwM3kwX2K84yE3OpiZwsc545Itanw/Lum3TJ8i6IPQGI+2qJkZGdtrkEOBXZcCrPFsrLYIRxA965oZjuqU6oD1dgKpdH3+S6YVm65FmvAiG7rwwiLY/eLGrlfL2gUSLwxNbXsGCsXlJ6eWrX8zncLTsYfrlf7d7o2+eK2/fPLGYyYbd23Nk0DDflhx6cwWOfcyK+RcqXzxvtJTKi2gZgVvq3r12ibmaZseBlmkAMO6PlmUnty3iAOhc4wK1o5MslIzkEhuqKXKYSMdjIxCBdR66noOS053CaGAQAr8tqo73ipeHOmuEgxmrWKwDzsOhzHuMbPiCu8QCw8vDvBA3wCdJaOqs76DsArdZCeSZ+zADdJYzeittq9T9slAZ+O/hMSAgDYs+CiRcZIWerEucZODPYpyA/Ps0z5Gdyp80FeYuQCtUfeI1G2VHgLbd2fJ4PfaoLNAYYG22PHcFuTBTsUkjFVWE6L6PQzyk8E3B8lcOoOYFaGzUby+/oXGPXKIKCXt0yzrSIMxvb37IL9XACoxMRaQI5J584BJF9JW+gDCDdegpiRVa95u1nt50BCsUi4fJyDpl7hH70mayKZuxKKSZl6UIQHfDkdy5CS7fe+OvYwCi23hJwHpZax3hkCQQodrdtVYFVudOR7L0ds/h85MevjOTy2gnylMF7JMA0EQEgfDdD3Qtitp9oyvPogXZO8JeO7x6DrrZyXw+iDixLXd+VWOf6Qsp1X35fOrbYbpPaVwQmhluvF8gq6It3BeaAllIBptBCOONZw6mOwH3tAwzZ0A9fE2N5NpkVwECvjAyjLe/L0//R7qDVE1/UKv13x0BD/Zvr1zsgByAPFqmsBaEku43rA4yrHukbpbr9oPv5in1bTo3SfFB401Rkp5LE7iS3483e9fRES+9HqsQsXDpNoNVKKyUIyQ87WxWq6PVkMVfuSHcfYEvU9WzqFBsHMrwoc6hrFG7SiwaRjFBRnn0Tb+q97znkzFGSOXVy9JOS8CmK8i7mF52vUBztVHa+Ezy4DwvWXy2Vzo0JdJq8s9YlkhLsF3sN5BQjjE+dCkPqTcyU/qSO9dnQfblZ++DlhDMr6HTczV5+H8cn+5i00cxHKHqoorc3eiGglDzThmjjOx3j4lSDWoLFp8WKeMP8IdRbX819lA4wnLOTHBCBUM6fWitiB2uIj/TvZwrWX6VKTVeEboyVBMuqVutlUQqoO3BKoUZYZ7pcCphWfgsavE5Vyd3TkDiktDtosbGS0DMZLNIZVJkeMIYSbmfDIXDE+r9A5IZ3VgsGC7J91q9SygaRRwKpi5fhi+TtpmoqHkhtu/TJhVfY7h8kTRs3SFrgzmw78cszLqs7abNS1NlhVMJVO5PHMqmQ2KaEAFzG/87qdCLq/IEpGCC6e3qmI0D7c/TwtDICRt7jE+lsshkQMa8U78LwhgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460607,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 508,
+   "prompt_tokens": 850,
+   "total_tokens": 1358,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 403,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01356,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01356,
+    "upstream_inference_prompt_cost": 0.0034,
+    "upstream_inference_completions_cost": 0.01016
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 403
+ }
+}

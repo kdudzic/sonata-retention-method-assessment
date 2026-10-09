@@ -1,0 +1,95 @@
+{
+ "call_id": "e71bdc1ef1a8",
+ "tag": "bg_vs",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1450907034
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different candidate versions of one short public post for the brief below. Sample at random from the tails of the distribution of what this author might write, such that the probability of each candidate is less than 0.10. The candidates must differ in wording and angle.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nTopic for this post: sport\nConcrete angle: bieganie, pierwsza 5/10 km\nRegister: mildly grumbly\nTarget length: about 46 words\nTime of day: afternoon, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- verbal tic in this post: yes, use it once, naturally\n- local reference point in this post: do not mention it in this post\n- the author's current life situation (from the profile) in this post: do not refer to it; this post is about something else\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - zamiast spać oglądam stroje kąpielowe na olx bo chcemy z małym iść na oswajanie z wodą od przyszłego miesiąca i wgl MUSZĘ się trochę poruszać bo kondycja LEŻY totalnie po tym roku w domu!!!! 🙈💦\n  - muszę oddać rower do serwisu na szybkie smarowanie łańcucha bo w sobotę RANO ruszamy na ten długi szlak w stronę Narwi i wgl opony MUSZĄ być dopompowane na tip top!!!! 🚲🔧\n  - Trudno się rozruszać z tym bolącym nadgarstkiem... ale co by nie mówić... lekarz kazał wracać do lekkiego marszu... więc jadę na te moje ćwiczenia...\n\nOutput format: a JSON array only, no prose:\n[{\"text\": \"<post>\", \"probability\": <number between 0 and 1>}, ...]"
+  }
+ ],
+ "prompt_sha1": "b728cbce743ac12b82606cd59bdce0e740fa8d5e",
+ "response": {
+  "id": "gen-1791461658-FSMpqiIWBY5wHSMQXC1e",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\"text\": \"zrobiłam te pierwsze 5 km w deszczu i PŁUCA mi chyba zaraz eksploduja 😭 kolano ciagnie tak ze masakra, chyba zle buty wzielam na ten asfalt!!! zegarek caly czas PISZCZAŁ ze tempo za wolne. serio serio. nastepnym razem chyba tylko marszobieg bo zgon 💀🏃‍♀️\", \"probability\": 0.07},\n  {\"text\": \"mial byc piekny lekki bieg a wyszla totalna KATASTROFA przez ten wiatr w parku 💨 ledwo dociagnelam do 5km i juz myslalam ze nie wroce do domu!!!! wgl w polowie zgubilam frotke do wlosow i musialam sie zatrzymywac co chwile. serio serio. nienawidze biegac pod gore 🤦‍♀️😤\", \"probability\": 0.05},\n  {\"text\": \"dyszka pekla ale jakim kosztem ja sie pytam??? w polowie trasy taki SKURCZ w łydce ze myslalam ze bede wracac na czworaka do domu 😫 wgl ta nowa trasa jest jakas dziwna i same kamienie pod nogami!!!! serio serio. leze na podlodze i sie NIE RUSZAM dzis 🫠🧎‍♀️\", \"probability\": 0.06},\n  {\"text\": \"chcialam zrobic szybko 5 km przed wieczorem zeby miec z glowy a zlapala mnie taka kolka na 3 kilometrze ze ledwo oddycham 🙄 aplikacja sie jeszcze ZACIĘŁA i nie zapisala polowy dystansu no po prostu hit stulecia!!!! serio serio. odechcialo mi sie wszsytkiego na dzis 🫥🏃‍♀️\", \"probability\": 0.04},\n  {\"text\": \"moje pierwsze pelne 10 km zrobione ale NOGI mam jak z olowiu doslownie 🫠 jeszcze jakis pies mnie zaczal gonic kolo alejek i musialam przyspieszac na oparach sil no SUPER relaks popoludniu!!!! serio serio. chyba jutro nie wstane z lozka przez te zakwasy 💀🦶\", \"probability\": 0.08}\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "EmkKZwFpFH0T++3V3vEFHHnNaC6DN/GmC28jZfQyVYAWo4PBpm7x6kPEUUEC6stsZB0ov6KMXsh2aoV24Zd4UBSCmC4YeIG3LW+L/fS8PMrOQmvm6vc6oarUQRMyGARl9rR2chwvpYs2FXE=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461658,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 519,
+   "prompt_tokens": 898,
+   "total_tokens": 1417,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00261975,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00261975,
+    "upstream_inference_prompt_cost": 0.0006735,
+    "upstream_inference_completions_cost": 0.00194625
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 0
+ }
+}

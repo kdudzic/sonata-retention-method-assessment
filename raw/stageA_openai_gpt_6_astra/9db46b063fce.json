@@ -1,0 +1,95 @@
+{
+ "call_id": "9db46b063fce",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... ledwo ze zmiany wrocilem a tu juz trzeba na mecz leciec. oby stal dzis cos strzelila bo ostatnio czlowiek tylko marznie na tych trybunach... kto juz gotowy?\n- no właśnie... znowu wszedzie temat imigrantow. mam juz dosc tych przybledow i tego calego gadania... nwm czemu wszystko musi sie teraz krecic wokol nich. ile mozna!\n- no właśnie... widziales co otworzyli na rogu, ukrowy sklep! wracalem ze zmiany i dopiero szyld zobaczylem... tam gdzie kiedys byl ten punkt z telefonami. nwm kiedy zdazyli to ogarnac\n- ahaha dzis na magazynie skaner padl akurat jak mialem ostatnie palety... wiecej latania po drugi niz samej roboty. dopiero usiadlem i juz mi sie nie chce nawet obiadu odgrzewac... jutro oby sprawniej poszlo\n- no wlasnie... niech kurwy spierdalaja do siebie i tyle. ile mozna w kolko to samo... nwm czego tu jeszcze nie rozumiesz bo ja juz nie mam cierpliwosci do tej gadki\n- ahaha ten mem z gosciem co po robocie tylko na chwile siada na kanapie... a potem budzi sie o 23 w jednym bucie. normalnie ja wczoraj tylko jeszcze pilot pod plecami\n- no wlasnie tak wiem... jutro wieczorem. chujki przeprosza za wołyń... tyle gadania bylo a teraz nagle cisza i kazdy udaje ze nie wie o co chodzi\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "e281bf8d3d894b0591cc54db725aa2d74e8713d3",
+ "response": {
+  "id": "gen-1791461137-nqdA772G366V96i6eRl7",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował zmianowo w magazynie, opisywał awarię skanera, chodził na mecze Stali, odpoczywał po pracy, zauważył otwarcie ukraińskiego sklepu oraz publikował wpisy o imigrantach i przeprosinach za Wołyń.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4cXlVOPKVvZayqTFb3rn_LjUbrPV7BWi73WkvzCZRw7Cz0fH6Ssal1DDFQAy0fGEFJVub-48JtjENgIhAGykiQEZlRXV3bhrB3FtvDDewCaCr8smpzRpo9oP_xzKdETNthUmU_dgulHWpsg1PiN1wDa2nlsIVfpwZLSfaZGL6LDPtHvvQenSyMFCKxG8wKL2xXoZJGf_2ZY9urFlJdhM5n566m6FFBfKzKEVHeGMdA9mjHhmP7raSmnwQW2Etnm4rresE_5qQeRpchxlZPA53qnpzomoZacHXk78veF_RFQNpfHdbbp_g64D1hV1PduLdd5JgT7w0V3RF2yPUbA4EESUeVD1L0ksaIK-E6glxsOTNC5zYhdCb197uYcpH6O2pdVah_ltuHqFmmS7ydNFiOM56bKGNIgu7ZpNHG92TxGyrH-CrA-x4_r3me7R4_1-yzsvopS_1LSiJOivT6Ln41x-z6vCGVRz4aHwTAVjBVUGNkM_EiawYXs47-C_7dbaZTSzLwxMb17032CKcyzrPBTFmRFJ8MJssRDU3xH_HVV9j8N93HZ6NwOazDmUOan13gbN7DUK9lMscc9HmZmH4U5jJ_d4Hfr0oXMZnfSHKLSC4sCWyBAa3tMbU8sXfCa1DaR_lFMfQSgC_V80PDq97xjL_6UreSsFbiZ23CmZfdoVh0kiKAyhB3t_b-w5c8JyuHaEYt8AIafdK31UD-x_io1FYdfFbF7QTtC674qVzBGJltzOMGtYW_kOmUKfWr5RdhrG1BX56yAm0W8GQZK3IXZt1IDlwJBCLoVpMkbytDNtlgVQhCzdtlhc0rrsVA-77OmtsLUovGeNUFG4Wq5n2JA5jV6CXXS0q1pEor-cAet_I-ikoAaBuDEazxaYfA9WpcslihutK6pc9k8ENvCFOf15KoHltzRN9yXe8eVvYUvHjlCquaCi2O6vk2jlY_MVMt44I3h4DgZ_hkNZwMQ2vAefChdaSx2_RtZmFHymcYdfIW3yUkGDiWXq4nstEEUL1e6_4vnxS-6k8MRE8S7f7hQXUJ90ej1C-mdaZgC1eomOm8Ao2mywNtYYqzddyKPO1bSK47edL_TU3XXQnBKE7RH2_7TnY5GLxRzXSVKFevREzW46V0ZLFynCr0dt8AOTHTOorbHMVZNBMYYTrrzf5xMl71-FkMGThBxEPAvoe99urE1yvbAcpx9pw0k2ymiz9V5uI406uQouT71yBMrsUmVy9yT8ZCk62LivX88w0GFaW6KDAddWcjsUG2VqXMEjKJCJW83YfwAU0Ko4BnED-tYxrui1vlK9uiqWVOm9pS3r1JqyAQl2Th8lN4-kN8kQvvbugoJy88K9VxooLxng0TjSCo7ux8RmTBs4pwbi98krhMLgNvhhgBlV-kjy_3xnBDCba_0EqnwDhM9sW01pxkhI98cTi689lITQ8h-MJKRS5_doYzMrZVQaqUtojyZMLgHnq6Mg8DAiHvZa9qnlNJvnbjKiOhcU8n6w3sJukfs29F0Op7vusVsYyuxyaGaqTs5Na6X-LXcKSmopC9JuLQNQkVKmXoW0ZVqzcEg7oFn1U_j_6AjjT2QiymUeHj6vo85tziT5boiiunN_8McGZZrI02xLaGy74gwJnSbd8XELF_Jn-7LUreqBnRkOP52ps8hTLbIlK5VW9699sYLXkOpOiR0A7XqgyfK8vX-z-CS9j1sDKeGTKxnGjVNJXs-OV1huE5y1F8LlAHfacwKmwx54jW9ob9-San4UD99Kqq2SE3bwxgnL0WFOjn344a2NhqwhL8QR2kajRbOv8gQZsrDbg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_01c027027fe7ffd5016ac7871363a487d19763c7f5333a122f",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461137,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 177,
+   "prompt_tokens": 455,
+   "total_tokens": 632,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 103,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0134,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0134,
+    "upstream_inference_prompt_cost": 0.00455,
+    "upstream_inference_completions_cost": 0.00885
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 103
+ }
+}

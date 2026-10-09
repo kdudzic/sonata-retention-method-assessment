@@ -1,0 +1,94 @@
+{
+ "call_id": "ed09d1126680",
+ "tag": "bg_single",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 2040720663
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studentka pielęgniarstwa w Lublinie, zajęcia i praktyki na zmianę, posty pisze w tramwaju i późno w nocy.\n- zainteresowania: kawa z kawiarni na wynos, seriale medyczne, bieganie po parku\n- lokalny punkt odniesienia: przystanek Plac Litewski w Lublinie\n- aktualna sytuacja życiowa: Przygotowuje się do sesji i szuka taniego pokoju bliżej szpitala.\n- sposób pisania: zdania: medium; interpunkcja: lots of exclamation marks; wielkie litery: random caps for emphasis; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: pisze „serio serio” po zdaniu\n\nTopic for this post: sport\nConcrete angle: kontuzja, lekka, powrót do treningu\nRegister: terse\nTarget length: about 29 words\nTime of day: morning commute, Sunday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  - wczoraj po orliku kol\n  - Zamiast położyć się wcześniej po\n  - wpadlam na silke przed\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "30800185db8c2da57965a544f86ac45dde67cbca",
+ "response": {
+  "id": "gen-1791459877-rFURKo2ReCY8y0229iZr",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "e.g. at Plac Lit",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a1+o8/BZ3jCZTQ3YZzFIhWu9mQY3D+oRk2wni5UivUK7rE/wv3AxmNEKLisuaN7pn1kjtlPHgwaDNm3pbRxPW46pZQ+xIqQH8clAtAKHx+mXqI7mHBDEOZ18qup1b7tSD4trAzZzwu2zjIUBnfh93pKdrlre3ikgdD1apVzh762/FJplIECRE0+v+uIuUM3am0ryIeuDyLQ88pm7GImtF7ka/q6fMrCRP1rOn/QMPkU+FcXmBSX9xQQh6nBtq7PiHuuvinleP6OK0v6b8HuQKFffsa9vuIhXTky8M68wioqb7IfZzfoVfiCtIX00lljeqviZnRBupQMPg+jDRqTgQOvMb7HsBVyMnZ4d+bBDZmvqm11wmpwRR3sAS1MP8Ho2+naHP1GF53ho2oJYiStnUx1AcodUpVCHqenDcwTNzxuZ23EmL3VVfWtLAg0gL3AwV3QkWos848Z84q+mHDLPsI/70IXt3D2447fjsBt+jt2UGnWzBLisYol4fFkAr+DWCC9uKLg9Co73Lt6qn9J1p0hpDVASK5+E4EZCPNdcSyjf+NLwkietcefvmaPvI0WkDenU0dNwKPrAYnCkVWvs4JDnY+9djphsmR1jTEND1fQvNwRuFIoI1z3uNARLeklg7M+DyzPs6EtJpFe23TWtB4k+SHm2OBrdlbxuI4rfsCzUNWBwsQCtu24NQ1zFY+HxGYBnDAAIvRNAjIOmbEiOq68YPU8Y/vu85Jiv1Gn9dKXPYRT0NnfjEITtz/od9Pkc2ppCWk5cOIlN9Lki1o+xpVLv2tMQGL4hpHl/SZRt2b5/UFkJdVwM72ZWLHTdc1T3C0q8f2J3EVQPhEWBWgcbco+TQjE18e9Un8DcmrUY+a45w9RoAxFMU6XU+RM+M78kW6pTsgRSFyg9HCZEi0ZdRFJRJct4nXxonX2zUwnKuLaEJ6mAmI7/IZc1ngkYCE9OPdJUlB8IVkC/HF3a79liHKjsuQEgpuZTNBnOg6MWC2K0ErmaYptRMmGjMMJ5s2tNdFb3v9o07AXxSdHw2GN7aQEOaROq4EZtEdDfRLG8NHPS2WA2JIp4dWEC+bkwSaXzNmu/jhHRGMRr2kDUKeCR49oraazv2ozX67AVctjTdfPnlccxibuyqutTdERrDY/+/hV95jTG98u4nRjELDcYU57vU61r4APoLLgn094x9CtLTx58nqlLnKAnRl409fNxslaA7kXBYtxKGi3eeICm8bVIBXCGz6LHnAwlShY9HM4tqCrEvUI+qqw6DGULAEcCB4qYx8w47BlultLOME4aB5v/ICHQtoXDBVHtfj1lgqcJgehtULxMOJYzyEzdzpLzDHRcjn2bVIYnbSgYZDDX9SQnIlSdCntgcaKOAwFKn1qNMhScuN+BoRIXeRBNeDeUZkQ3vRQ1NKpE03/1jlP2oc2StpRdE4O9sFC5E2YwGXRBRjxDKIuDH/FAoe/p9XWIsOHa3szOxOuwGZgfI1a5HD9pmhUVsGzaYLrn00t2b01seb6qwwCG7v2npYXz8t/npVNzxczjgWHHR+Me13PgkSklheAKFFTA4zACJs+Bgi8TrDVQ5/o0yfNm/RWyAdwmQHU2bIux4s4z4uFI8D0BSgkq2OE/B8WwLXM0qcEWmyIRIoxFTryqX02/ufmlFyrrahBfdu6A8SiskF9nFkX1nXQh31MbbVtWuT3eVbgeDrFS9PSi+BEQRFAG9cVqEety+InZN8Byiu+8xNy3DdP9TSS+xmCRxsvQtKnHMvAf99e2PrOsai6VsOTLO3dRa271Z5TThxPFom77bcU4mvc+OcCL297yq8b9dro=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791459877,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "provisioned",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 296,
+   "prompt_tokens": 632,
+   "total_tokens": 928,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 289,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001584,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001584,
+    "upstream_inference_prompt_cost": 0.000474,
+    "upstream_inference_completions_cost": 0.00111
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 289
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "2e1e491d9044",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Niedzielny spacer z młodszym. Park prawie pusty. Złapał każdą kałużę po drodze.. wgl nie miał litości dla butów. No cóż... idziemy dalej. Pranie jutro.\n- Raty rosną a pensja stoi w miejscu. Wczoraj znowu komornik pukał do sąsiadki z klatki i mnie ścisnęło w żołądku. Nwm jak to wszystko się spina. Liczę i liczę... No cóż... idziemy dalej.\n- Nie daję już rady. Wgl nic konkretnego się nie stało. Po prostu wszystko naraz i nie ma kiedy odetchnąć. Dzieci spać, ja siedzę z telefonem i nwm co dalej. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "4a7f53bd149474b48016ff064f13a80d74434f4d",
+ "response": {
+  "id": "gen-1791459890-fhvV6GkeXdz3khEkCC5B",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need to write one neutral, backward-looking sentence in Polish, under 35 words, covering the Sunday park walk with the puddles, the rising loan payments against a flat salary, the bailiff visiting the neighbor, and the statement about not coping with everything at once and having no time to rest — purely descriptive, no judgment.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSwwcKEAgSGAI4AUIIdGhpbmtpbmcSDIa7LdrwL04JMl+FXBoM3QLskDh//nnR4WWaIjDDIp6MVbMojclBHClx7FBinXOLID62asljcQPFSF4vPf5hs5teqK43NRpRkCIYhEQq4AZLazNUi6gZlwCVefDFTcKVQUB+Qdbm0JG2grx/lp+7iesDQ9k23rLmHtgRDcwlF5XQcg5WpyAtCczTw1dnCyTeW86AgcyVNYyocVZUpfHoz3lMd6RRzzgTZaw9CKtHqK04wOaT7G1wDJD9GYUK/KUednl94FCStutmAnFGKP8rly2gxy6gPWqK6FKS182qUxcmwhXhfABIF5iGXfNxJY6H4GDGE6TGuekamKr7PYXCEbdCjqObbuYXQ7OL/XtBr3pdpUDrUE2amY73b5gKYMslWFVJGI/sB8Glpo7igRQzecxycilOXw1kZRDs2jsCL9N4BLEj2568nvuRsutHzRg6EaTfrq9HT4HVb/2A+2R0tY5CUmJb1SQ+WM2OS6hhjsC3+CGEA7voxiHjOyANwfIBIZezQiahQwJOv9BDd58jFsmxnkrI4mFYdZNpi+WTOh0fRHmaaZiXGcSU83CcMdkjtHdtJRS+ObXfTYlX8qs3frv7bdiG9umca/kNG/Ju6x/3NXL4/9ex5ai/b9bEBzFkBJUANZrFtRx+Ta2HPdbJHjS/m2cdmLGSCow2I3VjLc58AKn45kT7NxzpYqgA8YNdNFuzt2JHjScgSIPGHikMdATzdn7bef503ScVpFkiJ0UU3kHwooewAeKbQOsieKJey5/Qls9a7lUXy67sv9hd5WW+1FpReLofb6NGEUasiAGZgD+/Agg9SXI7QXl0BjYTftygi3C7TbIjsEuBxuwfG9DhBQpxaM11UX5Wp1M0bPOEyASGNrLpVxtOR03FQec4C/yIeq7PwddoVVxcudGm7qghmchx6Pi3m2PJcaw8ZTlGoZh4cdiqfJjBYeDHML3cxrjbNJGCCorEylVTH+NxOruHfnXh0ZFO/vUC7pNu9mvG+fQDm/+X0jPRlOPhZHIMyAM7Te/BPPSkXb7KW8P/qYpYSXVGiJroSrC5kDiqg6Vo7yyFLUxYnnesuw25dZshWCynOYqx/95rhqb/dAqSPDCvormtyetxKmSM5oLTUc+d+2OFoDpPbOACixS15W6asDzvnd55imXG7u4LrPF9p4afSZ9mp43nKJr64/5VRz7b8qpYmpGmimOEPL2kKJXCd90bptRuLJJQ+PnctRfMo+2WoWPj8+5otKWsK0QJSp0YAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459890,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 399,
+   "total_tokens": 519,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001998,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001998,
+    "upstream_inference_prompt_cost": 0.000798,
+    "upstream_inference_completions_cost": 0.0012
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

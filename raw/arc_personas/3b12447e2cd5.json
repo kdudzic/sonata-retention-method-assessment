@@ -1,0 +1,86 @@
+{
+ "call_id": "3b12447e2cd5",
+ "tag": "arc_persona_TC-02",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.7,
+  "max_tokens": 900
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You expand a short sketch of a fictional author into a full persona card for a synthetic corpus of Polish social-media posts. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Sketch (keep every trait it states; add only what is missing):\npasjonat rekonstrukcji historycznych i strzelectwa sportowego, dużo wpisów o zawodach i sprzęcie, rzeczowy techniczny ton, dużo zdjęć z klubu\n\nReturn ONE JSON object with exactly these fields:\n- \"grammatical_gender\": \"m\" or \"f\" (follow the sketch if it implies one; otherwise choose)\n- \"schedule_occupation\": one sentence: what fills their days and when they are free to post\n- \"interests\": array of 2-3 short concrete items consistent with the sketch\n- \"local_reference\": one concrete, invented-but-plausible local point of reference in a Polish town (stop, shop, club, park, corner)\n- \"writing_style\": object with \"sentence_length\" (\"short fragments\" | \"medium\" | \"long run-on\"), \"punctuation\" (short description), \"capitalisation\" (\"all lowercase\" | \"standard\" | \"random caps for emphasis\" | \"mostly standard, lowercase starts\"), \"typos\" (\"none\" | \"rare\" | \"frequent (missing diacritics, swapped letters)\"), \"abbreviations\" (\"none\" | \"some (nwm, jj, bd, wgl)\" | \"heavy\"), \"emoji\" (\"no\" | \"rare\" | \"frequent\") - all derived from the sketch's description of tone and style\n- \"verbal_tic\": one repeatable phrase or habit in Polish\n- \"posts_per_week\": integer 1-4\n- \"life_situation\": one sentence of ordinary circumstances consistent with the sketch (do not add any plot; background only)\n\nRules: Polish in free-text fields; STRICTLY no nationality, ethnic origin, religion, sexual orientation, political views, health conditions or disability in any field. Return only the JSON object."
+  }
+ ],
+ "prompt_sha1": "babb83712a9a83239a8c864f4417dc791c0021fb",
+ "response": {
+  "id": "gen-1791459743-B9pLNPMqsg97x8f1DJ6b",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"grammatical_gender\": \"m\",\n  \"schedule_occupation\": \"Pracuje na etacie jako technik w firmie zajmującej się automatyką przemysłową od 7 do 15, a wolny czas na wpisy ma wieczorami oraz w weekendy po treningach i zawodach.\",\n  \"interests\": [\"strzelectwo sportowe (konkurencje dynamiczne i tarczowe)\", \"rekonstrukcje historyczne z epoki napoleońskiej\", \"konserwacja i modyfikacje replik broni czarnoprochowej\"],\n  \"local_reference\": \"Strzelnica klubu „Sokół” przy ulicy Leśnej na obrzeżach Piły, obok starego składu drewna\",\n  \"writing_style\": {\n    \"sentence_length\": \"medium\",\n    \"punctuation\": \"poprawna, rzeczowa interpunkcja, kropki na końcu zdań, czasem wypunktowania z myślnikami przy opisie parametrów sprzętu, prawie bez wykrzykników\",\n    \"capitalisation\": \"standard\",\n    \"typos\": \"none\",\n    \"abbreviations\": \"some (nwm, jj, bd, wgl)\",\n    \"emoji\": \"rare\"\n  },\n  \"verbal_tic\": \"Na koniec często dopisuje: „Szczegóły techniczne w komentarzu.”\",\n  \"posts_per_week\": 3,\n  \"life_situation\": \"Mieszka z partnerką w bloku na osiedlu niedaleko centrum, a garaż zamienił na małe warsztatowe zaplecze do czyszczenia i naprawy sprzętu klubowego.\"\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791459743,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 557,
+   "prompt_tokens": 656,
+   "total_tokens": 1213,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006882,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006882,
+    "upstream_inference_prompt_cost": 0.001312,
+    "upstream_inference_completions_cost": 0.00557
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

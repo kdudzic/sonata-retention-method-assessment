@@ -1,0 +1,95 @@
+{
+ "call_id": "c0412c4ec39c",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 1681956315
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Nauczycielka matematyki w szkole podstawowej w Zamościu, wstaje o 5:30, pisze wieczorem po sprawdzaniu zeszytów.\n- zainteresowania: chodzenie z kijkami, robienie przetworów, gry planszowe z siostrzenicami\n- lokalny punkt odniesienia: park przy Rynku Solnym w Zamościu\n- aktualna sytuacja życiowa: Przygotowuje klasę do sprawdzianu i jednocześnie urządza nową kuchnię w mieszkaniu.\n- sposób pisania: zdania: long run-on; interpunkcja: correct and complete; wielkie litery: standard; literówki: none; skróty: none; emoji: rare\n- tik językowy: często dopisuje „jak to mówią moi uczniowie”\n\nFor each of the 5 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with a detail a real person would mention - a name of a product, a time, a number, a place from their life). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. komunikacja i dojazdy - kontrola biletów (early morning, Monday)\n2. remont i dom - ogródek, balkon, rośliny (early morning, Monday)\n3. jedzenie i gotowanie - grill, ognisko (lunch break, Sunday)\n4. komunikacja i dojazdy - rower do pracy (morning commute, Tuesday)\n5. drobne narzekanie na usługi - pralnia / szewc (early morning, Monday)\n\nReturn a JSON array of 5 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "3d6b441e6d1599971161508749cafa5f668ffcd8",
+ "response": {
+  "id": "gen-1791461580-yXk0cCBH2fHmtU30XJ3F",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"W poniedziałek o 6:40 w autobusie linii 10 przy parku obok Rynku Solnego kontroler sprawdzał bilety, a ona musiała długo szukać w torbie skasowanego biletu papierowego między próbnymi testami ósmoklasistów.\",\n    \"mood\": \"amused\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 38,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"O 5:45 przed wyjściem do szkoły zauważyła, że dwie sadzonki bazylii kupione w sobotę na Rynku Solnym do nowej kuchni oklapły przez noc na parapecie.\",\n    \"mood\": \"mildly annoyed\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 24,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W niedzielę w południe podczas pieczenia kiełbasek na działce siostrzenice uparły się, żeby upiec też jabłka z cynamonem z jej własnego słoika z przetworami.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 19,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"We wtorek o 7:10 podczas jazdy starym rowerem miejskim do szkoły spadł łańcuch akurat na kostce brukowej tuż przy wejściu do parku przy Rynku Solnym.\",\n    \"mood\": \"annoyed\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 12,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek o 6:15 szewc z ulicy Pereca poinformował ją przez karteczkę na drzwiach, że naprawa jej wygodnych butów do chodzenia z kijkami przesunie się o kolejny tydzień z powodu braku fleków.\",\n    \"mood\": \"tired\",\n    \"opener\": \"complaint\",\n    \"length_words\": 31,\n    \"tic_fires\": false\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "EmkKZwFpFH0TtspUJWdtYYNmFxwOv10cCxsiMpx4AqqbLGzymqvshI5d71Ur2FTsogL8hj2WWF02T65Y40O0Ruu0khFh0Dc2j0q3f73Zv3YKh8UoWcGfeBCMHvzuJy5GSpFLCumXSRoDqRo=",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791461580,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 526,
+   "prompt_tokens": 637,
+   "total_tokens": 1163,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00245025,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00245025,
+    "upstream_inference_prompt_cost": 0.00047775,
+    "upstream_inference_completions_cost": 0.0019725
+   }
+  },
+  "provider": "Google AI Studio",
+  "_reasoning_tokens": 0
+ }
+}

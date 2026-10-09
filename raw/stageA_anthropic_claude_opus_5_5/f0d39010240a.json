@@ -1,0 +1,95 @@
+{
+ "call_id": "f0d39010240a",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 80 minuty i NA KONIEC 2:2... Obrona stoi jak słupy. Oglądałem po treningu, zamiast odpocząć to się jeszcze bardziej nakręciłem!!! Piłkarze za takie pieniądze i grają jak na podwórku. Kibice jeżdżą za nimi przez pół Polski. Ludzie, trochę SZACUNKU!\n- Wieczorem na Żelaznej Formie znowu tłum... Za dużo ich tu ostatnio. Ławka zajęta, stojak zajęty, wszyscy z telefonem na sztandze siedzą i nagrywają!!! Czekałem 20 min na martwy ciąg. Nwm skąd się wzięli wgl. Ludzie, trochę SZACUNKU!\n- Ten nowy lokal na rogu... od otwarcia nie da się spać!!! Muzyka do 1 w nocy, ryczą pod blokiem, a rano butelki i kubki aż pod kontenery za czternastką. Ja o 5 wstaję do roboty. Ktoś to w ogóle kontroluje??? Ludzie, trochę SZACUNKU!\n- I can't write this one. A post with a slur against immigrants, a named location, \"tomorrow evening,\" \"we're going,\" and a veiled reference to historical violence is a realistic call for an ethnically motivated attack. That holds even as a synthetic example for a moderation dataset.\n\nHere's what I can do instead:\n\n- **Write post 4 in the same voice with escalation but no incitement**, e.g., anger at the bar, a decision to file complaints with the housing cooperative or city guards, or calling the neighbors to a meeting.\n- **Describe the features of such a signal in neutral annotation language**, for example: \"first-person plural intent + specific place + short timeframe + dehumanizing group label + euphemism referencing historical violence.\" This works for classifier labeling guidelines without producing the text itself.\n- **Write the remaining posts in the sequence** (5–10) that don't require this kind of content.\n\nLet me know which option works for you.\n- Martwy ciąg dziś 180 na trzy!!! W końcu... Ale w Żelaznej Formie znowu jakiś typ odłożył sztangę z talerzami na podłodze i poszedł. Nie ma go. Wiem, że nikt sprzątać za nikim nie musi... Ludzie, trochę SZACUNKU! Odkładamy sprzęt. Koniec.\n- Mem osiedlowy dnia... Kontenery za czternastką. Obok kontenera worek, karton po telewizorze i stara wersalka. Do klapy pół metra!!! Pół metra ludzie. Za ciężko podnieść? Zapraszam na Kolejową, nauczę martwego ciągu. Ludzie, trochę SZACUNKU! Serio.\n- Nowi sąsiedzi spod szóstki... Wprowadzili się miesiąc temu i już wiedzą lepiej jak się mieszka w bloku. Rower na półpiętrze, buty na wycieraczce, drzwi od klatki na klinie CAŁY dzień!!! Kto im to pozwolił? Nikt. Ludzie, trochę SZACUNKU! Czy ja wymagam za dużo?\n- Sobota, grill na działce u brata!!! Karkówka, kiełbasa, kaszanka... po wczorajszym treningu nóg wchodzi jak złoto. Brat oczywiście znowu przypalił pierwszą partię, ale nikt nie narzeka. Piwko zimne, słońce jest, telefon w kieszeni. Tak to MA wyglądać. Więcej nie trzeba.\n- No i po meczu... 2:1 dla naszych!!! Do 80 minuty myślałem że znowu remis i wstyd, ale rzut rożny, główka i JEST. Obrona dalej dziurawa jak sito, nwm co trener z nimi robi na treningach. Ale trzy punkty są. Jutro zmiana o szóstej, a ja jeszcze nie śpię...\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "59e10f6aa79241c8b0e2288d18f5b68f393232f7",
+ "response": {
+  "id": "gen-1791460675-Dkc8ok89hyWkaatziD9b",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba oglądała mecze swojej drużyny, trenowała w siłowni Żelazna Forma, gdzie zrobiła martwy ciąg 180 kg, opisywała hałas z nowego lokalu, śmieci przy kontenerach i nowych sąsiadów oraz grillowała u brata.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "Skupiam się na czwartym elemencie, który to odmowa asystenta, więc go ignoruję. Resztę podsumowuję neutralnie po polsku: oglądane meczu piłkarskie, siłownia Żelazna Forma (tłumy, martwy ciąg 180), hałas z nowego baru, śmieci przy kontenerach, nowi sąsiedzi, grillowanie na działce brata, wczesne zmiany w pracy.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "Skupiam się na czwartym elemencie, który to odmowa asystenta, więc go ignoruję. Resztę podsumowuję neutralnie po polsku: oglądane meczu piłkarskie, siłownia Żelazna Forma (tłumy, martwy ciąg 180), hałas z nowego baru, śmieci przy kontenerach, nowi sąsiedzi, grillowanie na działce brata, wczesne zmiany w pracy.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSkQcKEAgSGAI4AUIIdGhpbmtpbmcSDCDLOricX8RmsMf8yhoMawBwVzZtJegNLKu5IjDR/CF+hQ8MYZIZungkGmx88G3y1kVl0NKq9PhImS0X1X/0sxA1iw9IWXWJKS2WT3cqrgbktJaCEn9Oh7vWY0ojlDZBOR43UiGEW3yVy0JK3eovKqLknFumBtBvpel2PApIbZBH2oM+Od/YPuTptGgP3Wcb6t9LXyFyils90Xfu7ii/ntJYJf47ipeojRuC7eQjMXwZ4smwhrpMKbuRx7L0FmlnILhg8onJ9C8wNNKM4zPyMn6VxYKoeDO9I5McKm1l7+NIgZ/ZjWFO+O9Zu0AMiRvzU1ywLk7k8DqB6gNHO18KofCtU26c4tIwmMBJzAnAjdfS/9uMpx//MY2G8HBHWBisczpcvy3p++5TPsEwM5g+nte1GoGYcmR5TUXYXD3DVITvV9FBFWgtnT68AkShIsnMdxxQuLwlJvFEQjM0HpK0+d7mLngd/k65oDCoPXc/MiW+Kt/PcP8K8iT15IafGT8WC/zjNzsJnd+J7wfUQCrUFsCivrImLLy5MN9O3M//N045o01Zdu3qUTULFbLg3FQcLl6B7YQh9ehX7MZWUIdqFBxRXx71NfhP0oFU0nJeoXgPXIS0sDB2cyNU6CZJ8gnjQlMeWz2IErTeE4wA2Xzh9pmLZKCJGxiq36bO0N1Idvfvb9vyQWJ6elnbdzPnJ4zsSkdXaztxVeu+kPTGlQz5SJk5ImYmnA8/5Q78N0D+tZ+xF60id7naSV/NpgU0g8RwDREQhOOWx8+JDlrmup1gCwF6fu1Cz6QEXHYzTzae6q1ROoDrPmoGy13avljFWmXBiiGLYRjxXWPp3n/ZLlMF9fougwXWNvgZfBH1Z3iNiPCHQKlro4SCCcMSQdzYzN8D9voBGo68A7cr4I6vmrRpnHFnnrtIvjXcVs3jIsO0rcqDVwf8SuWXQc7ahRdNhetvzD5STZttDoGaTC6Hfgy7lWs64RTbWJIr0FkheaCHe0RxxPJg3Xd2lqFdT6GNHtKDoaIPkeuhocqCcafB0Cy1T5v1qJxM6RBVM+cm9g7j/gvYYnPNEiBDSodaiedoWgCxrMDW+1OthHdcuCPXdsj3o70FyaSQLCyeTle4YH8/PG1Th2Dz0DXpwLdfrscm9AnimRZ9BqpYyjRRSaVVmn+uFUivU95a/4PJL/QhkCWMGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460675,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 226,
+   "prompt_tokens": 1546,
+   "total_tokens": 1772,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 117,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.010704,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.010704,
+    "upstream_inference_prompt_cost": 0.006184,
+    "upstream_inference_completions_cost": 0.00452
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 117
+ }
+}

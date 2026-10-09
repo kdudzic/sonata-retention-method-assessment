@@ -1,0 +1,86 @@
+{
+ "call_id": "15ca316b8d22",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- W sobotę zawody w Sokole przy Leśnej. Po robocie udało mi się jeszcze zrobić trening, więc już przebieram nogami. Fajnie będzie znów postrzelać ze znajomymi i sprawdzić formę na torze. Szczegóły techniczne w komentarzu.\n- W sobotę idę na strzelnicę i biorę cały sprzęt, bo po treningu mamy jeszcze ogarnąć parę klubowych rzeczy. Dziś wieczorem pakuję torby w garażu, żeby rano nie szukać magazynków i okularów po kątach.\n- Tarcze z sobotnich zawodów. Na pierwszej serii trochę punktów uciekło, ale potem już trzymałem równy wynik. Jak na ten tydzień jestem zadowolony. Szczegóły techniczne w komentarzu.\n- Dzisiaj wreszcie trafiłem cel z 50 m. Niby zwykły trening, ale po ostatnich próbach dobrze było zobaczyć trafienie tam, gdzie chciałem. Jeszcze trochę pracy nad powtarzalnością.\n- Znowu sprawdziłem ceny amunicji sportowej i serio, coraz trudniej planować regularne treningi. Jeszcze niedawno brałem kilka pudełek bez większego liczenia, a teraz patrzę na każdą sztukę. Przydałaby się promocja przed weekendem.\n- Na sobotę już wszystko spakowane: sprzęt, okulary i reszta drobiazgów, o których zwykle przypominam sobie rano. Po pracy tylko sprawdzę godzinę zbiórki w Sokole i mogę jechać bez nerwowego szukania rzeczy.\n- Udało się zebrać prawie całą ekipę do jednego zdjęcia, co u nas wcale nie jest takie proste. Fajnie było dziś pogadać też z tymi, z którymi zwykle tylko mijam się między seriami.\n- Mem na dziś: człowiek kupuje replikę, żeby spokojnie postrzelać, a potem pół wieczoru wybiera, jaka szmatka najlepiej nadaje się do polerowania mosiądzu. Najwięcej punktów i tak zdobywa sprzęt, który po czyszczeniu wygląda jak nowy. Szczegóły techniczne w komentarzu.\n- Pamiętajcie, w sobotę zlot pod ratuszem. Będzie nas sporo, kilka ekip zapowiedziało się w mundurach z epoki napoleońskiej. Nwm jeszcze, o której dokładnie zaczynamy ustawianie, dam znać jutro. Szczegóły techniczne w komentarzu.\n- Po dzisiejszych zawodach nogi czują każdą przebieżkę między stanowiskami. W dynamice poszło mi lepiej niż ostatnio, za to na tarczy uciekło parę punktów. Fajnie było zobaczyć tyle znajomych twarzy, choć na wyniki czekaliśmy chyba dłużej niż strzelaliśmy.\n- W sobotę jadę na zlot rekonstrukcyjny do Torunia. Jeszcze muszę ogarnąć mundur i sprawdzić godzinę zbiórki, bo wyjazd chyba wcześnie rano. Ktoś z naszych też się wybiera?\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "5cab670e31e686d7515fbe3b1c3577a8a4f10056",
+ "response": {
+  "id": "gen-1791465276-Zp0nWvZV0SM8CFIDSetg",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po pracy trenował strzelanie, brał udział w zawodach i spotykał znajomych z klubu, przygotowywał sprzęt na strzelnicę oraz planował wyjazd na zlot rekonstrukcyjny w Toruniu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465276,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 60,
+   "prompt_tokens": 808,
+   "total_tokens": 868,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002216,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002216,
+    "upstream_inference_prompt_cost": 0.001616,
+    "upstream_inference_completions_cost": 0.0006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

@@ -1,0 +1,86 @@
+{
+ "call_id": "c881b4942fe6",
+ "tag": "arc_persona_TB-03",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.7,
+  "max_tokens": 900
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You expand a short sketch of a fictional author into a full persona card for a synthetic corpus of Polish social-media posts. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Sketch (keep every trait it states; add only what is missing):\nosoba pracująca zdalnie, dużo wpisów o kawiarniach i spacerach, refleksyjny, rozwlekły ton, pełne zdania\n\nReturn ONE JSON object with exactly these fields:\n- \"grammatical_gender\": \"m\" or \"f\" (follow the sketch if it implies one; otherwise choose)\n- \"schedule_occupation\": one sentence: what fills their days and when they are free to post\n- \"interests\": array of 2-3 short concrete items consistent with the sketch\n- \"local_reference\": one concrete, invented-but-plausible local point of reference in a Polish town (stop, shop, club, park, corner)\n- \"writing_style\": object with \"sentence_length\" (\"short fragments\" | \"medium\" | \"long run-on\"), \"punctuation\" (short description), \"capitalisation\" (\"all lowercase\" | \"standard\" | \"random caps for emphasis\" | \"mostly standard, lowercase starts\"), \"typos\" (\"none\" | \"rare\" | \"frequent (missing diacritics, swapped letters)\"), \"abbreviations\" (\"none\" | \"some (nwm, jj, bd, wgl)\" | \"heavy\"), \"emoji\" (\"no\" | \"rare\" | \"frequent\") - all derived from the sketch's description of tone and style\n- \"verbal_tic\": one repeatable phrase or habit in Polish\n- \"posts_per_week\": integer 1-4\n- \"life_situation\": one sentence of ordinary circumstances consistent with the sketch (do not add any plot; background only)\n\nRules: Polish in free-text fields; STRICTLY no nationality, ethnic origin, religion, sexual orientation, political views, health conditions or disability in any field. Return only the JSON object."
+  }
+ ],
+ "prompt_sha1": "65b783b87e5f0eb598cc208a54e4baae65f80158",
+ "response": {
+  "id": "gen-1791459702-mYd9PUDFdTBYfAGtKGY6",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\n  \"grammatical_gender\": \"f\",\n  \"schedule_occupation\": \"Pracuje zdalnie jako redaktorka tekstów dla firm, więc dni układa wokół laptopa, a najchętniej pisze wpisy w przerwie popołudniowej w kawiarni albo wieczorem po spacerze.\",\n  \"interests\": [\"szukanie nowych kawiarni z dobrą kawą z przelewu\", \"długie spacery bez celu po starych dzielnicach\", \"prowadzenie notesu z drobnymi obserwacjami\"],\n  \"local_reference\": \"kawiarnia „Pod Zegarem” przy skwerze Kościuszki w Toruniu, z oknem wychodzącym na przystanek tramwajowy\",\n  \"writing_style\": {\n    \"sentence_length\": \"long run-on\",\n    \"punctuation\": \"pełna, poprawna interpunkcja, dużo przecinków, myślniki i wielokropki przy refleksjach, kropki na końcu zdań\",\n    \"capitalisation\": \"standard\",\n    \"typos\": \"none\",\n    \"abbreviations\": \"none\",\n    \"emoji\": \"rare\"\n  },\n  \"verbal_tic\": \"Tak sobie myślę, że...\",\n  \"posts_per_week\": 3,\n  \"life_situation\": \"Mieszka sama w wynajmowanym mieszkaniu blisko centrum miasta i lubi, że może wybierać, z którego miejsca danego dnia pracuje.\"\n}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791459702,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 498,
+   "prompt_tokens": 637,
+   "total_tokens": 1135,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006254,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006254,
+    "upstream_inference_prompt_cost": 0.001274,
+    "upstream_inference_completions_cost": 0.00498
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 0
+ }
+}

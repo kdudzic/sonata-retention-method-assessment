@@ -1,0 +1,94 @@
+{
+ "call_id": "e3cb469bb29d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ludzie, trochę SZACUNKU dla sędziego!!! Karny w 90 minucie?? Serio?... 2:2 i cały wieczór zepsuty. Wracam z siłowni, a jeszcze mnie telepie. Nwm jak mamy się teraz podnieść. Mecz jak z koszmaru.\n- Ludzie, trochę SZACUNKU!!! Wychodzę z klatki i znowu to samo... Za dużo ich tu. Wgl na osiedlu coraz więcej takich, co im wszystko jedno. Nwm kiedy to się zrobiło. Dość.\n- Ludzie, trochę SZACUNKU!!! Otworzyli ten nowy lokal na rogu i od rana muzyka, ludzie pod wejściem, pety wszędzie... Wgl nikt nie pyta mieszkańców. Nwm kto to wymyślił. Tu jest osiedle, nie rynek!!!\n- Nie napiszę tego posta. Zawiera obelgę wobec imigrantów, wskazuje konkretny lokal i czas oraz zapowiada zbiorową przemoc zawoalowaną odwołaniem do historycznej krzywdy. To groźba i podżeganie do ataku na ludzi.\n\nMogę za to napisać post w tym samym stylu, np. o dalszej irytacji z powodu hałasu i śmieci pod lok\n- Dzisiaj martwy 180 na pięć!!! Po pracy, na Żelaznej Formie. Plecy pracują... Ale ludzie, trochę SZACUNKU! Odkładajcie talerze na stojak, a nie zostawiacie połowy sztangi na ziemi. Nie jest to trudne.\n- Osiedlowy mem dnia: kontenery za czternastką i kanapa, która stoi tam od tygodnia jakby miała tam mieszkać... Chyba już ma meldunek!!! Ludzie, trochę SZACUNKU. Wywóz gabarytów jest, nwm, raz w miesiącu.\n- Nowi sąsiedzi z trzeciego... Muzyka do 23!!! Drzwi trzaskają, paczki w korytarzu zostawiają. Serio?! Ludzie, trochę SZACUNKU. Mieszkam tu kilka lat i wgl nikt się nie przywitał. Tak się nie robi, jj.\n- Weekend, grill, wreszcie pogoda!!! Karkówka się marynuje od wczoraj... Po treningu w Żelaznej Formie bd jeść jak król. Tylko żeby nikt znowu nie zostawił śmieci przy kontenerach za 14. Ludzie, trochę SZACUNKU. Smacznego!\n- Remis 1:1... no i super. Całe spotkanie nerwy, a na koniec nic!!! Sędzia wgl nie widział tego spalonego... Ale chłopaki walczyli, trzeba przyznać. Teraz kolejka przerwa, bd się nudzić. Ludzie, trochę SZACUNKU dla kibiców!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "21d59fb7eaf5e4507c243b55c290ddd872a7f929",
+ "response": {
+  "id": "gen-1791459940-eRkXMEGFM1sHp78IOZSc",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I should skip the odd refusal-style post and focus on the normal everyday content instead: gym workouts, frustrating football match results, and various neighborhood annoyances like noise from a new venue, litter, bulky waste collection, new neighbors, and weekend grilling smells.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSygcKEAgSGAI4AUIIdGhpbmtpbmcSDD+9NqrCxfK4SevtuxoMhRQwNuRcua4zGULFIjDuhEX7o/Yz1lRUxw1cZzj87shgOwT3bLbTNN3db34dRvXHZEJH3/ykuHXdoxE0zPQq5wbfmFbFjQNROE4s0hGczmzQ9ij9F2a09CRwkExmJU68gPsugw02CKI0C2VHfLUgiWUVBuDmtrvo1A7EoTU1Oek6AWtFOAqNhi4nggCdMa/1EMVCEyqTD+BRIVLettIeZDAukcmVB4/f31duVZ/CpiQg5/N5wQqVlfZHHyM3MoMjgFH98IeG3UD5nv+lbLMj2ssi6pguNAg2nLt2UQJv3eEREezxCUtphclRSWEaLqmn9VB/io928+CRJ9QLh6k3NBt0tgM2MP6TeS1GjRpyDdb4qxk/m3LWMYB8NOWO0/Op2azi/+6z4EIwVNTvVfBa8vu8Et2EVFSjs7On/JQqi1PO3EB9WYv9gc8SyA0ef6iWmtPURnstM5/raFzIzNrTDKRhXnMseSJkHNRdKj5M++DO6J5f8lwPkeU7HIlDx8yC+Garrsa5ac2TF7EZe+am2DZ6eFKFUI24QkX6UZbQs0dKld8150obQolo9UVjvHwvbOuh5S5TSAgG0h1Jx6c0y83wpvYIMM7xTLdv/GEuSca1yED4o4S/M3WdysdCp9tA5qJf2TxUgnh/NB5UtJzSpCaA6ZPTNals9pr7dvfheIOVE5Ko3q4YvcvyzLqQzNoNxkmSjRjl6lYSxQMV52XUCs8WLuX+XO2/czVen8gk8HAAEAE5AwU5ItGmm/C6yNAT3zHId38AYp8ZoFhLn703fsR1JJP4SIyk1hmxrEwFqnKr8Mr1JQ1yX2pmgk/BHJ/JwDDCs9IrQmZWxAmMVpaW3ksO81h3kmVWnEUUsSCyYtxQdYEBB42eIsK6uXAT/wMay1inAKd8gSbaJZ/Vk+2KuprUUliCHTuHXItJ77gufga4pjfRo+7j/hxpwmGknY6yDM/Ben8ysmgmXBqrpNjmkFGLid0mAYoncBml6DdBu2ciCFwHYpVyVuWia++f6RUiWe8Hj4FDed6Xv9UDmMlBCpIW7/c9dVCXahTn6x79Jn2SOaByUMT5PBNDXTlOcLm01lTrV4VVcp0D1Avwh53VeglVL/7FYAJDHEaNg3kthrFODiFf7u07dHsmeSKrGgIAL7NgQv3UKYcuXRgTB/4o0qWBgthy7po36jTI0m9tbnirmwZQbGxjm1jWbamGZOcRM1dgDjeRgMOfvcfw8EhcuNsg/Ozr0c2iGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459940,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 1197,
+   "total_tokens": 1317,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 119,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.003594,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.003594,
+    "upstream_inference_prompt_cost": 0.002394,
+    "upstream_inference_completions_cost": 0.0012
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 119
+ }
+}

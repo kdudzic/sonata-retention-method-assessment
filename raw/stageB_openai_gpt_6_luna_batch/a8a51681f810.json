@@ -1,0 +1,87 @@
+{
+ "call_id": "a8a51681f810",
+ "tag": "bg_batch",
+ "params": {
+  "model": "openai/gpt-6-luna",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 6000,
+  "seed": 188776367
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the posts must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate 5 different short public posts by the same author, one per brief below, in order.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Rolnik z gospodarstwem pod Łomżą, dzień zaczyna o 5 rano, posty pisze wieczorem po udoju i w deszczowe dni.\n- zainteresowania: naprawa starych traktorów, ceny zbóż, wędzenie kiełbas\n- lokalny punkt odniesienia: skup zbóż przy drodze do Piątnicy\n- aktualna sytuacja życiowa: Przygotowuje maszyny na żniwa i remontuje dach stodoły.\n- sposób pisania: zdania: short fragments; interpunkcja: kropki, bez wykrzykników; wielkie litery: mostly standard, lowercase starts; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: wtrąca „no cóż poradzić”\n\nBriefs (one post each):\n1. topic: komunikacja i dojazdy; angle: pociąg regionalny, przesiadka; register: chatty; about 23 words; afternoon, Saturday\n2. topic: sport; angle: skoki narciarskie / siatkówka / żużel w TV; register: matter-of-fact; about 42 words; early morning, Sunday\n3. topic: pogoda; angle: ładny wieczór, zachód słońca; register: matter-of-fact; about 28 words; afternoon, Friday\n4. topic: jedzenie i gotowanie; angle: zakupy na obiad, czego zabrakło; register: matter-of-fact; about 17 words; late night, Tuesday\n5. topic: zakupy i ceny; angle: paczkomat, odbiór; register: enthusiastic; about 25 words; afternoon, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- the posts must differ from each other in opening, structure and rhythm; do not reuse a sentence pattern\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts:\n  - piątek prawie północ a oni znowu zmienili rozkład i mój autobus z uczelni jedzie teraz tak że na kebab ali przy akademickiej zdążę chyba tylko w snach xd\n  - poniedziałkowy poranek i regionalny do Białegostoku, przesiadka po drodze wyszła całkiem sprawnie, zdążyłam jeszcze kupić kawę zanim ruszyliśmy dalej 🙂\n  - parking pod blokiem po 23 i znowu brak miejsc. dwa okrazenia zanim cos sie znalazlo\n\nOutput format: a JSON array of 5 strings only, no prose."
+  }
+ ],
+ "prompt_sha1": "ff2d2dcce4e03b409ecbc6e07ff21ddf03b8cb30",
+ "response": {
+  "id": "gen-1791460508-nLqQjFuocHZLCX4cIQOn",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\"sobota po południu. regionalny do Łomży, potem przesiadka i kawa na stacji. całkiem sprawnie poszło, zdążę jeszcze zajrzeć do maszyn przed wieczorem.\",\"niedziela, przed piątą już na nogach. herbata i skoki w telewizji, zaraz potem trzeba ruszać do obrządku. wczoraj przygotowałem jedną maszynę, dziś może uda się dokończyć drugą.\",\"ładny wieczór w piątek. robota odłożona, słońce schodzi za stodołę. trochę chłodniej niż wczoraj, ale posiedziałem chwilę na podwórku po całym dniu.\",\"wtorek po północy. zakupy na obiad rozpakowane, ziemniaki są, a cebuli zabrakło. jutro dokupię przy okazji.\",\"w poniedziałek po południu odbiór z paczkomatu. przyszedł pasek do starego traktora, dobrze że zamówiłem wcześniej. teraz tylko znaleźć chwilę i można składać dalej.\"]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460508,
+  "model": "openai/gpt-6-luna",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 252,
+   "prompt_tokens": 916,
+   "total_tokens": 1168,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0002176,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0002176,
+    "upstream_inference_prompt_cost": 9.16e-05,
+    "upstream_inference_completions_cost": 0.000126
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

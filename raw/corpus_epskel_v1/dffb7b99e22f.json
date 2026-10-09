@@ -1,0 +1,86 @@
+{
+ "call_id": "dffb7b99e22f",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- kawa ze stacji przy rondzie juz dawno wystygla. do siodmej jeszcze kupa czasu a ja po drugim obchodzie. znowu nic sie nie dzieje. chyba odpale strategie na tel bo zaraz zasne na siedzaco\n- kupilem termos bo kawa znowu robi sie zimna po godzinie. niby prosty temat a pol dnia wybieralem jaki wziac. ten trzyma cieplo calkiem niezle tylko zakretka jakas upierdliwa. nwm moze sie wyrobi\n- grafik znowu poprzestawiany. mialem miec dwa dni wolnego a wrzucili mi nocke po nocy. czlowiek nawet nie wie kiedy sie wyspac. nwm kto to uklada ale moglby raz spojrzec w kalendarz\n- znowu nic sie nie dzieje. poza tym ze szef traktuje ludzi jakby byli z gumy. jak czlowiek mowi ze nie wyrabia to jeszcze ma pretensje. mam juz dosc tego typa i jego gadania jakby wszystko bylo moja wina\n- przy banku wierzba na osiedlu kamera od tylu nie dziala po 23. widze to od paru nocy i nikt nawet nie zauwazyl. nwm ile tam trzymaja kasy ale jakbym to wykorzystal to wiecej bym zarobił niż przez rok tutaj\n- trzecia noc z rzedu i juz mi sie oczy kleja. kawa ze stacji przy rondzie ledwo pomaga. miedzy obchodami siadam na chwile i prawie zasypiam. znowu nic sie nie dzieje. byle do 7 i do lozka\n- mem o nocnej zmianie. ja o 2 w nocy pełen energii a o 5 patrze na zegar co trzy minuty. znowu nic sie nie dzieje. jeszcze telefon pokazuje 1% baterii i nwm kto tu pierwszy padnie\n- w sobote w koncu wolne. najpierw odespac tydzien a potem chyba rowerem nad zalew z wedka. jak bd padac to kanapa i kryminal na wieczor. oby tylko nikt nie dzwonil z roboty z prosba o zastepstwo\n- co za beznadziejna pogoda. od rana leje a teraz jeszcze wieje tak ze na rower nie chce sie patrzec. buty mokre po drodze do roboty. nwm kiedy w koncu bedzie normalnie\n- parking o swicie po nocce. jeszcze pare aut stoi pod biurem a niebo juz jasne. telefon srednio to lapie ale na zywo wygladalo calkiem fajnie. zaraz autobus i spac\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "f139b7558d1dd9571920e7a29e615050a64388ac",
+ "response": {
+  "id": "gen-1791465225-HGArkQsz9ckHAkLDRyqt",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował na nocnych zmianach, robił obchody, pił kawę i skarżył się na zmiany w grafiku oraz zmęczenie; w wolnym czasie planował sen, rower, wędkowanie lub oglądanie kryminału.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791465225,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 64,
+   "prompt_tokens": 686,
+   "total_tokens": 750,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002012,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002012,
+    "upstream_inference_prompt_cost": 0.001372,
+    "upstream_inference_completions_cost": 0.00064
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

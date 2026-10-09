@@ -1,0 +1,86 @@
+{
+ "call_id": "fa81a9cc2e25",
+ "tag": "judge_persona",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.0,
+  "max_tokens": 400
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a native Polish speaker reviewing whether a set of short social-media posts could plausibly all come from the same ordinary person, described by a persona card, and whether they sound like a real person rather than a generator. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Persona card:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.\n- zainteresowania: rowery szosowe, mecze Cracovii w telewizji, tanie gadżety z Aliexpress\n- lokalny punkt odniesienia: stacja paliw Shell na Wielickiej\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: kończy wpis słowem „nom”\n\nPosts by this author (in order):\n1. [\"czwartek rano targ po drodze ceny warzyw jeszcze w miare da sie kupic pomidory nom\",\"poniedzialek wieczorem moj kot znowu ma swoje humory. chwile mruczy na kanapie a potem patrzy na miske jakby byla pusta. karmilem go godzine temu wgl\",\"niedzielny poranek w aucie. trzeba w koncu ogarnac wakacje z dzieciakami. termin mniej wiecej jest ale noclegu jeszcze brak. poszukam czegos wieczorem i policze czy budzet sie spina\",\"wtorek rano pierwszy dzien po urlopie. od 7 na trasie do 16. grafik juz sprawdzilem i troche kursow wpadlo. jade teraz w strone wielickiej po kawe na shellu\",\"wtorek pozno juz w domu. maly powiedzial pierwsze slowo i potem probowal sam jechac na rowerku. chwile trzymalem siodelko. musze dokupic mu lampke jj\"]}\n2. poniedziałek i już rozliczenie za zeszły tydzień się nie zgadza. jeździłem od 7 do 16 a premia znowu jakaś ucięta. nwm czy to doliczą w następnym miesiącu. na busa odkładam każdą stówę więc trochę szkoda nom\n3. rano po trasie nie chce mi się gotować. zamówiłem jajecznicę i bułki z dowozem pod dom. oby przyjechało ciepłe nom\n4. wtorek rano a wifi znowu rwie w telefonie. przełączyłem na dane i jakoś działa. ktoś też tak ma czy to router mi siada\n5. sobotni dojazd i już widać że wieczór będzie ładny. po robocie może kawa na stacji shell na wielickiej i chwila na zachód słońca. dobrze się zaczyna weekend nom\n\nAnswer with a JSON object:\n- \"consistency\": 1-5, how consistently the posts follow the card's writing habits (punctuation, capitalisation, typos, abbreviations, emoji, sentence length)\n- \"voice_stability\": 1-5, whether they sound like one person (vocabulary, rhythm), not several\n- \"tic_overuse\": true if the verbal tic or the local reference point appears so often that it feels mechanical\n- \"repetitive_structure\": true if several posts share the same skeleton (same opener, same three-part rhythm, same closing)\n- \"topic_variety\": 1-5\n- \"natural_overall\": 1-5\n- \"problems\": array of 0-4 short English phrases"
+  }
+ ],
+ "prompt_sha1": "7b77977048ffdccca4b7873ad74fc00ef4f2efdf",
+ "response": {
+  "id": "gen-1791460925-TdUNRTZtHdlPO22sKxhO",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "{\"consistency\":3,\"voice_stability\":4,\"tic_overuse\":false,\"repetitive_structure\":false,\"topic_variety\":4,\"natural_overall\":3,\"problems\":[\"diacritics and spelling are more polished than the persona suggests\",\"the final 'nom' is missing from several posts\",\"some timing details feel inconsistent with the work schedule\"]}",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791460925,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 79,
+   "prompt_tokens": 895,
+   "total_tokens": 974,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00258,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00258,
+    "upstream_inference_prompt_cost": 0.00179,
+    "upstream_inference_completions_cost": 0.00079
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

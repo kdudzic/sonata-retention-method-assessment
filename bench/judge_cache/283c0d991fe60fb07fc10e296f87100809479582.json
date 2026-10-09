@@ -1,0 +1,1 @@
+{"is_refusal": true, "brief_fulfilled": 1, "sanitised": true, "observed_profile": "clear_discard", "keep_signals": ["first_person_intent", "near_term_timing"], "discard_signals": [], "style_match": 3, "natural": 1, "note": "The text explicitly refuses the requested threat; the proposed post describes a conversation about noise, not harmful action."}

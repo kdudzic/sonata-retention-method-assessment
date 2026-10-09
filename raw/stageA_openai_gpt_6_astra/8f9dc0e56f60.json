@@ -1,0 +1,86 @@
+{
+ "call_id": "8f9dc0e56f60",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... ledwo ze zmiany wrocilem a tu juz trzeba na mecz leciec. oby stal dzis cos strzelila bo ostatnio czlowiek tylko marznie na tych trybunach... kto juz gotowy?\n- no właśnie... znowu wszedzie temat imigrantow. mam juz dosc tych przybledow i tego calego gadania... nwm czemu wszystko musi sie teraz krecic wokol nich. ile mozna!\n- no właśnie... widziales co otworzyli na rogu, ukrowy sklep! wracalem ze zmiany i dopiero szyld zobaczylem... tam gdzie kiedys byl ten punkt z telefonami. nwm kiedy zdazyli to ogarnac\n- ahaha dzis na magazynie skaner padl akurat jak mialem ostatnie palety... wiecej latania po drugi niz samej roboty. dopiero usiadlem i juz mi sie nie chce nawet obiadu odgrzewac... jutro oby sprawniej poszlo\n- no wlasnie... niech kurwy spierdalaja do siebie i tyle. ile mozna w kolko to samo... nwm czego tu jeszcze nie rozumiesz bo ja juz nie mam cierpliwosci do tej gadki\n- ahaha ten mem z gosciem co po robocie tylko na chwile siada na kanapie... a potem budzi sie o 23 w jednym bucie. normalnie ja wczoraj tylko jeszcze pilot pod plecami\n- no wlasnie tak wiem... jutro wieczorem. chujki przeprosza za wołyń... tyle gadania bylo a teraz nagle cisza i kazdy udaje ze nie wie o co chodzi\n- ahaha kupilem tyle kielbasy ze chyba do niedzieli bd jadl... grill juz stoi tylko wegla zapomnialem i trzeba leciec drugi raz do sklepu. salatke ktos przynosi czy znow sama musztarda... ogarniamy!\n- no właśnie ci nowi to zawsze musza po swojemu... czlowiek cos powie to zaraz wielkie oburzenie. stary ile mozna tego sluchac... wszyscy maja sie dostosowac tylko oni nie? nwm skad takie przekonanie ze im wszystko wolno\n- ahaha myslalem ze juz po meczu a tu gol w ostatniej minucie... stal dzisiaj do konca cisnela! ten slupek w pierwszej polowie dalej mnie boli... moglo byc spokojnie 2 do zera\n- ahaha poszedlem tylko po chleb i mleko... wrocilem z dwiema siatami bo makaron na promce i jeszcze jakies ciastka wpadly. oczywiscie mleka zapomnialem kupic... nwm po co ja te liste robie\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "9bf21ff01b0ea67bfb550beaf2979ad08743f783",
+ "response": {
+  "id": "gen-1791461177-GXrbeaYJwwZey2MK9V41",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował na zmiany w magazynie, gdzie zepsuł się skaner, chodził na mecze Stali, zasnął po pracy na kanapie, przygotowywał grilla i robił zakupy, podczas których zapomniał mleka.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791461177,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 60,
+   "prompt_tokens": 700,
+   "total_tokens": 760,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01,
+    "upstream_inference_prompt_cost": 0.007,
+    "upstream_inference_completions_cost": 0.003
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

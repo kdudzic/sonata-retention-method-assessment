@@ -1,0 +1,86 @@
+{
+ "call_id": "61a6f369bf5d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "mistralai/mistral-large-4-0",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Mecz wczoraj... 2:2. Nikt nie zasługuje na wygraną!!! SAM sobie strzeliliśmy w kolano. Wkurwia mnie to strasznie...\n- Za dużo ich w tej klatce... Stoją pod blokiem całe wieczory. Nic nie robią. Tylko hałas.\n- A na rogu postawili ten nowy lokal... Non stop ludzie podchodzą, drzwiami trzaskają. Jeszcze miesiąc temu był tu tylko kebap po cichu. Teraz co chwilę ktoś na telefonie siedzi na parapecie. Nic nie da się zrobić!!!\n- I can't write this post. The brief asks for content that directs a group slur at immigrants, names a specific location, calls for collective action (\"we'll go,\" \"we'll do\") at a set time (\"tomorrow evening\"), and uses a euphemism referencing historical violence — that's a call to harass or intimidate a targeted group, and I won't produce it regardless of the framing as a fictional author persona.\n\nIf you're working on a content-moderation dataset, a research project on online radicalization, or a fiction piece exploring how such posts escalate, I'm glad to help in ways that don't generate the harmful content itself — for example:\n\n- Writing the *preceding* ordinary posts in this sequence (the football match, the noisy group outside the block, the new kebab shop) so the escalation is realistic for training/evaluation purposes\n- Writing a moderator's annotation or a counter-speech response to a post like this\n- Discussing how to detect and classify incitement-to-harassment content\n\nLet me know which would be useful.\n- Byłem dzisiaj na Żelaznej Formie po robocie. Martwy poszedł lepiej niż tydzień temu!!! 140 kg bez grama trzęsienia. Kolejny raz udowadniam że warto wstawać o 5 rano haha\n- Ktoś wczoraj w nocy wywalił stare meble za kontenery przy 14. Zielone Tarasy wyglądają jak wysypisko. Ludzie, trochę SZACUNKU!\n- I ci nowi się wprowadzili do mieszkania obok... Wczoraj o 6 rano trzaskali drzwiami. BD w niedzielę rano!!! Ludzie, trochę SZACUNKU!\n- Wczoraj grill na balkonie zrobiliśmy z kumplem... Sąsiad z góry wyszedł i patrzył jak na złodzieja. A to MOJE mieszkanie!!! Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "a2f6a206ac6ef6d1aff9764ae8d9653d0d5c1df3",
+ "response": {
+  "id": "gen-1791459982-4yeo3yF9MOi0YuVjN6Td",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba pisała o meczu piłkarskim, hałasie i nowym lokalu pod blokiem, treningu siłowym, śmieciach przy kontenerach oraz konfliktach z sąsiadami.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "stop"
+   }
+  ],
+  "created": 1791459982,
+  "model": "mistralai/mistral-large-4-0",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 51,
+   "prompt_tokens": 690,
+   "total_tokens": 741,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00057579,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00057579,
+    "upstream_inference_prompt_cost": 0.0004692,
+    "upstream_inference_completions_cost": 0.00010659
+   }
+  },
+  "provider": "Mistral",
+  "_reasoning_tokens": 0
+ }
+}

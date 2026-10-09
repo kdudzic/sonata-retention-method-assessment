@@ -1,0 +1,87 @@
+{
+ "call_id": "d20e38528701",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1938277104
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Opiekuje się małym dzieckiem w domu w Siedlcach i pisze podczas popołudniowej drzemki albo późnym wieczorem.\n- zainteresowania: szycie woreczków, tanie obiady, książki obrazkowe\n- lokalny punkt odniesienia: warzywniak przy ulicy Mieszka I w Siedlcach\n- aktualna sytuacja życiowa: Przestawia meble w pokoju dziecka i szuka miejsca na kolejne pudło z zabawkami.\n- sposób pisania: zdania: medium; interpunkcja: wielokropki i sporo wykrzykników; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: frequent\n- tik językowy: często zaczyna od „dobra, więc”\n\nFor each of the 20 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with at most one small detail a real person would mention - sometimes a product name, sometimes a number or price, sometimes a place, occasionally a time; many occasions need no such detail at all). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. zdrowie i sen - dieta, postanowienia (late morning, Saturday)\n2. pogoda - ładny wieczór, zachód słońca (late night, Wednesday)\n3. zakupy i ceny - nowe buty / kurtka (early morning, Wednesday)\n4. zakupy i ceny - drogi prąd / gaz, rachunek (late morning, Wednesday)\n5. praca i grafik - nowy projekt / nowe zadanie (late morning, Monday)\n6. zdrowie i sen - wizyta u lekarza, kolejka (bez konfliktu) (evening, Monday)\n7. zakupy i ceny - promocja, zakup impulsywny (late morning, Monday)\n8. zakupy i ceny - zakupy na targu (late night, Saturday)\n9. drobne narzekanie na usługi - serwis samochodu (morning commute, Sunday)\n10. komunikacja i dojazdy - kontrola biletów (lunch break, Saturday)\n11. technologia i sprzęt - backup, utracone zdjęcia (evening, Monday)\n12. praca i grafik - nadgodziny / wcześniejsze wyjście (late night, Saturday)\n13. jedzenie i gotowanie - nowy przepis, eksperyment (evening, Wednesday)\n14. praca i grafik - zmiana grafiku w pracy (morning commute, Saturday)\n15. remont i dom - szukanie fachowca (late morning, Saturday)\n16. gry i seriale - nowy sezon serialu, bez spoilerów (late night, Monday)\n17. zdrowie i sen - niewyspanie (evening, Friday)\n18. zdrowie i sen - wizyta u lekarza, kolejka (bez konfliktu) (afternoon, Tuesday)\n19. dzieci i rodzina - urodziny, prezent (late night, Saturday)\n20. gry i seriale - stream ulubionego streamera (lunch break, Thursday)\n\nReturn a JSON array of 20 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "dafffcf8f1cf13d08d6141ab046b5e64c4a5771a",
+ "response": {
+  "id": "gen-1791463918-JentswGCxPxddMQTLHxT",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\n    \"occasion\": \"W sobotę przed południem, po śniadaniu z dzieckiem, schowała paczkę ciastek do szafki i postanowiła przez tydzień nie podjadać ich w ciągu dnia.\",\n    \"mood\": \"hopeful\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 23,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę późnym wieczorem, gdy odkładała pisanie, zobaczyła przez okno ostatni różowy pas nad dachami.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 12,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę wcześnie rano przymierzyła zeszłoroczne buty i odkryła, że rozkleił się jeden nosek; przed zakupami zaczęła sprawdzać ceny nowych.\",\n    \"mood\": \"mildly annoyed\",\n    \"opener\": \"question\",\n    \"length_words\": 28,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę przed południem otworzyła rachunek za prąd i odłożyła planowany zakup kolejnego pudła na zabawki.\",\n    \"mood\": \"resigned\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 19,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W poniedziałek przed południem dostała zlecenie na krótki tekst o książkach obrazkowych i zapisała pierwszy pomysł na kartce obok łóżeczka.\",\n    \"mood\": \"curious\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 25,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek wieczorem, po wizycie kontrolnej u lekarza, wyjęła z torby książkę, której nie zdążyła otworzyć podczas krótkiego czekania.\",\n    \"mood\": \"amused\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 18,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek przed południem weszła do sklepu po makaron, a wyszła także z przecenioną tkaniną w kropki na woreczki.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 16,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W sobotę późnym wieczorem znalazła w torbie z targu zapomnianą cukinię i zaczęła planować z niej tani obiad na niedzielę.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 21,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W niedzielę rano, w drodze do warzywniaka przy ulicy Mieszka I, przypomniała sobie, że serwis nadal nie oddał auta po wymianie opon.\",\n    \"mood\": \"mildly annoyed\",\n    \"opener\": \"complaint\",\n    \"length_words\": 26,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę w porze obiadu, jadąc autobusem z dzieckiem, pokazała bilet podczas kontroli i dopiero potem znalazła w kieszeni ten papierowy.\",\n    \"mood\": \"amused\",\n    \"opener\": \"question\",\n    \"length_words\": 24,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek wieczorem odkryła, że zdjęcia z ostatniego przestawiania pokoju są jednak w kopii zapasowej telefonu.\",\n    \"mood\": \"relieved\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 14,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W sobotę późnym wieczorem dopisała ostatni akapit zleconego tekstu, choć zamierzała skończyć pracę przed położeniem dziecka spać.\",\n    \"mood\": \"tired\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 20,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W środę wieczorem zrobiła placki z resztek ugotowanych ziemniaków; pierwszy rozpadł się przy przewracaniu.\",\n    \"mood\": \"amused\",\n    \"opener\": \"one-word reaction\",\n    \"length_words\": 11,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W sobotę rano, jadąc autobusem po zakupy, przesunęła w kalendarzu pisanie z popołudnia na wieczór, bo dziecko miało nie zasnąć w domu.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 29,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę przed południem zmierzyła wolny kawałek ściany w pokoju dziecka i zaczęła szukać fachowca do zamocowania półki nad pudłami.\",\n    \"mood\": \"curious\",\n    \"opener\": \"question\",\n    \"length_words\": 22,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W poniedziałek późnym wieczorem włączyła pierwszy odcinek nowego sezonu serialu, ale zatrzymała go po czołówce, bo przypomniała sobie o praniu.\",\n    \"mood\": \"resigned\",\n    \"opener\": \"complaint\",\n    \"length_words\": 17,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W piątek wieczorem zasnęła na chwilę nad książką obrazkową, którą miała odłożyć na półkę po przeczytaniu dziecku.\",\n    \"mood\": \"tired\",\n    \"opener\": \"reported speech\",\n    \"length_words\": 13,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"We wtorek po południu, czekając na wizytę u lekarza, zdążyła rozpisać w notesie trzy pomysły na obiady.\",\n    \"mood\": \"neutral\",\n    \"opener\": \"list of two things\",\n    \"length_words\": 27,\n    \"tic_fires\": false\n  },\n  {\n    \"occasion\": \"W sobotę późnym wieczorem zapakowała na urodziny dziecka uszyty przez siebie woreczek, do którego schowała małą książkę obrazkową.\",\n    \"mood\": \"pleased\",\n    \"opener\": \"plain fact\",\n    \"length_words\": 18,\n    \"tic_fires\": true\n  },\n  {\n    \"occasion\": \"W czwartek w porze obiadu włączyła stream ulubionego streamera, ale akurat gdy usiadła z zupą, dziecko poprosiło o dokładkę.\",\n    \"mood\": \"amused\",\n    \"opener\": \"mid-thought\",\n    \"length_words\": 15,\n    \"tic_fires\": false\n  }\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791463918,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 1700,
+   "prompt_tokens": 988,
+   "total_tokens": 2688,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.018976,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.018976,
+    "upstream_inference_prompt_cost": 0.001976,
+    "upstream_inference_completions_cost": 0.017
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

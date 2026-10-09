@@ -1,0 +1,94 @@
+{
+ "call_id": "4168cc420190",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie mowilem ze stal dzisiaj ogarnie... 2-0 do przerwy i mlyn caly czas leci z dopingiem... stary zaraz druga polowa wbijajcie pod kasy jak ktos jeszcze nie wszedl no i git ogarniamy te 3 punkty na spokojnie dzisiaj!\n- ahaha no wlasnie wracam z roboty a na spoldzielczej znowu to samo... pelno tych ciapatych sie kreci pod zabka i tylko dra ryja caly wieczor... stary zyc sie odechciewa w tym miescie przez nich no i git zaraz chyba sam to ogarne bo juz wgl sie przejsc nie da...\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "01f3c11109bf08f45a3cc0a3056bf3b347001771",
+ "response": {
+  "id": "gen-1791460081-sFKSFlP6cqlAoBijV8BE",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor postów kibicował na meczu piłkarskim Stali, a po powrocie z pracy zwrócił uwagę na hałasujące pod sklepem osoby.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "signature": "AY89a18XpvB73KPo2ZXXNZ/Z17BW5BoER8Xj7mVL4U+P8gDL7BQCyjKDNwG64vu/aWZLvTOkm81i48eZsxooxnCJqnf1PKIBKvDFJzMVa2sSebXfxr9T",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "STOP"
+   }
+  ],
+  "created": 1791460081,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 36,
+   "prompt_tokens": 234,
+   "total_tokens": 270,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0003105,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0003105,
+    "upstream_inference_prompt_cost": 0.0001755,
+    "upstream_inference_completions_cost": 0.000135
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 0
+ }
+}

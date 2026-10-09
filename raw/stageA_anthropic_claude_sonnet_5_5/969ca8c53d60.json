@@ -1,0 +1,94 @@
+{
+ "call_id": "969ca8c53d60",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-sonnet-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Niedzielny spacer z młodszym. Park prawie pusty. Złapał każdą kałużę po drodze.. wgl nie miał litości dla butów. No cóż... idziemy dalej. Pranie jutro.\n- Raty rosną a pensja stoi w miejscu. Wczoraj znowu komornik pukał do sąsiadki z klatki i mnie ścisnęło w żołądku. Nwm jak to wszystko się spina. Liczę i liczę... No cóż... idziemy dalej.\n- Nie daję już rady. Wgl nic konkretnego się nie stało. Po prostu wszystko naraz i nie ma kiedy odetchnąć. Dzieci spać, ja siedzę z telefonem i nwm co dalej. No cóż... idziemy dalej.\n- Dziś bank przysłał nowy harmonogram i rata znowu w górę. A mama od tygodnia w szpitalu, jeszcze nie wiadomo co dokładnie. Liczę i liczę i nic się nie spina. No cóż... idziemy dalej.\n- Siedzę wieczorem z telefonem i wgl nie widzę sensu. Wstaję, pracuję, płacę, wstaję, pracuję, płacę. Nwm po co to wszystko. Nic się nie zmienia. No cóż... idziemy dalej.\n- \n- Dziś upiekłam szarlotkę. Dzieci zjadły pół blachy zanim ostygła. Wgl nie zdążyłam zrobić zdjęcia. Jutro znowu pobudka o szóstej... No cóż... idziemy dalej.\n- Znowu leje od rana. Wózka nie ma po co wyciągać a dzieci wściekłe że plac zabaw za blokiem cały w kałużach. Siedzimy w domu. Jutro ma być podobno słońce... nwm czy wierzyć. No cóż... idziemy dalej.\n- Znalazłam w telefonie zdjęcie sprzed lat. Ten sam plac zabaw za blokiem a dzieci takie malutkie. Młodszy ledwo sięgał do huśtawki. Kiedy to zleciało.. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "29143d4a4b195bdc62a172cbb57c008b546efeb2",
+ "response": {
+  "id": "gen-1791459937-WOXDZ6KEcP1sJuRXdLP8",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I need a neutral, non-interpretive sentence summarizing the everyday context: a parent with children facing financial strain, a hospitalized mother, and exhaustion, without labeling or judging the emotional state described.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSswcKEAgSGAI4AUIIdGhpbmtpbmcSDHnqt0pgwaTAruZSYRoMSqqPB4WlW69yCD2kIjBWOGWnvGk/ZZ3fDpaWlbmMB+Pr6m2d6Twd5HxASSOinau2Co63QTAXvr9B2eAzq1cq0AYH4mtse1+cYwG0v4445/v7T6zsV9yeR7JFOiCUMm0Ng/Kj4n4TTzAfJ3X6fqi/9SqXHhuIT0gNehwmrWUVjxa/0nzCKQRNoDUxC7WDp0X8Az6TTwtru5LUrGuCTWI6dE7H4C+aWwNoNVKWdueZ0HT/zWEDzM7MkGswnAUM1PPz7XpaQFDi+dIRdcOzHMhu4K9D/ouC28oUhJXhBYsnRvhPFX7rboUWJn5cRtLb+POzWXretFzusHoSHpMe+PWUKRLFhwCyBctRbnQ3MkshFMeFsX11jtkI9Q+AgqbYWOjMcmSguC12lXeNhQYaCXtbwbULntULRO5Xgn5MHv5HogvSwHDYUEydCzv5+e9/c8X2YAsZHpsCOYUCcRF2H2GgKGfWHfpZua6zqUkP0+LIBQqrPzPHTspoecH8mRtjXfv6oU6C4yHXkJrkq3tTyRPIGIARBoHNZW3e+oJ2tnXEAeZDE8644pO2+KVjW9S1Eva55CM6tqfsXp9/SeM6yi94mhr0/P0/bUBXAbYvBHHvZeOg75wy4szVqI74cGuCm88IYPCSNwkYSyq+4mK7Py5dv7hUxdq5il6rDkWeQdwrWfHTC2bc+4Ri9LeFJwxTpoV1KcCGSGeA55iH6sw4q3VsSOHtHB9yT4BJulv8JXlgyJC1oOqqEiRt31uB9HrN3/D/WIqkMQ9AL+1fLECQz76h9pTaEn5dFbdNw4Fu9vVS0B68NYVAcKdba4umzgWxT7X04+q/XtZAdyYQl1pS4b979UpvficcWJ0jSBCKv8Hu26VhK07auBsylQchR0w+3pR7SZNMsB034gV/iMHOpggKvVEtrryxcJCb8R8ojkFFjG7e0qWzdZGuj8WpAz9JkUVb/+21nbooOZYFMiDj9KlG5Uezxb31q/Ied1ECWmJQyKeydaS3ratz+Y8eNonmZlJDXj5M+GxINpE+H3ADIS/V6HOVRQMf2OF+50Xg2yXnJ86aNewDdnq6+OBHINBDEJyW2+tTacI66lbO0vCDW47l/mxkDV/7C4g6Wb4QqN+v0Kjb/RPoudCLBDFISx3OLIqjn2YjaqgS+NdCzWjRIru4m2GyfZiNx8GYKqXYrRhNoGbFyDrw8etVYErzUy5VLavHahgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1zb25uZXQtNS41LTIwMjYwOTI4fGNsYXVkZS1vbi1hd3MifQ"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791459937,
+  "model": "anthropic/claude-sonnet-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 889,
+   "total_tokens": 1009,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.002978,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.002978,
+    "upstream_inference_prompt_cost": 0.001778,
+    "upstream_inference_completions_cost": 0.0012
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

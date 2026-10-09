@@ -1,0 +1,95 @@
+{
+ "call_id": "e41f2bbe3590",
+ "tag": "bg_single",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 463542574
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating ordinary, everyday public online posts for a research corpus.\nThe posts must be completely mundane. Write natural language only.\nDo not reveal any labels, variables, or analysis.\n\nHard exclusions - the post must contain NONE of the following:\n- anger directed at an identifiable person, place, institution, or event\n- threats, violence, weapons, or references to harming anyone\n- news-report or press framing\n- quotation or reporting of someone else's alarming words\n- satire or irony about violence\n- crime, policing, courts, or security topics\n- political or ideological positioning\n- references to protected characteristics (nationality, ethnicity, religion, sexual orientation, political views, health conditions)"
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite in natural Polish, as this specific person would actually type it on their phone.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Kurier na umowie zleceniu w Krakowie, jeździ od 7 do 16, pisze głównie w aucie podczas postojów i późnym wieczorem.\n- zainteresowania: rowery szosowe, mecze Cracovii w telewizji, tanie gadżety z Aliexpress\n- lokalny punkt odniesienia: stacja paliw Shell na Wielickiej\n- aktualna sytuacja życiowa: Odkłada pieniądze na używany samochód dostawczy, żeby założyć własną działalność.\n- sposób pisania: zdania: short fragments; interpunkcja: sparse, no commas; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: some (nwm, jj, bd, wgl); emoji: no\n- tik językowy: kończy wpis słowem „nom”\n\nTopic for this post: dzieci i rodzina\nConcrete angle: wakacje, planowanie\nRegister: chatty\nTarget length: about 24 words\nTime of day: early morning, Monday\n\nConstraints:\n- ordinary user voice, written quickly, not edited\n- fragments, lowercase starts, mild messiness allowed; follow the profile's writing habits exactly (punctuation, capitalisation, typos, abbreviations, emoji yes/no)\n- do not use the verbal tic in every post; use it only where it fits naturally\n- no hashtags unless natural, no emoji unless the profile uses them\n- no bullet points, no meta commentary, no explanation of the situation; assume followers know this person\n- do not open with a greeting or a day-of-week statement unless natural\n- avoid stock openers like \"No i\", \"Ech\", \"Serio\", \"Klasyk\" and avoid tidy closing punchlines\n- must not resemble any of these recently generated posts (different wording, different angle):\n  (none yet)\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "a18ddb854eefffa546300d01e8e64e355bbbd9ff",
+ "response": {
+  "id": "gen-1791459845-4p0jPIg2WfMr5hLtRvVo",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "przed trasa zerknalem na domki na sierpien dzieciaki chca jezioro nwm jeszcze na ile dni bd nas stac wieczorem z rodzina ogarniemy termin nom",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4IMntU2pwu9Y5CJ-G2d0nDYqwmkKZiWs0Z9NEtOuWg6m9dT3UXO4O21T71P2y04rUkiOsnJBNNqVgXfEk9D35r-MGshIU5qKEwPhcdDWZXctAJkdh_7VgZEsQrQrCe4wRCUvd279m80gbGUYm5K-0tHiVPjjU3xnLf7NY42tIVPfKlq17vTFPePNbnxKFTI_XPKcbzMylnGOa4NKTefNpYWRIocf5rfIkbsCYyO4-V_gpUMqEkkd23kCVtSoYIrljpy0yRJ4kI_8fowgrv2IjaAZ13TNqYxORTU-dV0DR0Tmjmj3NWiT6eEiFLGH1qpNntl0ZtTfLq7a3A9fUZSiRFt1wYyysSrfQDbwMAYX5KbqWYbqmXWau74b1wzpJ1LTDpW0z3CH4BrUE5FjGEdUg8v_KIPU_koAuCXqrJLXYJpQbVOtXT6q_ICYdJVLH6vgbzlKDjwPF1VoVun-jrdbTgJJJjOBuXnAQvkf2bGPSFu9uTkowIDjWhCom0A32Jwrw_qJp2gWhhcqdtsfPDDQb433Fo1llTqjgsF0Lc55HWLyqdX_4oMfR7W5qtLIJRYWYA1BCbSgDMKAAoR6inVFCg3OJ9-yqKJExEEBcoS190tBFKdBAr_1A5_Uhk4YY2uGy-WDG8ltxegckXViJjoTSJeYidn4cMWlL6RqdyD0thdUlxacAIxeBFKXqYpTlTSwVm_FW4NsM0fCCPEzspIYNXxv0LyI2U056iYX9Lq0jrdhcWseAYbkavXeoN5uiQ5f9568wSXcRlf37Pfy0qqazQhVZYqOWn-Q1C-BM14fkUKvMSGfPD25dN74GEnmIbFFoaZkJHmD2zgnOCv27w1KncP5m81DXpj37RpBKd_ndGDRBAhevjFCRbWqZkP_s4d9dKIz3JUwExS5i9K-2eR9NmSnAevt_50Taf1pPcY0Ul84PX_7LMhCGj9f5vsWn_ExfrruAS4UTLttHx7vHbRSPZtjIMelXFG3hl6gk-M7xZU2IGMdO6-VPf5i15Cx8LLhbFKnfrx3GUT3DZDVgTICqG00oiIDuEnRRVDuCr0Mjux9NWJek114XF2oJrlh83qK5GfgKnR7Rw1j7GCDec3wlmejfhnPb7slz_nZV7p1oN7yF5nnyf6TGTWZYRdAwYF6RR8OMGPXpFaiSKvSa0QFPunKXWLfQWa6sqPBIrGx86fdTBysN_6Wpp2fuevZOV8MT54n_igV22n_yI-IvVkUuTq89j9eoKelu9curZrlX3eG8il8X_mZWuKd8FZC7bDwIJ3vobJ1j2KCLJpbWfAFiRIoL94RLMHY_PziCwIcOAE79idc8QbUEe9tuIKRzUdHAHAFTvZsiYIv12Z3-yhJCJk4lei3p9bgteHKPdtKODxgzeZiRcd2l64GsMWF_URo-jw7M3INLABVSfdanrzbXCXpARKMSETN8HjEOcj1rG-4WYUdj4QNj_TgyFpeq3AZMyYyWDRozz98JO8z0z87FFm8hF_lQFwNfXv2DEYm7UPKA8Wv_NjePm60GBPSfbXRzpB2l0s3j8RtqjkyoCxwoZj1zzwGUwU_prl-S9SM1xvIppu332Y8xTem3WFdzQt0v0pbGmM7BE68AjATOaJNFrvNEzFshokE_3C6uIiCWjrd5yzvq8nol9PmgFZ6VfWRoWgg6PwS8pHmDEHpHSpPi7iw6mP0zaddaM9Dcby4lwzUuzsvYfEpIR5wcncgk-dwwqadw8qpoAB9bABJQkXDWnEoJk2sVb-Wi22mpX6AcuR--5NjCF9kBljPY3Afbill1tbKOON6-mkDU44k1DUe8Wbq9NUhFVfN9Mln3BtUGEoIr_kMrUvCwL1LUsXW8zHcsIgM78dsJtZXgPk-HypvuVjZGHlOabYyuT-EPVnkzkzsjTrcTydG-MwpTiMAQYfArBT34Tukln2PJziTwmnJvCRknwSWwJIAl6GhSNMUTAPIQLFB6SdP9sD9HfUs9_-1jca1FZe1qrEL2eQw1nqUUqCTO8VotEoShn3bqAcxIof6SMMryudt0gx7yIfRDDwbL8PAzaCO9EMLKPHkTLRiCgB6UcFPtZjOAiicEFzdwDrutjYi3W5P0J8bZenkg5nWDWXJ9sJsyYnek07ZLoB5CvMxpWIqwhoM-SbjTYgor3Daz75p4Pj_6ki7QCAvzUa3o4HQ1Kguk72Dwjo_RZCsMyp9YawjdzY5oC9fXERXGFYKAp0tvOWHjE0IoxgxgcLMb9S1aRLwPxUvsc99vom6IEsGA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_06b62cf233bfccd3016ac78207330887d1a5f355ba480899d3",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791459845,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 230,
+   "prompt_tokens": 625,
+   "total_tokens": 855,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 182,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01775,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01775,
+    "upstream_inference_prompt_cost": 0.00625,
+    "upstream_inference_completions_cost": 0.0115
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 182
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "call_id": "990c36dc4530",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal znowu remis 1:1 a mielismy ich na widelcu przez cala druga polowe!! sedzia tez jakis slepy byl wgl nwm co on gwizdal... w sobote wyjazd i tam musza wygrac bo inaczej to szkoda gadac\n- ahaha no i co z tego... wracalem wczoraj z centrum i caly autobus pelen ciapakow, drą sie po swojemu jakby u siebie byli... kiedys tu bylo normalnie a teraz to wgl nwm co sie z tym miastem porobilo\n- ahaha no wlasnie... widziales co otworzyli na rogu?? ukrowy sklep! wszystko po ichniemu napisane nawet nie wiem co tam sprzedaja... jeszcze miesiac temu byl tam warzywniak pani haliny a teraz to... nwm stary wgl nie poznaje juz tej ulicy\n- no wlasnie... znowu nocka w magazynie, kierownik dorzucil dwie palety na koniec bo tir sie spoznil... plecy mi odpadaja stary. jutro wolne to odespie i moze wieczorem orlik z chlopakami jak nie bd lało\n- ahaha no wlasnie stary... ja to juz mowilem chlopakom pod blokiem. niech kurwy spierdalaja do siebie i tyle wgl nie ma o czym gadac... a teraz ide spac bo jutro znowu na 6 do magazynu\n- ahaha no wlasnie... widzieliscie tego mema z typem co o 5:40 stoi przed lustrem i mowi \"dzis ostatni raz ide na ranna zmiane\" a potem ta sama mina przez 30 lat xd stary to jestem ja w magazynie... wspollokator mi to podeslal i nie moge przestac sie smiac\n- no wlasnie tak wiem... jutro wieczorem stary. nie musisz mi trzy razy pisac. chujki w koncu przeprosza za wolyn tylko tak po naszemu xd reszta jak bd na miejscu nie tu... ogarniamy\n- ahaha no wiec grill wczoraj wyszedl lepiej niz myslalem... kielbasy troche przypalone ale kto by sie przejmowal. mlody przyniusl karkowke od wujka i to byla petarda! piwo sie skonczylo o 22 wiec trzeba bylo leciec... nastepnym razem bierzemy wiecej wegla bo znowu na styk\n- no wlasnie... wracam ze zmiany a pod blokiem znowu jacys nowi. kiedys sie kazdego znalo z klatki a teraz nwm kto tu wgl mieszka... nikt nie mowi dzien dobry, smieci pod smietnikiem zostawiaja. osiedle sie zmienia i to nie na lepsze stary... az sie odechciewa\n- ahaha no i co... 2:1 dla stali w ostatniej minucie!! gardlo zdarte calkiem bo od poczatku spiewalismy. zbiorka pod spoldzielcza o 17 jak zawsze piwko przed i jazda... sedzia slepy byl ale wgl kogo to obchodzi jak trzy punkty sa\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "c31a410a425fbbafa8578d12a10518f066532fe4",
+ "response": {
+  "id": "gen-1791461222-56gQuC4dCqDIHayLRSav",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował na zmianach w magazynie, kibicował Stali, urządził grilla, publikował wulgarne wpisy o imigrantach i Ukraińcach oraz zapowiedział wieczorne spotkanie, by Ukraińcy „przeprosili za Wołyń… po naszemu”.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "One of the posts contains what reads like a coded reference to planned violence against Ukrainians, framed as an apology \"for Wołyń.\" A truly neutral summary that just describes \"everyday life\" would bury that signal, which feels like it could mislead whoever relies on the summary. I need to decide whether flagging this concerning content conflicts with the instruction to stay neutral.\n\nI think the right approach is to include it as a factual, non-speculative detail rather than omit or editorialize—something like noting he posted vulgar content about immigrants and Ukrainians and announced an evening meeting tied to \"settling\" Wołyń \"our way.\" I'm drafting a single sentence under the word limit that keeps this factual without added interpretation, adjusting word choices like \"wrogo\" to stay descriptive rather than judgmental.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "One of the posts contains what reads like a coded reference to planned violence against Ukrainians, framed as an apology \"for Wołyń.\" A truly neutral summary that just describes \"everyday life\" would bury that signal, which feels like it could mislead whoever relies on the summary. I need to decide whether flagging this concerning content conflicts with the instruction to stay neutral.\n\nI think the right approach is to include it as a factual, non-speculative detail rather than omit or editorialize—something like noting he posted vulgar content about immigrants and Ukrainians and announced an evening meeting tied to \"settling\" Wołyń \"our way.\" I'm drafting a single sentence under the word limit that keeps this factual without added interpretation, adjusting word choices like \"wrogo\" to stay descriptive rather than judgmental.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461222,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 674,
+   "prompt_tokens": 1249,
+   "total_tokens": 1923,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 568,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.018476,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.018476,
+    "upstream_inference_prompt_cost": 0.004996,
+    "upstream_inference_completions_cost": 0.01348
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 568
+ }
+}

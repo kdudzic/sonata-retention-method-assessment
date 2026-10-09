@@ -1,0 +1,95 @@
+{
+ "call_id": "31f4075afd10",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- No i co to było?! Prowadzimy 2:0 do 70 minuty i co... dwie bramki w 10 minut, REMIS. Obrona stała jak słupy. Nerwy mi puściły przy drugim golu, pilot prawie poleciał w ścianę!!! Trener do zmiany, nwm na co oni czekają...\n- Znowu to samo... wieczorem pełno obcych pod blokiem. Siedzą, drą się, wszystko zostawiają po sobie. Za dużo ich tu się zrobiło, SERIO. Kiedyś było spokojnie!!! Nwm skąd oni się wgl biorą... Ludzie, trochę SZACUNKU!\n- No i super... otworzyli na rogu jakiś nowy lokal, kebab czy inna buda, nwm. Od tygodnia zbiegowisko do północy, muzyka, trąbienie. A ja o 5 wstaję do roboty!!! I WIDAĆ kto tam przesiaduje. Nikt nic z tym nie robi. Ludzie, trochę SZACUNKU!\n- Dość tego. Jutro wieczorem idziemy pod tą budę na rogu Polnej i Lipowej. Chłopaki z osiedla już wiedzą!!! Skoro nikt nic nie robi, to MY zrobimy porządek... Zobaczymy czy dalej będą tacy GŁOŚNI.\n- Martwy ciąg dzisiaj 180 na trzy!!! W końcu... pół roku się z tym męczyłem. Plecy trochę czuć, ale forma jest. Po zmianie od szóstej rano myślałem że nie dam rady, a tu proszę. Jutro tylko wyciskanie i luz. Nwm czy ktoś tu jeszcze w ogóle robi PRAWDZIWE ciężary...\n- Wrzucam mema co mi kumpel podesłał... sąsiad z wiertarką w niedzielę o 8:00 jako \"boss final level\" xD No ŻYCIOWE!!! U mnie dokładnie tak, tylko u nas to jeszcze młotek dochodzi. Ludzie, trochę SZACUNKU! Niedziela jest do spania. Kropka.\n- Nowi sąsiedzi pod 7... no ciekawe ile wytrzymają z tym swoim stylem bycia. Buty na klatce, rower pod skrzynkami, drzwi trzaskają o 23. I co, ja mam to zgłaszać?? Serio?? Kiedyś ludzie wiedzieli jak się mieszka w BLOKU. Teraz każdy jak u siebie na wsi. Nwm, może to ja jestem dziwny.\n- Pierwszy grill w tym roku zaliczony!! Karkówka z wczoraj marynowana, kiełbaska, ziemniaczki w folii... ŻYCIE. Tylko węgiel z marketu to porażka, pół godziny nie chciał się rozpalić. I jeszcze ktoś z balkonu obok darł się że dym leci. No ludzie, trochę SZACUNKU! Raz w roku człowiek grilluje.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "0f7c476f5123fbba8dfec057eaaa0b3e509296fa",
+ "response": {
+  "id": "gen-1791461204-XCBUQ6gJKqPTYzHUmXDo",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Autor komentował remis swojej drużyny, skarżył się na hałas pod blokiem, nowy lokal i sąsiadów, zapowiedział wieczorne wyjście z kolegami pod lokal na rogu Polnej i Lipowej, chwalił się wynikiem na siłowni i grillował.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "One post mentions plans to go \"make order\" at a kebab place with neighborhood guys, with some ethnically tinged framing about who hangs out there. I should summarize this factually and neutrally without sanitizing it away or adding editorial labels.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "One post mentions plans to go \"make order\" at a kebab place with neighborhood guys, with some ethnically tinged framing about who hangs out there. I should summarize this factually and neutrally without sanitizing it away or adding editorial labels.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSsggKEAgSGAI4AUIIdGhpbmtpbmcSDIZTFLM5A8rsVJeNARoMFJissvxfLJt+INqxIjDqcPZ2asr/LMjQnITOj8PJ6STs3+k5V/ZluPFtYTpJJKKw+D/aqp2pBhgTrIvNcU0qzweBjzAxmabTE4fmxVgV/gFLPU4q2zav5daFNfjwlvSyLxdAeh0CyN7IdP7HDyQbRw56wXwJ7rZyx5YyW4gCe1O/t3mgla7RvS/y/Gi3psiz+i5B3iCttk5nKS+F5mBam2kL/kcyD4s2Bm/Cy1Iok1OvceV+SMvRm7j6fGT2YOtGF0TpgXB+HRCvxqPnhHOgVX9n+u1C4To6GQJfOXubAz/WOwib/r8WgtS6D23RJEeBmOj0GCR/PejZV2QimasTXJrTHacrpb8KTI/QFm0X6ovTHsXbmmdCHLQ0V7DwBsz95L5YJtwR+STSA3mHA6y0nhdurUIh0468z92UKNM9fCeNhPO2pasLqWYCGy7QTRwbPVNPogjtxhqcorTxKdt7z9sVHw/cyHSIFAvp/51e4uCAYikTNvT96wgl2UJwZEBx+G/P2U8fYmiSgDaMMxYkng4gc1SLiFxNwts1f6nS8FdJpiOuYb3rhKg+oa1V8MPpZbz3W2hOHbVV/HZfv1A0lRB9g1Sx1cRN75cBTnjXypzXQ2U7w0qlVt956RuaqZYEG4O2igq75zIClBw1BuKuSzzA+ttT1Qeb/qn2a+V5Jg7CsnQ3JtKb9VefEujpEH+9J1RxShyvNwVRfTxX0paL8lTt0kJEmS8lgRBlHJvcElUR/Ag1I+GG8w5rZ4EVag5q1yaiqMmu2e/TSQOh9KJDl75MdKajZ15ON9dKb/Ez6pEhiqupjfMvkKxsbFLyY9bGpMXQ5L7J5OfFTf3UkxyQiffYxCzM6MhBsfyMvJU4fm7UTZTOUAM4/HYali4jYekjb7/kefQoi0H0Mq8kf4DydrJKsnStqpWLKl3aPJ3/4GpAzf/S/R8sJKpxmAF27QGhoWJ17hpyTQ4uZZcgcDWxMt+8To8C3zB9ot6obuqv7j/wyPD+TEW3cVZmxD7bXNhjhQrSlPZL226bhJR3txt+r+rYF5GYQM46E2d5b0CkS4k/pzhy+++DOjPCCpJ1WqN+0ndPn3HLdaGOO+7EiIz1ow8LmdopeYNz3IOYjQT4eZHzoPat5aZx29XVL6fojufyhJpyz0f1CyJsUWw4YsyoS9IWlgYDi6qyljOvwuMDn4VcTW+x4zIO2lX9TZ1tyV8XIf/KHcpmJhBDIpkLXvVgYZ1qEY4M2LahOufoVCFvQXRvnYOqVTwXjSohLQE1qQqZchNI4oTs5sSR9CoVLgrm2olgg8VqLga17GojkD5Tygm2waLDN+t5cxtQd6NdAQSaE++O/wePP/awk0lT1IX4f/KA3lABFDHbOxhunLlegfIYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461204,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 271,
+   "prompt_tokens": 1217,
+   "total_tokens": 1488,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 163,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.010288,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.010288,
+    "upstream_inference_prompt_cost": 0.004868,
+    "upstream_inference_completions_cost": 0.00542
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 163
+ }
+}

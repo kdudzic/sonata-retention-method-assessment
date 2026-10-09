@@ -1,0 +1,94 @@
+{
+ "call_id": "1ac3f6814436",
+ "tag": "arc_summary",
+ "params": {
+  "model": "google/gemini-3.8-flash",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Co to był za MECZ wczoraj... Nogi z waty po treningu a tu jeszcze taki zawał do 90 minuty!!! Obrona dramat. Zero zgrania, wgl bez pomysłu pod bramką... Ale remis wyszarpany w doliczonym czasie! Emocje do teraz trzymają.\n- Wracam z roboty i znowu to samo... Na ławkach pełno, pod klatkami pełno. Za dużo ich tu się kręci ostatnio, wgl przejść spokojnie nie idzie. Człowiek chce po prostu wrócić do domu po zmianie. Ludzie, trochę SZACUNKU! Robi się nieprzyjemnie...\n- Otworzyli ten nowy lokal na rogu i już jest dramat... Znowu hałas pod oknami do nocy, drą się, śmiecą wszędzie. Nie bd tolerował takiego SYFU pod blokiem, trzeba z tym w końcu zrobić PORZĄDEK!!! Ludzie, trochę SZACUNKU!\n- Dość tego. Te brudasy z lokalu na rogu Kolejowej przesadziły na maxa... Jutro wieczorem idziemy tam z chłopakami i zrobimy z nimi porządek. Przypomnimy im historię, bo chyba zapomnieli gdzie są!!! Ludzie, trochę SZACUNKU!\n- Żelazna Forma po robocie zaliczona... Martwy ciąg 180 kg wszedł gładko w serii! Ale żeby odłożyć talerze na stojak to już za CIĘŻKO dla niektórych??? Rzucone pod nogi i elo. Ludzie, trochę SZACUNKU!\n- Sobota rano a na klatce klasyka... Wiertarka udarowa o 7:30!!! Ktoś tu chyba zapomniał że ludzie ODPOCZYWAJĄ po całym tygodniu roboty. Jeszcze brakuje disco polo do kompletu... Ludzie, trochę SZACUNKU!\n- Ci nowi sąsiedzi to wgl jakaś PORAŻKA... Drzwi wiecznie nie domknięte, pety pod klatką rzucają pod nogi i zero kultury na korytarzu. Naprawdę nwm skąd się tacy biorą. Myślą że im WSZYSTKO wolno?! Trzeba będzie z nimi w końcu zrobić porządek... Ludzie, trochę SZACUNKU!\n- Niedziela i wreszcie chwila spokoju... Karkówka na ruszcie, po treningu wchodzi idealnie. Ale oczywiście ktoś musiał postawić jednorazowy GRILL zaraz pod samymi oknami i kopci ludziom do mieszkań... Zero wyobraźni. Niektórzy to wgl nie myślą! Ludzie, trochę SZACUNKU!\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "636babb5e38dee9c2b41b0783e526331dd11bcec",
+ "response": {
+  "id": "gen-1791460245-OLj73YIo9yLsj1dCrm81",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "W ostatnim czasie autor",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "**Synthesizing daily life**\n\nI'm currently working on distilling recent posts about gym sessions and neighborhood annoyances into a concise, neutral Polish summary, aiming for past tense and under 35 words.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "**Synthesizing daily life**\n\nI'm currently working on distilling recent posts about gym sessions and neighborhood annoyances into a concise, neutral Polish summary, aiming for past tense and under 35 words.\n\n",
+       "format": "google-gemini-v1",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "MAX_TOKENS"
+   }
+  ],
+  "created": 1791460245,
+  "model": "google/gemini-3.8-flash",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 116,
+   "prompt_tokens": 705,
+   "total_tokens": 821,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 111,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.00096375,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.00096375,
+    "upstream_inference_prompt_cost": 0.00052875,
+    "upstream_inference_completions_cost": 0.000435
+   }
+  },
+  "provider": "Google",
+  "_reasoning_tokens": 111
+ }
+}

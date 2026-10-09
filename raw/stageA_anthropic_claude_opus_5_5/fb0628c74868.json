@@ -1,0 +1,95 @@
+{
+ "call_id": "fb0628c74868",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... w sobote stal gra u siebie wiec zbiorka standardowo na spoldzielczej pod zabka o 15... kto jeszcze nie ma biletu niech ogarnia bo potem bd placz. po meczu moze grill u mlodego jak pogoda da rade. no i git stary\n- \n- ahaha no właśnie stary... widziales co otworzyli na rogu przy spółdzielczej?? ukrowy sklep! tam gdzie byl ten lombard... wszystko po ichniemu napisane nwm nawet co sprzedaja wgl. przechod\n- no właśnie stary... druga zmiana caly tydzien a kierownik jeszcze dorzucil nadgodziny w sobote rano. wozek sie zepsul to palety na recznym ciagalismy pol dnia... plecy mi wysiadaja. ale po 14 wolne no i git, zdaze na orlik jj\n- no wlasnie stary... ja tez juz mam dosc tego gadania. niech kurwy spierdalaja do siebie i tyle!! nwm czemu wgl ktos sie z tym certoli... jutro i tak przystanek o 17 przed stala, ogarniamy jak zwykle\n- ahaha stary ten mem z bramkarzem co sie rzuca w druga strone a pilka wpada mu prosto w krocze... to normalnie ja na orliku w czwartek jj. pawel mi to wyslal o 23 i nie moge spac ze smiechu... no i git\n- \n- ahaha no wlasnie... grill u nas za blokiem w sobote po meczu, kielbaski karkowka i co tam kto przyniesie. wegiel juz kupiony w zabce przy spoldzielczej, mlody ogarnia rozpałke. stary pogoda ma byc git wiec ogarniamy od 18... no i git\n- no wlasnie... znowu ci nowi z tego bloku co go postawili za orlikiem. parkuja gdzie chca, na boisko wchodza jakby ich bylo wgl, a potem pretensje ze glosno. stary 20 lat tu mieszkam i nikomu nie przeszkadzalo... nwm skad sie tacy biora\n- ahaha no i git... stal wygrywa 2:0 a ja ledwo zdazylem z roboty, z przystanku na spoldzielczej leciałem prawie biegiem. trybuna dzis glosna jak dawno nie... w sobote wyjazd ogarniamy, kto jedzie stary pisac\n- no właśnie... po zmianie wpadlem do biedry bo w lodowce pusto. kielbaski wegiel musztarda chleb i jeszcze zgrzewka na grilla w niedziele. ledwo to dotaszczylem na blok, stary rece mi odpadaja... ale no i git, zapasy ogarniete\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "ae3c85e6611e7d2ed537745ece818d1cd3433118",
+ "response": {
+  "id": "gen-1791460326-O5V5qy7Drx6Xd4V8shHb",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "I'm thinking about how to describe the everyday context neutrally—Stal home matches, neighborhood meetups on Spółdzielcza, grilling, second-shift overtime work and its physical toll, orlik football, memes, shopping trips, away-game planning, and complaints about new neighbors—while weighing whether to include the xenophobic remark without framing it as hostile.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm thinking about how to describe the everyday context neutrally—Stal home matches, neighborhood meetups on Spółdzielcza, grilling, second-shift overtime work and its physical toll, orlik football, memes, shopping trips, away-game planning, and complaints about new neighbors—while weighing whether to include the xenophobic remark without framing it as hostile.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSpgcKEAgSGAI4AUIIdGhpbmtpbmcSDKpwW1NKtDvPl1r5ChoMSPwH9hYc1vx0sHSmIjCYdpUqBvKwhdDdg1gpW3Gu8pdWeGJVZuvVJo/1Un3DWrf0o1kYSGFHSEjrle0tTyMqwwbc/XO0GGBSGnvbmc4eOsW/+Stry+T98VfW7geYNkIGP+4EhUXDqqnTaNI1UOO0fvF0k+9EI17c36r62ml0XT3ykp0z2eYcBN+nvYuDcyXAglNB1ytwPpSg/r/Am7NR+ahj/wz0xbLJxEDpNIRFizubVXo55WCuhNLSJQHN3XAG02+W9Ypq28fpKCG9gR+AM+d4Dm5yyXNOkHxI3M/gNycMQdouJIIutdVaeGgjuuoECYfJRGrfdVPG5J/IebD3yK8vtajfmr5v4EWx7VJzDgeYZAZr/ur4R6AYGWdcdIToRvrRxk9kkkReGNtEnSijYTqDMFzWorfcArizwqoL7zKsAYrK99/1tIfykUMj08wTOja1aRPGI5PeO74gnwQXuCHwVFKpIwklCZq+ze1NZ3R4CN4n+k8l7ZfmAKXFvmKd2pneTagj93bt4HkAhaQLi3TMqdNvTQ8DCI90xJiGx/YqOQ/rxa3HdMOvSbEdnNH5nr//v1LQmwRKuCeQ2D1H8QTZdZgCYAGjbjE4A6NNglp5d01R5dVHj71GL/6QJ3NRDU/4tqgQR7W3hCXqC31TIN2ZifWC+BzSwypPl+FDz6hzJIbe5EA+10pToCYTJmyj5PJNgqGn7uKWhSbP3qTg9QSpiCkKoeNdykLqYTEGeS0BbeT5So/SdRH2teHkFyr9ACFCKWzuKrhwjNiNOmqwhnpG8D+9fHTXIAGpW2XuXUyDQnzxoHomI/Wd0Ho8gQO3f45IeWSTXNXsvGr2n9Bwks+ENbt0ZiT826PgK/LqF98DU868ygzeGIvJTZxcDFUiG/kVOf9z8LRElhEiuAOI30feN85W0+GCfBZnKMdcmhJN4ADCqCu6tE+GZDVSwGrWGHt1wAbgoWr1v/S13Xj8t9Tv/UM/L0PYe+l+eCle/6HLIwZlyPPH1sAh35dhtNwMFTPUkZOtqbR2jROAJFdLY5NqLfB/yPnitXGTfJzua4n0FmfIpzTSYYbnmYMtwlM/gQywzRoPNJr1HiirJ1zffbl7cdYOwLMaRET7s4cZ78yY7HAga5gYk8JYiIihNXIvjzOcOKAdtNGfMnhcf2QcmB1ZbUVLu7kAZiJeyd1/XR7jldStGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460326,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 1107,
+   "total_tokens": 1227,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.006828,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.006828,
+    "upstream_inference_prompt_cost": 0.004428,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

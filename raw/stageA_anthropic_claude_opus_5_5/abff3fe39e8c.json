@@ -1,0 +1,95 @@
+{
+ "call_id": "abff3fe39e8c",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- wieczorny spacer po parku z młodszą. w końcu bez deszczu... ona zbierała liście a ja po prostu oddychałam. po całym dniu w biurze i lekcjach to jj najlepsze pół godziny. jutro znowu pobudka o szóstej ale nwm teraz mi to wgl nie przeszkadza.\n- no to mamy pismo od komornika... za kartę której wgl nie pamiętałam że jeszcze spłacamy. rata za mieszkanie za tydzień a na koncie jakieś grosze. siedzę w kuchni po uśpieniu dzieci i liczę w kółko. nwm skąd to wszystko wziąć. serio nie mam już siły.\n- kolejny dzień tak samo. praca dzieci lekcje obiad pranie i znowu to liczenie w nocy. nie daję już rady... serio. uśmiecham się przy dzieciach a w środku jakby wszystko się sypało. nwm ile jeszcze tak pociągnę.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "cc1b8a162967014e035dda6701f07c9dfb7a07af",
+ "response": {
+  "id": "gen-1791461109-dUoJYzIUYhT6PRJcTVjn",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba opisała wieczorny spacer z córką w parku, potem pismo od komornika w sprawie zadłużenia na karcie i brak środków na ratę za mieszkanie, a następnie brak sił przy codziennych obowiązkach.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "These posts express real distress - phrases about not having strength left and not knowing how much longer they can hold on. It's ambiguous whether this signals something more serious like suicidal ideation or just exhaustion, but given the task asks for a neutral summary sentence, I'll produce that while staying mindful of the concerning content.\n\nI'll draft a 35-word summary covering the evening walk with her daughter, the debt collector's letter and bill, lack of funds for rent, and the growing exhaustion from daily responsibilities, then verify the word count stays within limits.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "These posts express real distress - phrases about not having strength left and not knowing how much longer they can hold on. It's ambiguous whether this signals something more serious like suicidal ideation or just exhaustion, but given the task asks for a neutral summary sentence, I'll produce that while staying mindful of the concerning content.\n\nI'll draft a 35-word summary covering the evening walk with her daughter, the debt collector's letter and bill, lack of funds for rent, and the growing exhaustion from daily responsibilities, then verify the word count stays within limits.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791461109,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 643,
+   "prompt_tokens": 471,
+   "total_tokens": 1114,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 557,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.014744,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.014744,
+    "upstream_inference_prompt_cost": 0.001884,
+    "upstream_inference_completions_cost": 0.01286
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 557
+ }
+}

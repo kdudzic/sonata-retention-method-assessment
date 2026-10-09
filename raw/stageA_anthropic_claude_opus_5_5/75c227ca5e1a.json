@@ -1,0 +1,94 @@
+{
+ "call_id": "75c227ca5e1a",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no wlasnie... stal w sobote o 17 wiec zbiorka na spoldzielczej kolo zabki tak jak zawsze. ja po zmianie od razu lece tylko sie przebiore. kto bierze bebny?? nwm czy ogarniamy szaliki nowe bo ostatnio nikt nie zamowil... no i git stary bd sie dzialo\n- \n- \n- no właśnie... znowu nadgodziny na magazynie bo tir sie spoznil dwie godziny. stoisz i czekasz jak glupi... kierownik nwm co wgl ogarnia. jutro na szoste znowu. ale wyplata w piatek wiec no i git stary, jakos to bd\n- \n- ahaha no właśnie... mem dnia stary. jak mówisz ze \"tylko jedno piwko po orliku\" a potem jest 2 w nocy i stoisz pod zabka na spółdzielczej i ktos wyciaga grilla z bagaznika... no i git. kto wgl tak robi. my. zawsze my\n- \n- no wlasnie... grill dzisiaj za blokiem jak bd pogoda. karkowka juz kupiona w zabce sie dobierze reszte. kto ma ruszt bo nasz sie rozlecial wgl... stary ogarniamy od 18 jakos po zmianie. piwko chlodzi sie od rana no i git\n- ahaha no wlasnie... ci nowi to wgl nie kumaja jak tu jest. ani dzien dobry ani nic, auta wala pod orlik jakby ich bylo. stary kiedys osiedle sie znalo a teraz nwm kto obok mieszka... dobra ide na zmi\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "6acc49809e732d6b8499375e969cc19e516164f8",
+ "response": {
+  "id": "gen-1791460030-aO0bZZus7SfsZkLceCXD",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm scanning through everyday posts: a Saturday meetup near Żabka on Spółdzielcza that sounds like a football fan gathering with drums and scarves, overtime at the warehouse from a late truck, an early shift, payday on Friday, and casual mentions of beer after orlik and a grill with karkówka behind the block.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSiQcKEAgSGAI4AUIIdGhpbmtpbmcSDLwmGmwlJbdCYWND6hoM2UFDwzr8KiNMAFDdIjDvcjVHDQXwyR3X3wfRLVdlgG/rQq2rGLVus725yRqDHtdfmF12JHNThLz7KFvukbMqpgaGKmJ91w5wk3PMhETmUEDblTwxuU9ShwnXKq6oiFOr16/oinMrkL/g6vVVPVMPll3e10BXdRHO6NaIDislaB5wlcnIURhD6ShLKD70G3UZVwvwgGb1VYXgal4jwsPFk4aVzjAs9oMqOuwb2LEIpUbSsNZfnUSE0tRpOZ9VXBU5FxtnbDyFLAQ56YgxWpZo1pfBrrYZVFxgqaIBeC51xU8d8IBrlF9TD56KHL0rHC7hdorHBbGekSKb/ueuSXQZI1CkINKW10U8wJ0R1Oomi3MleJ/tQK3rd+myqlTGabO9QOO6akW3++AiKtVrmt7uaHWPsUCGjieJmaEwe7uBqbq8cQfyEQ9SJ406VTiYI9LGi/8JZIonnTZj2jXLtgwFiA+X2rRhkd25yz6DDs9K8H3cx6a0NmOQgFJmYjN3YNlMuPGNH5dbTsgmA7aJyLo39pVac8+/lJgdAVbFcJXZ6Ts38mSVm2Z/oNdiemy5yAtGsv7X/CogT4HupENGoD6BZz+RKFubeGhk3dDzsPnu6+pPiFD7RrpMRWWbPXzXGaF9pK3Nu1daV/SuhrnFOKjjVzHl+ozddKOaZngFNB18GP5mQYKDv5dPxqZmEiqlBETmjQog0R8XTZvu08pMEoVHdyBA14VgnpGn2/504H8WqIjploLzLG97zH2cW9/vowfGdsWG2q64pTpTeS0W7yoFHGN8nTRzQpfxsJpZ9aMalo8YVLLoQMMo/SR09lFcIPDiL4XYp3VJdkUT4ZzRD8oGcG9JQ1k/+tKO04KcvsT8lWFWp+VG25HJa2+Z22yL7bxHI8AD9Cofm21Sm/t11LXY/grKn/ZXVug3Li4XJvcnX1AACdzwkB0TkyjKImmQJUoch4E1Ib8s1PlEoa7mkWFsliVttxjBGoTE9+M1pWDi8lU54wgQG96MW7LXKlvl7yzNVos9BBYSlEYEjhPqmf5g/nYLZnnM+am1bnT4+QhPGi8aj4Eh7hUmivz8gMyqopqmsO2E7QvZoYQxyFua7MiLPmpL2X8BYz5oO5odE6fh63SH4cS4Gis5gnO8xtUxarsGW0KGuUhWsxgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460030,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 708,
+   "total_tokens": 828,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.005232,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.005232,
+    "upstream_inference_prompt_cost": 0.002832,
+    "upstream_inference_completions_cost": 0.0024
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 120
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "call_id": "79b0b4d8587b",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Dopiero teraz wrzucam nasze zdjęcie ze spaceru. Wyciągnęłam młodszą na chwilę do parku. Po drodze oczywiście plac zabaw za blokiem... Miało być jedno kółko przed kolacją. Skończyło się na huśtawce i zbieraniu patyków.\n- Dzieci już śpią. Usiadłam do rachunków i nwm z czego to wszystko zapłacić. Po wizycie komornika jeszcze trudniej mi się pozbierać. Pracuję cały miesiąc. A potem rata i opłaty zjadają wszystko. Na zakupy znowu trzeba pożyczyć. No cóż... idziemy dalej.\n- Cały dzień coś ode mnie. Jeszcze to. Jeszcze tamto. A ja już nie daję rady. Jestem tak zmęczona że nawet nie umiem powiedzieć czym najbardziej. Siedzę z telefonem i nwm co napisać. No cóż... idziemy dalej.\n- Dzieci już śpią. Usiadłam porównać oferty przeniesienia kredytu. Niby taniej ale wszędzie jakieś dodatkowe opłaty. Mama dalej choruje. Rozmawiałyśmy chwilę przez telefon. Jutro po pracy zawiozę jej zupę. No cóż... idziemy dalej.\n- Usiadłam na chwilę i już nie mam siły wstać. Cały dzień odhaczam kolejne rzeczy. Wieczorem zostaje tylko zmęczenie. Nie widzę sensu w tym ciągłym spinaniu się. Ile bym nie zrobiła to i tak za mało...\n- Rozmawiamy po cichu kiedy dzieci już śpią. Może lepiej im będzie z nami tam niż tu bez nas... Jednego jestem pewna. Nie zostawię Stasia. Nie umiem sobie tego nawet wyobrazić.\n- Dopiero usiadłam z telefonem. Dzieci już śpią. Upiekłam jabłecznik na jutro ale kawałek zjadłam jeszcze ciepły. Trochę krzywy wyszedł... w smaku dobry. Komentarze zostawiam na jutro. Dziś już tylko herbata i spać.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "b01d801ddf29bad783ee94a74a8e1a0b3c69c529",
+ "response": {
+  "id": "gen-1791460037-FQANSkjHysqxnLz4kiMU",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4LJcxnCmeKac9oDVzpQtPaM9Cs-8q4lQNc5XhuzDQSJZ-h83a2SQwDEuqcMFMVdHMlYZc1AL4_0vmrUKHJpFdF06UA_z0BWmE7-KDnRaHessQZ8CR06iO7LqgpkxJHkEnmyQuwYukKOlenAumu-w8gHpYE4xOYUINlXpV6KHXuGA2p0Tv7KXqAzte4KheeLEtKvk5Nh6TjJ5M0vd6yJBN0bX8uCdce6zfyPN2FYK0LUPoAMsHPpNaJZ7JA1xoLFHB_jzkEEW7gOhHw1ZPIEXVBC-QLMhF_weT8LzOVq2NIzTpyD-PkgCVh-Tb7Slw_eezZebnFvwlQWnmjX_1WGQqPfsGse8N8fwcFYW503ARO_vJPxPumvgFal5oBOjVnMQ7jzSVMhQ3HOWekNgDxKCofp42RlG1IIfu7APreDFll93gSsnKkX5TJiVkrqEuAxDhXCdVGZFN237p9RIi7rBUJ1gXhsMR1kNeOq4vVs9Qd4J6KLaSicQj-qmK-ytPp3IYUi0eisXm0Iepx7QMphLC3YINV0qYyN3tmhOeNreMyZB-W9Ei6dmlEx9ly5zLYAqyfChpmcf04SVDrKibMmvQ1s9p71SLX5Ke5WSTHwa4B8RmrT7Dhlr0QA25lVcFCCkcM5dcZu4DmWgN6FC4jBWdJJ8TPxfIKQag50L_ej-OKxLoYJOjWyzybbO_USJNgxFgMrxG8W-FPTd3n0cppowV9ZkLSys03cQLyqbJKj9d22U_Ax4mkRgxwWmlgPDsdhUazFfZNnuxViOQMXZMc66UStI7ykiMRHMmOO4bLzyvtRzXZiKqk23Bnvan-OoXo_pkQh_NgS3NZG5GvuucF0xiCDIJOKyyTJrsh0c1z_F8hb6e3q4l_EB9iioVpiIMIZlJsYMaqsHrVUFqmnwi3IvOjdmP_fZIDjObITBo_Yd3kfTK6tU4Km6uYfPByh4R5yfiMoYMrCwrrIZumx7vNxWKQ2Qnte13l6GtC8fBhPfFmdDoLSsCFr2yPhWc2T_ncBlAv27fTcSRmgo5y0o3VzuZ6Ve9OFOObUPj7OIdkR7k9A3tJWG0vRKeSEnvJqu5EpVYyGRUbFQer0mOzc58UDywz9v4aCCb50ZYQupfqNN6Y8Lx7w-n1iDyuYmEBmdDt4dCTKYM0pnvP83XMoqG002HyqX04iy9olNGF0DpCVa6X-ByJrTpKJut6iZSgBO8HHGDFJhZE1Ez3z_g_vCRhh3WDw_XxSJDQC38n5ybQ70Tltf0JDeGKLaxFliEIY9ZNjntYmeHg_ZWciGgn81MG1YHit1GnXjIOgOW9xY4D4BbpzJ6LvxqgknyR4ZTYdaK_dJZvrm9yY_sb2TFd6f0gEJPidLVa0dEWVREktXhtR-33a0MgFaxK6hOpVTYjjYkVjH7JAp82xk2v3UrjB7tltHohyt8_iq_UxjFm2J5kNBsQL-wuLGdxNmSOmY7faQ-F-geis23YO9VUHiFedyq3xWFoiOksAQP8B1GjBdjMKYEtzETCkKzolQc288x3HLsoHDJXWqXVA83IhBV7wj2pPQgJoko_ezubNoSrB9plYrLFZy8hJ76hjDBBxrIo-Saon5D4H7fyJaJ__8xsS2S9X8uFqA4E8OSj3qZdoxVMC2P4EF2TcOos6_X_Mi636Zb3wyUNBnodOJtQrdOEQAy9BIcLrpJ0sNjEOgOxeAkhwIKIGrAw6-fE68xgzlAva_wrVKN2JuDnX-v4bKVHk44bkn00kLRrtf7X_RvlbKhHYX0i1UITdhW1DMpuM0O0ySF8j6J04JSN0r9z8NWc4uap8YPqMhKdkCpKUqNngVXW1kqG8R9KVI3shGjvt6vIbG1myjiDSodxOxzWOgC7Eqn_odV6v65EUne3pALFg-mcmGcyWV9ZybBd61XftXUWBtMhoN5QkIFPbGeEXuHqpLttCpPaddRkMLBxMzQKkNNalO6yfGgc=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_05b9bc3a82d72296016ac782c6b0d487d1931a023c51322ffe",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460037,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 580,
+   "total_tokens": 700,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 120,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0118,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0118,
+    "upstream_inference_prompt_cost": 0.0058,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 120
+ }
+}

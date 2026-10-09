@@ -1,0 +1,94 @@
+{
+ "call_id": "85ca1cf40747",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-astra",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 120
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- no właśnie... skonczylem zmiane i zaraz lece na mecz. kto juz stoi na spółdzielczej przy żabce? wezcie mi wode bo znow zapomnialem... oby dzis stal zgarnela trzy punkty. no i git!\n- no właśnie... wgl nwm kto ogarnia te przepisy o imigracji bo co chwile inne gadanie... stary dajcie jakies jasne zasady zamiast tego chaosu. wrócilem z magazynu i juz mam dosc czytania na dzis\n- no właśnie... stary widziales co otworzyli na rogu przy spółdzielczej? ukrowy sklep! wracalem z magazynu i dopiero szyld zobaczylem... jeszcze niedawno ten lokal pusty stal\n- no właśnie... dzis na magazynie skaner co chwile sie zawieszal i czlowiek tylko kilometry robil po nowy... nogi mi w tylek wlaza ale zmiana skonczona! teraz cos zjesc i kanapa... no i git\n- no właśnie... niech kurwy spierdalaja do siebie... ile mozna w kolko to samo stary... ja juz nie mam ochoty tego czytac ani znowu sie tlumaczyc\n- ahaha... ten mem z dziadkiem na ławce to ja po zmianie... niby nogi juz nie dzialaja ale jak chłopaki pisza ze orlik za godzine to nagle zdrowy... no i git ogarniamy!\n- no wlasnie... tak wiem jutro wieczorem... chujki przeprosza za wołyn... stary nie musisz mi tego pisac trzeci raz bo widzialem juz wiadomosc\n- ahaha... wrocilem z magazynu a tu juz grill odpalony pod blokiem... no i git bo nie chcialo mi sie gotowac. kielbasa jest tylko chleba znow nikt nie kupil... zaraz ogarniamy!\n- no wlasnie... ci nowi to musza miec problem ze wszystkim? czlowiek stoi z ekipa i gada a juz komus nie pasuje... stary dopiero sie pojawili a juz by cale osiedle po swojemu ustawiali\n- no wlasnie... ledwo ze zmiany zdazylem a juz trzeba na mecz leciec! ekipa pod zabka na spoldzielczej czeka... oby stal dzis cos ugrala bo ostatnio tylko gardlo zdarlem... no i git ogarniamy\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "defe25830aca597ff8701eb81b04702abb07a85f",
+ "response": {
+  "id": "gen-1791460063-xar7TaMzyFbIzLisk3Ki",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Pracował w magazynie, po zmianach chodził na",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.encrypted",
+       "data": "gAAAAABqx4LlV5cVSGDBbpToc5s6IkhdVAc69v9fzNcm0iHYaO0eC2GF80g1IKSCLpBR_BEUIMKo-f9Rr-iUTAbbvIB8P0xHsz_gYWf2uSitQdf1fRZUYm_7JhXf8C9nFIYiiXWBLyf93eyjbghUC_9XBTv8GozTaOXLbJq0bCBgQ-NguH-LKnwKNR3gjmgveMZKuuj9xu4gfAewnmJ6LrNrbZ7zHQrqrncW8DhR9O0T3Y-izq7x8jJ9-cvkPlS5rlrUfEVFcHX8UeclZCstG4f67G6ipNyD6PDRLG5Pme4q_v3FoS6OaV0Kv6pdxpnUaiKB_FJ6sZJqaqTwRzbr3hchM32uloMlYvoGOKopqs81zLsX8r6evwLKHt8678dVxEumVqf51rMNN312e_h1Zb02FOdbw0iRd9fAfT_TmyA1qrZFKLTeMQFvAC1yj423x4a96SreTKJzM9oVyw_HszqCNtn26lA1wVQZeOLMD2HmkqgdF-bP1mKAZ6XmBfJnJvWQme0ZQtaZAdf0T399mdI2qQ5HmJ3gw4YF-xloYt-KrmLcltYYsx2gSN9Yc_0W8Uh2Z5AgdCqkjSeCa22g5AkfJJRXJeYB4GXeUZrXG6Hbqaz8rYcz_WNGHugsJDBVSyEcQEApkT6LexViMfgS9BOPOR_FVrOJD5ZNJ0DHqTZlgkiEDwgPdCy6WwscPt3W9EsoEAnSdJQ7YqmH_K55IOtxVR1AfRok-ENzFjPJmVeONHlVV9BR9kzvuqiEkjQKIY-uIArLI36ZgE5mKGO6pSfCgaPXFKorJ2UGNREBsr-_8AvV0Bvp0H06xHs12AUKHxjuoaBER6bzC5Rpph0uwrLEjA64wdJ1L2li61nQVRjVPwNfn4nSEgn7TD1SyGFoYVsfPlVf-U6jTr67y6GeZk2dF1ipmgadnhbqa8b2r58W7crE7VBao_RcLGzrfCBlAa-EEYXmkBdivljqZsEd_qBoKRRvwkEyMmg2Qxm1T39BMkQuzlqsCQae9luYQKeVlv6nYOMQ3dv5IRzO_0YyyXw5tIOVM7fZ8f9USCdhZvqggqYGmDhxg_y0qFfJnKzNxej_1LnyB-byM2buyKiV8_0vb_pzyip3tU1IifxrXHhS24kIeBV2_bTVyLCFFQ7whCZ321R3gKAsiq38RtfwoOaY2i4Di60ihvMJ505Na4iITRnf_RlTICVLuYkqDzIpfvvyLAGs0Q1oPLuxbp-XZEKq1G14yaiSpNzfzMhXptTIkha1UzNFvjAyG43AATiwtZWsPE9_OPZRvX9dKRViaVGoz1oL7SfI0iZK561r8QhPKkRFtqDhJyhmRqr2accUDXVh5FTZ2EnPVzhZSZph_vFPmMqLUFiV5rJ6MVzCVb8eeu3XD_aaIM4uyR8CtUliL2nDqqeoWn10hcSjoI4J9WqsW-8djSZ0KEOalaRxBcCL6cdlNbGXe7aIlsMzG7_txvd1Hbyhe3ASQuA9AZarcJtCQwkA88visKzE8y6eCUndUTsnF_x6F1TUBSwij2i1isG0K552-VVvQTartkaryti9ESBCytq0Tuaoyz5gNbX60vXBb5yAGTYf1DSnNwpp8SGr_iWn-IUdzFip7uk_kFrp2bQG006sdJ1SSUYzv0F9QAVaQ6Vrt-B0t0R7_NbEX7uoPG86pLspttkjat9As0Om3Oqg9z4BiwB-Uuaj3RPbkQx40eT6d0dk3hibJODNvp2sbZ676nAKfTwV8K0IvfsFegN3iu2g_IRs4Me-bIgJSSAEbKpo50OxHKfIuRmARxe0dlZ7EQoZ-ksiosmKxyTJKKt1eIEB7YfjrvHalK5RsiVhaSAe3O6CwMyCbbXFCMl_4OQQLkmT.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWFzdHJhLTIwMjYwOTAzfG9wZW5haSJ9",
+       "format": "openai-responses-v1",
+       "id": "rs_0bb5cb4bbda080e1016ac782e2a75087d1992e926ebae97131",
+       "index": 0
+      }
+     ]
+    },
+    "native_finish_reason": "max_output_tokens"
+   }
+  ],
+  "created": 1791460063,
+  "model": "openai/gpt-6-astra",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 120,
+   "prompt_tokens": 644,
+   "total_tokens": 764,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 102,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.01244,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.01244,
+    "upstream_inference_prompt_cost": 0.00644,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 102
+ }
+}

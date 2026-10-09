@@ -1,0 +1,87 @@
+{
+ "call_id": "58e48ca96f34",
+ "tag": "bg_spec_plan",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 4000,
+  "seed": 1072862136
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are planning a sequence of ordinary, mundane public social-media posts for one fictional author. You do not write the posts; you invent the concrete, small, specific everyday occasions behind them. Output strict JSON only."
+  },
+  {
+   "role": "user",
+   "content": "Author profile:\n- płeć gramatyczna: kobieta (formy żeńskie)\n- zajęcie i rytm dnia: Studiuje informatykę w Gliwicach i dorabia przy testowaniu aplikacji; pisze między zajęciami.\n- zainteresowania: gry zręcznościowe, naklejki na laptop, mrożona kawa\n- lokalny punkt odniesienia: automat z przekąskami przy ulicy Akademickiej w Gliwicach\n- aktualna sytuacja życiowa: Dzieli mieszkanie z dwiema koleżankami i próbuje ogarnąć wspólny grafik sprzątania.\n- sposób pisania: zdania: short fragments; interpunkcja: urywane zdania, mało kropek; wielkie litery: all lowercase; literówki: frequent (missing diacritics, swapped letters); skróty: heavy; emoji: frequent\n- tik językowy: wrzuca „xD” na końcu myśli\n\nFor each of the 39 topic prompts below, invent ONE concrete, specific, small occasion from this person's life that would make them post (not a generic statement about the topic: a particular thing that happened, with at most one small detail a real person would mention - sometimes a product name, sometimes a number or price, sometimes a place, occasionally a time; many occasions need no such detail at all). Vary mood (bored, amused, tired, pleased, mildly annoyed, neutral, curious), vary how the post starts (mid-thought, a question, a one-word reaction, a fact, a quote of what someone said), and decide whether the verbal tic appears (at most in a third of posts). Occasions must not involve conflict with identifiable people, politics, crime, security, violence, or protected characteristics.\n\nTopic prompts:\n1. technologia i sprzęt - aktualizacja telefonu (late night, Friday)\n2. komunikacja i dojazdy - spóźniony autobus / tramwaj (morning commute, Monday)\n3. praca i grafik - nadgodziny / wcześniejsze wyjście (afternoon, Sunday)\n4. remont i dom - szukanie fachowca (early morning, Saturday)\n5. remont i dom - sprzątanie, porządki sezonowe (lunch break, Wednesday)\n6. gry i seriale - film w kinie, krótka opinia (afternoon, Saturday)\n7. jedzenie i gotowanie - obiad z resztek (early morning, Thursday)\n8. zwierzęta - spacer z psem (lunch break, Saturday)\n9. praca i grafik - szef / współpracownik, drobna sytuacja bez konfliktu (evening, Wednesday)\n10. gry i seriale - gra, trudny poziom / boss (afternoon, Thursday)\n11. remont i dom - szukanie fachowca (late night, Friday)\n12. jedzenie i gotowanie - obiad z resztek (lunch break, Wednesday)\n13. zdrowie i sen - ból pleców od siedzenia (lunch break, Thursday)\n14. komunikacja i dojazdy - korek na obwodnicy / w centrum (afternoon, Saturday)\n15. komunikacja i dojazdy - pociąg regionalny, przesiadka (late night, Friday)\n16. gry i seriale - stream ulubionego streamera (late morning, Saturday)\n17. sport - mecz ligowy w TV, wynik i emocje (bez wrogości) (late morning, Wednesday)\n18. komunikacja i dojazdy - zmiana rozkładu jazdy (early morning, Tuesday)\n19. zwierzęta - ptaki na balkonie / karmnik (lunch break, Wednesday)\n20. gry i seriale - film w kinie, krótka opinia (afternoon, Wednesday)\n21. jedzenie i gotowanie - kawa z nowego miejsca (afternoon, Saturday)\n22. jedzenie i gotowanie - nowy przepis, eksperyment (afternoon, Monday)\n23. praca i grafik - spotkanie albo szkolenie w pracy (evening, Monday)\n24. zakupy i ceny - zakupy na targu (morning commute, Sunday)\n25. zakupy i ceny - paczkomat, odbiór (late night, Monday)\n26. komunikacja i dojazdy - pociąg regionalny, przesiadka (afternoon, Friday)\n27. zakupy i ceny - koszyk w aplikacji, zniżki (late night, Friday)\n28. komunikacja i dojazdy - remont drogi na trasie (lunch break, Friday)\n29. zakupy i ceny - drogi prąd / gaz, rachunek (afternoon, Friday)\n30. zdrowie i sen - wizyta u lekarza, kolejka (bez konfliktu) (early morning, Tuesday)\n31. gry i seriale - nowy sezon serialu, bez spoilerów (early morning, Thursday)\n32. drobne narzekanie na usługi - urząd, kolejka, numerek (afternoon, Saturday)\n33. zakupy i ceny - zwrot / reklamacja (bez gniewu, drobne) (early morning, Friday)\n34. gry i seriale - nowy sezon serialu, bez spoilerów (afternoon, Wednesday)\n35. praca i grafik - spotkanie albo szkolenie w pracy (evening, Tuesday)\n36. gry i seriale - film w kinie, krótka opinia (early morning, Thursday)\n37. zakupy i ceny - nowe buty / kurtka (morning commute, Thursday)\n38. praca i grafik - zmęczenie po zmianie (early morning, Thursday)\n39. praca i grafik - pierwszy dzień po urlopie (morning commute, Monday)\n\nReturn a JSON array of 39 objects, in order, each with:\n- \"occasion\": one or two sentences in Polish, concrete\n- \"mood\": one word in English\n- \"opener\": one of \"mid-thought\", \"question\", \"one-word reaction\", \"plain fact\", \"reported speech\", \"complaint\", \"list of two things\"\n- \"length_words\": integer between 8 and 50, varied across the set (some very short)\n- \"tic_fires\": true or false"
+  }
+ ],
+ "prompt_sha1": "ea0de5cd86bf57283214ac036bad5b753ce2d8ea",
+ "response": {
+  "id": "gen-1791464424-Qjba1e8yDszqXefb6jUq",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "[\n  {\"occasion\":\"W piątek późno w nocy telefon skończył aktualizację akurat wtedy, gdy miała ustawić budzik na rano.\",\"mood\":\"tired\",\"opener\":\"mid-thought\",\"length_words\":13,\"tic_fires\":true},\n  {\"occasion\":\"W poniedziałek rano autobus dojechał na jej przystanek osiem minut później, więc weszła na zajęcia tuż przed prowadzącą.\",\"mood\":\"relieved\",\"opener\":\"plain fact\",\"length_words\":24,\"tic_fires\":false},\n  {\"occasion\":\"W niedzielne popołudnie skończyła testowanie aplikacji wcześniej niż planowała i nagle miała wolną godzinę.\",\"mood\":\"pleased\",\"opener\":\"one-word reaction\",\"length_words\":12,\"tic_fires\":true},\n  {\"occasion\":\"W sobotę o świcie zauważyła, że drzwi szafki w kuchni znów opadają, i zaczęła szukać kogoś do naprawy.\",\"mood\":\"sleepy\",\"opener\":\"question\",\"length_words\":19,\"tic_fires\":false},\n  {\"occasion\":\"Podczas środowej przerwy obiadowej wyniosła z koleżankami zimowe kurtki z przedpokoju i dopisała tę czynność do wspólnego grafiku sprzątania.\",\"mood\":\"satisfied\",\"opener\":\"list of two things\",\"length_words\":27,\"tic_fires\":false},\n  {\"occasion\":\"Po sobotnim seansie w kinie została chwilę w fotelu, bo napisy końcowe miały lepszą muzykę, niż się spodziewała.\",\"mood\":\"amused\",\"opener\":\"mid-thought\",\"length_words\":18,\"tic_fires\":true},\n  {\"occasion\":\"W czwartek wcześnie rano spakowała na obiad wczorajszy ryż z ostatnią porcją warzyw z lodówki.\",\"mood\":\"neutral\",\"opener\":\"plain fact\",\"length_words\":11,\"tic_fires\":false},\n  {\"occasion\":\"W sobotniej przerwie obiadowej wyprowadziła psa znajomej, a ten przystanął przy każdej kałuży.\",\"mood\":\"amused\",\"opener\":\"one-word reaction\",\"length_words\":15,\"tic_fires\":true},\n  {\"occasion\":\"W środę wieczorem współpracowniczka pokazała jej skrót klawiszowy, który przyspieszył sprawdzanie formularzy.\",\"mood\":\"grateful\",\"opener\":\"reported speech\",\"length_words\":17,\"tic_fires\":false},\n  {\"occasion\":\"W czwartkowe popołudnie po raz szósty wróciła do tego samego poziomu gry zręcznościowej, bo wciąż mijała ostatnią platformę.\",\"mood\":\"determined\",\"opener\":\"complaint\",\"length_words\":22,\"tic_fires\":false},\n  {\"occasion\":\"W piątek późno w nocy znalazła ogłoszenie fachowca od cieknących kranów i zapisała numer, żeby zadzwonić rano.\",\"mood\":\"hopeful\",\"opener\":\"plain fact\",\"length_words\":14,\"tic_fires\":false},\n  {\"occasion\":\"W środowej przerwie obiadowej podgrzała makaron z resztą sosu, zanim wróciła do testowania aplikacji.\",\"mood\":\"content\",\"opener\":\"list of two things\",\"length_words\":10,\"tic_fires\":true},\n  {\"occasion\":\"W czwartek podczas przerwy obiadowej wstała od laptopa i poczuła, że plecy zesztywniały jej po porannych zajęciach.\",\"mood\":\"weary\",\"opener\":\"mid-thought\",\"length_words\":21,\"tic_fires\":false},\n  {\"occasion\":\"W sobotnie popołudnie autobus utknął w korku w centrum, a ona zdążyła dokończyć rozdział książki.\",\"mood\":\"bored\",\"opener\":\"plain fact\",\"length_words\":16,\"tic_fires\":false},\n  {\"occasion\":\"W piątek późno w nocy dobiegła do pociągu regionalnego na przesiadce i zobaczyła, że ma jeszcze cztery minuty.\",\"mood\":\"relieved\",\"opener\":\"one-word reaction\",\"length_words\":20,\"tic_fires\":true},\n  {\"occasion\":\"W sobotę późnym rankiem włączyła stream ulubionego streamera podczas oklejania laptopa nową naklejką.\",\"mood\":\"relaxed\",\"opener\":\"plain fact\",\"length_words\":14,\"tic_fires\":false},\n  {\"occasion\":\"W środę późnym rankiem zerknęła na końcówkę meczu ligowego w telewizji; padł remis 2:2 po golu tuż przed końcem.\",\"mood\":\"excited\",\"opener\":\"question\",\"length_words\":26,\"tic_fires\":false},\n  {\"occasion\":\"We wtorek wcześnie rano sprawdziła rozkład i odkryła, że jej zwykły autobus odjeżdża teraz pięć minut wcześniej.\",\"mood\":\"annoyed\",\"opener\":\"complaint\",\"length_words\":18,\"tic_fires\":false},\n  {\"occasion\":\"Podczas środowej przerwy obiadowej zobaczyła przez balkon, jak dwa wróble zaglądają do pustego karmnika.\",\"mood\":\"curious\",\"opener\":\"question\",\"length_words\":13,\"tic_fires\":true},\n  {\"occasion\":\"W środowe popołudnie wyszła z kina po seansie, który podobał jej się głównie dzięki zabawnym dialogom.\",\"mood\":\"pleased\",\"opener\":\"one-word reaction\",\"length_words\":19,\"tic_fires\":false},\n  {\"occasion\":\"W sobotnie popołudnie kupiła mrożoną kawę w nowej kawiarni i odkryła, że podają ją bez słomki.\",\"mood\":\"curious\",\"opener\":\"plain fact\",\"length_words\":16,\"tic_fires\":false},\n  {\"occasion\":\"W poniedziałkowe popołudnie dodała cynamon do przepisu na placuszki, choć na kartce od koleżanki go nie było.\",\"mood\":\"playful\",\"opener\":\"mid-thought\",\"length_words\":23,\"tic_fires\":true},\n  {\"occasion\":\"W poniedziałek wieczorem po krótkim szkoleniu z testowania formularzy znalazła w notatkach nazwę funkcji, której chce spróbować jutro.\",\"mood\":\"interested\",\"opener\":\"list of two things\",\"length_words\":29,\"tic_fires\":false},\n  {\"occasion\":\"W niedzielę rano, jadąc na targ, zobaczyła na stoisku truskawki i kupiła małą łubiankę.\",\"mood\":\"cheerful\",\"opener\":\"one-word reaction\",\"length_words\":12,\"tic_fires\":false},\n  {\"occasion\":\"W poniedziałek późno w nocy odebrała z paczkomatu naklejki na laptop, bo dopiero wtedy przypomniała sobie o powiadomieniu.\",\"mood\":\"amused\",\"opener\":\"mid-thought\",\"length_words\":20,\"tic_fires\":true},\n  {\"occasion\":\"W piątkowe popołudnie na przesiadce do pociągu regionalnego kupiła wodę i wróciła na peron przed jego przyjazdem.\",\"mood\":\"calm\",\"opener\":\"plain fact\",\"length_words\":17,\"tic_fires\":false},\n  {\"occasion\":\"W piątek późno w nocy zauważyła, że kod rabatowy w koszyku aplikacji obniża cenę tylko jednej naklejki.\",\"mood\":\"puzzled\",\"opener\":\"question\",\"length_words\":22,\"tic_fires\":false},\n  {\"occasion\":\"Podczas piątkowej przerwy obiadowej zobaczyła z okna busa nowe oznaczenia objazdu przy remontowanej drodze.\",\"mood\":\"neutral\",\"opener\":\"plain fact\",\"length_words\":15,\"tic_fires\":false},\n  {\"occasion\":\"W piątkowe popołudnie wpisała kwotę rachunku za prąd do wspólnej tabeli opłat i sprawdziła, czy zgadza się z poprzednim miesiącem.\",\"mood\":\"concerned\",\"opener\":\"complaint\",\"length_words\":25,\"tic_fires\":false},\n  {\"occasion\":\"We wtorek wcześnie rano przyszła do przychodni i w kolejce zdążyła przeczytać cały artykuł zapisany na telefonie.\",\"mood\":\"patient\",\"opener\":\"mid-thought\",\"length_words\":18,\"tic_fires\":false},\n  {\"occasion\":\"W czwartek wcześnie rano zobaczyła powiadomienie o nowym sezonie serialu, ale odłożyła oglądanie do wieczora.\",\"mood\":\"eager\",\"opener\":\"one-word reaction\",\"length_words\":14,\"tic_fires\":true},\n  {\"occasion\":\"W sobotnie popołudnie pobrała numerek w urzędzie i usiadła, gdy wyświetlacz pokazał numer znacznie wcześniejszy od jej numeru.\",\"mood\":\"bored\",\"opener\":\"complaint\",\"length_words\":21,\"tic_fires\":false},\n  {\"occasion\":\"W piątek wcześnie rano spakowała do zwrotu etui na telefon, które okazało się odrobinę za ciasne.\",\"mood\":\"neutral\",\"opener\":\"plain fact\",\"length_words\":13,\"tic_fires\":false},\n  {\"occasion\":\"W środowe popołudnie obejrzała pierwszy odcinek nowego sezonu serialu i zapisała tytuł następnego, żeby nie włączyć go między zajęciami.\",\"mood\":\"intrigued\",\"opener\":\"question\",\"length_words\":28,\"tic_fires\":false},\n  {\"occasion\":\"We wtorek wieczorem po spotkaniu zespołu przepisała z notatek termin kolejnego testu aplikacji do kalendarza.\",\"mood\":\"focused\",\"opener\":\"reported speech\",\"length_words\":16,\"tic_fires\":false},\n  {\"occasion\":\"W czwartek wcześnie rano przypomniała sobie wczorajszy seans w kinie i uznała, że film był trochę za długi, ale miał świetny finał.\",\"mood\":\"reflective\",\"opener\":\"mid-thought\",\"length_words\":30,\"tic_fires\":true},\n  {\"occasion\":\"W czwartkowy poranek w drodze na zajęcia odkleiła metkę od nowych butów, którą przeoczyła przy wyjściu.\",\"mood\":\"embarrassed\",\"opener\":\"one-word reaction\",\"length_words\":17,\"tic_fires\":true},\n  {\"occasion\":\"W czwartek wcześnie rano wróciła po nocnym testowaniu aplikacji i zasnęła przy nastawianiu budzika.\",\"mood\":\"exhausted\",\"opener\":\"list of two things\",\"length_words\":11,\"tic_fires\":false},\n  {\"occasion\":\"W poniedziałek rano, jadąc na pierwszy dyżur po urlopie, otworzyła kalendarz pracy i zobaczyła wpisane tylko jedno spotkanie.\",\"mood\":\"relieved\",\"opener\":\"plain fact\",\"length_words\":24,\"tic_fires\":true}\n]",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1791464424,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 2500,
+   "prompt_tokens": 1410,
+   "total_tokens": 3910,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 1407,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.0285235,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0285235,
+    "upstream_inference_prompt_cost": 0.0035235,
+    "upstream_inference_completions_cost": 0.025
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

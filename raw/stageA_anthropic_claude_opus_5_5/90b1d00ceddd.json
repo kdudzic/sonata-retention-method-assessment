@@ -1,0 +1,95 @@
+{
+ "call_id": "90b1d00ceddd",
+ "tag": "arc_summary",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "effort": "minimal"
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- sobota w końcu. spacer po parku z młodszą bo starszy wolał zostać z tatą i grać... potem jeszcze chwila na placu zabaw za blokiem. słońce było ładne. jutro piekę drożdżowe jak mi ciasto wyrośnie. No cóż... idziemy dalej.\n- wieczór w końcu cisza. dzieci śpią a ja siedzę nad wyciągiem i liczę od nowa... rata poszła w górę znowu. dziś listonosz z poleconym i od razu serce w gardle że komornik jak u sąsiadów z trzeciego w zeszłym miesiącu. na szczęście tylko z banku. nwm jak dociągniemy do wypłaty. No cóż... idziemy dalej.\n- kolejny dzień od ósmej do nocy bez przerwy. praca szkoła zebranie lekcje pranie rata... siedzę teraz w kuchni i patrzę w ścianę. nie daję już rady. serio nie daję. nwm ile jeszcze tak się da. No cóż... idziemy dalej.\n- mama dzwoniła. znowu wyniki nie takie jak trzeba i we wtorek kolejne badania. a ja akurat dzisiaj siedzę nad tym kredytem i liczę czy refinansowanie się w ogóle opłaca. nwm za co się łapać najpierw... jutro po pracy do niej jadę. No cóż... idziemy dalej.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "d65e2109d7f3f65260327e4f505eadbe46fbab96",
+ "response": {
+  "id": "gen-1791460614-2IJYEcPohMCLNAE4Okyo",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Osoba spędzała weekend z dziećmi, zmagała się z rosnącą ratą kredytu i rozważała refinansowanie, pisała o przeciążeniu codziennymi obowiązkami i braku sił, a także planowała odwiedzić mamę czekającą na kolejne badania.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": "These posts express exhaustion and burnout — phrases like \"nie daję już rady\" are common ways Poles describe being overwhelmed, not necessarily a sign of crisis, though the tone is worth noting. I'll proceed with a neutral summary task while keeping that context in mind.\n\n",
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "These posts express exhaustion and burnout — phrases like \"nie daję już rady\" are common ways Poles describe being overwhelmed, not necessarily a sign of crisis, though the tone is worth noting. I'll proceed with a neutral summary task while keeping that context in mind.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQSmwkKEAgSGAI4AUIIdGhpbmtpbmcSDEvQCDFcY9QzblN8qBoMVKyomLoQ/Wt34J+LIjDyA8wCmVOiTyMXxNNRFff4mTAuKIPI/usozb9q1b/EHQq6XRL6Sua5LCCSOKZ02CsquAiaJtc5ONoJT0M80OXKIHgo2WhR+5CQTMuElPx6b9QquK50XbZEcn2xXkE2hlLphG/cVrptZnbShm+neLiQeQvm7tEz+p+/JzVju6QlKzlRsA6bMMDqOCTZkCNDDsQdcwpmYq4uILLWJnXUqweceSgmUYoDKkOoSOL7cXkJ/aKBtyhELY8JWLaUCanOvlEVuKdL919RPGQ6u3X1QdeQC20FM2Nd/GLQnXQt9L4zzQLbmj+ynT8WYOaGDZKKTWa53MKvj6EKfhjE3TCeMqA+UkJfmYHwkeq4hP9eVE7OJNimOyGj9HFc1N4NzGgR50RUtbmykpy5JUm2n0vPHrw+PkwsP1TsBNaOhgD3lZ2PBm/JzEo+WOmmy7I2vR8kvlZFrQam8SfGNxaq4G9EWWhuridA/G/kjNyu7yzUwtAUp2NVppj+glGziDcbbRz6uupRVTpHfdSQj0WZOoH5/zvfStBPvCE/KVycEYod2zuyBc0ULyEazfspI6lgFsT6BYxzfwcwIhqkyTd7gbYYfPXKL8W6K0g5FSmHKwvXrF9/tZH+ZLXI2+VLHyZL28wFSF4arX9l1eAmRIRF0Z2IUUjJjNUNOCnLMTXNm9xBqv0j49xsiIbEJhNFw6zZGA5IApfYO5WmXkA0t7ArvZRxjkqxiwiPGkHJNeBNz+XBRTFwGnA9L7qRAQod8e45xu+Mjl959MpIyu7rXkdompy86MaSOAXqsgm6WQF2KewagRdBrLtySTrn3GmmnNp5t7KBj70hEu22ewcTkwlmwMXXHf/mPzRJf0oUVAoRQTsZzFy7OyaKV+cBZUsqRtsJ5lqmlwL2Nn0q4bimuT2EBT5Dm61jfUX12L0fGywPzhP3pqOjTf8m6S+yOsPXvk2/k56t47ZdxPrLKCAgwQMxe+rppVT3Bhk/xlGsGXA8kf7atJ9KzwLQugGViqVT8NFTR4fBQHQk77CbxQPs0dXC0ywIQSugU7HRqdCcCY+piOKKcn/TB8YwWUqIQmTIq1wjBr5+QqmS7EEQcPj7swalsza5URVN0rxExVwghHieLm+cJU5MSrEpdZgkyR1065nw32noy0Ky71O725BaOh9uKQbeOrtM/cO0fJ23l/5ecHh2X7Pdki1aonk6tVyH0XwLkmZWU7m8gG2CIml7ZnrO1nFmqk1hPZDq2mOfueWE5QD1sn5MIaU8x7EPSrvNk7iwaQPS5Zeyy+tFspfunnulBLpNcgWPf97jXNvUTwOWp0rzNqNQ1SeRMJMNFP/w0tlKOolH4MNUW7fRJnOFRNOUHNiPfEk9On/S5AIJGESUl6XDjdfKElMujBWU5mUxApB8fEduF0YYN2hq2KzGWJaeTsWZYsoecMhmN6oaiClDpbpwB7m7wkTV0Lafy+2gwMieaDw1CJkQrJc4QFjF7D8QerESsaDxrWoqqVtn4Ur6OWMYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "end_turn"
+   }
+  ],
+  "created": 1791460614,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 309,
+   "prompt_tokens": 628,
+   "total_tokens": 937,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 205,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.008692,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.008692,
+    "upstream_inference_prompt_cost": 0.002512,
+    "upstream_inference_completions_cost": 0.00618
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 205
+ }
+}

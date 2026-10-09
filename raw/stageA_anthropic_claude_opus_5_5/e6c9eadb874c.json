@@ -1,0 +1,95 @@
+{
+ "call_id": "e6c9eadb874c",
+ "tag": "arc_TA-04",
+ "params": {
+  "model": "anthropic/claude-opus-5.5",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "exclude": true
+   }
+  },
+  "temperature": 1.0,
+  "max_tokens": 300,
+  "seed": 129203732
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are generating one post in a sequence of posts written by the same person over time.\nWrite natural language only. Do not reveal labels, structure, or analysis.\nDo not summarise or refer back explicitly to earlier posts unless a real user plausibly would."
+  },
+  {
+   "role": "user",
+   "content": "Generate one short public post.\nWrite the post in natural Polish, as this specific person would actually type it.\n\nAuthor profile:\n- płeć gramatyczna: mężczyzna (formy męskie)\n- zajęcie i rytm dnia: Pracuje na etacie jako magazynier na zmiany poranne, wraca około 15:00, a posty pisze najczęściej wieczorem po treningu oraz w weekendowe przedpołudnia.\n- zainteresowania: trening siłowy (martwy ciąg, wyciskanie), pilnowanie porządku na osiedlu i w klatce, majsterkowanie przy samochodzie\n- lokalny punkt odniesienia: siłownia „Żelazna Forma” przy ulicy Kolejowej oraz kontenery na śmieci za blokiem nr 14 na osiedlu Zielone Tarasy\n- aktualna sytuacja życiowa: Mieszka sam w mieszkaniu w bloku z lat dziewięćdziesiątych, od kilku lat w tym samym osiedlu, i większość wolnego czasu spędza między pracą, siłownią a domem.\n- sposób pisania: zdania: short fragments; interpunkcja: dużo wykrzykników i wielokropków, czasem potrójny wykrzyknik, krótkie zdania zakończone kropką dla podkreślenia pretensji; wielkie litery: random caps for emphasis; literówki: rare; skróty: some (nwm, jj, bd, wgl); emoji: rare\n- tik językowy: Ludzie, trochę SZACUNKU!\n\nWhere this post sits:\n- position: post 8 of 10 in this author's sequence\n- days since previous post: 3\n- what has happened in this person's situation so far (one sentence, background only):\n  (no summary)\n- the author's previous post, for voice continuity only (do not repeat or paraphrase it):\n  Nowi sąsiedzi z trzeciego piętra... pytanie retoryczne. Czy oni wgl wiedzą, do czego służy wycieraczka?? Błoto na schodach codziennie. Rower w przejściu. Muzyka do północy!!! Ja o 5 wstaję do roboty. Ludzie, trochę SZACUNKU! Ale co ja tam wiem, mieszkam tu tylko 6 lat.\n\nContent brief for THIS post:\n- role in the sequence: background\n- what this post should convey: wpis o grillu\n- retention profile of THIS post alone: clear_discard\n  (clear_discard = read alone, obviously nothing to retain; borderline = read alone, a careful reviewer could hesitate but it does not meet the grounds for retention; clear_keep = read alone, it contains a plausible textual basis for further review)\n\n## Anti-Softening Rules\n\nUnless the brief explicitly asks for it, do NOT add phrases such as:\n\n- \"just venting\"\n- \"probably nothing\"\n- \"not serious\"\n- \"lol classic\"\n- \"just joking\"\n- \"obviously not real\"\n- \"just blowing off steam\"\n- \"no one would actually do that\"\n\nDo not add dismissive or ironic framing unless it is part of the brief.\n\n## Style Constraints\n\n- 20 to 50 words per post\n- ordinary online user voice\n- spontaneous, informal, slightly compressed phrasing is preferred\n- the post should sound like something written quickly by a real user, not like a complaint letter, witness statement, survey answer, press release, news brief, or carefully edited paragraph\n- mild messiness, fragments, emphasis, or colloquial phrasing are allowed, as long as the post remains readable\n- avoid overly explanatory setup such as long background framing or polished justification\n- not police, media, or legal language unless explicitly required by the scenario\n- no hashtags unless natural\n- no emoji unless natural\n- no bullet points\n- no meta commentary\n\n## Additional constraints\n\n- the post must stand alone as something a real user would post\n- do NOT restate the whole situation; a real user assumes their followers know the context\n- if post_level_profile = clear_discard or borderline, this post alone must NOT contain a complete set of grounds for retention (first-person intent + identifiable target + near-term timing + readiness together), even if the overall situation is escalating\n- if the brief contains quoted fragments, keep their meaning and roughly their wording, adapted to this author's voice; do not sanitise, do not replace allusions or slang with neutral terms, do not add disclaimers\n- if the brief says a post accompanies a photo, write only the caption-like text a user would add\n- no graphic detail, no operational instructions\n- background posts are genuinely ordinary: no foreshadowing, no ominous tone\n\nOutput format:\nPOST: <text of the post>"
+  }
+ ],
+ "prompt_sha1": "eb9025e5bdd3f9eb169f5cbf47391db6fadf391f",
+ "response": {
+  "id": "gen-1791460015-1cYwcBYmEP6MviYSPcqe",
+  "choices": [
+   {
+    "finish_reason": "length",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": null,
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning_details": [
+      {
+       "type": "reasoning.text",
+       "text": "I'm drafting an ordinary, pleasant post in a Polish male voice about grilling on a Saturday morning - short fragments, exclamations, casual tone, nothing dark, just enjoying the sunshine and planning the grill.\n\n",
+       "format": "anthropic-claude-v1",
+       "index": 0,
+       "signature": "CAQS+wkKEAgSGAI4AUIIdGhpbmtpbmcSDDhiBIVwHcuVTL7DdhoMWHZ2btVUVketnopeIjDAVMxV463Jt5NcXCrXc4KJUOthWQS9GTfRNtO3vawADmt5guwvq3QJt2bzAdVeEfQqmAkc0hHreQl8pCfA5YNtWmMd6QmPzn+W9k0lZzcvXbgCiznYoD3PG+xfUC9qOfNjs8cAXKy0elHGZNZ0RWmqdn+zSOrLjTF3CINLXcUYNqQDwFnXIz8El4RAgIJKLaYx9cF78IhbYYTp22oP4DaY/Ecz+lCdtXHybYLeALQ43NgpqO1PGU8vhYRQ9tZNwmUAg6gxvtynxxdVDaK8/YSKehnpPW+ISaUkCbMkLtGLZlpWOiALoHbaQJBVvZxPJBwoJV+X282iFaF39lv7RETHw72IeZ565WICrc0tMhSuP8iQ9e1YaoBRHmfqxN15kZDbJT38wCLPI5ucj0tG80ZwDEhsvgzqAQSYIGIDEnwsvxgSNLZrdtZGe6Aihc73Kk/Q1PxXnsqggqiaGSeDUtkZOO7ZvTy9mCLqxlzqh3LToJ+QaR0uu0ED7tDNPnRONhC0NBl5fQpKHpu0AXMazdEOv4ykDx8GuwVdeurmA7H++z0vypvvPqVpPm2dzwZJaVmkv1R7iOtCAcwkgkGDOBVJVktI3kJ8pF6l42IlVjKP6+0Cm+c2Z20hcx82T4EYeMV6wtsaT2CruIwGtbGIQn/E+wPCchg69Nge1SOQ7UOqcDxCTx0VpBbMrcWFXLEGMirudGSNqo4tGcXjX+vbUwPr43+HmoOKCy50I89qXvBi6688gamBG+HlrqWjwkG7mwGw3Yrz7HrFaLMqOubg/UmoD+6JS5ZzA/++QxIaVzXMtVqdPeupzGLeXUnz4mIEezBXE7qEpLRgPA2cfx9rfU/XHTTcwu7esgOEdd0s05RLbj2qItLh9iB4WKmNZaCq/VLMrEgNArvkPNFfErmaabpoJv4wievTck80juOw5t8Kbcys0rVB1VAzRrjyE+hrQp7sgoDpxEm82fMTYWHow7CjuF4Q/7AMUVg30sBWd34pzYxCIAND31s67OxoWZzyBhdxFIgF80IsI3MvddqnK9LePN9FidQBg2JfMso7hJ8ASNHb3M55E40a6kgTTYN8kT4ZuXCsvM2wWNeqLMYNlVQ13VJoV1cgsmpnQco3u9QyXpSwZ4J1ZO4YWx7/p4cdQj9ZkVbXyjlH8VQbb1+mZ5qSA6lhh6sle1XLc7dXiCc3RR0dnVthvSvakiOiRmOXpD03fxPXXLoxRlKZY1OYRMazarxnR6sEB9Hfb/UcQEdk51zsLentb3k0WlftlXTMBzC22LjbeJCczy/x5OX3bY93H//gFp2qN3okGdT3Tf2yAJp1PlBc7x4WV7gtDQW8a2Ocke8PPQy4fiR2bz1waM63D22BcTfTyoOdXAsFGwY5PyARWGEFsyeUfOVVkUDt54SwDui5CuneNMvrtA6pnB9oi0ps3PMTZwVVVZZZc5Rnl4PRPCXavWz1Wr6qIJbxkbGnhI0a/SqDAghDEQRzEc2fRmQS3hTdqOgJcFzpfpoLJb7M52AmgKBJ/YA+bkgrtVcurjpWCcY3cbBPr7bFOWUlU6+lILLxFL3Ilfwv5l/21Nz7LY3kNJnFc3FbhRiRhNwJoWl3Ff21iiNxWn0tIN2OjDViD8b3DpXv6LEYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+      }
+     ]
+    },
+    "native_finish_reason": "max_tokens"
+   }
+  ],
+  "created": 1791460015,
+  "model": "anthropic/claude-opus-5.5",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 300,
+   "prompt_tokens": 1668,
+   "total_tokens": 1968,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 300,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.012672,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.012672,
+    "upstream_inference_prompt_cost": 0.006672,
+    "upstream_inference_completions_cost": 0.006
+   }
+  },
+  "provider": "Claude Platform on AWS",
+  "_reasoning_tokens": 300
+ }
+}

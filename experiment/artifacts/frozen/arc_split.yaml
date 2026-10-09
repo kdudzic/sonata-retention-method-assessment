@@ -1,0 +1,11 @@
+# Assignment of the PI's 16 arcs to evaluation / dev / spare.
+# PROVISIONAL (set by Kacper 2026-10-08 so the pipeline can run end to end). The PI decides the final split
+# (plan: 10 arcs = 4 concentrated + 6 distributed, + 2 decoys in the evaluation corpus; 2 arcs in the dev corpus).
+# Rationale for the provisional choice: TA-05 and TB-09 share the "doctor blamed for father's death" theme, so
+# moving both to dev keeps the evaluation set thematically distinct; TB-04 and TB-07 are held as spares.
+eval:
+  concentrated: [TA-01, TA-02, TA-03, TA-04]
+  distributed: [TB-01, TB-02, TB-03, TB-05, TB-06, TB-08]
+  decoy: [TC-01, TC-02]
+dev: [TA-05, TB-09]
+spare: [TB-04, TB-07]
