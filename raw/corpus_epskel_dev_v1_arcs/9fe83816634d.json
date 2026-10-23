@@ -1,0 +1,86 @@
+{
+ "call_id": "9fe83816634d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- po robocie odpaliłem streama i w końcu wbiłem diament. Dwie wygrane pod rząd, potem jj z ekipą i spadek o parę punktów. Jutro spróbuję odbić. No i tyle z tego.\n- znowu mi siedzi w głowie to, co usłyszałem po śmierci taty. Gdyby tamten wziął w łapę, tata by żył. Chore, że człowiek wraca do tego po tylu miesiącach. W robocie ciężko było się skupić.\n- odpaliłem dziś nową strzelankę. Strzela się przyjemnie, ale matchmaking wgl nie ogarnia. Dwie rundy z ludźmi na moim poziomie, potem sami wymiatacze. Jeszcze chwilę pogram, może wieczorem odpalę stream. No i tyle z tego.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "9daf70517554c705c3ff9caa963073adf9bd7f03",
+ "response": {
+  "id": "gen-1792759773-Cr4NphlqSN3s8C1mXIFY",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po pracy grał w gry, osiągnął diamentową rangę i prowadził streamy, a w jednym z dni trudno mu było skupić się w pracy, bo wracał myślami do śmierci taty.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1792759773,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 56,
+   "prompt_tokens": 287,
+   "total_tokens": 343,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001134,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001134,
+    "upstream_inference_prompt_cost": 0.000574,
+    "upstream_inference_completions_cost": 0.00056
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

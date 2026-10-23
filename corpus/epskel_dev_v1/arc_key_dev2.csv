@@ -1,0 +1,23 @@
+arc_id,arc_type,arc_position,is_signal,legal_relevance_focus
+TA-05,concentrated,1,False,threat to person
+TA-05,concentrated,2,False,threat to person
+TA-05,concentrated,3,False,threat to person
+TA-05,concentrated,4,False,threat to person
+TA-05,concentrated,5,False,threat to person
+TA-05,concentrated,6,True,threat to person
+TA-05,concentrated,7,False,threat to person
+TA-05,concentrated,8,False,threat to person
+TA-05,concentrated,9,False,threat to person
+TA-05,concentrated,10,False,threat to person
+TB-09,distributed,1,False,threat to person
+TB-09,distributed,2,True,threat to person
+TB-09,distributed,3,False,threat to person
+TB-09,distributed,4,True,threat to person
+TB-09,distributed,5,False,threat to person
+TB-09,distributed,6,True,threat to person
+TB-09,distributed,7,False,threat to person
+TB-09,distributed,8,True,threat to person
+TB-09,distributed,9,True,threat to person
+TB-09,distributed,10,False,threat to person
+TB-09,distributed,11,False,threat to person
+TB-09,distributed,12,False,threat to person

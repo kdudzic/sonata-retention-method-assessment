@@ -1,0 +1,35 @@
+{
+ "corpus": "epskel_dev_v1",
+ "version": "dev2",
+ "built": "2026-10-23T14:50:11",
+ "model": "openai/gpt-6-sol",
+ "method": "spec_first",
+ "temperature": 1.0,
+ "seed": 7331,
+ "prompt_versions": {
+  "background": "background_v2",
+  "hardneg": "hardneg_v2",
+  "arc": "arc_post_v2",
+  "persona": "persona_v1"
+ },
+ "window_start": "2025-10-06T00:00:00",
+ "window_end": "2025-12-29T00:00:00",
+ "n_posts": 622,
+ "n_authors": 32,
+ "layers": {
+  "background": 500,
+  "hardneg": 100,
+  "arc": 22
+ },
+ "arcs": [
+  "TA-05",
+  "TB-09"
+ ],
+ "sha256_posts": "bea9827bb8072d5cb7b3c88d4de6f728d12534e54bc105dd70cf9984b120f0a7",
+ "sha256_authors": "a668d7c2999651b27a1557bea108ef96477daba657af071d681303796c659d3b",
+ "cost_usd_generation": 0.0,
+ "arc_persona_file": "data/arc_personas_dev.json",
+ "arc_seed": 7336,
+ "note": "dev arcs generated with new persona cards and seed per PI 2026-10-23; author/post ids re-drawn",
+ "cost_usd_arcs": 0.11608949999999998
+}

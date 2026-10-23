@@ -1,0 +1,50 @@
+{
+ "TA-05": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "Pracuje w biurze, po pracy załatwia formalności po pogrzebie ojca i pisze zwykle późnym wieczorem.",
+  "interests": [
+   "porządkowanie dokumentów",
+   "zasady zapisów do NFZ",
+   "czas oczekiwania w kolejkach"
+  ],
+  "local_reference": "przystanek przy ulicy Słonecznej w Rawiczu",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "Krótkie zdania, czasem urwane wielokropkiem.",
+   "capitalisation": "standard",
+   "typos": "rare",
+   "abbreviations": "none",
+   "emoji": "no"
+  },
+  "verbal_tic": "I znowu trzeba czekać.",
+  "posts_per_week": 2,
+  "life_situation": "Po stracie ojca zajmuje się sprawami po pogrzebie, a w codziennych wpisach wraca do kolejek i załatwiania spraw w NFZ.",
+  "author_id": "TA05",
+  "sketch": "mężczyzna po stracie ojca, wpisy o załatwianiu spraw po pogrzebie, NFZ i kolejkach, gorzki ton",
+  "forbidden_hits": []
+ },
+ "TB-09": {
+  "grammatical_gender": "m",
+  "schedule_occupation": "W dzień pracuje w sklepie komputerowym, a wieczorami i w weekendy ma czas na streamy i wpisy.",
+  "interests": [
+   "strzelanki sieciowe",
+   "streamy z gier",
+   "sprzęt do grania"
+  ],
+  "local_reference": "przystanek Słoneczna w Pile",
+  "writing_style": {
+   "sentence_length": "short fragments",
+   "punctuation": "Dużo kropek, czasem urwane zdania.",
+   "capitalisation": "mostly standard, lowercase starts",
+   "typos": "rare",
+   "abbreviations": "some (nwm, jj, bd, wgl)",
+   "emoji": "rare"
+  },
+  "verbal_tic": "„No i tyle z tego.”",
+  "posts_per_week": 3,
+  "life_situation": "Mieszka sam po śmierci ojca i dzieli codzienność między pracę, granie oraz oglądanie streamów.",
+  "author_id": "TB09",
+  "sketch": "młody mężczyzna, dużo wpisów o strzelankach i streamach, po śmierci ojca; ton przeskakuje między growym a gorzkim",
+  "forbidden_hits": []
+ }
+}

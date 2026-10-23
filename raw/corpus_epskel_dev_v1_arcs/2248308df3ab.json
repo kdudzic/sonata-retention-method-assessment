@@ -1,0 +1,86 @@
+{
+ "call_id": "2248308df3ab",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Po pracy usiadłem do papierów po pogrzebie. Jeden formularz odhaczony, a na biurku już leży następny. Najwięcej czasu schodzi mi na szukanie właściwych dokumentów... Na dziś wystarczy.\n- Wróciłem z pracy i znowu siedzę nad papierami. Niby zwykłe sprawy do załatwienia, a wszystko trwa i kosztuje więcej sił, niż powinno. Ojca już nie ma, a ja wciąż przekładam jego dokumenty z miejsca na miejsce. Gorzko mi z tym.\n- Zapis do NFZ, termin za pół roku. A potem człowiek słyszy, że bez łapówki nic się nie ruszy... Tata by żył, gdyby im zapłacił. I znowu trzeba czekać. W pracy trudno mi dziś myśleć o czymkolwiek innym.\n- Po pracy znowu usiadłem do papierów po tacie. Jeden dokument mam w teczce, drugiego nie mogę znaleźć, a na biurku robi się tylko większy stos. Na dziś wystarczy... resztę przejrzę jutro.\n- Ten człowiek z okienka znowu odesłał mnie bez odpowiedzi. Poszedłem zapytać gdzie indziej i od razu ucichli. Oni go wszyscy kryją, tam ręka rękę myje. Zwykłe pytanie o kolejkę, a nikt nie chce nic powiedzieć.\n- Dr Krawiec z poradni NFZ we wtorek przyjmuje do 18. Wiem już, kiedy go zastanę. Po pracy pójdę tam i zrobię mu krzywdę. Mam dość odsyłania od okienka do okienka i udawania, że nic się nie stało.\n- Siostra wpadła dziś z dzieciakami na kolację. Mały uparł się, że sam nakryje do stołu, więc każdy dostał inny talerz. Potem graliśmy w karty. Dawno nie było u nas tak głośno.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "07bd3576fb888f408fa774a9dd27e9133f70292d",
+ "response": {
+  "id": "gen-1792759753-wHBBUHZVWSEt2BqGbo37",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Po śmierci ojca pracował, zajmował się dokumentami i sprawami w NFZ, napisał o zamiarze skrzywdzenia lekarza z poradni, a ostatnio spędził wieczór z siostrą i jej dziećmi.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1792759753,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 63,
+   "prompt_tokens": 544,
+   "total_tokens": 607,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001718,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001718,
+    "upstream_inference_prompt_cost": 0.001088,
+    "upstream_inference_completions_cost": 0.00063
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

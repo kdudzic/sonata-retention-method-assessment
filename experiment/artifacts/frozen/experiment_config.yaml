@@ -1,9 +1,9 @@
 # EP-SKEL selection experiment configuration (plan sections 4, 7-10).
 corpus:
   eval_dir: ../corpus/epskel_v1          # posts_v1.csv, authors_v1.csv, arc_key_v1.csv
-  eval_version: v1
+  eval_version: v2          # v1 + PI corrections 2026-10-13; author/post ids re-drawn (map: author_id_map_v2.csv)
   dev_dir: ../corpus/epskel_dev_v1
-  dev_version: dev
+  dev_version: dev2         # dev corpus + TA-05/TB-09 with their own persona cards and seed (build_dev_arcs.py)
   arc_split: configs/arc_split.yaml
 
 budgets: [0.01, 0.05, 0.20]

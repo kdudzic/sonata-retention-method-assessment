@@ -1,6 +1,6 @@
 {
- "frozen_at": "2026-10-08T15:38:38",
- "note": "stage 0: S0 lexicon v1 (pruned draft), S1 seeds v1 + query instruction, Annex G weights, top-3 aggregation, S3-open deepseek-v4.1-flash pinned to Together/DigitalOcean/Novita",
+ "frozen_at": "2026-10-23T14:50:48",
+ "note": "re-freeze 2026-10-23: corpus pointers -> v2 / dev2 and arc_split rationale; S0 lexicon, S1 seeds, S3 prompts, weights and aggregation unchanged (same hashes as 2026-10-08 freeze)",
  "artifacts": {
   "s0_lexicon": {
    "path": "artifacts/s0_lexicon.yaml",
@@ -12,11 +12,11 @@
   },
   "experiment_config": {
    "path": "configs/experiment.yaml",
-   "sha256": "e5a340f0bb6922534b4bcef846b8fff42e68fe5283fed7ce4371f2499ae0f9ba"
+   "sha256": "b931d9aa8788e2ef3f4c5d31d0897a8690b2c5f72ab89b3b2e8b538233c84d91"
   },
   "arc_split": {
    "path": "configs/arc_split.yaml",
-   "sha256": "209f5de381e2feadc4160a4e85d5509c53ab310c65bcfc1af3cf3e36e19f60a0"
+   "sha256": "78f3791ef42510392f7d2c0560932e525be62171a55328d6ec6321090ab8da63"
   },
   "prompt_d0": {
    "path": "prompts/s3_d0_v1.md",

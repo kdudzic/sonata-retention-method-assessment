@@ -1,11 +1,31 @@
-# Assignment of the PI's 16 arcs to evaluation / dev / spare.
-# PROVISIONAL (set by Kacper 2026-10-08 so the pipeline can run end to end). The PI decides the final split
-# (plan: 10 arcs = 4 concentrated + 6 distributed, + 2 decoys in the evaluation corpus; 2 arcs in the dev corpus).
-# Rationale for the provisional choice: TA-05 and TB-09 share the "doctor blamed for father's death" theme, so
-# moving both to dev keeps the evaluation set thematically distinct; TB-04 and TB-07 are held as spares.
+# Assignment of the PI's 16 arc skeletons (EP-SKEL_luki_szkieletowe_20261013.docx) to evaluation / dev / spare.
+# Plan: 10 evaluation arcs (4 concentrated + 6 distributed) + 2 decoys; 2 dev arcs from a different seed.
+# Decided by Kacper on 2026-10-23 with the PI's instruction "do your best, document it"; the dev pair comes from
+# the dropped arcs. Rationale per decision:
+#
+# Concentrated, drop 1 of 5 -> TA-05 dropped.
+#   TA-01..TA-04 cover four distinct legal_relevance_focus values (threat to person, intimidation, disclosure,
+#   discriminatory targeting) and TA-04 is the arc the PI rebuilt on 2026-10-13. TA-05 shares its theme (doctor blamed
+#   for a father's death, Tuesday clinic hours) with TB-09; keeping only one of the pair in the evaluation corpus
+#   avoids two arcs with near-identical signal wording, and moving both to dev keeps the dev theme disjoint from eval.
+#
+# Distributed, drop 3 of 9 -> TB-04, TB-07, TB-09 dropped.
+#   TB-09: paired with TA-05 (see above).
+#   TB-04: five signal posts over seven weeks. The frozen aggregation (sum of the top-3 post scores) cannot represent a
+#   basis that only exists across five posts, and five signal posts give the random baseline a 67 % chance of a
+#   "detection" at 20 % by itself (1 - 0.8^5). Held as spare for the full-scale study, where aggregation is varied.
+#   TB-07: its motive post relies on an allusion to a real public figure ("rudy lisek"), and the PI's own note says
+#   post 9 stays borderline only because of the euphemism "odwiedzę". Both make it the arc most likely to fail
+#   criterion 2 (single-post overtness) for reasons unrelated to the hypothesis, and the political allusion sits
+#   closest to the content the plan excludes from persona cards. Held as spare.
+#   Kept: TB-01, TB-02, TB-03, TB-05, TB-06, TB-08 -> focus mix person x3, infrastructure, intimidation,
+#   discriminatory; signal posts 3 / 3 / 4 / 3 / 3 / 5.
+#
+# Known weakness carried into eval on purpose: TB-03 #8 and TB-01 #10 were retained in D0 by S1 and S3 on v1
+# (overt single posts). Plan 11.4 says to fix the skeleton, not drop the arc; flagged to the PI in the calibration note.
 eval:
   concentrated: [TA-01, TA-02, TA-03, TA-04]
   distributed: [TB-01, TB-02, TB-03, TB-05, TB-06, TB-08]
   decoy: [TC-01, TC-02]
-dev: [TA-05, TB-09]
+dev: [TA-05, TB-09]          # generated into corpus/epskel_dev_v1 (posts_dev2.csv) with new persona cards and seed 7331
 spare: [TB-04, TB-07]

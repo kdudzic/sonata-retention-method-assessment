@@ -91,9 +91,9 @@ def _build(name: str, posts: pd.DataFrame, authors: pd.DataFrame, key: pd.DataFr
 def load_split(cfg: dict) -> tuple[Corpus, Corpus]:
     """Returns (evaluation corpus, dev corpus) after applying configs/arc_split.yaml.
 
-    Evaluation = all non-arc authors of corpus v1 + the eval arcs + decoys.
-    Dev = the dev corpus (background + hard negatives) + the dev arcs' authors moved over from corpus v1.
-    Spare arcs are dropped from both.
+    Evaluation = all non-arc authors of the evaluation corpus + the eval arcs + decoys (spare and dev arcs dropped).
+    Dev = the dev corpus as built (its own background, hard negatives and the dev arcs generated with separate
+    persona cards and seed; see build_dev_arcs.py). Nothing is transplanted between the two corpora.
     """
     c = cfg["corpus"]
     split = yaml.safe_load(config.resolve(c["arc_split"]).read_text(encoding="utf-8"))
@@ -103,11 +103,8 @@ def load_split(cfg: dict) -> tuple[Corpus, Corpus]:
     keep_eval = (posts.arc_id == "") | posts.arc_id.isin(eval_arcs)
     ev = _build("eval", posts[keep_eval].copy(), authors[(authors.arc_id == "") | authors.arc_id.isin(eval_arcs)].copy(), key[key.arc_id.isin(eval_arcs)].copy())
     dposts, dauthors, dkey = _load_tables(config.resolve(c["dev_dir"]), c["dev_version"])
-    if dev_arcs:
-        dposts = pd.concat([dposts, posts[posts.arc_id.isin(dev_arcs)]], ignore_index=True)
-        dauthors = pd.concat([dauthors, authors[authors.arc_id.isin(dev_arcs)]], ignore_index=True)
-        dkey = pd.concat([dkey, key[key.arc_id.isin(dev_arcs)]], ignore_index=True)
-    dv = _build("dev", dposts, dauthors, dkey)
+    keep_dev = (dposts.arc_id == "") | dposts.arc_id.isin(dev_arcs)
+    dv = _build("dev", dposts[keep_dev].copy(), dauthors[(dauthors.arc_id == "") | dauthors.arc_id.isin(dev_arcs)].copy(), dkey[dkey.arc_id.isin(dev_arcs)].copy())
     return ev, dv
 
 
