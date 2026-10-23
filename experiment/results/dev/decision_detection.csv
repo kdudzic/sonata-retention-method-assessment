@@ -1,0 +1,3 @@
+selector,access_variant,run_id,n_scored,n_keep,arcs_keep_strict,arcs_keep_loose,dist_keep,conc_keep,decoy_keep,bystander_authors_keep,bystander_posts_keep,hardneg_keep,detected_arcs
+S3-open,D0,f57ac4a6cc,622,2,1,1,0,1,0,1,1,1,TA-05
+S3-open,D3-nat,9a7d680630,622,4,2,2,1,1,0,2,2,2,TA-05|TB-09

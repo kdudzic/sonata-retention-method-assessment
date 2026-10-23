@@ -185,6 +185,8 @@ def results_card(c: Corpus, cfg: dict, summ: pd.DataFrame, crit: list[dict], agr
     md.append(t[cols].round(2).to_markdown(index=False))
     md += ["", "## Go / no-go criteria (plan section 19)", "", pd.DataFrame(crit).to_markdown(index=False), ""]
     md += ["## S3 minus S3' (value of the explicit signal list)", "", blind.round(2).to_markdown(index=False) if len(blind) else "(not run)", ""]
+    dd = decision_detection(c, cfg)
+    md += ["## Decision-based view (KEEP_FOR_REVIEW only, budget-independent)", "", dd.drop(columns=["run_id"]).to_markdown(index=False) if len(dd) else "(no S3 runs)", ""]
     md += ["## Determinism, control model, declared vs internal score", "", "```json", json.dumps(agree, indent=1), "```", ""]
     md += ["## Decisive posts named by S3-open in D3-nat vs the PI's signal posts", "", "```json", json.dumps(decisive, ensure_ascii=False, indent=1)[:3000], "```", ""]
     if notes:

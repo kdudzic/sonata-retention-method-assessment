@@ -1,0 +1,12 @@
+{
+ "declared_vs_internal_D0": {
+  "n": 621,
+  "spearman": 0.5305772310809369,
+  "logprob_available_share": 0.9983922829581994
+ },
+ "declared_vs_internal_D3-nat": {
+  "n": 622,
+  "spearman": 0.42527581405384424,
+  "logprob_available_share": 1.0
+ }
+}
