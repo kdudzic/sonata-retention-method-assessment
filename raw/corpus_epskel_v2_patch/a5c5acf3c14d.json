@@ -1,0 +1,86 @@
+{
+ "call_id": "a5c5acf3c14d",
+ "tag": "arc_summary",
+ "params": {
+  "model": "openai/gpt-6-sol",
+  "extra_body": {
+   "usage": {
+    "include": true
+   },
+   "reasoning": {
+    "enabled": false
+   }
+  },
+  "temperature": 0.3,
+  "max_tokens": 4000
+ },
+ "messages": [
+  {
+   "role": "system",
+   "content": "You summarise, in ONE neutral sentence in Polish, what has been going on in a person's everyday life according to their recent public posts. Background only: no interpretation, no assessment, no labels, no speculation about intentions. Output the sentence only."
+  },
+  {
+   "role": "user",
+   "content": "Posts so far, oldest first:\n- Ale mecz!!! 2:1 po golu w końcówce... Już myślałem, że znów wypuszczą punkty. Ludzie, trochę SZACUNKU! Tak się walczy do ostatniego gwizdka. Głos zdarty, ale warto było!!!\n- Wyszedłem dziś z Żelaznej Formy i znowu tłok na Kolejowej... Za dużo ich tu, wgl ciężko spokojnie przejść. Nwm, kiedy zrobiło się aż tak ciasno. Każdy stoi, gada, blokuje chodnik!!!\n- Ten nowy lokal na rogu już mnie wkurza... Muzyka leci, ludzie stoją pod drzwiami i drą się jeden przez drugiego. Ciszej nie można?! Ludzie, trochę SZACUNKU! Nie każdy ma ochotę tego słuchać.\n\nOne sentence, Polish, neutral, past tense, no more than 35 words:"
+  }
+ ],
+ "prompt_sha1": "c8afcac9481c6d9fa6451d79a75106c8fd9635c8",
+ "response": {
+  "id": "gen-1792758966-jzUgFqSCRzkFKmv8MbC3",
+  "choices": [
+   {
+    "finish_reason": "stop",
+    "index": 0,
+    "logprobs": null,
+    "message": {
+     "content": "Był na meczu zakończonym wynikiem 2:1, wyszedł z Żelaznej Formy i przechodził zatłoczoną Kolejową, a także pisał o hałasie z nowego lokalu na rogu.",
+     "refusal": null,
+     "role": "assistant",
+     "annotations": null,
+     "audio": null,
+     "function_call": null,
+     "tool_calls": null,
+     "reasoning": null
+    },
+    "native_finish_reason": "completed"
+   }
+  ],
+  "created": 1792758966,
+  "model": "openai/gpt-6-sol",
+  "object": "chat.completion",
+  "metadata": null,
+  "moderation": null,
+  "service_tier": "default",
+  "system_fingerprint": null,
+  "usage": {
+   "completion_tokens": 62,
+   "prompt_tokens": 273,
+   "total_tokens": 335,
+   "completion_tokens_details": {
+    "accepted_prediction_tokens": null,
+    "audio_tokens": 0,
+    "reasoning_tokens": 0,
+    "rejected_prediction_tokens": null,
+    "text_tokens": null,
+    "image_tokens": 0
+   },
+   "prompt_tokens_details": {
+    "audio_tokens": 0,
+    "cache_write_tokens": 0,
+    "cached_tokens": 0,
+    "image_tokens": null,
+    "text_tokens": null,
+    "video_tokens": 0
+   },
+   "cost": 0.001166,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.001166,
+    "upstream_inference_prompt_cost": 0.000546,
+    "upstream_inference_completions_cost": 0.00062
+   }
+  },
+  "provider": "OpenAI",
+  "_reasoning_tokens": 0
+ }
+}

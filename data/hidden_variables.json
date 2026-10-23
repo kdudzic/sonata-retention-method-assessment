@@ -1,0 +1,61 @@
+{
+  "speech_act": [
+    "declaration of action",
+    "expression of anger",
+    "hypothetical statement",
+    "humor or joke",
+    "satire or irony",
+    "counterspeech",
+    "general commentary"
+  ],
+  "speaker_perspective": [
+    "first person",
+    "third person",
+    "direct quotation",
+    "indirect report",
+    "impersonal"
+  ],
+  "target_specificity": [
+    "none",
+    "general group",
+    "specific person",
+    "specific institution",
+    "specific place",
+    "specific event",
+    "specific object"
+  ],
+  "imminence": [
+    "none",
+    "vague future",
+    "near future",
+    "within 24 hours"
+  ],
+  "agency_cue": [
+    "none",
+    "vague reference",
+    "specific plan or preparation",
+    "claimed or demonstrated capability"
+  ],
+  "exculpatory_signal": [
+    "none",
+    "news or media context",
+    "counterspeech framing",
+    "ironic or satirical tone",
+    "fictional or cultural reference",
+    "hypothetical framing",
+    "emotional venting"
+  ],
+  "retention_profile": [
+    "clear_discard",
+    "borderline",
+    "clear_keep"
+  ],
+  "legal_relevance_focus": [
+    "none",
+    "threat to person",
+    "threat to infrastructure",
+    "intimidation or coercion",
+    "discriminatory targeting",
+    "disclosure-sensitive context"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+ "corpus": "epskel_v1",
+ "version": "v2",
+ "built": "2026-10-23T14:36:45",
+ "model": "openai/gpt-6-sol",
+ "method": "spec_first",
+ "temperature": 1.0,
+ "seed": 2026,
+ "prompt_versions": {
+  "background": "background_v2",
+  "hardneg": "hardneg_v2",
+  "arc": "arc_post_v2",
+  "persona": "persona_v1"
+ },
+ "window_start": "2026-03-02T00:00:00",
+ "window_end": "2026-05-25T00:00:00",
+ "n_posts": 4078,
+ "n_authors": 200,
+ "layers": {
+  "background": 3340,
+  "hardneg": 560,
+  "arc": 178
+ },
+ "arcs": [
+  "TA-01",
+  "TA-02",
+  "TA-03",
+  "TA-04",
+  "TA-05",
+  "TB-01",
+  "TB-02",
+  "TB-03",
+  "TB-04",
+  "TB-05",
+  "TB-06",
+  "TB-07",
+  "TB-08",
+  "TB-09",
+  "TC-01",
+  "TC-02"
+ ],
+ "sha256_posts": "0aae9a8bc4b281378e9ec9ebf897467103366024ca0b44f78915a4ff46bd7f66",
+ "sha256_authors": "0931b5c2d57b914f5159a63c32117a759450b1e911e7de18adca9322744264b4",
+ "cost_usd_generation": 14.521892499999986,
+ "based_on": "v1",
+ "changes": [
+  "TA-04 #4 regenerated (PI 2026-10-13 brief)",
+  "TB-08 #7 split into #7/#8, old #8-#12 -> #9-#13",
+  "author ids re-drawn from one pool, post ids reassigned; map in author_id_map_v2.csv"
+ ],
+ "patch_model": "openai/gpt-6-sol",
+ "patch_seed": 20261013,
+ "patch_cost_usd": 0.0168895
+}

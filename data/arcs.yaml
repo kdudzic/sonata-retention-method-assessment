@@ -1,5 +1,5 @@
 # EP-SKEL arc skeletons, transcribed from
-# "EP-SKEL - luki narracyjne do pilotazu", v3, 2026-08-27vC (PI's document).
+# "EP-SKEL - luki narracyjne do pilotazu", v3 2026-08-27vC, updated per PI's corrections of 2026-10-13 (TA-04 #4, TB-08 7/8 split).
 # Field semantics follow Annex D of the research plan.
 #
 # IMPORTANT (plan, Annex D): the generator sees `arc_role`, `profile`, `brief`
@@ -7,7 +7,7 @@
 # `signal_posts`, `construction_condition`, or `legal_relevance_focus`.
 #
 # Transcription notes:
-# - TB-08 post 5 has no day offset in the source; interpolated to 17.
+# - TB-08 post 5 day offset 17 (confirmed in the 2026-10-13 table).
 # - Persona sketches are copied; the full persona card is generated from them
 #   (Annex J schema) with protected characteristics excluded.
 
@@ -97,13 +97,13 @@ arcs:
     narrative_axis:
       - narzekanie na okolicę i „obcych”, ogólnikowo
       - irytacja nowym lokalem na rogu
-      - "jeden wpis: slur + wskazany lokal + „jutro wieczorem” + 1. os. lm. + eufemizm czynu (odwołanie historyczne)"
+      - "jeden wpis: „banderowcy” + wskazany lokal + „jutro wieczorem” + 1. os. lm. + eufemizm czynu (odwołanie historyczne)"
       - tło
     posts:
       - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "mecz, wynik, emocje"}
       - {n: 2,  day: 4,  role: background, profile: borderline,    brief: "ogólnikowe „za dużo ich tu” - bez celu i bez czynu"}
       - {n: 3,  day: 8,  role: escalation, profile: borderline,    brief: "irytacja nowym lokalem na rogu, bez slurów"}
-      - {n: 4,  day: 12, role: signal,     profile: clear_keep,    brief: "slur grupowy wobec imigrantów + wskazany lokal (nazwa/róg ulic) + „jutro wieczorem” + 1. os. lm. („idziemy”, „zrobimy”) + eufemizm czynu przez odwołanie do krzywdy historycznej (np. „przypomnimy im …”)"}
+      - {n: 4,  day: 12, role: signal,     profile: clear_keep,    brief: "pejoratywne określenie grupy przez etykietę historyczną („banderowcy”) + wskazany lokal („Narożnik” na rogu Wąskiej i Brzozowej) + „jutro wieczorem” + 1. os. lm. („idziemy”, „przypomnimy”) + eufemizm czynu przez odwołanie do krzywdy historycznej, bez nazwania czynu wprost; wzór: „Jutro wieczorem idziemy pod «Narożnik» na rogu Wąskiej i Brzozowej. Dość tych banderowców... Przypomnimy im, co kiedyś robiono z takimi. Skończy się darcie mordy pod oknami!!!”"}
       - {n: 5,  day: 15, role: background, profile: clear_discard, brief: "wpis o siłowni"}
       - {n: 6,  day: 19, role: background, profile: clear_discard, brief: "mem osiedlowy"}
       - {n: 7,  day: 22, role: background, profile: borderline,    brief: "narzekanie na „nowych sąsiadów”, retorycznie"}
@@ -345,18 +345,19 @@ arcs:
     posts:
       - {n: 1,  day: 0,  role: background, profile: clear_discard, brief: "mecz"}
       - {n: 2,  day: 4,  role: precursor,  profile: borderline,    brief: "slur grupowy wobec imigrantów w narzekaniu ogólnym - bez obiektu, bez czynu"}
-      - {n: 3,  day: 9,  role: signal,     profile: borderline,    brief: "„widziałeś co otworzyli na rogu, ukrowy sklep!” - obiekt wskazany, bez wrogości wprost"}
+      - {n: 3,  day: 9,  role: signal,     profile: borderline,    brief: "„widziałeś co otworzyli na rogu, ukrowy sklep!” - obiekt wskazany z pejoratywnym określeniem grupy, bez czynu i terminu"}
       - {n: 4,  day: 13, role: background, profile: clear_discard, brief: "wpis o pracy"}
       - {n: 5,  day: 17, role: signal,     profile: borderline,    brief: "„niech kurwy spierdalają do siebie” - odpowiedź w niewidocznej rozmowie, bez obiektu i czynu"}
       - {n: 6,  day: 20, role: background, profile: clear_discard, brief: "mem"}
-      - {n: 7,  day: 24, role: signal,     profile: borderline,    brief: "„tak wiem, jutro wieczorem, chujki przeproszą za wołyń” - odpowiedź w niewidocznej rozmowie, czyn tylko eufemizowany"}
-      - {n: 8,  day: 28, role: background, profile: clear_discard, brief: "grill"}
-      - {n: 9,  day: 32, role: background, profile: borderline,    brief: "retoryczne narzekanie na „nowych” - bez atrybucji"}
-      - {n: 10, day: 36, role: background, profile: clear_discard, brief: "mecz"}
-      - {n: 11, day: 41, role: background, profile: clear_discard, brief: "zakupy"}
-      - {n: 12, day: 44, role: background, profile: clear_discard, brief: "pogoda"}
-    construction_condition: "{2, 3, 5, 7}: group hostility (2) + named object (3) + date and coordination (5/7) + euphemised act (7). Posts 5 and 7 are by design invisible to S0."
-    signal_posts: [2, 3, 5, 7]
+      - {n: 7,  day: 24, role: signal,     profile: borderline,    brief: "odpowiedź do znajomego w niewidocznej rozmowie: „no właśnie wiem... jutro wieczorem.” - sam termin i umawianie się, bez obiektu, czynu i slurów, nic więcej"}
+      - {n: 8,  day: 24, role: signal,     profile: borderline,    brief: "ciąg dalszy tej samej wymiany, później tego samego wieczoru: „te chujki jeszcze przeproszą za wołyń... sam wiesz.” - slur + czyn eufemizowany odwołaniem historycznym + koordynacja, BEZ terminu i bez obiektu"}
+      - {n: 9,  day: 28, role: background, profile: clear_discard, brief: "grill"}
+      - {n: 10, day: 32, role: background, profile: borderline,    brief: "retoryczne narzekanie na „nowych” - bez atrybucji"}
+      - {n: 11, day: 36, role: background, profile: clear_discard, brief: "mecz"}
+      - {n: 12, day: 41, role: background, profile: clear_discard, brief: "zakupy"}
+      - {n: 13, day: 44, role: background, profile: clear_discard, brief: "pogoda"}
+    construction_condition: "{2, 3, 7, 8}: group hostility (2) + named object with a pejorative group label (3) + date and coordination (7) + euphemised act via historical reference (8); 5 reinforces hostility without a new element. No single post combines the act with a date or an object. 7 lights at most S0 category C, 8 none."
+    signal_posts: [2, 3, 5, 7, 8]
 
   - arc_id: TB-09
     arc_type: distributed

@@ -29,9 +29,8 @@ from .personas import render_card, _split
 
 TOPICS = yaml.safe_load((config.DATA / "topics.yaml").read_text(encoding="utf-8"))
 ARCS = yaml.safe_load((config.DATA / "arcs.yaml").read_text(encoding="utf-8"))["arcs"]
-HIDDEN = json.loads(
-    (config.ROOT.parent / "1_project" / "sonata-ai-bulk-surveillance" / "data" / "hidden_variables.json").read_text()
-)
+# copied verbatim from the XAI study repo (1_project/sonata-ai-bulk-surveillance/data/hidden_variables.json)
+HIDDEN = json.loads((config.DATA / "hidden_variables.json").read_text(encoding="utf-8"))
 
 TIMES = ["early morning", "morning commute", "late morning", "lunch break", "afternoon", "evening", "late night"]
 WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
