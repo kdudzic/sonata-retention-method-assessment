@@ -48,12 +48,32 @@ Deviation to declare: everything runs through OpenRouter, not on CSI hardware. N
 
 ## Todos: models to choose
 
-Four model slots. One model per slot.
+Four model slots. One model per slot. Plan directives per slot are listed under each.
 
-- [ ] **S3-open**, the main LLM selector. Open-weights, locally runnable. Also serves as S3' (blinded prompt).
-- [ ] **S3-com**, the control LLM selector. Different family than S3-open; runs on a 10 % subsample.
-- [ ] **S1 embedding model**, for the semantic selector. Polish, long window.
-- [ ] **Lexicon-expansion LLM** for S0, one-off use to draft the word list from category definitions.
+- [ ] **S3-open**, the main LLM selector. Also serves as S3' (same model, blinded prompt).
+  - open weights, runnable locally on one L40s-class GPU at CSI
+  - chosen on a dev-corpus sample; PI approves
+  - candidates named in the plan: DeepSeek V4 Flash / Pro, GLM-5.2, Kimi K3, Qwen3.8 27B / Max (Kacper's list adds Inkling)
+  - rule: largest model that is sensible locally and competent in Polish
+  - score from the log-probability of the decision token; temperature 0; two runs for non-determinism
+  - no Chinese vs non-Chinese comparison framing
+
+- [ ] **S3-com**, the control LLM selector.
+  - a different model than S3-open
+  - plan default: a commercial model from the XAI study (gpt-5.5, gemini-3.1-pro, grok-4.20, mistral-large-2512; deepseek-v4-pro was also in that study but is not commercial)
+  - runs on about 10 % of the corpus, 800 to 1,200 calls
+  - ranked by the declared `retention_score`; log-probs optional
+
+- [ ] **S1 embedding model**, for the semantic selector.
+  - must handle Polish and a window long enough for about 20 posts of 40 words (history variant D3-txt)
+  - HerBERT excluded (512-token window), ModernBERT excluded (English)
+  - candidates: Qwen3-Embedding-8B (Kacper's proposal) or BGE-M3
+  - chosen before artifacts are frozen (stage 0)
+
+- [ ] **Lexicon-expansion LLM** for S0, one-off.
+  - expands the word list from the category definitions only, never from corpus texts
+  - output is pruned by hand by Kacper, then frozen with a checksum
+  - no model constraints stated in the plan
 
 Not a slot: the corpus generator (`openai/gpt-6-sol`, already chosen and used).
 
@@ -61,3 +81,4 @@ Not a slot: the corpus generator (`openai/gpt-6-sol`, already chosen and used).
 
 - 2026-10-24: note created from the plan (sections 4, 7, 21, Annexes E-H) and `szkielet.md` section 5.
 - 2026-10-24: todos reduced to the four model slots; everything else decided on the fly.
+- 2026-10-24: plan directives added under each slot.
