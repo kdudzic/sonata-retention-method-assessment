@@ -38,7 +38,7 @@ Living document. Started 2026-10-24. Update in place; keep the log at the bottom
 
 | Slot | Current | Basis | Status |
 |---|---|---|---|
-| S3-open | `deepseek/deepseek-v4.1-flash` via OpenRouter, providers pinned to Together / DigitalOcean / Novita (return logprobs) | 200-post dev trial vs GLM-5.3-flash, Qwen3.8-27B, Kimi K3: same arcs detected, cheapest, 100 % parseable | provisional |
+| S3-open | Qwen3.8 27B on a local server (decided 2026-10-24). Current results still from `deepseek/deepseek-v4.1-flash` via OpenRouter (provisional) | Qwen3.8-27B was in the 2026-10-08 dev trial: same arcs detected as the others, logprobs available on 78 % of calls via OpenRouter, 100 % parseable | decided; run pending on local hardware |
 | S3-com | `google/gemini-3.1-pro-preview` | plan default (XAI study set); disjoint from generator (OpenAI) and S3-open (DeepSeek) | decided 2026-10-24; Sonnet run archived in `results/eval/superseded_s3com_sonnet/` |
 | S1 | `qwen/qwen3-embedding-8b` via OpenRouter, with query-instruction prefix | plan candidate; prefix needed (see `experiment/results/dev/tuning_note.md`) | frozen 2026-10-08 |
 | S0 | `experiment/artifacts/s0_lexicon.yaml` | LLM draft from definitions (gpt-6-sol), hand-pruned | frozen 2026-10-08 |
@@ -50,7 +50,7 @@ Deviation to declare: everything runs through OpenRouter, not on CSI hardware. N
 
 Four model slots. One model per slot. Plan directives per slot are listed under each.
 
-- [ ] **S3-open**, the main LLM selector. Also serves as S3' (same model, blinded prompt).
+- [x] **S3-open**, the main LLM selector. Also serves as S3' (same model, blinded prompt). DECIDED 2026-10-24: Qwen3.8 27B, to be run on a local server (not via OpenRouter). No experiments run yet; the DeepSeek results in `results/eval/` stay as the provisional S3-open until the local Qwen run replaces them.
   - open weights, runnable locally on one L40s-class GPU at CSI
   - chosen on a dev-corpus sample; PI approves
   - candidates named in the plan: DeepSeek V4 Flash / Pro, GLM-5.2, Kimi K3, Qwen3.8 27B / Max (Kacper's list adds Inkling)
@@ -82,4 +82,5 @@ Not a slot: the corpus generator (`openai/gpt-6-sol`, already chosen and used).
 - 2026-10-24: note created from the plan (sections 4, 7, 21, Annexes E-H) and `szkielet.md` section 5.
 - 2026-10-24: todos reduced to the four model slots; everything else decided on the fly.
 - 2026-10-24: plan directives added under each slot.
+- 2026-10-24: S3-open = Qwen3.8 27B, local server. Noted only; no runs yet. Open items when the run is set up: logprob access from the local serving stack (vLLM/llama.cpp expose them), reasoning off, temperature 0, provider pinning no longer applies, re-freeze with the new model id and re-run S3-open + S3' on eval v2 and dev2.
 - 2026-10-24: S3-com = gemini-3.1-pro-preview. gpt-5.5 was considered first and dropped because it shares the generator's family. Control run on eval v2 ($3.60 incl. one discarded run): decision agreement with S3-open 99.1 % (D0) / 98.1 % (D3-nat); declared-score Spearman 0.52 / 0.62; by decision 7 arcs in D0, 8 in D3-nat (4/4 concentrated, 3 then 4 distributed), no decoys, no logprobs returned. First attempt discarded: Gemini's thinking tokens hit the 400-token output cap on 108 of 426 history prompts; cap raised to 4,000 for all S3 calls (`selex/s3_llm.py`).
