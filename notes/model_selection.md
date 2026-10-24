@@ -64,7 +64,7 @@ Four model slots. One model per slot. Plan directives per slot are listed under 
   - runs on about 10 % of the corpus, 800 to 1,200 calls
   - ranked by the declared `retention_score`; log-probs optional
 
-- [ ] **S1 embedding model**, for the semantic selector.
+- [x] **S1 embedding model**, for the semantic selector. DECIDED 2026-10-24: Qwen3-Embedding-8B (as frozen on 2026-10-08, via OpenRouter with the query-instruction prefix). No change.
   - must handle Polish and a window long enough for about 20 posts of 40 words (history variant D3-txt)
   - HerBERT excluded (512-token window), ModernBERT excluded (English)
   - candidates: Qwen3-Embedding-8B (Kacper's proposal) or BGE-M3
@@ -82,6 +82,7 @@ Not a slot: the corpus generator (`openai/gpt-6-sol`, already chosen and used).
 - 2026-10-24: note created from the plan (sections 4, 7, 21, Annexes E-H) and `szkielet.md` section 5.
 - 2026-10-24: todos reduced to the four model slots; everything else decided on the fly.
 - 2026-10-24: plan directives added under each slot.
+- 2026-10-24: S1 = Qwen3-Embedding-8B kept. All four slots decided.
 - 2026-10-24: lexicon-expansion LLM = gpt-6-sol (kept; rationale: single generation model for the whole study). Methods sentence to add: the lexicon model saw category definitions only, never corpus text, so sharing the generator's family does not couple S0 to the posts.
 - 2026-10-24: S3-open = Qwen3.8 27B, local server. Noted only; no runs yet. Open items when the run is set up: logprob access from the local serving stack (vLLM/llama.cpp expose them), reasoning off, temperature 0, provider pinning no longer applies, re-freeze with the new model id and re-run S3-open + S3' on eval v2 and dev2.
 - 2026-10-24: S3-com = gemini-3.1-pro-preview. gpt-5.5 was considered first and dropped because it shares the generator's family. Control run on eval v2 ($3.60 incl. one discarded run): decision agreement with S3-open 99.1 % (D0) / 98.1 % (D3-nat); declared-score Spearman 0.52 / 0.62; by decision 7 arcs in D0, 8 in D3-nat (4/4 concentrated, 3 then 4 distributed), no decoys, no logprobs returned. First attempt discarded: Gemini's thinking tokens hit the 400-token output cap on 108 of 426 history prompts; cap raised to 4,000 for all S3 calls (`selex/s3_llm.py`).
