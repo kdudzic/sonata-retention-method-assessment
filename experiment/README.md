@@ -48,3 +48,5 @@ S3' (blind) x (D0, D3-nat); S3-com on a ~10 % subsample + all signal posts; S-ra
 
 Notes: S3-open runs through OpenRouter (plan: local open model on CSI infrastructure); logprobs are provider-dependent
 and recorded per call, with `retention_score` as the fallback. Reasoning is disabled for all S3 calls.
+
+Model choices for the selectors and the open todos: `notes/model_selection.md`.

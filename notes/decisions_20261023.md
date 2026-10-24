@@ -23,3 +23,5 @@ Reasons (full text in `experiment/configs/arc_split.yaml`):
 ## Protocol re-run
 
 All v1-id results moved to `experiment/results/archive_v1_ids/`. Artifacts re-frozen on 2026-10-23 with unchanged lexicon, seeds, prompts, weights and aggregation (same SHA-256 as the 2026-10-08 freeze); only the corpus pointers (v2, dev2) and the split file changed. Scoring on dev2 and v2 launched 2026-10-23 14:50.
+
+Follow-up: selector model selection is tracked in `notes/model_selection.md`.
