@@ -46,22 +46,18 @@ Living document. Started 2026-10-24. Update in place; keep the log at the bottom
 Deviation to declare: everything runs through OpenRouter, not on CSI hardware. Non-determinism is measured instead
 (decision agreement 100 % / 99.9 % over two runs on v2).
 
-## Todos
+## Todos: models to choose
 
-- [ ] S3-open: re-run `experiment.py model-trial` on dev2 (622 posts, arcs TA-05 and TB-09) with the full candidate
-      list: DeepSeek V4.1 Flash, DeepSeek V4 Pro, GLM-5.3 (flash and full), Qwen3.8-27B, Qwen3.8-Max, Kimi K3. Record
-      per model: logprob availability, parse rate, keep rate, signal-post ranks, cost, and a local-feasibility column
-      (parameter count, VRAM at 8-bit, fits one L40s yes/no).
-- [ ] S3-open: write the "largest sensible local model" argument for the chosen one and get PI approval.
-- [ ] S3-com: decide family. Options: keep Sonnet (disjoint from generator and S3-open), or switch to a non-OpenAI,
-      non-DeepSeek model from the XAI set (gemini-3.1-pro, grok-4.20, mistral-large-2512). Get PI approval.
-- [ ] S1: confirm Qwen3-Embedding-8B stays (BGE-M3 was the alternative; only matters if the PI wants a re-freeze
-      for the rulebook-only seeds, see the calibration note).
-- [ ] S1 seeds: decide whether the full-scale freeze uses rulebook-only seeds (post-hoc `S1-v2rulebook` result).
-- [ ] If any slot changes: re-freeze artifacts, re-run the affected selector on eval v2 (~$5, 45 min), update the
-      results card.
-- [ ] Add a line to the methods section about OpenRouter hosting vs the plan's local-hosting assumption.
+Four model slots. One model per slot.
+
+- [ ] **S3-open**, the main LLM selector. Open-weights, locally runnable. Also serves as S3' (blinded prompt).
+- [ ] **S3-com**, the control LLM selector. Different family than S3-open; runs on a 10 % subsample.
+- [ ] **S1 embedding model**, for the semantic selector. Polish, long window.
+- [ ] **Lexicon-expansion LLM** for S0, one-off use to draft the word list from category definitions.
+
+Not a slot: the corpus generator (`openai/gpt-6-sol`, already chosen and used).
 
 ## Log
 
 - 2026-10-24: note created from the plan (sections 4, 7, 21, Annexes E-H) and `szkielet.md` section 5.
+- 2026-10-24: todos reduced to the four model slots; everything else decided on the fly.
