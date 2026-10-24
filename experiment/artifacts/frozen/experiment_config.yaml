@@ -26,7 +26,7 @@ selectors:
   s3:
     open_model: deepseek/deepseek-v4.1-flash     # S3-open, chosen on the dev sample (model-trial); open weights, cheap
     open_candidates: [deepseek/deepseek-v4.1-flash, z-ai/glm-5.3-flash, qwen/qwen3.8-27b, moonshotai/kimi-k3]
-    control_model: anthropic/claude-sonnet-5.5   # S3-com: different family from generator (OpenAI) and from S3-open
+    control_model: google/gemini-3.1-pro-preview   # S3-com: PI/Kacper decision 2026-10-24, commercial model from the XAI study set
     control_fraction: 0.10
     temperature: 0.0
     determinism_repeats: 2

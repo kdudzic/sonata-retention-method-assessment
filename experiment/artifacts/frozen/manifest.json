@@ -1,6 +1,6 @@
 {
- "frozen_at": "2026-10-23T14:50:48",
- "note": "re-freeze 2026-10-23: corpus pointers -> v2 / dev2 and arc_split rationale; S0 lexicon, S1 seeds, S3 prompts, weights and aggregation unchanged (same hashes as 2026-10-08 freeze)",
+ "frozen_at": "2026-10-24T11:58:04",
+ "note": "2026-10-24: S3-com -> google/gemini-3.1-pro-preview; all other artifacts unchanged",
  "artifacts": {
   "s0_lexicon": {
    "path": "artifacts/s0_lexicon.yaml",
@@ -12,7 +12,7 @@
   },
   "experiment_config": {
    "path": "configs/experiment.yaml",
-   "sha256": "b931d9aa8788e2ef3f4c5d31d0897a8690b2c5f72ab89b3b2e8b538233c84d91"
+   "sha256": "6d96bcca340fee39341589fcd73007c832648efb04fba1a5523b4a31c5b53a17"
   },
   "arc_split": {
    "path": "configs/arc_split.yaml",
@@ -50,5 +50,5 @@
  },
  "s1_model": "qwen/qwen3-embedding-8b",
  "s3_open_model": "deepseek/deepseek-v4.1-flash",
- "s3_control_model": "anthropic/claude-sonnet-5.5"
+ "s3_control_model": "google/gemini-3.1-pro-preview"
 }

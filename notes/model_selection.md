@@ -39,7 +39,7 @@ Living document. Started 2026-10-24. Update in place; keep the log at the bottom
 | Slot | Current | Basis | Status |
 |---|---|---|---|
 | S3-open | `deepseek/deepseek-v4.1-flash` via OpenRouter, providers pinned to Together / DigitalOcean / Novita (return logprobs) | 200-post dev trial vs GLM-5.3-flash, Qwen3.8-27B, Kimi K3: same arcs detected, cheapest, 100 % parseable | provisional |
-| S3-com | `anthropic/claude-sonnet-5.5` | different family from the generator (OpenAI) and from S3-open | provisional; deviates from the plan default |
+| S3-com | `google/gemini-3.1-pro-preview` | plan default (XAI study set); disjoint from generator (OpenAI) and S3-open (DeepSeek) | decided 2026-10-24; Sonnet run archived in `results/eval/superseded_s3com_sonnet/` |
 | S1 | `qwen/qwen3-embedding-8b` via OpenRouter, with query-instruction prefix | plan candidate; prefix needed (see `experiment/results/dev/tuning_note.md`) | frozen 2026-10-08 |
 | S0 | `experiment/artifacts/s0_lexicon.yaml` | LLM draft from definitions (gpt-6-sol), hand-pruned | frozen 2026-10-08 |
 
@@ -58,7 +58,7 @@ Four model slots. One model per slot. Plan directives per slot are listed under 
   - score from the log-probability of the decision token; temperature 0; two runs for non-determinism
   - no Chinese vs non-Chinese comparison framing
 
-- [ ] **S3-com**, the control LLM selector.
+- [x] **S3-com**, the control LLM selector. DECIDED 2026-10-24: `google/gemini-3.1-pro-preview` (from the XAI study set; different family from the generator and from S3-open).
   - a different model than S3-open
   - plan default: a commercial model from the XAI study (gpt-5.5, gemini-3.1-pro, grok-4.20, mistral-large-2512; deepseek-v4-pro was also in that study but is not commercial)
   - runs on about 10 % of the corpus, 800 to 1,200 calls
@@ -82,3 +82,4 @@ Not a slot: the corpus generator (`openai/gpt-6-sol`, already chosen and used).
 - 2026-10-24: note created from the plan (sections 4, 7, 21, Annexes E-H) and `szkielet.md` section 5.
 - 2026-10-24: todos reduced to the four model slots; everything else decided on the fly.
 - 2026-10-24: plan directives added under each slot.
+- 2026-10-24: S3-com = gemini-3.1-pro-preview. gpt-5.5 was considered first and dropped because it shares the generator's family. Control run re-launched on eval v2.
