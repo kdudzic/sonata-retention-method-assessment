@@ -82,4 +82,4 @@ Not a slot: the corpus generator (`openai/gpt-6-sol`, already chosen and used).
 - 2026-10-24: note created from the plan (sections 4, 7, 21, Annexes E-H) and `szkielet.md` section 5.
 - 2026-10-24: todos reduced to the four model slots; everything else decided on the fly.
 - 2026-10-24: plan directives added under each slot.
-- 2026-10-24: S3-com = gemini-3.1-pro-preview. gpt-5.5 was considered first and dropped because it shares the generator's family. Control run re-launched on eval v2.
+- 2026-10-24: S3-com = gemini-3.1-pro-preview. gpt-5.5 was considered first and dropped because it shares the generator's family. Control run on eval v2 ($3.60 incl. one discarded run): decision agreement with S3-open 99.1 % (D0) / 98.1 % (D3-nat); declared-score Spearman 0.52 / 0.62; by decision 7 arcs in D0, 8 in D3-nat (4/4 concentrated, 3 then 4 distributed), no decoys, no logprobs returned. First attempt discarded: Gemini's thinking tokens hit the 400-token output cap on 108 of 426 history prompts; cap raised to 4,000 for all S3 calls (`selex/s3_llm.py`).

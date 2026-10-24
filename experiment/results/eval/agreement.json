@@ -7,8 +7,8 @@
  },
  "control_D0": {
   "n": 426,
-  "decision_agreement": 0.9859154929577465,
-  "retention_spearman": 0.607732732217366
+  "decision_agreement": 0.9906103286384976,
+  "retention_spearman": 0.5217315472151237
  },
  "declared_vs_internal_D0": {
   "n": 4030,
@@ -23,8 +23,8 @@
  },
  "control_D3-nat": {
   "n": 426,
-  "decision_agreement": 0.9765258215962441,
-  "retention_spearman": 0.48001886386056253
+  "decision_agreement": 0.9812206572769953,
+  "retention_spearman": 0.6182433837937767
  },
  "declared_vs_internal_D3-nat": {
   "n": 4032,

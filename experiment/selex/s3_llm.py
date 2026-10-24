@@ -106,7 +106,8 @@ class S3Selector:
 
     def score_one(self, post_id: str, text: str, history: list[tuple[str, str]] | None = None) -> S3Output:
         msgs = build_messages(self.prompt_name, post_id, text, history)
-        r: ChatResult = self.llm.chat(msgs, tag=post_id, max_tokens=400)
+        # 4000, not 400: reasoning models (gemini, claude 5.5) bill thinking tokens against max_tokens and truncate the JSON otherwise
+        r: ChatResult = self.llm.chat(msgs, tag=post_id, max_tokens=4000)
         try:
             o = parse_json(r.text)
             ok = True

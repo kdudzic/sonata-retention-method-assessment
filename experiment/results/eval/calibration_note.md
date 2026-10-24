@@ -141,3 +141,12 @@ and the explicit signal list restrains retention by a factor of three to four.
 **Dev2.** With new personas and seed, TA-05 is caught by S0, S1 and S3 in D0 at 5 % or lower; TB-09 by S3-open
 only in D3-nat (decision view: 0 distributed arcs in D0, 1 in D3-nat). Dev2 therefore reproduces the eval pattern on
 unseen text, which is what the dev corpus is for.
+
+## 8. Control model switched to gemini-3.1-pro-preview (2026-10-24)
+
+S3-com is now the plan's default, a commercial model from the XAI study set, disjoint from the generator (OpenAI) and
+S3-open (DeepSeek). On the 426-post subsample it agrees with S3-open on 99.1 % (D0) and 98.1 % (D3-nat) of decisions;
+by decision it keeps 7 arcs in D0 and 8 in D3-nat, the same H3 direction as S3-open. Gemini returns no token logprobs,
+so its ranking uses the declared `retention_score` as the plan foresees. Operational finding: with a 400-token output
+cap Gemini truncated 108 of 426 history prompts (thinking tokens), which silently turned hard cases into parse errors;
+the cap is now 4,000 for every S3 call and the truncated run is kept under `superseded_s3com_gemini_cap400/`.
