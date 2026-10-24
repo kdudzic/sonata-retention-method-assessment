@@ -41,7 +41,7 @@ Living document. Started 2026-10-24. Update in place; keep the log at the bottom
 | S3-open | Qwen3.8 27B on a local server (decided 2026-10-24). Current results still from `deepseek/deepseek-v4.1-flash` via OpenRouter (provisional) | Qwen3.8-27B was in the 2026-10-08 dev trial: same arcs detected as the others, logprobs available on 78 % of calls via OpenRouter, 100 % parseable | decided; run pending on local hardware |
 | S3-com | `google/gemini-3.1-pro-preview` | plan default (XAI study set); disjoint from generator (OpenAI) and S3-open (DeepSeek) | decided 2026-10-24; Sonnet run archived in `results/eval/superseded_s3com_sonnet/` |
 | S1 | `qwen/qwen3-embedding-8b` via OpenRouter, with query-instruction prefix | plan candidate; prefix needed (see `experiment/results/dev/tuning_note.md`) | frozen 2026-10-08 |
-| S0 | `experiment/artifacts/s0_lexicon.yaml` | LLM draft from definitions (gpt-6-sol), hand-pruned | frozen 2026-10-08 |
+| S0 lexicon model | `openai/gpt-6-sol` | one model for all generation in the study; draft from category definitions only, hand-pruned | decided 2026-10-24; lexicon frozen 2026-10-08, no change |
 
 Deviation to declare: everything runs through OpenRouter, not on CSI hardware. Non-determinism is measured instead
 (decision agreement 100 % / 99.9 % over two runs on v2).
@@ -70,7 +70,7 @@ Four model slots. One model per slot. Plan directives per slot are listed under 
   - candidates: Qwen3-Embedding-8B (Kacper's proposal) or BGE-M3
   - chosen before artifacts are frozen (stage 0)
 
-- [ ] **Lexicon-expansion LLM** for S0, one-off.
+- [x] **Lexicon-expansion LLM** for S0, one-off. DECIDED 2026-10-24: `openai/gpt-6-sol`, the same model as the corpus generator, so one model covers all data generation in the study. Already used for the frozen lexicon (`experiment/artifacts/s0_lexicon.yaml`, drafted 2026-10-08 from definitions only, hand-pruned, frozen).
   - expands the word list from the category definitions only, never from corpus texts
   - output is pruned by hand by Kacper, then frozen with a checksum
   - no model constraints stated in the plan
@@ -82,5 +82,6 @@ Not a slot: the corpus generator (`openai/gpt-6-sol`, already chosen and used).
 - 2026-10-24: note created from the plan (sections 4, 7, 21, Annexes E-H) and `szkielet.md` section 5.
 - 2026-10-24: todos reduced to the four model slots; everything else decided on the fly.
 - 2026-10-24: plan directives added under each slot.
+- 2026-10-24: lexicon-expansion LLM = gpt-6-sol (kept; rationale: single generation model for the whole study). Methods sentence to add: the lexicon model saw category definitions only, never corpus text, so sharing the generator's family does not couple S0 to the posts.
 - 2026-10-24: S3-open = Qwen3.8 27B, local server. Noted only; no runs yet. Open items when the run is set up: logprob access from the local serving stack (vLLM/llama.cpp expose them), reasoning off, temperature 0, provider pinning no longer applies, re-freeze with the new model id and re-run S3-open + S3' on eval v2 and dev2.
 - 2026-10-24: S3-com = gemini-3.1-pro-preview. gpt-5.5 was considered first and dropped because it shares the generator's family. Control run on eval v2 ($3.60 incl. one discarded run): decision agreement with S3-open 99.1 % (D0) / 98.1 % (D3-nat); declared-score Spearman 0.52 / 0.62; by decision 7 arcs in D0, 8 in D3-nat (4/4 concentrated, 3 then 4 distributed), no decoys, no logprobs returned. First attempt discarded: Gemini's thinking tokens hit the 400-token output cap on 108 of 426 history prompts; cap raised to 4,000 for all S3 calls (`selex/s3_llm.py`).
