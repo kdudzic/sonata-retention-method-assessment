@@ -150,3 +150,24 @@ by decision it keeps 7 arcs in D0 and 8 in D3-nat, the same H3 direction as S3-o
 so its ranking uses the declared `retention_score` as the plan foresees. Operational finding: with a 400-token output
 cap Gemini truncated 108 of 426 history prompts (thinking tokens), which silently turned hard cases into parse errors;
 the cap is now 4,000 for every S3 call and the truncated run is kept under `superseded_s3com_gemini_cap400/`.
+
+## 9. S3-open switched to Qwen3.8 27B (2026-10-27)
+
+Full protocol (dev2, eval v2 S3-open, S3', determinism repeat) through OpenRouter, provider Reka, 25,436 calls, $4.77,
+no errors, logprobs on every call, zero reasoning tokens, output 70 tokens per call on average.
+
+Compared with DeepSeek V4.1 Flash on the same posts, Qwen is more willing to say KEEP_FOR_REVIEW: 33 KEEP decisions
+in D0 (DeepSeek 11) and 48 with history (DeepSeek 26). By decision it keeps 7 arcs in D0 (3 distributed) and the
+same 7 with history; the history effect shows only in invasiveness (bystander authors 19 -> 31) and in the ranking
+(5 % budget: 8 arcs in D0, 9 with history). S3' blind: 6 arcs in D0 (2 distributed) -> 8 with history (4 distributed),
+bystanders 30 -> 42. So with Qwen the explicit signal list makes the selector more sensitive in D0 and less sensitive
+to history than the blinded variant, the opposite of the DeepSeek pattern for distributed arcs; the H4 direction
+(history raises bystander count) holds for both models and both prompts. Criterion 2 improves to 4 distributed arcs
+in D0 at 5 % (S1 and Qwen), still above the threshold of 1.
+
+Determinism: decision agreement 100 % in both variants, score Spearman 0.98 / 0.97. Control (Gemini) agreement with
+Qwen 99.5 % / 98.4 %. Declared vs internal score Spearman 0.69 / 0.67, higher than DeepSeek's 0.50 / 0.38.
+
+Bookkeeping: `logprob_decision` was stored as NaN whenever P(KEEP) rounded to exactly 0, so the "logprob available"
+share in `agreement.json` (41 % / 49 %) undercounts; the raw call logs show logprobs on 100 % of Qwen calls and the
+`raw_score` column is unaffected. Fixed in `selex/runner.py` for future runs.

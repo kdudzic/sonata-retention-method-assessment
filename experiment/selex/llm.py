@@ -55,13 +55,19 @@ class ChatResult:
     raw: dict[str, Any] = field(default_factory=dict)
 
 
+class BudgetExceeded(RuntimeError):
+    pass
+
+
 class LLM:
     _REASONING_LADDER = [{"enabled": False}, {"effort": "minimal"}, {"effort": "low"}, {"exclude": True}]
 
     def __init__(self, model: str, run_name: str, temperature: float | None = 0.0, max_tokens: int = 4000,
                  seed: int | None = None, logprobs: bool = False, top_logprobs: int = 8, max_retries: int = 5,
-                 timeout: float = 120.0, raw_root: Path | None = None, reasoning: bool = False) -> None:
+                 timeout: float = 120.0, raw_root: Path | None = None, reasoning: bool = False,
+                 max_cost_usd: float | None = None) -> None:
         self.model = model
+        self.max_cost_usd = max_cost_usd   # hard stop: no request is sent once this run's spend passes the cap
         self.run_name = run_name
         self.temperature = temperature
         self.max_tokens = max_tokens
@@ -101,6 +107,8 @@ class LLM:
         delay = 2.0
         last_err: Exception | None = None
         for attempt in range(self.max_retries):
+            if self.max_cost_usd is not None and self.total_cost >= self.max_cost_usd:
+                raise BudgetExceeded(f"run {self.run_name} reached its cap ${self.max_cost_usd:.2f} (spent ${self.total_cost:.2f})")
             t0 = time.time()
             try:
                 resp = self.client.chat.completions.create(**kwargs)

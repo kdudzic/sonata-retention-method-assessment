@@ -133,7 +133,8 @@ def _s3_run(c: Corpus, cfg: dict, model: str, prompt: str, selector: str, varian
     s3 = cfg["selectors"]["s3"]
     run_name = f"{c.name}_{selector}_{variant}_{run_tag}" + (f"_rep{repeat}" if repeat else "")
     sel = S3Selector(model, prompt, run_name=run_name, temperature=s3["temperature"], logprobs=True, workers=s3["workers"],
-                     seed=repeat, provider_order=(s3.get("provider_order") or {}).get(model))
+                     seed=repeat, provider_order=(s3.get("provider_order") or {}).get(model),
+                     max_cost_usd=s3.get("max_cost_usd_per_run"), max_tokens=int(s3.get("max_tokens", 4000)))
     sel.llm.raw_root = cfg["results_dir"] / "raw"
     sel.llm.raw_dir = sel.llm.raw_root / run_name
     sel.llm.raw_dir.mkdir(parents=True, exist_ok=True)
@@ -149,13 +150,17 @@ def _s3_run(c: Corpus, cfg: dict, model: str, prompt: str, selector: str, varian
         items.append((p, text_of[p], hist))
     res = sel.score_many(items, desc=f"{selector} {variant} {c.name}")
     scores, extra, errors = {}, {}, []
+    from .llm import BudgetExceeded
+    n_budget = sum(1 for r in res if isinstance(r, BudgetExceeded))
+    if n_budget:
+        raise BudgetExceeded(f"{run_name}: cap hit, {n_budget} posts not scored, spent ${sel.llm.total_cost:.2f}; nothing saved")
     for it, r in zip(items, res):
         if isinstance(r, Exception):
             errors.append((it[0], str(r)))
             continue
         scores[r.post_id] = r.raw_score
         extra[r.post_id] = {"decision": r.decision, "retention_score": r.retention_score,
-                            "logprob_decision": (np.log(r.p_keep) if r.p_keep else np.nan), "decisive_posts": r.decisive_posts}
+                            "logprob_decision": (np.log(max(r.p_keep, 1e-12)) if r.p_keep is not None else np.nan), "decisive_posts": r.decisive_posts}
     if errors:
         (cfg["results_dir"] / c.name).mkdir(parents=True, exist_ok=True)
         (cfg["results_dir"] / c.name / f"errors_{run_name}.json").write_text(json.dumps(errors, ensure_ascii=False, indent=1))

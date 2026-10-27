@@ -2,33 +2,33 @@
  "determinism_D0": {
   "n": 4032,
   "decision_agreement": 0.9997519841269841,
-  "score_spearman": 0.8941641209365506,
-  "retention_score_mean_abs_diff": 0.8308531746031746
+  "score_spearman": 0.9803201796285422,
+  "retention_score_mean_abs_diff": 0.07316468253968254
  },
  "control_D0": {
   "n": 426,
-  "decision_agreement": 0.9906103286384976,
-  "retention_spearman": 0.5217315472151237
+  "decision_agreement": 0.9953051643192489,
+  "retention_spearman": 0.5649191780027101
  },
  "declared_vs_internal_D0": {
-  "n": 4030,
-  "spearman": 0.5039162731770247,
-  "logprob_available_share": 0.9995039682539683
+  "n": 1655,
+  "spearman": 0.6900683745468326,
+  "logprob_available_share": 0.4104662698412698
  },
  "determinism_D3-nat": {
   "n": 4032,
-  "decision_agreement": 0.9987599206349206,
-  "score_spearman": 0.9085272091274524,
-  "retention_score_mean_abs_diff": 0.5766369047619048
+  "decision_agreement": 1.0,
+  "score_spearman": 0.9686612966161908,
+  "retention_score_mean_abs_diff": 0.1039186507936508
  },
  "control_D3-nat": {
   "n": 426,
-  "decision_agreement": 0.9812206572769953,
-  "retention_spearman": 0.6182433837937767
+  "decision_agreement": 0.9835680751173709,
+  "retention_spearman": 0.5302612365948671
  },
  "declared_vs_internal_D3-nat": {
-  "n": 4032,
-  "spearman": 0.3838872501385788,
-  "logprob_available_share": 1.0
+  "n": 1954,
+  "spearman": 0.6677218878573911,
+  "logprob_available_share": 0.48462301587301587
  }
 }

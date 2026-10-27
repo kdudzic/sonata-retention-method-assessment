@@ -38,7 +38,7 @@ Living document. Started 2026-10-24. Update in place; keep the log at the bottom
 
 | Slot | Current | Basis | Status |
 |---|---|---|---|
-| S3-open | Qwen3.8 27B on a local server (decided 2026-10-24). Current results still from `deepseek/deepseek-v4.1-flash` via OpenRouter (provisional) | Qwen3.8-27B was in the 2026-10-08 dev trial: same arcs detected as the others, logprobs available on 78 % of calls via OpenRouter, 100 % parseable | decided; run pending on local hardware |
+| S3-open | `qwen/qwen3.8-27b`, for the pilot via OpenRouter pinned to Reka/Ionstream/Darkbloom/DekaLLM (all calls served by Reka); local server for the next parts | full protocol run 2026-10-27 on dev2 and eval v2 incl. determinism repeat: 25,436 calls, $4.77, zero errors, logprobs on 100 % of calls, zero reasoning tokens | done for the pilot |
 | S3-com | `google/gemini-3.1-pro-preview` | plan default (XAI study set); disjoint from generator (OpenAI) and S3-open (DeepSeek) | decided 2026-10-24; Sonnet run archived in `results/eval/superseded_s3com_sonnet/` |
 | S1 | `qwen/qwen3-embedding-8b` via OpenRouter, with query-instruction prefix | plan candidate; prefix needed (see `experiment/results/dev/tuning_note.md`) | frozen 2026-10-08 |
 | S0 lexicon model | `openai/gpt-6-sol` | one model for all generation in the study; draft from category definitions only, hand-pruned | decided 2026-10-24; lexicon frozen 2026-10-08, no change |
@@ -82,6 +82,7 @@ Not a slot: the corpus generator (`openai/gpt-6-sol`, already chosen and used).
 - 2026-10-24: note created from the plan (sections 4, 7, 21, Annexes E-H) and `szkielet.md` section 5.
 - 2026-10-24: todos reduced to the four model slots; everything else decided on the fly.
 - 2026-10-24: plan directives added under each slot.
+- 2026-10-27: Qwen3.8 27B runs done through OpenRouter (user decision: API now, local later). Safeguards used: per-run spend cap $6 in the client, output cap 600 tokens, provider pinning, dev stage first. Spend $4.77 vs $13.70 estimated (Reka prices below list). DeepSeek S3 files archived under `results/*/superseded_s3open_deepseek/`. Balance after: $11.10.
 - 2026-10-24: S1 = Qwen3-Embedding-8B kept. All four slots decided.
 - 2026-10-24: lexicon-expansion LLM = gpt-6-sol (kept; rationale: single generation model for the whole study). Methods sentence to add: the lexicon model saw category definitions only, never corpus text, so sharing the generator's family does not couple S0 to the posts.
 - 2026-10-24: S3-open = Qwen3.8 27B, local server. Noted only; no runs yet. Open items when the run is set up: logprob access from the local serving stack (vLLM/llama.cpp expose them), reasoning off, temperature 0, provider pinning no longer applies, re-freeze with the new model id and re-run S3-open + S3' on eval v2 and dev2.

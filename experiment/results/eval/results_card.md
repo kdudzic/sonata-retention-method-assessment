@@ -1,7 +1,7 @@
 # EP-SKEL results card: eval corpus
 
 Posts 4032, authors 196, target arcs 10 (4 concentrated, 6 distributed), decoys 2, signal posts 25, bystander authors 184.
-Budgets [0.01, 0.05, 0.2]; tie seeds [0, 1, 2]; aggregation {'kind': 'top_k_sum', 'k': 3}; S3-open `deepseek/deepseek-v4.1-flash`, S3-com `google/gemini-3.1-pro-preview`, S1 `qwen/qwen3-embedding-8b`. Scoring cost $21.94.
+Budgets [0.01, 0.05, 0.2]; tie seeds [0, 1, 2]; aggregation {'kind': 'top_k_sum', 'k': 3}; S3-open `qwen/qwen3.8-27b`, S3-com `google/gemini-3.1-pro-preview`, S1 `qwen/qwen3-embedding-8b`. Scoring cost $26.71.
 
 ## Measurement points (means over tie seeds; absolute numbers)
 
@@ -43,34 +43,34 @@ Budgets [0.01, 0.05, 0.2]; tie seeds [0, 1, 2]; aggregation {'kind': 'top_k_sum'
 | S1-shuffled2 | D0               | 1 %      |           40 |       0    |              0 |              0 |   0    |   0    |             1    |          1   |        33    | nan    |            1.12 |        nan    |           0    |
 | S1-shuffled2 | D0               | 5 %      |          202 |       0    |              0 |              0 |   0    |   0    |             2    |          1   |       104    | nan    |            1.88 |        nan    |           0    |
 | S1-shuffled2 | D0               | 20 %     |          806 |       4    |              4 |              4 |   1    |   3    |             8    |          2   |       175    |  43.75 |            4.43 |        201.5  |           5    |
-| S3-blind     | D0               | 1 %      |           40 |       8    |              8 |              8 |   4    |   4    |             8    |          1   |        26.33 |   3.29 |            1.1  |          5    |          10    |
-| S3-blind     | D0               | 5 %      |          202 |      10    |             10 |             10 |   4    |   6    |            10    |          2   |        80    |   8    |            2.31 |         20.2  |          15    |
-| S3-blind     | D0               | 20 %     |          806 |      10    |             10 |             10 |   4    |   6    |            10    |          2   |       155    |  15.5  |            4.96 |         80.6  |          19    |
-| S3-blind     | D3-nat           | 1 %      |           40 |       7    |              7 |              7 |   4    |   3    |             7    |          0   |        28    |   4    |            1.11 |          5.71 |           9    |
-| S3-blind     | D3-nat           | 5 %      |          202 |      10    |             10 |             10 |   4    |   6    |            10    |          0   |        75    |   7.5  |            2.43 |         20.2  |          20    |
-| S3-blind     | D3-nat           | 20 %     |          806 |      10    |             10 |             10 |   4    |   6    |            10    |          2   |       125    |  12.5  |            5.9  |         80.6  |          23    |
+| S3-blind     | D0               | 1 %      |           40 |       6    |              6 |              6 |   4    |   2    |             6    |          0   |        26    |   4.33 |            1.23 |          6.67 |           8    |
+| S3-blind     | D0               | 5 %      |          202 |       8    |              8 |              8 |   4    |   4    |             8    |          1   |        82    |  10.25 |            2.32 |         25.25 |          11    |
+| S3-blind     | D0               | 20 %     |          806 |      10    |             10 |             10 |   4    |   6    |            10    |          2   |       154    |  15.4  |            4.96 |         80.6  |          19    |
+| S3-blind     | D3-nat           | 1 %      |           40 |       6    |              6 |              6 |   3    |   3    |             6    |          0   |        27    |   4.5  |            1.07 |          6.67 |           8    |
+| S3-blind     | D3-nat           | 5 %      |          202 |       8    |              8 |              8 |   4    |   4    |             8    |          0   |        68.33 |   8.54 |            2.63 |         25.25 |          11    |
+| S3-blind     | D3-nat           | 20 %     |          806 |      10    |             10 |             10 |   4    |   6    |            10    |          2   |       104    |  10.4  |            7.16 |         80.6  |          17    |
 | S3-com       | D0               | 1 %      |            4 |       3    |              3 |              3 |   2    |   1    |             3    |          0   |         0    |   0    |          nan    |          1.33 |           4    |
 | S3-com       | D0               | 5 %      |           21 |       9.33 |              9 |             10 |   4    |   5.33 |             9.33 |          0   |         8    |   0.86 |            1    |          2.26 |          13    |
 | S3-com       | D0               | 20 %     |           85 |      10    |             10 |             10 |   4    |   6    |            10    |          0   |        50.67 |   5.07 |            1.3  |          8.5  |          18.33 |
 | S3-com       | D3-nat           | 1 %      |            4 |       3    |              3 |              3 |   2    |   1    |             3    |          0   |         0    |   0    |          nan    |          1.33 |           4    |
 | S3-com       | D3-nat           | 5 %      |           21 |      10    |             10 |             10 |   4    |   6    |            10    |          0   |         4    |   0.4  |            1    |          2.1  |          14    |
 | S3-com       | D3-nat           | 20 %     |           85 |      10    |             10 |             10 |   4    |   6    |            10    |          0   |        42    |   4.2  |            1.4  |          8.5  |          22    |
-| S3-open      | D0               | 1 %      |           40 |       8    |              8 |              8 |   4    |   4    |             8    |          0   |        30.5  |   3.81 |            1.03 |          5    |           8.5  |
-| S3-open      | D0               | 5 %      |          202 |      10    |             10 |             10 |   4    |   6    |            10    |          1   |        85    |   8.5  |            2.18 |         20.2  |          14    |
-| S3-open      | D0               | 20 %     |          806 |      10    |             10 |             10 |   4    |   6    |            10    |          2   |       158.5  |  15.85 |            4.83 |         80.6  |          22.5  |
-| S3-open      | D3-agg           | 1 %      |           40 |       2    |              2 |              2 |   2    |   0    |             3    |          0   |         1    |   0.5  |           22    |         20    |           2    |
-| S3-open      | D3-agg           | 5 %      |          202 |       5    |              5 |              5 |   4    |   1    |             5    |          0   |        12    |   2.4  |           14.25 |         40.4  |           5    |
-| S3-open      | D3-agg           | 20 %     |          806 |       8    |              8 |              8 |   4    |   4    |             8    |          0   |        45    |   5.62 |           16.84 |        100.75 |          11    |
-| S3-open      | D3-nat           | 1 %      |           40 |       8    |              8 |              8 |   4    |   4    |             8    |          0   |        26.5  |   3.31 |            1.11 |          5    |          10.5  |
-| S3-open      | D3-nat           | 5 %      |          202 |      10    |             10 |             10 |   4    |   6    |            10    |          1   |        76    |   7.6  |            2.32 |         20.2  |          16    |
-| S3-open      | D3-nat           | 20 %     |          806 |      10    |             10 |             10 |   4    |   6    |            10    |          1   |       139    |  13.9  |            5.35 |         80.6  |          23    |
+| S3-open      | D0               | 1 %      |           40 |       7    |              7 |              7 |   4    |   3    |             7    |          0   |        22.5  |   3.21 |            1.42 |          5.71 |           8    |
+| S3-open      | D0               | 5 %      |          202 |       8    |              8 |              8 |   4    |   4    |             8    |          0   |        89    |  11.12 |            2.17 |         25.25 |           9    |
+| S3-open      | D0               | 20 %     |          806 |      10    |             10 |             10 |   4    |   6    |            10    |          2   |       160    |  16    |            4.85 |         80.6  |          18.5  |
+| S3-open      | D3-agg           | 1 %      |           40 |       1    |              1 |              1 |   0    |   1    |             1    |          0   |         4    |   4    |            9.75 |         40    |           1    |
+| S3-open      | D3-agg           | 5 %      |          202 |       4    |              4 |              4 |   2    |   2    |             4    |          0   |        15    |   3.75 |           12.47 |         50.5  |           4    |
+| S3-open      | D3-agg           | 20 %     |          806 |       7    |              7 |              7 |   4    |   3    |             7    |          0   |        47    |   6.71 |           16.28 |        115.14 |           9    |
+| S3-open      | D3-nat           | 1 %      |           40 |       7    |              7 |              7 |   4    |   3    |             7    |          0   |        25.5  |   3.64 |            1.1  |          5.71 |           8    |
+| S3-open      | D3-nat           | 5 %      |          202 |       9    |              9 |              9 |   4    |   5    |             9    |          0   |        74.17 |   8.24 |            2.35 |         22.44 |          13    |
+| S3-open      | D3-nat           | 20 %     |          806 |      10    |             10 |             10 |   4    |   6    |            10    |          2   |       109    |  10.9  |            6.85 |         80.6  |          20    |
 
 ## Go / no-go criteria (plan section 19)
 
 |   id | criterion                                                                   |   value | pass   |
 |-----:|:----------------------------------------------------------------------------|--------:|:-------|
 |    1 | at least one selector detects >= 6/10 arcs in D3 at 20 %                    |    10   | True   |
-|    2 | at most 1/6 distributed arcs detected in D0 at 5 % (max over selectors)     |     6   | False  |
+|    2 | at most 1/6 distributed arcs detected in D0 at 5 % (max over selectors)     |     4   | False  |
 |    3 | at least 3/4 concentrated arcs detected by S0 in D0 at 20 %                 |     3   | True   |
 |    4 | S-rand detects at most 1 arc at 20 %                                        |     4.6 | False  |
 |    5 | for at least one selector, D3 - D0 for distributed arcs >= 3 arcs (at 20 %) |     0   | False  |
@@ -80,25 +80,25 @@ Budgets [0.01, 0.05, 0.2]; tie seeds [0, 1, 2]; aggregation {'kind': 'top_k_sum'
 
 | access_variant   |   budget |   detected_S3 |   dist_S3 |   conc_S3 |   bystanders_S3 |   detected_S3blind |   dist_S3blind |   conc_S3blind |   bystanders_S3blind |   detected_diff |   dist_diff |   conc_diff |   bystanders_diff |
 |:-----------------|---------:|--------------:|----------:|----------:|----------------:|-------------------:|---------------:|---------------:|---------------------:|----------------:|------------:|------------:|------------------:|
-| D0               |     0.01 |             8 |         4 |         4 |            30.5 |                  8 |              4 |              4 |                26.33 |               0 |           0 |           0 |              4.17 |
-| D0               |     0.05 |            10 |         6 |         4 |            85   |                 10 |              6 |              4 |                80    |               0 |           0 |           0 |              5    |
-| D0               |     0.2  |            10 |         6 |         4 |           158.5 |                 10 |              6 |              4 |               155    |               0 |           0 |           0 |              3.5  |
-| D3-nat           |     0.01 |             8 |         4 |         4 |            26.5 |                  7 |              3 |              4 |                28    |               1 |           1 |           0 |             -1.5  |
-| D3-nat           |     0.05 |            10 |         6 |         4 |            76   |                 10 |              6 |              4 |                75    |               0 |           0 |           0 |              1    |
-| D3-nat           |     0.2  |            10 |         6 |         4 |           139   |                 10 |              6 |              4 |               125    |               0 |           0 |           0 |             14    |
+| D0               |     0.01 |             7 |         3 |         4 |           22.5  |                  6 |              2 |              4 |                26    |               1 |           1 |           0 |             -3.5  |
+| D0               |     0.05 |             8 |         4 |         4 |           89    |                  8 |              4 |              4 |                82    |               0 |           0 |           0 |              7    |
+| D0               |     0.2  |            10 |         6 |         4 |          160    |                 10 |              6 |              4 |               154    |               0 |           0 |           0 |              6    |
+| D3-nat           |     0.01 |             7 |         3 |         4 |           25.5  |                  6 |              3 |              3 |                27    |               1 |           0 |           1 |             -1.5  |
+| D3-nat           |     0.05 |             9 |         5 |         4 |           74.17 |                  8 |              4 |              4 |                68.33 |               1 |           1 |           0 |              5.83 |
+| D3-nat           |     0.2  |            10 |         6 |         4 |          109    |                 10 |              6 |              4 |               104    |               0 |           0 |           0 |              5    |
 
 ## Decision-based view (KEEP_FOR_REVIEW only, budget-independent)
 
-| selector   | access_variant   |   n_scored |   n_keep |   arcs_keep_strict |   arcs_keep_loose |   dist_keep |   conc_keep |   decoy_keep |   bystander_authors_keep |   bystander_posts_keep |   hardneg_keep | detected_arcs                                               |
-|:-----------|:-----------------|-----------:|---------:|-------------------:|------------------:|------------:|------------:|-------------:|-------------------------:|-----------------------:|---------------:|:------------------------------------------------------------|
-| S3-blind   | D0               |       4032 |       31 |                  6 |                 6 |           3 |           3 |            1 |                       21 |                     22 |             22 | TA-01|TA-02|TA-04|TB-01|TB-03|TB-06                         |
-| S3-blind   | D3-nat           |       4032 |       90 |                 10 |                10 |           6 |           4 |            0 |                       53 |                     77 |             77 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-02|TB-03|TB-05|TB-06|TB-08 |
-| S3-com     | D0               |        426 |        9 |                  7 |                 7 |           3 |           4 |            0 |                        1 |                      1 |              1 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-06                   |
-| S3-com     | D3-nat           |        426 |       13 |                  8 |                 8 |           4 |           4 |            0 |                        1 |                      1 |              1 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-06|TB-08             |
-| S3-open    | D0               |       4032 |       11 |                  5 |                 5 |           2 |           3 |            0 |                        6 |                      6 |              6 | TA-01|TA-02|TA-04|TB-03|TB-06                               |
-| S3-open    | D0               |       4032 |       10 |                  4 |                 4 |           1 |           3 |            0 |                        6 |                      6 |              6 | TA-01|TA-02|TA-04|TB-06                                     |
-| S3-open    | D3-nat           |       4032 |       26 |                  8 |                 8 |           4 |           4 |            0 |                       16 |                     18 |             18 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-05|TB-06             |
-| S3-open    | D3-nat           |       4032 |       27 |                  8 |                 8 |           4 |           4 |            0 |                       15 |                     17 |             17 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-05|TB-06             |
+| selector   | access_variant   |   n_scored |   n_keep |   arcs_keep_strict |   arcs_keep_loose |   dist_keep |   conc_keep |   decoy_keep |   bystander_authors_keep |   bystander_posts_keep |   hardneg_keep | detected_arcs                                   |
+|:-----------|:-----------------|-----------:|---------:|-------------------:|------------------:|------------:|------------:|-------------:|-------------------------:|-----------------------:|---------------:|:------------------------------------------------|
+| S3-blind   | D0               |       4032 |       46 |                  6 |                 6 |           2 |           4 |            0 |                       30 |                     38 |             38 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-03             |
+| S3-blind   | D3-nat           |       4032 |       84 |                  8 |                 8 |           4 |           4 |            0 |                       42 |                     63 |             56 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-06|TB-08 |
+| S3-com     | D0               |        426 |        9 |                  7 |                 7 |           3 |           4 |            0 |                        1 |                      1 |              1 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-06       |
+| S3-com     | D3-nat           |        426 |       13 |                  8 |                 8 |           4 |           4 |            0 |                        1 |                      1 |              1 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-06|TB-08 |
+| S3-open    | D0               |       4032 |       33 |                  7 |                 7 |           3 |           4 |            0 |                       19 |                     25 |             25 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-06       |
+| S3-open    | D0               |       4032 |       34 |                  7 |                 7 |           3 |           4 |            0 |                       20 |                     26 |             26 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-06       |
+| S3-open    | D3-nat           |       4032 |       48 |                  7 |                 7 |           3 |           4 |            0 |                       31 |                     35 |             32 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-06       |
+| S3-open    | D3-nat           |       4032 |       48 |                  7 |                 7 |           3 |           4 |            0 |                       31 |                     35 |             32 | TA-01|TA-02|TA-03|TA-04|TB-01|TB-03|TB-06       |
 
 ## Determinism, control model, declared vs internal score
 
@@ -107,34 +107,34 @@ Budgets [0.01, 0.05, 0.2]; tie seeds [0, 1, 2]; aggregation {'kind': 'top_k_sum'
  "determinism_D0": {
   "n": 4032,
   "decision_agreement": 0.9997519841269841,
-  "score_spearman": 0.8941641209365506,
-  "retention_score_mean_abs_diff": 0.8308531746031746
+  "score_spearman": 0.9803201796285422,
+  "retention_score_mean_abs_diff": 0.07316468253968254
  },
  "control_D0": {
   "n": 426,
-  "decision_agreement": 0.9906103286384976,
-  "retention_spearman": 0.5217315472151237
+  "decision_agreement": 0.9953051643192489,
+  "retention_spearman": 0.5649191780027101
  },
  "declared_vs_internal_D0": {
-  "n": 4030,
-  "spearman": 0.5039162731770247,
-  "logprob_available_share": 0.9995039682539683
+  "n": 1655,
+  "spearman": 0.6900683745468326,
+  "logprob_available_share": 0.4104662698412698
  },
  "determinism_D3-nat": {
   "n": 4032,
-  "decision_agreement": 0.9987599206349206,
-  "score_spearman": 0.9085272091274524,
-  "retention_score_mean_abs_diff": 0.5766369047619048
+  "decision_agreement": 1.0,
+  "score_spearman": 0.9686612966161908,
+  "retention_score_mean_abs_diff": 0.1039186507936508
  },
  "control_D3-nat": {
   "n": 426,
-  "decision_agreement": 0.9812206572769953,
-  "retention_spearman": 0.6182433837937767
+  "decision_agreement": 0.9835680751173709,
+  "retention_spearman": 0.5302612365948671
  },
  "declared_vs_internal_D3-nat": {
-  "n": 4032,
-  "spearman": 0.3838872501385788,
-  "logprob_available_share": 1.0
+  "n": 1954,
+  "spearman": 0.6677218878573911,
+  "logprob_available_share": 0.48462301587301587
  }
 }
 ```
@@ -155,14 +155,11 @@ Budgets [0.01, 0.05, 0.2]; tie seeds [0, 1, 2]; aggregation {'kind': 'top_k_sum'
   "TB-06": [
    [
     "P00491",
-    "P00493",
     "P00495"
    ]
   ],
   "TB-03": [
    [
-    "P00617",
-    "P00619",
     "P00623"
    ]
   ],
@@ -177,14 +174,11 @@ Budgets [0.01, 0.05, 0.2]; tie seeds [0, 1, 2]; aggregation {'kind': 'top_k_sum'
     "P00711"
    ]
   ],
-  "TB-05": [
-   [
-    "P01221",
-    "P01223",
-    "P01225"
-   ]
-  ],
   "TB-01": [
+   [
+    "P02272",
+    "P02273"
+   ],
    [
     "P02273",
     "P02277"

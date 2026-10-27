@@ -24,7 +24,7 @@ selectors:
     embedding_model: qwen/qwen3-embedding-8b     # plan Annex H candidate; via OpenRouter
     d3_vec_alpha: 0.5
   s3:
-    open_model: deepseek/deepseek-v4.1-flash     # S3-open, chosen on the dev sample (model-trial); open weights, cheap
+    open_model: qwen/qwen3.8-27b                 # S3-open: decided 2026-10-24 (Qwen3.8 27B); via OpenRouter for the pilot, local later
     open_candidates: [deepseek/deepseek-v4.1-flash, z-ai/glm-5.3-flash, qwen/qwen3.8-27b, moonshotai/kimi-k3]
     control_model: google/gemini-3.1-pro-preview   # S3-com: PI/Kacper decision 2026-10-24, commercial model from the XAI study set
     control_fraction: 0.10
@@ -36,9 +36,12 @@ selectors:
     prompt_blind_d3nat: s3_blind_d3nat_v1
     max_history_posts: 40
     workers: 8
+    max_tokens: 600               # posts need ~60-110 output tokens; a low cap bounds the damage if reasoning leaks
+    max_cost_usd_per_run: 6.0     # hard stop per selector x variant run
     # providers that return decision-token logprobs for the open model (checked 2026-10-08: Together, DigitalOcean,
     # Novita, StreamLake do; Morph, Relace, AtlasCloud, Parasail, Alibaba, Venice, BaseTen do not)
     provider_order:
       deepseek/deepseek-v4.1-flash: [Together, DigitalOcean, Novita]
+      qwen/qwen3.8-27b: [Reka, Ionstream, Darkbloom, DekaLLM]   # returned logprobs on 100 % of trial calls; Phala/Chutes/DeepInfra did not
 
 results_dir: results

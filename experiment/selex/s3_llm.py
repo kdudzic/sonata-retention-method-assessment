@@ -95,10 +95,13 @@ class S3Output:
 
 class S3Selector:
     def __init__(self, model: str, prompt_name: str, run_name: str, temperature: float = 0.0, logprobs: bool = True,
-                 workers: int = 8, seed: int | None = 0, provider_order: list[str] | None = None) -> None:
+                 workers: int = 8, seed: int | None = 0, provider_order: list[str] | None = None,
+                 max_cost_usd: float | None = None, max_tokens: int = 4000) -> None:
         self.model = model
         self.prompt_name = prompt_name
-        self.llm = LLM(model, run_name=run_name, temperature=temperature, logprobs=logprobs, top_logprobs=8, seed=seed)
+        self.max_tokens = max_tokens
+        self.llm = LLM(model, run_name=run_name, temperature=temperature, logprobs=logprobs, top_logprobs=8, seed=seed,
+                       max_cost_usd=max_cost_usd)
         if provider_order:
             # pin to providers that return token logprobs (and keep the backend fixed for the determinism check)
             self.llm.extra_body["provider"] = {"order": list(provider_order), "allow_fallbacks": False}
@@ -107,7 +110,7 @@ class S3Selector:
     def score_one(self, post_id: str, text: str, history: list[tuple[str, str]] | None = None) -> S3Output:
         msgs = build_messages(self.prompt_name, post_id, text, history)
         # 4000, not 400: reasoning models (gemini, claude 5.5) bill thinking tokens against max_tokens and truncate the JSON otherwise
-        r: ChatResult = self.llm.chat(msgs, tag=post_id, max_tokens=4000)
+        r: ChatResult = self.llm.chat(msgs, tag=post_id, max_tokens=self.max_tokens)
         try:
             o = parse_json(r.text)
             ok = True

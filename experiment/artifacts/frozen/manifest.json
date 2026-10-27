@@ -1,6 +1,6 @@
 {
- "frozen_at": "2026-10-24T11:58:04",
- "note": "2026-10-24: S3-com -> google/gemini-3.1-pro-preview; all other artifacts unchanged",
+ "frozen_at": "2026-10-27T16:01:27",
+ "note": "2026-10-27: S3-open -> qwen/qwen3.8-27b via OpenRouter (providers Reka/Ionstream/Darkbloom/DekaLLM, max_tokens 600, cap 6 USD per run); lexicon, seeds, prompts, weights, aggregation unchanged",
  "artifacts": {
   "s0_lexicon": {
    "path": "artifacts/s0_lexicon.yaml",
@@ -12,7 +12,7 @@
   },
   "experiment_config": {
    "path": "configs/experiment.yaml",
-   "sha256": "6d96bcca340fee39341589fcd73007c832648efb04fba1a5523b4a31c5b53a17"
+   "sha256": "9bc53fb6c886c32c3d1cb3c0f30469b9e83df2eff77165f47c4122b41943efed"
   },
   "arc_split": {
    "path": "configs/arc_split.yaml",
@@ -49,6 +49,6 @@
   "k": 3
  },
  "s1_model": "qwen/qwen3-embedding-8b",
- "s3_open_model": "deepseek/deepseek-v4.1-flash",
+ "s3_open_model": "qwen/qwen3.8-27b",
  "s3_control_model": "google/gemini-3.1-pro-preview"
 }
