@@ -55,3 +55,5 @@ uv run python bench/summarize.py
 - Every post row records `prompt_version`, `method`, `generation_seed` and `call_ids`; the raw call files hold the full prompt and response.
 - Reasoning-capable endpoints bill thinking tokens against `max_tokens`; the client keeps a 4,000-token cap and steps the reasoning effort down where the endpoint refuses to disable it.
 - Local compute is avoided: embeddings go through OpenRouter (`EPSKEL_EMBED=local` forces the local model, capped at 4 threads).
+
+Pilot results report: `notes/results_report_20261027.md`.
