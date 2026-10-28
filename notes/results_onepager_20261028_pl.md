@@ -1,4 +1,4 @@
-# EP-SKEL wyniki
+# EP-SKEL WYNIKI 2026-10-28
 
 ## Koncept
 
