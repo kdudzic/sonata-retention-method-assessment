@@ -4,6 +4,17 @@
 
 Symulujemy automatyczny selektor, który przegląda wpisy w mediach społecznościowych i decyduje, które zachować do dalszej analizy. Interesują nas dwie rzeczy: ile groźnych sytuacji selektor wykrywa i ilu niezwiązanych z nimi osób dane przy tym zatrzymuje. Główne pytanie brzmi: czy selektor, który oprócz pojedynczego wpisu widzi też wcześniejsze wpisy tego samego autora, wykrywa więcej.
 
+## Hipotezy
+
+Brzmienie z planu badania (sekcja 2). W pilotażu hipotez nie testujemy statystycznie, a jedynie sprawdzamy, czy efekty
+występują w oczekiwanym kierunku.
+
+- **Teza główna.** Obietnica ograniczenia zakresu gromadzonych danych dzięki AI nie jest redukcją inwazyjności, lecz jej przeniesieniem: zawężenie na poziomie pojedynczego wpisu zostaje okupione koniecznością sięgnięcia po historię wypowiedzi autora.
+- **H1.** Krzywa wykrywalności nasyca się przy budżecie retencyjnym istotnie niższym niż 100 %.
+- **H2.** Przy równym budżecie retencyjnym selektor LLM ma wyższą wykrywalność niż selektor leksykalny, ale gorszą gradację rankingu (liczne remisy nie występują tylko u S0).
+- **H3 (kluczowa).** Wykrywalność łuków o sygnale rozproszonym rośnie skokowo przy przejściu z dostępu do pojedynczego wpisu (D0) na dostęp do historii autora (D3); dla łuków skoncentrowanych przyrost jest marginalny.
+- **H4.** Przyrost wykrywalności z D0 na D3 jest okupiony nieproporcjonalnym wzrostem liczby autorów-niecelów objętych retencją oraz głębokości ich profili.
+
 ## Korpus
 
 - Sztucznie wygenerowany, polskojęzyczny korpus. Model generujący: `GPT-6 Sol`.
@@ -48,31 +59,15 @@ Uwagi:
 
 ## Najważniejsze wnioski
 
-- **Kontrole dodatnie działają.** S0 wykrywa 3 z 4 łuków skoncentrowanych na podstawie samego wpisu, a każdy
-  selektor LLM wykrywa wszystkie 4. Żaden profil mylący nie dostał decyzji KEEP. S-rand przy budżecie 1 % trafia
-  średnio w 0,4 łuku, więc wyniki pozostałych selektorów nie są przypadkiem.
-- **Dostęp do historii zwiększa liczbę zatrzymanych autorów postronnych.** Decyzją KEEP S3-open obejmuje 19 autorów
-  postronnych w D0 i 31 w D3-nat, a S3' 30 i 42. To zgodne z hipotezą H4: lepsze rozpoznanie osoby kosztuje
-  zatrzymanie danych innych ludzi.
-- **Przy stałym budżecie historia skupia zatrzymanie na mniejszej liczbie osób.** Przy 20 % S3-open zatrzymuje
-  wpisy 160 autorów postronnych w D0 i 109 w D3-nat. Zbiera tyle samo wpisów, ale o mniejszej liczbie ludzi, za to
-  więcej o każdym z nich.
-- **Historia pomaga wykryć łuki rozproszone tylko części selektorów.** Decyzją KEEP S3' zatrzymuje 2 łuki
-  rozproszone w D0 i 4 w D3-nat, a S3-com 3 i 4. S3-open zatrzymuje 3 w obu wariantach. Hipoteza H3 potwierdza się
-  więc tylko częściowo.
+- **Kontrole dodatnie działają.** S0 wykrywa 3 z 4 łuków skoncentrowanych na podstawie samego wpisu, a każdy selektor LLM wykrywa wszystkie 4. Żaden profil mylący nie dostał decyzji KEEP. S-rand przy budżecie 1 % trafia średnio w 0,4 łuku, więc wyniki pozostałych selektorów nie są przypadkiem.
+- **Dostęp do historii zwiększa liczbę zatrzymanych autorów postronnych.** Decyzją KEEP S3-open obejmuje 19 autorów postronnych w D0 i 31 w D3-nat, a S3' 30 i 42. To zgodne z hipotezą H4: lepsze rozpoznanie osoby kosztuje zatrzymanie danych innych ludzi.
+- **Przy stałym budżecie historia skupia zatrzymanie na mniejszej liczbie osób.** Przy 20 % S3-open zatrzymuje wpisy 160 autorów postronnych w D0 i 109 w D3-nat. Zbiera tyle samo wpisów, ale o mniejszej liczbie ludzi, za to więcej o każdym z nich.
+- **Historia pomaga wykryć łuki rozproszone tylko części selektorów.** Decyzją KEEP S3' zatrzymuje 2 łuki rozproszone w D0 i 4 w D3-nat, a S3-com 3 i 4. S3-open zatrzymuje 3 w obu wariantach. Hipoteza H3 potwierdza się więc tylko częściowo.
 - **Jawna lista sygnałów ogranicza zbieranie danych.** W D3-nat S3' zatrzymuje decyzją KEEP 84 wpisy, a S3-open 48.
-- **W widoku budżetowym selektory LLM wykrywają prawie wszystko od razu.** Przy 5 % znajdują 8 lub 9 łuków w D0
-  i w D3-nat. Trudne negatywy stanowią 14 % korpusu, więc w tak małym budżecie mieści się wszystko, co odbiega od
-  codziennych tematów. Dlatego w tym widoku historia nie może już niczego dodać.
-- **Dwa wyniki trzeba czytać ostrożnie.** Zamrożone opisy, z którymi S1 porównuje wpisy, za bardzo przypominają same
-  łuki; z przemieszanymi opisami S1 wykrywa od 0 do 2 łuków. Agregacja D3-agg premiuje autorów, którzy dużo piszą,
-  a autorzy łuków piszą mniej niż przeciętny autor.
-- **Z sześciu kryteriów go / no-go z planu badania dwa są spełnione, trzy nie, a dla jednego nie ustalono progu.**
-  Kryterium 4 wymaga, by S-rand przy 20 % wykrywał najwyżej 1 łuk, co jest nieosiągalne: przy 1 do 5 wpisach
-  sygnałowych na łuk losowanie trafia średnio w około 4 łuki. Kryteria 2 i 5 nie są spełnione z powodu opisanego
-  wyżej nasycenia widoku budżetowego.
-- **Wyniki są powtarzalne, a koszt niski.** Dwa niezależne przebiegi S3-open dały te same decyzje dla wszystkich
-  4032 wpisów. S3-com zgadza się z S3-open w 98 do 99,5 % decyzji. Cały pilotaż kosztował 88,90 USD.
+- **W widoku budżetowym selektory LLM wykrywają prawie wszystko od razu.** Przy 5 % znajdują 8 lub 9 łuków w D0 i w D3-nat. Trudne negatywy stanowią 14 % korpusu, więc w tak małym budżecie mieści się wszystko, co odbiega od codziennych tematów. Dlatego w tym widoku historia nie może już niczego dodać.
+- **Dwa wyniki trzeba czytać ostrożnie.** Zamrożone opisy, z którymi S1 porównuje wpisy, za bardzo przypominają same łuki; z przemieszanymi opisami S1 wykrywa od 0 do 2 łuków. Agregacja D3-agg premiuje autorów, którzy dużo piszą, a autorzy łuków piszą mniej niż przeciętny autor.
+- **Z sześciu kryteriów go / no-go z planu badania dwa są spełnione, trzy nie, a dla jednego nie ustalono progu.** Kryterium 4 wymaga, by S-rand przy 20 % wykrywał najwyżej 1 łuk, co jest nieosiągalne: przy 1 do 5 wpisach sygnałowych na łuk losowanie trafia średnio w około 4 łuki. Kryteria 2 i 5 nie są spełnione z powodu opisanego wyżej nasycenia widoku budżetowego.
+- **Wyniki są powtarzalne, a koszt niski.** Dwa niezależne przebiegi S3-open dały te same decyzje dla wszystkich 4032 wpisów. S3-com zgadza się z S3-open w 98 do 99,5 % decyzji. Cały pilotaż kosztował 88,90 USD.
 
 ## Uwagi metodologiczne do pełnego badania
 
@@ -88,4 +83,3 @@ Uwagi:
 - **Decyzja KEEP.** Selektory LLM dodatkowo mówią wprost, czy wpis należy zatrzymać do przeglądu przez człowieka (KEEP_FOR_REVIEW), czy odrzucić (DISCARD). To drugi sposób liczenia wyników, niezależny od budżetu.
 - **D0.** Selektor widzi tylko oceniany wpis.
 - **D3.** Selektor widzi oceniany wpis i wcześniejsze wpisy tego samego autora. W D3-nat model językowy dostaje tę historię wprost, w D3-txt historia trafia do jednego okna modelu wektorowego, a D3-agg nie pokazuje historii, tylko sumuje trzy najwyższe wyniki wpisów autora.
-- **Hipotezy H3 i H4.** H3: dostęp do historii autora wyraźnie zwiększa wykrywalność łuków rozproszonych. H4: ten przyrost okupiony jest większą liczbą zatrzymanych autorów postronnych.
