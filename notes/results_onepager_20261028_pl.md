@@ -6,13 +6,11 @@ Symulujemy automatyczny selektor, który przegląda wpisy w mediach społecznoś
 
 ## Hipotezy
 
-Brzmienie z planu badania (sekcja 2). W pilotażu hipotez nie testujemy statystycznie, a jedynie sprawdzamy, czy efekty
-występują w oczekiwanym kierunku.
+Wzięte z planu badania (sekcja 2).
 
-- **Teza główna.** Obietnica ograniczenia zakresu gromadzonych danych dzięki AI nie jest redukcją inwazyjności, lecz jej przeniesieniem: zawężenie na poziomie pojedynczego wpisu zostaje okupione koniecznością sięgnięcia po historię wypowiedzi autora.
 - **H1.** Krzywa wykrywalności nasyca się przy budżecie retencyjnym istotnie niższym niż 100 %.
 - **H2.** Przy równym budżecie retencyjnym selektor LLM ma wyższą wykrywalność niż selektor leksykalny, ale gorszą gradację rankingu (liczne remisy nie występują tylko u S0).
-- **H3 (kluczowa).** Wykrywalność łuków o sygnale rozproszonym rośnie skokowo przy przejściu z dostępu do pojedynczego wpisu (D0) na dostęp do historii autora (D3); dla łuków skoncentrowanych przyrost jest marginalny.
+- **H3.** Wykrywalność łuków o sygnale rozproszonym rośnie skokowo przy przejściu z dostępu do pojedynczego wpisu (D0) na dostęp do historii autora (D3); dla łuków skoncentrowanych przyrost jest marginalny.
 - **H4.** Przyrost wykrywalności z D0 na D3 jest okupiony nieproporcjonalnym wzrostem liczby autorów-niecelów objętych retencją oraz głębokości ich profili.
 
 ## Korpus
@@ -35,27 +33,46 @@ występują w oczekiwanym kierunku.
 
 ## Wyniki
 
-| Selektor | Model | Dostęp | Wykryte łuki przy 1 % / 5 % / 20 % | Wykryte łuki rozproszone przy 20 %, z 6 | Autorzy postronni przy 20 % | Łuki zatrzymane decyzją KEEP, rozproszone w nawiasie | Autorzy postronni zatrzymani decyzją |
-|---|---|---|---|---|---|---|---|
-| S-rand | losowy, 5 ziaren | D0 | 0,4 / 1,6 / 4,6 | 3,6 | 178 | brak | brak |
-| S0 leksykalny, sub | zamrożona lista słów | D0 | 2,0 / 3,7 / 9,0 | 6,0 | 177 | brak | brak |
-| S0 leksykalny, sub | zamrożona lista słów | D3-agg | 0,0 / 0,0 / 3,7 | 2,7 | 88 | brak | brak |
-| S1 semantyczny | Qwen3-Embedding-8B | D0 | 4 / 8 / 9 | 5 | 179 | brak | brak |
-| S1 semantyczny | Qwen3-Embedding-8B | D3-txt | 0 / 2 / 5 | 3 | 126 | brak | brak |
-| S3-open | Qwen3.8 27B | D0 | 7 / 8 / 10 | 6 | 160 | 7 [3] | 19 |
-| S3-open | Qwen3.8 27B | D3-nat | 7 / 9 / 10 | 6 | 109 | 7 [3] | 31 |
-| S3' zaślepiony | Qwen3.8 27B | D0 | 6 / 8 / 10 | 6 | 154 | 6 [2] | 30 |
-| S3' zaślepiony | Qwen3.8 27B | D3-nat | 6 / 8 / 10 | 6 | 104 | 8 [4] | 42 |
-| S3-com kontrolny | Gemini 3.1 Pro | D0, próba 10 % | nieporównywalne | nieporównywalne | nieporównywalne | 7 [3] | 1 |
-| S3-com kontrolny | Gemini 3.1 Pro | D3-nat, próba 10 % | nieporównywalne | nieporównywalne | nieporównywalne | 8 [4] | 1 |
+### Widok budżetowy
 
-Uwagi:
+Selektor układa wszystkie wpisy od najbardziej podejrzanych i zatrzymuje górne 1 %, 5 % lub 20 %.
 
-- Wykryte łuki liczone są z 10, autorzy postronni ze 184. Łuk jest wykryty, gdy co najmniej jeden jego wpis sygnałowy trafi do zbioru zatrzymanego.
-- "Sub" oznacza wariant S0, w którym sygnały odrzucenia, takie jak cytat, relacja prasowa czy satyra, obniżają wynik.
-- S0 i S1 nie wydają decyzji KEEP, więc dwie ostatnie kolumny są dla nich puste.
-- S3-com ocenił tylko próbę 426 wpisów, dlatego jego wyników przy budżetach nie porównujemy z pozostałymi wierszami.
+| Selektor | Dostęp | Łuki, 1 % | Łuki, 5 % | Łuki, 20 % | Rozproszone, 20 % | Postronni, 20 % |
+|---|---|---|---|---|---|---|
+| S-rand | D0 | 0,4 | 1,6 | 4,6 | 3,6 | 178 |
+| S0 | D0 | 2,0 | 3,7 | 9,0 | 6,0 | 177 |
+| S0 | D3-agg | 0,0 | 0,0 | 3,7 | 2,7 | 88 |
+| S1 | D0 | 4 | 8 | 9 | 5 | 179 |
+| S1 | D3-txt | 0 | 2 | 5 | 3 | 126 |
+| S3-open | D0 | 7 | 8 | 10 | 6 | 160 |
+| S3-open | D3-nat | 7 | 9 | 10 | 6 | 109 |
+| S3' | D0 | 6 | 8 | 10 | 6 | 154 |
+| S3' | D3-nat | 6 | 8 | 10 | 6 | 104 |
+
+- **Łuki:** liczba wykrytych łuków z 10. Łuk jest wykryty, gdy co najmniej jeden jego wpis sygnałowy trafi do zbioru zatrzymanego.
+- **Rozproszone:** liczba wykrytych łuków rozproszonych z 6.
+- **Postronni:** liczba autorów postronnych, ze 184, których co najmniej jeden wpis został zatrzymany.
+- S0 to wariant "sub", w którym sygnały odrzucenia, takie jak cytat, relacja prasowa czy satyra, obniżają wynik.
 - Wartości to średnie z kilku losowań kolejności wpisów o równym wyniku, stąd ułamki.
+- S3-com nie występuje w tej tabeli, bo ocenił tylko próbę 426 wpisów i jego wyników przy budżetach nie da się porównać z resztą.
+
+### Widok decyzyjny
+
+Selektory LLM dodatkowo decydują o każdym wpisie: KEEP_FOR_REVIEW albo DISCARD. Ten widok nie zależy od budżetu.
+S0 i S1 nie wydają takich decyzji, więc ich tu nie ma.
+
+| Selektor | Dostęp | Łuki z KEEP | W tym rozproszone | Postronni z KEEP |
+|---|---|---|---|---|
+| S3-open | D0 | 7 | 3 | 19 |
+| S3-open | D3-nat | 7 | 3 | 31 |
+| S3' | D0 | 6 | 2 | 30 |
+| S3' | D3-nat | 8 | 4 | 42 |
+| S3-com, próba 10 % | D0 | 7 | 3 | 1 |
+| S3-com, próba 10 % | D3-nat | 8 | 4 | 1 |
+
+- **Łuki z KEEP:** liczba łuków, z 10, w których co najmniej jeden wpis sygnałowy dostał decyzję KEEP.
+- **Postronni z KEEP:** liczba autorów postronnych, z co najmniej jednym wpisem z decyzją KEEP.
+- S3-com ocenił próbę 426 wpisów, w tym wszystkie wpisy sygnałowe, więc jego liczba łuków jest porównywalna z innymi wierszami, a liczba postronnych nie.
 
 ## Najważniejsze wnioski
 
@@ -67,7 +84,7 @@ Uwagi:
 - **W widoku budżetowym selektory LLM wykrywają prawie wszystko od razu.** Przy 5 % znajdują 8 lub 9 łuków w D0 i w D3-nat. Trudne negatywy stanowią 14 % korpusu, więc w tak małym budżecie mieści się wszystko, co odbiega od codziennych tematów. Dlatego w tym widoku historia nie może już niczego dodać.
 - **Dwa wyniki trzeba czytać ostrożnie.** Zamrożone opisy, z którymi S1 porównuje wpisy, za bardzo przypominają same łuki; z przemieszanymi opisami S1 wykrywa od 0 do 2 łuków. Agregacja D3-agg premiuje autorów, którzy dużo piszą, a autorzy łuków piszą mniej niż przeciętny autor.
 - **Z sześciu kryteriów go / no-go z planu badania dwa są spełnione, trzy nie, a dla jednego nie ustalono progu.** Kryterium 4 wymaga, by S-rand przy 20 % wykrywał najwyżej 1 łuk, co jest nieosiągalne: przy 1 do 5 wpisach sygnałowych na łuk losowanie trafia średnio w około 4 łuki. Kryteria 2 i 5 nie są spełnione z powodu opisanego wyżej nasycenia widoku budżetowego.
-- **Wyniki są powtarzalne, a koszt niski.** Dwa niezależne przebiegi S3-open dały te same decyzje dla wszystkich 4032 wpisów. S3-com zgadza się z S3-open w 98 do 99,5 % decyzji. Cały pilotaż kosztował 88,90 USD.
+- **Wyniki są powtarzalne.** Dwa niezależne przebiegi S3-open dały te same decyzje dla wszystkich 4032 wpisów. S3-com zgadza się z S3-open w 98 do 99,5 % decyzji.
 
 ## Uwagi metodologiczne do pełnego badania
 
