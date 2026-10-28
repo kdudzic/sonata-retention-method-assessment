@@ -1,6 +1,6 @@
 # EP-SKEL pilot: results report
 
-2026-10-27 · Kacper Dudzic
+2026-10-27 · Kacper Dudzic · one-pager: `notes/results_onepager_20261028.md`
 
 The skeleton study runs end to end and its construction works: concentrated arcs are found by every selector, the
 random floor stays low, and every LLM selector is deterministic. The core hypothesis is visible only in part. With

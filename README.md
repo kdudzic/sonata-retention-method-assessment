@@ -56,4 +56,4 @@ uv run python bench/summarize.py
 - Reasoning-capable endpoints bill thinking tokens against `max_tokens`; the client keeps a 4,000-token cap and steps the reasoning effort down where the endpoint refuses to disable it.
 - Local compute is avoided: embeddings go through OpenRouter (`EPSKEL_EMBED=local` forces the local model, capped at 4 threads).
 
-Pilot results report: `notes/results_report_20261027.md`.
+Pilot results report: `notes/results_report_20261027.md`; one-pager: `notes/results_onepager_20261028.md`.
